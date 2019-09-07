@@ -25,13 +25,13 @@
 ;; As a special case, a nil value prevents template from being
 ;; inserted.
 
-(setq org-latex-hyperref-template 
+(setq org-latex-hyperref-template
       "\\AtEndPreamble{\\hypersetup{%%
  pdfauthor={%a},%%
  pdftitle={%t},%%
  pdfkeywords={%k},%%
  pdfsubject={%d},%%
- pdfcreator={%c},%% 
+ pdfcreator={%c},%%
  pdflang={%L}}}
 ")
 
@@ -106,7 +106,7 @@ available to use with Org"
 (setq org-list-allow-alphabetical t)
 
 ;; Allow opening question or exclamation marks before emphasis
-;; Allow matches spanning 5 lines 
+;; Allow matches spanning 5 lines
 (setcar org-emphasis-regexp-components " \t('\"{¿¡[")
 (setcar (nthcdr 4 org-emphasis-regexp-components) 2)
 (org-set-emph-re 'org-emphasis-regexp-components org-emphasis-regexp-components)
@@ -117,7 +117,7 @@ available to use with Org"
 
 ;; Support of csquotes package
 (add-to-list
- 'org-export-smart-quotes-alist 
+ 'org-export-smart-quotes-alist
  '("en"
    (primary-opening :utf-8 "“" :html "&ldquo;" :latex "\\enquote{" :texinfo "``")
    (primary-closing :utf-8 "”" :html "&rdquo;" :latex "}" :texinfo "''")
@@ -126,7 +126,7 @@ available to use with Org"
    (apostrophe :utf-8 "’" :html "&rsquo;")))
 
 (add-to-list
- 'org-export-smart-quotes-alist 
+ 'org-export-smart-quotes-alist
  '("es"
    (primary-opening :utf-8 "«" :html "&laquo;" :latex "\\enquote{" :texinfo "@guillemetleft{}")
    (primary-closing :utf-8 "»" :html "&raquo;" :latex "}" :texinfo "@guillemetright{}")
@@ -179,3 +179,6 @@ available to use with Org"
   (org-babel-tangle)
   (kill-buffer))
 
+(defun tangle-to (dir)
+  (cd (expand-file-name dir))
+  (org-babel-tangle))

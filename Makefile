@@ -33,6 +33,7 @@ emacs_loads := --load=$(elispdir)/setup-org.el \
 	--load=$(elispdir)/mats.el
 org_to_latex := --eval "(tolatex (file-name-as-directory \"$(builddir)\"))"
 org_to_beamer := --eval "(tobeamer (file-name-as-directory \"$(builddir)\"))"
+tangle := --eval "(tangle-to (file-name-as-directory \"$(builddir)\"))"
 
 TEXI2DVI := $(envbin) TEXI2DVI_USE_RECORDER=yes \
 	$(texi2dvibin) --batch $(TEXI2DVI_SILENT) \
@@ -129,6 +130,9 @@ $(outdir)/%.pdf $(depsdir)/%.pdf.d: $(builddir)/%.tex | $(outdir) $(depsdir)
 ifeq ($(INCLUDEDEPS),yes)
 -include $(docs_deps)
 endif
+
+include figs.mk
+
 
 ## Auxiliary directories
 ## --------------------------------------------------------------------------------
