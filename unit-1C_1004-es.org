@@ -1,0 +1,398 @@
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Los mercados competitivos
+
+#+LATEX_CLASS: unit
+
+#+MATS: bib
+#+begin_bibbox
+- Mankiw: ::  /Principios de Economía/. Capítulo 4.
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulos 1 y 2. 
+#+end_bibbox
+
+
+* Mercados y competencia
+
+
+** Mercados
+- Un mercado es el conjunto de compradores y vendedores de un
+  determinado bien o servicio.
+
+
+** Mercados competitivos
+- Gran número de *compradores*.
+- Gran número de *vendedores*.
+- *Ausencia de poder de mercado*.
+
+
+** El modelo de competencia perfecta
+- Supuestos:
+  + Producto homogéneo.
+  + Ausencia de poder de mercado.
+  + Información perfecta.
+- Tanto compradores como vendedores son *precio aceptantes*.
+
+
+* La demanda
+
+
+** Cantidad demandada y precio
+- La *cantidad demandada* de un bien es el número de unidades de ese
+  bien que los consumidores quieren y pueden comprar en un determinado período de tiempo.
+- El *precio* de un bien juega un papel central a la hora de
+  determinar la cantidad demandada.
+
+
+** La Ley de la demanda
+- *Ley de la demanda*: /ceteris paribus/, cuando el precio de un bien
+  sube la cantidad demandada disminuye; cuando el precio baja, la
+  cantidad demandada aumenta.
+
+
+** La tabla y la curva de demanda individual
+- Indican qué cantidad desea comprar un consumidor para cada posible
+  precio.
+- La curva de demanda tiene pendiente negativa.
+#+LaTeX: \begin{center}
+# [[./figures/fig-t03-dtab.pdf]]
+#+LaTeX: \end{center}
+
+
+** La curva de demanda de mercado (I)
+- Para cada posible precio sumamos las cantidades que demandan cada
+  uno de los consumidores.
+- Demandas en un mercado compuesto por tres consumidores (K, L y M):
+#+LaTeX: \begin{center}
+# [[./figures/fig-t03-dtab2.pdf]]
+#+LaTeX: \end{center}
+
+
+** La curva de demanda de mercado (y II)
+- La curva de demanda de mercado es la suma horizontal de las curvas
+  de demanda individuales.
+#+LaTeX: \begin{center}
+# [[./figures/fig-t03-dtab3.pdf]]
+#+LaTeX: \end{center}
+
+
+** Cambios en el precio (I)
+#+figure: ./figures/fig-t03-d2.pdf 0.45
+
+- La curva de demanda de mercado nos indica qué cantidad quieren
+  comprar los consumidores para cada posible precio.
+- Cuando el precio de mercado es $P_A$ la cantidad demandada es $Q_A$.
+
+
+** Cambios en el precio (II)
+#+figure: ./figures/fig-t03-d3.pdf 0.45
+
+- El precio de mercado ha bajado hasta $P_B$.
+- No ha cambiado ningún otro determinante de la demanda.
+- Ahora la cantidad demandada es $Q_B$.
+
+
+** Cambios en el precio (y III) 
+#+figure: ./figures/fig-t03-d4.pdf 0.5
+
+- Cambios en el precio del bien, /ceteris paribus/, se reflejan en
+  *movimientos a lo largo* de la curva de demanda.
+
+
+** Otros determinantes de la demanda (I)
+- La *renta* de los consumidores:
+  + *Bien normal*: Si la demanda aumenta cuando aumenta la renta.
+  + *Bien inferior*: Si la demanda disminuye cuando aumenta la renta.
+
+
+** Otros determinantes de la demanda (II)
+- Los *precios de otros bienes*:
+  + *Bienes complementarios*: se suelen consumir conjuntamente. La demanda aumenta si baja el precio de un bien complementario.
+  + *Bienes sustitutivos*: son alternativas de consumo. La
+    demanda aumenta si aumenta el precio de un bien sustitutivo.
+
+
+** Otros determinantes de la demanda (y III)
+- El *tamaño del mercado*: cuanto mayor es el número de consumidores
+  mayor es la demanda.
+- Los *gustos* de los consumidores.
+- Las *expectativas* de los consumidores.
+
+
+** Desplazamientos de la demanda (I)
+- Cuando sólo cambia el precio de un bien, se produce un *movimiento a
+  lo largo* de la curva de demanda; la *cantidad demandada* varía.
+- Si cambia otro determinante de la demanda, se produce un
+  *desplazamiento* de la demanda; la *demanda* aumenta o disminuye.
+
+
+** Desplazamientos de la demanda (II)
+#+figure: ./figures/fig-t03-d5.pdf 0.45
+
+- Curva de demanda.
+- Al precio de mercado $P_A$ la cantidad demandada es $Q_A$.
+
+
+** Desplazamientos de la demanda (III)
+#+figure: ./figures/fig-t03-d6.pdf 0.45
+
+- Aumento de la demanda.
+- Al mismo precio, $P_A$, los consumidores demandan una cantidad mayor.
+
+
+** Desplazamientos de la demanda (IV)
+#+figure: ./figures/fig-t03-d7.pdf 0.45
+
+- Otra forma de ver un aumento de la demanda.
+- Los consumidores están dispuestos a pagar un precio mayor por la
+  misma cantidad.
+
+
+** Desplazamientos de la demanda (y V)
+#+figure: ./figures/fig-t03-d8.pdf 0.45
+
+- Aumento de la demanda: \[D \rightarrow D^{+}\]
+- Disminución de la demanda: \[D \rightarrow D^{-}\]
+
+
+* La oferta
+
+
+** Cantidad ofrecida y precio
+- La *cantidad ofrecida* de un bien es aquella que los vendedores
+  pueden y quieren vender en un determinado periodo de tiempo.
+- El precio de bien es uno de los determinantes de la cantidad
+  ofrecida.
+- En un mercado competitivo conforme aumenta el precio del bien la
+  cantidad ofrecida aumenta.
+
+
+** La tabla y la curva de oferta individual
+- Indican qué cantidad desea vender una empresa para cada posible
+  precio.
+- La curva de oferta tiene pendiente positiva.
+#+LaTeX: \begin{center}
+# [[./figures/fig-t03-otab.pdf]]
+#+LaTeX: \end{center}
+
+
+** La curva de oferta de mercado
+- Suma de las cantidades ofrecidas por cada productor para cada
+  posible precio.
+- La curva de oferta de mercado es la suma horizontal de las curvas de
+  oferta individuales.
+
+
+** Cambios en el precio
+
+#+figure: ./figures/fig-t03-s2.pdf 0.45
+
+- Un cambio en el precio, /ceteris paribus/, se refleja en un
+  movimiento a lo largo de la curva de oferta.
+
+
+** Otros determinantes de la oferta (I)
+- *Precio de los factores de producción*: si aumenta el precio de
+  algún factor de producción, los costes aumentan y los beneficios
+  caen. La cantidad ofrecida disminuye cuando aumenta el precio de los
+  factores.
+
+- *Tecnología*: una mejora en la tecnología utilizada para producir el
+  bien reduce los costes de producción, por lo que se eleva la
+  cantidad ofrecida por las empresas.
+
+
+** Otros determinantes de la oferta (y II)
+- *Tamaño del mercado*: cuanto mayor es el número de productores mayor
+  es la oferta.
+- *Expectativas* de los productores.
+
+
+** Desplazamientos de la oferta (I)
+
+#+figure: ./figures/fig-t03-s3.pdf 0.45
+
+- Un aumento de la oferta.
+- Las empresas ofrecen ahora una cantidad mayor al mismo precio.
+
+
+** Desplazamientos de la oferta (y II)
+
+#+figure: ./figures/fig-t03-s4.pdf 0.45
+
+- Aumento de la oferta: \[S \rightarrow S^{+}\]
+- Disminución de la oferta: \[S \rightarrow S^{-}\]
+
+
+* El equilibrio
+
+
+
+** Equilibrio
+- Al *precio de equilibrio* la cantidad demandada coincide con la
+  cantidad ofrecida.
+- El precio de equilibrio *vacía el mercado*:
+  + Los compradores han comprado todo lo que querían comprar.
+  + Los vendedores han vendido todo lo que querían vender.
+
+
+
+** Precio de equilibrio
+#+figure: ./figures/fig-t03-eq1.pdf 0.45
+
+- La intersección de la oferta y la demanda determina el precio y la
+  cantidad de equilibrio.
+  \[ D(P^*) = S(P^*) \]
+
+
+
+** Ejemplo
+#+figure: ./figures/fig-t03-eq2.pdf 0.45
+
+- $Q^d = 10 - P$
+- $Q^o = 5/3 + 2/3 P$
+
+
+
+** Excedente
+#+figure: ./figures/fig-t03-eq3.pdf 0.45
+
+- Cuando el precio es superior al de equilibrio los vendedores no consiguen vender toda la producción.
+
+
+
+** Escasez
+#+figure: ./figures/fig-t03-eq4.pdf 0.45
+
+- Cuando el precio es inferior al de equilibrio la producción es menor que la cantidad que desean comprar los consumidores.
+
+
+
+
+** Puntos de intercambio
+#+figure: ./figures/fig-t03-eq5.pdf 0.45
+
+- Para precios distintos del de equilibrio, la cantidad intercambiada
+  la determina el lado más corto del mercado.
+- Fuera del equilibrio, una de las partes del mercado no está
+  satisfecha.
+
+
+
+** Estabilidad del equilibrio
+
+- En situaciones fuera del equilibrio las fuerzas de la oferta y la demanda tienden a restablecer el equilibrio.
+- Si el precio es demasiado alto, los excedentes presionan el precio a la baja.
+- Si el precio es demasiado bajo, la escasez presiona el precio al
+  alza.
+
+
+
+** Estática comparativa
+- ¿Cómo predecir los efectos del cambio de alguna variable sobre el
+  equilibrio de mercado?
+  1. Determinamos qué curva (o curvas) se ve afectada por el cambio.
+  2. Determinamos en qué dirección se mueve cada curva.
+  3. Comparamos el equilibrio inicial con el nuevo equilibrio.
+
+
+
+** Un aumento de la demanda
+#+figure: ./figures/fig-t03-comp1.pdf 0.45
+
+- El precio de equilibrio aumenta.
+- La cantidad de equilibrio aumenta.
+
+
+
+** Una disminución de la oferta
+#+figure: ./figures/fig-t03-comp2.pdf 0.45
+
+- El precio de equilibrio aumenta.
+- La cantidad de equilibrio disminuye.
+
+
+
+** Desplazamientos de ambas curvas (I)
+#+figure: ./figures/fig-t03-comp3.pdf 0.45
+
+- Gran aumento de la demanda.
+- Pequeña disminución de la oferta.
+- El precio y la cantidad de equilibrio aumentan.
+ 
+
+
+** Desplazamientos de ambas curvas (II)
+#+figure: ./figures/fig-t03-comp4.pdf 0.45
+
+- Pequeño aumento de la demanda.
+- Gran disminución de la oferta.
+- El precio de equilibrio aumenta, pero la cantidad disminuye.
+
+
+
+** Desplazamientos de ambas curvas (y III)
+- Cuando las dos curvas se desplazan simultáneamente, los resultados
+  dependen de la magnitud de los cambios de ambas curvas.
+- Si no conocemos más detalles, sólo podemos predecir la dirección del
+  cambio de una de las variables.
+#+LaTeX: \begin{center}
+# [[./figures/tab-t03-comp.pdf]]
+#+LaTeX: \end{center}
+
+
+* Funciones del sistema de precios
+
+
+** 
+- /The Undercover Economist/, Tim Hardford:
+#+BEGIN_EXPORT LaTeX
+  \begin{tightcenter}\footnotesize%
+  \begin{minipage}{0.75\linewidth}\setlength{\parindent}{0.5em}
+    \enquote{Economist Paul Seabright remids us of the pleas of the Soviet official trying to comprehend the Western system: \enquote{Tell me ... who is in charge of the supply of bread to the population of London?} The question is comical, but the answer ---nobody--- is dizzying.}
+  \end{minipage}
+  \end{tightcenter}
+#+END_EXPORT
+
+
+** 
+- [[http://www.econlib.org/library/Essays/hykKnw1.html]["The Use of Knowledge in Society"]], Friedrich A. Hayek:
+#+BEGIN_EXPORT LaTeX
+  \begin{tightcenter}\footnotesize%
+    \begin{minipage}{0.75\linewidth}\setlength{\parindent}{0.5em}
+      \enquote{The mere fact that there is one price for any commodity
+        [...]  brings about the solution which (it is just conceptually
+        possible) might have been arrived at by one single mind
+        possessing all the information which is in fact dispersed among
+        all the people involved in the process.
+
+        We must look at the price system as such a mechanism for
+        communicating information if we want to understand its real
+        function [...]}
+    \end{minipage}
+  \end{tightcenter}
+#+END_EXPORT
+
+
+** 
+- /Power of the market -- The pencil/, Milton Friedman: 
+  + [[http://tinyurl.com/p4gujj9][Versión original]]
+  + [[http://tinyurl.com/ocdt7od][Versión doblada al español]]
+
+
+** 
+- /Principles of Economics/, Gregory Mankiw:
+#+BEGIN_EXPORT LaTeX
+  \begin{tightcenter}\footnotesize%
+    \begin{minipage}{0.75\linewidth}\setlength{\parindent}{0.5em}
+      \enquote{Economies are enormous groups of people engaged in a
+      multitude of interdependent activities. What prevents
+      decentralized decision making from degenerating into chaos? What
+      coordinates the actions of the millions of people with their
+      varying abilities and desires? What ensures that what needs to
+      be done is in fact done? The answer, in a word, is \emph{prices}.}
+    \end{minipage}
+  \end{tightcenter}
+#+END_EXPORT
+
+
+

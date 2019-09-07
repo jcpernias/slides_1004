@@ -1,0 +1,181 @@
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Intervención en mercados competitivos
+
+#+LATEX_CLASS: unit
+#+LATEX_HEADER: \newcommand*{\Pmax}{P_{\max}}
+#+LATEX_HEADER: \newcommand*{\Pmin}{P_{\min}}
+
+#+MATS: bib
+#+begin_bibbox
+- Mankiw: ::  /Principios de Economía/. Capítulo 6.
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 2. 
+#+end_bibbox
+
+
+* Controles de precios
+
+
+** Regulación de precios
+- El Estado impone por ley límites a los precios de determinados
+  bienes.
+- El Estado considera que el precio de mercado perjudica o a los compradores o a los vendedores.
+- ¿Cuáles son las consecuencias de los controles de precios en *un
+  mercado competitivo*?
+
+
+** Precio máximo (I)
+
+#+figure: ./figures/fig-t05-pmax1.pdf 0.48
+
+- El Estado trata de reducir el precio que pagan los compradores.
+- Al establecer un *precio máximo* se prohíben precios superiores a un
+  determinado valor. Por tanto, 
+  \[ P \leq \Pmax \]
+
+
+** Precio máximo (II)
+
+#+figure: ./figures/fig-t05-pmax2.pdf 0.48
+
+- Si el precio máximo es superior al de equilibrio, la regulación no tiene efecto.
+
+
+** Precio máximo (y III)
+
+#+figure: ./figures/fig-t05-pmax3.pdf 0.48
+
+- Cuando el precio máximo es inferior al de equilibrio hay escasez en el mercado.
+- Los compradores pagan un precio más bajo por el bien.
+- Pero la producción no basta para satisfacer la demanda.
+
+
+** Precio mínimo  (I)
+
+#+figure: ./figures/fig-t05-pmin1.pdf 0.48
+
+- El Estado trata de elevar el precio que reciben los vendedores.
+- Al establecer un *precio mínimo* se prohíben precios inferiores a un
+  determinado valor. Por tanto,
+  \[ P \geq \Pmin \]
+
+
+** Precio mínimo (II)
+
+#+figure: ./figures/fig-t05-pmin2.pdf 0.48
+
+- Si el precio mínimo es inferior al de equilibrio, la regulación no tiene efecto.
+
+
+** Precio mínimo (y III)
+
+#+figure: ./figures/fig-t05-pmin3.pdf 0.48
+
+- Cuando el precio mínimo es superior al de equilibrio hay excedentes en el mercado.
+- Los vendedores cobran un precio más alto por el bien.
+- Pero muchos vendedores no encuentran quien les compre su producción.
+
+
+** Efectos de los controles de precios
+- En *un mercado competitivo* los controles de precios tienden a perjudicar a aquellos grupos a los que se pretendía ayudar.
+- Otro tipo de regulaciones pueden conseguir el efecto pretendido sin distorsionar el funcionamiento del mercados.
+- En *mercados no competitivos* los controles de precios sí pueden ser efectivos.
+
+
+* Impuestos
+
+
+** Impuestos sobre las ventas
+- El Estado fija un impuesto de $t$ euros por cada unidad vendida.
+- ¿Cómo afecta este impuesto a *un mercado competitivo*?
+- ¿Cómo se distribuye la carga del impuesto entre compradores y
+  vendedores?
+
+
+** Impuesto a los vendedores (I)
+
+#+figure: ./figures/fig-t05-st1.pdf 0.45
+
+ - El impuesto lo recaudan los vendedores.
+ - Además de pagar los costes de producción los vendedores tienen que
+   pagar al Estado $t$ euros por unidad vendida.
+ - La oferta disminuye.
+
+
+** Impuesto a los vendedores (II)
+
+#+figure: ./figures/fig-t05-st2.pdf 0.48
+ 
+- En el nuevo equilibrio la cantidad vendida es inferior.
+- El precio aumenta, pero *en menor cuantía que el impuesto*.
+
+
+** Impuesto a los vendedores (y III)
+
+#+figure: ./figures/fig-t05-st3.pdf 0.48
+ 
+- La carga del impuesto se reparte entre compradores y vendedores.
+- Los compradores pagan un precio superior.
+- Los vendedores perciben una cantidad menor por cada unidad, $P_1 -
+  t$.
+
+
+** Impuesto a los compradores (I)
+
+#+figure: ./figures/fig-t05-bt1.pdf 0.45
+
+- El impuesto lo recaudan los compradores.
+- Además de pagar el precio los compradores pagan el impuesto de $t$
+  euros por cada unidad comprada.
+- La demanda disminuye.
+
+
+** Impuesto a los compradores (II)
+
+#+figure: ./figures/fig-t05-bt2.pdf 0.45
+
+- En el nuevo equilibrio la cantidad vendida es inferior.
+- El precio que perciben los vendedores disminuye, pero *en menor
+  cuantía que el impuesto*.
+
+
+** Impuesto a los compradores (y III)
+
+#+figure: ./figures/fig-t05-bt3.pdf 0.48
+
+- La carga del impuesto se reparte entre compradores y vendedores.
+- Los compradores pagan por cada unidad una cantidad mayor, $P_1 + t$.
+- Los vendedores perciben un precio inferior.
+
+
+** Incidencia de los impuestos (I)
+
+#+figure: ./figures/fig-t05-inc1.pdf 0.45
+- Los efectos del impuesto son *independientes de quién recaude el impuesto*.
+- El reparto de la carga del impuesto entre compradores y vendedores
+  depende de las elasticidades de la demanda y de la oferta.
+
+
+** Incidencia de los impuestos (II)
+
+#+figure: ./figures/fig-t05-inc2.pdf 0.45
+
+- Si la oferta es relativamente más inelástica que la demanda, los
+  productores soportan la mayor parte de la carga del impuesto.
+
+
+** Incidencia de los impuestos (y III)
+
+#+figure: ./figures/fig-t05-inc3.pdf 0.45
+
+- Si la demanda es relativamente más inelástica que la oferta, los
+  consumidores soportan la mayor parte de la carga del impuesto.
+
+
+** Efectos de los impuestos
+ - Al introducir un impuesto sobre las ventas en *un mercado
+   competitivo*:
+   + La cantidad intercambiada disminuye.
+   + La carga del impuesto se reparte entre compradores y vendedores.
+   + La incidencia del impuesto es mayor en el lado más inelástico del
+     mercado.

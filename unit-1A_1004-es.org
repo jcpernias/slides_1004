@@ -1,0 +1,143 @@
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Principios básicos de la organización económica
+
+#+LATEX_CLASS: unit
+
+#+MATS: bib
+#+begin_bibbox
+- Mankiw: ::  /Principios de Economía/. Capítulos 1 y 2.
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 1
+#+end_bibbox
+
+
+* Introducción
+
+
+** ¿Qué es economía?
+
+- El estudio de las *decisiones* que toman los agentes económicos en
+  un entorno de *escasez*.
+
+  
+** Economía positiva y economía normativa
+
+- *Economía positiva*: ¿Cómo /funciona/ la economía?
+
+- *Economía normativa*: ¿Cómo /debería funcionar/ la economía?
+ 
+
+** Microeconomía y macroeconomía
+
+- La *microeconomía* estudia cómo toman decisiones e interaccionan los
+  *agentes económicos*, las *economías domésticas* y las *empresas*, en
+  los *mercados*.
+
+- La *macroeconomía* se centra en aspectos referidos al sistema
+  económico en su conjunto: paro, inflación, crecimiento económico,
+  etc.
+
+
+** Problemas económicos fundamentales
+
+- ¿*Qué* producir?
+
+- ¿*Cómo* producir?
+
+- ¿*Para quién* se produce?
+
+
+** Pensar como un economista
+
+- Considerar todas las *alternativas*.
+
+- Evaluar los *costes* y los *beneficios* de cada alternativa.
+
+- Los *incentivos* afectan al comportamiento de los agentes.
+
+- Considerar cómo *interaccionan* los diferentes agentes.
+
+
+** Costes y Beneficios
+
+- No todos los costes y beneficios corresponden a pagos monetarios.
+
+- *Coste de oportunidad*.
+
+
+* Modelos económicos
+
+
+** Modelos
+
+- Un *modelo* es una representación simplificada de una parte de la
+  realidad.
+
+
+** Ejemplo: Plano de la UJI
+
+#+ATTR_LATEX: :options scale=0.35
+#+MATS: figcol UJI.png 0.6
+
+- ¿Que hace útil a un modelo?
+
+  + Selección.
+
+  + Simplificación.
+
+
+** Modelos y realidad (I)
+
+- /La traición de las imágenes/, René Magritte, 1928--1929.
+
+#+ATTR_LATEX: :options scale=0.45
+#+MATS: figcol magritte.jpg 0.55
+
+#+begin_tightquote
+  "The famous pipe. How people reproached me for it! And yet, could
+  you stuff my pipe? No, it's just a representation, is it not? So
+  if I had written on my picture 'This is a pipe,' I'd have been
+  lying!"
+#+end_tightquote
+
+
+** Modelos y realidad (II)
+
+- [[https://es.wikipedia.org/wiki/Joan_Robinson][Joan Robinson]]
+
+#+ATTR_LATEX: :options scale=0.3
+#+MATS: figcol joan_robinson_small.png 0.35
+
+#+begin_tightquote
+  "A model which took account of all the variation of reality would be
+  of no more use than a map at the scale of one to one."
+#+end_tightquote
+
+
+** Modelos y realidad (III)
+
+- [[https://es.wikipedia.org/wiki/Jorge_Luis_Borges][Jorge Luis Borges]]
+
+#+ATTR_LATEX: :options scale=0.2
+#+MATS: figcol jorge_luis_borges.jpg 0.35
+
+- [[https://youtu.be/zwDA3GmcwJU][Del rigor en la ciencia]]
+
+
+** Modelos y realidad (y IV)
+
+- Si un modelo produce predicciones correctas, el realismo de sus
+  supuestos no es tan importante.
+
+- Incluso si no produce predicciones correctas, un modelo puede
+  ofrecer orientaciones útiles para mejorar la toma de decisiones.
+
+
+** Modelos económicos
+
+- *Comportamiento racional*.
+
+- *Equilibrio*.
+
+- *Análisis marginal*.
+

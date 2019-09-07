@@ -1,0 +1,211 @@
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: La frontera de posibilidades de producción
+
+#+LATEX_CLASS: unit
+#+LATEX_HEADER: \newcommand*{\translatevar}[2]{\ifdefined\englishversion #1\else #2\fi}
+#+LATEX_HEADER: \newcommand*{\Fvar}{\translatevar{F}{P}} 
+
+#+MATS: bib
+#+begin_bibbox
+- Mankiw: ::  /Principios de Economía/. Capítulos 1 y 2.
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 1
+#+end_bibbox
+
+
+* La producción
+
+
+** La economía de Robinson Crusoe
+- Robinson acaba de alcanzar una isla tras naufragar su barco.
+- Sólo puede trabajar 8 horas al día recolectando cocos o pescando.
+- Dedica el resto del tiempo a recuperarse y a escribir un libro.
+
+
+** Producción
+- Podemos describir la capacidad productiva de Crusoe mediante las
+  siguientes tablas:
+#+LaTeX: \begin{tightcenter}
+# [[./figures/tab-t02-fpp1.pdf]]
+#+LaTeX: \end{tightcenter}
+
+
+** Variables
+
+#+MATS: col 0.5
+- Producción de cocos:
+  + $C$: kg de cocos.
+  + $L_C$: horas cogiendo cocos.
+
+#+MATS: col 0.5
+- Producción de pescado:
+  + $\Fvar$: kg de pescado.
+  + $L_{\Fvar}$: horas pescando.
+
+
+** Representación gráfica
+
+#+MATS: col 0.5
+- Producción de cocos:
+  #+LaTeX: \vspace*{1ex}
+
+  # [[./figures/fig-t02-prod.pdf]]
+
+#+MATS: col 0.5
+- Producción de pescado:
+  #+LaTeX: \vspace*{1ex}
+
+  # ./figures/fig-t02-prod2.pdf
+
+* La frontera de posibilidades de producción
+
+
+** Opciones de producción
+- Robinson puede decidir como reparte las 8 horas de trabajo entre las
+  diferentes actividades.
+#+LaTeX: \vspace*{1ex}
+#+LaTeX: \begin{tightcenter}
+# [[./figures/tab-t02-fpp2.pdf]]
+#+LaTeX: \end{tightcenter}
+
+
+** Frontera de Posibilidades de Producción(I)
+# #+figure: ./figures/fig-t02-fpp1.pdf 0.45
+
+- La *frontera de posibilidades de producción* (FPP) es el conjunto de
+  las diferentes opciones de producción donde se utilizan *todos* los
+  factores de producción.
+
+
+** Frontera de Posibilidades de Producción(II)
+# #+figure: ./figures/fig-t02-fpp2a.pdf 0.45
+
+- La FPP describe las opciones de producción de una economía.
+- La FPP no nos indica qué opción se elegirá.
+
+
+** Frontera de Posibilidades de Producción(y III)
+#+figure: ./figures/fig-t02-fpp1a.pdf 0.45
+
+- Los puntos de corte de la FPP con los ejes muestran las producciones
+  máximas de cada bien.
+
+
+** Opciones accesibles e  inaccesibles
+
+#+figure: ./figures/fig-t02-fpp2.pdf 0.45
+
+- $A$ y $B$ son *opciones factibles*.
+- $I$ es una *opción inaccesible*.
+
+
+** Eficiencia en la producción(I)
+
+#+figure: ./figures/fig-t02-fpp3a.pdf 0.45
+
+- La opción $A$ no es eficiente: es posible aumentar la producción de
+  pescado sin reducir la producción de cocos.
+- La ineficiencia sucede cuando no se usan todos los factores o se
+  asignan inadecuadamente.
+
+
+** Eficiencia en la producción(y II)
+
+#+figure: ./figures/fig-t02-fpp3.pdf 0.45
+
+- $B$ es una opción de producción *eficiente*.
+- *Eficiencia*: no es posible producir más de un bien manteniendo
+  inalterada la producción del otro bien.
+
+
+* El coste de oportunidad
+
+
+** Coste de oportunidad (I)
+
+#+figure: ./figures/fig-t02-fpp4.pdf 0.45
+
+- Partiendo de un punto eficiente, sólo es posible aumentar la
+  producción de un bien sacrificando parte de la producción de otros
+  bienes.
+
+
+** Coste de oportunidad (II)
+
+#+figure: ./figures/fig-t02-fpp5.pdf 0.5
+
+- $\Delta \Fvar = 2.2$ kg de pescado.
+- $\Delta C = -4.25$ kg de cocos.
+
+
+** Coste de oportunidad (III)
+
+#+figure: ./figures/fig-t02-fpp5.pdf 0.45
+
+- Coste de oportunidad:
+  \[ \left|\frac{\Delta C}{\Delta \Fvar}\right| = 1.93 \]
+- Pasar de $B$ a $D$ supone renunciar a $1.93$ kg de cocos por
+  cada kg adicional de pescado.
+
+
+** Coste de oportunidad (y IV)
+- En nuestro ejemplo el coste de oportunidad de producir una unidad
+  más de pescado es *creciente*.
+#+LaTeX: \vspace*{1ex}
+#+LaTeX: \begin{tightcenter}
+# [[./figures/tab-t02-fpp3.pdf]]
+#+LaTeX: \end{tightcenter}
+
+
+** Pendiente y coste de oportunidad
+
+#+figure: ./figures/fig-t02-fpp6.pdf 0.5
+
+- La *pendiente* negativa de la frontera de posibilidades de
+  producción refleja el coste de oportunidad de producir más pescado.
+
+
+** Concavidad y costes de oportunidad crecientes
+
+#+figure: ./figures/fig-t02-fpp7.pdf 0.5
+
+- La *concavidad* de la frontera de posibilidades de producción
+  refleja el coste de oportunidad *creciente* de producir más pescado.
+
+
+* Aplicaciones 
+
+
+** Crecimiento económico (I)
+
+- Con la frontera de posibilidades de producción podemos describir los
+  efectos del *crecimiento económico*.
+- El crecimiento económico puede deberse a una mayor cantidad de
+  factores de producción, mejoras en la calidad de los factores o
+  avances tecnológicos.
+
+
+** Crecimiento económico (II)
+
+#+figure: ./figures/fig-t02-gr2.pdf 0.45
+
+- El crecimiento económico hace que la frontera de posibilidades de
+  producción se *desplace* hacia arriba y a la derecha.
+
+
+** Crecimiento económico (III)
+
+#+figure: ./figures/fig-t02-gr3.pdf 0.45
+
+- Una mejora tecnológica en los dos sectores.
+- Como consecuencia la producción de todos los sectores puede aumentar.
+
+
+** Crecimiento económico (y IV)
+
+#+figure: ./figures/fig-t02-gr1.pdf 0.45
+
+- Una mejora tecnológica que afecta *sólo* a la producción de pescado.
+- El progreso técnico permite obtener aumentos en la producción de
+  *todos* los bienes.
+

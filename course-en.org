@@ -1,0 +1,15 @@
+#+STARTUP: indent hidestars content
+
+#+AUTHOR: Introductory Microeconomics \\
+#+AUTHOR: AE / EC / FC 1004
+#+DATE: Academic year 2018--2019 
+
+#+OPTIONS: toc:nil ':t ^:{} num:1 H:2 title:nil
+
+#+LANGUAGE: en
+
+#+LATEX_CLASS_OPTIONS: [English]
+
+#+LATEX_HEADER: \newcommand*{\LANG}{en}
+
+#+SETUPFILE: ./paths.org

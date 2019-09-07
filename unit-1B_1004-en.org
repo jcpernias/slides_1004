@@ -1,0 +1,216 @@
+#+SETUPFILE: ./course-en.org
+
+#+TITLE: The production possibilities frontier
+
+#+LATEX_CLASS: unit
+#+LATEX_HEADER: \newcommand*{\translatevar}[2]{\ifdefined\englishversion #1\else #2\fi}
+#+LATEX_HEADER: \newcommand*{\Fvar}{\translatevar{F}{P}} 
+
+
+
+#+MATS: bib
+#+begin_bibbox
+- Mankiw: ::  /Principles of Economics/. Chapters 1 and 2.
+- Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 1
+#+end_bibbox
+
+
+* Production
+
+
+** Robinson Crusoe’s economics
+- Robinson has just reached an island, surviving in that way to the
+  sinking of his boat.
+- In his current state and with the little he has been able to rescue
+  from the sinking he can only work 8 hours a day collecting coconuts
+  or fishing.
+- He dedicates the rest of the time to recover and to write a book.
+
+
+** Production
+- We can represent some of the options Robinson has by the following
+  tables:
+
+# #+MATS: fig unit02-tab-fpp1*.pdf
+
+
+** Variables
+
+#+MATS: col 0.57
+- Coconut production:
+  + $C$: kg of coconuts.
+  + $L_C$: hours collecting coconuts.
+
+#+MATS: col 0.43
+- Fish production:
+  + $\Fvar$: kg de fish.
+  + $L_{\Fvar}$: hours fishing.
+
+
+
+** Graphical representation
+# TODO: they are not aligned
+
+#+MATS: col 0.5
+- Coconut production:
+
+# #+MATS: fig unit02-fig-prod*.pdf
+
+#+MATS: col 0.5
+- Fish production:
+
+# #+MATS: fig unit02-fig-prod2*.pdf
+
+
+* The production possibilities frontier
+
+
+** Production options
+- Robinson can decide how to distribute the 8 hours of labor between
+  the different activities.
+
+# #+MATS: fig tab-t02-fpp2*.pdf
+
+
+** The Production Possibilities Frontier (I)
+#+figure: ./figures/fig-t02-fpp1.pdf 0.45
+
+- The *production possibilities frontier* is the set of different
+  production options where *all* the production factors are used.
+
+
+** The Production Possibilities Frontier (II)
+#+figure: ./figures/fig-t02-fpp2a.pdf 0.45
+
+- Describes the options Robinson has, but does not tell us which one
+  he will choose.
+
+
+** The Production Possibilities Frontier (and III)
+#+figure: ./figures/fig-t02-fpp1a.pdf 0.45
+
+- The intersection points with the axes show the maximum production of
+  each good.
+
+
+** Feasible and infeasible options
+
+#+figure: ./figures/fig-t02-fpp2.pdf 0.45
+
+- $A$ and $B$ are *feasible options*.
+- $I$ is an *inaccessible option*.
+
+
+** Efficiency in production (I)
+
+#+figure: ./figures/fig-t02-fpp3a.pdf 0.45
+
+- Option $A$ is feasible but inefficient: it is possible to increase
+  fish production without reducing coconuts production.
+- Ineficiency exits when there unemployed resources or their
+  allocation is inadequate.
+
+
+** Efficiency in production (and II)
+
+#+figure: ./figures/fig-t02-fpp3.pdf 0.45
+
+- $B$ is an *efficient* production option. 
+- *Efficiency*: it is not possible to produce more of a good without
+  changing the production of the other good.
+
+
+* The opportunity cost
+
+
+** Opportunity cost (I)
+
+#+figure: ./figures/fig-t02-fpp4.pdf 0.45
+
+- Starting from an efficient point, it is only possible to increase
+  the production of a good giving up part of the production of other
+  goods.
+
+
+** Opportunity cost (II)
+
+#+figure: ./figures/fig-t02-fpp5.pdf 0.5
+
+- $\Delta \Fvar = 2.2$ kg of fish.
+- $\Delta C = -4.25$ kg of coconuts.
+
+
+** Opportunity cost (III)
+
+#+figure: ./figures/fig-t02-fpp5.pdf 0.45
+
+- Opportunity cost:
+  \[ \left|\frac{\Delta C}{\Delta \Fvar}\right| = 1.93 \]
+- Moving from $B$ to $D$ implies giving up $1.93$ kg of coconuts by
+  each additional kg of fish.
+
+
+** Opportunity cost (and IV)
+- In our example the opportunity cost of producing one additional unit
+  of fish is *increasing*.
+#+LaTeX: \vspace*{1ex}
+#+LaTeX: \begin{tightcenter}
+# [[./figures/tab-t02-fpp3.pdf]]
+#+LaTeX: \end{tightcenter}
+
+
+** Slope and opportunity cost
+
+#+figure: ./figures/fig-t02-fpp6.pdf 0.5
+
+- The negative *slope* of the production possibilities frontier shows
+  the opportunity cost of producing more fish.
+
+
+** Concavity and increasing opportunity costs 
+
+#+figure: ./figures/fig-t02-fpp7.pdf 0.5
+
+- Production possibilities frontier *concavity* shows the *increasing*
+  opportunity cost of producing more fish.
+
+
+* Applications 
+
+
+** Economic growth (I)
+
+- With the production possibilities frontier we can describe the
+  effects of *economic growth*.
+- Economic growth may be due to a greater amount of production
+  factors, factors quality improvements or technological improvements.
+
+
+** Economic growth (II)
+
+#+figure: ./figures/fig-t02-gr2.pdf 0.45
+
+- Economic growth makes the production possibilities frontier *shift*
+  upwards and to the right.
+
+
+** Economic growth (III)
+
+#+figure: ./figures/fig-t02-gr3.pdf 0.45
+
+- A technological improvement in both sectors.
+
+- As a consequence the production of all sectors can increase.
+
+
+** Economic growth (and IV)
+
+#+figure: ./figures/fig-t02-gr1.pdf 0.45
+
+- A technological improvement which affects *just* the fish
+  production.
+
+- Technical progress allows to obtain increases in the production of
+  *all* the goods.
+
+

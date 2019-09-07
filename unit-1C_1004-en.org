@@ -1,0 +1,384 @@
+#+SETUPFILE: ./course-en.org
+
+#+TITLE: Competitive markets
+
+#+LATEX_CLASS: unit
+
+
+#+MATS: bib
+#+begin_bibbox
+- Mankiw: ::  /Principles of Economics/. Chapter 4.
+- Pindyck y Rubinfeld: :: /Microeconomics/. Chapters 1 and 2. 
+#+end_bibbox
+
+
+* Markets and competition
+
+
+** Markets
+- A market is the set of buyers and sellers of a particular good or service.
+
+
+** Competitive markets
+- Large number of *buyers*.
+- Large number of *sellers*.
+- *Absence of market power*.
+
+
+** Perfect competition model
+- Assumptions:
+  + Homogeneous product.
+  + Absence of market power.
+  + Perfect information.
+- Both buyers and sellers are *price-takers*.
+
+
+* Demand
+
+
+** Quantity demanded and price
+- The *quantity demanded* of a good is the number of units of that
+  good consumers want and can purchase in a certain period of time.
+- The *price* of a good plays a central role when determining the
+  quantity demanded.
+
+
+** The law of demand
+- *Law of demand*: /ceteris paribus/, when the price of a good
+  increases, the quantity demanded decreases; when the price
+  decreases, the quantity increases.
+
+
+** The table and curve of individual demand
+- The quantity a consumer wants to buy at each possible price.
+- The demand curve has negative slope.
+#+LaTeX: \begin{center}
+# [[./figures/fig-t03-dtab.pdf]]
+#+LaTeX: \end{center}
+
+
+** Market demand curve (I)
+- For each possible price we add the quantities demanded by each one
+  of the consumers.
+- Demand in a market consisting of three consumers (K, L and M):
+#+LaTeX: \begin{center}
+# [[./figures/fig-t03-dtab2.pdf]]
+#+LaTeX: \end{center}
+
+
+** Market demand curve (and II)
+- The market demand curve is the horizontal sum of the individual demand curves.
+#+LaTeX: \begin{center}
+# [[./figures/fig-t03-dtab3.pdf]]
+#+LaTeX: \end{center}
+
+
+** Variations in the price (I)
+#+figure: ./figures/fig-t03-d2.pdf 0.45
+
+- The market demand curve tells us the quantity consumers want to
+  purchase at each possible price.
+- When the market price is $P_A$ the quantity demanded is $Q_A$.
+
+
+** Variations in the price (II)
+#+figure: ./figures/fig-t03-d3.pdf 0.45
+
+- The market price has fallen to $P_B$.
+- No other determinant of demand has changed.
+- Now the quantity demanded is $Q_B$.
+
+
+** Variations in the price (and III) 
+#+figure: ./figures/fig-t03-d4.pdf 0.5
+
+- Variations in the price of the good, /ceteris paribus/, are
+  reflected in *movements along* the demand curve.
+
+
+** Other determinants of demand (I)
+- The *income* of consumers:
+  + *Normal good*: If demand increases when income increases.
+  + *Inferior good*: If demand decreases when income increases.
+
+
+** Other determinants of demand (II)
+- *Prices of other goods*:
+  + *Complementary goods*: they are usually consumed together. Demand
+    increases if the price of a complementary good falls.
+  + *Substitute goods*: consumption alternatives. Demand increases if the
+    price of a substitute good increases.
+    
+
+** Other determinants of demand (and III)
+- *Market size*: the higher is the amount of consumers, the higher is the
+  demand.
+- Consumers *tastes and preferences*.
+- Consumers *expectations*.
+
+
+** Shifts of demand (I)
+- When the only change is the price of a good, there is a *movement
+  along* the demand curve; the *quantity demanded* varies.
+- If another determinant of demand changes, there is a *shift* of
+  demand; *demand* increases or decreases.
+
+
+** Shifts of demand (II)
+#+figure: ./figures/fig-t03-d5.pdf 0.45
+
+- Demand curve.
+- At the market price $P_A$ the quantity demanded is $Q_A$.
+
+
+** Shifts of demand (III)
+#+figure: ./figures/fig-t03-d6.pdf 0.45
+
+- Increase in demand.
+- At the same price, $P_A$, consumers demand a higher quantity.
+
+
+** Shifts of demand (IV)
+#+figure: ./figures/fig-t03-d7.pdf 0.45
+
+- Another way of analysing an increase of demand.
+- Consumers are willing to pay more for the same quantity.
+
+
+** Shifts of demand (and V)
+#+figure: ./figures/fig-t03-d8.pdf 0.45
+
+- Increase in demand: \[D \rightarrow D^{+}\]
+- Decrease in demand: \[D \rightarrow D^{-}\]
+
+
+* Supply
+
+
+** Quantity supplied and price
+- The *quantity supplied* of a good is the one sellers can and want to
+  sell in a certain period of time.
+- The price of a good is one of the determinants of the quantity
+  supplied.
+- In a competitive market, as the price of the good increases the
+  quantity supplied increases.
+
+
+** The table and curve of individual supply
+- Indicate the quantity a firm wants to sell at each possible price.
+- The supply curve has positive slope.
+#+LaTeX: \begin{center}
+# [[./figures/fig-t03-otab.pdf]]
+#+LaTeX: \end{center}
+
+
+** Market supply curve
+- Sum of the quantity supplied by each producer at each possible
+  price.
+- The market supply curve is the horizontal sum of the individual
+  supply curves.
+
+
+** Variations in the price
+
+#+figure: ./figures/fig-t03-s2.pdf 0.45
+
+- A variation in the price, /ceteris paribus/, is reflected in a
+  movement along the supply curve.
+
+
+** Other determinants of supply (I)
+- *Price of the factors of production*: if the price of a factor of
+  production increases, the costs increase and the benefits fall. The
+  quantity supplied decreases when the price of the factors increases.
+
+- *Technology*: an improvement in the technology used to produce the
+  good reduces production costs, so that the quantity supplied by
+  firms increases.
+
+
+** Other determinants of supply (and II)
+- *Market size*: the higher is the number of producers, the higher is
+  the supply.
+- Producers *expectations*.
+
+
+** Shifts of supply (I)
+
+#+figure: ./figures/fig-t03-s3.pdf 0.45
+
+- An increase in supply.
+- Firms offer now a higher quantity at the same price.
+
+
+** Shifts of supply (and II)
+
+#+figure: ./figures/fig-t03-s4.pdf 0.45
+
+- Increase in supply: \[S \rightarrow S^{+}\]
+- Decrease in supply: \[S \rightarrow S^{-}\]
+
+
+* Equilibrium
+
+
+** Equilibrium
+- At the *equilibrium price* the quantity demanded coincides with the quantity supplied.
+- The equilibrium price *empties the market*:
+  + Buyers have bought everything they wanted to buy.
+  + Sellers have sold everything they wanted to sell.
+
+
+** Equilibrium price
+#+figure: ./figures/fig-t03-eq1.pdf 0.45
+
+- The intersection between supply and demand determines the equilibrium price and quantity.
+  \[ D(P^*) = S(P^*) \]
+
+
+** Example
+#+figure: ./figures/fig-t03-eq2.pdf 0.45
+
+- $Q^d = 10 - P$
+- $Q^s = 5/3 + 2/3 P$
+
+
+** Surplus
+#+figure: ./figures/fig-t03-eq3.pdf 0.45
+
+-  When the price exceeds the equilibrium price, sellers do not sell all the production.
+
+
+** Shortage
+#+figure: ./figures/fig-t03-eq4.pdf 0.45
+
+- When the price is below the equilibrium price, production is lower than the quantity consumers are willing to buy.
+
+
+
+** Exchange points
+#+figure: ./figures/fig-t03-eq5.pdf 0.45
+
+- For non-equilibrium prices, the quantity exchanged is determined by the
+  shorter side of the market.
+- Out of the equilibrium, one of the parts of the market is not
+  satisfied.
+
+
+** Equilibrium stability
+
+- In situations out of equilibrium the forces of supply and demand tend
+  to re-establish the equilibrium.
+- If the price is too high, the surplus pushes the price down.
+- If the price is too low, the shortage pushes the price up.
+
+
+** Comparative statics
+- How to predict the effects of the change in a variable on the market
+  equilibrium?
+  1. We determine which curve (or curves) is affected by the change.
+  2. We determine in which direction each curve moves.
+  3. We compare the initial equilibrium with the new one.
+
+
+** An increase in demand
+#+figure: ./figures/fig-t03-comp1.pdf 0.45
+
+- The equilibrium price increases.
+- The equilibrium quantity increases.
+
+
+** A decrease in supply
+#+figure: ./figures/fig-t03-comp2.pdf 0.45
+
+- The equilibrium price increases.
+- The equilibrium quantity decreases.
+
+
+** Shifts in both curves (I)
+#+figure: ./figures/fig-t03-comp3.pdf 0.45
+
+- Large increase in demand.
+- Small decrease in supply.
+- Equilibrium price and quantity increase.
+ 
+
+** Shifts in both curves (II)
+#+figure: ./figures/fig-t03-comp4.pdf 0.45
+
+- Small increase in demand.
+- Large decrease in supply.
+- Equilibrium price increases, but quantity decreases.
+
+
+** Shifts in both curves (and III)
+- When both curves shift simultaneously, the results depend on the
+  magnitude of the changes in both curves.
+- If we do not have more details, we can just predict the direction of
+  the change in one of the variables.
+#+LaTeX: \begin{center}
+# [[./figures/tab-t03-comp.pdf]]
+#+LaTeX: \end{center}
+
+
+* Price system functions
+
+
+** 
+- /The Undercover Economist/, Tim Hardford:
+#+BEGIN_EXPORT LaTeX
+\begin{tightcenter}\footnotesize%
+\begin{minipage}{0.75\linewidth}\setlength{\parindent}{0.5em}
+  \enquote{Economist Paul Seabright reminds us of the pleas of the
+    Soviet official trying to comprehend the Western system:
+    \enquote{Tell me ... who is in charge of the supply of bread to
+      the population of London?} The question is comical, but the
+    answer ---nobody--- is dizzying.}
+\end{minipage}
+\end{tightcenter}
+#+END_EXPORT
+
+
+** 
+- [[http://www.econlib.org/library/Essays/hykKnw1.html]["The Use of Knowledge in Society"]], Friedrich A. Hayek:
+#+BEGIN_EXPORT LaTeX
+  \begin{tightcenter}\footnotesize%
+    \begin{minipage}{0.75\linewidth}\setlength{\parindent}{0.5em}
+      \enquote{The mere fact that there is one price for any commodity
+        [...]  brings about the solution which (it is just conceptually
+        possible) might have been arrived at by one single mind
+        possessing all the information which is in fact dispersed among
+        all the people involved in the process.
+
+        We must look at the price system as such a mechanism for
+        communicating information if we want to understand its real
+        function [...]}
+    \end{minipage}
+  \end{tightcenter}
+#+END_EXPORT
+
+
+** 
+- /Power of the market -- The pencil/, Milton Friedman: 
+  + [[http://tinyurl.com/p4gujj9][Original version]]
+  + [[http://tinyurl.com/ocdt7od][Spanish dubbed version]]
+
+
+** 
+- /Principles of Economics/, Gregory Mankiw:
+#+BEGIN_EXPORT LaTeX
+  \begin{tightcenter}\footnotesize%
+    \begin{minipage}{0.75\linewidth}\setlength{\parindent}{0.5em}
+      \enquote{Economies are enormous groups of people engaged in a
+      multitude of interdependent activities. What prevents
+      decentralized decision making from degenerating into chaos? What
+      coordinates the actions of the millions of people with their
+      varying abilities and desires? What ensures that what needs to
+      be done is in fact done? The answer, in a word, is \emph{prices}.}
+    \end{minipage}
+  \end{tightcenter}
+#+END_EXPORT
+
+
+
+

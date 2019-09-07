@@ -1,0 +1,431 @@
+#+SETUPFILE: ./course-en.org
+
+#+TITLE: Elasticity
+
+#+LATEX_CLASS: unit
+
+#+LATEX_HEADER: \newcommand*{\diff}[1][]{\mathrm{d^{#1}\,}}
+#+LATEX_HEADER: \deftranslation[to=Spanish]{IT}{I}
+#+LATEX_HEADER: \deftranslation[to=English]{IT}{R}
+#+LATEX_HEADER: \newcommand*{\ITLabel}{\translate{IT}}
+#+LATEX_HEADER: \usepackage{xspace}
+#+LATEX_HEADER: \newcommand*{\mlabel}[1]{\ensuremath{\mathit{#1}}\xspace}
+#+LATEX_HEADER: \newcommand*{\IT}   {\mlabel{\ITLabel}}
+
+
+#+MATS: bib
+#+begin_bibbox
+- Mankiw: ::  /Principles of Economics/. Chapter 5.
+- Pindyck y Rubinfeld: :: /Microeconomics/. Chapter 2. 
+#+end_bibbox
+ 
+
+* Price elasticity of demand
+
+
+** Concept of elasticity
+- *Elasticicity* measures how a variable responds to changes in
+  another variable, /ceteris paribus/.
+
+
+** Price elasticity of demand
+- *Price elasticity of demand*: how does the quantity demanded respond
+  to variations in the price, /keeping constant the rest of
+  determinants of demand/.
+- It is defined as the ratio of the percentage changes in both
+  variables:
+  \[ E_d = \frac{\text{percentage change in $Q^d$}}{%
+    \text{percentage change in $P$}} = 
+    \frac{\Delta\% Q^d}{\Delta\% P} \] 
+
+
+** Relative variations
+
+#+figure: ./figures/fig-t04-unicorn1.pdf 0.45
+
+- Relative change in $P$:
+  \[ \Delta\% P = \frac{P_{2} - P_{1}}{P_{1}} \cdot 100 \]
+- Relative change in $Q^d$:
+  \[ \Delta\% Q^d = \frac{Q_{2} - Q_{1}}{Q_{1}} \cdot 100 \]
+
+
+** The sign of the  price elasticity of demand (I)
+
+#+figure: ./figures/fig-t04-unicorn1.pdf 0.45
+
+- Elasticity in the arc $\overline{AB}$:
+  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = -3 \]
+
+
+** The sign of the  price elasticity of demand (and II)
+
+- The price elasticity of demand is negative: price and quantity
+  demanded move in opposite directions.
+
+
+** Interpretation
+
+- Elasticities are pure numbers; they have no units.
+- An elasticity $E_d = -3$ indicates that the magnitude of the
+  relative variation in the quantity demanded is 3 times greater than
+  the relative variation in price.
+
+
+** Elasticity along the demand curve
+
+#+figure: ./figures/fig-t04-unicorn2.pdf 0.45
+
+- Elasticity in the arc $\overline{BC}$:
+  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = -1 \]
+- In general, $E_d$ takes different values along the demand curve
+
+
+** Elastic demand and inelastic demand
+
+- In an *elastic* section of demand: the magnitude of the relative
+  variation in $Q^d$ is higher than the relative variation in $P$:
+  \[ E_d < -1\]
+- In an *inelastic* section of demand: the magnitude of the relative
+  variation in $Q^d$ is lower than the relative variation in $P$:
+  \[ -1 < E_d \leq 0\]
+- *Unitary elasticity*: the relative variations in $Q^d$ and $P$ 
+  coincide, in absolute terms.
+  \[ E_d = -1 \]
+
+
+** Determinants of price elasticity (I)
+- Existence of *substitutes*: The existence of good substitutes makes
+  more elastic the demand of a good.
+
+- *Market definition*: The higher is the accuracy when defining the
+  market more elastic is the demand.
+
+
+** Determinants of price elasticity (and II)
+- *Fraction of total spending* that represents the expenditure in the
+  good: Goods which represent a small fraction of the consumers’ budget
+  tend to have inelastic demands. 
+
+- *Time horizon*: Demand of a good tends to be more elastic the
+  greater is the considered time horizon.
+
+
+** Slope of demand(I)
+
+- The *slope of demand* is the ratio of the *absolute* variations in the
+  quantity demanded and the price:
+  \[ \text{slope} = \frac{\text{variation in $Q^d$}}{%
+    \text{variation in $P$}} = 
+    \frac{\Delta Q^d}{\Delta P} \] 
+- In contrast to the elasticity of demand, the slope of demand has units.
+
+
+** Slope of demand(and II)
+
+#+figure: ./figures/fig-t04-unicorn11.pdf 0.45
+
+- Slope in the arc $\overline{AB}$:
+  \[ \frac{\Delta Q^d}{\Delta P} = \frac{200}{-10} = -20 \text{\ kg by \texteuro/kg} \]
+- The slope of demand is negative: price and quantity demanded move in
+  opposite directions.
+
+
+** Slope and elasticity of demand
+
+- The value of the slope depends on the measurement units of the
+  quantity demanded and the price.
+- The elasticities do not depend on the measurement units of the variables.
+- We can write the price elasticity of demand depending on the slope
+  of the demand curve:
+  \[ E_d = \frac{100\cdot \Delta Q^d / Q^d}{100\cdot \Delta P / P } = 
+     \frac{\Delta Q^d}{\Delta P} \frac{P}{Q^d} \]  
+
+
+* Calculations of elasticities
+
+
+** Arc elasticity (I) 
+- We need two points in the demand curve.
+- We calculate the percentage changes in the quantity demanded and the price:
+  #+BEGIN_EXPORT LaTeX
+  \begin{gather*}
+    \Delta\% Q^d = 100 \cdot (Q^d_{2}-Q^d_{1})/Q^d_{1} \\
+    \Delta\% P = 100 \cdot (P_{2}-P_{1})/P_{1} 
+  \end{gather*}
+  #+END_EXPORT
+- Arc elasticity:
+  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} \]
+
+
+** Arc elasticity (II)
+
+#+figure: ./figures/fig-t04-unicorn1.pdf 0.45
+
+- $\Delta\% Q^d = 100\%$
+- $\Delta\% P = -33.33\%$
+- $E_d = -3$
+
+
+** Arc elasticity (and III)
+
+#+figure: ./figures/fig-t04-unicorn3.pdf 0.45
+
+- $\Delta\% Q^d = -50\%$
+- $\Delta\% P = 50\%$
+- $E_d = -1$ \textcolor{DarkRed}{!!!}
+
+
+** Midpoint method (I)
+- The arc elasticity provides different values depending on the direction of the change.
+- To avoid this problem we can use the midpoint method to calculate the percentage variations:
+  \[ \Delta\% Q^d = 100 \cdot \Delta Q^d/Q^d_m; \quad 
+     \Delta\% P = 100 \cdot \Delta P / P_m \]
+  where
+  \[ Q^d_m = (Q^d_1 + Q^d_2) / 2; \quad P_m = (P_1 + P_2) / 2 \]
+
+
+** Midpoint method (and II)
+
+#+figure: ./figures/fig-t04-unicorn4.pdf 0.45
+
+- $\Delta\% Q^d = 66.67\%$
+- $\Delta\% P = -40\%$
+- $E_d = -1.67$
+
+
+** Point elasticity (I)
+- Starting from the same initial point, we can calculate different elasticities for increasingly smaller arcs.
+- At the limit:
+  \[ E_d = \lim_{\Delta P \to 0} \frac{\Delta Q^d}{\Delta P} \frac{P}{Q^d} = \frac{\diff Q^d}{\diff P} \frac{P}{Q^d} \]
+
+
+** Point elasticity (and II)
+
+#+figure: ./figures/fig-t04-unicorn5.pdf 0.45
+
+- Slope of the demand curve:
+  \[ \frac{\diff Q^d}{\diff P} = -20 \text{\ kg per €/kg} \]
+
+
+** Some special cases (I)
+
+#+figure: ./figures/fig-t04-elast8.pdf 0.45
+
+- Perfectly inelastic demand:
+  \[ Q^d = 17 \]
+- $E_d = 0$.
+
+
+** Some special cases (II)
+
+#+figure: ./figures/fig-t04-elast6.pdf 0.45
+
+- Constant elasticity demand:
+  \[ Q^d = \frac{30}{P^{1/2}} \]
+- $E_d = -1/2$.
+
+
+** Some special cases (III)
+
+#+figure: ./figures/fig-t04-elast7.pdf 0.45
+
+- Constant elasticity demand:
+  \[ Q^d = \frac{150}{P^2} \]
+- $E_d = -2$.
+
+
+** Some special cases (IV)
+
+#+figure: ./figures/fig-t04-elast9.pdf 0.45
+
+- Perfectly elastic demand:
+  \[ P = 3 \]
+- $E_d = -\infty$
+
+
+** Some special cases (and V)
+
+#+figure: ./figures/fig-t04-ingr1.pdf 0.5
+
+- Linear demand curve:
+  \[ Q^d = a - b P \] 
+  where $a, b>0$.
+
+
+* Elasticity and revenues
+
+
+** Revenues
+
+#+figure: ./figures/fig-t04-ingr3.pdf 0.4
+
+- Total revenues is the quantity of money sellers receive in a particular
+  market:
+  \[ \IT_1 = P_1 \cdot Q_1 \]
+
+
+** Variations in revenues (I)
+
+#+figure: ./figures/fig-t04-ingr4.pdf 0.4
+
+- How do revenues vary with a change in price?
+  #+BEGIN_EXPORT LaTeX
+    \begin{gather*}
+      \IT_{1} = P_{1} \cdot Q_{1} \\
+      \IT_{2} = P_{2} \cdot Q_{2} 
+    \end{gather*}
+  #+END_EXPORT
+
+
+** Variations in revenues (II)
+
+#+figure: ./figures/fig-t04-ingr5.pdf 0.45
+
+- $\Delta \IT = \Delta P \cdot Q_1 + P_1 \cdot \Delta Q + \Delta P \cdot \Delta Q$
+- $\Delta\% \IT \approx \Delta\% P + \Delta\% Q$
+
+
+** Variations in revenues (III)
+
+#+figure: ./figures/fig-t04-ingr5.pdf 0.45
+
+- $\Delta\% \IT \approx \Delta\% P + \Delta\% Q$
+- If the demand is elastic:
+  \[ |\Delta\% P| < |\Delta\% Q| \]
+- In elastic sections of demand, when price falls revenues increase.
+
+
+** Variations in revenues (and IV)
+
+#+figure: ./figures/fig-t04-ingr6.pdf 0.45
+
+- $\Delta\% \IT \approx \Delta\% P + \Delta\% Q$
+- If the demand is inelastic:
+  \[ |\Delta\% P| > |\Delta\% Q| \]
+- In inelastic sections of demand, revenues decrease when the price
+  falls.
+
+
+** Elasticity and revenues
+- When demand is elastic, revenues and price move in opposite directions.
+- When demand is inelastic, revenues and price move in the same
+  direction.
+
+
+* Other elasticities of demand
+
+
+** Demand function
+- The *demand function* relates the quantity demanded with all its
+  determinants:
+  \[ Q^d = Q^d(P, P_o, M, X, Y, Z, \dots) \]
+  where:
+  + $P$: price of the good.
+  + $P_o$: prices of other goods.
+  + $M$: consumers’ income.
+  + $X, Y, Z, \dots$: other determinants.
+
+
+** Function and curve of demand
+- We obtain the *demand curve* giving specific values to all the
+  determinants of demand except for the price of the good:
+ \[ Q^d = Q^d(P, \overline{P}_o, \overline{M}, \overline{X}, 
+    \overline{Y}, \overline{Z}, \dots) = Q^d(P) \]
+
+
+** Partial derivatives
+- The *patial derivatives* of the demand function measure the change in
+  the quantity demanded when one of the determinants of demand changes,
+ /keeping constant the values of the remaining of variables/.
+
+
+** Cross elasticity
+- The *cross-price elasticity* of demand measures the sensitivity of the
+ quantity demanded of a good with respect to changes in the price of
+ another good:
+ \[ E_d^{P_o} = \frac{\partial Q^d}{\partial P_o}\frac{P_o}{Q^d} \]
+
+
+** Substitute goods and complementary goods
+
+- The elasticity with respect to the price of *substitute goods* is
+  positive: $E_d^{P_o} > 0$.
+- The elasticity with respect to the price of *complementary goods* is
+  negative: $E_d^{P_o} < 0$.
+
+
+** Income elasticity
+- *Income elasticity* of demand measures the sensitivity of the
+  quantity demanded of a good with respect to variations in consumers’
+  income:
+  \[ E_d^M = \frac{\partial Q^d}{\partial M}\frac{M}{Q^d} \]
+
+
+** Normal and inferior goods
+- The demand for *normal goods* increases with income. The income 
+  elasticity of normal goods is positive: $E_d^M > 0$.
+- If the demand of the good decreases with income, the *good* is
+  *inferior*: $E_d^M < 0$.
+
+
+** Luxury goods and basic goods
+- *Normal goods* are classified by:
+  + *Basic goods*: The consumption of the good increases in a lower
+    proportion than income; $0 < E_d^M < 1$.
+  + *Luxury goods*: The consumption of the good increases in a greater
+    proportion than income; $E_d^M > 1$.
+
+
+ 
+* Elasticity of supply
+
+
+** Price elasticity of supply
+- The *price elasticity of supply* measures how does the quantity
+  supplied respond to variations, /ceteris paribus/, in the price of
+  the good:
+  \[ E_s = \frac{\diff Q^s}{\diff P}\frac{P}{Q^s} \]
+
+
+** Determinants of the elasticity of supply
+  - Flexibility with which sellers can adapt their production to
+    changes in price.
+  - Time horizon.
+
+
+** Some special cases (I)
+
+#+figure: ./figures/fig-t04-elast10.pdf 0.45
+
+- Perfectly inelastic supply.
+- $\Delta\% Q^s = 0\%$
+- $\Delta\% P = 28.6\%$
+- $E_s = 0$
+
+
+** Some special cases (II)
+
+#+figure: ./figures/fig-t04-elast11.pdf 0.45
+
+- Inelastic supply.
+- $\Delta\% Q^s = 12.5\%$
+- $\Delta\% P = 28.6\%$
+- $E_s = 0.44$
+
+
+** Some special cases (III)
+
+#+figure: ./figures/fig-t04-elast12.pdf 0.45
+
+- Elastic supply.
+- $\Delta\% Q^s = 50\%$
+- $\Delta\% P = 28.6\%$
+- $E_s = 1.75$
+
+
+** Some special cases (and IV)
+
+#+figure: ./figures/fig-t04-elast13.pdf 0.45
+
+- Perfectly elastic supply.
+- $E_s = \infty$
