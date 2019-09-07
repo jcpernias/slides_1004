@@ -59,16 +59,16 @@ docs_deps := $(addprefix $(depsdir)/, \
 	$(addsuffix .tex.d, $(docs_base)) \
 	$(addsuffix .pdf.d, $(docs_base)))
 
-INCLUDEDEPS = yes
+INCLUDEDEPS := yes
 
 # Do not include dependency files if make goal is some kind of clean
 ifneq (,$(findstring clean,$(MAKECMDGOALS)))
-INCLUDEDEPS = no
+INCLUDEDEPS := no
 endif
 
 # Do not include dependency files in dry runs
 ifneq (,$(findstring n,$(MAKEFLAGS)))
-INCLUDEDEPS = no
+INCLUDEDEPS := no
 endif
 
 
