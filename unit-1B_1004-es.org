@@ -4,7 +4,7 @@
 
 #+LATEX_CLASS: unit
 #+LATEX_HEADER: \newcommand*{\translatevar}[2]{\ifdefined\englishversion #1\else #2\fi}
-#+LATEX_HEADER: \newcommand*{\Fvar}{\translatevar{F}{P}} 
+#+LATEX_HEADER: \newcommand*{\Fvar}{\translatevar{F}{P}}
 
 #+MATS: bib
 #+begin_bibbox
@@ -25,9 +25,9 @@
 ** Producción
 - Podemos describir la capacidad productiva de Crusoe mediante las
   siguientes tablas:
-#+LaTeX: \begin{tightcenter}
-# [[./figures/tab-t02-fpp1.pdf]]
-#+LaTeX: \end{tightcenter}
+  #+begin_tightcenter
+  #+MATS: fig fig-1B_1004-tab_fpp1-*.pdf
+  #+end_tightcenter
 
 
 ** Variables
@@ -56,6 +56,7 @@
   #+LaTeX: \vspace*{1ex}
 
   # ./figures/fig-t02-prod2.pdf
+
 
 * La frontera de posibilidades de producción
 
@@ -173,7 +174,7 @@
   refleja el coste de oportunidad *creciente* de producir más pescado.
 
 
-* Aplicaciones 
+* Aplicaciones
 
 
 ** Crecimiento económico (I)
@@ -208,4 +209,3 @@
 - Una mejora tecnológica que afecta *sólo* a la producción de pescado.
 - El progreso técnico permite obtener aumentos en la producción de
   *todos* los bienes.
-

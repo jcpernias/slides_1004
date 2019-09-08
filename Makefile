@@ -2,6 +2,7 @@ SHELL := /bin/sh
 
 subject_code := 1004
 units := 1A 1B # 1C 1D 1E
+unit_figs := 1B
 
 TEXI2DVI_SILENT := -q
 # TEXI2DVI_SILENT :=
@@ -16,6 +17,8 @@ elispdir := $(rootdir)/elisp
 pythondir := $(rootdir)/python
 texdir := $(rootdir)/tex
 depsdir := $(rootdir)/.deps
+imgdir := $(rootdir)/img
+figdir := $(rootdir)/figures
 
 ## Programs
 ## ================================================================================
@@ -42,6 +45,7 @@ TEXI2DVI := $(envbin) TEXI2DVI_USE_RECORDER=yes \
 
 MAKEORGDEPS := $(pythonbin) $(pythondir)/makeorgdeps.py
 MAKETEXDEPS := $(pythonbin) $(pythondir)/maketexdeps.py
+MAKEFIGDEPS := $(pythonbin) $(pythondir)/makefigdeps.py
 
 docs_es := $(addsuffix _$(subject_code)-es, \
 	$(addprefix hdout-, $(units)) \
@@ -66,7 +70,12 @@ tex_deps := $(addprefix $(depsdir)/unit-, \
 	$(addprefix $(depsdir)/unit-, \
 	$(addsuffix _$(subject_code)-en.tex.d, $(units)))
 
-all_deps := $(docs_deps) $(tex_deps)
+unit_figs_deps := $(addprefix $(depsdir)/unit-,\
+	$(addsuffix _$(subject_code)-figs.d, $(unit_figs)))
+
+all_deps := $(docs_deps) $(tex_deps) $(unit_figs_deps)
+
+FIGURES :=
 
 INCLUDEDEPS := yes
 
@@ -75,17 +84,18 @@ ifneq (,$(findstring clean,$(MAKECMDGOALS)))
 INCLUDEDEPS := no
 endif
 
-# Do not include dependency files in dry runs
-ifneq (,$(findstring n,$(MAKEFLAGS)))
-INCLUDEDEPS := no
-endif
-
-
 # $(call tex-wrapper,pres-or-hdout,tex-src) -> write to a file
 define tex-wrapper
 \PassOptionsToClass{$1}{unit}
-\RequirePackage{import}
-\import{$(real_rootdir)/}{$2}
+\input{$2}
+endef
+
+# $(call tex-wrapper,spanish-or-english,fig-src) -> write to a file
+define fig-wrapper
+\documentclass[$1]{figure}
+\begin{document}
+\input{$2}
+\end{document}
 endef
 
 hash := \#
@@ -93,50 +103,72 @@ $(hash) := \#
 
 # $(paths-org) -> write to a file
 define paths-org
-$#+LATEX_HEADER: \newcommand*{\rootdir}{$(real_rootdir)}
-$#+LATEX_HEADER: \graphicspath{{\rootdir/img/}{\rootdir/figures/}}
+$#+LATEX_HEADER: \graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}
 endef
 
-# $(call fls-file,basename)
-define fls-file
-$(builddir)/pdf!$1.t2d/pdf/build/$1.fls
-endef
+vpath %.pdf $(figdir)
+vpath %.png $(imgdir)
+vpath %.jpg $(imgdir)
 
 ## Rules
 ## ================================================================================
 
 all: $(docs_pdf)
 
-## org to latex
+# org to latex
 .PRECIOUS: $(builddir)/%.tex
-.PRECIOUS: $(builddir)/unit-%.tex
+$(builddir)/%.tex: $(rootdir)/%.org | $(rootdir)/paths.org $(builddir)
+	$(EMACS) $(emacs_loads) --visit=$< $(org_to_latex)
+
+# dependencies for latex file
+$(depsdir)/%.tex.d: $(rootdir)/%.org | $(rootdir)/paths.org $(depsdir)
+	$(MAKEORGDEPS) -o $@ -t $(builddir)/$*.tex $<
+
+
+
+# latex wrappers
 .PRECIOUS: $(builddir)/pres-%.tex
 .PRECIOUS: $(builddir)/hdout-%.tex
-
-$(builddir)/%.tex $(depsdir)/%.tex.d: $(rootdir)/%.org | $(tex_check_dirs)
-	$(EMACS) $(emacs_loads) --visit=$< $(org_to_latex)
-	$(MAKEORGDEPS) -o $(depsdir)/$*.tex.d -t $(builddir)/$*.tex $<
-
 $(builddir)/pres-%.tex $(builddir)/hdout-%.tex: $(builddir)/unit-%.tex
-	$(file > $(builddir)/pres-$*.tex,$(call tex-wrapper,Presentation,$<))
-	$(file > $(builddir)/hdout-$*.tex,$(call tex-wrapper,Handout,$<))
+	$(file > $(builddir)/pres-$*.tex,\
+		$(call tex-wrapper,Presentation,$(realpath $(builddir))/unit-$*))
+	$(file > $(builddir)/hdout-$*.tex,\
+		$(call tex-wrapper,Handout,$(realpath $(builddir))/unit-$*))
 
 ## latex to pdf
-$(outdir)/%.pdf $(depsdir)/%.pdf.d: $(builddir)/%.tex | $(outdir) $(depsdir)
-	$(TEXI2DVI) --output=$(outdir)/$*.pdf $<
-	$(MAKETEXDEPS) -o $(depsdir)/$*.pdf.d -t $< $(call fls-file,$*)
+$(outdir)/%.pdf: $(builddir)/%.tex | $(outdir)
+	$(TEXI2DVI) --output=$@ $<
 
-$(rootdir)/paths.org:
+# pdf dependencies
+$(depsdir)/%.pdf.d: $(builddir)/%.tex | $(outdir) $(depsdir)
+	$(MAKETEXDEPS) -o $@ -t $(outdir)/$*.pdf $<
+
+# figure wrappers
+.PRECIOUS: $(builddir)/fig-%-en.tex
+.PRECIOUS: $(builddir)/fig-%-es.tex
+$(builddir)/fig-%-en.tex $(builddir)/fig-%-es.tex: $(builddir)/fig-%.tex
+	$(file > $(builddir)/fig-$*-en.tex,\
+		$(call fig-wrapper,English,$(realpath $(builddir))/fig-$*))
+	$(file > $(builddir)/fig-$*-es.tex,\
+		$(call fig-wrapper,Spanish,$(realpath $(builddir))/fig-$*))
+
+# figure latex to pdf
+$(figdir)/fig-%.pdf: $(builddir)/fig-%.tex | $(figdir)
+	$(TEXI2DVI) --output=$@ $<
+
+# paths to media files
+$(rootdir)/paths.org: | $(figdir)
 	$(file > $@,$(paths-org))
+
+
+$(depsdir)/unit-%-figs.d: unit-%-figs.org | $(depsdir)
+	$(MAKEFIGDEPS) -o $@ $<
 
 
 ## automatic dependencies
 ifeq ($(INCLUDEDEPS),yes)
 include $(all_deps)
 endif
-
-include figs.mk
-
 
 ## Auxiliary directories
 ## --------------------------------------------------------------------------------
@@ -150,11 +182,15 @@ $(builddir):
 $(depsdir):
 	mkdir $(depsdir)
 
+$(figdir):
+	mkdir $(figdir)
+
 ## Cleaning rules
 ## --------------------------------------------------------------------------------
 
 .PHONY: clean
 clean:
+	-@rm -rf $(figdir)
 	-@rm -rf $(builddir)
 	-@rm -rf $(depsdir)
 	-@rm -f $(rootdir)/paths.org

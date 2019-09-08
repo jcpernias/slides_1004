@@ -12,10 +12,7 @@
 
 
 *** Production tables
-#+BEGIN_SRC latex :tangle unit-1B-tab-fpp1.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp1.tex :noweb yes
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (cocos) [matrix of nodes,
@@ -65,15 +62,11 @@
      \node[above=3mm of cocos.north west, font=\bfseries\small, right, DarkBlue] {Cocos};
      \node[above=3mm of peces.north west, font=\bfseries\small, right, DarkBlue] {Pescado};
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
 *** Coconuts production curve
-#+BEGIN_SRC latex :tangle unit-1B-fig-prod.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-prod.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.3, yscale = 0.3]
 
     \draw[IMe, shaded] (0,0) -- (8.5, 8.5) ;
@@ -93,15 +86,11 @@
 
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
 *** Fish production curve
-#+BEGIN_SRC latex :tangle unit-1B-fig-prod2.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-prod2.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.3, yscale = 0.3]
 
     \draw[IMe, shaded,domain=0:8.5, samples=100] plot (\x, {2*sqrt(\x)}) ;
@@ -120,7 +109,6 @@
     (8,5.65685) circle;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
@@ -134,10 +122,7 @@
 
 
 *** Production options
-#+BEGIN_SRC latex :tangle unit-1B-tab-fpp2.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp2.tex :noweb yes
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (FPP) [matrix of nodes,
@@ -184,21 +169,12 @@
       \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (FPP.north east)
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
-
-
-
   \end{tikzpicture}
-
-
-  \end{document}
 #+END_SRC
 
 
 *** PPF
-#+BEGIN_SRC latex :tangle unit-1B-fig-fpp1.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-fpp1.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
 
     \draw[IMe, shaded,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
@@ -227,16 +203,10 @@
       \node[above right, font=\footnotesize\sffamily\bfseries] at (C) {O\textsubscript{3}} ;
       \node[above right, font=\footnotesize\sffamily\bfseries] at (D) {O\textsubscript{2}} ;
       \node[above right, font=\footnotesize\sffamily\bfseries] at (E) {O\textsubscript{1}} ;
-
   \end{tikzpicture}
-
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit-1B-fig-fpp2a.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-fpp2a.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
 
 
@@ -249,14 +219,9 @@
 
 
   \end{tikzpicture}
-
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit-1B-fig-fpp1a.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-fpp1a.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
 
     \fill[Thistle, shaded,domain=0:5.65685, samples=100]
@@ -296,15 +261,11 @@
       ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
 *** Feasible and unfeasible choices
-#+BEGIN_SRC latex :tangle unit-1B-fig-fpp2.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-fpp2.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
 
 
@@ -324,15 +285,11 @@
     \node[dot, label={above right:$I$}] at (C) {};
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
 *** Production efficiency
-#+BEGIN_SRC latex :tangle unit-1B-fig-fpp3a.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-fpp3a.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
     \newcommand*{\Ax}{1.5}
     \newcommand*{\Cx}{3.5}
@@ -379,12 +336,9 @@
     \node[curve label, left] at (0, \Cy)  {\phantom{$\Cy$}} ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit-1B-fig-fpp3.tex :noweb yes
-  \documentclass[figure]{mats}
-
+#+BEGIN_SRC latex :tangle fig-1B_1004-fpp3.tex :noweb yes
   \begin{document}
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
     \newcommand*{\Ax}{2.8}
@@ -432,7 +386,6 @@
     \node[curve label, left] at (0, \Cy)  {\phantom{$\Cy$}} ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
@@ -447,10 +400,7 @@
 
 *** Opportunity cost
 
-#+BEGIN_SRC latex :tangle unit-1B-fig-fpp4.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-fpp4.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
     \newcommand*{\Ax}{2.8}
     \newcommand*{\Cx}{5}
@@ -498,15 +448,10 @@
     % \node[curve label, below] at (\Cx, 0)  {$\Cx$} ;
     % \node[curve label, left] at (0, \Ay)  {$\Ay$} ;
     \node[curve label, left] at (0, \Cy)  {\phantom{$\Cy$}} ;
-
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit-1B-fig-fpp5.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-fpp5.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
     \newcommand*{\Ax}{2.8}
     \newcommand*{\Cx}{5}
@@ -556,13 +501,9 @@
     \node[curve label, left] at (0, \Cy)  {$\Cy$} ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit-1B-tab-fpp3.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp3.tex :noweb yes
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (FPP) [matrix of nodes,
@@ -596,15 +537,11 @@
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
 *** Slope
-#+BEGIN_SRC latex :tangle unit-1B-fig-fpp6.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-fpp6.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
     \newcommand*{\Ax}{2.82843}
     \newcommand*{\Cx}{5}
@@ -631,19 +568,12 @@
     \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
 
     \node[dot] at (A) {} ;
-
-
-
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
 *** Concavity
-#+BEGIN_SRC latex :tangle unit-1B-fig-fpp7.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-fpp7.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
     \newcommand*{\Ax}{2.82843}
     \newcommand*{\Cx}{5}
@@ -674,7 +604,6 @@
     \node[dot] at (A) {} ;
     \node[dot] at (C) {} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
@@ -688,10 +617,7 @@
 
 
 *** Growth
-#+BEGIN_SRC latex :tangle unit-1B-fig-gr2.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-gr2.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
 
 
@@ -709,13 +635,9 @@
     \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit-1B-fig-gr3.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-gr3.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
 
 
@@ -741,13 +663,9 @@
    \draw[shift arrow, shorten >= 4pt, shorten <= 4pt, ->]
        (A) -- (B) ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit-1B-fig-gr1.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1B_1004-gr1.tex :noweb yes
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
 
 
@@ -770,7 +688,6 @@
    \draw[shift arrow, shorten >= 4pt, shorten <= 4pt, ->]
        (A) -- (B) ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 

@@ -97,7 +97,9 @@ if __name__ == '__main__':
         f = tracker.pop()
 
     deps = tracker.tracked()
+
     with open(output_file, 'w') as f:
+        f.write('{}: {}\n\n'.format(output_file, input_file))
         f.write('{}: {}'.format(target_file, ' \\\n\t'.join(deps)))
         f.write('\n\n')
-        f.write(''.join([d + ':\n' for d in deps]))
+        # f.write(''.join([d + ':\n' for d in deps]))
