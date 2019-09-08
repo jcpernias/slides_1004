@@ -44,9 +44,11 @@ MAKEORGDEPS := $(pythonbin) $(pythondir)/makeorgdeps.py
 MAKETEXDEPS := $(pythonbin) $(pythondir)/maketexdeps.py
 
 docs_es := $(addsuffix _$(subject_code)-es, \
-	$(addprefix hdout-, $(units)) $(addprefix pres-, $(units)))
+	$(addprefix hdout-, $(units)) \
+	$(addprefix pres-, $(units)))
 docs_en := $(addsuffix _$(subject_code)-en, \
-	$(addprefix hdout-, $(units)) $(addprefix pres-, $(units)))
+	$(addprefix hdout-, $(units)) \
+	$(addprefix pres-, $(units)))
 
 docs_base := $(docs_es) $(docs_en)
 docs_pdf := $(addprefix $(outdir)/, $(addsuffix .pdf, $(docs_base)))
@@ -57,8 +59,14 @@ tex_check_dirs := $(rootdir)/paths.org $(builddir) $(depsdir)
 ## Automatic dependencies
 ## ================================================================================
 docs_deps := $(addprefix $(depsdir)/, \
-	$(addsuffix .tex.d, $(docs_base)) \
 	$(addsuffix .pdf.d, $(docs_base)))
+
+tex_deps := $(addprefix $(depsdir)/unit-, \
+	$(addsuffix _$(subject_code)-es.tex.d, $(units))) \
+	$(addprefix $(depsdir)/unit-, \
+	$(addsuffix _$(subject_code)-en.tex.d, $(units)))
+
+all_deps := $(docs_deps) $(tex_deps)
 
 INCLUDEDEPS := yes
 
@@ -105,30 +113,26 @@ all: $(docs_pdf)
 .PRECIOUS: $(builddir)/pres-%.tex
 .PRECIOUS: $(builddir)/hdout-%.tex
 
-$(builddir)/unit-%.tex $(depsdir)/unit-%.tex.d: $(rootdir)/unit-%.org | $(tex_check_dirs)
-	$(EMACS) $(emacs_loads) --visit=$< $(org_to_beamer)
-	$(MAKEORGDEPS) -o $(depsdir)/unit-$*.tex.d -t $(builddir)/unit-$*.tex $<
+$(builddir)/%.tex $(depsdir)/%.tex.d: $(rootdir)/%.org | $(tex_check_dirs)
+	$(EMACS) $(emacs_loads) --visit=$< $(org_to_latex)
+	$(MAKEORGDEPS) -o $(depsdir)/$*.tex.d -t $(builddir)/$*.tex $<
 
 $(builddir)/pres-%.tex $(builddir)/hdout-%.tex: $(builddir)/unit-%.tex
 	$(file > $(builddir)/pres-$*.tex,$(call tex-wrapper,Presentation,$<))
 	$(file > $(builddir)/hdout-$*.tex,$(call tex-wrapper,Handout,$<))
-
-$(rootdir)/paths.org:
-	$(file > $@,$(paths-org))
-
-$(builddir)/%.tex $(depsdir)/%.tex.d: $(rootdir)/%.org | $(tex_check_dirs)
-	$(EMACS) $(emacs_loads) --visit=$< $(org_to_latex)
-	$(MAKEORGDEPS) -o $(depsdir)/$*.tex.d -t $(builddir)/$*.tex $<
 
 ## latex to pdf
 $(outdir)/%.pdf $(depsdir)/%.pdf.d: $(builddir)/%.tex | $(outdir) $(depsdir)
 	$(TEXI2DVI) --output=$(outdir)/$*.pdf $<
 	$(MAKETEXDEPS) -o $(depsdir)/$*.pdf.d -t $< $(call fls-file,$*)
 
+$(rootdir)/paths.org:
+	$(file > $@,$(paths-org))
+
 
 ## automatic dependencies
 ifeq ($(INCLUDEDEPS),yes)
--include $(docs_deps)
+include $(all_deps)
 endif
 
 include figs.mk
