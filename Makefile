@@ -118,7 +118,7 @@ all: $(docs_pdf)
 # org to latex
 .PRECIOUS: $(builddir)/%.tex
 $(builddir)/%.tex: $(rootdir)/%.org | $(rootdir)/paths.org $(builddir)
-	$(EMACS) $(emacs_loads) --visit=$< $(org_to_latex)
+	$(EMACS) $(emacs_loads) --visit=$< $(org_to_beamer)
 
 # dependencies for latex file
 $(depsdir)/%.tex.d: $(rootdir)/%.org | $(rootdir)/paths.org $(depsdir)
