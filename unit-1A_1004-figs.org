@@ -204,6 +204,7 @@
 
 ** Chunks
 
+
 *** Styles
 #+BEGIN_SRC latex :noweb-ref circ-scale
   [yscale=0.82, xscale = 0.98]
@@ -242,11 +243,11 @@
     real/.style={
       flow,
       ->,
-      DarkRed },
+      DarkRed!60!Black },
     monetary/.style={
       flow,
       <-,
-      Green },
+      DarkGreen!60!Black },
     label/.style={
       font=\bfseries,
       align=center}
@@ -345,6 +346,7 @@
   ;
 
 #+END_SRC
+
 
 *** Translations
 #+BEGIN_SRC latex :noweb-ref translations-circ
