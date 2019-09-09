@@ -8,11 +8,9 @@
 * The PIVE program
 ** Tables
 *** PIVE1
-#+BEGIN_SRC latex :tangle unit01-tab-pive1.tex :noweb yes
-  \documentclass[figure]{mats}
+#+BEGIN_SRC latex :tangle fig-1A_1004-tab-pive1.tex :noweb yes
   <<translations-pive>>
 
-  \begin{document}
   \begin{tikzpicture}
     \matrix  (PIVE) [
     <<tab-common-styles>>
@@ -35,16 +33,13 @@
         ;
     \end{scope}
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
 *** PIVE2
-#+BEGIN_SRC latex :tangle unit01-tab-pive2.tex :noweb yes
-  \documentclass[figure]{mats}
+#+BEGIN_SRC latex :tangle fig-1A_1004-tab-pive2.tex :noweb yes
   <<translations-pive>>
 
-  \begin{document}
   \begin{tikzpicture}
     \matrix  (PIVE) [
     <<tab-common-styles>>
@@ -85,7 +80,6 @@
     \end{scope}
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
@@ -129,15 +123,13 @@
 #+END_SRC
 
 
-* The circular flow of income
+* The circular flow moel
 ** Figures
 
 *** Agents
 
-#+BEGIN_SRC latex :tangle unit01-fig-agents.tex :noweb yes
-  \documentclass[figure]{mats}
+#+BEGIN_SRC latex :tangle fig-1A_1004-agents.tex :noweb yes
   <<translations-circ>>
-  \begin{document}
     <<circ-styles>>
 
     \begin{tikzpicture}<<circ-scale>>
@@ -146,30 +138,24 @@
         <<markets>>
       \end{scope}
     \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Markets
 
-#+BEGIN_SRC latex :tangle unit01-fig-markets.tex :noweb yes
-  \documentclass[figure]{mats}
+#+BEGIN_SRC latex :tangle fig-1A_1004-markets.tex :noweb yes
   <<translations-circ>>
-  \begin{document}
     <<circ-styles>>
 
     \begin{tikzpicture}<<circ-scale>>
       <<agents>>
       <<markets>>
     \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Real flows
 
-#+BEGIN_SRC latex :tangle unit01-fig-real.tex :noweb yes
-  \documentclass[figure]{mats}
+#+BEGIN_SRC latex :tangle fig-1A_1004-real.tex :noweb yes
   <<translations-circ>>
-  \begin{document}
     <<circ-styles>>
 
     \begin{tikzpicture}<<circ-scale>>
@@ -177,15 +163,12 @@
       <<markets>>
       <<real>>
     \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Monetary flows
 
-#+BEGIN_SRC latex :tangle unit01-fig-money.tex :noweb yes
-  \documentclass[figure]{mats}
+#+BEGIN_SRC latex :tangle fig-1A_1004-money.tex :noweb yes
   <<translations-circ>>
-  \begin{document}
     <<circ-styles>>
 
     \begin{tikzpicture}<<circ-scale>>
@@ -193,15 +176,12 @@
       <<markets>>
       <<money>>
     \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-*** Circular flow of income
+*** Circular flow model
 
-#+BEGIN_SRC latex :tangle unit01-fig-circ.tex :noweb yes
-  \documentclass[figure]{mats}
+#+BEGIN_SRC latex :tangle fig-1A_1004-circ.tex :noweb yes
   <<translations-circ>>
-  \begin{document}
     <<circ-styles>>
 
     \begin{tikzpicture}<<circ-scale>>
@@ -210,7 +190,6 @@
       <<real>>
       <<money>>
     \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 ** Chunks

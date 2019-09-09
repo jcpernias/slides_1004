@@ -1,6 +1,6 @@
 #+SETUPFILE: ./course-en.org
 
-#+TITLE: Basic principles of economic organization 
+#+TITLE: Basic principles of economic organization
 
 #+LATEX_CLASS: unit
 
@@ -27,7 +27,7 @@
 - *Positive economics*: How does the economy /work/?
 
 - *Normative economics*: How /should/ the economy /work/?
- 
+
 
 ** Microeconomics and macroeconomics
 
@@ -55,7 +55,7 @@
 
 - Economic agents respond to the *incentives* they face.
 
-- Consider how different economic agents *interact*. 
+- Consider how different economic agents *interact*.
 
 
 ** Costs and Benefits
@@ -139,3 +139,40 @@
 - *Equilibrium*.
 
 - *Marginal analysis*
+
+* The circular flow model
+
+
+** Economic agents
+
+#+begin_center
+#+MATS: fig fig-1A_1004-agents-*.pdf
+#+end_center
+
+
+** Markets
+
+#+begin_center
+#+MATS: fig fig-1A_1004-markets-*.pdf
+#+end_center
+
+
+** Real flows
+
+#+begin_center
+#+MATS: fig fig-1A_1004-real-*.pdf
+#+end_center
+
+
+** Monetary flows
+
+#+begin_center
+#+MATS: fig fig-1A_1004-money-*.pdf
+#+end_center
+
+
+** The circular flow model
+
+#+begin_center
+#+MATS: fig fig-1A_1004-circ-*.pdf
+#+end_center
