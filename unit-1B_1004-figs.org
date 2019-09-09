@@ -110,8 +110,6 @@
 #+END_SRC
 
 
-** Chunks
-
 
 * The PPF
 
@@ -318,7 +316,7 @@
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp3.tex :noweb yes
   <<translations-ppf>>
 
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  \begin{tikzpicture}<<scale-ppf>>
     \newcommand*{\Ax}{2.8}
     \newcommand*{\Cx}{5}
     \newcommand*{\Ay}{6}
@@ -333,11 +331,9 @@
     \draw[help lines] let \p1 = (A), \p2 = (B) in
        (0, \y1) -| (\x1, 0) (A) -| (\x2, 0) ;
 
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
+    <<curve-ppf>>
 
-    \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
-
-
+    <<axis-ppf>>
 
     \node[dot, label={above right:$B$}] at (A) {};
     \node[dot, label={above right:$B'$}] at (B) {};
@@ -346,28 +342,11 @@
     let \p1 = (A), \p2 = (B) in
     (\x1, -0.3) -- (\x2, -0.3) ;
 
-    % \draw[shift arrow, shorten >= 1pt, shorten <= 1pt, ->]
-    % let \p1 = (A), \p2 = (C) in
-    % (-0.3, \y1) -- (-0.3, \y2) ;
-
-    % \begin{scope}[xshift=3mm]
-    %   \draw[shift arrow, shorten >= 1pt, shorten <= 0pt, ->]
-    %     plot[domain=\Rstart:\Rend, samples=100] (\x, {8-0.25*\x^2}) ;
-    % \end{scope}
-
     \node[curve label] at ($ (\Ax, -1)!0.5!(\Cx, -1) $) {$\Delta P$} ;
-    % \node[curve label, left] at ($ (-0.2, \Ay)!0.5!(-0.2, \Cy) $) {$\Delta C$} ;
-
-    % \node[curve label, below] at (\Ax, 0)  {$\Ax$} ;
-    % \node[curve label, below] at (\Cx, 0)  {$\Cx$} ;
-    % \node[curve label, left] at (0, \Ay)  {$\Ay$} ;
     \node[curve label, left] at (0, \Cy)  {\phantom{$\Cy$}} ;
-
   \end{tikzpicture}
 #+END_SRC
 
-
-** Chunks
 
 
 * Oportunity cost
@@ -381,7 +360,7 @@
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp4.tex :noweb yes
   <<translations-ppf>>
 
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  \begin{tikzpicture}<<scale-ppf>>
     \newcommand*{\Ax}{2.8}
     \newcommand*{\Cx}{5}
     \newcommand*{\Ay}{6}
@@ -398,14 +377,11 @@
     \draw[help lines] let \p1 = (C) in
        (0, \y1) -| (\x1, 0) ;
 
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
+    <<curve-ppf>>
 
-    \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
-
-
+    <<axis-ppf>>
 
     \node[dot, label={above right:$B$}] at (A) {};
-    % \node[dot, label={above right:$B$}] at (B) {};
     \node[dot, label={above right:$D$}] at (C) {};
 
     \draw[shift arrow, shorten >= 1pt, shorten <= 1pt, ->]
@@ -424,9 +400,6 @@
     \node[curve label] at ($ (\Ax, -1)!0.5!(\Cx, -1) $) {$\Delta P$} ;
     \node[curve label, left] at ($ (-0.2, \Ay)!0.5!(-0.2, \Cy) $) {$\Delta C$} ;
 
-    % \node[curve label, below] at (\Ax, 0)  {$\Ax$} ;
-    % \node[curve label, below] at (\Cx, 0)  {$\Cx$} ;
-    % \node[curve label, left] at (0, \Ay)  {$\Ay$} ;
     \node[curve label, left] at (0, \Cy)  {\phantom{$\Cy$}} ;
   \end{tikzpicture}
 #+END_SRC
@@ -434,7 +407,7 @@
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp5.tex :noweb yes
   <<translations-ppf>>
 
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  \begin{tikzpicture}<<scale-ppf>>
     \newcommand*{\Ax}{2.8}
     \newcommand*{\Cx}{5}
     \newcommand*{\Ay}{6}
@@ -451,11 +424,9 @@
     \draw[help lines] let \p1 = (C) in
        (0, \y1) -| (\x1, 0) ;
 
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
+    <<curve-ppf>>
 
-    \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
-
-
+    <<axis-ppf>>
 
     \node[dot, label={above right:$B$}] at (A) {};
     % \node[dot, label={above right:$B$}] at (B) {};
@@ -496,11 +467,11 @@
     hd/.style={White, font=\mathversion{boldsf}},
     sh/.style={Green!60!White}
     ] { &[6mm]
-       |[hd]| $P$  &
+       |[hd]| $\Pvar$  &
        |[hd]| $C$                 &[6mm]
-       |[hd]| $\Delta P$          &
+       |[hd]| $\Delta \Pvar$          &
        |[hd]| $\Delta C$          &[6mm]
-       |[hd]| $|\Delta C/\Delta P|$ \\
+       |[hd]| $|\Delta C/\Delta \Pvar|$ \\
        O\textsubscript{1}         &
        $0.0$     & $8.0$  & --- & --- & --- \\
        O\textsubscript{2}         &
@@ -528,7 +499,7 @@
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp6.tex :noweb yes
   <<translations-ppf>>
 
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  \begin{tikzpicture}<<scale-ppf>>
     \newcommand*{\Ax}{2.82843}
     \newcommand*{\Cx}{5}
     \newcommand*{\Ay}{6}
@@ -544,14 +515,11 @@
     \coordinate (A1) at ($ (A) -\Adx*(Atg) $) ;
     \coordinate (A2) at ($ (A) +\Adx*(Atg) $) ;
 
-
-
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
-
     \draw[CMe]  (A1) --  (A2) ;
 
+    <<curve-ppf>>
 
-    \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
+    <<axis-ppf>>
 
     \node[dot] at (A) {} ;
   \end{tikzpicture}
@@ -562,7 +530,7 @@
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp7.tex :noweb yes
   <<translations-ppf>>
 
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  \begin{tikzpicture}<<scale-ppf>>
     \newcommand*{\Ax}{2.82843}
     \newcommand*{\Cx}{5}
     \newcommand*{\Ay}{6}
@@ -580,22 +548,17 @@
     \coordinate (C1) at ($ (C) -\Cdx*(Ctg) $) ;
     \coordinate (C2) at ($ (C) +\Cdx*(Ctg) $) ;
 
-
-
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
-
     \draw[CMe]  (A1) --  (A2) ;
     \draw[CMe]  (C1) --  (C2) ;
 
-    \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
+    <<curve-ppf>>
+
+    <<axis-ppf>>
 
     \node[dot] at (A) {} ;
     \node[dot] at (C) {} ;
   \end{tikzpicture}
 #+END_SRC
-
-
-** Chunks
 
 
 * Applications
@@ -609,21 +572,19 @@
   <<translations-ppf>>
 
 
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  \begin{tikzpicture}<<scale-ppf>>
 
+    <<curve-ppf>>
 
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
+    <<curve-ppf2>>
 
-    \draw[IMe,domain=0:8.48528, samples=100] plot (\x, {9.2-0.12777777*\x^2}) ;
+    <<axis-ppf>>
 
     \draw[shift arrow, shorten >= 4pt, shorten <= 4pt, ->]
        (5, 1.75) -- (7.4, 2.2) ;
 
     \draw[shift arrow, shorten >= 4pt, shorten <= 4pt, ->]
        (2.8, 6) -- (4, 7.2) ;
-
-
-    \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
 
   \end{tikzpicture}
 #+END_SRC
@@ -631,12 +592,13 @@
 #+BEGIN_SRC latex :tangle fig-1B_1004-gr3.tex :noweb yes
   <<translations-ppf>>
 
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  \begin{tikzpicture}<<scale-ppf>>
 
+    <<curve-ppf>>
 
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
+    <<curve-ppf2>>
 
-    \draw[IMe,domain=0:8.48528, samples=100] plot (\x, {9.2-0.12777777*\x^2}) ;
+    <<axis-ppf>>
 
     \draw[shift arrow, shorten >= 4pt, shorten <= 4pt, ->]
        (5, 1.75) -- (7.4, 2.2) ;
@@ -644,8 +606,6 @@
     \draw[shift arrow, shorten >= 4pt, shorten <= 4pt, ->]
        (2.8, 6) -- (4, 7.2) ;
 
-
-    \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
 
     \coordinate (A) at (4, 4) ;
     \coordinate (B) at (5.5, 5.3347) ;
@@ -661,18 +621,16 @@
 #+BEGIN_SRC latex :tangle fig-1B_1004-gr1.tex :noweb yes
   <<translations-ppf>>
 
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  \begin{tikzpicture}<<scale-ppf>>
 
+    <<curve-ppf>>
 
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
+    <<curve-ppf3>>
 
-    \draw[IMe,domain=0:8.48528, samples=100] plot (\x, {8-0.11111111*\x^2}) ;
+    <<axis-ppf>>
 
     \draw[shift arrow, shorten >= 4pt, shorten <= 4pt, ->]
        (5, 1.75) -- (7.5, 1.75) ;
-
-
-    \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
 
     \coordinate (A) at (4, 4) ;
     \coordinate (B) at (5.5, 4.6388889) ;
@@ -686,7 +644,6 @@
 #+END_SRC
 
 
-** Chunks
 
 
 * Common
@@ -734,4 +691,14 @@
 #+BEGIN_SRC latex :noweb-ref curve-ppf
   \draw[IMe,domain=0:5.65685, samples=100]
     plot (\x, {8-0.25*\x^2}) ;
+#+END_SRC
+
+#+BEGIN_SRC latex :noweb-ref curve-ppf2
+  \draw[IMe,domain=0:8.48528, samples=100]
+    plot (\x, {9.2-0.12777777*\x^2}) ;
+#+END_SRC
+
+#+BEGIN_SRC latex :noweb-ref curve-ppf3
+  \draw[IMe,domain=0:8.48528, samples=100]
+    plot (\x, {8-0.11111111*\x^2}) ;
 #+END_SRC

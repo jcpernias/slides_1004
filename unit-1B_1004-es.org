@@ -20,17 +20,22 @@
 
 
 ** La economía de Robinson Crusoe
+
 - Robinson acaba de alcanzar una isla tras naufragar su barco.
+
 - Sólo puede trabajar 8 horas al día recolectando cocos o pescando.
+
 - Dedica el resto del tiempo a recuperarse y a escribir un libro.
 
 
 ** Producción
+
 - Podemos describir la capacidad productiva de Crusoe mediante las
   siguientes tablas:
-  #+begin_tightcenter
+  #+latex: \vspace*{1ex}
+  #+begin_center
   #+MATS: fig fig-1B_1004-tab_fpp1-*.pdf
-  #+end_tightcenter
+  #+end_center
 
 
 ** Variables
@@ -61,14 +66,17 @@
 
 
 ** Opciones de producción
+
 - Robinson puede decidir como reparte las 8 horas de trabajo entre las
   diferentes actividades.
-  #+begin_tightcenter
+  #+latex: \vspace*{1ex}
+  #+begin_center
   #+MATS: fig fig-1B_1004-tab_fpp2-*.pdf
-  #+end_tightcenter
+  #+end_center
 
 
 ** Frontera de Posibilidades de Producción (I)
+
 #+MATS: figcol fig-1B_1004-fpp1-*.pdf 0.45
 
 - La *frontera de posibilidades de producción* (FPP) es el conjunto de
@@ -77,6 +85,7 @@
 
 
 ** Frontera de Posibilidades de Producción (II)
+
 #+MATS: figcol fig-1B_1004-fpp2a-*.pdf 0.45
 
 - La FPP describe las opciones de producción de una economía, pero no
@@ -84,6 +93,7 @@
 
 
 ** Frontera de Posibilidades de Producción (y III)
+
 #+MATS: figcol fig-1B_1004-fpp1a-*.pdf 0.45
 
 - Los puntos de corte de la FPP con los ejes muestran las producciones
@@ -110,7 +120,7 @@
 
 ** Eficiencia en la producción (y II)
 
-#+figure: ./figures/fig-t02-fpp3.pdf 0.45
+#+MATS: figcol fig-1B_1004-fpp3-*.pdf 0.45
 
 - $B$ es una opción de producción *eficiente*.
 - *Eficiencia*: no es posible producir más de un bien manteniendo
@@ -122,7 +132,7 @@
 
 ** Coste de oportunidad (I)
 
-#+figure: ./figures/fig-t02-fpp4.pdf 0.45
+#+MATS: figcol fig-1B_1004-fpp4-*.pdf 0.45
 
 - Partiendo de un punto eficiente, sólo es posible aumentar la
   producción de un bien sacrificando parte de la producción de otros
@@ -131,7 +141,7 @@
 
 ** Coste de oportunidad (II)
 
-#+figure: ./figures/fig-t02-fpp5.pdf 0.5
+#+MATS: figcol fig-1B_1004-fpp5-*.pdf 0.45
 
 - $\Delta \Pvar = 2.2$ kg de pescado.
 - $\Delta C = -4.25$ kg de cocos.
@@ -139,7 +149,7 @@
 
 ** Coste de oportunidad (III)
 
-#+figure: ./figures/fig-t02-fpp5.pdf 0.45
+#+MATS: figcol fig-1B_1004-fpp5-*.pdf 0.45
 
 - Coste de oportunidad:
   \[ \left|\frac{\Delta C}{\Delta \Pvar}\right| = 1.93 \]
@@ -150,15 +160,15 @@
 ** Coste de oportunidad (y IV)
 - En nuestro ejemplo el coste de oportunidad de producir una unidad
   más de pescado es *creciente*.
-#+LaTeX: \vspace*{1ex}
-#+LaTeX: \begin{tightcenter}
-# [[./figures/tab-t02-fpp3.pdf]]
-#+LaTeX: \end{tightcenter}
+  #+latex: \vspace*{1ex}
+  #+begin_center
+  #+MATS: fig fig-1B_1004-tab_fpp3-*.pdf
+  #+end_center
 
 
 ** Pendiente y coste de oportunidad
 
-#+figure: ./figures/fig-t02-fpp6.pdf 0.5
+#+MATS: figcol fig-1B_1004-fpp6-*.pdf 0.45
 
 - La *pendiente* negativa de la frontera de posibilidades de
   producción refleja el coste de oportunidad de producir más pescado.
@@ -166,7 +176,7 @@
 
 ** Concavidad y costes de oportunidad crecientes
 
-#+figure: ./figures/fig-t02-fpp7.pdf 0.5
+#+MATS: figcol fig-1B_1004-fpp7-*.pdf 0.45
 
 - La *concavidad* de la frontera de posibilidades de producción
   refleja el coste de oportunidad *creciente* de producir más pescado.
@@ -179,6 +189,7 @@
 
 - Con la frontera de posibilidades de producción podemos describir los
   efectos del *crecimiento económico*.
+
 - El crecimiento económico puede deberse a una mayor cantidad de
   factores de producción, mejoras en la calidad de los factores o
   avances tecnológicos.
@@ -186,7 +197,7 @@
 
 ** Crecimiento económico (II)
 
-#+figure: ./figures/fig-t02-gr2.pdf 0.45
+#+MATS: figcol fig-1B_1004-gr2-*.pdf 0.45
 
 - El crecimiento económico hace que la frontera de posibilidades de
   producción se *desplace* hacia arriba y a la derecha.
@@ -194,16 +205,19 @@
 
 ** Crecimiento económico (III)
 
-#+figure: ./figures/fig-t02-gr3.pdf 0.45
+#+MATS: figcol fig-1B_1004-gr3-*.pdf 0.45
 
 - Una mejora tecnológica en los dos sectores.
-- Como consecuencia la producción de todos los sectores puede aumentar.
+
+- Como consecuencia la producción de todos los sectores puede
+  aumentar.
 
 
 ** Crecimiento económico (y IV)
 
-#+figure: ./figures/fig-t02-gr1.pdf 0.45
+#+MATS: figcol fig-1B_1004-gr1-*.pdf 0.45
 
 - Una mejora tecnológica que afecta *sólo* a la producción de pescado.
+
 - El progreso técnico permite obtener aumentos en la producción de
   *todos* los bienes.
