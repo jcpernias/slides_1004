@@ -1,3 +1,4 @@
+# -*- ispell-dictionary: "spanish" -*-
 #+SETUPFILE: ./course-es.org
 
 #+TITLE: La frontera de posibilidades de producción
