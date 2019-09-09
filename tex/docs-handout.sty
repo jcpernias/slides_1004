@@ -48,11 +48,11 @@
 
 \RequirePackage{enumitem}
 \setlist[itemize]{leftmargin=*}
-\setlist[itemize,1]{label={\textcolor{SteelBlue!60!White}{\RIGHTarrow}}}
+\setlist[itemize,1]{label={\textcolor{SteelBlue!80!White}{\RIGHTarrow}}}
 \setlist[itemize,2]{%
-  label={\textcolor{SteelBlue!60!White}{\footnotesize\RIGHTarrow}}}
+  label={\textcolor{SteelBlue!80!White}{\footnotesize\RIGHTarrow}}}
 \setlist[itemize,3]{%
-  label={\textcolor{SteelBlue!60!White}{\textbullet}}}
+  label={\textcolor{SteelBlue!80!White}{\textbullet}}}
 \setlist[enumerate]{labelsep=*, leftmargin=1.5pc}
 \setlist[enumerate,1]{label=\arabic*., ref=\arabic*}
 \setlist[enumerate,2]{label=\beameroriginal\emph{\alph*}),%
@@ -97,11 +97,12 @@ compact, noindentafter]{titlesec}
 
 
 \titleformat{name=\paragraph}[block]
-{\normalfont\small\bfseries\sffamily\filright}
-{\theparagraph}{0em}{\color{SteelBlue}}
+{{\color{SlateGray}\titlerule[.25pt]}\vspace*{.8ex}%
+  \normalfont\small\bfseries\sffamily\filright}
+{\theparagraph}{0em}{\color{Indigo!30!Black}}
 
 \titlespacing*{name=\paragraph}
-{-4.5cm}{3ex plus .2ex minus .4ex}{1.5ex minus .1ex}
+{0cm}{3ex plus .2ex minus .4ex}{1.5ex minus .1ex}
 
 %% Page headers and footers
 \settitlemarks{section,subsection}
@@ -163,7 +164,7 @@ compact, noindentafter]{titlesec}
   \hypersetup{pageanchor=false}
   \let\doctitle\thetitle
   \pagenumbering{gobble}
-  \let\oldmaketitle\maketitle            
+  \let\oldmaketitle\maketitle
   \renewcommand{\maketitle}{%
     \oldmaketitle%
     \tableofcontents%
