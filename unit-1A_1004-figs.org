@@ -6,7 +6,9 @@
 
 
 * The PIVE program
+
 ** Tables
+
 *** PIVE1
 #+BEGIN_SRC latex :tangle fig-1A_1004-tab-pive1.tex :noweb yes
   <<translations-pive>>
@@ -84,6 +86,7 @@
 
 
 ** Chunks
+
 *** Styles
 #+BEGIN_SRC latex :noweb-ref tab-common-styles
   matrix of nodes,
@@ -97,6 +100,7 @@
   header bg/.style={fill=SlateGray!70!Black},
   sh/.style={DarkBlue!60!White},
 #+END_SRC
+
 
 *** Translations
 #+BEGIN_SRC latex :noweb-ref translations-pive
@@ -123,8 +127,10 @@
 #+END_SRC
 
 
-* The circular flow moel
+* The circular flow model
+
 ** Figures
+
 
 *** Agents
 
@@ -140,6 +146,7 @@
     \end{tikzpicture}
 #+END_SRC
 
+
 *** Markets
 
 #+BEGIN_SRC latex :tangle fig-1A_1004-markets.tex :noweb yes
@@ -147,10 +154,10 @@
     <<circ-styles>>
 
     \begin{tikzpicture}<<circ-scale>>
-      <<agents>>
       <<markets>>
     \end{tikzpicture}
 #+END_SRC
+
 
 *** Real flows
 
@@ -165,6 +172,7 @@
     \end{tikzpicture}
 #+END_SRC
 
+
 *** Monetary flows
 
 #+BEGIN_SRC latex :tangle fig-1A_1004-money.tex :noweb yes
@@ -177,6 +185,7 @@
       <<money>>
     \end{tikzpicture}
 #+END_SRC
+
 
 *** Circular flow model
 
@@ -191,6 +200,7 @@
       <<money>>
     \end{tikzpicture}
 #+END_SRC
+
 
 ** Chunks
 
@@ -245,6 +255,7 @@
   \newcommand*{\heading}[1]{\scriptsize\textbf{#1}}
 #+END_SRC
 
+
 *** Agents
 #+BEGIN_SRC latex :noweb-ref agents
   \node[agent] (Firms)  at (0, 3) {
@@ -261,6 +272,7 @@
 
 #+END_SRC
 
+
 *** Markets
 #+BEGIN_SRC latex :noweb-ref markets
   \node[market] (Goods) at (4.8 ,6) {
@@ -275,6 +287,7 @@
   } ;
 
 #+END_SRC
+
 
 *** Real flows
 #+BEGIN_SRC latex :noweb-ref real
@@ -304,6 +317,7 @@
 
 #+END_SRC
 
+
 *** Monetary flows
 #+BEGIN_SRC latex :noweb-ref money
   \draw[monetary] ($(Firms.north)+(-4pt,0)$)
@@ -331,6 +345,7 @@
   ;
 
 #+END_SRC
+
 *** Translations
 #+BEGIN_SRC latex :noweb-ref translations-circ
   \deftranslation[to=Spanish]{Firms}{Empresas}
