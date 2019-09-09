@@ -10,7 +10,7 @@
 ** Tables
 
 *** PIVE1
-#+BEGIN_SRC latex :tangle fig-1A_1004-tab-pive1.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1A_1004-tab_pive1.tex :noweb yes
   <<translations-pive>>
 
   \begin{tikzpicture}
@@ -39,7 +39,7 @@
 
 
 *** PIVE2
-#+BEGIN_SRC latex :tangle fig-1A_1004-tab-pive2.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1A_1004-tab_pive2.tex :noweb yes
   <<translations-pive>>
 
   \begin{tikzpicture}

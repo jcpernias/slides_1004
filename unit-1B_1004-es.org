@@ -3,8 +3,11 @@
 #+TITLE: La frontera de posibilidades de producción
 
 #+LATEX_CLASS: unit
-#+LATEX_HEADER: \newcommand*{\translatevar}[2]{\ifdefined\englishversion #1\else #2\fi}
-#+LATEX_HEADER: \newcommand*{\Fvar}{\translatevar{F}{P}}
+
+#+latex_header: \deftranslation[to=Spanish]{Pvar}{P}
+#+latex_header: \deftranslation[to=English]{Pvar}{F}
+#+latex_header: \newcommand*{\Pvar}{\translate{Pvar}}
+
 
 #+MATS: bib
 #+begin_bibbox
@@ -39,23 +42,19 @@
 
 #+MATS: col 0.5
 - Producción de pescado:
-  + $\Fvar$: kg de pescado.
-  + $L_{\Fvar}$: horas pescando.
+  + $\Pvar$: kg de pescado.
+  + $L_{\Pvar}$: horas pescando.
 
 
 ** Representación gráfica
 
 #+MATS: col 0.5
 - Producción de cocos:
-  #+LaTeX: \vspace*{1ex}
-
-  # [[./figures/fig-t02-prod.pdf]]
+  #+MATS: fig fig-1B_1004-prod-*.pdf
 
 #+MATS: col 0.5
 - Producción de pescado:
-  #+LaTeX: \vspace*{1ex}
-
-  # ./figures/fig-t02-prod2.pdf
+  #+MATS: fig fig-1B_1004-prod2-*.pdf
 
 
 * La frontera de posibilidades de producción
@@ -64,29 +63,28 @@
 ** Opciones de producción
 - Robinson puede decidir como reparte las 8 horas de trabajo entre las
   diferentes actividades.
-#+LaTeX: \vspace*{1ex}
-#+LaTeX: \begin{tightcenter}
-# [[./figures/tab-t02-fpp2.pdf]]
-#+LaTeX: \end{tightcenter}
+  #+begin_tightcenter
+  #+MATS: fig fig-1B_1004-tab_fpp2-*.pdf
+  #+end_tightcenter
 
 
-** Frontera de Posibilidades de Producción(I)
-# #+figure: ./figures/fig-t02-fpp1.pdf 0.45
+** Frontera de Posibilidades de Producción (I)
+#+MATS: figcol fig-1B_1004-fpp1-*.pdf 0.45
 
 - La *frontera de posibilidades de producción* (FPP) es el conjunto de
   las diferentes opciones de producción donde se utilizan *todos* los
   factores de producción.
 
 
-** Frontera de Posibilidades de Producción(II)
-# #+figure: ./figures/fig-t02-fpp2a.pdf 0.45
+** Frontera de Posibilidades de Producción (II)
+#+MATS: figcol fig-1B_1004-fpp2a-*.pdf 0.45
 
-- La FPP describe las opciones de producción de una economía.
-- La FPP no nos indica qué opción se elegirá.
+- La FPP describe las opciones de producción de una economía, pero no
+  nos indica qué opción se elegirá.
 
 
-** Frontera de Posibilidades de Producción(y III)
-#+figure: ./figures/fig-t02-fpp1a.pdf 0.45
+** Frontera de Posibilidades de Producción (y III)
+#+MATS: figcol fig-1B_1004-fpp1a-*.pdf 0.45
 
 - Los puntos de corte de la FPP con los ejes muestran las producciones
   máximas de cada bien.
@@ -94,15 +92,15 @@
 
 ** Opciones accesibles e  inaccesibles
 
-#+figure: ./figures/fig-t02-fpp2.pdf 0.45
+#+MATS: figcol fig-1B_1004-fpp2-*.pdf 0.45
 
 - $A$ y $B$ son *opciones factibles*.
 - $I$ es una *opción inaccesible*.
 
 
-** Eficiencia en la producción(I)
+** Eficiencia en la producción (I)
 
-#+figure: ./figures/fig-t02-fpp3a.pdf 0.45
+#+MATS: figcol fig-1B_1004-fpp3a-*.pdf 0.45
 
 - La opción $A$ no es eficiente: es posible aumentar la producción de
   pescado sin reducir la producción de cocos.
@@ -110,7 +108,7 @@
   asignan inadecuadamente.
 
 
-** Eficiencia en la producción(y II)
+** Eficiencia en la producción (y II)
 
 #+figure: ./figures/fig-t02-fpp3.pdf 0.45
 
@@ -135,7 +133,7 @@
 
 #+figure: ./figures/fig-t02-fpp5.pdf 0.5
 
-- $\Delta \Fvar = 2.2$ kg de pescado.
+- $\Delta \Pvar = 2.2$ kg de pescado.
 - $\Delta C = -4.25$ kg de cocos.
 
 
@@ -144,7 +142,7 @@
 #+figure: ./figures/fig-t02-fpp5.pdf 0.45
 
 - Coste de oportunidad:
-  \[ \left|\frac{\Delta C}{\Delta \Fvar}\right| = 1.93 \]
+  \[ \left|\frac{\Delta C}{\Delta \Pvar}\right| = 1.93 \]
 - Pasar de $B$ a $D$ supone renunciar a $1.93$ kg de cocos por
   cada kg adicional de pescado.
 

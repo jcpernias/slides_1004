@@ -3,8 +3,10 @@
 #+TITLE: The production possibilities frontier
 
 #+LATEX_CLASS: unit
-#+LATEX_HEADER: \newcommand*{\translatevar}[2]{\ifdefined\englishversion #1\else #2\fi}
-#+LATEX_HEADER: \newcommand*{\Fvar}{\translatevar{F}{P}} 
+
+#+latex_header: \deftranslation[to=Spanish]{Pvar}{P}
+#+latex_header: \deftranslation[to=English]{Pvar}{F}
+#+latex_header: \newcommand*{\Pvar}{\translate{Pvar}}
 
 
 
@@ -30,8 +32,9 @@
 ** Production
 - We can represent some of the options Robinson has by the following
   tables:
-
-# #+MATS: fig unit02-tab-fpp1*.pdf
+  #+begin_tightcenter
+  #+MATS: fig fig-1B_1004-tab_fpp1-*.pdf
+  #+end_tightcenter
 
 
 ** Variables
@@ -43,8 +46,8 @@
 
 #+MATS: col 0.43
 - Fish production:
-  + $\Fvar$: kg de fish.
-  + $L_{\Fvar}$: hours fishing.
+  + $\Pvar$: kg de fish.
+  + $L_{\Pvar}$: hours fishing.
 
 
 
@@ -53,13 +56,11 @@
 
 #+MATS: col 0.5
 - Coconut production:
-
-# #+MATS: fig unit02-fig-prod*.pdf
+  #+MATS: fig fig-1B_1004-prod-*.pdf
 
 #+MATS: col 0.5
 - Fish production:
-
-# #+MATS: fig unit02-fig-prod2*.pdf
+  #+MATS: fig fig-1B_1004-prod2-*.pdf
 
 
 * The production possibilities frontier
@@ -68,34 +69,34 @@
 ** Production options
 - Robinson can decide how to distribute the 8 hours of labor between
   the different activities.
-
-# #+MATS: fig tab-t02-fpp2*.pdf
+  #+begin_tightcenter
+  #+MATS: fig fig-1B_1004-tab_fpp2-*.pdf
+  #+end_tightcenter
 
 
 ** The Production Possibilities Frontier (I)
-#+figure: ./figures/fig-t02-fpp1.pdf 0.45
+#+MATS: figcol fig-1B_1004-fpp1-*.pdf 0.45
 
 - The *production possibilities frontier* is the set of different
   production options where *all* the production factors are used.
 
 
 ** The Production Possibilities Frontier (II)
-#+figure: ./figures/fig-t02-fpp2a.pdf 0.45
+#+MATS: figcol fig-1B_1004-fpp2a-*.pdf 0.45
 
 - Describes the options Robinson has, but does not tell us which one
   he will choose.
 
 
 ** The Production Possibilities Frontier (and III)
-#+figure: ./figures/fig-t02-fpp1a.pdf 0.45
+#+MATS: figcol fig-1B_1004-fpp1a-*.pdf 0.45
 
 - The intersection points with the axes show the maximum production of
   each good.
 
 
 ** Feasible and infeasible options
-
-#+figure: ./figures/fig-t02-fpp2.pdf 0.45
+#+MATS: figcol fig-1B_1004-fpp2-*.pdf 0.45
 
 - $A$ and $B$ are *feasible options*.
 - $I$ is an *inaccessible option*.
@@ -103,7 +104,7 @@
 
 ** Efficiency in production (I)
 
-#+figure: ./figures/fig-t02-fpp3a.pdf 0.45
+#+MATS: figcol fig-1B_1004-fpp3a-*.pdf 0.45
 
 - Option $A$ is feasible but inefficient: it is possible to increase
   fish production without reducing coconuts production.
@@ -115,7 +116,7 @@
 
 #+figure: ./figures/fig-t02-fpp3.pdf 0.45
 
-- $B$ is an *efficient* production option. 
+- $B$ is an *efficient* production option.
 - *Efficiency*: it is not possible to produce more of a good without
   changing the production of the other good.
 
@@ -136,7 +137,7 @@
 
 #+figure: ./figures/fig-t02-fpp5.pdf 0.5
 
-- $\Delta \Fvar = 2.2$ kg of fish.
+- $\Delta \Pvar = 2.2$ kg of fish.
 - $\Delta C = -4.25$ kg of coconuts.
 
 
@@ -145,7 +146,7 @@
 #+figure: ./figures/fig-t02-fpp5.pdf 0.45
 
 - Opportunity cost:
-  \[ \left|\frac{\Delta C}{\Delta \Fvar}\right| = 1.93 \]
+  \[ \left|\frac{\Delta C}{\Delta \Pvar}\right| = 1.93 \]
 - Moving from $B$ to $D$ implies giving up $1.93$ kg of coconuts by
   each additional kg of fish.
 
@@ -167,7 +168,7 @@
   the opportunity cost of producing more fish.
 
 
-** Concavity and increasing opportunity costs 
+** Concavity and increasing opportunity costs
 
 #+figure: ./figures/fig-t02-fpp7.pdf 0.5
 
@@ -175,7 +176,7 @@
   opportunity cost of producing more fish.
 
 
-* Applications 
+* Applications
 
 
 ** Economic growth (I)
@@ -212,5 +213,3 @@
 
 - Technical progress allows to obtain increases in the production of
   *all* the goods.
-
-

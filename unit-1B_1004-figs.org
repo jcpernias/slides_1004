@@ -13,6 +13,8 @@
 
 *** Production tables
 #+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp1.tex :noweb yes
+  <<translations-ppf>>
+
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (cocos) [matrix of nodes,
@@ -20,8 +22,8 @@
     hd/.style={White, , font=\bfseries},
     sh/.style={Green!60!White}
     ] {
-      |[hd]| Trabajo & |[hd]| Producción \\[-2mm]
-      |[hd]| (Horas) & |[hd]| (kg) \\
+      |[hd]| \translate{Trabajo} & |[hd]| \translate{Producción} \\[-2mm]
+      |[hd]| (\translate{Horas}) & |[hd]| (kg) \\
       $0$ & $0.0$ \\
       $2$ & $2.0$ \\
       $4$ & $4.0$ \\
@@ -42,8 +44,8 @@
     hd/.style={White, , font=\bfseries},
     sh/.style={Green!60!White}
     ] {
-      |[hd]| Trabajo & |[hd]| Producción \\[-2mm]
-      |[hd]| (Horas) & |[hd]| (kg) \\
+      |[hd]| \translate{Trabajo} & |[hd]| \translate{Producción} \\[-2mm]
+      |[hd]| (\translate{Horas}) & |[hd]| (kg) \\
       $0$ & $0.0$ \\
       $2$ & $2.8$ \\
       $4$ & $4.0$ \\
@@ -59,55 +61,51 @@
       [sharp corners] -- (Rp)  -- cycle;
     \end{scope}
 
-     \node[above=3mm of cocos.north west, font=\bfseries\small, right, DarkBlue] {Cocos};
-     \node[above=3mm of peces.north west, font=\bfseries\small, right, DarkBlue] {Pescado};
+     \node[above=3mm of cocos.north west, font=\bfseries\small, right, DarkBlue] {\translate{Cocos}};
+     \node[above=3mm of peces.north west, font=\bfseries\small, right, DarkBlue] {\translate{Pescado}};
   \end{tikzpicture}
 #+END_SRC
 
 
 *** Coconuts production curve
 #+BEGIN_SRC latex :tangle fig-1B_1004-prod.tex :noweb yes
+  <<translations-ppf>>
+
   \begin{tikzpicture}[xscale = 0.3, yscale = 0.3]
 
     \draw[IMe, shaded] (0,0) -- (8.5, 8.5) ;
 
     \draw[help lines, font=\footnotesize]
       (2, 0) node[below] {$2$} |- (0, 2) node [left] {$2$}
-      (6, 0) node[below] {$6$} |- (0, 6) node [left] {$6$}
-      ;
+      (6, 0) node[below] {$6$} |- (0, 6) node [left] {$6$} ;
 
-  \draw[axis, font=\footnotesize] (0,10) node[left] {$C$} |- (10, 0) node[below] {$L_{C}$} ;
+    \draw[axis, font=\footnotesize]
+      (0,10) node[left] {$C$} |- (10, 0) node[below] {$L_{C}$} ;
     \fill[Blue, radius = 4pt]
-    (0,0) circle  --
-    (2,2) circle --
-    (4,4) circle --
-    (6,6) circle --
-    (8,8) circle;
-
-
+      (0,0) circle -- (2,2) circle -- (4,4) circle --
+      (6,6) circle -- (8,8) circle;
   \end{tikzpicture}
 #+END_SRC
 
 
 *** Fish production curve
 #+BEGIN_SRC latex :tangle fig-1B_1004-prod2.tex :noweb yes
+  <<translations-ppf>>
+
   \begin{tikzpicture}[xscale = 0.3, yscale = 0.3]
 
-    \draw[IMe, shaded,domain=0:8.5, samples=100] plot (\x, {2*sqrt(\x)}) ;
+    \draw[IMe, shaded,domain=0:8.5, samples=100]
+      plot (\x, {2*sqrt(\x)}) ;
 
     \draw[help lines, font=\footnotesize]
       (2, 0) node[below] {$2$} |- (0, 2.8) node [left] {$2.8$}
-      (6, 0) node[below] {$6$} |- (0, 4.9) node [left] {$4.9$}
-      ;
+      (6, 0) node[below] {$6$} |- (0, 4.9) node [left] {$4.9$} ;
 
-  \draw[axis, font=\footnotesize] (0,10) node[left] {$P$} |- (10, 0) node[below] {$L_{P}$} ;
+    \draw[axis, font=\footnotesize] (0,10)
+       node[left] {$\Pvar$} |- (10, 0) node[below] {$L_{\Pvar}$} ;
     \fill[Blue, radius = 4pt]
-    (0,0) circle  --
-    (2,2.82843) circle --
-    (4,4) circle --
-    (6,4.89898) circle --
-    (8,5.65685) circle;
-
+      (0,0) circle  -- (2,2.82843) circle -- (4,4) circle --
+      (6,4.89898) circle -- (8,5.65685) circle;
   \end{tikzpicture}
 #+END_SRC
 
@@ -123,6 +121,8 @@
 
 *** Production options
 #+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp2.tex :noweb yes
+  <<translations-ppf>>
+
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (FPP) [matrix of nodes,
@@ -131,15 +131,15 @@
     hd/.style={White, , font=\bfseries},
     sh/.style={Green!60!White}
     ] { &[3mm]
-       |[hd]| Trabajo  &     &
-       |[hd]| Trabajo  &     & &
-       |[hd]| Producción &
-       |[hd]| Producción \\[-2mm]
+       |[hd]| \translate{Trabajo}  &     &
+       |[hd]| \translate{Trabajo}  &     & &
+       |[hd]| \translate{Producción} &
+       |[hd]| \translate{Producción} \\[-2mm]
        &
-       |[hd]| Pescado     &     &
-       |[hd]| Cocos   &       & &
-       |[hd]| Pescado        &
-       |[hd]| Cocos \\
+       |[hd]| \translate{Pescado}     &     &
+       |[hd]| \translate{Cocos}   &       & &
+       |[hd]| \translate{Pescado}        &
+       |[hd]| \translate{Cocos} \\
        O\textsubscript{1}         &
        $0$       & |[sh]| $+$ &
        $8$       & |[sh]| $= 8$ & |[sh]| $\rightarrow$ &
@@ -175,9 +175,11 @@
 
 *** PPF
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp1.tex :noweb yes
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  <<translations-ppf>>
 
-    \draw[IMe, shaded,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
+  \begin{tikzpicture}<<scale-ppf>>
+
+    <<curve-shaded-ppf>>
 
     \draw[help lines]
       (2.8, 0) node[below] {$2.8$} |- (0, 6) node [left] {$6$}
@@ -190,7 +192,8 @@
       \coordinate (B) at (4.89897, 2) ;
       \coordinate (A) at (5.65685, 0) ;
 
-      \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
+      <<axis-ppf>>
+
       \fill[Blue, radius = 4pt]
       circle[at=(A)]
       circle[at=(B)]
@@ -207,53 +210,39 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp2a.tex :noweb yes
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  <<translations-ppf>>
 
+  \begin{tikzpicture}<<scale-ppf>>
 
-    \fill[Thistle, shaded,domain=0:5.65685, samples=100]
-    (0, 0) --   plot (\x, {8-0.25*\x^2}) -- cycle ;
+    <<area-shaded-ppf>>
 
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
+    <<curve-ppf>>
 
-    \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
-
-
+    <<axis-ppf>>
   \end{tikzpicture}
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp1a.tex :noweb yes
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  <<translations-ppf>>
 
-    \fill[Thistle, shaded,domain=0:5.65685, samples=100]
-    (0, 0) --   plot (\x, {8-0.25*\x^2}) -- cycle ;
+  \begin{tikzpicture}<<scale-ppf>>
 
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
+    <<area-shaded-ppf>>
 
-    % \draw[help lines]
-    %   (2.8, 0) node[below] {$2.8$} |- (0, 6) node [left] {$6$}
-    %   (4, 0) node[below] {$4$} |- (0, 4) node [left] {$4$}
-    %   ;
+    <<curve-ppf>>
+
+    <<axis-ppf>>
 
 
-      \coordinate (E) at (0,       8) ;
-      % \coordinate (D) at (2.8243,  6) ;
-      % \coordinate (C) at (4,       4) ;
-      % \coordinate (B) at (4.89897, 2) ;
-      \coordinate (A) at (5.65685, 0) ;
+    \coordinate (E) at (0,       8) ;
+    \coordinate (A) at (5.65685, 0) ;
 
-      \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
-      \fill[Blue, radius = 4pt]
+    \fill[Blue, radius = 4pt]
       circle[at=(A)]
-      % circle[at=(B)]
-      % circle[at=(C)]
-      % circle[at=(D)]
       circle[at=(E)] ;
 
-      \node[above right, font=\footnotesize\sffamily\bfseries] at (A) {O\textsubscript{5}} ;
-      % \node[above right, font=\footnotesize\sffamily\bfseries] at (B) {O\textsubscript{4}} ;
-      % \node[above right, font=\footnotesize\sffamily\bfseries] at (C) {O\textsubscript{3}} ;
-      % \node[above right, font=\footnotesize\sffamily\bfseries] at (D) {O\textsubscript{2}} ;
-      \node[above right, font=\footnotesize\sffamily\bfseries] at (E) {O\textsubscript{1}} ;
+    \node[above right, font=\footnotesize\sffamily\bfseries] at (A) {O\textsubscript{5}} ;
+    \node[above right, font=\footnotesize\sffamily\bfseries] at (E) {O\textsubscript{1}} ;
 
     \draw[curve]
       (E) node[left] {$8$}
@@ -266,15 +255,15 @@
 
 *** Feasible and unfeasible choices
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp2.tex :noweb yes
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  <<translations-ppf>>
 
+  \begin{tikzpicture}<<scale-ppf>>
 
-    \fill[Thistle, shaded,domain=0:5.65685, samples=100]
-    (0, 0) --   plot (\x, {8-0.25*\x^2}) -- cycle ;
+    <<area-shaded-ppf>>
 
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
+    <<curve-ppf>>
 
-    \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
+    <<axis-ppf>>
 
     \coordinate (A) at (2.8, 6) ;
     \coordinate (B) at (1.5, 3) ;
@@ -290,7 +279,10 @@
 
 *** Production efficiency
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp3a.tex :noweb yes
-  \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
+  <<translations-ppf>>
+
+  \begin{tikzpicture}<<scale-ppf>>
+
     \newcommand*{\Ax}{1.5}
     \newcommand*{\Cx}{3.5}
     \newcommand*{\Ay}{3}
@@ -305,11 +297,9 @@
     \draw[help lines] let \p1 = (A), \p2 = (B) in
        (0, \y1) -| (\x1, 0) (A) -| (\x2, 0) ;
 
-    \draw[IMe,domain=0:5.65685, samples=100] plot (\x, {8-0.25*\x^2}) ;
+    <<curve-ppf>>
 
-    \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$P$} ;
-
-
+    <<axis-ppf>>
 
     \node[dot, label={above:$A$}] at (A) {};
     \node[dot, label={above:$A'$}] at (B) {};
@@ -318,28 +308,16 @@
     let \p1 = (A), \p2 = (B) in
     (\x1, -0.3) -- (\x2, -0.3) ;
 
-    % \draw[shift arrow, shorten >= 1pt, shorten <= 1pt, ->]
-    % let \p1 = (A), \p2 = (C) in
-    % (-0.3, \y1) -- (-0.3, \y2) ;
-
-    % \begin{scope}[xshift=3mm]
-    %   \draw[shift arrow, shorten >= 1pt, shorten <= 0pt, ->]
-    %     plot[domain=\Rstart:\Rend, samples=100] (\x, {8-0.25*\x^2}) ;
-    % \end{scope}
-
     \node[curve label] at ($ (\Ax, -1)!0.5!(\Cx, -1) $) {$\Delta P$} ;
-    % \node[curve label, left] at ($ (-0.2, \Ay)!0.5!(-0.2, \Cy) $) {$\Delta C$} ;
 
-    % \node[curve label, below] at (\Ax, 0)  {$\Ax$} ;
-    % \node[curve label, below] at (\Cx, 0)  {$\Cx$} ;
-    % \node[curve label, left] at (0, \Ay)  {$\Ay$} ;
     \node[curve label, left] at (0, \Cy)  {\phantom{$\Cy$}} ;
 
   \end{tikzpicture}
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp3.tex :noweb yes
-  \begin{document}
+  <<translations-ppf>>
+
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
     \newcommand*{\Ax}{2.8}
     \newcommand*{\Cx}{5}
@@ -401,6 +379,8 @@
 *** Opportunity cost
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp4.tex :noweb yes
+  <<translations-ppf>>
+
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
     \newcommand*{\Ax}{2.8}
     \newcommand*{\Cx}{5}
@@ -452,6 +432,8 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp5.tex :noweb yes
+  <<translations-ppf>>
+
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
     \newcommand*{\Ax}{2.8}
     \newcommand*{\Cx}{5}
@@ -504,6 +486,8 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp3.tex :noweb yes
+  <<translations-ppf>>
+
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (FPP) [matrix of nodes,
@@ -542,6 +526,8 @@
 
 *** Slope
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp6.tex :noweb yes
+  <<translations-ppf>>
+
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
     \newcommand*{\Ax}{2.82843}
     \newcommand*{\Cx}{5}
@@ -574,6 +560,8 @@
 
 *** Concavity
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp7.tex :noweb yes
+  <<translations-ppf>>
+
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
     \newcommand*{\Ax}{2.82843}
     \newcommand*{\Cx}{5}
@@ -618,6 +606,9 @@
 
 *** Growth
 #+BEGIN_SRC latex :tangle fig-1B_1004-gr2.tex :noweb yes
+  <<translations-ppf>>
+
+
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
 
 
@@ -638,6 +629,8 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-gr3.tex :noweb yes
+  <<translations-ppf>>
+
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
 
 
@@ -666,6 +659,8 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-gr1.tex :noweb yes
+  <<translations-ppf>>
+
   \begin{tikzpicture}[xscale = 0.5, yscale = 0.5]
 
 
@@ -698,3 +693,45 @@
 
 
 ** Chunks
+*** Translations
+#+BEGIN_SRC latex :noweb-ref translations-ppf
+  \deftranslation[to=Spanish]{Cocos}{Cocos}
+  \deftranslation[to=English]{Cocos}{Coconuts}
+  \deftranslation[to=Spanish]{Pescado}{Pescado}
+  \deftranslation[to=English]{Pescado}{Fish}
+  \deftranslation[to=Spanish]{Trabajo}{Trabajo}
+  \deftranslation[to=English]{Trabajo}{Labor}
+  \deftranslation[to=Spanish]{Horas}{Horas}
+  \deftranslation[to=English]{Horas}{Hours}
+  \deftranslation[to=Spanish]{Producción}{Producción}
+  \deftranslation[to=English]{Producción}{Output}
+  \deftranslation[to=Spanish]{Pvar}{P}
+  \deftranslation[to=English]{Pvar}{F}
+  \newcommand*{\Pvar}{\translate{Pvar}}
+#+END_SRC
+
+*** Figures scale
+#+BEGIN_SRC latex :noweb-ref scale-ppf
+  [xscale = 0.5, yscale = 0.5]
+#+END_SRC
+
+*** Axis
+#+BEGIN_SRC latex :noweb-ref axis-ppf
+  \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$\Pvar$} ;
+#+END_SRC
+
+*** Curves
+#+BEGIN_SRC latex :noweb-ref curve-shaded-ppf
+  \draw[IMe, shaded,domain=0:5.65685, samples=100]
+    plot (\x, {8-0.25*\x^2}) ;
+#+END_SRC
+
+#+BEGIN_SRC latex :noweb-ref area-shaded-ppf
+  \fill[Thistle, shaded,domain=0:5.65685, samples=100]
+    (0, 0) --   plot (\x, {8-0.25*\x^2}) -- cycle ;
+#+END_SRC
+
+#+BEGIN_SRC latex :noweb-ref curve-ppf
+  \draw[IMe,domain=0:5.65685, samples=100]
+    plot (\x, {8-0.25*\x^2}) ;
+#+END_SRC

@@ -8,8 +8,8 @@
 % \usepackage[utf8]{inputenc}
 % \DeclareUnicodeCharacter{00A0}{~}
 
-\NeedsTeXFormat{LaTeX2e}[2019/09/08]
-\ProvidesClass{exam}[2019/09/08 v 0.1 Part of docs-bundle]
+\NeedsTeXFormat{LaTeX2e}[2018/04/01]
+\ProvidesClass{figure}[2019/09/08 v 0.1 Part of docs-bundle]
 
 \RequirePackage{etoolbox}
 
@@ -30,6 +30,8 @@
 %% Class loading
 %% --------------------------------------------------------------------------------
 \PassOptionsToPackage{svgnames}{xcolor}
+\PassOptionsToPackage{english, spanish}{translator}
+\PassOptionsToPackage{fleqn, tbtags, leqno}{amsmath}
 \LoadClass[12pt, tikz, crop]{standalone}
 
 
