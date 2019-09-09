@@ -81,7 +81,7 @@
 
     \draw[axis, font=\footnotesize]
       (0,10) node[left] {$C$} |- (10, 0) node[below] {$L_{C}$} ;
-    \fill[Blue, radius = 4pt]
+    \fill[IMg, radius = 4pt]
       (0,0) circle -- (2,2) circle -- (4,4) circle --
       (6,6) circle -- (8,8) circle;
   \end{tikzpicture}
@@ -103,7 +103,7 @@
 
     \draw[axis, font=\footnotesize] (0,10)
        node[left] {$\Pvar$} |- (10, 0) node[below] {$L_{\Pvar}$} ;
-    \fill[Blue, radius = 4pt]
+    \fill[IMg, radius = 4pt]
       (0,0) circle  -- (2,2.82843) circle -- (4,4) circle --
       (6,4.89898) circle -- (8,5.65685) circle;
   \end{tikzpicture}
@@ -127,7 +127,7 @@
     column sep=1mm, row sep=1mm,
     column 1/.style={font=\bfseries},
     hd/.style={White, , font=\bfseries},
-    sh/.style={Green!60!White}
+    sh/.style={DarkGreen!80!White}
     ] { &[3mm]
        |[hd]| \translate{Trabajo}  &     &
        |[hd]| \translate{Trabajo}  &     & &
@@ -192,7 +192,7 @@
 
       <<axis-ppf>>
 
-      \fill[Blue, radius = 4pt]
+      \fill[IMg, radius = 4pt]
       circle[at=(A)]
       circle[at=(B)]
       circle[at=(C)]
@@ -235,7 +235,7 @@
     \coordinate (E) at (0,       8) ;
     \coordinate (A) at (5.65685, 0) ;
 
-    \fill[Blue, radius = 4pt]
+    \fill[IMg, radius = 4pt]
       circle[at=(A)]
       circle[at=(E)] ;
 
@@ -515,9 +515,10 @@
     \coordinate (A1) at ($ (A) -\Adx*(Atg) $) ;
     \coordinate (A2) at ($ (A) +\Adx*(Atg) $) ;
 
-    \draw[CMe]  (A1) --  (A2) ;
 
     <<curve-ppf>>
+
+    \draw[CMg]  (A1) --  (A2) ;
 
     <<axis-ppf>>
 
@@ -536,7 +537,7 @@
     \newcommand*{\Ay}{6}
     \newcommand*{\Cy}{1.76}
     \newcommand*{\Adx}{1}
-    \newcommand*{\Cdx}{0.5}
+    \newcommand*{\Cdx}{0.6}
 
     \coordinate (A) at (\Ax, \Ay) ;
     \coordinate (C) at (\Cx, \Cy) ;
@@ -548,10 +549,10 @@
     \coordinate (C1) at ($ (C) -\Cdx*(Ctg) $) ;
     \coordinate (C2) at ($ (C) +\Cdx*(Ctg) $) ;
 
-    \draw[CMe]  (A1) --  (A2) ;
-    \draw[CMe]  (C1) --  (C2) ;
-
     <<curve-ppf>>
+
+    \draw[CMg]  (A1) --  (A2) ;
+    \draw[CMg]  (C1) --  (C2) ;
 
     <<axis-ppf>>
 
@@ -651,6 +652,7 @@
 
 ** Chunks
 *** Translations
+
 #+BEGIN_SRC latex :noweb-ref translations-ppf
   \deftranslation[to=Spanish]{Cocos}{Cocos}
   \deftranslation[to=English]{Cocos}{Coconuts}
@@ -667,17 +669,23 @@
   \newcommand*{\Pvar}{\translate{Pvar}}
 #+END_SRC
 
+
 *** Figures scale
+
 #+BEGIN_SRC latex :noweb-ref scale-ppf
   [xscale = 0.5, yscale = 0.5]
 #+END_SRC
 
+
 *** Axis
+
 #+BEGIN_SRC latex :noweb-ref axis-ppf
   \draw[axis] (0,10) node[left] {$C$} |- (10, 0) node[below] {$\Pvar$} ;
 #+END_SRC
 
+
 *** Curves
+
 #+BEGIN_SRC latex :noweb-ref curve-shaded-ppf
   \draw[IMe, shaded,domain=0:5.65685, samples=100]
     plot (\x, {8-0.25*\x^2}) ;

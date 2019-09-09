@@ -74,21 +74,21 @@ compact, noindentafter]{titlesec}
 \patchcmd{\ttlh@hang}{\noindent}{}{}{}
 
 \titleformat{\section}{%
-  \color{Red!60!Black}\Large\sffamily\bfseries}{%
+  \color{DarkRed!60!Black}\Large\sffamily\bfseries}{%
   \makebox[2pc][r]{\thesection.}}{1pc}{}
 
 \titlespacing{\section}
 {-3pc}{7ex plus .2ex minus .4ex}{1.5ex minus .1ex}
 
 \titleformat{name=\section, numberless}
-{\color{Red!60!Black}\Large\sffamily\bfseries}
+{\color{DarkRed!60!Black}\Large\sffamily\bfseries}
 {}{0pc}{}
 
 \titlespacing{name=\section, numberless}
 {0pc}{7ex plus .2ex minus .4ex}{1.5ex minus .1ex}
 
 \titleformat{\subsection}
-{\color{Red!30!Black}\large\sffamily\bfseries}
+{\color{DarkRed!30!Black}\large\sffamily\bfseries}
 {\makebox[2pc][r]{\thesubsection.}}{1pc}{}[{\titlerule[0.8pt]}\vspace{6pt}]
 
 
@@ -107,7 +107,7 @@ compact, noindentafter]{titlesec}
 %% Page headers and footers
 \settitlemarks{section,subsection}
 
-\newcommand*{\headfmt}{\color{Red!30!Black}\small\bfseries\scshape\sffamily}
+\newcommand*{\headfmt}{\color{DarkRed!30!Black}\small\bfseries\scshape\sffamily}
 \newcommand*{\footfmt}{\small\bfseries\sffamily}
 
 \newpagestyle{fancy}{%
@@ -139,12 +139,12 @@ compact, noindentafter]{titlesec}
 \RequirePackage{titling}
 \pretitle{%
   \begin{flushleft}\Huge\sffamily\bfseries%
-    \color{Red!60!Black}%
+    \color{DarkRed!60!Black}%
   }
   \posttitle{\par\end{flushleft}}
-\preauthor{\begin{flushleft}\Large\sffamily\bfseries\color{Red!30!Black}}
+\preauthor{\begin{flushleft}\Large\sffamily\bfseries\color{DarkRed!30!Black}}
   \postauthor{\par\end{flushleft}}
-\predate{\begin{flushleft}\Large\sffamily\bfseries\color{Red!30!Black}}
+\predate{\begin{flushleft}\Large\sffamily\bfseries\color{DarkRed!30!Black}}
   \postdate{\par\end{flushleft}}
 
 %% Internacionalization

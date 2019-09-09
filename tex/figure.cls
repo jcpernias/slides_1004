@@ -44,12 +44,12 @@
 \RequirePackage{docs-hyper}
 
 
-\colorlet{colorIMg}{Blue!70!Black}
-\colorlet{colorIMe}{Blue!70!White}
-\colorlet{colorCMg}{Red!70!Black}
-\colorlet{colorCMe}{Red!70!Yellow}
-\colorlet{colorCMgLP}{Orange!70!Black}
-\colorlet{colorCMeLP}{Orange}
+\colorlet{colorIMg}{DarkBlue!70!Black}
+\colorlet{colorIMe}{DarkBlue!70!White}
+\colorlet{colorCMg}{DarkRed!70!Black}
+\colorlet{colorCMe}{DarkRed!70!Yellow}
+\colorlet{colorCMgLP}{DarkOrange!70!Black}
+\colorlet{colorCMeLP}{DarkOrange}
 \colorlet{colorR1}{Red!70!Black}
 \colorlet{colorR2}{Blue!70!Black}
 \colorlet{pmatfill}{Black!10!White}
@@ -93,7 +93,7 @@
    use tangent/.default=1,
    axis/.style={thick, <->, >=stealth', line join=miter},
    curve label/.style={font=\small},
-   curve/.style={thick, curve label},
+   curve/.style={very thick, curve label},
    shaded/.style={opacity=0.4},
    help lines/.style = {thin, gray, curve label},
    shift arrow/.style={>=stealth', semithick, shorten >= 2pt, shorten <= 2pt},
