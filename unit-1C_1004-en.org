@@ -75,6 +75,7 @@
 
 
 ** Market demand curve (I)
+
 - For each possible price we add the quantities demanded by each one
   of the consumers.
 
@@ -86,6 +87,7 @@
 
 
 ** Market demand curve (and II)
+
 - The market demand curve is the horizontal sum of the individual
   demand curves.
 
@@ -196,7 +198,6 @@
 
 
 * Supply
-
 
 ** Quantity supplied and price
 
@@ -322,10 +323,8 @@
 
 #+MATS: figcol fig-1C_1004-eq4-*.pdf 0.45
 
-
 - When the price is below the equilibrium price, production is lower
   than the quantity consumers are willing to buy.
-
 
 
 ** Exchange points
@@ -415,15 +414,15 @@
 
 * Price system functions
 
-
-**                                                         :B_ignoreheading:
+**                                                       :B_fullframe:
 :PROPERTIES:
-:BEAMER_env: ignoreheading
+:BEAMER_env: fullframe
 :END:
 
 - /The Undercover Economist/, Tim Hardford:
+
   #+BEGIN_EXPORT LaTeX
-    \begin{tightcenter}\footnotesize%
+    \begin{center}\vspace*{1ex}\footnotesize%
       \begin{minipage}{0.75\linewidth}\setlength{\parindent}{0.5em}
         \enquote{Economist Paul Seabright reminds us of the pleas of the
           Soviet official trying to comprehend the Western system:
@@ -431,18 +430,19 @@
             the population of London?} The question is comical, but the
           answer ---nobody--- is dizzying.}
       \end{minipage}
-    \end{tightcenter}
+    \end{center}
   #+END_EXPORT
 
 
-**                                                         :B_ignoreheading:
+**                                                       :B_fullframe:
 :PROPERTIES:
-:BEAMER_env: ignoreheading
+:BEAMER_env: fullframe
 :END:
 
 - [[http://www.econlib.org/library/Essays/hykKnw1.html]["The Use of Knowledge in Society"]], Friedrich A. Hayek:
+
   #+BEGIN_EXPORT LaTeX
-    \begin{tightcenter}\footnotesize%
+    \begin{center}\vspace*{1ex}\footnotesize%
       \begin{minipage}{0.75\linewidth}\setlength{\parindent}{0.5em}
         \enquote{The mere fact that there is one price for any commodity
           [...]  brings about the solution which (it is just conceptually
@@ -454,13 +454,13 @@
           communicating information if we want to understand its real
           function [...]}
       \end{minipage}
-    \end{tightcenter}
+    \end{center}
   #+END_EXPORT
 
 
-**                                                         :B_ignoreheading:
+**                                                       :B_fullframe:
 :PROPERTIES:
-:BEAMER_env: ignoreheading
+:BEAMER_env: fullframe
 :END:
 
 - /Power of the market -- The pencil/, Milton Friedman:
@@ -470,14 +470,15 @@
   + [[http://tinyurl.com/ocdt7od][Spanish dubbed version]]
 
 
-**                                                         :B_ignoreheading:
+**                                                       :B_fullframe:
 :PROPERTIES:
-:BEAMER_env: ignoreheading
+:BEAMER_env: fullframe
 :END:
 
 - /Principles of Economics/, Gregory Mankiw:
+
   #+BEGIN_EXPORT LaTeX
-    \begin{tightcenter}\footnotesize%
+    \begin{center}\vspace*{1ex}\footnotesize%
       \begin{minipage}{0.75\linewidth}\setlength{\parindent}{0.5em}
         \enquote{Economies are enormous groups of people engaged in a
         multitude of interdependent activities. What prevents
@@ -486,5 +487,5 @@
         varying abilities and desires? What ensures that what needs to
         be done is in fact done? The answer, in a word, is \emph{prices}.}
       \end{minipage}
-    \end{tightcenter}
+    \end{center}
   #+END_EXPORT
