@@ -7,9 +7,14 @@
 
 * Demand
 
+
 ** Figures and tables
+
+
 *** Individual demand table and curve
+
 #+BEGIN_SRC latex :tangle fig-1C_1004-dtab.tex :noweb yes
+  <<translations>>
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (john) [matrix of nodes,
@@ -17,8 +22,8 @@
     hd/.style={White, , font=\bfseries},
     sh/.style={Green!60!White}
     ] {
-      |[hd]| Precio & |[hd]| Arroz \\[-2mm]
-      |[hd]| (€ por Kg) & |[hd]| (Kg al mes) \\
+      |[hd]| \translate{Precio} & |[hd]| \translate{Arroz} \\[-2mm]
+      |[hd]| (€ \translate{por} kg) & |[hd]| (kg \translate{almes}) \\
       $2.0$ & $0.0$ \\
       $1.5$ & $1.0$ \\
       $1.0$ & $2.0$ \\
@@ -34,7 +39,8 @@
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
 
-     \node[above=3mm of john.north west, font=\bfseries\small, right, DarkBlue] {Consumidor K};
+     \node[above=3mm of john.north west, font=\bfseries\small, right, DarkBlue]
+        {\translate{Consumidor} K};
 
      \begin{scope}[xshift=5.75cm, xscale=0.8333, yscale=1.66667]
        \draw[axis] (0, 2.5) node[left] {$P$} |- (5, 0) node[below] {$A$} ;
@@ -79,8 +85,11 @@
   \end{tikzpicture}
 #+END_SRC
 
+
 *** Market demand
+
 #+BEGIN_SRC latex :tangle fig-1C_1004-dtab2.tex :noweb yes
+  <<translations>>
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (john) [matrix of nodes,
@@ -89,7 +98,7 @@
     hd/.style={White, , font=\bfseries},
     sh/.style={Green!60!White}
     ] {
-      |[hd]| Precio &[0.75cm] |[hd]| K & & |[hd]| L & & |[hd]| M & & |[hd]| Mercado \\
+      |[hd]| \translate{Precio} &[0.75cm] |[hd]| K & & |[hd]| L & & |[hd]| M & & |[hd]| \translate{Mercado} \\
       $2.0$ & $0.0$ & |[sh]| $+$ & $0.5$ & |[sh]| $+$ & $0.0$ & |[sh]| $=$ & $0.5$ &\\
       $1.5$ & $1.0$ & |[sh]| $+$ & $1.5$ & |[sh]| $+$ & $0.5$ & |[sh]| $=$ & $3.0$ &\\
       $1.0$ & $2.0$ & |[sh]| $+$ & $2.5$ & |[sh]| $+$ & $1.0$ & |[sh]| $=$ & $5.5$ &\\
@@ -110,6 +119,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1C_1004-dtab3.tex :noweb yes
+  <<translations>>
   \begin{tikzpicture}
     \begin{scope}[xscale=0.4, yscale=0.8, font=\footnotesize]
        \draw[help lines, font=\scriptsize]
@@ -139,11 +149,12 @@
        \draw[help lines]
          (0, 1) node[left] {$1$}  -| (5.5, 0) node[below] {$5.5$};
        \draw[IMe] (0.5, 2) -- (10.5, 0) ;
-        \node[font=\sffamily\small\bfseries] at (6, 3) {Mercado};
+        \node[font=\sffamily\small\bfseries] at (6, 3) {\translate{Mercado}};
        \draw[axis] (0, 2.5) node[left] {$P$} |- (12, 0) node[below] {$A$} ;
      \end{scope}
   \end{tikzpicture}
 #+END_SRC
+
 
 *** Price changes
 #+BEGIN_SRC latex :tangle fig-1C_1004-d2.tex :noweb yes
@@ -203,6 +214,7 @@
     \draw[axis] (0, 5) node[left] {$P$} |- (5, 0) node[below] {$Q$} ;
   \end{tikzpicture}
 #+END_SRC
+
 
 *** Demand shifts
 #+BEGIN_SRC latex :tangle fig-1C_1004-d5.tex :noweb yes
@@ -300,15 +312,18 @@
   \end{tikzpicture}
 #+END_SRC
 
-** Chunks
 
 
 * Supply
 
+
 ** Figures and tables
 
+
 *** Individual supply table and curve
+
 #+BEGIN_SRC latex :tangle fig-1C_1004-otab.tex :noweb yes
+  <<translations>>
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (john) [matrix of nodes,
@@ -316,8 +331,8 @@
     hd/.style={White, , font=\bfseries},
     sh/.style={Green!60!White}
     ] {
-      |[hd]| Precio & |[hd]| Zumo \\[-2mm]
-      |[hd]| (€ por l) & |[hd]| (Hl al mes) \\
+      |[hd]| \translate{Precio} & |[hd]| \translate{Zumo} \\[-2mm]
+      |[hd]| (€ \translate{por} l) & |[hd]| (hl \translate{almes}) \\
       $2.0$ & $40$ \\
       $1.5$ & $30$ \\
       $1.0$ & $20$ \\
@@ -333,7 +348,8 @@
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
 
-     \node[above=3mm of john.north west, font=\bfseries\small, right, DarkBlue] {Productor X};
+     \node[above=3mm of john.north west, font=\bfseries\small, right, DarkBlue]
+       {\translate{Productor} X};
 
      \begin{scope}[xshift=5.75cm, xscale=0.8333, yscale=1.66667]
        \draw[axis] (0, 2.5) node[left] {$P$} |- (5, 0) node[below] {$Z$} ;
@@ -379,7 +395,9 @@
   \end{tikzpicture}
 #+END_SRC
 
+
 *** Price changes
+
 #+BEGIN_SRC latex :tangle fig-1C_1004-s2.tex :noweb yes
   \begin{tikzpicture}
     \draw[CMe] (0, 0.5) -- (4.5, 3.5) node[right] { $Q^{o}(P)$ }
@@ -401,7 +419,9 @@
   \end{tikzpicture}
 #+END_SRC
 
+
 *** Supply shifts
+
 #+BEGIN_SRC latex :tangle fig-1C_1004-s3.tex :noweb yes
   \begin{tikzpicture}
 
@@ -446,12 +466,12 @@
 #+END_SRC
 
 
-** Chunks
-
 
 * Equilibrium
 
+
 ** Figures and tables
+
 
 *** Equilibrium price
 #+BEGIN_SRC latex :tangle fig-1C_1004-eq1.tex :noweb yes
@@ -481,14 +501,17 @@
   \end{tikzpicture}
 #+END_SRC
 
+
 *** Surplus
+
 #+BEGIN_SRC latex :tangle fig-1C_1004-eq3.tex :noweb yes
+  <<translations>>
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
     \draw[|<->|, thick, DarkGreen] (2, 8.6)  -- (7, 8.6)
       node[font=\scriptsize\sffamily\bfseries, pos=0.5,
         fill=White, text = DarkGreen]
-      { Excedente };
+      { \translate{Excedente} };
     \draw[help lines] (2, 0) node[below] { $2$ }
      |- (0, 8) node[left] { $8$ }
      (7, 0) node[below] { $7$ } |- (2, 8);
@@ -502,14 +525,18 @@
   \end{tikzpicture}
 #+END_SRC
 
+
 *** Shortage
+
 #+BEGIN_SRC latex :tangle fig-1C_1004-eq4.tex :noweb yes
+  <<translations>>
+
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
     \draw[|<->|, thick, DarkGreen] (3, 1.4)  -- (8, 1.4)
       node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
           text = DarkGreen]
-      { Escasez };
+      { \translate{Escasez} };
     \draw[help lines] (3, 0) node[below] { $3$ }
      |- (0, 2) node[left] { $2$ }
      (8, 0) node[below] { $8$ } |- (3, 2);
@@ -523,6 +550,7 @@
   \end{tikzpicture}
 #+END_SRC
 
+
 *** Exchange points
 #+BEGIN_SRC latex :tangle fig-1C_1004-eq5.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
@@ -535,6 +563,7 @@
     \draw[axis] (0, 10) node[left] {$P$} |- (10, 0) node[below] {$Q$} ;
   \end{tikzpicture}
 #+END_SRC
+
 
 *** A demand increase
 #+BEGIN_SRC latex :tangle fig-1C_1004-comp1.tex :noweb yes
@@ -587,6 +616,7 @@
   \end{tikzpicture}
 #+END_SRC
 
+
 *** A supply decrease
 #+BEGIN_SRC latex :tangle fig-1C_1004-comp2.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
@@ -638,7 +668,9 @@
   \end{tikzpicture}
 #+END_SRC
 
+
 *** Both curves shifts
+
 #+BEGIN_SRC latex :tangle fig-1C_1004-comp3.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
@@ -741,7 +773,8 @@
   \end{tikzpicture}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit03-tab-comp.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1C_1004-tab_comp.tex :noweb yes
+  <<translations>>
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (PIVE) [matrix of nodes,
@@ -752,11 +785,11 @@
     column 2/.style={left},
     column 3/.style={left},
     ] {
-      & |[hd]| Demanda \\[-4mm]
-      & |[hd]| Aumento &[1cm] |[hd]| Disminución \\[-4mm]
-      |[hd]| Oferta & \\[-4mm]
-      |[hd]| \ \ \ \ Aumento    & $\uparrow Q\quad ?\;P$ & $?\;Q\quad \downarrow P$  \\
-      |[hd]| \ \ \ \ Disminución& $?\;Q\quad \uparrow P$ & $\downarrow Q\quad ?\;P$  \\
+      & |[hd]| \translate{Demanda} \\[-4mm]
+      & |[hd]| \translate{Aumento} &[1cm] |[hd]| \translate{Disminución} \\[-4mm]
+      |[hd]| \translate{Oferta} & \\[-4mm]
+      |[hd]| \ \ \ \ \translate{Aumento}    & $\uparrow Q\quad ?\;P$ & $?\;Q\quad \downarrow P$  \\
+      |[hd]| \ \ \ \ \translate{Disminución} & $?\;Q\quad \uparrow P$ & $\downarrow Q\quad ?\;P$  \\
     } ;
     \begin{scope}[on background layer]
       \coordinate (L) at ($ (PIVE.north west)!(PIVE-2-2.south west)!(PIVE.south west) $);
@@ -780,4 +813,42 @@
   \end{tikzpicture}
 #+END_SRC
 
+
+* Common
+
+
 ** Chunks
+
+
+*** Translations
+
+#+BEGIN_SRC latex :noweb-ref translations
+  \deftranslation[to=Spanish]{Consumidor}{Consumidor}
+  \deftranslation[to=English]{Consumidor}{Consumer}
+  \deftranslation[to=Spanish]{Arroz}{Arroz}
+  \deftranslation[to=English]{Arroz}{Rice}
+  \deftranslation[to=Spanish]{Precio}{Precio}
+  \deftranslation[to=English]{Precio}{Price}
+  \deftranslation[to=Spanish]{Mercado}{Mercado}
+  \deftranslation[to=English]{Mercado}{Market}
+  \deftranslation[to=Spanish]{por}{por}
+  \deftranslation[to=English]{por}{per}
+  \deftranslation[to=Spanish]{almes}{al mes}
+  \deftranslation[to=English]{almes}{per month}
+  \deftranslation[to=Spanish]{Productor}{Productor}
+  \deftranslation[to=English]{Productor}{Producer}
+  \deftranslation[to=Spanish]{Zumo}{Zumo}
+  \deftranslation[to=English]{Zumo}{Juice}
+  \deftranslation[to=Spanish]{Excedente}{Excedente}
+  \deftranslation[to=English]{Excedente}{Surplus}
+  \deftranslation[to=Spanish]{Escasez}{Escasez}
+  \deftranslation[to=English]{Escasez}{Shortage}
+  \deftranslation[to=Spanish]{Demanda}{Demanda}
+  \deftranslation[to=English]{Demanda}{Demand}
+  \deftranslation[to=Spanish]{Oferta}{Oferta}
+  \deftranslation[to=English]{Oferta}{Supply}
+  \deftranslation[to=Spanish]{Aumento}{Aumento}
+  \deftranslation[to=English]{Aumento}{Increase}
+  \deftranslation[to=Spanish]{Disminución}{Disminución}
+  \deftranslation[to=English]{Disminución}{Decrease}
+#+END_SRC
