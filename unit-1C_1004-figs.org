@@ -9,10 +9,7 @@
 
 ** Figures and tables
 *** Individual demand table and curve
-#+BEGIN_SRC latex :tangle unit03-fig-dtab.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-dtab.tex :noweb yes
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (john) [matrix of nodes,
@@ -27,16 +24,16 @@
       $1.0$ & $2.0$ \\
       $0.5$ & $3.0$ \\
       $0.0$ & $4.0$ \\
-    } ;        
+    } ;
     \begin{scope}[on background layer]
       \coordinate (Lc) at ($ (john.north west)!(john-2-1.south west)!(john.south west) $);
       \coordinate (Rc) at  ($ (john.north east)!(john-2-1.south east)!(john.south east) $);
       \fill[LightSteelBlue!60!White] (Lc) -- (Rc) [rounded corners] |-
       (john.south west) [sharp corners] -- cycle ;
-      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (john.north east) 
+      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (john.north east)
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
-    
+
      \node[above=3mm of john.north west, font=\bfseries\small, right, DarkBlue] {Consumidor K};
 
      \begin{scope}[xshift=5.75cm, xscale=0.8333, yscale=1.66667]
@@ -47,12 +44,12 @@
        \coordinate (C) at (2, 1) ;
        \coordinate (D) at (3, 0.5) ;
        \coordinate (E) at (4, 0) ;
-     
+
        \draw[help lines]
-         (0, 1.5) -| (1, 0) 
+         (0, 1.5) -| (1, 0)
          (0, 1) -| (2, 0)
          (0, 0.5) -| (3, 0)
-       ; 
+       ;
 
        \node[dot, IMe] at (A) {} ;
        \node[dot, IMe] at (B) {} ;
@@ -60,14 +57,14 @@
        \node[dot, IMe] at (D) {} ;
        \node[dot, IMe] at (E) {} ;
 
-       \path[curve label, left] 
+       \path[curve label, left]
          (0, 2)   node {$2.0$}
          (0, 1.5) node {$1.5$}
          (0, 1)   node {$1.0$}
          (0, 0.5) node {$0.5$}
          ;
 
-       \path[curve label, below] 
+       \path[curve label, below]
          (1, 0) node {$1.0$}
          (2, 0) node {$2.0$}
          (3, 0) node {$3.0$}
@@ -76,18 +73,14 @@
 
        \draw[IMe] (A) -- (E) ;
 
- 
+
      \end{scope}
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Market demand
-#+BEGIN_SRC latex :tangle unit03-fig-dtab2.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-dtab2.tex :noweb yes
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (john) [matrix of nodes,
@@ -102,66 +95,58 @@
       $1.0$ & $2.0$ & |[sh]| $+$ & $2.5$ & |[sh]| $+$ & $1.0$ & |[sh]| $=$ & $5.5$ &\\
       $0.5$ & $3.0$ & |[sh]| $+$ & $3.5$ & |[sh]| $+$ & $1.5$ & |[sh]| $=$ & $8.0$ &\\
       $0.0$ & $4.0$ & |[sh]| $+$ & $4.5$ & |[sh]| $+$ & $2.0$ & |[sh]| $=$ & $10.5$ &\\
-    } ;        
+    } ;
     \begin{scope}[on background layer]
       \coordinate (Lc) at ($ (john.north west)!(john-1-1.south west)!(john.south west) $);
       \coordinate (Rc) at  ($ (john.north east)!(john-1-1.south east)!(john.south east) $);
       \fill[LightSteelBlue!60!White] (Lc) -- (Rc) [rounded corners] |-
       (john.south west) [sharp corners] -- cycle ;
-      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (john.north east) 
+      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (john.north east)
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
-    
+
 
    \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit03-fig-dtab3.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-dtab3.tex :noweb yes
   \begin{tikzpicture}
     \begin{scope}[xscale=0.4, yscale=0.8, font=\footnotesize]
        \draw[help lines, font=\scriptsize]
-         (0, 1) node[left] {$1$}  -| (2, 0) node[below] {$2$}; 
+         (0, 1) node[left] {$1$}  -| (2, 0) node[below] {$2$};
        \draw[IMe] (0, 2) -- (4, 0) ;
        \node[font=\sffamily\small\bfseries] at (2.5, 3) {K};
-       \draw[axis] (0, 2.5) node[left] {$P$} |- (5, 0) node[below] {$A$} ;     
+       \draw[axis] (0, 2.5) node[left] {$P$} |- (5, 0) node[below] {$A$} ;
      \end{scope}
 
     \begin{scope}[xshift=2.2cm, xscale=0.4, yscale=0.8, font=\footnotesize]
        \draw[help lines, font=\scriptsize]
-         (0, 1) node[left] {$1$}  -| (2.5, 0) node[below] {$2.5$}; 
+         (0, 1) node[left] {$1$}  -| (2.5, 0) node[below] {$2.5$};
        \draw[IMe] (0.5, 2) -- (4.5, 0) ;
-       \node[font=\sffamily\small\bfseries] at (2.5, 3) {L}; 
-       \draw[axis] (0, 2.5) node[left] {$P$} |- (5, 0) node[below] {$A$} ;     
+       \node[font=\sffamily\small\bfseries] at (2.5, 3) {L};
+       \draw[axis] (0, 2.5) node[left] {$P$} |- (5, 0) node[below] {$A$} ;
      \end{scope}
 
     \begin{scope}[xshift=4.4cm, xscale=0.4, yscale=0.8, font=\footnotesize]
        \draw[help lines, font=\scriptsize]
-         (0, 1) node[left] {$1$}  -| (1, 0) node[below] {$1$}; 
+         (0, 1) node[left] {$1$}  -| (1, 0) node[below] {$1$};
        \draw[IMe] (0, 2) -- (2, 0) ;
         \node[font=\sffamily\small\bfseries] at (2.5, 3) {M};
-       \draw[axis] (0, 2.5) node[left] {$P$} |- (5, 0) node[below] {$A$} ;     
+       \draw[axis] (0, 2.5) node[left] {$P$} |- (5, 0) node[below] {$A$} ;
      \end{scope}
 
     \begin{scope}[xshift=6.6cm, xscale=0.4, yscale=0.8, font=\footnotesize]
        \draw[help lines]
-         (0, 1) node[left] {$1$}  -| (5.5, 0) node[below] {$5.5$}; 
+         (0, 1) node[left] {$1$}  -| (5.5, 0) node[below] {$5.5$};
        \draw[IMe] (0.5, 2) -- (10.5, 0) ;
         \node[font=\sffamily\small\bfseries] at (6, 3) {Mercado};
-       \draw[axis] (0, 2.5) node[left] {$P$} |- (12, 0) node[below] {$A$} ;     
+       \draw[axis] (0, 2.5) node[left] {$P$} |- (12, 0) node[below] {$A$} ;
      \end{scope}
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Price changes
-#+BEGIN_SRC latex :tangle unit03-fig-d2.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-d2.tex :noweb yes
   \begin{tikzpicture}
     \draw[IMe] (0, 3.5) -- (4.5, 0) node[pos=0.85, above right] { $Q^{d}(P)$ }
        node[pos=0.2] (A) {};
@@ -170,12 +155,12 @@
 
     \draw[decorate, decoration={markings,
       mark=between positions 0.25 and 1 step 0.255
-      with {\arrow{stealth}}}] 
+      with {\arrow{stealth}}}]
     let \p1 = (A) in
     (A) -- (\x1, 0);
     \draw[decorate, decoration={markings,
       mark=between positions 0.5 and 1 step 0.51
-      with {\arrow{stealth}}}] 
+      with {\arrow{stealth}}}]
     let \p1 = (A) in
     (0, \y1) -- (A)  ;
 
@@ -183,161 +168,136 @@
     \node[dot, label=60:$A$] at (A) {};
     \draw[axis] (0, 5) node[left] {$P$} |- (5, 0) node[below] {$Q$} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit03-fig-d3.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-d3.tex :noweb yes
   \begin{tikzpicture}
     \draw[IMe] (0, 3.5) -- (4.5, 0) node[pos=0.85, above right] { $Q^{d}(P)$ }
        node[pos=0.2] (A) {} node[pos=0.65] (B) {};
     \draw[help lines] let \p1 = (A), \p2 = (B) in
-       (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q_{A}$ } 
+       (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q_{A}$ }
        (0, \y2) node[left] { $P_{B}$}  -| (\x2, 0) node[below] { $Q_{B}$ } ;
     \node[dot, label=60:$A$] at (A) {};
     \node[dot, label=60:$B$] at (B) {};
     \draw[axis] (0, 5) node[left] {$P$} |- (5, 0) node[below] {$Q$} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit03-fig-d4.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-d4.tex :noweb yes
   \begin{tikzpicture}
     \draw[IMe] (0, 3.5) -- (4.5, 0) node[pos=0.85, above right] { $Q^{d}(P)$ }
        node[pos=0.2] (A) {} node[pos=0.65] (B) {};
     \draw[help lines] let \p1 = (A), \p2 = (B) in
-       (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q_{A}$ } 
+       (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q_{A}$ }
        (0, \y2) node[left] { $P_{B}$}  -| (\x2, 0) node[below] { $Q_{B}$ } ;
     \node[dot, label=60:$A$] at (A) {};
     \node[dot, label=60:$B$] at (B) {};
-    \draw[shift arrow, ->, DarkGreen] 
+    \draw[shift arrow, ->, DarkGreen]
      ($ (A) + (0.1, 0.1) $) -- ($ (B) + (0.1, 0.1) $) ;
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen] 
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
        let \p1 = (A), \p2 = (B) in
        (-0.35, \y1) -- (-0.35, \y2)  ;
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen] 
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
        let \p1 = (A), \p2 = (B) in
        (\x1, -0.3) -- (\x2, -0.3) ;
     \draw[axis] (0, 5) node[left] {$P$} |- (5, 0) node[below] {$Q$} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Demand shifts
-#+BEGIN_SRC latex :tangle unit03-fig-d5.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-d5.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1, yscale=0.1]
-    \draw[IMe] (3, 45) .. controls (8, 18) and (20, 8) .. (45, 5) 
+    \draw[IMe] (3, 45) .. controls (8, 18) and (20, 8) .. (45, 5)
        node[right] { $D$ }
        node[pos=0.5] (A) {} ;
      \draw[help lines] let \p1 = (A) in
-        (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q_{A}$ } 
+        (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q_{A}$ }
         ;
     \node[dot] at (A) {};
 
     \draw[axis] (0, 50) node[left] {$P$} |- (50, 0) node[below] {$Q$} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit03-fig-d6.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-d6.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1, yscale=0.1]
-    \draw[IMe] (3, 45) .. controls (8, 18) and (20, 8) .. (45, 5) 
+    \draw[IMe] (3, 45) .. controls (8, 18) and (20, 8) .. (45, 5)
        node[right] { $D$ }
        node[pos=0.5] (A) {} ;
-    \draw[IMe, name path=D2] 
-       (13, 45) .. controls (18, 18) and (30, 15) .. (45, 13) 
+    \draw[IMe, name path=D2]
+       (13, 45) .. controls (18, 18) and (30, 15) .. (45, 13)
        node[right] { $D'$ } ;
 
      \path[name path=P]  let \p1 = (A) in
          (0, \y1) -- (50, \y1) ;
 
      \draw[help lines] let \p1 = (A) in
-        (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q^{}_{A}$ } 
+        (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q^{}_{A}$ }
         ;
     \draw[name intersections={of=D2 and P, by={B}},
-          help lines] 
+          help lines]
         let \p1 = (B) in
-        (0, \y1)  -| (\x1, 0) node[below] { $Q'_{A}$ }    
+        (0, \y1)  -| (\x1, 0) node[below] { $Q'_{A}$ }
         node[dot] at (B) {}
         ;
     \node[dot] at (A) {};
 
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen] 
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
         let \p1 = (A), \p2 = (B) in
         (\x1, -3) -- (\x2, -3) ;
     \draw[axis] (0, 50) node[left] {$P$} |- (50, 0) node[below] {$Q$} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit03-fig-d7.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-d7.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1, yscale=0.1]
-    \draw[IMe] (3, 45) .. controls (8, 18) and (20, 8) .. (45, 5) 
+    \draw[IMe] (3, 45) .. controls (8, 18) and (20, 8) .. (45, 5)
        node[right] { $D$ }
        node[pos=0.5] (A) {} ;
-    \draw[IMe, name path=D2] 
-       (13, 45) .. controls (18, 18) and (30, 15) .. (45, 13) 
+    \draw[IMe, name path=D2]
+       (13, 45) .. controls (18, 18) and (30, 15) .. (45, 13)
        node[right] { $D'$ } ;
 
      \path[name path=Q]  let \p1 = (A) in
          (\x1, 0) -- (\x1, 50) ;
      \draw[help lines] let \p1 = (A) in
-        (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q_{A}$ } 
+        (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q_{A}$ }
         ;
     \draw[name intersections={of=D2 and Q, by={C}},
           help lines] let \p1 = (C) in
-        (0, \y1) node[left] { $P'_{A}$}  -| (\x1, 0)  
+        (0, \y1) node[left] { $P'_{A}$}  -| (\x1, 0)
       node[dot] at (C) {};
     \node[dot] at (A) {};
 
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen] 
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
        let \p1 = (A), \p2 = (C) in
        (-3.5, \y1) -- (-3.5, \y2)  ;
     \draw[axis] (0, 50) node[left] {$P$} |- (50, 0) node[below] {$Q$} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit03-fig-d8.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-d8.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1, yscale=0.1]
-    \draw[IMe] (7, 42) .. controls (10, 18) and (20, 9) .. (40, 8) 
+    \draw[IMe] (7, 42) .. controls (10, 18) and (20, 9) .. (40, 8)
        node[right] { $D$ }
        node[pos=0.5] (A) {} ;
 
-    \draw[IMe, name path=D2] 
-       (13, 45) .. controls (18, 18) and (30, 14) .. (45, 13) 
+    \draw[IMe, name path=D2]
+       (13, 45) .. controls (18, 18) and (30, 14) .. (45, 13)
        node[right] { $D^{+}$ } ;
 
-    \draw[IMe, name path=D3] 
-       (1.5, 38) .. controls (4, 9) and (10, 5) .. (35, 3) 
+    \draw[IMe, name path=D3]
+       (1.5, 38) .. controls (4, 9) and (10, 5) .. (35, 3)
        node[right] { $D^{-}$ } ;
 
     \path[name path=P]  let \p1 = (A) in (0, \y1) -- (50, \y1) ;
     \draw[name intersections={of=D2 and P, by={B}}]  ;
     \draw[name intersections={of=D3 and P, by={D}}]  ;
-    \draw[shift arrow, ->, shorten <= 1pt, shorten >= 6pt, DarkGreen] 
+    \draw[shift arrow, ->, shorten <= 1pt, shorten >= 6pt, DarkGreen]
       (A) -- (B) ;
     \draw[shift arrow, ->, shorten <= 1pt, DarkGreen] (A) -- (D) ;
     \draw[axis] (0, 50) node[left] {$P$} |- (50, 0) node[below] {$Q$} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 ** Chunks
@@ -348,10 +308,7 @@
 ** Figures and tables
 
 *** Individual supply table and curve
-#+BEGIN_SRC latex :tangle unit03-fig-otab.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-otab.tex :noweb yes
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (john) [matrix of nodes,
@@ -366,16 +323,16 @@
       $1.0$ & $20$ \\
       $0.5$ & $10$ \\
       $0.0$ & \phantom{0}$0$ \\
-    } ;        
+    } ;
     \begin{scope}[on background layer]
       \coordinate (Lc) at ($ (john.north west)!(john-2-1.south west)!(john.south west) $);
       \coordinate (Rc) at  ($ (john.north east)!(john-2-1.south east)!(john.south east) $);
       \fill[LightSteelBlue!60!White] (Lc) -- (Rc) [rounded corners] |-
       (john.south west) [sharp corners] -- cycle ;
-      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (john.north east) 
+      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (john.north east)
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
-    
+
      \node[above=3mm of john.north west, font=\bfseries\small, right, DarkBlue] {Productor X};
 
      \begin{scope}[xshift=5.75cm, xscale=0.8333, yscale=1.66667]
@@ -386,13 +343,13 @@
        \coordinate (C) at (2, 1) ;
        \coordinate (D) at (1, 0.5) ;
        \coordinate (E) at (0, 0) ;
-     
+
        \draw[help lines]
-         (0, 2) -| (4, 0) 
-         (0, 1.5) -| (3, 0) 
+         (0, 2) -| (4, 0)
+         (0, 1.5) -| (3, 0)
          (0, 1) -| (2, 0)
          (0, 0.5) -| (1, 0)
-       ; 
+       ;
 
        \node[dot, CMe] at (A) {} ;
        \node[dot, CMe] at (B) {} ;
@@ -400,14 +357,14 @@
        \node[dot, CMe] at (D) {} ;
        \node[dot, CMe] at (E) {} ;
 
-       \path[curve label, left] 
+       \path[curve label, left]
          (0, 2)   node {$2.0$}
          (0, 1.5) node {$1.5$}
          (0, 1)   node {$1.0$}
          (0, 0.5) node {$0.5$}
          ;
 
-       \path[curve label, below] 
+       \path[curve label, below]
          (1, 0) node {$10$}
          (2, 0) node {$20$}
          (3, 0) node {$30$}
@@ -416,52 +373,44 @@
 
        \draw[CMe] (A) -- (E) ;
 
- 
+
      \end{scope}
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Price changes
-#+BEGIN_SRC latex :tangle unit03-fig-s2.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-s2.tex :noweb yes
   \begin{tikzpicture}
     \draw[CMe] (0, 0.5) -- (4.5, 3.5) node[right] { $Q^{o}(P)$ }
        node[pos=0.2] (A) {} node[pos=0.65] (B) {};
     \draw[help lines] let \p1 = (A), \p2 = (B) in
-       (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q_{A}$ } 
+       (0, \y1) node[left] { $P_{A}$}  -| (\x1, 0) node[below] { $Q_{A}$ }
        (0, \y2) node[left] { $P_{B}$}  -| (\x2, 0) node[below] { $Q_{B}$ } ;
     \node[dot, label=above:$A$] at (A) {};
     \node[dot, label=above:$B$] at (B) {};
-    \draw[shift arrow, ->, shorten <= 4pt, DarkGreen] 
+    \draw[shift arrow, ->, shorten <= 4pt, DarkGreen]
        ($ (A) + (0, -0.15) $) -- ($ (B) + (0, -0.15) $) ;
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen] 
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
        let \p1 = (A), \p2 = (B) in
        (-0.35, \y1) -- (-0.35, \y2)  ;
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen] 
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
        let \p1 = (A), \p2 = (B) in
        (\x1, -0.3) -- (\x2, -0.3) ;
     \draw[axis] (0, 5) node[left] {$P$} |- (5, 0) node[below] {$Q$} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Supply shifts
-#+BEGIN_SRC latex :tangle unit03-fig-s3.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-s3.tex :noweb yes
   \begin{tikzpicture}
-  
+
     \path[name path=P] (0, 1.5) -- (4.5, 1.5) ;
     \draw[CMe, name path=S1] (0.25, 1.0) -- (4.5, 3.5) node[right] { $S$ }
-     node[pos=0.8] (A) {} ; 
+     node[pos=0.8] (A) {} ;
     \draw[CMe, name path=S2] (0.25, 0.25) -- (4.5, 2) node[right] { $S'$ }
       node[pos=0.85] (B) {} ;
-    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen] 
+    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen]
       (A) -- (B) ;
     \path[name intersections={of=S1 and P, name=E1}] ;
     \path[name intersections={of=S2 and P, name=E2}] ;
@@ -469,7 +418,7 @@
     \draw[help lines]
       let \p1=(E1-1), \p2=(E2-1) in
       (0, \y1) node[left] {$P_{A}$} -|
-      (\x1, 0) node[below] {$Q_{A}$} 
+      (\x1, 0) node[below] {$Q_{A}$}
       (E1-1) -| (\x2, 0) node[below] {$Q'_{A}$}
       ;
     \node[dot] at (E1-1) {} ;
@@ -477,28 +426,23 @@
 
     \draw[axis] (0, 5) node[left] {$P$} |- (5, 0) node[below] {$Q$} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit03-fig-s4.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-s4.tex :noweb yes
   \begin{tikzpicture}
     \draw[CMe] (0.25, 1.0) -- (4.5, 3.5) node[right] { $S$ }
-     node[pos=0.8] (A) {} ; 
+     node[pos=0.8] (A) {} ;
     \draw[CMe] (0.25, 0.5) -- (4.5, 2) node[right] { $S^{+}$ }
       node[pos=0.85] (B) {} ;
-    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen] 
+    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen]
      (A) -- (B) ;
-    \draw[CMe] (0.25, 1.5) -- (4, 4.5) node[right] { $S^{-}$ } 
-      node[pos=0.75] (C) {} ; 
-    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen] 
+    \draw[CMe] (0.25, 1.5) -- (4, 4.5) node[right] { $S^{-}$ }
+      node[pos=0.75] (C) {} ;
+    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen]
       (A) -- (C) ;
 
     \draw[axis] (0, 5) node[left] {$P$} |- (5, 0) node[below] {$Q$} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 
@@ -510,56 +454,45 @@
 ** Figures and tables
 
 *** Equilibrium price
-#+BEGIN_SRC latex :tangle unit03-fig-eq1.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-eq1.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
     \draw[help lines] (5, 0) node[below] { $Q^{*}$ }
      |- (0, 5) node[left] { $P^{*}$ } ;
     \draw[CMe] (2.33333333, 1) -- (7.666666667, 9) node[right] { $S$ }
-     node[pos=0.8] (A) {} ; 
+     node[pos=0.8] (A) {} ;
     \draw[IMe] (1, 9) -- (9, 1) node[right] { $D$ } ;
     %\draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->] (A) -- (B) ;
     \draw[axis] (0, 10) node[left] {$P$} |- (10, 0) node[below] {$Q$} ;
     \node[dot, label=right:{$E$}] at (5, 5) {};
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit03-fig-eq2.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-eq2.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
     \draw[help lines] (5, 0) node[below] { $5$ }
      |- (0, 5) node[left] { $5$ } ;
-    \draw[CMe] (2.33333, 1) -- (7.666666, 9) node[right] { $S$ }; 
+    \draw[CMe] (2.33333, 1) -- (7.666666, 9) node[right] { $S$ };
     \draw[IMe] (1, 9) -- (9, 1) node[right] { $D$ } ;
     %\draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->] (A) -- (B) ;
     \draw[axis] (0, 10) node[left] {$P$} |- (10, 0) node[below] {$Q$} ;
     \node[dot] at (5, 5) {};
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Surplus
-#+BEGIN_SRC latex :tangle unit03-fig-eq3.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-eq3.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
     \draw[|<->|, thick, DarkGreen] (2, 8.6)  -- (7, 8.6)
       node[font=\scriptsize\sffamily\bfseries, pos=0.5,
-        fill=White, text = DarkGreen]  
-      { Excedente }; 
+        fill=White, text = DarkGreen]
+      { Excedente };
     \draw[help lines] (2, 0) node[below] { $2$ }
-     |- (0, 8) node[left] { $8$ } 
+     |- (0, 8) node[left] { $8$ }
      (7, 0) node[below] { $7$ } |- (2, 8);
-    \draw[CMe] (2.33333, 1) -- (7.666666, 9) node[right] { $S$ }; 
+    \draw[CMe] (2.33333, 1) -- (7.666666, 9) node[right] { $S$ };
     \draw[IMe] (1, 9) -- (9, 1) node[right] { $D$ } ;
     %\draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->] (A) -- (B) ;
     \draw[axis] (0, 10) node[left] {$P$} |- (10, 0) node[below] {$Q$} ;
@@ -567,24 +500,20 @@
   %  \node[dot] at (7, 8) {};
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Shortage
-#+BEGIN_SRC latex :tangle unit03-fig-eq4.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-eq4.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
     \draw[|<->|, thick, DarkGreen] (3, 1.4)  -- (8, 1.4)
-      node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White, 
-          text = DarkGreen] 
-      { Escasez }; 
+      node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
+          text = DarkGreen]
+      { Escasez };
     \draw[help lines] (3, 0) node[below] { $3$ }
-     |- (0, 2) node[left] { $2$ } 
+     |- (0, 2) node[left] { $2$ }
      (8, 0) node[below] { $8$ } |- (3, 2);
-    \draw[CMe] (2.33333, 1) -- (7.666666, 9) node[right] { $S$ }; 
+    \draw[CMe] (2.33333, 1) -- (7.666666, 9) node[right] { $S$ };
     \draw[IMe] (1, 9) -- (9, 1) node[right] { $D$ } ;
     %\draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->] (A) -- (B) ;
     \draw[axis] (0, 10) node[left] {$P$} |- (10, 0) node[below] {$Q$} ;
@@ -592,45 +521,37 @@
   %  \node[dot] at (8, 2) {};
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Exchange points
-#+BEGIN_SRC latex :tangle unit03-fig-eq5.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-eq5.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
-    \draw[CMe, shaded] (2.33333, 1) -- (7.666666, 9) node[right] { $S$ }; 
+    \draw[CMe, shaded] (2.33333, 1) -- (7.666666, 9) node[right] { $S$ };
     \draw[IMe, shaded] (1, 9) -- (9, 1) node[right] { $D$ } ;
     \draw[curve, ultra thick, DarkGreen]
-       (2.33333, 1) -- (5, 5) -- (1, 9) ; 
+       (2.33333, 1) -- (5, 5) -- (1, 9) ;
 
     \draw[axis] (0, 10) node[left] {$P$} |- (10, 0) node[below] {$Q$} ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** A demand increase
-#+BEGIN_SRC latex :tangle unit03-fig-comp1.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-comp1.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
     % \draw[|<->|, thick, DarkGreen] (3, 1.4)  -- (8, 1.4)
-    %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White, 
-    %       text = DarkGreen] 
-    %   { Escasez }; 
+    %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
+    %       text = DarkGreen]
+    %   { Escasez };
     % \draw[help lines] (3, 0) node[below] { $3$ }
-    %  |- (0, 2) node[left] { $2$ } 
+    %  |- (0, 2) node[left] { $2$ }
     %  (8, 0) node[below] { $8$ } |- (3, 2);
 
-    \draw[CMe, name path=S] (1, 1) -- (9, 5) node[right] { $S$ }; 
+    \draw[CMe, name path=S] (1, 1) -- (9, 5) node[right] { $S$ };
     \draw[IMe, name path=D1] (1, 5.5) -- (5, 1) node[right] { $D_{1}$ } ;
     \draw[IMe, name path=D2] (2, 9) -- (9, 2) node[right] { $D_{2}$ } ;
-  
+
     \path[name intersections={of=S and D1, name=e1}] ;
     \path[name intersections={of=S and D2, name=e2}] ;
 
@@ -639,53 +560,49 @@
     \node[dot, label={$E_{1}$}] at (e1-1) {};
     \node[dot, label={$E_{2}$}] at (e2-1) {};
 
-    \draw[shift arrow, shorten <= 4pt,  shorten >= 3pt, ->,  DarkGreen] 
-        ($ (e1-1)-(0,0.2) $) -- ($ (e2-1)-(0, 0.2) $) ;    
+    \draw[shift arrow, shorten <= 4pt,  shorten >= 3pt, ->,  DarkGreen]
+        ($ (e1-1)-(0,0.2) $) -- ($ (e2-1)-(0, 0.2) $) ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen] 
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen]
       let \p1=(e1-1), \p2=(e2-1) in
-        (\x1, -0.6) -- (\x2, -0.6) 
-      ;    
+        (\x1, -0.6) -- (\x2, -0.6)
+      ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen] 
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen]
       let \p1=(e1-1), \p2=(e2-1) in
-        (-0.8, \y1) -- (-0.8, \y2) 
-      ;    
+        (-0.8, \y1) -- (-0.8, \y2)
+      ;
 
 
     \begin{scope}[on background layer]
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(e1-1), \p2=(e2-1) in
       (\x1, 0) node[below] { $Q^{*}_{1}$ }
-      |- (0, \y1) node[left] { $P^{*}_{1}$ } 
+      |- (0, \y1) node[left] { $P^{*}_{1}$ }
       (\x2, 0) node[below] { $Q^{*}_{2}$ }
-      |- (0, \y2) node[left] { $P^{*}_{2}$ } 
+      |- (0, \y2) node[left] { $P^{*}_{2}$ }
       ;
     \end{scope}
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** A supply decrease
-#+BEGIN_SRC latex :tangle unit03-fig-comp2.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-comp2.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
     % \draw[|<->|, thick, DarkGreen] (3, 1.4)  -- (8, 1.4)
-    %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White, 
-    %       text = DarkGreen] 
-    %   { Escasez }; 
+    %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
+    %       text = DarkGreen]
+    %   { Escasez };
     % \draw[help lines] (3, 0) node[below] { $3$ }
-    %  |- (0, 2) node[left] { $2$ } 
+    %  |- (0, 2) node[left] { $2$ }
     %  (8, 0) node[below] { $8$ } |- (3, 2);
 
-    \draw[CMe, name path=S1] (5, 1) -- (9, 4) node[right] { $S_{1}$ }; 
+    \draw[CMe, name path=S1] (5, 1) -- (9, 4) node[right] { $S_{1}$ };
     \draw[CMe, name path=S2] (1, 3.5) -- (9, 8) node[right] { $S_{2}$ } ;
     \draw[IMe, name path=D] (1, 7.5) -- (9, 2) node[right] { $D$ } ;
-  
+
     \path[name intersections={of=S1 and D, name=e1}] ;
     \path[name intersections={of=S2 and D, name=e2}] ;
 
@@ -694,54 +611,50 @@
     \node[dot, label={$E_{1}$}] at (e1-1) {};
     \node[dot, label={$E_{2}$}] at (e2-1) {};
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 2pt, ->, DarkGreen] 
-        ($ (e1-1)-(0,0.2) $) -- ($ (e2-1)-(0, 0.2) $) ;    
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 2pt, ->, DarkGreen]
+        ($ (e1-1)-(0,0.2) $) -- ($ (e2-1)-(0, 0.2) $) ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen] 
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen]
       let \p1=(e1-1), \p2=(e2-1) in
-        (\x1, -0.6) -- (\x2, -0.6) 
-      ;    
+        (\x1, -0.6) -- (\x2, -0.6)
+      ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen] 
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen]
       let \p1=(e1-1), \p2=(e2-1) in
-        (-0.8, \y1) -- (-0.8, \y2) 
-      ;    
+        (-0.8, \y1) -- (-0.8, \y2)
+      ;
 
 
     \begin{scope}[on background layer]
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(e1-1), \p2=(e2-1) in
       (\x1, 0) node[below] { $Q^{*}_{1}$ }
-      |- (0, \y1) node[left] { $P^{*}_{1}$ } 
+      |- (0, \y1) node[left] { $P^{*}_{1}$ }
       (\x2, 0) node[below] { $Q^{*}_{2}$ }
-      |- (0, \y2) node[left] { $P^{*}_{2}$ } 
+      |- (0, \y2) node[left] { $P^{*}_{2}$ }
       ;
     \end{scope}
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 *** Both curves shifts
-#+BEGIN_SRC latex :tangle unit03-fig-comp3.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-comp3.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
     % \draw[|<->|, thick, DarkGreen] (3, 1.4)  -- (8, 1.4)
-    %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White, 
-    %       text = DarkGreen] 
-    %   { Escasez }; 
+    %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
+    %       text = DarkGreen]
+    %   { Escasez };
     % \draw[help lines] (3, 0) node[below] { $3$ }
-    %  |- (0, 2) node[left] { $2$ } 
+    %  |- (0, 2) node[left] { $2$ }
     %  (8, 0) node[below] { $8$ } |- (3, 2);
 
-    \draw[CMe, name path=S1] (1, 1) -- (9, 4) node[right] { $S_{1}$ }; 
+    \draw[CMe, name path=S1] (1, 1) -- (9, 4) node[right] { $S_{1}$ };
     \draw[CMe, name path=S2] (1, 3) -- (9, 6) node[right] { $S_{2}$ } ;
     \draw[IMe, name path=D1] (1, 6) -- (5.5, 1.5) node[right] { $D_{1}$ } ;
     \draw[IMe, name path=D2] (3, 9) -- (9, 3) node[right] { $D_{2}$ } ;
-  
+
     \path[name intersections={of=S1 and D1, name=e1}] ;
     \path[name intersections={of=S2 and D2, name=e2}] ;
 
@@ -750,53 +663,49 @@
     \node[dot, label={$E_{1}$}] at (e1-1) {};
     \node[dot, label={$E_{2}$}] at (e2-1) {};
 
-    \draw[shift arrow, shorten <= 10pt,  shorten >= 4pt, ->, DarkGreen] 
-        (e1-1) -- (e2-1) ;    
+    \draw[shift arrow, shorten <= 10pt,  shorten >= 4pt, ->, DarkGreen]
+        (e1-1) -- (e2-1) ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen] 
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen]
       let \p1=(e1-1), \p2=(e2-1) in
-        (\x1, -0.6) -- (\x2, -0.6) 
-      ;    
+        (\x1, -0.6) -- (\x2, -0.6)
+      ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen] 
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen]
       let \p1=(e1-1), \p2=(e2-1) in
-        (-0.8, \y1) -- (-0.8, \y2) 
-      ;    
+        (-0.8, \y1) -- (-0.8, \y2)
+      ;
 
 
     \begin{scope}[on background layer]
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(e1-1), \p2=(e2-1) in
       (\x1, 0) node[below] { $Q^{*}_{1}$ }
-      |- (0, \y1) node[left] { $P^{*}_{1}$ } 
+      |- (0, \y1) node[left] { $P^{*}_{1}$ }
       (\x2, 0) node[below] { $Q^{*}_{2}$ }
-      |- (0, \y2) node[left] { $P^{*}_{2}$ } 
+      |- (0, \y2) node[left] { $P^{*}_{2}$ }
       ;
     \end{scope}
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit03-fig-comp4.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1C_1004-comp4.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
     % \draw[|<->|, thick, DarkGreen] (3, 1.4)  -- (8, 1.4)
-    %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White, 
-    %       text = DarkGreen] 
-    %   { Escasez }; 
+    %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
+    %       text = DarkGreen]
+    %   { Escasez };
     % \draw[help lines] (3, 0) node[below] { $3$ }
-    %  |- (0, 2) node[left] { $2$ } 
+    %  |- (0, 2) node[left] { $2$ }
     %  (8, 0) node[below] { $8$ } |- (3, 2);
 
-    \draw[CMe, name path=S1] (1, 1) -- (8, 5.375) node[right] { $S_{1}$ }; 
+    \draw[CMe, name path=S1] (1, 1) -- (8, 5.375) node[right] { $S_{1}$ };
     \draw[CMe, name path=S2] (1, 5) -- (8, 9.375) node[right] { $S_{2}$ } ;
     \draw[IMe, name path=D1] (1, 6) -- (8, 1) node[right] { $D_{1}$ } ;
     \draw[IMe, name path=D2] (1, 8) -- (8, 3) node[right] { $D_{2}$ } ;
-  
+
     \path[name intersections={of=S1 and D1, name=e1}] ;
     \path[name intersections={of=S2 and D2, name=e2}] ;
 
@@ -805,44 +714,40 @@
     \node[dot, label={$E_{1}$}] at (e1-1) {};
     \node[dot, label={$E_{2}$}] at (e2-1) {};
 
-    \draw[shift arrow, shorten <= 14pt,  shorten >= 4pt, ->, DarkGreen] 
-        (e1-1) -- (e2-1) ;    
+    \draw[shift arrow, shorten <= 14pt,  shorten >= 4pt, ->, DarkGreen]
+        (e1-1) -- (e2-1) ;
 
-    \draw[shift arrow, shorten <= 2pt,  shorten >= 2pt, ->, DarkGreen] 
+    \draw[shift arrow, shorten <= 2pt,  shorten >= 2pt, ->, DarkGreen]
       let \p1=(e1-1), \p2=(e2-1) in
-        (\x1, -0.6) -- (\x2, -0.6) 
-      ;    
+        (\x1, -0.6) -- (\x2, -0.6)
+      ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen] 
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen]
       let \p1=(e1-1), \p2=(e2-1) in
-        (-0.8, \y1) -- (-0.8, \y2) 
-      ;    
+        (-0.8, \y1) -- (-0.8, \y2)
+      ;
 
 
     \begin{scope}[on background layer]
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(e1-1), \p2=(e2-1) in
       (\x1, 0) node[below right=0pt and -4pt] { $Q^{*}_{1}$ }
-      |- (0, \y1) node[left] { $P^{*}_{1}$ } 
+      |- (0, \y1) node[left] { $P^{*}_{1}$ }
       (\x2, 0) node[below left=0pt and -6pt] { $Q^{*}_{2}$ }
-      |- (0, \y2) node[left] { $P^{*}_{2}$ } 
+      |- (0, \y2) node[left] { $P^{*}_{2}$ }
       ;
     \end{scope}
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle unit03-tab-comp.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (PIVE) [matrix of nodes,
     column sep=4mm, row sep = 4mm,
     hd/.style={White, , font=\bfseries},
-    sh/.style={Green!60!White}, 
+    sh/.style={Green!60!White},
     column 1/.style={right, font=\bfseries},
     column 2/.style={left},
     column 3/.style={left},
@@ -852,7 +757,7 @@
       |[hd]| Oferta & \\[-4mm]
       |[hd]| \ \ \ \ Aumento    & $\uparrow Q\quad ?\;P$ & $?\;Q\quad \downarrow P$  \\
       |[hd]| \ \ \ \ Disminución& $?\;Q\quad \uparrow P$ & $\downarrow Q\quad ?\;P$  \\
-    } ;        
+    } ;
     \begin{scope}[on background layer]
       \coordinate (L) at ($ (PIVE.north west)!(PIVE-2-2.south west)!(PIVE.south west) $);
       \coordinate (R) at  ($ (PIVE.north east)!(PIVE-2-2.south east)!(PIVE.south east) $);
@@ -865,17 +770,14 @@
         (U) -- (R) [rounded corners] -- (PIVE.south east) [sharp corners]
         -- (D) -- cycle ;
 
-      \fill[SlateGray!70!Black] 
-        (U) -- (D) [rounded corners] -- (PIVE.south west) -- (L) 
+      \fill[SlateGray!70!Black]
+        (U) -- (D) [rounded corners] -- (PIVE.south west) -- (L)
         [sharp corners] -- cycle;
       \fill[SlateGray!70!Black] (U) [rounded corners] -- (Z) --
          (PIVE.north east)  [sharp corners] -- (R)  -- (L)  -- cycle;
     \end{scope}
-  
+
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
 ** Chunks
-
-
