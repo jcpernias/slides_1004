@@ -1,3 +1,4 @@
+# -*- ispell-dictionary: "english" -*-
 #+SETUPFILE: ./course-en.org
 
 #+TITLE: Competitive markets
