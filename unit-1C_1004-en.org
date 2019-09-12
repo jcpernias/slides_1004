@@ -22,26 +22,22 @@
   service.
 
 
-** Competitive markets
+** Competitive markets (I)
 
-- Large number of *buyers*.
-
-- Large number of *sellers*.
-
-- *Absence of market power*.
-
-
-** Perfect competition model
-
-- Assumptions:
+- Characteristics:
 
   + Homogeneous product.
 
-  + Absence of market power.
+  + Large number of *buyers* and *sellers*.
 
   + Perfect information.
 
-- Both buyers and sellers are *price-takers*.
+
+** Competitive markets (and II)
+
+- *Absence of market power*.
+
+- Buyers and sellers are *price-takers*.
 
 
 * Demand

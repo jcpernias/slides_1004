@@ -21,24 +21,20 @@
   determinado bien o servicio.
 
 
-** Mercados competitivos
+** Mercados competitivos (I)
 
-- Gran número de *compradores*.
-
-- Gran número de *vendedores*.
-
-- *Ausencia de poder de mercado*.
-
-
-** El modelo de competencia perfecta
-
-- Supuestos:
+- Características:
 
   + Producto homogéneo.
 
-  + Ausencia de poder de mercado.
+  + Gran número de *compradores* y de *vendedores*.
 
   + Información perfecta.
+
+
+** Mercados competitivos (y II)
+
+- *Ausencia de poder de mercado*.
 
 - Tanto compradores como vendedores son *precio aceptantes*.
 
