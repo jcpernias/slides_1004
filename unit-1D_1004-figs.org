@@ -7,291 +7,248 @@
 
 * Demand price elasticity
 
+
 ** Figures and tables
 
 *** Relative variations
-#+BEGIN_SRC latex :tangle unit04-fig-unicorn1.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-unicorn1.tex :noweb yes
   \begin{tikzpicture}[xscale=0.05, yscale=0.1]
     \coordinate (A) at (20, 30);
     \coordinate (B) at (40, 20);
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$} 
-      (0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$} 
+      (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$}
+      (0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$}
       ;
-    \draw[IMe] (0, 40) -- (80, 0) node[pos=0.95, above right] { $D_{u}(P_{u})$ }; 
+    \draw[IMe] (0, 40) -- (80, 0) node[pos=0.95, above right] { $D_{u}(P_{u})$ };
     \draw[axis] (0, 50) node[left] {$P_{u}$} |- (100, 0) node[below] {$Q_{u}$} ;
     \node[dot, label=above right:$A$] at (A) {};
     \node[dot, label=above right:$B$] at (B) {};
-    \draw[shift arrow, ->, DarkGreen] 
+    \draw[shift arrow, ->, DarkGreen!70!Black]
      ($ (A) + (2, 1) $) -- ($ (B) + (2, 1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-*** Elasticity along the demand curve
-#+BEGIN_SRC latex :tangle unit04-fig-unicorn2.tex :noweb yes
-  \documentclass[figure]{mats}
 
-  \begin{document}
+*** Elasticity along the demand curve
+#+BEGIN_SRC latex :tangle fig-1D_1004-unicorn2.tex :noweb yes
   \begin{tikzpicture}[xscale=0.05, yscale=0.1]
     \coordinate (A) at (40, 20);
     \coordinate (B) at (60, 10);
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1) node[left] {$20$} -| (\x1, 0) node[below] {$400$} 
-      (0, \y2) node[left] {$10$} -| (\x2, 0) node[below] {$600$} 
+      (0, \y1) node[left] {$20$} -| (\x1, 0) node[below] {$400$}
+      (0, \y2) node[left] {$10$} -| (\x2, 0) node[below] {$600$}
       ;
-    \draw[IMe] (0, 40) -- (80, 0) node[pos=0.95, above right] { $D_{u}(P_{u})$ }; 
+    \draw[IMe] (0, 40) -- (80, 0) node[pos=0.95, above right] { $D_{u}(P_{u})$ };
     \draw[axis] (0, 50) node[left] {$P_{u}$} |- (100, 0) node[below] {$Q_{u}$} ;
     \node[dot, label=above right:$B$] at (A) {};
     \node[dot, label=above right:$C$] at (B) {};
-    \draw[shift arrow, ->, DarkGreen] 
+    \draw[shift arrow, ->, DarkGreen!70!Black]
      ($ (A) + (2, 1) $) -- ($ (B) + (2, 1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-*** Arc elasticity
-#+BEGIN_SRC latex :tangle unit04-fig-unicorn3.tex :noweb yes
-  \documentclass[figure]{mats}
 
-  \begin{document}
+*** Arc elasticity
+#+BEGIN_SRC latex :tangle fig-1D_1004-unicorn3.tex :noweb yes
   \begin{tikzpicture}[xscale=0.05, yscale=0.1]
     \coordinate (A) at (20, 30);
     \coordinate (B) at (40, 20);
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$} 
-      (0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$} 
+      (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$}
+      (0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$}
       ;
-    \draw[IMe] (0, 40) -- (80, 0) node[pos=0.95, above right] { $D_{u}(P_{u})$ }; 
+    \draw[IMe] (0, 40) -- (80, 0) node[pos=0.95, above right] { $D_{u}(P_{u})$ };
     \draw[axis] (0, 50) node[left] {$P_{u}$} |- (100, 0) node[below] {$Q_{u}$} ;
     \node[dot, label=above right:$A$] at (A) {};
     \node[dot, label=above right:$B$] at (B) {};
-    \draw[shift arrow, <-, DarkGreen] 
+    \draw[shift arrow, <-, DarkGreen!70!Black]
      ($ (A) + (2, 1) $) -- ($ (B) + (2, 1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-*** Midpoint formula
-#+BEGIN_SRC latex :tangle unit04-fig-unicorn4.tex :noweb yes
-  \documentclass[figure]{mats}
 
-  \begin{document}
+*** Midpoint formula
+#+BEGIN_SRC latex :tangle fig-1D_1004-unicorn4.tex :noweb yes
   \begin{tikzpicture}[xscale=0.0714285, yscale=0.1]
     \coordinate (A) at (20, 30);
     \coordinate (B) at (40, 20);
     \coordinate (M) at (30, 25);
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B), \p3=(M) in
-      (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$} 
-      (0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$} 
-      (0, \y3) node[left] {$25$} -| (\x3, 0) node[below] {$300$} 
+      (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$}
+      (0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$}
+      (0, \y3) node[left] {$25$} -| (\x3, 0) node[below] {$300$}
       ;
-    \draw[IMe] (0, 40) -- (50, 15) node[right] { $D_{u}(P_{u})$ }; 
+    \draw[IMe] (0, 40) -- (50, 15) node[right] { $D_{u}(P_{u})$ };
     \draw[axis] (0, 50) node[left] {$P_{u}$} |- (70, 0) node[below] {$Q_{u}$} ;
     \node[dot, label=above right:$A$] at (A) {};
     \node[dot, label=above right:$B$] at (B) {};
     \node[dot, label=above right:$M$] at (M) {};
-    \draw[shift arrow, <->, DarkGreen] 
+    \draw[shift arrow, <->, DarkGreen!70!Black]
      ($ (A) + (2, 1) $) -- ($ (B) + (2, 1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-*** Point elasticity
-#+BEGIN_SRC latex :tangle unit04-fig-unicorn5.tex :noweb yes
-  \documentclass[figure]{mats}
 
-  \begin{document}
+*** Point elasticity
+#+BEGIN_SRC latex :tangle fig-1D_1004-unicorn5.tex :noweb yes
   \begin{tikzpicture}[xscale=0.05, yscale=0.1]
     \coordinate (A) at (20, 30);
     \coordinate (B) at (40, 20);
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$} 
-      (0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$} 
+      (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$}
+      (0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$}
       ;
-    \draw[IMe] (0, 40) -- (80, 0) node[pos=0.95, above right] { $D_{u}(P_{u})$ }; 
+    \draw[IMe] (0, 40) -- (80, 0) node[pos=0.95, above right] { $D_{u}(P_{u})$ };
     \draw[axis] (0, 50) node[left] {$P_{u}$} |- (100, 0) node[below] {$Q_{u}$} ;
     \node[dot, label=above right:{$E_{d} = -3$}] at (A) {};
     \node[dot, label=above right:{$E_{d} = -1$}] at (B) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-*** Some special cases
-#+BEGIN_SRC latex :tangle unit04-fig-elast8.tex :noweb yes
-  \documentclass[figure]{mats}
 
-  \begin{document}
+*** Some special cases
+#+BEGIN_SRC latex :tangle fig-1D_1004-elast8.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
 
-    \draw[help lines] 
-      (0, 4) node[left] {$4$} -| (17, 0) node[below] {$17$} 
-      (0, 3) node[left] {$3$} -| (17, 3) 
+    \draw[help lines]
+      (0, 4) node[left] {$4$} -| (17, 0) node[below] {$17$}
+      (0, 3) node[left] {$3$} -| (17, 3)
       ;
-    \draw[IMe] (17, 5) -- (17, 0)  node[pos=0.90, right] { $D$ }; 
+    \draw[IMe] (17, 5) -- (17, 0)  node[pos=0.90, right] { $D$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (30, 0) node[below] {$Q$} ;
     % \node[dot] at (A) {};
     % \node[dot] at (B) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-elast6.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-elast6.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
     \coordinate (A) at (15, 4);
     \coordinate (B) at (17.32051, 3);
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1) node[left] {$4$} -| (\x1, 0) node[below left=0 and -8pt] {$15$} 
-      (0, \y2) node[left] {$3$} -| (\x2, 0) node[below right=0 and -6pt] {$17.32$} 
+      (0, \y1) node[left] {$4$} -| (\x1, 0) node[below left=0 and -8pt] {$15$}
+      (0, \y2) node[left] {$3$} -| (\x2, 0) node[below right=0 and -6pt] {$17.32$}
       ;
-    \draw[IMe] plot[domain=5:1.44] ({30/\x^0.5}, \x) node[right] { $D$ }; 
+    \draw[IMe] plot[domain=5:1.44] ({30/\x^0.5}, \x) node[right] { $D$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (30, 0) node[below] {$Q$} ;
     \node[dot] at (A) {};
     \node[dot] at (B) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-elast7.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-elast7.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
     \coordinate (A) at (9.375, 4);
     \coordinate (B) at (16.66667, 3);
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1) node[left] {$4$} -| (\x1, 0) node[below] {$9.38$} 
-      (0, \y2) node[left] {$3$} -| (\x2, 0) node[below] {$16.67$} 
+      (0, \y1) node[left] {$4$} -| (\x1, 0) node[below] {$9.38$}
+      (0, \y2) node[left] {$3$} -| (\x2, 0) node[below] {$16.67$}
       ;
-    \draw[IMe] plot[domain=5:2.4495] ({150/\x^2}, \x) node[right] { $D$ }; 
+    \draw[IMe] plot[domain=5:2.4495] ({150/\x^2}, \x) node[right] { $D$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (30, 0) node[below] {$Q$} ;
     \node[dot] at (A) {};
     \node[dot] at (B) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-elast9.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-elast9.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
 
-    % \draw[help lines] 
-    %   (0, 4) node[left] {$4$} -| (17, 0) node[below] {$17$} 
-    %   (0, 3) node[left] {$3$} -| (17, 3) 
+    % \draw[help lines]
+    %   (0, 4) node[left] {$4$} -| (17, 0) node[below] {$17$}
+    %   (0, 3) node[left] {$3$} -| (17, 3)
     %   ;
-    \draw[IMe] (0, 3) node[left] {$3$} -- (25, 3)  node[right] { $D$ }; 
+    \draw[IMe] (0, 3) node[left] {$3$} -- (25, 3)  node[right] { $D$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (30, 0) node[below] {$Q$} ;
     % \node[dot] at (A) {};
     % \node[dot] at (B) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-ingr1.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-ingr1.tex :noweb yes
   \begin{tikzpicture}
     \draw[help lines] (0, 2.25) node[left] {$\dfrac{a}{2}$}
         -| (2.25, 0) ;
-    \draw[IMe] (0, 4.5) node[left] {$a$} --  
-        node[left, pos = 0.875] 
-        { $D$ } (4.5, 0)  ; 
-    \draw[curve, DarkGreen, decorate, decoration=brace] 
-       (0.1, 4.6) 
-        -- node[above right, font = \small] {$E_d < -1$}  
+    \draw[IMe] (0, 4.5) node[left] {$a$} --
+        node[left, pos = 0.875]
+        { $D$ } (4.5, 0)  ;
+    \draw[curve, DarkGreen!70!Black, decorate, decoration=brace]
+       (0.1, 4.6)
+        -- node[above right, font = \small] {$E_d < -1$}
        (2.30, 2.4) ;
-    \draw[curve, DarkGreen, <-] (2.35, 2.35) -- (2.5, 2.5) 
+    \draw[curve, DarkGreen!70!Black, <-] (2.35, 2.35) -- (2.5, 2.5)
       node[above right=-4pt, font = \small] {$E_d = -1$} ;
-    \draw[curve, DarkGreen, decorate, decoration=brace] 
-       (2.4, 2.3) 
-        -- node[above right, font = \small] {$-1 < E_d \leq 0$}  
+    \draw[curve, DarkGreen!70!Black, decorate, decoration=brace]
+       (2.4, 2.3)
+        -- node[above right, font = \small] {$-1 < E_d \leq 0$}
        (4.6, 0.1) ;
     \node[below left = 0pt and -6pt, curve label] at (2.25, 0)      {$\dfrac{a}{2 b}$} ;
     \node[below left = 0pt and -6pt, curve label] at (4.5, 0)  {$\dfrac{a}{b}$} ;
     \draw[axis] (5, 0) node[below] {$Q$} -| (0, 5) node[left] {$P$} ;
     \node[dot] at (2.25, 2.25) { } ;
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
-
-** Chunks
 
 
 * Elasticity and returns
 
 ** Figures and tables
-#+BEGIN_SRC latex :tangle unit04-fig-ingr3.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-ingr3.tex :noweb yes
   \begin{tikzpicture}[xscale=0.18, yscale=0.83333]
     \coordinate (A) at (9.375, 4);
     \coordinate (B) at (16.66667, 3);
 
     \fill[proffill] (0, 0) rectangle (A) ;
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1) node[left] {$P_{1}$} -| (\x1, 0) node[below] {$Q_{1}$} 
-      % (0, \y2) node[left] {$3$} -| (\x2, 0) node[below] {$16.67$} 
+      (0, \y1) node[left] {$P_{1}$} -| (\x1, 0) node[below] {$Q_{1}$}
+      % (0, \y2) node[left] {$3$} -| (\x2, 0) node[below] {$16.67$}
       ;
-    \draw[IMe] plot[domain=5:2.7] ({150/\x^2}, \x) node[right] { $D$ }; 
+    \draw[IMe] plot[domain=5:2.7] ({150/\x^2}, \x) node[right] { $D$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (25, 0) node[below] {$Q$} ;
     \node[dot] at (A) {};
     % \node[dot] at (B) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-ingr4.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-ingr4.tex :noweb yes
   \begin{tikzpicture}[xscale=0.18, yscale=0.83333]
     \coordinate (A) at (9.375, 4);
     \coordinate (B) at (16.66667, 3);
@@ -299,26 +256,22 @@
     \fill[proffill] (0, 0) rectangle (A) ;
     \fill[Thistle, opacity=0.5] (0, 0) rectangle (B) ;
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1) node[left] {$P_{1}$} -| (\x1, 0) node[below] {$Q_{1}$} 
-      (0, \y2) node[left] {$P_{2}$} -| (\x2, 0) node[below] {$Q_{2}$} 
+      (0, \y1) node[left] {$P_{1}$} -| (\x1, 0) node[below] {$Q_{1}$}
+      (0, \y2) node[left] {$P_{2}$} -| (\x2, 0) node[below] {$Q_{2}$}
       ;
-    \draw[IMe] plot[domain=5:2.7] ({150/\x^2}, \x) node[right] { $D$ }; 
+    \draw[IMe] plot[domain=5:2.7] ({150/\x^2}, \x) node[right] { $D$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (25, 0) node[below] {$Q$} ;
     \node[dot] at (A) {};
     \node[dot] at (B) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-ingr5.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-ingr5.tex :noweb yes
   \begin{tikzpicture}[xscale=0.18, yscale=0.83333]
     \coordinate (A) at (9.375, 4);
     \coordinate (B) at (16.66667, 3);
@@ -326,37 +279,33 @@
     \fill[proffill] (0, 0) rectangle (A) ;
     \fill[Thistle, opacity=0.5] (0, 0) rectangle (B) ;
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1)  -| (\x1, 0) 
-      (0, \y2)  -| (\x2, 0) 
+      (0, \y1)  -| (\x1, 0)
+      (0, \y2)  -| (\x2, 0)
       ;
 
-    \draw[IMe] plot[domain=5:2.7] ({150/\x^2}, \x) node[right] { $D$ }; 
+    \draw[IMe] plot[domain=5:2.7] ({150/\x^2}, \x) node[right] { $D$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (25, 0) node[below] {$Q$} ;
     \node[dot] at (A) {};
     \node[dot] at (B) {};
-    \draw[|->|, DarkGreen] 
+    \draw[|->|, DarkGreen!70!Black]
       let \p1=(A), \p2=(B) in
-      (-1.5, \y1) -- (-1.5, \y2) 
+      (-1.5, \y1) -- (-1.5, \y2)
       node[pos=0.5, curve label, left] {$\Delta P$}
       ;
- 
-    \draw[|->|, DarkGreen] 
+
+    \draw[|->|, DarkGreen!70!Black]
       let \p1=(A), \p2=(B) in
       (\x1, -0.3) -- (\x2, -0.3)
       node[pos=0.5, curve label, below] {$\Delta Q$}
       ;
- 
+
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-ingr6.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-ingr6.tex :noweb yes
   \begin{tikzpicture}[xscale=0.18, yscale=0.83333]
     \coordinate (A) at (15, 4);
     \coordinate (B) at (17.32051, 3);
@@ -364,222 +313,187 @@
     \fill[proffill] (0, 0) rectangle (A) ;
     \fill[Thistle, opacity=0.5] (0, 0) rectangle (B) ;
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1)  -| (\x1, 0) 
-      (0, \y2)  -| (\x2, 0) 
+      (0, \y1)  -| (\x1, 0)
+      (0, \y2)  -| (\x2, 0)
       ;
 
-    \draw[IMe] plot[domain=5:2.1] ({30/\x^0.5}, \x) node[right] { $D$ }; 
+    \draw[IMe] plot[domain=5:2.1] ({30/\x^0.5}, \x) node[right] { $D$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (25, 0) node[below] {$Q$} ;
     \node[dot] at (A) {};
     \node[dot] at (B) {};
-    \draw[|->|, DarkGreen] 
+    \draw[|->|, DarkGreen!70!Black]
       let \p1=(A), \p2=(B) in
-      (-1.5, \y1) -- (-1.5, \y2) 
+      (-1.5, \y1) -- (-1.5, \y2)
       node[pos=0.5, curve label, left] {$\Delta P$}
       ;
- 
-    \draw[|->|, DarkGreen] 
+
+    \draw[|->|, DarkGreen!70!Black]
       let \p1=(A), \p2=(B) in
       (\x1, -0.3) -- (\x2, -0.3)
       node[pos=0.5, curve label, below] {$\Delta Q$}
       ;
- 
+
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
-
-
-** Chunks
 
 
 * Other demand elasticities
 
-** Figures and tables
-#+BEGIN_SRC latex :tangle unit04-fig-unicorn6.tex :noweb yes
-  \documentclass[figure]{mats}
 
-  \begin{document}
+** Figures and tables
+#+BEGIN_SRC latex :tangle fig-1D_1004-unicorn6.tex :noweb yes
   \begin{tikzpicture}[xscale=0.05, yscale=0.1]
     \coordinate (A) at (20, 30);
     \coordinate (B) at (40, 20);
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$} 
-      %(0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$} 
+      (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$}
+      %(0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$}
       ;
-    \draw[IMe] (0, 40) node[left] {$40$} -- 
-       (80, 0) node[below] {$800$} 
-       node[pos=0.95, above right] { $D_{u}$ }; 
+    \draw[IMe] (0, 40) node[left] {$40$} --
+       (80, 0) node[below] {$800$}
+       node[pos=0.95, above right] { $D_{u}$ };
     \draw[axis] (0, 50) node[left] {$P_{u}$} |- (100, 0) node[below] {$Q_{u}$} ;
     \node[dot] at (A) {};
     % \node[dot, label=above right:$B$] at (B) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (2, 1) $) -- ($ (B) + (2, 1) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-unicorn7.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-unicorn7.tex :noweb yes
   \begin{tikzpicture}[xscale=0.11111111, yscale=0.1111]
     \coordinate (A) at (20, 30);
     \coordinate (B) at (30, 30);
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1) node[left] {$30$} -| 
-      (\x1, 0) node[below, nearly transparent] {$200$} 
-      (A) -| (\x2, 0) node[below] {$300$} 
+      (0, \y1) node[left] {$30$} -|
+      (\x1, 0) node[below, nearly transparent] {$200$}
+      (A) -| (\x2, 0) node[below] {$300$}
       ;
-    \draw[IMe, nearly transparent] (0, 40) -- 
-       (40, 20)  
-       node[right] { $D_{u}$ }; 
-    \draw[IMe] (0, 45) -- 
-       (40, 25)  
-       node[right] { $D'_{u}$ }; 
+    \draw[IMe, nearly transparent] (0, 40) --
+       (40, 20)
+       node[right] { $D_{u}$ };
+    \draw[IMe] (0, 45) --
+       (40, 25)
+       node[right] { $D'_{u}$ };
     \draw[axis] (0, 50) node[left] {$P_{u}$} |- (45, 0) node[below] {$Q_{u}$} ;
     \node[dot, LightGray] at (A) {};
     \node[dot] at (B) {};
-    \draw[shift arrow, ->, DarkGreen] 
+    \draw[shift arrow, ->, DarkGreen!70!Black]
      ($ (A) + (-4, 2) $) -- ($ (B) + (-4, 2) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-unicorn8.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-unicorn8.tex :noweb yes
   \begin{tikzpicture}[xscale=0.14285, yscale=0.1111]
     \coordinate (A) at (20, 30);
     \coordinate (B) at (10, 30);
 
-    \draw[help lines] 
+    \draw[help lines]
       let \p1=(A), \p2=(B) in
-      (0, \y1) node[left] {$30$} -| (\x2, 0) node[below] {$100$} 
-      (B) -| (\x1, 0) node[below, nearly transparent] {$200$} 
+      (0, \y1) node[left] {$30$} -| (\x2, 0) node[below] {$100$}
+      (B) -| (\x1, 0) node[below, nearly transparent] {$200$}
       ;
-    \draw[IMe, nearly transparent] (0, 40) -- 
-       (30, 25)  
-       node[right] { $D_{u}$ }; 
-    \draw[IMe] (0, 35) -- 
-       (30, 20)  
-       node[right] { $D'_{u}$ }; 
+    \draw[IMe, nearly transparent] (0, 40) --
+       (30, 25)
+       node[right] { $D_{u}$ };
+    \draw[IMe] (0, 35) --
+       (30, 20)
+       node[right] { $D'_{u}$ };
     \draw[axis] (0, 45) node[left] {$P_{u}$} |- (35, 0) node[below] {$Q_{u}$} ;
     \node[dot, LightGray] at (A) {};
     \node[dot] at (B) {};
-    \draw[shift arrow, ->, DarkGreen] 
+    \draw[shift arrow, ->, DarkGreen!70!Black]
      ($ (A) + (-5.5, 2.5) $) -- ($ (B) + (-4, 2.5) $) ;
 
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
-
-
-** Chunks
 
 
 * Supply elasticity
 
-** Figures and tables
-#+BEGIN_SRC latex :tangle unit04-fig-elast10.tex :noweb yes
-  \documentclass[figure]{mats}
 
-  \begin{document}
+** Figures and tables
+#+BEGIN_SRC latex :tangle fig-1D_1004-elast10.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
 
-     \draw[help lines] 
-       (0, 4) node[left] {$4$} -| (15, 0) node[below] {$15$} 
-       (0, 3) node[left] {$3$} -| (15, 3) 
+     \draw[help lines]
+       (0, 4) node[left] {$4$} -| (15, 0) node[below] {$15$}
+       (0, 3) node[left] {$3$} -| (15, 3)
        ;
-    \draw[CMe] (15, 5)  -- (15, 0)  node[pos=0.9, right] { $S$ }; 
+    \draw[CMe] (15, 5)  -- (15, 0)  node[pos=0.9, right] { $S$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (30, 0) node[below] {$Q$} ;
     \node[dot] at (15, 4) {};
     \node[dot] at (15, 3) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
-
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-elast11.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-elast11.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
     \coordinate (A) at (15, 3) ;
     \coordinate (B) at (17, 4) ;
 
-     \draw[help lines] 
-       (0, 4) node[left] {$4$} -| (17, 0) node[below right=0 and -6pt] {$17$} 
-       (0, 3) node[left] {$3$} -| (15, 0) node[below left=0 and -6pt] {$15$} 
+     \draw[help lines]
+       (0, 4) node[left] {$4$} -| (17, 0) node[below right=0 and -6pt] {$17$}
+       (0, 3) node[left] {$3$} -| (15, 0) node[below left=0 and -6pt] {$15$}
        ;
-    \draw[CMe] (11, 1)  -- (19, 5)  node[right] { $S$ }; 
+    \draw[CMe] (11, 1)  -- (19, 5)  node[right] { $S$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (30, 0) node[below] {$Q$} ;
     \node[dot] at (A) {};
     \node[dot] at (B) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
-
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-elast12.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-elast12.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
     \coordinate (A) at (15, 3) ;
     \coordinate (B) at (25, 4) ;
 
-     \draw[help lines] 
-       (0, 4) node[left] {$4$} -| (25, 0) node[below] {$25$} 
-       (0, 3) node[left] {$3$} -| (15, 0) node[below] {$15$} 
+     \draw[help lines]
+       (0, 4) node[left] {$4$} -| (25, 0) node[below] {$25$}
+       (0, 3) node[left] {$3$} -| (15, 0) node[below] {$15$}
        ;
-    \draw[CMe] (5, 2)  -- (28, 4.3)  node[right] { $S$ }; 
+    \draw[CMe] (5, 2)  -- (28, 4.3)  node[right] { $S$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (30, 0) node[below] {$Q$} ;
     \node[dot] at (A) {};
     \node[dot] at (B) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
-
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit04-fig-elast13.tex :noweb yes
-  \documentclass[figure]{mats}
-
-  \begin{document}
+#+BEGIN_SRC latex :tangle fig-1D_1004-elast13.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
     \coordinate (A) at (15, 3) ;
     \coordinate (B) at (25, 4) ;
 
-    % \draw[help lines] 
-    %   (0, 4) node[left] {$4$} -| (25, 0) node[below] {$25$} 
-    %   (0, 3) node[left] {$3$} -| (15, 0) node[below] {$15$} 
+    % \draw[help lines]
+    %   (0, 4) node[left] {$4$} -| (25, 0) node[below] {$25$}
+    %   (0, 3) node[left] {$3$} -| (15, 0) node[below] {$15$}
     %   ;
-    \draw[CMe] (0, 3) node[left] {$3$}  -- (25, 3)  node[right] { $S$ }; 
+    \draw[CMe] (0, 3) node[left] {$3$}  -- (25, 3)  node[right] { $S$ };
     \draw[axis] (0, 6) node[left] {$P$} |- (30, 0) node[below] {$Q$} ;
     % \node[dot] at (A) {};
     % \node[dot] at (B) {};
-    % \draw[shift arrow, ->, DarkGreen] 
+    % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
-
   \end{tikzpicture}
-  \end{document}
 #+END_SRC
 
+
+
+* Common
+
 ** Chunks
-
-
