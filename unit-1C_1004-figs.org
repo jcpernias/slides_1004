@@ -203,12 +203,12 @@
        (0, \y2) node[left] { $P_{B}$}  -| (\x2, 0) node[below] { $Q_{B}$ } ;
     \node[dot, label=60:$A$] at (A) {};
     \node[dot, label=60:$B$] at (B) {};
-    \draw[shift arrow, ->, DarkGreen]
+    \draw[shift arrow, ->, DarkGreen!70!Black]
      ($ (A) + (0.1, 0.1) $) -- ($ (B) + (0.1, 0.1) $) ;
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen!70!Black]
        let \p1 = (A), \p2 = (B) in
        (-0.35, \y1) -- (-0.35, \y2)  ;
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen!70!Black]
        let \p1 = (A), \p2 = (B) in
        (\x1, -0.3) -- (\x2, -0.3) ;
     \draw[axis] (0, 5) node[left] {$P$} |- (5, 0) node[below] {$Q$} ;
@@ -254,7 +254,7 @@
         ;
     \node[dot] at (A) {};
 
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen!70!Black]
         let \p1 = (A), \p2 = (B) in
         (\x1, -3) -- (\x2, -3) ;
     \draw[axis] (0, 50) node[left] {$P$} |- (50, 0) node[below] {$Q$} ;
@@ -281,7 +281,7 @@
       node[dot] at (C) {};
     \node[dot] at (A) {};
 
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen!70!Black]
        let \p1 = (A), \p2 = (C) in
        (-3.5, \y1) -- (-3.5, \y2)  ;
     \draw[axis] (0, 50) node[left] {$P$} |- (50, 0) node[below] {$Q$} ;
@@ -305,9 +305,9 @@
     \path[name path=P]  let \p1 = (A) in (0, \y1) -- (50, \y1) ;
     \draw[name intersections={of=D2 and P, by={B}}]  ;
     \draw[name intersections={of=D3 and P, by={D}}]  ;
-    \draw[shift arrow, ->, shorten <= 1pt, shorten >= 6pt, DarkGreen]
+    \draw[shift arrow, ->, shorten <= 1pt, shorten >= 6pt, DarkGreen!70!Black]
       (A) -- (B) ;
-    \draw[shift arrow, ->, shorten <= 1pt, DarkGreen] (A) -- (D) ;
+    \draw[shift arrow, ->, shorten <= 1pt, DarkGreen!70!Black] (A) -- (D) ;
     \draw[axis] (0, 50) node[left] {$P$} |- (50, 0) node[below] {$Q$} ;
   \end{tikzpicture}
 #+END_SRC
@@ -407,12 +407,12 @@
        (0, \y2) node[left] { $P_{B}$}  -| (\x2, 0) node[below] { $Q_{B}$ } ;
     \node[dot, label=above:$A$] at (A) {};
     \node[dot, label=above:$B$] at (B) {};
-    \draw[shift arrow, ->, shorten <= 4pt, DarkGreen]
+    \draw[shift arrow, ->, shorten <= 4pt, DarkGreen!70!Black]
        ($ (A) + (0, -0.15) $) -- ($ (B) + (0, -0.15) $) ;
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen!70!Black]
        let \p1 = (A), \p2 = (B) in
        (-0.35, \y1) -- (-0.35, \y2)  ;
-    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen]
+    \draw[shift arrow, ->, shorten <= 8pt, shorten >= 8pt, DarkGreen!70!Black]
        let \p1 = (A), \p2 = (B) in
        (\x1, -0.3) -- (\x2, -0.3) ;
     \draw[axis] (0, 5) node[left] {$P$} |- (5, 0) node[below] {$Q$} ;
@@ -430,7 +430,7 @@
      node[pos=0.8] (A) {} ;
     \draw[CMe, name path=S2] (0.25, 0.25) -- (4.5, 2) node[right] { $S'$ }
       node[pos=0.85] (B) {} ;
-    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen!70!Black]
       (A) -- (B) ;
     \path[name intersections={of=S1 and P, name=E1}] ;
     \path[name intersections={of=S2 and P, name=E2}] ;
@@ -454,11 +454,11 @@
      node[pos=0.8] (A) {} ;
     \draw[CMe] (0.25, 0.5) -- (4.5, 2) node[right] { $S^{+}$ }
       node[pos=0.85] (B) {} ;
-    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen!70!Black]
      (A) -- (B) ;
     \draw[CMe] (0.25, 1.5) -- (4, 4.5) node[right] { $S^{-}$ }
       node[pos=0.75] (C) {} ;
-    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 0pt,  shorten >= 0pt, ->, DarkGreen!70!Black]
       (A) -- (C) ;
 
     \draw[axis] (0, 5) node[left] {$P$} |- (5, 0) node[below] {$Q$} ;
@@ -508,9 +508,9 @@
   <<translations>>
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
-    \draw[|<->|, thick, DarkGreen] (2, 8.6)  -- (7, 8.6)
+    \draw[|<->|, thick, DarkGreen!70!Black] (2, 8.6)  -- (7, 8.6)
       node[font=\scriptsize\sffamily\bfseries, pos=0.5,
-        fill=White, text = DarkGreen]
+        fill=White, text = DarkGreen!70!Black]
       { \translate{Excedente} };
     \draw[help lines] (2, 0) node[below] { $2$ }
      |- (0, 8) node[left] { $8$ }
@@ -533,9 +533,9 @@
 
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
-    \draw[|<->|, thick, DarkGreen] (3, 1.4)  -- (8, 1.4)
+    \draw[|<->|, thick, DarkGreen!70!Black] (3, 1.4)  -- (8, 1.4)
       node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
-          text = DarkGreen]
+          text = DarkGreen!70!Black]
       { \translate{Escasez} };
     \draw[help lines] (3, 0) node[below] { $3$ }
      |- (0, 2) node[left] { $2$ }
@@ -557,7 +557,7 @@
 
     \draw[CMe, shaded] (2.33333, 1) -- (7.666666, 9) node[right] { $S$ };
     \draw[IMe, shaded] (1, 9) -- (9, 1) node[right] { $D$ } ;
-    \draw[curve, ultra thick, DarkGreen]
+    \draw[curve, ultra thick, DarkGreen!70!Black]
        (2.33333, 1) -- (5, 5) -- (1, 9) ;
 
     \draw[axis] (0, 10) node[left] {$P$} |- (10, 0) node[below] {$Q$} ;
@@ -569,9 +569,9 @@
 #+BEGIN_SRC latex :tangle fig-1C_1004-comp1.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
-    % \draw[|<->|, thick, DarkGreen] (3, 1.4)  -- (8, 1.4)
+    % \draw[|<->|, thick, DarkGreen!70!Black] (3, 1.4)  -- (8, 1.4)
     %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
-    %       text = DarkGreen]
+    %       text = DarkGreen!70!Black]
     %   { Escasez };
     % \draw[help lines] (3, 0) node[below] { $3$ }
     %  |- (0, 2) node[left] { $2$ }
@@ -589,15 +589,15 @@
     \node[dot, label={$E_{1}$}] at (e1-1) {};
     \node[dot, label={$E_{2}$}] at (e2-1) {};
 
-    \draw[shift arrow, shorten <= 4pt,  shorten >= 3pt, ->,  DarkGreen]
+    \draw[shift arrow, shorten <= 4pt,  shorten >= 3pt, ->,  DarkGreen!70!Black]
         ($ (e1-1)-(0,0.2) $) -- ($ (e2-1)-(0, 0.2) $) ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen!70!Black]
       let \p1=(e1-1), \p2=(e2-1) in
         (\x1, -0.6) -- (\x2, -0.6)
       ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen!70!Black]
       let \p1=(e1-1), \p2=(e2-1) in
         (-0.8, \y1) -- (-0.8, \y2)
       ;
@@ -621,9 +621,9 @@
 #+BEGIN_SRC latex :tangle fig-1C_1004-comp2.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
-    % \draw[|<->|, thick, DarkGreen] (3, 1.4)  -- (8, 1.4)
+    % \draw[|<->|, thick, DarkGreen!70!Black] (3, 1.4)  -- (8, 1.4)
     %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
-    %       text = DarkGreen]
+    %       text = DarkGreen!70!Black]
     %   { Escasez };
     % \draw[help lines] (3, 0) node[below] { $3$ }
     %  |- (0, 2) node[left] { $2$ }
@@ -641,15 +641,15 @@
     \node[dot, label={$E_{1}$}] at (e1-1) {};
     \node[dot, label={$E_{2}$}] at (e2-1) {};
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 2pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 2pt, ->, DarkGreen!70!Black]
         ($ (e1-1)-(0,0.2) $) -- ($ (e2-1)-(0, 0.2) $) ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen!70!Black]
       let \p1=(e1-1), \p2=(e2-1) in
         (\x1, -0.6) -- (\x2, -0.6)
       ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen!70!Black]
       let \p1=(e1-1), \p2=(e2-1) in
         (-0.8, \y1) -- (-0.8, \y2)
       ;
@@ -674,9 +674,9 @@
 #+BEGIN_SRC latex :tangle fig-1C_1004-comp3.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
-    % \draw[|<->|, thick, DarkGreen] (3, 1.4)  -- (8, 1.4)
+    % \draw[|<->|, thick, DarkGreen!70!Black] (3, 1.4)  -- (8, 1.4)
     %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
-    %       text = DarkGreen]
+    %       text = DarkGreen!70!Black]
     %   { Escasez };
     % \draw[help lines] (3, 0) node[below] { $3$ }
     %  |- (0, 2) node[left] { $2$ }
@@ -695,15 +695,15 @@
     \node[dot, label={$E_{1}$}] at (e1-1) {};
     \node[dot, label={$E_{2}$}] at (e2-1) {};
 
-    \draw[shift arrow, shorten <= 10pt,  shorten >= 4pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 10pt,  shorten >= 4pt, ->, DarkGreen!70!Black]
         (e1-1) -- (e2-1) ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 8pt, ->, DarkGreen!70!Black]
       let \p1=(e1-1), \p2=(e2-1) in
         (\x1, -0.6) -- (\x2, -0.6)
       ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen!70!Black]
       let \p1=(e1-1), \p2=(e2-1) in
         (-0.8, \y1) -- (-0.8, \y2)
       ;
@@ -725,9 +725,9 @@
 #+BEGIN_SRC latex :tangle fig-1C_1004-comp4.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
-    % \draw[|<->|, thick, DarkGreen] (3, 1.4)  -- (8, 1.4)
+    % \draw[|<->|, thick, DarkGreen!70!Black] (3, 1.4)  -- (8, 1.4)
     %   node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
-    %       text = DarkGreen]
+    %       text = DarkGreen!70!Black]
     %   { Escasez };
     % \draw[help lines] (3, 0) node[below] { $3$ }
     %  |- (0, 2) node[left] { $2$ }
@@ -746,15 +746,15 @@
     \node[dot, label={$E_{1}$}] at (e1-1) {};
     \node[dot, label={$E_{2}$}] at (e2-1) {};
 
-    \draw[shift arrow, shorten <= 14pt,  shorten >= 4pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 14pt,  shorten >= 4pt, ->, DarkGreen!70!Black]
         (e1-1) -- (e2-1) ;
 
-    \draw[shift arrow, shorten <= 2pt,  shorten >= 2pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 2pt,  shorten >= 2pt, ->, DarkGreen!70!Black]
       let \p1=(e1-1), \p2=(e2-1) in
         (\x1, -0.6) -- (\x2, -0.6)
       ;
 
-    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen]
+    \draw[shift arrow, shorten <= 8pt,  shorten >= 6pt, ->, DarkGreen!70!Black]
       let \p1=(e1-1), \p2=(e2-1) in
         (-0.8, \y1) -- (-0.8, \y2)
       ;
