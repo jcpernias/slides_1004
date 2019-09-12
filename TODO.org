@@ -1,0 +1,3 @@
+* TODO Changing a figures file do not always trigger a recompilation.
+* TODO org-tempo: <l TAB does not expand
+* TODO Warning while tangling figs files: 'Could not read org-id-values from ~/.emacs.d/.org-id-locations.  Setting it to nil.'
