@@ -7,10 +7,10 @@
 
 #+OPTIONS: toc:nil ':t ^:{} num:1 H:2 title:nil
 
-#+LANGUAGE: en
-
+#+LATEX_CLASS: unit
 #+LATEX_CLASS_OPTIONS: [English]
 
+#+LANGUAGE: en
 #+LATEX_HEADER: \newcommand*{\LANG}{en}
 
 #+SETUPFILE: ./paths.org

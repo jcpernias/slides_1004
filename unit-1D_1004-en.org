@@ -3,8 +3,6 @@
 
 #+TITLE: Elasticity
 
-#+LATEX_CLASS: unit
-
 #+LATEX_HEADER: \newcommand*{\diff}[1][]{\mathrm{d^{#1}\,}}
 #+LATEX_HEADER: \deftranslation[to=Spanish]{IT}{I}
 #+LATEX_HEADER: \deftranslation[to=English]{IT}{R}
@@ -13,13 +11,11 @@
 #+LATEX_HEADER: \newcommand*{\mlabel}[1]{\ensuremath{\mathit{#1}}\xspace}
 #+LATEX_HEADER: \newcommand*{\IT}   {\mlabel{\ITLabel}}
 
-
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principles of Economics/. Chapter 5.
 - Pindyck y Rubinfeld: :: /Microeconomics/. Chapter 2.
 #+end_bibbox
-
 
 * Price elasticity of demand
 

@@ -3,7 +3,6 @@
 
 #+TITLE: Intervención en mercados competitivos
 
-#+LATEX_CLASS: unit
 #+LATEX_HEADER: \newcommand*{\Pmax}{P_{\max}}
 #+LATEX_HEADER: \newcommand*{\Pmin}{P_{\min}}
 
@@ -12,7 +11,6 @@
 - Mankiw: ::  /Principios de Economía/. Capítulo 6.
 - Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 2.
 #+end_bibbox
-
 
 * Controles de precios
 

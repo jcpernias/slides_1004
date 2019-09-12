@@ -3,12 +3,9 @@
 
 #+TITLE: La frontera de posibilidades de producción
 
-#+LATEX_CLASS: unit
-
 #+latex_header: \deftranslation[to=Spanish]{Pvar}{P}
 #+latex_header: \deftranslation[to=English]{Pvar}{F}
 #+latex_header: \newcommand*{\Pvar}{\translate{Pvar}}
-
 
 #+MATS: bib
 #+begin_bibbox

@@ -3,8 +3,6 @@
 
 #+TITLE: Elasticidad
 
-#+LATEX_CLASS: unit
-
 #+LATEX_HEADER: \newcommand*{\diff}[1][]{\mathrm{d^{#1}\,}}
 #+LATEX_HEADER: \deftranslation[to=Spanish]{IT}{I}
 #+LATEX_HEADER: \deftranslation[to=English]{IT}{R}
@@ -18,7 +16,6 @@
 - Mankiw: ::  /Principios de Economía/. Capítulo 5.
 - Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 2.
 #+end_bibbox
-
 
 * Elasticidad precio de la demanda
 
