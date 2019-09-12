@@ -45,8 +45,8 @@
 
 ** Quantity demanded and price
 
-- The *quantity demanded* of a good is the number of units of that
-  good consumers want and can purchase in a certain period of time.
+- The *quantity demanded* of a good is the number of units that buyers
+  want and are able to purchase in a certain period of time.
 
 - The *price* of a good plays a central role when determining the
   quantity demanded.
@@ -59,15 +59,15 @@
   decreases, the quantity increases.
 
 
-** The table and curve of individual demand
+** The individual demand schedule and curve
 
-- The quantity a consumer wants to buy at each possible price.
+- They show the quantity a consumer demands at each possible price.
 
 - The demand curve has negative slope.
 
-  #+begin_center
-  #+MATS: fig fig-1C_1004-dtab-*.pdf
-  #+end_center
+#+begin_center
+#+MATS: fig fig-1C_1004-dtab-*.pdf
+#+end_center
 
 
 ** Market demand curve (I)
@@ -77,9 +77,9 @@
 
 - Demand in a market consisting of three consumers (K, L and M):
 
-  #+begin_center
-  #+MATS: fig fig-1C_1004-dtab2-*.pdf
-  #+end_center
+#+begin_center
+#+MATS: fig fig-1C_1004-dtab2-*.pdf
+#+end_center
 
 
 ** Market demand curve (and II)
@@ -87,17 +87,13 @@
 - The market demand curve is the horizontal sum of the individual
   demand curves.
 
-  #+begin_center
-  #+MATS: fig fig-1C_1004-dtab3-*.pdf
-  #+end_center
+#+MATS: fig fig-1C_1004-dtab3-*.pdf
 
 
 ** Variations in the price (I)
 
 #+MATS: figcol fig-1C_1004-d2-*.pdf 0.45
 
-- The market demand curve tells us the quantity consumers want to
-  purchase at each possible price.
 - When the market price is $P_A$ the quantity demanded is $Q_A$.
 
 
@@ -105,8 +101,9 @@
 
 #+MATS: figcol fig-1C_1004-d3-*.pdf 0.45
 
-- The market price has fallen to $P_B$.
-- No other determinant of demand has changed.
+- The market price has fallen to $P_B$, but no other determinant of
+  demand has changed.
+
 - Now the quantity demanded is $Q_B$.
 
 
@@ -122,20 +119,24 @@
 
 - The *income* of consumers:
 
-  + *Normal good*: If demand increases when income increases.
+  + *Normal good*: the quantity demanded increases when income
+    increases.
 
-  + *Inferior good*: If demand decreases when income increases.
+  + *Inferior good*: the quantity demanded decreases when income
+    increases.
 
 
 ** Other determinants of demand (II)
 
 - *Prices of other goods*:
 
-  + *Complementary goods*: they are usually consumed together. Demand
-    increases if the price of a complementary good falls.
+  + *Complementary goods*: goods that are usually consumed together: the
+    quantity demanded increases if the price of a complementary good
+    falls.
 
-  + *Substitute goods*: consumption alternatives. Demand increases if
-    the price of a substitute good increases.
+  + *Substitute goods*: one good is used in place of the other: the
+    quantity demanded increases if the price of a substitute good
+    increases.
 
 
 ** Other determinants of demand (and III)
@@ -148,49 +149,38 @@
 - Consumers *expectations*.
 
 
-** Shifts of demand (I)
-
-- When the only change is the price of a good, there is a *movement
-  along* the demand curve; the *quantity demanded* varies.
-
-- If another determinant of demand changes, there is a *shift* of
-  demand; *demand* increases or decreases.
-
-
-** Shifts of demand (II)
+** Shifts in the demand (I)
 
 #+MATS: figcol fig-1C_1004-d5-*.pdf 0.45
-
-- Demand curve.
 
 - At the market price $P_A$ the quantity demanded is $Q_A$.
 
 
-** Shifts of demand (III)
+** Shifts in the demand (II)
 
 #+MATS: figcol fig-1C_1004-d6-*.pdf 0.45
 
-- Increase in demand.
+- The price of a substitute good increases.
 
-- At the same price, $P_A$, consumers demand a higher quantity.
-
-
-** Shifts of demand (IV)
-
-#+MATS: figcol fig-1C_1004-d7-*.pdf 0.45
-
-- Another way of analysing an increase of demand.
-
-- Consumers are willing to pay more for the same quantity.
+- At the same price, $P_A$, consumers demand more units.
 
 
-** Shifts of demand (and V)
+** Shifts in the demand (and III)
 
 #+MATS: figcol fig-1C_1004-d8-*.pdf 0.45
 
-- Increase in demand: \[D \rightarrow D^{+}\]
+- An increase in demand : $D \rightarrow D^{+}$
 
-- Decrease in demand: \[D \rightarrow D^{-}\]
+- A decrease in demand: $D \rightarrow D^{-}$
+
+
+** Shifts and movements along the demand curve
+
+- If only the price changes there is a *movement along* the demand
+  curve; the *quantity demanded* varies.
+
+- If another determinant of demand changes there is a *shift* in the
+  demand; *demand* increases or decreases.
 
 
 * Supply
@@ -207,7 +197,7 @@
   quantity supplied increases.
 
 
-** The table and curve of individual supply
+** The individual supply schedule and curve
 
 - Indicate the quantity a firm wants to sell at each possible price.
 
@@ -220,19 +210,21 @@
 
 ** Market supply curve
 
-- Sum of the quantity supplied by each producer at each possible
-  price.
+- The *market supply* curve is the sum of the quantities supplied by
+  each producer at every possible price.
 
-- The market supply curve is the horizontal sum of the individual
+- It is obtained graphically as the horizontal sum of the individual
   supply curves.
+
+#+MATS: fig fig-1C_1004-otab3-*.pdf
 
 
 ** Variations in the price
 
 #+MATS: figcol fig-1C_1004-s2-*.pdf 0.45
 
-- A variation in the price, /ceteris paribus/, is reflected in a
-  movement along the supply curve.
+- A variation in the price, /ceteris paribus/, prompts a movement
+  along the supply curve.
 
 
 ** Other determinants of supply (I)
@@ -254,22 +246,21 @@
 - Producers *expectations*.
 
 
-** Shifts of supply (I)
+** Shifts in the supply (I)
 
 #+MATS: figcol fig-1C_1004-s3-*.pdf 0.45
 
-- An increase in supply.
+- An increase in the supply: firms offer now a higher quantity at the
+  same price.
 
-- Firms offer now a higher quantity at the same price.
 
-
-** Shifts of supply (and II)
+** Shifts in the supply (and II)
 
 #+MATS: figcol fig-1C_1004-s4-*.pdf 0.45
 
-- Increase in supply: \[S \rightarrow S^{+}\]
+- Increase in the supply: $S \rightarrow S^{+}$
 
-- Decrease in supply: \[S \rightarrow S^{-}\]
+- Decrease in the supply: $S \rightarrow S^{-}$
 
 
 * Equilibrium
@@ -280,11 +271,11 @@
 - At the *equilibrium price* the quantity demanded coincides with the
   quantity supplied.
 
-- The equilibrium price *empties the market*:
+- The equilibrium price *clears the market*:
 
-  + Buyers have bought everything they wanted to buy.
+  + Buyers have purchased everything they wanted to purchase.
 
-  + Sellers have sold everything they wanted to sell.
+  + Firms have sold everything they wanted to sell.
 
 
 ** Equilibrium price
@@ -292,27 +283,18 @@
 #+MATS: figcol fig-1C_1004-eq1-*.pdf 0.45
 
 - The intersection between supply and demand determines the
-  equilibrium price and quantity.
+  *equilibrium price*, $P^*$, and the *equilibrium quantity*, $Q^*$.
   #+begin_export latex
     \[ D(P^*) = S(P^*) \]
   #+end_export
-
-
-** Example
-
-#+MATS: figcol fig-1C_1004-eq2-*.pdf 0.45
-
-- $Q^d = 10 - P$
-
-- $Q^s = 5/3 + 2/3 P$
 
 
 ** Surplus
 
 #+MATS: figcol fig-1C_1004-eq3-*.pdf 0.45
 
-- When the price exceeds the equilibrium price, sellers do not sell
-  all the production.
+- When the price exceeds the equilibrium price, suppliers dare unable
+  to sell all they want.
 
 
 ** Shortage
@@ -330,8 +312,7 @@
 - For non-equilibrium prices, the quantity exchanged is determined by the
   shorter side of the market.
 
-- Out of the equilibrium, one of the parts of the market is not
-  satisfied.
+- Out of the equilibrium, one of the market sides is not satisfied.
 
 
 ** Equilibrium stability
@@ -346,14 +327,14 @@
 
 ** Comparative statics
 
-- How to predict the effects of the change in a variable on the market
-  equilibrium?
+- How to predict the effects that the change in a variable exerts on
+  the market equilibrium?
 
-  1. We determine which curve (or curves) is affected by the change.
+  1. Determine which curves are affected by the change.
 
-  2. We determine in which direction each curve moves.
+  2. Determine in which direction each curve shifts.
 
-  3. We compare the initial equilibrium with the new one.
+  3. Compare the initial equilibrium with the new one.
 
 
 ** An increase in demand
@@ -397,12 +378,13 @@
 
 
 ** Shifts in both curves (and III)
+
 - When both curves shift simultaneously, the results depend on the
   magnitude of the changes in both curves.
 
-- If we do not have more details, we can just predict the direction of
-  the change in one of the variables.
-
+- In absence of more details, we can only predict the direction of the
+  change in one of the variables.
+  #+latex: \vspace*{1ex}
   #+begin_center
   #+MATS: fig fig-1C_1004-tab_comp-*.pdf
   #+end_center

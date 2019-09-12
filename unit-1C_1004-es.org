@@ -44,14 +44,15 @@
 
 ** Cantidad demandada y precio
 
-- La *cantidad demandada* de un bien es el número de unidades de ese
-  bien que los consumidores quieren y pueden comprar en un determinado período de tiempo.
+- La *cantidad demandada* de un bien es el número de unidades que los
+  compradores quieren y pueden adquirir en un determinado período de
+  tiempo.
 
 - El *precio* de un bien juega un papel central a la hora de
   determinar la cantidad demandada.
 
 
-** La Ley de la demanda
+** La ley de la demanda
 
 - *Ley de la demanda*: /ceteris paribus/, cuando el precio de un bien
   sube la cantidad demandada disminuye; cuando el precio baja, la
@@ -65,9 +66,9 @@
 
 - La curva de demanda tiene pendiente negativa.
 
-  #+begin_center
-  #+MATS: fig fig-1C_1004-dtab-*.pdf
-  #+end_center
+#+begin_center
+#+MATS: fig fig-1C_1004-dtab-*.pdf
+#+end_center
 
 
 ** La curva de demanda de mercado (I)
@@ -77,9 +78,9 @@
 
 - Demandas en un mercado compuesto por tres consumidores (K, L y M):
 
-  #+begin_center
-  #+MATS: fig fig-1C_1004-dtab2-*.pdf
-  #+end_center
+#+begin_center
+#+MATS: fig fig-1C_1004-dtab2-*.pdf
+#+end_center
 
 
 ** La curva de demanda de mercado (y II)
@@ -87,17 +88,12 @@
 - La curva de demanda de mercado es la suma horizontal de las curvas
   de demanda individuales.
 
-  #+begin_center
-  #+MATS: fig fig-1C_1004-dtab3-*.pdf
-  #+end_center
+#+MATS: fig fig-1C_1004-dtab3-*.pdf
 
 
 ** Cambios en el precio (I)
 
 #+MATS: figcol fig-1C_1004-d2-*.pdf 0.45
-
-- La curva de demanda de mercado nos indica qué cantidad quieren
-  comprar los consumidores para cada posible precio.
 
 - Cuando el precio de mercado es $P_A$ la cantidad demandada es $Q_A$.
 
@@ -106,11 +102,10 @@
 
 #+MATS: figcol fig-1C_1004-d3-*.pdf 0.45
 
-- El precio de mercado ha bajado hasta $P_B$.
+- El precio de mercado ha bajado hasta $P_B$ y no ha cambiado ningún
+  otro determinante de la demanda.
 
-- No ha cambiado ningún otro determinante de la demanda.
-
-- Ahora la cantidad demandada es $Q_B$.
+- La cantidad demandada ahora es $Q_B$.
 
 
 ** Cambios en el precio (y III)
@@ -125,20 +120,22 @@
 
 - La *renta* de los consumidores:
 
-  + *Bien normal*: Si la demanda aumenta cuando aumenta la renta.
+  + *Bien normal*: la cantidad demandada aumenta cuando aumenta la
+    renta.
 
-  + *Bien inferior*: Si la demanda disminuye cuando aumenta la renta.
+  + *Bien inferior*: la cantidad demandada disminuye cuando aumenta la
+    renta.
 
 
 ** Otros determinantes de la demanda (II)
 
 - Los *precios de otros bienes*:
 
-  + *Bienes complementarios*: se suelen consumir conjuntamente. La
+  + *Bienes complementarios*: se suelen consumir conjuntamente: la
     demanda aumenta si baja el precio de un bien complementario.
 
-  + *Bienes sustitutivos*: son alternativas de consumo. La
-    demanda aumenta si aumenta el precio de un bien sustitutivo.
+  + *Bienes sustitutivos*: se usa uno en lugar de otros: la demanda
+    aumenta si aumenta el precio de un bien sustitutivo.
 
 
 ** Otros determinantes de la demanda (y III)
@@ -153,49 +150,36 @@
 
 ** Desplazamientos de la demanda (I)
 
-- Cuando sólo cambia el precio de un bien, se produce un *movimiento a
-  lo largo* de la curva de demanda; la *cantidad demandada* varía.
-
-- Si cambia otro determinante de la demanda, se produce un
-  *desplazamiento* de la demanda; la *demanda* aumenta o disminuye.
-
-
-** Desplazamientos de la demanda (II)
-
 #+MATS: figcol fig-1C_1004-d5-*.pdf 0.45
-
-- Curva de demanda.
 
 - Al precio de mercado $P_A$ la cantidad demandada es $Q_A$.
 
 
-** Desplazamientos de la demanda (III)
+** Desplazamientos de la demanda (II)
 
 #+MATS: figcol fig-1C_1004-d6-*.pdf 0.45
 
-- Aumento de la demanda.
+- Aumenta el precio de un bien sustitutivo.
 
-- Al mismo precio, $P_A$, los consumidores demandan una cantidad
-  mayor.
-
-
-** Desplazamientos de la demanda (IV)
-
-#+MATS: figcol fig-1C_1004-d7-*.pdf 0.45
-
-- Otra forma de ver un aumento de la demanda.
-
-- Los consumidores están dispuestos a pagar un precio mayor por la
-  misma cantidad.
+- Al mismo precio, $P_A$, los consumidores demandan más unidades.
 
 
-** Desplazamientos de la demanda (y V)
+** Desplazamientos de la demanda (y III)
 
 #+MATS: figcol fig-1C_1004-d8-*.pdf 0.45
 
-- Aumento de la demanda: \[D \rightarrow D^{+}\]
+- Un aumento de la demanda: $D \rightarrow D^{+}$
 
-- Disminución de la demanda: \[D \rightarrow D^{-}\]
+- Una disminución de la demanda: $D \rightarrow D^{-}$
+
+
+** Desplazamientos y movimientos a lo largo de la demanda
+
+- Cuando sólo cambia el precio de un bien se produce un *movimiento a
+  lo largo* de la curva de demanda; la *cantidad demandada* varía.
+
+- Cuando cambia otro determinante de la demanda se produce un
+  *desplazamiento* de la demanda; la *demanda* aumenta o disminuye.
 
 
 * La oferta
@@ -227,19 +211,21 @@
 
 ** La curva de oferta de mercado
 
-- Suma de las cantidades ofrecidas por cada productor para cada
-  posible precio.
+- La *curva de oferta de mercado* es la suma de las cantidades
+  ofrecidas por cada productor para cada posible precio.
 
-- La curva de oferta de mercado es la suma horizontal de las curvas de
+- Gráficamente se obtiene como la suma horizontal de las curvas de
   oferta individuales.
+
+#+MATS: fig fig-1C_1004-otab3-*.pdf
 
 
 ** Cambios en el precio
 
 #+MATS: figcol fig-1C_1004-s2-*.pdf 0.45
 
-- Un cambio en el precio, /ceteris paribus/, se refleja en un
-  movimiento a lo largo de la curva de oferta.
+- Un cambio en el precio, /ceteris paribus/, provoca un movimiento a
+  lo largo de la curva de oferta.
 
 
 ** Otros determinantes de la oferta (I)
@@ -266,18 +252,17 @@
 
 #+MATS: figcol fig-1C_1004-s3-*.pdf 0.45
 
-- Un aumento de la oferta.
-
-- Las empresas ofrecen ahora una cantidad mayor al mismo precio.
+- Un aumento de la oferta: las empresas ofrecen ahora una cantidad
+  mayor al mismo precio.
 
 
 ** Desplazamientos de la oferta (y II)
 
 #+MATS: figcol fig-1C_1004-s4-*.pdf 0.45
 
-- Aumento de la oferta: \[S \rightarrow S^{+}\]
+- Aumento de la oferta: $S \rightarrow S^{+}$
 
-- Disminución de la oferta: \[S \rightarrow S^{-}\]
+- Disminución de la oferta: $S \rightarrow S^{-}$
 
 
 * El equilibrio
@@ -298,28 +283,19 @@
 
 #+MATS: figcol fig-1C_1004-eq1-*.pdf 0.45
 
-- La intersección de la oferta y la demanda determina el precio y la
-  cantidad de equilibrio.
+- La intersección de la oferta y la demanda determina el *precio de
+  equilibrio*, $P^*$ y la *cantidad de equilibrio*, $Q^*$.
   #+begin_export latex
     \[ D(P^*) = S(P^*) \]
   #+end_export
-
-
-** Ejemplo
-
-#+MATS: figcol fig-1C_1004-eq2-*.pdf 0.45
-
-- $Q^d = 10 - P$
-
-- $Q^o = 5/3 + 2/3 P$
 
 
 ** Excedente
 
 #+MATS: figcol fig-1C_1004-eq3-*.pdf 0.45
 
-- Cuando el precio es superior al de equilibrio los vendedores no
-  consiguen vender toda la producción.
+- Cuando el precio es superior al de equilibrio, los oferentes no
+  consiguen vender todo lo que querrían.
 
 
 ** Escasez
@@ -338,8 +314,8 @@
 - Para precios distintos del de equilibrio, la cantidad intercambiada
   la determina el lado más corto del mercado.
 
-- Fuera del equilibrio, una de las partes del mercado no está
-  satisfecha.
+- Fuera del equilibrio, uno de los lados del mercado no está
+  satisfecho.
 
 
 
@@ -361,11 +337,11 @@
 - ¿Cómo predecir los efectos del cambio de alguna variable sobre el
   equilibrio de mercado?
 
-  1. Determinamos qué curva (o curvas) se ve afectada por el cambio.
+  1. Determinar qué curvas se ven afectadas por el cambio.
 
-  2. Determinamos en qué dirección se mueve cada curva.
+  2. Determinar en qué dirección se desplaza cada curva.
 
-  3. Comparamos el equilibrio inicial con el nuevo equilibrio.
+  3. Comparar el equilibrio inicial con el nuevo equilibrio.
 
 
 ** Un aumento de la demanda
@@ -408,15 +384,14 @@
 - El precio de equilibrio aumenta, pero la cantidad disminuye.
 
 
-
 ** Desplazamientos de ambas curvas (y III)
 
 - Cuando las dos curvas se desplazan simultáneamente, los resultados
   dependen de la magnitud de los cambios de ambas curvas.
 
-- Si no conocemos más detalles, sólo podemos predecir la dirección del
-  cambio de una de las variables.
-
+- Sin más detalles, sólo podemos predecir la dirección del cambio de
+  una de las variables.
+  #+latex: \vspace*{1ex}
   #+begin_center
   #+MATS: fig fig-1C_1004-tab_comp-*.pdf
   #+end_center
