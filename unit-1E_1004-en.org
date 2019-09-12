@@ -1,3 +1,4 @@
+# -*- ispell-dictionary: "english" -*-
 #+SETUPFILE: ./course-en.org
 
 #+TITLE: Intervention in competitive markets
@@ -9,7 +10,7 @@
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principles of Economics/. Chapter 6.
-- Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 2. 
+- Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 2.
 #+end_bibbox
 
 
@@ -29,7 +30,7 @@
 
 - Government tries to reduce the price for buyers.
 - By establishing a *maximum price* prices over a determined value are
-  banned. So that, 
+  banned. So that,
   \[ P \leq \Pmax \]
 
 
@@ -107,7 +108,7 @@
 ** A tax on sellers (II)
 
 #+figure: ./figures/fig-t05-st2.pdf 0.48
- 
+
 - In the new equilibrium the quantity sold is lower.
 - Price increases, but *less than the tax*.
 
@@ -115,7 +116,7 @@
 ** A tax on sellers (and III)
 
 #+figure: ./figures/fig-t05-st3.pdf 0.48
- 
+
 - The tax burden is distributed between buyers and sellers.
 - Buyers pay a higher price.
 - Sellers receive a lower amount per unit, $P_1 - t$.
@@ -178,4 +179,3 @@
    + The tax burden is distributed between buyers and sellers.
    + The tax burden falls more heavily on the less elastic side
      of the market.
-

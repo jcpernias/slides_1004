@@ -1,3 +1,4 @@
+# -*- ispell-dictionary: "spanish" -*-
 #+SETUPFILE: ./course-es.org
 
 #+TITLE: Elasticidad
@@ -15,9 +16,9 @@
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principios de Economía/. Capítulo 5.
-- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 2. 
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 2.
 #+end_bibbox
- 
+
 
 * Elasticidad precio de la demanda
 
@@ -34,8 +35,8 @@
 - Se define como el cociente de los cambios porcentuales de ambas
   variables:
   \[ E_d = \frac{\text{variación porcentual de $Q^d$}}{%
-    \text{variación porcentual de $P$}} = 
-    \frac{\Delta\% Q^d}{\Delta\% P} \] 
+    \text{variación porcentual de $P$}} =
+    \frac{\Delta\% Q^d}{\Delta\% P} \]
 
 
 ** Variaciones relativas
@@ -89,7 +90,7 @@
   relativa de $Q^d$ es menor que la variación relativa de $P$:
   \[ -1 < E_d \leq 0\]
 - *Elasticidad unitaria*: coinciden, en valor absoluto, las
-  variaciones relativas de $Q^d$ y $P$.  
+  variaciones relativas de $Q^d$ y $P$.
   \[ E_d = -1 \]
 
 
@@ -110,18 +111,18 @@
   cuanto mayor es el horizonte temporal que se considera.
 
 
-** Pendiente de la demanda(I)
+** Pendiente de la demanda (I)
 
 - La *pendiente de la demanda* es el cociente de las variaciones
   *absolutas* de la cantidad demandada y del precio:
   \[ \text{pendiente} = \frac{\text{variación de $Q^d$}}{%
-    \text{variación de $P$}} = 
-    \frac{\Delta Q^d}{\Delta P} \] 
+    \text{variación de $P$}} =
+    \frac{\Delta Q^d}{\Delta P} \]
 - A diferencia de la elasticidad de la demanda, la pendiente de la
   demanda sí tiene unidades.
 
 
-** Pendiente de la demanda(y II)
+** Pendiente de la demanda (y II)
 
 #+figure: ./figures/fig-t04-unicorn11.pdf 0.45
 
@@ -138,19 +139,19 @@
 - Las elasticidades no dependen de las unidades en las que se miden las variables.
 - Podemos escribir la elasticidad precio de la demanda en función de
   la pendiente de la curva de demanda:
-  \[ E_d = \frac{100\cdot \Delta Q^d / Q^d}{100\cdot \Delta P / P } = \frac{\Delta Q^d}{\Delta P} \frac{P}{Q^d} \]  
+  \[ E_d = \frac{100\cdot \Delta Q^d / Q^d}{100\cdot \Delta P / P } = \frac{\Delta Q^d}{\Delta P} \frac{P}{Q^d} \]
 
 
 * Cálculo de las elasticidades
 
 
-** Elasticidad arco (I) 
+** Elasticidad arco (I)
 - Necesitamos dos puntos de la curva de demanda.
 - Calculamos los cambios porcentuales de la cantidad demandada y de los precios:
   #+BEGIN_EXPORT LaTeX
   \begin{gather*}
     \Delta\% Q^d = 100 \cdot (Q^d_{2}-Q^d_{1})/Q^d_{1} \\
-    \Delta\% P = 100 \cdot (P_{2}-P_{1})/P_{1} 
+    \Delta\% P = 100 \cdot (P_{2}-P_{1})/P_{1}
   \end{gather*}
   #+END_EXPORT
 - Elasticidad arco:
@@ -180,7 +181,7 @@
   dirección del cambio.
 - Para evitar este problema se puede usar la fórmula del punto medio
   para el cálculo de las variaciones porcentuales:
-  \[ \Delta\% Q^d = 100 \cdot \Delta Q^d/Q^d_m; \quad 
+  \[ \Delta\% Q^d = 100 \cdot \Delta Q^d/Q^d_m; \quad
      \Delta\% P = 100 \cdot \Delta P / P_m \]
   donde
   \[ Q^d_m = (Q^d_1 + Q^d_2) / 2; \quad P_m = (P_1 + P_2) / 2 \]
@@ -251,7 +252,7 @@
 #+figure: ./figures/fig-t04-ingr1.pdf 0.5
 
 - Curva de demanda lineal:
-  \[ Q^d = a - b P \] 
+  \[ Q^d = a - b P \]
   donde $a, b>0$.
 
 
@@ -275,7 +276,7 @@
   #+BEGIN_EXPORT LaTeX
     \begin{gather*}
       I_{1} = P_{1} \cdot Q_{1} \\
-      I_{2} = P_{2} \cdot Q_{2} 
+      I_{2} = P_{2} \cdot Q_{2}
     \end{gather*}
   #+END_EXPORT
 
@@ -376,7 +377,7 @@
   + *Bienes de lujo*: El consumo del bien aumenta en una proporción mayor que la renta; $E_d^M > 1$.
 
 
- 
+
 * Elasticidad de la oferta
 
 
@@ -428,4 +429,3 @@
 
 - Oferta perfectamente elástica.
 - $E_s = \infty$
-

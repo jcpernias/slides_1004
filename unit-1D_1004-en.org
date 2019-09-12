@@ -1,3 +1,4 @@
+# -*- ispell-dictionary: "english" -*-
 #+SETUPFILE: ./course-en.org
 
 #+TITLE: Elasticity
@@ -16,9 +17,9 @@
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principles of Economics/. Chapter 5.
-- Pindyck y Rubinfeld: :: /Microeconomics/. Chapter 2. 
+- Pindyck y Rubinfeld: :: /Microeconomics/. Chapter 2.
 #+end_bibbox
- 
+
 
 * Price elasticity of demand
 
@@ -35,8 +36,8 @@
 - It is defined as the ratio of the percentage changes in both
   variables:
   \[ E_d = \frac{\text{percentage change in $Q^d$}}{%
-    \text{percentage change in $P$}} = 
-    \frac{\Delta\% Q^d}{\Delta\% P} \] 
+    \text{percentage change in $P$}} =
+    \frac{\Delta\% Q^d}{\Delta\% P} \]
 
 
 ** Relative variations
@@ -88,7 +89,7 @@
 - In an *inelastic* section of demand: the magnitude of the relative
   variation in $Q^d$ is lower than the relative variation in $P$:
   \[ -1 < E_d \leq 0\]
-- *Unitary elasticity*: the relative variations in $Q^d$ and $P$ 
+- *Unitary elasticity*: the relative variations in $Q^d$ and $P$
   coincide, in absolute terms.
   \[ E_d = -1 \]
 
@@ -104,7 +105,7 @@
 ** Determinants of price elasticity (and II)
 - *Fraction of total spending* that represents the expenditure in the
   good: Goods which represent a small fraction of the consumers’ budget
-  tend to have inelastic demands. 
+  tend to have inelastic demands.
 
 - *Time horizon*: Demand of a good tends to be more elastic the
   greater is the considered time horizon.
@@ -115,8 +116,8 @@
 - The *slope of demand* is the ratio of the *absolute* variations in the
   quantity demanded and the price:
   \[ \text{slope} = \frac{\text{variation in $Q^d$}}{%
-    \text{variation in $P$}} = 
-    \frac{\Delta Q^d}{\Delta P} \] 
+    \text{variation in $P$}} =
+    \frac{\Delta Q^d}{\Delta P} \]
 - In contrast to the elasticity of demand, the slope of demand has units.
 
 
@@ -137,20 +138,20 @@
 - The elasticities do not depend on the measurement units of the variables.
 - We can write the price elasticity of demand depending on the slope
   of the demand curve:
-  \[ E_d = \frac{100\cdot \Delta Q^d / Q^d}{100\cdot \Delta P / P } = 
-     \frac{\Delta Q^d}{\Delta P} \frac{P}{Q^d} \]  
+  \[ E_d = \frac{100\cdot \Delta Q^d / Q^d}{100\cdot \Delta P / P } =
+     \frac{\Delta Q^d}{\Delta P} \frac{P}{Q^d} \]
 
 
 * Calculations of elasticities
 
 
-** Arc elasticity (I) 
+** Arc elasticity (I)
 - We need two points in the demand curve.
 - We calculate the percentage changes in the quantity demanded and the price:
   #+BEGIN_EXPORT LaTeX
   \begin{gather*}
     \Delta\% Q^d = 100 \cdot (Q^d_{2}-Q^d_{1})/Q^d_{1} \\
-    \Delta\% P = 100 \cdot (P_{2}-P_{1})/P_{1} 
+    \Delta\% P = 100 \cdot (P_{2}-P_{1})/P_{1}
   \end{gather*}
   #+END_EXPORT
 - Arc elasticity:
@@ -178,7 +179,7 @@
 ** Midpoint method (I)
 - The arc elasticity provides different values depending on the direction of the change.
 - To avoid this problem we can use the midpoint method to calculate the percentage variations:
-  \[ \Delta\% Q^d = 100 \cdot \Delta Q^d/Q^d_m; \quad 
+  \[ \Delta\% Q^d = 100 \cdot \Delta Q^d/Q^d_m; \quad
      \Delta\% P = 100 \cdot \Delta P / P_m \]
   where
   \[ Q^d_m = (Q^d_1 + Q^d_2) / 2; \quad P_m = (P_1 + P_2) / 2 \]
@@ -248,7 +249,7 @@
 #+figure: ./figures/fig-t04-ingr1.pdf 0.5
 
 - Linear demand curve:
-  \[ Q^d = a - b P \] 
+  \[ Q^d = a - b P \]
   where $a, b>0$.
 
 
@@ -272,7 +273,7 @@
   #+BEGIN_EXPORT LaTeX
     \begin{gather*}
       \IT_{1} = P_{1} \cdot Q_{1} \\
-      \IT_{2} = P_{2} \cdot Q_{2} 
+      \IT_{2} = P_{2} \cdot Q_{2}
     \end{gather*}
   #+END_EXPORT
 
@@ -329,7 +330,7 @@
 ** Function and curve of demand
 - We obtain the *demand curve* giving specific values to all the
   determinants of demand except for the price of the good:
- \[ Q^d = Q^d(P, \overline{P}_o, \overline{M}, \overline{X}, 
+ \[ Q^d = Q^d(P, \overline{P}_o, \overline{M}, \overline{X},
     \overline{Y}, \overline{Z}, \dots) = Q^d(P) \]
 
 
@@ -362,7 +363,7 @@
 
 
 ** Normal and inferior goods
-- The demand for *normal goods* increases with income. The income 
+- The demand for *normal goods* increases with income. The income
   elasticity of normal goods is positive: $E_d^M > 0$.
 - If the demand of the good decreases with income, the *good* is
   *inferior*: $E_d^M < 0$.
@@ -376,7 +377,7 @@
     proportion than income; $E_d^M > 1$.
 
 
- 
+
 * Elasticity of supply
 
 

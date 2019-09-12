@@ -1,3 +1,4 @@
+# -*- ispell-dictionary: "spanish" -*-
 #+SETUPFILE: ./course-es.org
 
 #+TITLE: Intervención en mercados competitivos
@@ -9,7 +10,7 @@
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principios de Economía/. Capítulo 6.
-- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 2. 
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 2.
 #+end_bibbox
 
 
@@ -30,7 +31,7 @@
 
 - El Estado trata de reducir el precio que pagan los compradores.
 - Al establecer un *precio máximo* se prohíben precios superiores a un
-  determinado valor. Por tanto, 
+  determinado valor. Por tanto,
   \[ P \leq \Pmax \]
 
 
@@ -105,7 +106,7 @@
 ** Impuesto a los vendedores (II)
 
 #+figure: ./figures/fig-t05-st2.pdf 0.48
- 
+
 - En el nuevo equilibrio la cantidad vendida es inferior.
 - El precio aumenta, pero *en menor cuantía que el impuesto*.
 
@@ -113,7 +114,7 @@
 ** Impuesto a los vendedores (y III)
 
 #+figure: ./figures/fig-t05-st3.pdf 0.48
- 
+
 - La carga del impuesto se reparte entre compradores y vendedores.
 - Los compradores pagan un precio superior.
 - Los vendedores perciben una cantidad menor por cada unidad, $P_1 -
