@@ -439,7 +439,7 @@
   #+BEGIN_EXPORT LaTeX
   \begin{center}\vspace*{1ex}\footnotesize%
     \begin{minipage}{0.75\linewidth}\setlength{\parindent}{0.5em}
-      \enquote{Economist Paul Seabright remids us of the pleas of the
+      \enquote{Economist Paul Seabright reminds us of the pleas of the
         Soviet official trying to comprehend the Western system:
         \enquote{Tell me ... who is in charge of the supply of bread to
           the population of London?} The question is comical, but the
