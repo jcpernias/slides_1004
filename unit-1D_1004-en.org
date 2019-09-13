@@ -3,14 +3,6 @@
 
 #+TITLE: Elasticity
 
-#+LATEX_HEADER: \newcommand*{\diff}[1][]{\mathrm{d^{#1}\,}}
-#+LATEX_HEADER: \deftranslation[to=Spanish]{IT}{I}
-#+LATEX_HEADER: \deftranslation[to=English]{IT}{R}
-#+LATEX_HEADER: \newcommand*{\ITLabel}{\translate{IT}}
-#+LATEX_HEADER: \usepackage{xspace}
-#+LATEX_HEADER: \newcommand*{\mlabel}[1]{\ensuremath{\mathit{#1}}\xspace}
-#+LATEX_HEADER: \newcommand*{\IT}   {\mlabel{\ITLabel}}
-
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principles of Economics/. Chapter 5.
@@ -21,19 +13,26 @@
 
 
 ** Concept of elasticity
+
 - *Elasticicity* measures how a variable responds to changes in
   another variable, /ceteris paribus/.
 
 
 ** Price elasticity of demand
+
 - *Price elasticity of demand*: how does the quantity demanded respond
   to variations in the price, /keeping constant the rest of
   determinants of demand/.
+
 - It is defined as the ratio of the percentage changes in both
   variables:
-  \[ E_d = \frac{\text{percentage change in $Q^d$}}{%
-    \text{percentage change in $P$}} =
-    \frac{\Delta\% Q^d}{\Delta\% P} \]
+  #+begin_export latex
+  \[
+    E_d = \frac{\text{percentage change in $Q^d$}}{%
+      \text{percentage change in $P$}} =
+    \frac{\Delta\% Q^d}{\Delta\% P}
+  \]
+  #+end_export
 
 
 ** Relative variations
@@ -42,6 +41,7 @@
 
 - Relative change in $P$:
   \[ \Delta\% P = \frac{P_{2} - P_{1}}{P_{1}} \cdot 100 \]
+
 - Relative change in $Q^d$:
   \[ \Delta\% Q^d = \frac{Q_{2} - Q_{1}}{Q_{1}} \cdot 100 \]
 
