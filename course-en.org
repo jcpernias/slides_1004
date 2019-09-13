@@ -12,5 +12,3 @@
 
 #+LANGUAGE: en
 #+LATEX_HEADER: \newcommand*{\LANG}{en}
-
-#+SETUPFILE: ./paths.org
