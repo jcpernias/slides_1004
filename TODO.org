@@ -1,0 +1,4 @@
+* TODO Changing a figures file do not always trigger a recompilation.
+* DONE org-tempo: <l TAB does not expand
+* TODO Warning while tangling figs files: 'Could not read org-id-values from ~/.emacs.d/.org-id-locations.  Setting it to nil.'
+* TODO The keybinding for org-beamer-select-environment, C-c C-b, is taken by another org function.
