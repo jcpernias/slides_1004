@@ -3,16 +3,11 @@
 
 #+TITLE: The production possibilities frontier
 
-#+latex_header: \deftranslation[to=Spanish]{Pvar}{P}
-#+latex_header: \deftranslation[to=English]{Pvar}{F}
-#+latex_header: \newcommand*{\Pvar}{\translate{Pvar}}
-
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principles of Economics/. Chapters 1 and 2.
 - Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 1
 #+end_bibbox
-
 
 * Production
 

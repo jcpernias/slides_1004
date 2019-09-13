@@ -13,8 +13,6 @@
 
 *** Production tables
 #+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp1.tex :noweb yes
-  <<translations-ppf>>
-
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (cocos) [matrix of nodes,
@@ -66,11 +64,8 @@
   \end{tikzpicture}
 #+END_SRC
 
-
 *** Coconuts production curve
 #+BEGIN_SRC latex :tangle fig-1B_1004-prod.tex :noweb yes
-  <<translations-ppf>>
-
   \begin{tikzpicture}[xscale = 0.3, yscale = 0.3]
 
     \draw[IMe, shaded] (0,0) -- (8.5, 8.5) ;
@@ -90,8 +85,6 @@
 
 *** Fish production curve
 #+BEGIN_SRC latex :tangle fig-1B_1004-prod2.tex :noweb yes
-  <<translations-ppf>>
-
   \begin{tikzpicture}[xscale = 0.3, yscale = 0.3]
 
     \draw[IMe, shaded,domain=0:8.5, samples=100]
@@ -113,14 +106,11 @@
 
 * The PPF
 
-
 ** Figures and tables
 
 
 *** Production options
 #+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp2.tex :noweb yes
-  <<translations-ppf>>
-
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (FPP) [matrix of nodes,
@@ -173,8 +163,6 @@
 
 *** PPF
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp1.tex :noweb yes
-  <<translations-ppf>>
-
   \begin{tikzpicture}<<scale-ppf>>
 
     <<curve-shaded-ppf>>
@@ -208,8 +196,6 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp2a.tex :noweb yes
-  <<translations-ppf>>
-
   \begin{tikzpicture}<<scale-ppf>>
 
     <<area-shaded-ppf>>
@@ -221,8 +207,6 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp1a.tex :noweb yes
-  <<translations-ppf>>
-
   \begin{tikzpicture}<<scale-ppf>>
 
     <<area-shaded-ppf>>
@@ -253,8 +237,6 @@
 
 *** Feasible and unfeasible choices
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp2.tex :noweb yes
-  <<translations-ppf>>
-
   \begin{tikzpicture}<<scale-ppf>>
 
     <<area-shaded-ppf>>
@@ -277,8 +259,6 @@
 
 *** Production efficiency
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp3a.tex :noweb yes
-  <<translations-ppf>>
-
   \begin{tikzpicture}<<scale-ppf>>
 
     \newcommand*{\Ax}{1.5}
@@ -314,8 +294,6 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp3.tex :noweb yes
-  <<translations-ppf>>
-
   \begin{tikzpicture}<<scale-ppf>>
     \newcommand*{\Ax}{2.8}
     \newcommand*{\Cx}{5}
@@ -358,7 +336,7 @@
 *** Opportunity cost
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp4.tex :noweb yes
-  <<translations-ppf>>
+
 
   \begin{tikzpicture}<<scale-ppf>>
     \newcommand*{\Ax}{2.8}
@@ -405,7 +383,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp5.tex :noweb yes
-  <<translations-ppf>>
+
 
   \begin{tikzpicture}<<scale-ppf>>
     \newcommand*{\Ax}{2.8}
@@ -457,7 +435,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp3.tex :noweb yes
-  <<translations-ppf>>
+
 
   \footnotesize\sffamily%
   \begin{tikzpicture}
@@ -497,7 +475,7 @@
 
 *** Slope
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp6.tex :noweb yes
-  <<translations-ppf>>
+
 
   \begin{tikzpicture}<<scale-ppf>>
     \newcommand*{\Ax}{2.82843}
@@ -529,7 +507,7 @@
 
 *** Concavity
 #+BEGIN_SRC latex :tangle fig-1B_1004-fpp7.tex :noweb yes
-  <<translations-ppf>>
+
 
   \begin{tikzpicture}<<scale-ppf>>
     \newcommand*{\Ax}{2.82843}
@@ -570,9 +548,6 @@
 
 *** Growth
 #+BEGIN_SRC latex :tangle fig-1B_1004-gr2.tex :noweb yes
-  <<translations-ppf>>
-
-
   \begin{tikzpicture}<<scale-ppf>>
 
     <<curve-ppf>>
@@ -591,8 +566,6 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-gr3.tex :noweb yes
-  <<translations-ppf>>
-
   \begin{tikzpicture}<<scale-ppf>>
 
     <<curve-ppf>>
@@ -620,8 +593,6 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1B_1004-gr1.tex :noweb yes
-  <<translations-ppf>>
-
   \begin{tikzpicture}<<scale-ppf>>
 
     <<curve-ppf>>
@@ -651,24 +622,6 @@
 
 
 ** Chunks
-*** Translations
-
-#+BEGIN_SRC latex :noweb-ref translations-ppf
-  \deftranslation[to=Spanish]{Cocos}{Cocos}
-  \deftranslation[to=English]{Cocos}{Coconuts}
-  \deftranslation[to=Spanish]{Pescado}{Pescado}
-  \deftranslation[to=English]{Pescado}{Fish}
-  \deftranslation[to=Spanish]{Trabajo}{Trabajo}
-  \deftranslation[to=English]{Trabajo}{Labor}
-  \deftranslation[to=Spanish]{Horas}{Horas}
-  \deftranslation[to=English]{Horas}{Hours}
-  \deftranslation[to=Spanish]{Producción}{Producción}
-  \deftranslation[to=English]{Producción}{Output}
-  \deftranslation[to=Spanish]{Pvar}{P}
-  \deftranslation[to=English]{Pvar}{F}
-  \newcommand*{\Pvar}{\translate{Pvar}}
-#+END_SRC
-
 
 *** Figures scale
 

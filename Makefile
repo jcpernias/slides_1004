@@ -84,16 +84,22 @@ ifneq (,$(findstring clean,$(MAKECMDGOALS)))
 INCLUDEDEPS := no
 endif
 
-# $(call tex-wrapper,pres-or-hdout,tex-src) -> write to a file
+# $(call tex-wrapper,pres-or-hdout,tex-src,lang) -> write to a file
 define tex-wrapper
 \PassOptionsToClass{$1}{unit}
 \AtBeginDocument{\graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}}
-\input{$(realpath $(builddir))/$2}
+\RequirePackage{etoolbox}
+\AtEndPreamble{%
+  \InputIfFileExists{$(subject_code)-macros.tex}{}{}%
+  \InputIfFileExists{$2-macros.tex}{}{}}
+\input{$(realpath $(builddir))/$2-$3}
 endef
 
-# $(call tex-wrapper,spanish-or-english,fig-src) -> write to a file
+# $(call tex-wrapper,spanish-or-english,fig-basename,unit-code) -> write to a file
 define fig-wrapper
 \documentclass[$1]{figure}
+\InputIfFileExists{$(subject_code)-macros.tex}{}{}
+\InputIfFileExists{unit-$3-macros.tex}{}{}
 \begin{document}
 \input{$(realpath $(builddir))/$2}
 \end{document}
@@ -118,13 +124,21 @@ $(depsdir)/%.tex.d: $(rootdir)/%.org | $(depsdir)
 	$(MAKEORGDEPS) -o $@ -t $(builddir)/$*.tex $<
 
 # latex wrappers
-.PRECIOUS: $(builddir)/pres-%.tex
-$(builddir)/pres-%.tex: $(builddir)/unit-%.tex | $(figdir)
-	$(file > $@, $(call tex-wrapper,Presentation,unit-$*))
+.PRECIOUS: $(builddir)/pres-%-es.tex
+$(builddir)/pres-%-es.tex: $(builddir)/unit-%-es.tex | $(figdir)
+	$(file > $@, $(call tex-wrapper,Presentation,unit-$*,es))
 
-.PRECIOUS: $(builddir)/hdout-%.tex
-$(builddir)/hdout-%.tex: $(builddir)/unit-%.tex | $(figdir)
-	$(file > $@, $(call tex-wrapper,Handout,unit-$*))
+.PRECIOUS: $(builddir)/hdout-%-es.tex
+$(builddir)/hdout-%-es.tex: $(builddir)/unit-%-es.tex | $(figdir)
+	$(file > $@, $(call tex-wrapper,Handout,unit-$*,es))
+
+.PRECIOUS: $(builddir)/pres-%-en.tex
+$(builddir)/pres-%-en.tex: $(builddir)/unit-%-en.tex | $(figdir)
+	$(file > $@, $(call tex-wrapper,Presentation,unit-$*,en))
+
+.PRECIOUS: $(builddir)/hdout-%-en.tex
+$(builddir)/hdout-%-en.tex: $(builddir)/unit-%-en.tex | $(figdir)
+	$(file > $@, $(call tex-wrapper,Handout,unit-$*,en))
 
 ## latex to pdf
 $(outdir)/%.pdf: $(builddir)/%.tex | $(outdir)
@@ -137,11 +151,11 @@ $(depsdir)/%.pdf.d: $(builddir)/%.tex | $(outdir) $(depsdir)
 # figure wrappers
 .PRECIOUS: $(builddir)/fig-%-en.tex
 $(builddir)/fig-%-en.tex: $(builddir)/fig-%.tex
-	$(file > $@, $(call fig-wrapper,English,fig-$*))
+	$(file > $@, $(call fig-wrapper,English,fig-$*,$(shell echo $* | sed 's/\([^-]*\)-.*/\1/')))
 
 .PRECIOUS: $(builddir)/fig-%-es.tex
 $(builddir)/fig-%-es.tex: $(builddir)/fig-%.tex
-	$(file > $@, $(call fig-wrapper,Spanish,fig-$*))
+	$(file > $@, $(call fig-wrapper,Spanish,fig-$*,$(shell echo $* | sed 's/\([^-]*\)-.*/\1/')))
 
 # figure latex to pdf
 $(figdir)/fig-%.pdf: $(builddir)/fig-%.tex | $(figdir)
