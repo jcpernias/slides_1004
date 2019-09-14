@@ -10,6 +10,7 @@
 
 ** Figures and tables
 
+
 *** Relative variations
 #+BEGIN_SRC latex :tangle fig-1D_1004-unicorn1.tex :noweb yes
   \begin{tikzpicture}[xscale=0.05, yscale=0.1]
@@ -55,6 +56,7 @@
 
 
 *** Arc elasticity
+
 #+BEGIN_SRC latex :tangle fig-1D_1004-unicorn3.tex :noweb yes
   \begin{tikzpicture}[xscale=0.05, yscale=0.1]
     \coordinate (A) at (20, 30);
@@ -77,6 +79,7 @@
 
 
 *** Midpoint formula
+
 #+BEGIN_SRC latex :tangle fig-1D_1004-unicorn4.tex :noweb yes
   \begin{tikzpicture}[xscale=0.0714285, yscale=0.1]
     \coordinate (A) at (20, 30);
@@ -102,6 +105,7 @@
 
 
 *** Point elasticity
+
 #+BEGIN_SRC latex :tangle fig-1D_1004-unicorn5.tex :noweb yes
   \begin{tikzpicture}[xscale=0.05, yscale=0.1]
     \coordinate (A) at (20, 30);
@@ -124,6 +128,7 @@
 
 
 *** Some special cases
+
 #+BEGIN_SRC latex :tangle fig-1D_1004-elast8.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
 
@@ -225,7 +230,9 @@
 
 * Elasticity and returns
 
+
 ** Figures and tables
+
 #+BEGIN_SRC latex :tangle fig-1D_1004-ingr3.tex :noweb yes
   \begin{tikzpicture}[xscale=0.18, yscale=0.83333]
     \coordinate (A) at (9.375, 4);
@@ -344,6 +351,7 @@
 
 
 ** Figures and tables
+
 #+BEGIN_SRC latex :tangle fig-1D_1004-unicorn6.tex :noweb yes
   \begin{tikzpicture}[xscale=0.05, yscale=0.1]
     \coordinate (A) at (20, 30);
@@ -417,11 +425,52 @@
   \end{tikzpicture}
 #+END_SRC
 
+#+begin_src latex :tangle fig-1D_1004-unicorn10.tex :noweb yes
+\begin{tikzpicture}[xscale=0.05, yscale=0.1]
+  \coordinate (A) at (20, 30);
+  \coordinate (B) at (40, 20);
+
+  \draw[help lines]
+    let \p1=(A), \p2=(B) in
+    (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$}
+    (0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$}
+    ;
+  \draw[IMe] (0, 40) -- (80, 0) node[pos=0.95, above right] { $D(P)$ };
+  \draw[axis] (0, 50) node[left] {$P$} |- (100, 0) node[below] {$Q$} ;
+  \node[dot, label=above right:$A$] at (A) {};
+  \node[dot, label=above right:$B$] at (B) {};
+  \draw[shift arrow, ->, DarkGreen]
+   ($ (A) + (2, 1) $) -- ($ (B) + (2, 1) $) ;
+
+\end{tikzpicture}
+#+end_src
+
+
+#+begin_src latex :tangle fig-1D_1004-unicorn11.tex :noweb yes
+\begin{tikzpicture}[xscale=0.05, yscale=0.1]
+  \coordinate (A) at (20, 30);
+  \coordinate (B) at (40, 20);
+
+  \draw[help lines]
+    let \p1=(A), \p2=(B) in
+    (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$}
+    (0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$}
+    ;
+  \draw[IMe] (0, 40) -- (80, 0) node[pos=0.95, above right] { $D(P)$ };
+  \draw[axis] (0, 50) node[left] {$\text{\texteuro}/\text{kg}$} |- (100, 0) node[below] {kg} ;
+  \node[dot, label=above right:$A$] at (A) {};
+  \node[dot, label=above right:$B$] at (B) {};
+  \draw[shift arrow, ->, DarkGreen]
+   ($ (A) + (2, 1) $) -- ($ (B) + (2, 1) $) ;
+
+\end{tikzpicture}
+#+end_src
 
 * Supply elasticity
 
 
 ** Figures and tables
+
 #+BEGIN_SRC latex :tangle fig-1D_1004-elast10.tex :noweb yes
   \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
 
@@ -495,5 +544,6 @@
 
 
 * Common
+
 
 ** Chunks
