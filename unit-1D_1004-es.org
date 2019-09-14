@@ -11,62 +11,59 @@
 
 * Elasticidad precio de la demanda
 
+
 ** Concepto de elasticidad
 
-- La *elasticidad* mide como una variable responde a cambios en otra
+- La *elasticidad* mide cómo una variable responde a cambios en otra
   variable, /ceteris paribus/.
 
 
 ** Elasticidad precio de la demanda
 
-- *Elasticidad precio de la demanda*: cómo responde la cantidad
-  demandada a cambios en el precio, /manteniéndose constantes el resto
+- *Elasticidad precio de la demanda*: cómo la cantidad demandada
+  responde a cambios en el precio, /manteniéndose constantes el resto
   de determinantes de la demanda/.
 
-- Se define como el cociente de los cambios porcentuales de ambas
-  variables:
+
+** Cálculo de la elasticidad precio
+
+- Se calcula como el cambio porcentual de la cantidad demandada
+  dividido por el cambio porcentual en el precio:
   #+begin_export latex
   \[
     E_d = \frac{\text{variación porcentual de $Q^d$}}{%
-      \text{variación porcentual de $P$}} = \frac{\Delta\% Q^d}{\Delta\% P}
+      \text{variación porcentual de $P$}} =
+    \frac{\Delta\% Q^d}{\Delta\% P}
+  \]
+  #+end_export
+
+- Cambio porcentual en $Q^d$ y en $P$:
+  #+begin_export latex
+  \[
+    \Delta\% Q^d = \frac{Q_{2} - Q_{1}}{Q_{1}} \cdot 100;
+    \qquad
+    \Delta\% P = \frac{P_{2} - P_{1}}{P_{1}} \cdot 100
   \]
   #+end_export
 
 
-** Variaciones relativas
+** Un ejemplo
 
-#+MATS: figcol fig-1D_1004-unicorn10-*.pdf 0.45
-
-- Cambio relativo en $P$:
-  #+begin_export latex
-  \[ \Delta\% P = \frac{P_{2} - P_{1}}{P_{1}} \cdot 100 \]
-  #+end_export
-
-- Cambio relativo en $Q^d$:
-  #+begin_export latex
-  \[ \Delta\% Q^d = \frac{Q_{2} - Q_{1}}{Q_{1}} \cdot 100 \]
-  #+end_export
-
-
-** El signo de la  elasticidad precio de la demanda (I)
-
-#+MATS: figcol fig-1D_1004-unicorn10-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-unicorn10-*.pdf 0.46
 
 - Elasticidad en el arco $\overline{AB}$:
   #+begin_export latex
-  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = -3\]
+  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = \frac{100\%}{-33.3\%} = -3\]
   #+end_export
-
-
-** El signo de la  elasticidad precio de la demanda (y II)
-
-- La elasticidad precio de la demanda es negativa: precio y cantidad
-  demandada se mueven en direcciones opuestas.
 
 
 ** Interpretación
 
-- Las elasticidades son números puros; no tienen unidades.
+- La elasticidad precio de la demanda es negativa: precio y cantidad
+  demandada se mueven en direcciones opuestas.
+
+- La elasticidad es un número puro independiente de las unidades en
+  que se miden los cantidades y los precios.
 
 - Una elasticidad $E_d = -3$ indica que la magnitud de la variación
   relativa de la cantidad demandada es 3 veces superior a la variación
@@ -75,12 +72,11 @@
 
 ** Elasticidad a lo largo de la curva de demanda
 
-#+MATS: figcol fig-1D_1004-unicorn2-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-unicorn2-*.pdf 0.46
 
-- Elasticidad en el arco $\overline{BC}$:
-  #+begin_export latex
-  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = -1 \]
-  #+end_export
+- Elasticidad en $\overline{AB}$: $E_d = -3$.
+
+- Elasticidad en $\overline{BC}$: $E_d = -1$.
 
 - En general, $E_d$ toma diferentes valores a lo largo de la curva de
   demanda
@@ -88,45 +84,34 @@
 
 ** Demanda elástica y demanda inelástica
 
-- En un tramo *elástico* de la demanda: la magnitud de la variación
-  relativa de $Q^d$ es mayor que la variación relativa de $P$:
+- Tramo *elástico* de la demanda:
   #+begin_export latex
   \[ E_d < -1\]
   #+end_export
 
-- En un tramo *inelástico* de la demanda: la magnitud de la variación
-  relativa de $Q^d$ es menor que la variación relativa de $P$:
+- Tramo *inelástico* de la demanda:
   #+begin_export latex
   \[ -1 < E_d \leq 0\]
   #+end_export
 
-- *Elasticidad unitaria*: coinciden, en valor absoluto, las
-  variaciones relativas de $Q^d$ y $P$.
+- *Elasticidad unitaria* de la demanda:
   #+begin_export latex
   \[ E_d = -1 \]
   #+end_export
 
 
-** Determinantes de la elasticidad precio (I)
+** Determinantes de la elasticidad precio
 
-- Existencia de *sustitutos cercanos*: La existencia de buenos
-  sustitutos hace más elástica la demanda de un bien.
+- Existencia de sustitutos cercanos.
 
-- *Definición del mercado*: Cuanto mayor es la precisión con la que se
-  define el mercado más elástica es la demanda.
+- Definición del mercado.
 
+- Fracción del gasto total.
 
-** Determinantes de la elasticidad precio (y II)
-
-- *Fracción del gasto total* que representa el gasto en el bien: Los
-  bienes que representan un fracción pequeña del presupuesto de los
-  consumidores suelen tener demandas inelásticas.
-
-- *Horizonte temporal*: La demanda de un bien suele ser más elástica
-  cuanto mayor es el horizonte temporal que se considera.
+- Horizonte temporal.
 
 
-** Pendiente de la demanda (I)
+** Pendiente de la demanda y elasticidad precio (I)
 
 - La *pendiente de la demanda* es el cociente de las variaciones
   *absolutas* de la cantidad demandada y del precio:
@@ -137,13 +122,20 @@
   \]
   #+end_export
 
-- A diferencia de la elasticidad de la demanda, la pendiente de la
-  demanda sí tiene unidades.
+- Como la elasticidad precio, la pendiente de la demanda es negativa.
+
+- A diferencia de la elasticidad precio, la pendiente de la demanda
+  depende de las unidades de la cantidad demandada y del precio.
 
 
-** Pendiente de la demanda (y II)
+** Pendiente de la demanda y elasticidad precio (II)
 
-#+MATS: figcol fig-1D_1004-unicorn11-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-unicorn11-*.pdf 0.46
+
+- Elasticidad en el arco $\overline{AB}$:
+  #+begin_export latex
+  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = \frac{100\%}{-33.3\%} = -3\]
+  #+end_export
 
 - Pendiente en el arco $\overline{AB}$:
   #+begin_export latex
@@ -153,33 +145,23 @@
   \]
   #+end_export
 
-- La pendiente de la demanda es negativa: precio y cantidad demandada
-  se mueven en direcciones opuestas.
 
-
-** Pendiente y elasticidad de la demanda
-
-- El valor que toma la pendiente depende de las unidades en las que se
-  miden la cantidad demandada y los precios.
-
-- Las elasticidades no dependen de las unidades en las que se miden
-  las variables.
+** Pendiente de la demanda y elasticidad precio (y III)
 
 - Podemos escribir la elasticidad precio de la demanda en función de
   la pendiente de la curva de demanda:
   #+begin_export latex
   \[
-    E_d = \frac{100\cdot \Delta Q^d / Q^d}{100\cdot \Delta P / P } =
-    \frac{\Delta Q^d}{\Delta P} \frac{P}{Q^d}
+    E_d = \frac{\Delta Q^d}{\Delta P} \frac{P}{Q^d}
   \]
   #+end_export
 
 
-
-* Cálculo de las elasticidades
+* Cálculo de la elasticidad precio
 
 
 ** Elasticidad arco (I)
+
 - Necesitamos dos puntos de la curva de demanda.
 
 - Calculamos los cambios porcentuales de la cantidad demandada y de
@@ -221,11 +203,10 @@
 
 ** Fórmula del punto medio (I)
 
-- La elasticidad arco proporciona valores diferentes dependiendo de la
-  dirección del cambio.
+- La fórmula simple de la elasticidad arco proporciona valores
+  diferentes dependiendo de la dirección del cambio del precio.
 
-- Para evitar este problema se puede usar la fórmula del punto medio
-  para el cálculo de las variaciones porcentuales:
+- Para evitar este problema se puede usar la fórmula del punto medio:
   #+begin_export latex
   \[
     \Delta\% Q^d = 100 \cdot \Delta Q^d/Q^d_m; \quad
@@ -332,15 +313,15 @@
   donde $a, b>0$.
 
 
-* Elasticidad e ingresos
+* Elasticidad precio e ingresos totales
 
 
-** Ingresos
+** Ingresos totales
 
 #+MATS: figcol fig-1D_1004-ingr3-*.pdf 0.4
 
 - Los ingresos totales son la cantidad de dinero que reciben los
-  vendedores de un determinado mercado:
+  vendedores del bien:
   #+begin_export latex
   \[ I_1 = P_1 \cdot Q_1 \]
   #+end_export
@@ -418,15 +399,14 @@
   #+begin_export latex
   \[ Q^d = Q^d(P, P_o, M, X, Y, Z, \dots) \]
   #+end_export
-  donde:
 
-  + $P$: precio del bien.
+- $P$: precio del bien.
 
-  + $P_o$: precios de otros bienes.
+- $P_o$: precios de otros bienes.
 
-  + $M$: renta de los consumidores.
+- $M$: renta de los consumidores.
 
-  + $X, Y, Z, \dots$: otros determinantes.
+- $X, Y, Z, \dots$: otros determinantes.
 
 
 ** Función y curva de demanda
@@ -461,11 +441,9 @@
 
 ** Bienes sustitutivos y  complementarios
 
-- La elasticidad con respecto al precio de *bienes sustitutivos* es
-  positiva: $E_d^{P_o} > 0$.
+- *Bienes sustitutivos*: $E_d^{P_o} > 0$.
 
-- La elasticidad con respecto al precio de *bienes complementarios* es
-  negativa: $E_d^{P_o} < 0$.
+- *Bienes complementarios*: $E_d^{P_o} < 0$.
 
 
 ** Elasticidad renta
@@ -480,22 +458,18 @@
 
 ** Bienes normales e inferiores
 
-- La demanda de los *bienes normales* se incrementa con la renta. La
-  elasticidad renta de los bienes normales es positiva: $E_d^M > 0$.
+- *Bienes normales*: $E_d^M > 0$.
 
-- Si la demanda del bien disminuye con la renta, el *bien* es
-  *inferior*: $E_d^M < 0$.
+- *Bienes inferiores*: $E_d^M < 0$.
 
 
 ** Bienes de lujo y de primera necesidad
 
 - Los *bienes normales* se clasifican en:
 
-  + *Bienes de primera necesidad*: El consumo del bien aumenta en una
-    proporción menor que la renta; $0 < E_d^M < 1$.
+  + *Bienes de primera necesidad*: $0 < E_d^M < 1$.
 
-  + *Bienes de lujo*: El consumo del bien aumenta en una proporción
-    mayor que la renta; $E_d^M > 1$.
+  + *Bienes de lujo*: $E_d^M > 1$.
 
 
 
@@ -519,7 +493,7 @@
 - Horizonte temporal.
 
 
-** Algunos casos especiales (I)
+** Algunos casos (I)
 
 #+MATS: figcol fig-1D_1004-elast10-*.pdf 0.45
 
@@ -532,11 +506,11 @@
 - $E_s = 0$
 
 
-** Algunos casos especiales (II)
+** Algunos casos (II)
 
 #+MATS: figcol fig-1D_1004-elast11-*.pdf 0.45
 
-- Oferta inelástica.
+- Tramo inelástico de la oferta.
 
 - $\Delta\% Q^s = 12.5\%$
 
@@ -545,11 +519,11 @@
 - $E_s = 0.44$
 
 
-** Algunos casos especiales (III)
+** Algunos casos (III)
 
 #+MATS: figcol fig-1D_1004-elast12-*.pdf 0.45
 
-- Oferta elástica.
+- Tramo elástico de la oferta.
 
 - $\Delta\% Q^s = 50\%$
 
@@ -558,7 +532,7 @@
 - $E_s = 1.75$
 
 
-** Algunos casos especiales (y IV)
+** Algunos casos (y IV)
 
 #+MATS: figcol fig-1D_1004-elast13-*.pdf 0.45
 

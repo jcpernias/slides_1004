@@ -14,18 +14,21 @@
 
 ** Concept of elasticity
 
-- *Elasticicity* measures how a variable responds to changes in
+- *Elasticity* measures how a variable responds to changes in
   another variable, /ceteris paribus/.
 
 
 ** Price elasticity of demand
 
-- *Price elasticity of demand*: how does the quantity demanded respond
-  to variations in the price, /keeping constant the rest of
-  determinants of demand/.
+- *Price elasticity of demand*: how much the quantity demanded
+  responds to variations in the price, /all other determinants of
+  demand held constant/.
 
-- It is defined as the ratio of the percentage changes in both
-  variables:
+
+** Computation of the price elasticity
+
+- It is computed as the percentage changes in quantity demanded
+  divided by the percent change in the price:
   #+begin_export latex
   \[
     E_d = \frac{\text{percentage change in $Q^d$}}{%
@@ -34,41 +37,33 @@
   \]
   #+end_export
 
-
-** Relative variations
-
-#+MATS: figcol fig-1D_1004-unicorn10-*.pdf 0.45
-
-- Relative change in $P$:
+- Percentage change in $Q^d$ and in $P$:
   #+begin_export latex
-  \[ \Delta\% P = \frac{P_{2} - P_{1}}{P_{1}} \cdot 100 \]
-  #+end_export
-
-- Relative change in $Q^d$:
-  #+begin_export latex
-  \[ \Delta\% Q^d = \frac{Q_{2} - Q_{1}}{Q_{1}} \cdot 100 \]
+  \[
+    \Delta\% Q^d = \frac{Q_{2} - Q_{1}}{Q_{1}} \cdot 100;
+    \qquad
+    \Delta\% P = \frac{P_{2} - P_{1}}{P_{1}} \cdot 100
+  \]
   #+end_export
 
 
-** The sign of the  price elasticity of demand (I)
+** An example
 
-#+MATS: figcol fig-1D_1004-unicorn10-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-unicorn10-*.pdf 0.46
 
 - Elasticity in the arc $\overline{AB}$:
   #+begin_export latex
-  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = -3 \]
+  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = \frac{100\%}{-33.3\%} = -3\]
   #+end_export
-
-
-** The sign of the  price elasticity of demand (and II)
-
-- The price elasticity of demand is negative: price and quantity
-  demanded move in opposite directions.
 
 
 ** Interpretation
 
-- Elasticities are pure numbers; they have no units.
+- The price elasticity of demand is negative: price and quantity
+  demanded move in opposite directions.
+
+- The price elasticity is a pure number independent of the units in
+  which the quantity demanded and the price are measured.
 
 - An elasticity $E_d = -3$ indicates that the magnitude of the
   relative variation in the quantity demanded is 3 times greater than
@@ -77,57 +72,45 @@
 
 ** Elasticity along the demand curve
 
-#+MATS: figcol fig-1D_1004-unicorn2-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-unicorn2-*.pdf 0.46
 
-- Elasticity in the arc $\overline{BC}$:
-  #+begin_export latex
-  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = -1 \]
-  #+end_export
+- Elasticity in $\overline{AB}$: $E_d = -3$.
+
+- Elasticity in $\overline{BC}$: $E_d = -1$.
 
 - In general, $E_d$ takes different values along the demand curve
 
 
 ** Elastic demand and inelastic demand
 
-- In an *elastic* section of demand: the magnitude of the relative
-  variation in $Q^d$ is higher than the relative variation in $P$:
+- An *elastic* portion of the demand curve:
   #+begin_export latex
   \[ E_d < -1\]
   #+end_export
 
-- In an *inelastic* section of demand: the magnitude of the relative
-  variation in $Q^d$ is lower than the relative variation in $P$:
+- An *inelastic* portion of the demand curve:
   #+begin_export latex
   \[ -1 < E_d \leq 0\]
   #+end_export
 
-- *Unitary elasticity*: the relative variations in $Q^d$ and $P$
-  coincide, in absolute terms.
+- *Unitary elasticity* of demand:
   #+begin_export latex
   \[ E_d = -1 \]
   #+end_export
 
 
-** Determinants of price elasticity (I)
+** Determinants of price elasticity
 
-- Existence of *substitutes*: The existence of good substitutes makes
-  more elastic the demand of a good.
+- Existence of close substitutes.
 
-- *Market definition*: The higher is the accuracy when defining the
-  market more elastic is the demand.
+- Market definition.
 
+- Fraction of total spending.
 
-** Determinants of price elasticity (and II)
-
-- *Fraction of total spending* that represents the expenditure in the
-  good: Goods which represent a small fraction of the consumers’
-  budget tend to have inelastic demands.
-
-- *Time horizon*: Demand of a good tends to be more elastic the
-  greater is the considered time horizon.
+- Time horizon.
 
 
-** Slope of demand(I)
+** Slope of demand and price elasticity (I)
 
 - The *slope of demand* is the ratio of the *absolute* variations in
   the quantity demanded and the price:
@@ -138,13 +121,20 @@
   \]
   #+end_export
 
-- In contrast to the elasticity of demand, the slope of demand has
-  units.
+- Like price elasticity, the slope of demand is negative.
+
+- Unlike price elasticity, the slope of demand depends on the
+  units of the quantity demanded and the price.
 
 
-** Slope of demand(and II)
+** Slope of demand and price elasticity (II)
 
-#+MATS: figcol fig-1D_1004-unicorn11-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-unicorn11-*.pdf 0.46
+
+- Elasticity in the arc $\overline{AB}$:
+  #+begin_export latex
+  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = \frac{100\%}{-33.3\%} = -3\]
+  #+end_export
 
 - Slope in the arc $\overline{AB}$:
   #+begin_export latex
@@ -154,28 +144,20 @@
   \]
   #+end_export
 
-- The slope of demand is negative: price and quantity demanded move in
-  opposite directions.
 
 
-** Slope and elasticity of demand
+** Slope of demand and price elasticity (and III)
 
-- The value of the slope depends on the measurement units of the
-  quantity demanded and the price.
-
-- The elasticities do not depend on the measurement units of the variables.
-
-- We can write the price elasticity of demand depending on the slope
-  of the demand curve:
+- We can write the price elasticity of demand by means of the slope of
+  the demand curve:
   #+begin_export latex
   \[
-    E_d = \frac{100\cdot \Delta Q^d / Q^d}{100\cdot \Delta P / P } =
-    \frac{\Delta Q^d}{\Delta P} \frac{P}{Q^d}
+    E_d = \frac{\Delta Q^d}{\Delta P} \frac{P}{Q^d}
   \]
   #+end_export
 
 
-* Calculations of elasticities
+* Computation of the price elasticity
 
 
 ** Arc elasticity (I)
@@ -222,10 +204,11 @@
 
 
 ** Midpoint method (I)
-- The arc elasticity provides different values depending on the
-  direction of the change.
 
-- To avoid this problem we can use the midpoint method to calculate the percentage variations:
+- The simple formula of arc elasticity yields different values
+  depending on the direction of the price change.
+
+- To avoid this problem we can use the midpoint formula:
   #+begin_export latex
   \[
     \Delta\% Q^d = 100 \cdot \Delta Q^d/Q^d_m; \quad
@@ -240,7 +223,7 @@
   #+end_export
 
 
-** Midpoint method (and II)
+** Midpoint formula (and II)
 
 #+MATS: figcol fig-1D_1004-unicorn4-*.pdf 0.45
 
@@ -336,15 +319,15 @@
   where $a, b>0$.
 
 
-* Elasticity and revenues
+* Price elasticity and total revenue
 
 
-** Revenues
+** Total revenue
 
 #+MATS: figcol fig-1D_1004-ingr3-*.pdf 0.4
 
-- Total revenues is the quantity of money sellers receive in a particular
-  market:
+- Total revenue is the amount of money received by sellers of the
+  good:
   #+begin_export latex
   \[
     \IT_1 = P_1 \cdot Q_1
@@ -356,7 +339,7 @@
 
 #+MATS: figcol fig-1D_1004-ingr4-*.pdf 0.4
 
-- How do revenues vary with a change in price?
+- How does total revenue vary with a change in price?
   #+begin_export latex
     \begin{gather*}
       \IT_{1} = P_{1} \cdot Q_{1} \\
@@ -426,15 +409,14 @@
   #+begin_export latex
   \[ Q^d = Q^d(P, P_o, M, X, Y, Z, \dots) \]
   #+end_export
-  where:
 
-  + $P$: price of the good.
+- $P$: price of the good.
 
-  + $P_o$: prices of other goods.
+- $P_o$: prices of other goods.
 
-  + $M$: consumers’ income.
+- $M$: consumers’ income.
 
-  + $X, Y, Z, \dots$: other determinants.
+- $X, Y, Z, \dots$: other determinants.
 
 
 ** Function and curve of demand
@@ -451,10 +433,9 @@
 
 ** Partial derivatives
 
-- The *patial derivatives* of the demand function measure the change
+- The *partial derivatives* of the demand function measure the change
   in the quantity demanded when one of the determinants of demand
-  changes, /keeping constant the values of the remaining of
-  variables/.
+  changes, /the values of the remaining of variables held constant/.
 
 
 ** Cross elasticity
@@ -471,11 +452,9 @@
 
 ** Substitute goods and complementary goods
 
-- The elasticity with respect to the price of *substitute goods* is
-  positive: $E_d^{P_o} > 0$.
+- *Substitute goods*: $E_d^{P_o} > 0$.
 
-- The elasticity with respect to the price of *complementary goods* is
-  negative: $E_d^{P_o} < 0$.
+- *Complementary goods*: $E_d^{P_o} < 0$.
 
 
 ** Income elasticity
@@ -492,23 +471,18 @@
 
 ** Normal and inferior goods
 
-- The demand for *normal goods* increases with income. The income
-  elasticity of normal goods is positive: $E_d^M > 0$.
+- *Normal goods*: $E_d^M > 0$.
 
-- If the demand of the good decreases with income, the *good* is
-  *inferior*: $E_d^M < 0$.
+- *Inferior goods*: $E_d^M < 0$.
 
 
 ** Luxury goods and basic goods
 
 - *Normal goods* are classified by:
 
-  + *Basic goods*: The consumption of the good increases in a lower
-    proportion than income: $0 < E_d^M < 1$.
+  + *Necessity goods*: $0 < E_d^M < 1$.
 
-  + *Luxury goods*: The consumption of the good increases in a greater
-    proportion than income: $E_d^M > 1$.
-
+  + *Luxury goods*:  $E_d^M > 1$.
 
 
 * Elasticity of supply
@@ -534,7 +508,7 @@
 - Time horizon.
 
 
-** Some special cases (I)
+** Some cases (I)
 
 #+MATS: figcol fig-1D_1004-elast10-*.pdf 0.45
 
@@ -547,11 +521,11 @@
 - $E_s = 0$
 
 
-** Some special cases (II)
+** Some cases (II)
 
 #+MATS: figcol fig-1D_1004-elast11-*.pdf 0.45
 
-- Inelastic supply.
+- An inelastic portion of the supply curve.
 
 - $\Delta\% Q^s = 12.5\%$
 
@@ -560,11 +534,11 @@
 - $E_s = 0.44$
 
 
-** Some special cases (III)
+** Some cases (III)
 
 #+MATS: figcol fig-1D_1004-elast12-*.pdf 0.45
 
-- Elastic supply.
+- An elastic portion of the supply curve.
 
 - $\Delta\% Q^s = 50\%$
 
@@ -573,7 +547,7 @@
 - $E_s = 1.75$
 
 
-** Some special cases (and IV)
+** Some cases (and IV)
 
 #+MATS: figcol fig-1D_1004-elast13-*.pdf 0.45
 
