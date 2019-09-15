@@ -48,7 +48,7 @@
     \draw[|<->|, thick, DarkGreen!70!Black] (3, 1.4)  -- (8, 1.4)
       node[font=\scriptsize\sffamily\bfseries, pos=0.5, fill=White,
           text = DarkGreen!70!Black]
-      { Escasez };
+      { \translate{Escasez} };
     \draw[help lines] (3, 0) node[below] { $Q^{S}$ }
      |- (0, 2)
      (8, 0) node[below] { $Q^{D}$ } |- (3, 2);
@@ -102,7 +102,7 @@
     \draw[|<->|, thick, DarkGreen!70!Black] (2, 8.6)  -- (7, 8.6)
       node[font=\scriptsize\sffamily\bfseries, pos=0.5,
         fill=White, text = DarkGreen!70!Black]
-      { Excedente };
+      { \translate{Excedente} };
     \draw[help lines] (2, 0) node[below] { $Q^{D}$ }
      |- (0, 8) node[left] { $P_{\min}$ }
      (7, 0) node[below] { $Q^{S}$ } |- (2, 8);
