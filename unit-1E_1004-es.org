@@ -9,6 +9,23 @@
 - Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 2.
 #+end_bibbox
 
+* Introducción
+
+** Intervención económica del estado
+
+- Instituciones.
+
+- Impuestos, subvenciones y transferencias.
+
+- Regulación.
+
+** Justificación
+
+- Los *fallos de mercado* minan la eficiencia de la economía.
+
+- *Equidad*: redistribución de la renta.
+
+
 * Controles de precios
 
 

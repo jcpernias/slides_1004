@@ -9,6 +9,24 @@
 - Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 2.
 #+end_bibbox
 
+* Introduction
+
+** Government intervention
+
+- Institutions.
+
+- Taxes, subsidies and transfers.
+
+- Regulation.
+
+
+** Justification
+
+- *Market failures* undermine economic efficiency.
+
+- *Equity*: income redistribution.
+
+
 * Controls on prices
 
 
