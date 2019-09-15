@@ -14,8 +14,8 @@
 #+BEGIN_SRC latex :tangle fig-1E_1004-pmax1.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
-    \draw[curve, Black, very thick] (0, 7) node[left] {$P_{\max}$} -- (9, 7) ;
     \fill[LightGray!20!White!20!White] (0, 9.5) rectangle (9, 7) ;
+    \draw[curve, Black, very thick] (0, 7) node[left] {$P_{\max}$} -- (9, 7) ;
     \draw[axis] (0, 10) node[left] {$P$} |- (10, 0) node[below] {$Q$} ;
 
   \end{tikzpicture}
@@ -24,8 +24,8 @@
 #+BEGIN_SRC latex :tangle fig-1E_1004-pmax2.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
-    \draw[curve, Black, very thick] (0, 7) node[left] {$P_{\max}$} -- (9, 7) ;
     \fill[LightGray!20!White] (0, 9.5) rectangle (9, 7) ;
+    \draw[curve, Black, very thick] (0, 7) node[left] {$P_{\max}$} -- (9, 7) ;
 
    \draw[help lines] (5, 0) node[below] { $Q^{*}$ }
      |- (0, 5) node[left] { $P^{*}$ } ;
@@ -68,8 +68,8 @@
 #+BEGIN_SRC latex :tangle fig-1E_1004-pmin1.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
-    \draw[curve, Black, very thick] (0, 4) node[left] {$P_{\min}$} -- (9, 4) ;
     \fill[LightGray!20!White] (0, 0) rectangle (9, 4) ;
+    \draw[curve, Black, very thick] (0, 4) node[left] {$P_{\min}$} -- (9, 4) ;
     \draw[axis] (0, 10) node[left] {$P$} |- (10, 0) node[below] {$Q$} ;
 
   \end{tikzpicture}
@@ -78,8 +78,8 @@
 #+BEGIN_SRC latex :tangle fig-1E_1004-pmin2.tex :noweb yes
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
-    \draw[curve, Black, very thick] (0, 4) node[left] {$P_{\min}$} -- (9, 4) ;
     \fill[LightGray!20!White] (0, 0) rectangle (9, 4) ;
+    \draw[curve, Black, very thick] (0, 4) node[left] {$P_{\min}$} -- (9, 4) ;
 
    \draw[help lines] (5, 0) node[below] { $Q^{*}$ }
      |- (0, 5) node[left] { $P^{*}$ } ;
