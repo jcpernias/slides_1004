@@ -11,7 +11,7 @@
 
 *** Relative variations
 
-#+BEGIN_SRC latex :tangle unit05-fig-pmax1.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-pmax1.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -25,7 +25,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-pmax2.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-pmax2.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -48,7 +48,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-pmax3.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-pmax3.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -77,7 +77,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-pmin1.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-pmin1.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -91,7 +91,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-pmin2.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-pmin2.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -114,7 +114,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-pmin3.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-pmin3.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -145,7 +145,7 @@
 
 ** Figures and tables
 
-#+BEGIN_SRC latex :tangle unit05-fig-st1.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-st1.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -161,7 +161,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-st2.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-st2.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -192,7 +192,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-st3.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-st3.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -227,7 +227,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-bt1.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-bt1.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -241,7 +241,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-bt2.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-bt2.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -269,7 +269,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-bt3.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-bt3.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -303,7 +303,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-inc1.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-inc1.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -337,7 +337,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-inc2.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-inc2.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
@@ -371,7 +371,7 @@
   \end{document}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle unit05-fig-inc3.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1E_1004-inc3.tex :noweb yes
   \documentclass[figure]{mats}
 
   \begin{document}
