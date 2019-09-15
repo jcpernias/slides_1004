@@ -3,9 +3,6 @@
 
 #+TITLE: Intervención en mercados competitivos
 
-#+LATEX_HEADER: \newcommand*{\Pmax}{P_{\max}}
-#+LATEX_HEADER: \newcommand*{\Pmin}{P_{\min}}
-
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principios de Economía/. Capítulo 6.
