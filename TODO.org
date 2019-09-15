@@ -5,3 +5,4 @@
 * TODO Regexp for figure inclusion: #\+figure: +\./figures/\(.*\)\.pdf +\([.0-9]+\) → #+MATS: figcol \1-*.pdf \2
 * DONE unit 1D english. Check unicorn10 figure
 * TODO Whitespace at the top of the outline slide.
+* TODO Parallel build from scratch fails
