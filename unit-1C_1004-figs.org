@@ -14,7 +14,6 @@
 *** Individual demand table and curve
 
 #+BEGIN_SRC latex :tangle fig-1C_1004-dtab.tex :noweb yes
-  <<translations>>
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (john) [matrix of nodes,
@@ -89,7 +88,6 @@
 *** Market demand
 
 #+BEGIN_SRC latex :tangle fig-1C_1004-dtab2.tex :noweb yes
-  <<translations>>
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (john) [matrix of nodes,
@@ -119,7 +117,6 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1C_1004-dtab3.tex :noweb yes
-  <<translations>>
   \begin{tikzpicture}
     \begin{scope}[xscale=0.4, yscale=0.8, font=\footnotesize]
        \draw[help lines, font=\scriptsize]
@@ -323,7 +320,6 @@
 *** Individual supply table and curve
 
 #+BEGIN_SRC latex :tangle fig-1C_1004-otab.tex :noweb yes
-  <<translations>>
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (john) [matrix of nodes,
@@ -400,7 +396,6 @@
 *** Market supply
 
 #+BEGIN_SRC latex :tangle fig-1C_1004-otab3.tex :noweb yes
-  <<translations>>
   \begin{tikzpicture}
     \begin{scope}[xscale=0.4, yscale=0.8, font=\footnotesize]
        \draw[help lines, font=\scriptsize]
@@ -440,7 +435,6 @@
 *** Price changes
 
 #+BEGIN_SRC latex :tangle fig-1C_1004-s2.tex :noweb yes
-  <<translations>>
   \begin{tikzpicture}
     \draw[CMe] (0, 0.5) -- (4.5, 3.5) node[right] { $Q^{\translate{ovar}}(P)$ }
        node[pos=0.2] (A) {} node[pos=0.65] (B) {};
@@ -547,7 +541,6 @@
 *** Surplus
 
 #+BEGIN_SRC latex :tangle fig-1C_1004-eq3.tex :noweb yes
-  <<translations>>
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
     \draw[|<->|, thick, DarkGreen!70!Black] (2, 8.6)  -- (7, 8.6)
@@ -571,7 +564,6 @@
 *** Shortage
 
 #+BEGIN_SRC latex :tangle fig-1C_1004-eq4.tex :noweb yes
-  <<translations>>
 
   \begin{tikzpicture}[xscale=0.5, yscale=0.5]
 
@@ -816,7 +808,6 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1C_1004-tab_comp.tex :noweb yes
-  <<translations>>
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (PIVE) [matrix of nodes,
@@ -860,43 +851,3 @@
 
 
 ** Chunks
-
-
-*** Translations
-
-#+BEGIN_SRC latex :noweb-ref translations
-  \deftranslation[to=Spanish]{Consumidor}{Consumidor}
-  \deftranslation[to=English]{Consumidor}{Consumer}
-  \deftranslation[to=Spanish]{Arroz}{Arroz}
-  \deftranslation[to=English]{Arroz}{Rice}
-  \deftranslation[to=Spanish]{Precio}{Precio}
-  \deftranslation[to=English]{Precio}{Price}
-  \deftranslation[to=Spanish]{Mercado}{Mercado}
-  \deftranslation[to=English]{Mercado}{Market}
-  \deftranslation[to=Spanish]{por}{por}
-  \deftranslation[to=English]{por}{per}
-  \deftranslation[to=Spanish]{almes}{al mes}
-  \deftranslation[to=English]{almes}{per month}
-  \deftranslation[to=Spanish]{Productor}{Productor}
-  \deftranslation[to=English]{Productor}{Producer}
-  \deftranslation[to=Spanish]{Zumo}{Zumo}
-  \deftranslation[to=English]{Zumo}{Juice}
-  \deftranslation[to=Spanish]{Excedente}{Excedente}
-  \deftranslation[to=English]{Excedente}{Surplus}
-  \deftranslation[to=Spanish]{Escasez}{Escasez}
-  \deftranslation[to=English]{Escasez}{Shortage}
-  \deftranslation[to=Spanish]{Demanda}{Demanda}
-  \deftranslation[to=English]{Demanda}{Demand}
-  \deftranslation[to=Spanish]{Oferta}{Oferta}
-  \deftranslation[to=English]{Oferta}{Supply}
-  \deftranslation[to=Spanish]{Aumento}{Aumento}
-  \deftranslation[to=English]{Aumento}{Increase}
-  \deftranslation[to=Spanish]{Disminución}{Disminución}
-  \deftranslation[to=English]{Disminución}{Decrease}
-  \deftranslation[to=Spanish]{Zvar}{Z}
-  \deftranslation[to=English]{Zvar}{J}
-  \deftranslation[to=Spanish]{Avar}{A}
-  \deftranslation[to=English]{Avar}{R}
-  \deftranslation[to=Spanish]{ovar}{o}
-  \deftranslation[to=English]{ovar}{s}
-#+END_SRC

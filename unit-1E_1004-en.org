@@ -3,18 +3,31 @@
 
 #+TITLE: Intervention in competitive markets
 
-#+LATEX_CLASS: unit
-#+LATEX_HEADER: \newcommand*{\Pmax}{P_{\max}}
-#+LATEX_HEADER: \newcommand*{\Pmin}{P_{\min}}
-
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principles of Economics/. Chapter 6.
 - Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 2.
 #+end_bibbox
 
+* Introduction
 
-* Controls on prices
+** Government intervention
+
+- Institutions.
+
+- Taxes, subsidies and transfers.
+
+- Regulation.
+
+
+** Justification
+
+- *Market failures* undermine economic efficiency.
+
+- *Equity*: income redistribution.
+
+
+* Price controls
 
 
 ** Price regulation
@@ -26,7 +39,7 @@
 
 ** Price ceilings (I)
 
-#+figure: ./figures/fig-t05-pmax1.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmax1-*.pdf 0.48
 
 - Government tries to reduce the price for buyers.
 - By establishing a *maximum price* prices over a determined value are
@@ -36,14 +49,14 @@
 
 ** Price ceilings (II)
 
-#+figure: ./figures/fig-t05-pmax2.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmax2-*.pdf 0.48
 
 - If the maximum price is above the equilibrium price, the regulation has no effect.
 
 
 ** Price ceilings (and III)
 
-#+figure: ./figures/fig-t05-pmax3.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmax3-*.pdf 0.48
 
 - When the maximum price is below the equilibrium price there is a shortage in the market.
 - Buyers pay a lower price for the good.
@@ -52,7 +65,7 @@
 
 ** Price floors (I)
 
-#+figure: ./figures/fig-t05-pmin1.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmin1-*.pdf 0.48
 
 - Government tries to raise the price sellers receive.
 - By establishing a *minimum price* prices below a determined value are
@@ -62,7 +75,7 @@
 
 ** Price floors (II)
 
-#+figure: ./figures/fig-t05-pmin2.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmin2-*.pdf 0.48
 
 - If the minimum price is below the equilibrium price, the regulation has
   no effect.
@@ -70,7 +83,7 @@
 
 ** Price floors (and III)
 
-#+figure: ./figures/fig-t05-pmin3.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmin3-*.pdf 0.48
 
 - When the minimum price is over the equilibrium price there is a surplus
   in the market.
@@ -97,7 +110,7 @@
 
 ** A tax on sellers (I)
 
-#+figure: ./figures/fig-t05-st1.pdf 0.45
+#+MATS: figcol fig-1E_1004-st1-*.pdf 0.45
 
  - The tax is collected by sellers.
  - Sellers have to pay for the production costs as well as to the
@@ -107,7 +120,7 @@
 
 ** A tax on sellers (II)
 
-#+figure: ./figures/fig-t05-st2.pdf 0.48
+#+MATS: figcol fig-1E_1004-st2-*.pdf 0.48
 
 - In the new equilibrium the quantity sold is lower.
 - Price increases, but *less than the tax*.
@@ -115,7 +128,7 @@
 
 ** A tax on sellers (and III)
 
-#+figure: ./figures/fig-t05-st3.pdf 0.48
+#+MATS: figcol fig-1E_1004-st3-*.pdf 0.48
 
 - The tax burden is distributed between buyers and sellers.
 - Buyers pay a higher price.
@@ -124,7 +137,7 @@
 
 ** A tax on buyers (I)
 
-#+figure: ./figures/fig-t05-bt1.pdf 0.45
+#+MATS: figcol fig-1E_1004-bt1-*.pdf 0.45
 
 - The tax is collected by buyers.
 - Buyers have to pay the price as well as the tax of
@@ -134,7 +147,7 @@
 
 ** A tax on buyers (II)
 
-#+figure: ./figures/fig-t05-bt2.pdf 0.45
+#+MATS: figcol fig-1E_1004-bt2-*.pdf 0.45
 
 - In the new equilibrium a lower quantity is sold.
 - The price that sellers receive decreases, but *less than the tax*.
@@ -142,7 +155,7 @@
 
 ** A tax on buyers (and III)
 
-#+figure: ./figures/fig-t05-bt3.pdf 0.48
+#+MATS: figcol fig-1E_1004-bt3-*.pdf 0.48
 
 - The tax burden is distributed between buyers and sellers.
 - Buyers pay a higher price per unit, $P_1 + t$.
@@ -151,7 +164,7 @@
 
 ** Incidence of taxes (I)
 
-#+figure: ./figures/fig-t05-inc1.pdf 0.45
+#+MATS: figcol fig-1E_1004-inc1-*.pdf 0.45
 - The tax incidence is *independent of who collects the tax*.
 - The distribution of the tax burden between buyers and sellers
   depends on the elasticities of demand and supply.
@@ -159,7 +172,7 @@
 
 ** Incidence of taxes (II)
 
-#+figure: ./figures/fig-t05-inc2.pdf 0.45
+#+MATS: figcol fig-1E_1004-inc2-*.pdf 0.45
 
 - If supply is relatively more inelastic than demand, producers
   support most of the tax burden.
@@ -167,7 +180,7 @@
 
 ** Impact of taxes (and III)
 
-#+figure: ./figures/fig-t05-inc3.pdf 0.45
+#+MATS: figcol fig-1E_1004-inc3-*.pdf 0.45
 
 - If demand is relatively more inelastic than supply, consumers
   support most of the tax burden.

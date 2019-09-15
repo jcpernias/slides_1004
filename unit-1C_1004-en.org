@@ -3,15 +3,11 @@
 
 #+TITLE: Competitive markets
 
-#+LATEX_CLASS: unit
-
-
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principles of Economics/. Chapter 4.
 - Pindyck y Rubinfeld: :: /Microeconomics/. Chapters 1 and 2.
 #+end_bibbox
-
 
 * Markets and competition
 

@@ -3,15 +3,27 @@
 
 #+TITLE: Intervención en mercados competitivos
 
-#+LATEX_CLASS: unit
-#+LATEX_HEADER: \newcommand*{\Pmax}{P_{\max}}
-#+LATEX_HEADER: \newcommand*{\Pmin}{P_{\min}}
-
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principios de Economía/. Capítulo 6.
 - Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 2.
 #+end_bibbox
+
+* Introducción
+
+** Intervención económica del estado
+
+- Instituciones.
+
+- Impuestos, subvenciones y transferencias.
+
+- Regulación.
+
+** Justificación
+
+- Los *fallos de mercado* minan la eficiencia de la economía.
+
+- *Equidad*: redistribución de la renta.
 
 
 * Controles de precios
@@ -27,7 +39,7 @@
 
 ** Precio máximo (I)
 
-#+figure: ./figures/fig-t05-pmax1.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmax1-*.pdf 0.48
 
 - El Estado trata de reducir el precio que pagan los compradores.
 - Al establecer un *precio máximo* se prohíben precios superiores a un
@@ -37,14 +49,14 @@
 
 ** Precio máximo (II)
 
-#+figure: ./figures/fig-t05-pmax2.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmax2-*.pdf 0.48
 
 - Si el precio máximo es superior al de equilibrio, la regulación no tiene efecto.
 
 
 ** Precio máximo (y III)
 
-#+figure: ./figures/fig-t05-pmax3.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmax3-*.pdf 0.48
 
 - Cuando el precio máximo es inferior al de equilibrio hay escasez en el mercado.
 - Los compradores pagan un precio más bajo por el bien.
@@ -53,7 +65,7 @@
 
 ** Precio mínimo  (I)
 
-#+figure: ./figures/fig-t05-pmin1.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmin1-*.pdf 0.48
 
 - El Estado trata de elevar el precio que reciben los vendedores.
 - Al establecer un *precio mínimo* se prohíben precios inferiores a un
@@ -63,14 +75,14 @@
 
 ** Precio mínimo (II)
 
-#+figure: ./figures/fig-t05-pmin2.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmin2-*.pdf 0.48
 
 - Si el precio mínimo es inferior al de equilibrio, la regulación no tiene efecto.
 
 
 ** Precio mínimo (y III)
 
-#+figure: ./figures/fig-t05-pmin3.pdf 0.48
+#+MATS: figcol fig-1E_1004-pmin3-*.pdf 0.48
 
 - Cuando el precio mínimo es superior al de equilibrio hay excedentes en el mercado.
 - Los vendedores cobran un precio más alto por el bien.
@@ -95,7 +107,7 @@
 
 ** Impuesto a los vendedores (I)
 
-#+figure: ./figures/fig-t05-st1.pdf 0.45
+#+MATS: figcol fig-1E_1004-st1-*.pdf 0.45
 
  - El impuesto lo recaudan los vendedores.
  - Además de pagar los costes de producción los vendedores tienen que
@@ -105,7 +117,7 @@
 
 ** Impuesto a los vendedores (II)
 
-#+figure: ./figures/fig-t05-st2.pdf 0.48
+#+MATS: figcol fig-1E_1004-st2-*.pdf 0.48
 
 - En el nuevo equilibrio la cantidad vendida es inferior.
 - El precio aumenta, pero *en menor cuantía que el impuesto*.
@@ -113,7 +125,7 @@
 
 ** Impuesto a los vendedores (y III)
 
-#+figure: ./figures/fig-t05-st3.pdf 0.48
+#+MATS: figcol fig-1E_1004-st3-*.pdf 0.48
 
 - La carga del impuesto se reparte entre compradores y vendedores.
 - Los compradores pagan un precio superior.
@@ -123,7 +135,7 @@
 
 ** Impuesto a los compradores (I)
 
-#+figure: ./figures/fig-t05-bt1.pdf 0.45
+#+MATS: figcol fig-1E_1004-bt1-*.pdf 0.45
 
 - El impuesto lo recaudan los compradores.
 - Además de pagar el precio los compradores pagan el impuesto de $t$
@@ -133,7 +145,7 @@
 
 ** Impuesto a los compradores (II)
 
-#+figure: ./figures/fig-t05-bt2.pdf 0.45
+#+MATS: figcol fig-1E_1004-bt2-*.pdf 0.45
 
 - En el nuevo equilibrio la cantidad vendida es inferior.
 - El precio que perciben los vendedores disminuye, pero *en menor
@@ -142,7 +154,7 @@
 
 ** Impuesto a los compradores (y III)
 
-#+figure: ./figures/fig-t05-bt3.pdf 0.48
+#+MATS: figcol fig-1E_1004-bt3-*.pdf 0.48
 
 - La carga del impuesto se reparte entre compradores y vendedores.
 - Los compradores pagan por cada unidad una cantidad mayor, $P_1 + t$.
@@ -151,7 +163,7 @@
 
 ** Incidencia de los impuestos (I)
 
-#+figure: ./figures/fig-t05-inc1.pdf 0.45
+#+MATS: figcol fig-1E_1004-inc1-*.pdf 0.45
 - Los efectos del impuesto son *independientes de quién recaude el impuesto*.
 - El reparto de la carga del impuesto entre compradores y vendedores
   depende de las elasticidades de la demanda y de la oferta.
@@ -159,7 +171,7 @@
 
 ** Incidencia de los impuestos (II)
 
-#+figure: ./figures/fig-t05-inc2.pdf 0.45
+#+MATS: figcol fig-1E_1004-inc2-*.pdf 0.45
 
 - Si la oferta es relativamente más inelástica que la demanda, los
   productores soportan la mayor parte de la carga del impuesto.
@@ -167,7 +179,7 @@
 
 ** Incidencia de los impuestos (y III)
 
-#+figure: ./figures/fig-t05-inc3.pdf 0.45
+#+MATS: figcol fig-1E_1004-inc3-*.pdf 0.45
 
 - Si la demanda es relativamente más inelástica que la oferta, los
   consumidores soportan la mayor parte de la carga del impuesto.

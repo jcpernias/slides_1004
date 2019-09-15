@@ -36,7 +36,7 @@
 (defun get-affiliated (element)
   (buffer-substring (org-element-property :begin element)
                     (org-element-property :post-affiliated element)))
-  
+
 (defun get-post-blank (element)
   (org-element-property :post-blank element))
 
@@ -132,27 +132,24 @@
                   (get-post-blank element))))
 
 
-(defvar mats-figcol-regex
-  "\\`[[:blank:]]*\\([^[:blank:]]+\\)\\(?:[[:blank:]]+\\([0-9.]+\\)\\)?[[:blank:]]*\\'")
-
 (defun handle-figcol (element value)
-  (let ((path)
+  (let ((args)
+        (path)
         (width)
         (level)
         (new))
-    (when (string-match mats-figcol-regex value)
-      (setq path (fig-file-path (match-string 1 value) nil)
-            width (string-to-number (or (match-string 2 value) "0.5"))
-            level (+ (get-current-level element) 1))
-      (setq new (make-col level width 1))
-      (org-element-adopt-elements
-       new (make-par-link "file"
-                          ;; (concat "./figures/" path)
-                          path
-                          (get-affiliated element) 1))
-      (org-element-insert-before new element)
-      (org-element-set-element
-       element (make-col level (- 1 width) (get-post-blank element))))))
+    (setq args (split-string value))
+    (setq path (fig-file-path (pop args) nil))
+    (setq width (string-to-number (or (pop args) "0.5")))
+    (setq level (+ (get-current-level element) 1))
+    (setq new (make-col level width 1))
+    (org-element-adopt-elements
+        new (make-par-link "file"
+                           path
+                           (get-affiliated element) 1))
+    (org-element-insert-before new element)
+    (org-element-set-element
+     element (make-col level (- 1 width) (get-post-blank element)))))
 
 ;; ================================================================================
 ;; Install driver

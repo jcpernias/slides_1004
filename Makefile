@@ -1,8 +1,8 @@
 SHELL := /bin/sh
 
 subject_code := 1004
-units := 1A 1B 1C # 1D 1E
-unit_figs := 1A 1B 1C
+units := 1A 1B 1C 1D 1E
+unit_figs := 1A 1B 1C 1D 1E
 
 TEXI2DVI_SILENT := -q
 # TEXI2DVI_SILENT :=
@@ -58,7 +58,7 @@ docs_base := $(docs_es) $(docs_en)
 docs_pdf := $(addprefix $(outdir)/, $(addsuffix .pdf, $(docs_base)))
 
 real_rootdir := $(realpath $(rootdir))
-tex_check_dirs := $(rootdir)/paths.org $(builddir) $(depsdir)
+tex_check_dirs := $(builddir) $(figdir) $(depsdir)
 
 ## Automatic dependencies
 ## ================================================================================
@@ -84,26 +84,25 @@ ifneq (,$(findstring clean,$(MAKECMDGOALS)))
 INCLUDEDEPS := no
 endif
 
-# $(call tex-wrapper,pres-or-hdout,tex-src) -> write to a file
+# $(call tex-wrapper,pres-or-hdout,tex-src,lang) -> write to a file
 define tex-wrapper
 \PassOptionsToClass{$1}{unit}
-\input{$2}
+\AtBeginDocument{\graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}}
+\RequirePackage{etoolbox}
+\AtEndPreamble{%
+  \InputIfFileExists{$(subject_code)-macros.tex}{}{}%
+  \InputIfFileExists{$2-macros.tex}{}{}}
+\input{$(realpath $(builddir))/$2-$3}
 endef
 
-# $(call tex-wrapper,spanish-or-english,fig-src) -> write to a file
+# $(call tex-wrapper,spanish-or-english,fig-basename,unit-code) -> write to a file
 define fig-wrapper
 \documentclass[$1]{figure}
+\InputIfFileExists{$(subject_code)-macros.tex}{}{}
+\InputIfFileExists{unit-$3-macros.tex}{}{}
 \begin{document}
-\input{$2}
+\input{$(realpath $(builddir))/$2}
 \end{document}
-endef
-
-hash := \#
-$(hash) := \#
-
-# $(paths-org) -> write to a file
-define paths-org
-$#+LATEX_HEADER: \graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}
 endef
 
 vpath %.pdf $(figdir)
@@ -117,23 +116,29 @@ all: $(docs_pdf)
 
 # org to latex
 .PRECIOUS: $(builddir)/%.tex
-$(builddir)/%.tex: $(rootdir)/%.org | $(rootdir)/paths.org $(builddir)
+$(builddir)/%.tex: $(rootdir)/%.org | $(builddir)
 	$(EMACS) $(emacs_loads) --visit=$< $(org_to_beamer)
 
 # dependencies for latex file
-$(depsdir)/%.tex.d: $(rootdir)/%.org | $(rootdir)/paths.org $(depsdir)
+$(depsdir)/%.tex.d: $(rootdir)/%.org | $(depsdir)
 	$(MAKEORGDEPS) -o $@ -t $(builddir)/$*.tex $<
 
-
-
 # latex wrappers
-.PRECIOUS: $(builddir)/pres-%.tex
-.PRECIOUS: $(builddir)/hdout-%.tex
-$(builddir)/pres-%.tex $(builddir)/hdout-%.tex: $(builddir)/unit-%.tex
-	$(file > $(builddir)/pres-$*.tex,\
-		$(call tex-wrapper,Presentation,$(realpath $(builddir))/unit-$*))
-	$(file > $(builddir)/hdout-$*.tex,\
-		$(call tex-wrapper,Handout,$(realpath $(builddir))/unit-$*))
+.PRECIOUS: $(builddir)/pres-%-es.tex
+$(builddir)/pres-%-es.tex: $(builddir)/unit-%-es.tex | $(figdir)
+	$(file > $@, $(call tex-wrapper,Presentation,unit-$*,es))
+
+.PRECIOUS: $(builddir)/hdout-%-es.tex
+$(builddir)/hdout-%-es.tex: $(builddir)/unit-%-es.tex | $(figdir)
+	$(file > $@, $(call tex-wrapper,Handout,unit-$*,es))
+
+.PRECIOUS: $(builddir)/pres-%-en.tex
+$(builddir)/pres-%-en.tex: $(builddir)/unit-%-en.tex | $(figdir)
+	$(file > $@, $(call tex-wrapper,Presentation,unit-$*,en))
+
+.PRECIOUS: $(builddir)/hdout-%-en.tex
+$(builddir)/hdout-%-en.tex: $(builddir)/unit-%-en.tex | $(figdir)
+	$(file > $@, $(call tex-wrapper,Handout,unit-$*,en))
 
 ## latex to pdf
 $(outdir)/%.pdf: $(builddir)/%.tex | $(outdir)
@@ -145,21 +150,16 @@ $(depsdir)/%.pdf.d: $(builddir)/%.tex | $(outdir) $(depsdir)
 
 # figure wrappers
 .PRECIOUS: $(builddir)/fig-%-en.tex
+$(builddir)/fig-%-en.tex: $(builddir)/fig-%.tex
+	$(file > $@, $(call fig-wrapper,English,fig-$*,$(shell echo $* | sed 's/\([^-]*\)-.*/\1/')))
+
 .PRECIOUS: $(builddir)/fig-%-es.tex
-$(builddir)/fig-%-en.tex $(builddir)/fig-%-es.tex: $(builddir)/fig-%.tex
-	$(file > $(builddir)/fig-$*-en.tex,\
-		$(call fig-wrapper,English,$(realpath $(builddir))/fig-$*))
-	$(file > $(builddir)/fig-$*-es.tex,\
-		$(call fig-wrapper,Spanish,$(realpath $(builddir))/fig-$*))
+$(builddir)/fig-%-es.tex: $(builddir)/fig-%.tex
+	$(file > $@, $(call fig-wrapper,Spanish,fig-$*,$(shell echo $* | sed 's/\([^-]*\)-.*/\1/')))
 
 # figure latex to pdf
 $(figdir)/fig-%.pdf: $(builddir)/fig-%.tex | $(figdir)
 	$(TEXI2DVI) --output=$@ $<
-
-# paths to media files
-$(rootdir)/paths.org: | $(figdir)
-	$(file > $@,$(paths-org))
-
 
 $(depsdir)/unit-%-figs.d: unit-%-figs.org | $(depsdir)
 	$(MAKEFIGDEPS) -o $@ $<
@@ -193,7 +193,6 @@ clean:
 	-@rm -rf $(figdir)
 	-@rm -rf $(builddir)
 	-@rm -rf $(depsdir)
-	-@rm -f $(rootdir)/paths.org
 
 .PHONY: veryclean
 veryclean: clean

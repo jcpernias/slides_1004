@@ -2,3 +2,8 @@
 * DONE org-tempo: <l TAB does not expand
 * TODO Warning while tangling figs files: 'Could not read org-id-values from ~/.emacs.d/.org-id-locations.  Setting it to nil.'
 * TODO The keybinding for org-beamer-select-environment, C-c C-b, is taken by another org function.
+* TODO Regexp for figure inclusion: #\+figure: +\./figures/\(.*\)\.pdf +\([.0-9]+\) → #+MATS: figcol \1-*.pdf \2
+* DONE unit 1D english. Check unicorn10 figure
+* TODO Whitespace at the top of the outline slide.
+* TODO Parallel build from scratch fails
+>>>>>>> macros
