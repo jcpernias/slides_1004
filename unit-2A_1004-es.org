@@ -59,16 +59,22 @@
 - El consumidor no puede pedir prestado ni prestar.
 - El gasto total no puede ser superior a la renta monetaria.
 - El consumidor puede escoger cualquier cesta de su *conjunto de oportunidades*:
+  #+begin_export latex
   \[ M \geq P_X X + P_Y Y \]
+  #+end_latex
 
 
 ** La restricción presupuestaria (I)
 - La *restricción presupuestaria* son todas aquellas cestas que
   implican un gasto exactamente igual a la renta del consumidor:
+  #+begin_export latex
   \[ M = P_X X + P_Y Y \]
+  #+end_latex
 - Otra forma de expresarla indica el consumo máximo de Y cuando el
   consumo de X toma un valor en particular:
+  #+begin_export latex
   \[ Y = \frac{M}{P_Y} - \frac{P_X}{P_Y} X \]
+  #+end_latex
 
 
 ** La restricción presupuestaria (y II)
@@ -92,11 +98,17 @@
 ** Ejemplo (I)
 - El conjunto de oportunidades cuando $M = 120$ €, $P_X = 6$ €/u. y
   $P_Y = 3$ €/u. está formado por todas las cestas que satisfacen:
+  #+begin_export latex
   \[ 120 \geq 6 X + 3 Y \]
+  #+end_latex
 - La restricción presupuestaria en este caso es:
+  #+begin_export latex
   \[ 120 = 6 X + 3 Y \]
+  #+end_latex
 - Otra forma de expresarla:
+  #+begin_export latex
   \[ Y = 40 - 2 X \]
+  #+end_latex
 
 
 ** Ejemplo (II)
@@ -128,16 +140,22 @@
 
 - Por cada unidad adicional de $X$, el consumidor renuncia a 2
   unidades de $Y$:
+  #+begin_export latex
   \[\left| \frac{\Delta Y}{\Delta X}\right| = \frac{20}{10} = 2  \]
+  #+end_latex
 - El coste de oportunidad coincide con el precio relativo:
+  #+begin_export latex
   \[ \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_X}{P_Y} = \frac{6}{3} = 2\]
+  #+end_latex
 
 
 ** Variaciones en un precio (I)
 #+figure: ./figures/fig-t10-rp6.pdf 0.45
 
 - Una disminución del precio de $X$:
+  #+begin_export latex
   \[ P'_X < P_X\]
+  #+end_latex
 - El conjunto de oportunidades se expande.
 
 
@@ -145,7 +163,9 @@
 #+figure: ./figures/fig-t10-rp7.pdf 0.45
 
 - Un aumento del precio de $Y$:
+  #+begin_export latex
   \[ P'_Y > P_Y \]
+  #+end_latex
 - El conjunto de oportunidades se contrae.
 
 
@@ -154,7 +174,9 @@
 #+figure: ./figures/fig-t10-rp8.pdf 0.45
 
 - Un aumento de la renta:
+  #+begin_export latex
   \[ M' > M \]
+  #+end_latex
 - La pendiente de la restricción no varía.
 - El conjunto de oportunidades se expande.
 
@@ -171,7 +193,9 @@
 #+figure: ./figures/fig-t10-rp11.pdf 0.45
 
 - Cambio de precios y renta en la misma proporción:
+  #+begin_export latex
   \[ P'_{X} = k P_{X}; P'_{Y} = k P_{Y};  M' = k M \]
+  #+end_latex
 - El conjunto de oportunidades no cambia.
 
 
@@ -184,7 +208,9 @@
   cantidad de dinero que el consumidor gasta en otros bienes.
 - Dado que $Y$ se mide en euros, $P_Y = 1$.
 - Restricción presupuestaria:
+  #+begin_export latex
   \[ M = P_X X + Y \]
+  #+end_latex
 
 
 ** Otros casos

@@ -7,3 +7,6 @@
 * TODO Whitespace at the top of the outline slide.
 * TODO Parallel build from scratch fails
 >>>>>>> macros
+* TODO Regexp for display equations: \(\\\[.*\\\]\) → #+begin_export latex
+\1
+#+end_latex
