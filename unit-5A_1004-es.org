@@ -1,0 +1,167 @@
+# -*- ispell-dictionary: "spanish" -*-
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: La producción: el corto plazo
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 6.
+- Varian: :: /Microeconomía intermedia/. Capítulo 18.
+#+end_bibbox
+
+* Naturaleza y objetivos de la empresa
+** Las empresas
+- ¿Por qué existen las empresas?
+- Si los mercados asignan eficientemente los recursos, ¿para qué se
+  necesitan las empresas?
+- [[http://en.wikipedia.org/wiki/Ronald_Coase][Ronald Coase]]: las empresas coordinan el proceso de produccióm
+  evitando los *costes de transacción*: búsqueda, negociación,
+  mantenimiento de secretos comerciales, monitorización, etc.
+
+** La producción
+- Mediante una determinada *tecnología* las empresas combinan
+  *factores de producción* para obtener los *bienes de producción* que
+  posteriormente venderán en los *mercados de bienes*.
+- *Producción*: el proceso que transforma los factores en productos.
+
+** Factores de producción
+- Trabajo.
+- Tierra.
+- Materias primas.
+- Capital.
+
+** El capital
+- Los *bienes de capital* son aquellos factores de producción que son
+  ellos mismos bienes de producción.
+- Por ejemplo: máquinas, herramientas, edificios y estructuras
+  destinadas al proceso productivo.
+- El capital como factor de producción se corresponde al concepto de
+  *capital físico*; /no/ es el *capital financiero*.
+
+** La tecnología
+- *Restricciones tecnológicas*: para producir una determinada cantidad
+  de un bien, sólo ciertas combinaciones de factores son *factibles*.
+- Una combinación de factores es *tecnológicamente eficiente* para
+  obtener un determinado nivel de producción, si no se puede obtener
+  ese nivel de de producción reduciendo el uso de alguno de los
+  factores de producción.
+- La *función de producción* indica para cada posible combinación de
+  factores cuál es la producción máxima que puede obtenerse.
+
+
+** Simplificaciones
+- Las empresas sólo utilizan dos factores de producción: trabajo, $L$,
+  y capital, $K$.
+- Divisibilidad infinita: los factores de producción, $K$ y $L$, y el
+  nivel de producción, $Q$, son variables continuas.
+- La función de producción puede expresarse como:
+  \[ Q = F(K, L) \]
+
+
+** Dimensión temporal\NL de la producción
+- La empresa se enfrenta a diferentes restricciones dependiendo del
+  horizonte temporal en el que se consideren las decisiones de
+  producción.
+- Distinguiremos entre el *corto plazo* y el *largo plazo*.
+
+** El corto plazo
+- La empresa no puede alterar el nivel de uso de algunos de los
+  factores de producción.
+- Existen *factores fijos* de producción.
+
+** El largo plazo
+- La empresa puede elegir el nivel de uso de todos los
+  factores de producción.
+- Todos los factores de producción son *factores variables*.
+
+
+* La producción a corto plazo
+** Producción con\NL un factor variable
+- A corto plazo el capital es un factor fijo: $K = \overline{K}$.
+- Función de producción a corto plazo:
+  \[ Q = F(\Kbar, L) = f(L) \]
+- La única forma en que la empresa puede alterar su nivel de
+  producción es variar el uso del factor variable.
+
+** Producto total
+
+#+figure: ./figures/fig-t25-cp01.pdf 0.5
+
+- El *producto total* es el nivel de producción que se obtiene cuando
+  se utilizan $L$ unidades de trabajo:
+  \[ Q = f(L) \]
+
+** Producto marginal\NL del trabajo
+
+#+figure: ./figures/fig-t25-cp03.pdf 0.5
+
+- El *producto marginal del trabajo* es la tasa a la que crece la
+  producción por unidad adicional de trabajo:
+  \[ \PMgL = \frac{\diff Q}{\diff L} = \frac{\diff f(L)}{\diff L} \]
+
+
+** La curva de\NL producto marginal\NL (I)
+
+#+figure: ./figures/fig-t25-cp06.pdf 0.5
+
+- La curva de producto marginal tiene forma de U invertida.
+
+** La curva de\NL producto marginal\NL (y II)
+
+#+figure: ./figures/fig-t25-cp06a.pdf 0.5
+
+- El $\PMgL$ es creciente para valores bajos de $L$.
+- Para valores de $L$ mayores que $L_C$, el $\PMgL$ decrece con $L$.
+
+** La ley de rendimientos\NL decrecientes de\NL un factor
+- *Ley de los rendimientos decrecientes de un factor*: a partir de un
+  determinado nivel de uso del factor, conforme se utilizan más
+  unidades de ese factor, /manteniendo constante el uso del resto de
+  los factores/, los incrementos de producción que se obtienen son
+  cada vez menores.
+
+** Eficiencia técnica\NL (I)
+
+#+figure: ./figures/fig-t25-cp06b.pdf 0.5
+
+- El $\PMgL$ es negativo cuando $L > L_D$.
+- Más allá de $L_D$, la producción disminuye cuando se utilizan más
+  unidades de trabajo.
+
+
+** Eficiencia técnica\NL (y II)
+
+#+figure: ./figures/fig-t25-cp08.pdf 0.5
+
+- El uso de más unidades de trabajo que $L_D$ es técnicamente
+  ineficiente.
+- Usando sólo $L_0$ unidades de trabajo se puede obtener la misma
+  producción que con $L_1$ unidades.
+
+** Producto medio\NL del trabajo
+
+#+figure: ./figures/fig-t25-cp02.pdf 0.5
+
+- El *producto medio del trabajo* es el número de unidades producidas
+  por hora de trabajo:
+  \[ \PMeL = \frac{Q}{L} = \frac{f(L)}{L}\]
+
+** La curva de\NL producto medio
+#+figure: ./figures/fig-t25-cp07.pdf 0.5
+- La curva de producto medio del trabajo tiene forma de U invertida.
+
+
+** Producto total,\NL medio y marginal\NL (I)
+
+#+figure: ./figures/fig-t25-cp05.pdf 0.5
+
+- La curva de $\PMeL$ es creciente cuando $\PMgL > \PMeL$.
+- La curva de $\PMeL$ tiene pendiente negativa cuando $\PMgL < \PMeL$.
+- El $\PMeL$ es máximo cuando $\PMgL = \PMeL$.
+
+** Producto total,\NL medio y marginal\NL (y II)
+
+#+figure: ./figures/fig-t25-cp04.pdf 0.5
+
+- El producto total es máximo en $L_D$, donde $\PMgL = 0$.
+- El producto medio es máximo en $L_E$, donde $\PMgL = \PMeL$.

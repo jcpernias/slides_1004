@@ -1,0 +1,148 @@
+# -*- ispell-dictionary: "spanish" -*-
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: La elección del consumidor
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 3.
+- Varian: :: /Microeconomía intermedia/. Capítulos 2, 3, 4 y 5.
+#+end_bibbox
+
+* La elección óptima
+
+** Elección racional\NL (I)
+- El consumidor selecciona, de entre todas las cestas que tiene
+  a su alcance, aquélla que le reporta un mayor bienestar:
+  #+BEGIN_EXPORT LaTeX
+  \begin{gather*}
+    \max_{\displaystyle\{X^*, Y^*\}} U(X, Y) \\
+    \text{sujeto a\ } M \geq P_{X} X + P_{Y} Y
+  \end{gather*}
+  #+END_EXPORT
+
+
+** Elección racional\NL (y II)
+- Si se cumple el supuesto de no saturación, la cesta óptima es el
+  punto de la restricción presupuestaria por el que pasa la curva de
+  indiferencia más alta:
+  #+BEGIN_EXPORT LaTeX
+  \begin{gather*}
+    \max_{\displaystyle\{X^*, Y^*\}} U(X, Y) \\
+    \text{sujeto a\ } M = P_{X} X + P_{Y} Y
+  \end{gather*}
+  #+END_EXPORT
+
+
+
+* Soluciones interiores
+
+** Soluciones interiores
+- *Solución interior*: la cesta óptima $(X^*, Y^*)$ contiene alguna
+  unidad de cada uno de los bienes:
+  \[ X^* >0; \quad Y^* > 0. \]
+
+
+** Condición de tangencia\NL (I)
+#+figure: ./figures/fig-t12-eq01.pdf 0.45
+
+- En el punto $A$: $\RMS > P_X/P_Y$.
+- La valoración del consumidor de una unidad más de $X$ es superior a
+  la valoración del mercado.
+
+
+** Condición de tangencia\NL (II)
+#+figure: ./figures/fig-t12-eq01a.pdf 0.45
+
+- El consumidor puede obtener un mayor nivel de satisfacción si
+  incrementa su consumo de $X$.
+
+
+** Condición de tangencia\NL (III)
+#+figure: ./figures/fig-t12-eq02.pdf 0.45
+
+- En el punto $B$: $\RMS < P_X/P_Y$.
+- La valoración del consumidor de una unidad más de $X$ es inferior a
+  la valoración del mercado.
+
+
+** Condición de tangencia\NL (IV)
+#+figure: ./figures/fig-t12-eq02a.pdf 0.45
+
+- El consumidor puede obtener un mayor nivel de satisfacción si
+  disminuye su consumo de $X$.
+
+
+** Condición de tangencia\NL (y V)
+#+figure: ./figures/fig-t12-eq03.pdf 0.45
+
+- En el punto $E$: $\RMS = P_X/P_Y$.
+- La valoración del consumidor de una unidad adicional de $X$ coincide
+  con la valoración del mercado.
+- El consumidor no puede aumentar su satisfacción variando el consumo
+  de $X$.
+
+
+** Ejemplo:\NL solución interior\NL (I)
+- Función de utilidad: $U(X, Y) = X Y$.
+- Precios: $P_X = 2$ € por unidad; $P_Y = 2$ € por unidad.
+- Renta monetaria: $M = 70$ €.
+
+
+** Ejemplo:\NL solución interior\NL (y II)
+#+figure: ./figures/fig-t12-ej01.pdf 0.55
+
+- Solución interior:
+  \[ X^* = 17.5; Y^*=17.5. \]
+
+
+
+* Soluciones de esquina
+
+** Soluciones de esquina\NL (I)
+- En una *solución de esquina*, alguno de los bienes no está presente
+  en la cesta óptima:
+  \[ X^* = M/P_X, Y^* = 0;\quad\text{o}\quad X^* = 0, Y^* = M/P_Y. \]
+
+
+** Soluciones de esquina\NL (II)
+
+#+figure: ./figures/fig-t12-eq10.pdf 0.45
+
+- En todos los puntos de la recta presupuestaria: $\RMS < P_X/P_Y$.
+- El consumidor compra $Y^*=M/P_Y$ unidades del bien $Y$ y $0$
+  unidades del bien $X$.
+
+
+** Soluciones de esquina\NL (y III)
+
+#+figure: ./figures/fig-t12-eq11.pdf 0.45
+
+- En todos los puntos de la recta presupuestaria: $\RMS > P_X/P_Y$.
+- El consumidor compra $X^*=M/P_X$ unidades del bien $X$ y $0$
+  unidades del bien $Y$.
+
+
+** Ejemplo:\NL solución de esquina\NL (I)
+- Función de utilidad: $U(X, Y) = (X + 50) Y$.
+- Precios: $P_X = 2$ € por unidad; $P_Y = 2$ € por unidad.
+- Renta monetaria: $M = 70$ €.
+
+
+** Ejemplo:\NL solución de esquina\NL (y II)
+#+figure: ./figures/fig-t12-ej02.pdf 0.55
+
+- Solución de esquina:
+  \[ X^* = 0; Y^*=35. \]
+
+
+** Condiciones de óptimo
+- Solución interior:
+  \[ \RMS = P_X/P_Y; \quad X^*, Y^* > 0. \]
+- Soluciones de esquina:
+  #+BEGIN_EXPORT LaTeX
+    \begin{gather*}
+      \RMS > P_X/P_Y; \quad X^* = M/P_X, Y^* = 0. \\
+      \RMS < P_X/P_Y; \quad X^* = 0, Y^* = M/P_Y.
+    \end{gather*}
+  #+END_EXPORT

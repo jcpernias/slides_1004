@@ -1,0 +1,321 @@
+# -*- ispell-dictionary: "english" -*-
+#+SETUPFILE: ./course-en.org
+
+#+TITLE: Costs in the Long Run
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 7.
+- Varian: :: /Intermediate microeconomics/. Chapters 20 and 21.
+#+end_bibbox
+
+* Cost minimization in the long run
+** The minimization\NL of the production cost
+- The firm chooses the combination of factors that minimizes the cost
+  of producing a determined level of production, $\Qbar$:
+  #+BEGIN_EXPORT LaTeX
+    \begin{gather*}
+      \min_{\{K^{*}, L^{*}\}} C = r K + w L \\
+      \text{subject to\ } \Qbar = F(K, L)
+    \end{gather*}
+  #+END_EXPORT
+
+** The isoquant
+
+#+figure: ./figures/fig-t31-eq01.pdf 0.5
+
+- The restriction the firm faces is the isoquant that corresponds to
+  the production level $\Qbar$.
+- The isoquant contains all the options the firm has to obtain $\Qbar$
+  units of product.
+
+** The isocost lines\NL (I)
+- An *isocost curve* is the set of all the combinations of factors
+  that, at market prices, represent the same cost:
+  \[ \Cbar = r K + w L \]
+- If the firm decisions cannot alter prices of the factors, the
+  isocost is a straight line:
+  \[ K = \frac{\Cbar}{r} - \frac{w}{r} L \]
+
+** The isocost lines\NL (II)
+
+#+figure: ./figures/fig-t31-eq02.pdf 0.5
+
+- The slope of the isocost line is negative:
+  \[\left.\frac{\diff K}{\diff L}\right|_{\Cbar} = -\frac{w}{r} \]
+- To keep constant the production cost if the firm hires more units of
+  $L$, it has to stop using some units of $K$.
+
+** The isocost lines\NL (and III)
+- The slope of the isocost is equal to the relative price of factors
+  with negative sign.
+
+- The *relative price of factors*, $w/r$, is the number of units of
+  $K$ that can be replaced per unit of $L$ without increasing the cost
+  of production.
+
+** The isocost map
+
+#+figure: ./figures/fig-t31-eq03.pdf 0.5
+
+- To each level of cost, $C_1, C_2, \dotsc$, it corresponds a
+  different isocost.
+- The more distant from the origin is the isocost, higher is the
+  associated cost:
+  \[ C_1 < C_2 < C_3 < \dotsb \]
+
+** The optimal choice\NL (I)
+
+#+figure: ./figures/fig-t31-eq04.pdf 0.5
+
+- The firm chooses the combination of factors that minimizes the cost
+  of producing $\Qbar$ units.
+- Combinations like $A$ or $B$, where an isocost line crosses the
+  isoquant cannot be optimal.
+
+** The optimal choice\NL (II)
+
+#+figure: ./figures/fig-t31-eq06.pdf 0.5
+
+- In the combination $A$:
+  \[ \RMST > \frac{w}{r} \]
+- The firm can produce $\Qbar$ at a lower cost if it replaces $K$ by
+  $L$.
+
+
+** The optimal choice\NL (III)
+
+#+figure: ./figures/fig-t31-eq07.pdf 0.5
+
+- In the combination $B$:
+  \[ \RMST < \frac{w}{r} \]
+- The firm can produce $\Qbar$ at a lower cost if it replaces $L$ by
+  $K$.
+
+** The optimal choice\NL (and IV)
+
+#+figure: ./figures/fig-t31-eq05.pdf 0.5
+
+- Interior solution.
+- Tangency condition:
+  \[ \RMST = \frac{w}{r} \]
+
+** Duality\NL(I)
+- We have presented the problem of the choice of the optimal
+  combination of factors as the one of the minimization of production
+  costs.
+- Alternatively we can present the problem of maximizing production
+  given a determined production cost, $\Cbar$:
+  #+BEGIN_EXPORT LaTeX
+    \begin{gather*}
+      \max_{\{K^{*}, L^{*}\}} Q = F(K, L)  \\
+      \text{subject to\ } \Cbar = r K + w L
+    \end{gather*}
+  #+END_EXPORT
+
+** Duality\NL (and II)
+
+#+figure: ./figures/fig-t31-eq08.pdf 0.5
+
+- Interior solution.
+- Tangency condition:
+  \[ \RMST = \frac{w}{r} \]
+
+
+* Cost curves in the long run
+** The expansion path of the product
+
+#+figure: ./figures/fig-t31-exp02.pdf 0.5
+
+- Given the prices of the factors, to each level of production
+  corresponds a different optimal combination.
+- The set of those optimal combinations is the *expansion path of the
+  product*.
+
+** Conditional demands of factors
+- The *conditional demand of a factor* shows the optimal level of
+  usage of that factor for each level of production:
+  #+BEGIN_EXPORT LaTeX
+    \begin{gather*}
+      L = L(Q) \\
+      K = K(Q)
+    \end{gather*}
+  #+END_EXPORT
+
+- Using the conditional demands of factors, we obtain the
+  *long-run cost curve*:
+  \[ \CT_{\LP}(Q) = r K(Q) + w L(Q) \]
+
+** Long-run total cost curve
+
+#+figure: ./figures/fig-t31-clp01.pdf 0.5
+
+- In the long-run there are no fixed costs. The firm always has the
+  option of not producing anything without costs:
+  \[ \CT_{\LP}(0) = 0 \]
+
+** Average cost and\NL marginal cost\NL(I)
+
+- Long-run average cost:
+  \[ \CMeLP(Q) = \frac{\CT_{\LP}(Q)}{Q} \]
+- Marginal cost in the long-run:
+  \[ \CMgLP(Q) = \frac{\diff \CT_{\LP}(Q)}{\diff Q} \]
+
+
+** Average cost and\NL marginal cost\NL(II)
+
+#+figure: ./figures/fig-t31-env08.pdf 0.53
+
+- The curves cross at the minimum unit cost in the long-run.
+
+** Average  cost and\NL marginal cost\NL(and III)
+- The slope of the average cost depends on the relative position of
+  the $\CMeLP$ and $\CMgLP$ curves:
+  + $\CMeLP$ decreases when $\CMgLP < \CMeLP$.
+  + $\CMeLP$ increases when $\CMgLP > \CMeLP$.
+  + $\CMeLP$ reaches a minimum when $\CMgLP = \CMeLP$.
+
+** Economies and diseconomies of scale\NL (I)
+- There exist *economies of scale* when costs increase in a lower
+  proportion than production.
+- When costs increase in a higher proportion than production there are
+  *diseconomies of scale*.
+
+** Economies and diseconomies of scale\NL (and II)
+- When there are economies of scale, the $\CMeLP$ decreases with
+  production.
+- When there are diseconomies of scale, the $\CMeLP$ increases with
+  production.
+
+** Returns to scale and costs in the long-run\NL(I)
+- If technology is characterized by constant returns to scale, then
+  costs increase in the same proportion than production.
+- For example, the firm can double its production by doubling the
+  usage of all the factors of production:
+  \[ Q_1 = F(2 K_0, 2 L_0) = 2 F(K_0, L_0) = 2 Q_0 \]
+- In that case, costs also double:
+  \[ \CT_{\LP}(Q_1) = r 2 K_0 + w 2 L_0 = 2 (r K_0 + w L_0) = 2 \CT_{\LP}(Q_0) \]
+
+** Returns to scale and costs in the long-run\NL(II)
+
+#+figure: ./figures/fig-t31-clp02.pdf 0.5
+
+- With constant returns to scale, the cost function is linear in
+  production:
+  \[ \CT_{\LP}(Q) = c Q \]
+
+** Returns to scale and costs in the long-run\NL(III)
+
+#+figure: ./figures/fig-t31-clp03.pdf 0.5
+
+- With constant returns to scale, the average cost and the marginal
+  cost are equal to a same constant:
+  \[ \CMeLP(Q) = \CMgLP(Q) = c \]
+
+** Returns to scale and costs in the long-run\NL(and IV)
+- With increasing returns to scale, when doubling the usage of factors
+  production increases more than he double: there are *economies of
+  scale*.
+- With decreasing returns to scale, costs increase more quickly than
+  production: there are *diseconomies of scale*.
+
+
+
+* Relationship between short-run and long-run costs
+** The short-run choice
+
+#+figure: ./figures/fig-t31-exp03.pdf 0.5
+
+- In the short-run the level of $K$ is fixed.
+- Different levels of production can only be reached by altering the
+  level of $L$.
+
+** The short-run and\NL the long-run choice
+
+#+figure: ./figures/fig-t31-exp04.pdf 0.5
+
+- In the long-run the firm can alter the usage of both factors.
+- Just for a production level the short-run and the long-run decisions coincide, $C$.
+
+** Short-run\NL and long-run costs\NL (I)
+
+#+figure: ./figures/fig-t31-exp05.pdf 0.5
+
+- Short-run costs are higher than long-run costs, except for a level of production.
+
+** Short-run\NL and long-run costs\NL (II)
+
+#+figure: ./figures/fig-t31-env20.pdf 0.5
+
+- The long-run cost curve is below the short-run cost curves.
+- Each short-run cost curve has a tangency point with the long-run
+  cost curve.
+
+** Short-run\NL and long-run costs\NL (and III)
+
+#+figure: ./figures/fig-t31-env21.pdf 0.5
+
+- Short-run average cost curves are above the long-run average cost
+  curve and are tangent to $\CMeLP$ for a level of production.
+- For that level of production the short-run marginal cost and the
+  long-run marginal cost coincide.
+
+* The envelope
+
+** The choice of the\NL plant size\NL (I)
+
+#+figure: ./figures/fig-t31-env01.pdf 0.55
+
+- Let’s suppose the firm can only choose between two plant sizes:
+  $K_1$ < $K_2$.
+- Which would be its long-run decision?
+
+
+** The choice of the\NL plant size\NL (and II)
+
+#+figure: ./figures/fig-t31-env02.pdf 0.55
+
+- If in the long-run it expects to produce less than $Q_A$, it is less
+  costly to use the plant size $K_1$.
+- The plant size $K_2$ is more efficient for production levels higher
+  than $Q_A$.
+
+** The envelope\NL (I)
+
+#+figure: ./figures/fig-t31-env03.pdf 0.55
+
+- The long-run average cost curve is the *lower envelope* of the
+  short-run curves.
+
+** The envelope\NL (II)
+
+#+figure: ./figures/fig-t31-env04.pdf 0.55
+
+- The long-run marginal cost curve is formed by the relevant sections
+  of the short-run marginal cost curves.
+
+
+** The envelope\NL (III)
+
+#+figure: ./figures/fig-t31-env05.pdf 0.55
+
+- If the firm has more options, the long-run average cost curve is
+  smoother.
+
+** The envelope\NL (and IV)
+
+#+figure: ./figures/fig-t31-env06.pdf 0.55
+
+- When the firm can choose between a continuous set of plant sizes,
+  each short-run average cost curve is tangent to the $\CMeLP$ at a
+  point.
+
+
+** The efficient plant size
+
+#+figure: ./figures/fig-t31-env07.pdf 0.55
+
+- The *efficient plant size* corresponds to the minimum unit cost in
+  the long-run.
+- For the production level $Q_e$, $\CMeLP$, $\CMe_{e}$, $\CMgLP$ and
+  $\CMg_{e}$ coincide.

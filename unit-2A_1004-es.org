@@ -1,0 +1,218 @@
+# -*- ispell-dictionary: "spanish" -*-
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: La restricción presupuestaria
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 3.
+- Varian: :: /Microeconomía intermedia/. Capítulos 2, 3, 4 y 5.
+#+end_bibbox
+
+* La conducta del consumidor
+
+** El consumidor
+- El *consumidor* dispone, en un determinado periodo de tiempo, de una
+  *renta monetaria* de $M$ euros.
+- Puede comprar en los diferentes mercados de bienes.
+- Por cada unidad comprada de un bien paga siempre el mismo precio.
+
+
+** Simplificaciones
+- Sólo dos bienes $X$ e $Y$, con precios $P_X$ y $P_Y$.
+- Divisibilidad perfecta.
+- Un único período temporal.
+
+
+** Cestas de consumo\NL (I)
+- Una *cesta de consumo* es una determinada combinación de unidades
+  del bien $X$ y unidades del bien $Y$.
+- Representa cuántas unidades de cada bien son consumidas en un
+  determinado periodo de tiempo.
+
+
+** Cestas de consumo\NL (y II)
+#+figure: ./figures/fig-t10-xy.pdf 0.45
+
+- La cesta $A$ está compuesta por 1 unidad del bien $X$ y 3 unidades
+  del bien $Y$: $A = (1, 3)$.
+- $B = (4, 0)$.
+
+
+** La elección racional
+- De entre todas las cestas que tiene a su alcance, el consumidor
+  *racional* selecciona aquélla que le reporta un mayor bienestar.
+
+
+* La restricción presupuestaria
+
+** Gasto
+- Si un consumidor elige la cesta $(X_0, Y_0)$, su *gasto total* es
+  $P_X X_0 + P_Y Y_0$ euros.
+- Gasto en el bien $X$: $P_X X_0$ euros.
+- Gasto en el bien $Y$: $P_Y Y_0$ euros.
+
+
+** El conjunto de oportunidades
+- El consumidor no puede pedir prestado ni prestar.
+- El gasto total no puede ser superior a la renta monetaria.
+- El consumidor puede escoger cualquier cesta de su *conjunto de oportunidades*:
+  \[ M \geq P_X X + P_Y Y \]
+
+
+** La restricción\NL presupuestaria\NL (I)
+- La *restricción presupuestaria* son todas aquellas cestas que
+  implican un gasto exactamente igual a la renta del consumidor:
+  \[ M = P_X X + P_Y Y \]
+- Otra forma de expresarla indica el consumo máximo de Y cuando el
+  consumo de X toma un valor en particular:
+  \[ Y = \frac{M}{P_Y} - \frac{P_X}{P_Y} X \]
+
+
+** La restricción\NL presupuestaria\NL (y II)
+#+figure: ./figures/fig-t10-rp1.pdf 0.5
+
+- Los puntos de corte con los ejes son los *consumos máximos* de cada
+  bien: $M/P_X$ y $M/P_Y$.
+- La pendiente de la restricción presupuestaria es igual al *precio
+  relativo* con signo negativo: $-P_X/P_Y$.
+
+
+** El precio relativo
+- El *precio relativo* es el precio de un bien medido en unidades de
+  otro bien.
+- Indica a qué tasa se puede sustituir un bien por otro en el mercado.
+# - Ejemplo: Precio de 1 kg de pan: $3$ €. Precio de 1 l de agua: $0.30$
+#   €. Precio relativo: \[ \frac{P_P}{P_A} = \frac{3}{0.3} = 10\text{\ l
+#   de agua por kg de pan} \]
+
+
+** Ejemplo\NL (I)
+- El conjunto de oportunidades cuando $M = 120$ €, $P_X = 6$ €/u. y
+  $P_Y = 3$ €/u. está formado por todas las cestas que satisfacen:
+  \[ 120 \geq 6 X + 3 Y \]
+- La restricción presupuestaria en este caso es:
+  \[ 120 = 6 X + 3 Y \]
+- Otra forma de expresarla:
+  \[ Y = 40 - 2 X \]
+
+
+** Ejemplo\NL (II)
+
+#+figure: ./figures/fig-t10-rp1b.pdf 0.45
+
+- Consumo máximo de $X$: $20$ unidades.
+- Consumo máximo de $Y$: $40$ unidades.
+- Precio relativo: $P_X/P_Y = 2$ unidades de $Y$ por cada unidad de $X$.
+
+
+** Ejemplo\NL (y III)
+#+figure: ./figures/fig-t10-rp3.pdf 0.45
+
+- Gasto asociado a la cesta
+  - $A$: $6\cdot 5 + 3 \cdot 35 = 135 € > M$
+  - $B$: $6\cdot 12 + 3 \cdot 5 =  87 € < M$
+  - $C$: $6\cdot 5 + 3 \cdot 30 = 120 € = M$
+
+
+** Precio relativo y\NL coste de oportunidad\NL (I)
+- Si el consumidor gasta toda su renta, el *coste de oportunidad* de
+  consumir una unidad adicional del bien $X$ son las unidades de $Y$
+  que debe dejar de consumir.
+
+
+** Precio relativo y\NL coste de oportunidad\NL (y II)
+#+figure: ./figures/fig-t10-rp5.pdf 0.45
+
+- Por cada unidad adicional de $X$, el consumidor renuncia a 2
+  unidades de $Y$:
+  \[\left| \frac{\Delta Y}{\Delta X}\right| = \frac{20}{10} = 2  \]
+- El coste de oportunidad coincide con el precio relativo:
+  \[ \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_X}{P_Y} = \frac{6}{3} = 2\]
+
+
+** Variaciones en un precio\NL (I)
+#+figure: ./figures/fig-t10-rp6.pdf 0.45
+
+- Una disminución del precio de $X$:
+  \[ P'_X < P_X\]
+- El conjunto de oportunidades se expande.
+
+
+** Variaciones en un precio\NL (y II)
+#+figure: ./figures/fig-t10-rp7.pdf 0.45
+
+- Un aumento del precio de $Y$:
+  \[ P'_Y > P_Y \]
+- El conjunto de oportunidades se contrae.
+
+
+** Variaciones en la renta
+
+#+figure: ./figures/fig-t10-rp8.pdf 0.45
+
+- Un aumento de la renta:
+  \[ M' > M \]
+- La pendiente de la restricción no varía.
+- El conjunto de oportunidades se expande.
+
+
+** Variaciones en\NL precios y renta\NL (I)
+#+figure: ./figures/fig-t10-rp10.pdf 0.45
+
+- Disminución de $P_X$, $P'_X < P_X$, y disminución de $M$, $M' < M$.
+- Algunas opciones ya no están disponibles.
+- Pero otras opciones que antes no eran accesibles, ahora lo son.
+
+
+** Variaciones en\NL precios y renta\NL (y II)
+#+figure: ./figures/fig-t10-rp11.pdf 0.45
+
+- Cambio de precios y renta en la misma proporción:
+  \[ P'_{X} = k P_{X}; P'_{Y} = k P_{Y};  M' = k M \]
+- El conjunto de oportunidades no cambia.
+
+
+* Extensiones
+
+** Bienes compuestos
+- Centramos nuestra atención en el consumo de un bien: $X$.
+- Entonces el bien $Y$ es un *bien compuesto*: $Y$ representa la
+  cantidad de dinero que el consumidor gasta en otros bienes.
+- Dado que $Y$ se mide en euros, $P_Y = 1$.
+- Restricción presupuestaria:
+  \[ M = P_X X + Y \]
+
+
+** Otros casos
+- La restricción presupuestaria sólo es una simple línea recta en el
+  caso en que:
+  1. el consumidor puede comprar cuaquier cantidad de los bienes X
+     e Y;
+  2. los precios, $P_X$ y $P_Y$, son independientes de las cantidades
+     que compre el consumidor.
+- Si cualquiera de estas dos condiciones se incumple, la restricción
+  presupuestaria no es lineal.
+
+
+** Racionamiento
+
+#+figure: ./figures/fig-t10-rac1.pdf 0.45
+
+- *Racionamiento*: El consumo del bien $X$ no puede ser mayor que
+  $\bar{X}$, una cantidad fijada por el Gobierno.
+
+
+** Subvenciones
+#+figure: ./figures/fig-t10-orp2.pdf 0.45
+
+- Las primeras $\bar{X}$ unidades de $X$ se venden a un precio
+  reducido $P'_X$.
+- Las restantes unidades se venden al precio completo $P_X > P'_X$.
+
+
+** Donaciones
+#+figure: ./figures/fig-t10-orp3.pdf 0.45
+
+- El consumidor no paga nada por las primeras $\bar{X}$ unidades de
+  $X$.

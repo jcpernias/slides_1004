@@ -1,0 +1,104 @@
+# -*- ispell-dictionary: "english" -*-
+#+SETUPFILE: ./course-en.org
+
+#+TITLE: Demand
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 4.
+- Varian: :: /Intermediate Microeconomics/. Chapters 6 and 8.
+#+end_bibbox
+
+* Changes in income
+
+** Variations in income
+
+#+figure: ./figures/fig-t15-crc2.pdf 0.55
+
+- As income increases, $M < M' < M''$, the budget line
+  shifts to the right.
+- Prices do not change: the budget lines are parallel.
+
+
+** Changes in the\NL consumption decision
+
+#+figure: ./figures/fig-t15-crc3.pdf 0.55
+
+- The consumer chooses a different basket for each level of monetary income.
+
+
+** Income-consumption curve
+
+#+figure: ./figures/fig-t15-crc.pdf 0.55
+
+- The *income-consumption curve*, \CRC, is set up by the baskets that
+  a consumer chooses for each possible value of the monetary rent,
+  keeping the prices of goods constant.
+
+
+** Engel curve
+
+#+figure: ./figures/fig-t15-eng.pdf 0.55
+
+- The *Engel curve* relates the demanded quantity of a good to the
+  monetary rent of a consumer, keeping constant the prices of goods.
+
+
+** Normal and inferior goods
+
+
+- Consumption of *normal goods* grows when income increases. The slope
+  of the Engel curve is positive in this case.
+  \[ \frac{\diff X}{\diff M} > 0 \]
+- Demanded quantity of *inferior goods* decreases as income
+  increases. The slope of the Engel curve of an inferior good is
+  negative.
+  \[ \frac{\diff X}{\diff M} < 0 \]
+
+
+
+* Variations in the price of a good
+
+** Changes in the\NL price of a good
+
+#+figure: ./figures/fig-t15-cpc2.pdf 0.55
+
+- When the price of good $X$ decreases, $P_X > P'_X > P''_X$ the
+  budget constraint pivots on the point $M/P_Y$ to the right.
+- The slope of the budget line is less pronounced the smaller is the
+  price of $X$.
+
+
+** Changes in the\NL consumption decision
+
+#+figure: ./figures/fig-t15-cpc3.pdf 0.55
+
+- The consumer chooses a different basket for each $P_X$.
+
+** Price-consumption curve
+
+#+figure: ./figures/fig-t15-cpc.pdf 0.55
+
+- The *price-consumption curve* includes the baskets the consumer
+  chooses for each possible price of good $X$, keeping constant the
+  monetary rent and.
+
+
+** Individual demand\NL curve
+
+#+figure: ./figures/fig-t15-dem.pdf 0.55
+
+- The *demand curve* relates the demanded quantity of a good with the
+  price of that good, keeping constant the monetary rent and the price
+  of the other goods.
+
+
+** Substitutive and complementary goods
+- The \CPC{} also shows how the consumption of $Y$ varies as the price
+  of $X$ varies, /ceteris paribus/.
+- Good $X$ is a *substitute* of good $Y$ if the demand of $Y$
+  increases when the price of $X$ does so:
+  \[ \frac{\diff Y}{\diff P_X} > 0 \]
+- Good $X$ is a *complement* of good $Y$ if the demand of $Y$
+  decreases when the price of $X$ increases:
+  \[ \frac{\diff Y}{\diff P_X} < 0 \]

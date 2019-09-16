@@ -1,0 +1,175 @@
+# -*- ispell-dictionary: "english" -*-
+#+SETUPFILE: ./course-en.org
+
+#+TITLE: Production in the Long Run
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 6.
+- Varian: :: /Intermediate microeconomics/. Chapter 18.
+#+end_bibbox
+
+* Long term production
+** Production with\NL two variable factors
+- In the long term all factors are variable.
+- Long term production function:
+  \[ Q = F(K, L) \]
+
+** Marginal product\NL of the factors
+
+- The *marginal product of labour* is the rate at which production
+  grows per additional unit of labour:
+  \[ \PMgL = \frac{\partial Q}{\partial L} = \frac{\partial F(K, L)}{\partial L}  \]
+- The *marginal product of capital* is the rate at which production
+  grows per additional unit of capital:
+  \[ \PMgK = \frac{\partial Q}{\partial K} = \frac{\partial F(K, L)}{\partial K}  \]
+
+** Isoquant
+- The *isoquant* is the set of combinations of factors with which it
+  can be obtained the same maximum level of production.
+
+
+
+** Isoquant map
+
+#+figure: ./figures/fig-t26-is01.pdf 0.5
+
+- A different isoquant corresponds to each level of production .
+- The more distant from the origin isoquants are associated with
+  higher production levels.
+
+
+** The slope of the isoquants\NL (I)
+- Total differential of the production function:
+  \[ \diff Q = \PMgK \diff K + \PMgL \diff L \]
+- If we move along an isoquant, $\diff Q = 0$. Then:
+  \[ 0 = \PMgK \diff K + \PMgL \diff L \]
+- Operating:
+  \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} =
+       -\frac{\PMgL}{\PMgK} \]
+
+** The slope of the isoquants\NL (and II)
+- If a combinations of factors is technically efficient to obtain a determined level of production it should meet that: $\PMgL > 0$ and $\PMgK > 0$.
+
+- Isoquants have a negative slope in the technically efficient combinations.
+  \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} =
+       -\frac{\PMgL}{\PMgK} < 0\]
+
+** Marginal rate of\NL technical substitution
+- The *marginal rate of technical substitution*, $\RMST$, is the number of units of capital that can be substituted by a unit of labour, keeping the production level constant.
+- It coincides with the slope of the isoquant with negative sign:
+  \[ \RMST = -\left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} \]
+- Therefore:
+  \[ \RMST = \frac{\PMgL}{\PMgK} \]
+
+** Convexity
+
+#+figure: ./figures/fig-t26-is02.pdf 0.5
+
+- We assume that the isoquants are convex.
+- Convexity implies the $\RMST$ is decreasing.
+
+
+** Convexity and\NL returns of a factor
+- *Convexity and diminishing returns of a factor* are two different
+  properties: one does not imply the other.
+- The law of diminishing returns of a factor can be fulfilled without
+  the $\RMST$ being decreasing:
+  \[ Q = \big(K + L\big)^{1/2} \]
+- The $\RMST$ may be decreasing but the law of diminishing returns of
+  a factor may not be fulfilled:
+  \[ Q = K L \]
+
+** Substitutability
+
+#+figure: ./figures/fig-t26-is05.pdf 0.5
+
+- The curvature of the isoquants indicates the degree of substitutability of a factor for other when obtaining a certain level of production.
+
+** Perfectly substitutable\NL factors
+
+#+figure: ./figures/fig-t26-is03.pdf 0.5
+
+- *Perfect substitutability of factors*: the factors can be
+  substituted always at the same rate.
+- The $\RMST$ always takes the same value.
+- Example:
+  \[ Q = L + K \]
+
+** Fixed-proportions\NL production function
+
+#+figure: ./figures/fig-t26-is04.pdf 0.5
+
+- *Fixed-proportions technology*: at the technically efficient points
+  the factors are always combined in the same proportion.
+
+- The $\RMST$ is not defined in the technically efficient combinations.
+
+- Example:
+  \[ Q = \min\{K, L\} \]
+
+* Returns to scale
+** Returns to scale\NL (I)
+- *Returns to scale*: at which rate does the production grow when the
+  usage of *all* factors is increased by the same proportion?
+
+** Returns to scale\NL (and II)
+- For example, we start from a determined combination of factors:
+  \[ Q_0 = F(4, 3) = 10 \]
+- We triple the usage of factors and obtain a new level of production:
+  \[ Q_1 = F(12, 9) = 30 \]
+- In our example, production has increased by the same proportion as the factors: $Q_1 = 3 Q_0$. That is:
+  \[   F(3 \cdot 4, 3 \cdot 3) = 3 F(4, 3) \]
+
+** Constant returns\NL to scale\NL (I)
+- In general, there are *constant returns to scale* if when increasing
+  the usage of the factors by a proportion $\lambda$, $\lambda > 1$,
+  the level of production varies exactly in that same proportion:
+  #
+  \[ F(\lambda K, \lambda L) = \lambda F(K, L) \]
+
+** Constant returns\NL to scale\NL (and II)
+
+#+figure: ./figures/fig-t26-re01.pdf 0.5
+
+- $B = 2 A$ y $Q_B = 2 Q_A$.
+- $C = 3 A$ y $Q_C = 3 Q_A$.
+
+
+** Increasing returns\NL to scale\NL (I)
+- There are *increasing returns to scale* is when increasing the usage
+  of the factors by a proportion $\lambda$, $\lambda > 1$, the level
+  of production increases more than proportionally:
+  \[ F(\lambda K, \lambda L) > \lambda F(K, L) \]
+
+** Increasing returns\NL to scale\NL (and II)
+
+#+figure: ./figures/fig-t26-re02.pdf 0.5
+
+- $B = 2 A$ y $Q_B > 2 Q_A$.
+- $C = 3 A$ y $Q_C > 3 Q_A$.
+
+
+** Decreasing returns\NL to scale\NL (I)
+- There are *decreasing returns to scale* if when increasing the usage
+  of the factors by a proportion $\lambda$, $\lambda > 1$,the
+  proportion at which the level of production increases is lower than
+  $\lambda$:
+  \[ F(\lambda K, \lambda L) < \lambda F(K, L) \]
+
+
+** Decreasing returns\NL to scale\NL (and II)
+
+#+figure: ./figures/fig-t26-re03.pdf 0.5
+
+- $B = 2 A$ y $Q_B < 2 Q_A$.
+- $C = 3 A$ y $Q_B < 3 Q_A$.
+
+** Variable returns to scale
+- The same technology can have different types of returns to scale
+  depending on the production level in which the firm operates.
+
+** Returns to scale and factor returns
+- They are independent concepts: the type of returns to scale does not
+  imply (nor is deduced from) the fulfilment of the law of diminishing
+  returns of a factor

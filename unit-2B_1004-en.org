@@ -1,0 +1,300 @@
+# -*- ispell-dictionary: "english" -*-
+#+SETUPFILE: ./course-en.org
+
+#+TITLE: Preferences
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 3.
+- Varian: :: /Intermediate microeconomics/. Chapters 2, 3, 4 and 5.
+#+end_bibbox
+
+* Consumer preferences
+
+** Completeness
+- The *completeness* assumption states that the consumer is able to rank any two baskets according to his preferences.
+- If a consumer has to compare two baskets, $A$ and $B$,
+  then:
+  + either he prefers $A$ to $B$: $A \succ B$;
+  + either he prefers $B$ to $A$: $B \succ A$;
+  + or he is indifferent between them: $A \sim B$.
+
+
+** Non-satiation\NL (I)
+- When the assumption of *non-satiation* is fulfilled a consumer
+  prefers baskets containing more units of, at least one of the goods
+  and not less of the other goods.
+
+
+** Non-satiation\NL (II)
+- Under this assumption, we can say that:
+  + $A = (2, 3) \succ B = (1, 3)$.
+  + $A = (2, 3) \succ C = (1, 1)$.
+- Only with this assumption we cannot determine how the consumer would
+  rank the baskets $A=(2, 3)$ and $D = (1, 4)$.
+
+
+** Non-satiation\NL (and III)
+#+figure: ./figures/fig-t11-ci02.pdf 0.45
+
+- $M \succ A$.
+- $A \succ P$.
+
+
+** Indifference curves\NL (I)
+- An *indifference curve* is a set of baskets of consumption, and
+  includes all baskets that are indifferent to each other.
+- Each basket belongs to an indifference curve.
+
+
+** Indifference curves\NL (II)
+#+figure: ./figures/fig-t11-ci03.pdf 0.45
+
+- Baskets which are indifferent to $A$ cannot be in the shaded areas (non-satiation assumption).
+
+
+** Indifference curves\NL (III)
+#+figure: ./figures/fig-t11-ci04.pdf 0.45
+
+- We apply the same reasoning to other baskets indifferent to $A$.
+
+
+** Indifference curves\NL (IV)
+#+figure: ./figures/fig-t11-ci05.pdf 0.45
+
+- The indifference curve has a negative slope.
+
+
+** Indifference curves\NL (and V)
+#+figure: ./figures/fig-t11-ci06.pdf 0.45
+
+- Baskets preferred to $A$ are placed above and to the right of the indifference curve.
+- None of the baskets placed below and to the left of the indifference curve is preferred to $A$.
+
+
+** Transitivity\NL (I)
+- The *transitivity* assumption implies a certain type of consistency in the consumer preferences.
+- If $A \succ B$ and $B \succ C$, then $A \succ C$.
+- If $A \sim B$ and $B \sim C$, then $A \sim C$.
+
+
+** Transitivity\NL (and II)
+#+figure: ./figures/fig-t11-tr01.pdf 0.45
+
+- If the assumption of transitivity is fulfilled, each basket belongs
+  to one and *only* one indifference curve.
+- If the indifference curves intersect we find a contradiction:
+  \[B \sim C \text{\ and\ } C \sim A\text{, but\ } B \succ A.\]
+
+
+** Indifference curves\NL map
+
+#+figure: ./figures/fig-t11-map01.pdf 0.45
+
+- The *indifference curves map* represents the preferences of a consumer.
+
+
+** Marginal Rate\NL of Substitution\NL (I)
+- The *Marginal Rate of Substitution*, $\RMS$, measures the valuation
+  by a consumer of a good in terms of another good.
+- ¿To how many units of good $Y$, at most, would I be willing to give
+  up in order to obtain another unit of good $X$?
+
+
+** Marginal Rate\NL of Substitution\NL (II)
+
+#+figure: ./figures/fig-t11-rms01.pdf 0.45
+
+- The $\RMS$ is the rate at which a consumer can replace a good for another, staying on the same indifference curve.
+  \[ \RMS \approx \left| \frac{\Delta Y}{\Delta X} \right|_{I_0} \]
+
+
+** Marginal Rate\NL of Substitution\NL (and III)
+
+#+figure: ./figures/fig-t11-rms02.pdf 0.45
+
+- The $\RMS$ coincides with the slope, with negative sign, at a point
+  of the indifference curve.
+
+
+** Convexity
+
+#+figure: ./figures/fig-t11-rms03.pdf 0.45
+
+- The *convexity* of the indifference curves implies that the $\RMS$ is decreasing:
+  \[ \RMS(A) > \RMS(B) \]
+
+- The relative value a consumer assigns to a good is smaller the more
+  units of that good are consumed.
+
+
+** Regular preferences
+- *Completeness*.
+- *Transitivity*.
+- *Non-satiation* (o *monotonicity*, o *insatiability*).
+- *Convexity*.
+- Other technical assumptions.
+
+
+* Other cases: Consumer preferences
+
+
+** Other cases\NL of preferences\NL (I)
+
+#+figure: ./figures/fig-t11-nreg01.pdf 0.45
+
+- *Perfect substitutes*.
+
+
+** Other cases\NL of preferences\NL (II)
+
+#+figure: ./figures/fig-t11-nreg02.pdf 0.45
+
+- *Perfect complements*.
+
+
+** Other cases\NL of preferences\NL (III)
+
+#+figure: ./figures/fig-t11-nreg03.pdf 0.45
+
+- $Y$ is a *neutral good*.
+
+
+** Other cases\NL of preferences\NL (and IV)
+
+#+figure: ./figures/fig-t11-nreg04.pdf 0.45
+
+- $X$ is a *bad*.
+
+
+
+* Utility function
+
+
+** Utility function
+- The *utility function* assigns a numerical value to each basket
+  according to the consumer preferences, so that
+  + if $A \succ B$, then $U(X_A, Y_A) > U(X_B, Y_B)$;
+  + if $A \sim B$, then $U(X_A, Y_A) = U(X_B, Y_B)$.
+- The preferences of a consumer, under certain assumptions, can be
+  represented by a utility function.
+
+
+** Utility function and indifference curves
+- The utility function assigns the same number to all baskets which
+  are indifferent to each other.
+- We can obtain an indifference curve by finding all points that
+  produce the same value of the utility function:
+  \[ U(X, Y) = \overline{U} \]
+
+
+** Example\NL (I)
+- Utility function:
+  \[ U(X, Y) = X \cdot Y \]
+- The utility associated with basket $A = (15, 20)$ is:
+  \[ U(15, 20) = 15 \cdot 20 = 300 \]
+- Indifferent to $A$ baskets produce the same value of the utility function:
+  \[ U(X, Y) = X\cdot Y = 300 \]
+
+
+** Example\NL (and II)
+
+#+figure: ./figures/fig-t11-fu01.pdf 0.45
+
+- Indifference curve which contains $A$:
+  \[ Y = \frac{300}{X} \]
+
+
+** Ordinal utility\NL (I)
+
+#+figure: ./figures/fig-t11-map02.pdf 0.45
+
+- The utility function assigns each indifference curve to a different number.
+
+
+** Ordinal utility\NL (II)
+- The utility function values have no special meaning, apart from
+  ordering the baskets.
+- There are infinite utility functions that represent exactly the same
+  preferences.
+
+
+** Ordinal utility\NL (and III)
+
+#+figure: ./figures/fig-t11-map03.pdf 0.48
+
+- Let’s define $V(X, Y)$ as:
+  \[ V(X, Y) = \sqrt{U(X, Y)} = X^{1/2}  Y^{1/2} \]
+- Both $U(X, Y)$ and $V(X, Y)$ represent the same preferences.
+
+
+** Marginal utility\NL (I)
+- The *marginal utility* of $X$ measures the variation in consumer’s
+  utility with variations in the consumption of $X$, but /keeping
+  constant the consumption of $Y$/.
+- The marginal utility of a good coincides with the partial derivative
+  of the utility function:
+  \[ \UMX = \frac{\partial U(X, Y)}{\partial X}; \quad
+     \UMY = \frac{\partial U(X, Y)}{\partial Y} \]
+
+
+** Marginal utility\NL (and II)
+- If the assumption of non-satiation is fulfilled:
+  \[ \UMX > 0; \quad \UMY > 0. \]
+- Except for the sign, the value of marginal utility has no
+  interesting interpretation.
+
+
+** Marginal utility and RMS\NL (I)
+
+- Variation in utility when the consumptions of $X$ and $Y$ change
+  simultaneously:
+  \[ \diff U = \UMX\; \diff X + \UMY\; \diff Y \]
+- If the change occurs along an indifference curve, utility does not
+  vary; so $\diff U = 0$:
+  \[ 0 = \UMX\; \diff X + \UMY\; \diff Y \]
+
+
+** Marginal utility and RMS\NL (II)
+
+- The slope of the indifference curve is:
+  \[ \left. \frac{\diff Y}{\diff X} \right|_{U=\overline{U}} =
+     -\frac{\UMX}{\UMY} \]
+
+- The marginal rate of substitution coincides with the ratio of marginal utilities:
+  \[ \RMS =  \frac{\UMX}{\UMY} \]
+
+
+** Marginal utility and RMS\NL (III)
+
+- Example: $U(X, Y) = XY$.
+- Marginal utilities:
+  #+BEGIN_EXPORT LaTeX
+    \begin{equation*}
+     \UMX = \frac{\partial U}{\partial X} = Y;  \quad
+     \UMY = \frac{\partial U}{\partial Y} = X
+    \end{equation*}
+  #+END_EXPORT
+- Marginal rate of substitution:
+  \[\RMS = \frac{\UMX}{\UMY} = \frac{Y}{X} \]
+
+
+** Marginal utility and RMS\NL (and IV)
+
+#+figure: ./figures/fig-t11-fu02.pdf 0.45
+
+- $\RMS(A) = 20/15 = 1.33$ units of $Y$ per unit of $X$.
+- The slope of the indifference curve at point $A$ is $-1.33$
+  units of $Y$ per unit of $X$.
+
+
+* Some utility functions
+
+
+** Some utility functions
+- Perfect substitutes:
+  \[ U(X, Y) = a X + b Y; \quad a, b > 0. \]
+- Perfect complements:
+  \[ U(X, Y) = \min\{a X, b Y\}; \quad a, b > 0. \]
+- Cobb-Douglas
+  \[ U(X, Y) = X^a Y^b; \quad a,b > 0. \]

@@ -1,0 +1,232 @@
+# -*- ispell-dictionary: "english" -*-
+#+SETUPFILE: ./course-en.org
+
+#+TITLE: Substitution effect and income effect
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 4.
+- Varian: :: /Intermediate microeconomics/. Chapters 6 and 8.
+#+end_bibbox
+
+* Substitution effect and income effect
+
+** Law of demand
+
+#+figure: ./figures/fig-t16-eres20.pdf 0.55
+
+- An increase /ceteris paribus/ in $P_X$ reduces the demanded quantity
+  of $X$.
+
+
+** Law of demand?
+
+#+figure: ./figures/fig-t16-eres22.pdf 0.55
+- There is nothing in the consumer analysis that excludes the
+  possibility of an increase in the demanded quantity when the price
+  increases.
+
+
+** Giffen goods
+- A *Giffen good* is a good whose demand curve has a positive slope.
+- Under which conditions does the demand curve have a positive slope?
+
+* Changes in the price of a good
+
+** Effects of\NL price change
+If the price of good $X$ increases:
+- Relative prices change. The consumer tries to *substitute* the
+  consumption of good $X$, now relatively more expensive, for other
+  goods.
+- The consumer has less consumption choices. His/her *real income*
+  has decreased as a consequence of the price increase.
+
+
+** Substitution effect and income effect
+- The *total effect*, \ET, of a change in $P_X$ is the variation in
+  the demanded quantity of good $X$.
+- The *substitution effect*, \ES, is the part of the total effect that
+  can be exclusively attributed to the change in relative prices.
+- The *income effect*, \ER, is the part of the total effect that can
+  be exclusively attributed to the change in real income.
+- $\ET = \ES + \ER$
+
+
+** Total effect split\NL (I)
+- How can we determine which part of the change is due to the
+  substitution effect and which is due to the income effect?
+- Let’s consider what would be the demanded quantity by the consumer
+  if his/her real income had not change and just relative prices had
+  changed: $X_H$.
+- We can obtain the substitution effect and the income effect by
+  comparing $X_H$ with the demanded quantities before the increase of
+  the price, $X_0$ and after the increase of the price, $X_1$.
+
+
+** Total effect split\NL (and II)
+
+- From the initial quantity demanded, $X_0$; the final quantity
+  demanded, $X_1$; and the quantity demanded if just relative prices had
+  changed, $X_H$, we can determine:
+| Substitution effect: | $X_H - X_0$ | Just relative prices    |
+|                      |             | change.                 |
+| Income effect:       | $X_1 - X_H$ | Just real income changes. |
+|                      |             |                           |
+| Total effect:        | $X_1 - X_0$ | Both relative prices   |
+|                      |             | and real income change.|
+
+
+** Hicks decomposition
+
+- Hicks equates real income to the utility level.
+- If just relative prices change and real income is constant, the
+  optimal basket must be in the same indifference curve that the
+  initial choice.
+- In order to decompose the total effect, we look for a point of the
+  initial indifference curve where the \RMS{} coincides with the final
+  relative prices.
+
+
+** Example\NL (I)
+- Utility function: $U(X, Y) = X^{2/3}Y^{1/3}$.
+- Monetary income: $M = 72$ €.
+- Initial prices: $P_X = 2$ €/u. y $P_Y = 1$ €/u.
+- Final price of $X$: $P'_X = 16$ €/u.
+
+
+** Example\NL (II)
+
+#+figure: ./figures/fig-t16-eres02.pdf 0.55
+
+- Total effect of the increase of $P_X$:
+  \[ \ET = 3 - 24 = -21 \]
+
+
+** Example\NL (III)
+
+#+figure: ./figures/fig-t16-eres03.pdf 0.55
+
+- $E_H$: choice if real income does not change.
+- $E_H$ is on the same indifference curve as $E_0$.
+- The \RMS{} at $E_H$ is equal to the final relative price: $P'_X/P_Y$.
+
+
+** Example\NL (and IV)
+
+#+figure: ./figures/fig-t16-eres04.pdf 0.55
+
+- $\ES = 12 - 24 = -12$.
+- $\ER = 3 - 12 = -9$.
+- $\ET = \ES + \ER = -21$.
+
+* Effect signs
+
+** The sign of\NL the substitution effect
+- The *substitution effect* has a *negative sign*.
+- The variation in quantity due to the substitution effect has the
+  opposite sign with respect to the variation in price.
+
+
+** The sign of\NL the income effect
+- An increase of the price implies a decrease of real income.
+- If the *good is normal*, an increase of the price reduces demand as
+  a consequence of the income effect. In this case, the *income
+  effect* has a *negative sign*.
+- If the *good is inferior*, a higher price makes causes an increase
+  in demand through the income effect. In this case the *income
+  effect* has a *positive sign*.
+
+
+** Normal goods\NL (I)
+- The *total effect* of a *normal good* has *negative sign*:
+  \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  +\underset{(-)}{\ER} \]
+
+** Normal goods\NL (and II)
+
+#+figure: ./figures/fig-t16-eres10.pdf 0.55
+- Substitution effect and income effect reinforce each other.
+
+- Demand curve with a negative slope.
+
+
+** Inferior goods\NL (I)
+
+- The *total effect* of an *inferior good* can have a *negative or
+  positive sign*:
+  \[ \underset{(?)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \]
+
+- Frequently, the magnitude of the income effect is small compared to
+  that of the substitution effect.
+  \[ |\ER| < |\ES| \]
+- In this case, the demand of an inferior good has a negative slope:
+  \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad
+  \big(|\ER| < |\ES|\big) \]
+
+
+** Inferior goods\NL (and II)
+
+#+figure: ./figures/fig-t16-eres11.pdf 0.55
+
+- The income effect partially counteracts the substitution effect.
+- Demand curve with negative slope.
+
+** Giffen goods\NL (I)
+
+- A Giffen good is an inferior good whose income effect is greater, in
+  absolute terms, than the substitution effect:
+  \[ \underset{(+)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad
+  \big(|\ER| > |\ES|\big) \]
+
+
+** Giffen goods\NL (II)
+
+#+figure: ./figures/fig-t16-eres12.pdf 0.55
+
+- The income effect is higher in absolute terms than the substitution
+  effect.
+- Demand curve with positive slope.
+
+
+** Giffen goods\NL (and III)
+
+- Under which conditions can we find a Giffen good?
+  + Inferior good.
+  + Small substitution effect (by lack of good substitutes, for example).
+  + Large income effect (the expenditure in the good represents an
+    important share of the consumers budget, for example).
+
+* Slutsky decomposition                                            :noexport:
+
+** Slutsky decomposition\NL (I)
+
+- Slutsky identifies *real income* with *purchasing power*.
+- The choice when just relative prices change must be on a budget line
+  that allows you to buy the initial basket at final prices.
+
+
+** Slutsky decomposition\NL (II)
+
+#+figure: ./figures/fig-t16-eres05a.pdf 0.55
+
+- $E_S$: choice if real income does not change.
+- $E_S$ is on a budget line that goes through $E_0$.
+- The slope of this budget line coincides with the final relative
+  price: $P'_X/P_Y$.
+
+
+** Slutsky decomposition\NL (III)
+
+#+figure: ./figures/fig-t16-eres05.pdf 0.55
+
+- $\ES = 17 - 24 = -7$.
+- $\ER = 3 - 17 = -14$.
+- $\ET = \ES + \ER= -21$.
+
+
+** Slutsky decomposition\NL (and IV)
+
+#+figure: ./figures/fig-t16-eres06.pdf 0.55
+
+- The proposals of Hicks and Slutsky generate different results.
+- Both coincide when the variation in prices is very small or in cases
+  in which the \ER{} is equal to 0.

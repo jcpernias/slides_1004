@@ -1,0 +1,97 @@
+# -*- ispell-dictionary: "spanish" -*-
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: La demanda
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 4.
+- Varian: :: /Microeconomía intermedia/. Capítulos 6 y 8.
+#+end_bibbox
+
+* Variaciones en la renta
+
+** Cambios en la renta
+
+#+figure: ./figures/fig-t15-crc2.pdf 0.55
+
+- Conforme aumenta la renta, $M < M' < M''$, la restricción
+  presupuestaria se desplaza hacia la derecha.
+- Los precios no cambian: las rectas presupuestarias son paralelas.
+
+** Cambios en la\NL decisión de consumo
+
+#+figure: ./figures/fig-t15-crc3.pdf 0.55
+
+- El consumidor selecciona una cesta diferente para cada nivel de
+  renta monetaria.
+
+** Curva renta consumo
+
+#+figure: ./figures/fig-t15-crc.pdf 0.55
+
+- La *curva de renta consumo*, \CRC, está formada por las cestas que
+  elige un consumidor para cada posible valor de la renta monetaria,
+  manteniendo constantes los precios de los bienes.
+
+** Curva de Engel
+
+#+figure: ./figures/fig-t15-eng.pdf 0.55
+
+- La *curva de Engel* relaciona la cantidad demandada de un bien con
+  la renta monetaria de un consumidor, manteniendo constantes los
+  precios de los bienes.
+
+** Bienes normales y bienes inferiores
+
+- El consumo de los *bienes normales* crece cuando aumenta la
+  renta. La pendiente de la curva de Engel es positiva en este caso.
+  \[ \frac{\diff X}{\diff M} > 0 \]
+- La cantidad demandada de los *bienes inferiores* disminuye a medida
+  que la renta aumenta. La pendiente de la curva de Engel de un bien
+  inferior es negativa.
+  \[ \frac{\diff X}{\diff M} < 0 \]
+
+
+* Variaciones en el precio de un bien
+
+** Cambios en el\NL precio de un bien
+
+#+figure: ./figures/fig-t15-cpc2.pdf 0.55
+
+- Al disminuir el precio del bien $X$, $P_X > P'_X > P''_X$ la
+  restricción presupuestaria rota hacia la derecha.
+- La pendiente de la recta presupuestaria es menos pronunciada cuanto
+  menor es el precio de $X$.
+
+** Cambios en la\NL decisión de consumo
+
+#+figure: ./figures/fig-t15-cpc3.pdf 0.55
+
+- El consumidor elige una cesta diferente para cada $P_X$.
+
+** Curva precio consumo
+
+#+figure: ./figures/fig-t15-cpc.pdf 0.55
+
+- La *curva de precio consumo* recoge las cestas que el consumidor
+  elige para cada posible precio del bien $X$, manteniendo constantes
+  la renta monetaria y el resto de precios.
+
+** La curva de\NL demanda individual
+
+#+figure: ./figures/fig-t15-dem.pdf 0.55
+
+- La *curva de demanda* relaciona la cantidad demandada de un bien con
+  el precio de ese bien, manteniendo constantes la renta monetaria y
+  el precio de los restantes bienes.
+
+** Bienes sustitutivos y complementarios
+- La \CPC{} muestra también como varía el consumo de $Y$ conforme
+  varía, /ceteris paribus/, el precio de $X$.
+- El bien $X$ es *sustitutivo* del bien $Y$ si la demanda de $Y$ crece
+  cuando aumenta el precio de $X$:
+  \[ \frac{\diff Y}{\diff P_X} > 0 \]
+- El bien $X$ es *complementario* del bien $Y$ si cae la demanda de
+  $Y$ al aumentar el precio de $X$:
+  \[ \frac{\diff Y}{\diff P_X} < 0 \]
