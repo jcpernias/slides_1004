@@ -10,6 +10,7 @@
 #+end_bibbox
 
 * Los costes a corto plazo
+
 ** Maximización de beneficios
 - Una empresa *racional* toma sus decisiones con el objeto de
   *maximizar sus beneficios*.
@@ -18,12 +19,14 @@
   + ¿Cómo minimizar los costes de producción?
   + ¿Cuánto producir?
 
-** El comportamiento de\NL la empresa
+
+** El comportamiento de la empresa
 - La empresa puede adquirir las unidades de factores que quiera a los
   precios de mercado:
   + $w$ es el salario;
   + $r$ el precio del capital.
 - La empresa no puede por sí sola alterar los precios de los factores.
+
 
 ** Coste total
 - *Coste total*: el valor de las retribuciones de los factores a sus
@@ -33,6 +36,7 @@
 - El coste total es:
   \[ C = r K + w L \]
 
+
 ** El corto plazo
 - A corto plazo:
   - El capital es un factor fijo: $K = \Kbar$.
@@ -40,12 +44,13 @@
     variando la utilización del factor trabajo.
 
 
-** Costes fijos y\NL costes variables
+** Costes fijos y costes variables
 - Los *costes fijos* son los asociados al uso los factores fijos:
   \[ \CF = r \Kbar \]
 - Los *costes variables* son las retribuciones de los factores
   variables:
   \[ \CV = w L \]
+
 
 ** Coste total a corto plazo
 - Costes totales a corto plazo:
@@ -54,8 +59,11 @@
   variable:
   \[ C = \CF + \CV \]
 
+
+
 * Las curvas de costes a corto plazo
-** Producción y costes\NL (I)
+
+** Producción y costes (I)
 
 #+figure: ./figures/fig-t30-sr01.pdf 0.55
 
@@ -63,7 +71,8 @@
   empresa usando un determinado nivel de trabajo.
   \[ Q = f(L) \]
 
-** Producción y costes\NL (y II)
+
+** Producción y costes (y II)
 
 #+figure: ./figures/fig-t30-sr02.pdf 0.55
 
@@ -71,7 +80,8 @@
   necesario para alcanzar un determinado nivel de producción.
   \[ L = f^{-1}(Q) \]
 
-** La curva de\NL coste variable
+
+** La curva de coste variable
 
 #+figure: ./figures/fig-t30-sr03.pdf 0.55
 
@@ -79,7 +89,8 @@
   al que se puede obtener un determinado nivel de producción:
   \[ \CV(Q) = w f^{-1}(Q) \]
 
-** La curva de\NL coste total
+
+** La curva de coste total
 
 #+figure: ./figures/fig-t30-sr04.pdf 0.55
 
@@ -87,7 +98,8 @@
 - La *curva de coste total* se obtiene sumando el coste fijo y el
   coste variable para cada nivel de producción.
 
-** Las curvas de\NL costes a corto plazo
+
+** Las curvas de costes a corto plazo
 - El coste fijo no depende del nivel de producción:
   \[ \CF(Q) = r \Kbar \]
 - El coste variable se obtiene invirtiendo la función de producto
@@ -95,6 +107,7 @@
   \[ \CV(Q) = w f^{-1}(Q) \]
 - El coste total es la suma del coste fijo y el coste variable:
   \[ \CT(Q) = r \Kbar + w f^{-1}(Q) \]
+
 
 ** El coste marginal
 - El *coste marginal* es la tasa a la que cambia el coste total por
@@ -106,6 +119,7 @@
      \frac{\diff \CF}{\diff Q} + \frac{\diff \CV}{\diff Q} =
      \frac{\diff \CV}{\diff Q} \]
 
+
 ** El coste medio
 - El *coste medio* es el cociente entre coste total y producción:
   \[ \CMe = \frac{C}{Q} \]
@@ -115,7 +129,8 @@
 - Es fácil comprobar que
   \[ \CMe = \CFMe + \CVMe  \]
 
-** Relación entre\NL $\PMg$, $\PMe$, $\CMg$ y $\CMe$ \NL (I)
+
+** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (I)
 - El coste variable es:
   \[ \CV = w L \]
 - Dividiendo por el nivel de producción, obtenemos el coste variable
@@ -129,7 +144,7 @@
       \frac{w}{\PMgL} \]
 
 
-** Relación entre\NL $\PMg$, $\PMe$, $\CMg$ y $\CMe$ \NL (II)
+** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (II)
 
 #+figure: ./figures/fig-t30-sr05.pdf 0.55
 
@@ -137,7 +152,8 @@
   forma de las curvas de coste medio y marginal.
 - $\PMgL$ y $\PMeL$ tienen forma de U invertida.
 
-** Relación entre\NL $\PMg$, $\PMe$, $\CMg$ y $\CMe$ \NL (y III)
+
+** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (y III)
 
 #+figure: ./figures/fig-t30-sr06.pdf 0.55
 
@@ -145,7 +161,8 @@
 - La curva de $\CMg$ corta con la de $\CVMe$ en el mínimo de los
   costes variables medios.
 
-** Las curvas de\NL coste variable medio y\NL coste marginal
+
+** Las curvas de coste variable medio y coste marginal
 
 #+figure: ./figures/fig-t30-sr06.pdf 0.55
 
@@ -153,7 +170,8 @@
 - El coste variable medio crece con la producción cuando $\CMg >
   \CVMe$.
 
-** La curva de\NL coste fijo medio
+
+** La curva de coste fijo medio
 
 #+figure: ./figures/fig-t30-sr07.pdf 0.55
 
@@ -161,7 +179,8 @@
   producción:
   \[ \CFMe(Q) = \frac{r \Kbar}{Q} \]
 
-** La curva de coste medio\NL (I)
+
+** La curva de coste medio (I)
 
 #+figure: ./figures/fig-t30-sr08.pdf 0.55
 
@@ -170,7 +189,8 @@
 - La curva de $\CMg$ corta con la de $\CMe$ en el mínimo coste
   medio.
 
-** La curva de coste medio\NL (y II)
+
+** La curva de coste medio (y II)
 
 #+figure: ./figures/fig-t30-sr08.pdf 0.55
 

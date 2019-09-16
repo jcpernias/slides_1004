@@ -11,6 +11,7 @@
 
 * Changes in income
 
+
 ** Variations in income
 
 #+figure: ./figures/fig-t15-crc2.pdf 0.55
@@ -20,7 +21,7 @@
 - Prices do not change: the budget lines are parallel.
 
 
-** Changes in the\NL consumption decision
+** Changes in the consumption decision
 
 #+figure: ./figures/fig-t15-crc3.pdf 0.55
 
@@ -59,7 +60,8 @@
 
 * Variations in the price of a good
 
-** Changes in the\NL price of a good
+
+** Changes in the price of a good
 
 #+figure: ./figures/fig-t15-cpc2.pdf 0.55
 
@@ -69,11 +71,12 @@
   price of $X$.
 
 
-** Changes in the\NL consumption decision
+** Changes in the consumption decision
 
 #+figure: ./figures/fig-t15-cpc3.pdf 0.55
 
 - The consumer chooses a different basket for each $P_X$.
+
 
 ** Price-consumption curve
 
@@ -84,7 +87,7 @@
   monetary rent and.
 
 
-** Individual demand\NL curve
+** Individual demand curve
 
 #+figure: ./figures/fig-t15-dem.pdf 0.55
 

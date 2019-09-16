@@ -9,35 +9,39 @@
 #+end_bibbox
 
 * La elección intertemporal
-** La decisión de consumo\NL en dos periodos
+
+** La decisión de consumo en dos periodos
 - El consumidor vive durante dos periodos temporales.
 - En cada periodo dispone de una renta monetaria: $M_1$ en el primer
   periodo y $M_2$ en el segundo.
 - Debe decidir qué parte de la renta de cada periodo dedica al
   consumo: $C_1$ y $C_2$.
 
-** Los mercados\NL financieros
+
+** Los mercados financieros
 - El consumidor tiene acceso a un mercado financiero donde se
   determina el tipo de interés, $r$.
 - En el primer periodo puede prestar o pedir prestado al tipo de
   interés de mercado.
 
 
-** Las preferencias\NL intertemporales\NL (I)
+** Las preferencias intertemporales (I)
 - El consumidor tiene unas preferencias regulares sobre $C_1$ y $C_2$.
 - La pendiente en un punto de una curva de indiferencia es la \RMS{}
   con signo negativo.
 - A partir de la función de utilidad, $U = U(C_1, C_2)$:
   \[\RMS = \frac{\mlabel{\UMgLabel_{C_1}}}{\mlabel{\UMgLabel_{C_2}}} \]
 
-** Las preferencias\NL intertemporales\NL (y II)
+
+** Las preferencias intertemporales (y II)
 - Si $\RMS > 1$ el consumidor está dispuesto a renunciar a más de 1 €
   de consumo futuro a cambio de incrementar en 1 € su consumo
   presente: *preferencia por el consumo presente*.
 - Cuando $\RMS < 1$ el consumidor valora 1 € de consumo futuro más que
   1 € de consumo presente: *preferencia por el consumo futuro*.
 
-** La restricción\NL presupuestaria\NL (I)
+
+** La restricción presupuestaria (I)
 
 #+figure: ./figures/fig-t21-ciri01.pdf 0.55
 
@@ -45,7 +49,8 @@
   prestar. En este caso $(C_1, C_2) = (M_1, M_2)$.
 - El acceso al mercado financiero pone a su disposición más opciones.
 
-** La restricción\NL presupuestaria\NL (II)
+
+** La restricción presupuestaria (II)
 - El consumidor puede pedir prestado para incrementar su consumo en el
   periodo 1 por encima de su renta en ese periodo:
   \[ C_1 - M_1 > 0 \]
@@ -55,7 +60,8 @@
 - Restricción intertemporal cuando pide prestado:
   \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1\]
 
-** La restricción\NL presupuestaria\NL (y III)
+
+** La restricción presupuestaria (y III)
 - El consumidor puede prestar parte de su renta del primer periodo. En
   ese caso:
   \[ M_1 - C_1 > 0 \]
@@ -64,7 +70,8 @@
 - Restricción intertemporal cuando presta:
   \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1 \]
 
-** La restricción\NL intertemporal\NL (I)
+
+** La restricción intertemporal (I)
  - En los dos casos llegamos a la misma restricción presupuestaria:
    \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1 \]
  - Podemos reescribir la restricción intertemporal como:
@@ -74,13 +81,15 @@
  - La restricción intertemporal en términos de valores futuros:
    \[  M_1(1+r) + M_2 = C_1(1 + r) + C_2 \]
 
-** La restricción\NL intertemporal\NL (II)
+
+** La restricción intertemporal (II)
 
 #+figure: ./figures/fig-t21-ciri02.pdf 0.55
 
 - La pendiente de la restricción intertemporal es igual a $-(1+r)$
 
-** La restricción\NL intertemporal\NL (y III)
+
+** La restricción intertemporal (y III)
 
 #+figure: ./figures/fig-t21-ciri03.pdf 0.55
 
@@ -88,7 +97,8 @@
   alrededor del punto de las dotaciones iniciales.
 - Si $r$ aumenta, la recta gira en sentido horario.
 
-** La elección\NL intertemporal\NL (I)
+
+** La elección intertemporal (I)
 - El consumidor racional elige la combinación de consumo presente y
   futuro sobre su restricción intertemporal que le reporta un mayor
   nivel de satisfacción.
@@ -96,7 +106,8 @@
 - Si la solución es interior se cumple la condición de tangencia:
   \[ \RMS{} = 1 + r \]
 
-** La elección\NL intertemporal\NL (II)
+
+** La elección intertemporal (II)
 
 #+figure: ./figures/fig-t21-ciri04.pdf 0.55
 
@@ -104,7 +115,8 @@
   \[ M_1 > C_1 \]
 - El consumidor presta parte de su renta en el periodo inicial.
 
-** La elección\NL intertemporal\NL (y III)
+
+** La elección intertemporal (y III)
 
 #+figure: ./figures/fig-t21-ciri05.pdf 0.55
 
@@ -113,7 +125,9 @@
 - El consumidor pide un préstamo en el primer periodo.
 
 
+
 * El ahorro
+
 ** El ahorro
 - El ahorro del consumidor en el primer periodo es
   \[ S = M_1 - C_1 \]
@@ -123,14 +137,16 @@
   negativo:
   \[ S = M_1 - C_1 < 0 \]
 
-** La curva de ahorro\NL (I)
+
+** La curva de ahorro (I)
 - La *curva de ahorro* indica la cantidad de renta que ahorra el
   consumidor para cada posible tipo de interés:
   \[ S = S(r) \]
 - La obtenemos analizando las diferentes elecciones de consumo
   presente y futuro conforme varía el tipo de interés.
 
-** La curva de ahorro\NL (II)
+
+** La curva de ahorro (II)
 
 #+figure: ./figures/fig-t21-ciri06.pdf 0.55
 
@@ -138,7 +154,8 @@
   tipo de interés aumenta el ahorro de los prestatarios.
 - El efecto sustitución y el efecto renta se refuerzan mutuamente.
 
-** La curva de ahorro\NL (III)
+
+** La curva de ahorro (III)
 
 #+figure: ./figures/fig-t21-ciri07.pdf 0.55
 
@@ -148,7 +165,7 @@
   tipo de interés (aunque el ahorro seguiría siendo positivo).
 
 
-** La curva de ahorro\NL (y IV)
+** La curva de ahorro (y IV)
 
 #+figure: ./figures/fig-t21-cisv01.pdf 0.55
 

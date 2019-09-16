@@ -11,6 +11,7 @@
 
 * Consumer preferences
 
+
 ** Completeness
 - The *completeness* assumption states that the consumer is able to rank any two baskets according to his preferences.
 - If a consumer has to compare two baskets, $A$ and $B$,
@@ -20,13 +21,13 @@
   + or he is indifferent between them: $A \sim B$.
 
 
-** Non-satiation\NL (I)
+** Non-satiation (I)
 - When the assumption of *non-satiation* is fulfilled a consumer
   prefers baskets containing more units of, at least one of the goods
   and not less of the other goods.
 
 
-** Non-satiation\NL (II)
+** Non-satiation (II)
 - Under this assumption, we can say that:
   + $A = (2, 3) \succ B = (1, 3)$.
   + $A = (2, 3) \succ C = (1, 1)$.
@@ -34,51 +35,51 @@
   rank the baskets $A=(2, 3)$ and $D = (1, 4)$.
 
 
-** Non-satiation\NL (and III)
+** Non-satiation (and III)
 #+figure: ./figures/fig-t11-ci02.pdf 0.45
 
 - $M \succ A$.
 - $A \succ P$.
 
 
-** Indifference curves\NL (I)
+** Indifference curves (I)
 - An *indifference curve* is a set of baskets of consumption, and
   includes all baskets that are indifferent to each other.
 - Each basket belongs to an indifference curve.
 
 
-** Indifference curves\NL (II)
+** Indifference curves (II)
 #+figure: ./figures/fig-t11-ci03.pdf 0.45
 
 - Baskets which are indifferent to $A$ cannot be in the shaded areas (non-satiation assumption).
 
 
-** Indifference curves\NL (III)
+** Indifference curves (III)
 #+figure: ./figures/fig-t11-ci04.pdf 0.45
 
 - We apply the same reasoning to other baskets indifferent to $A$.
 
 
-** Indifference curves\NL (IV)
+** Indifference curves (IV)
 #+figure: ./figures/fig-t11-ci05.pdf 0.45
 
 - The indifference curve has a negative slope.
 
 
-** Indifference curves\NL (and V)
+** Indifference curves (and V)
 #+figure: ./figures/fig-t11-ci06.pdf 0.45
 
 - Baskets preferred to $A$ are placed above and to the right of the indifference curve.
 - None of the baskets placed below and to the left of the indifference curve is preferred to $A$.
 
 
-** Transitivity\NL (I)
+** Transitivity (I)
 - The *transitivity* assumption implies a certain type of consistency in the consumer preferences.
 - If $A \succ B$ and $B \succ C$, then $A \succ C$.
 - If $A \sim B$ and $B \sim C$, then $A \sim C$.
 
 
-** Transitivity\NL (and II)
+** Transitivity (and II)
 #+figure: ./figures/fig-t11-tr01.pdf 0.45
 
 - If the assumption of transitivity is fulfilled, each basket belongs
@@ -87,21 +88,21 @@
   \[B \sim C \text{\ and\ } C \sim A\text{, but\ } B \succ A.\]
 
 
-** Indifference curves\NL map
+** Indifference curves map
 
 #+figure: ./figures/fig-t11-map01.pdf 0.45
 
 - The *indifference curves map* represents the preferences of a consumer.
 
 
-** Marginal Rate\NL of Substitution\NL (I)
+** Marginal Rate of Substitution (I)
 - The *Marginal Rate of Substitution*, $\RMS$, measures the valuation
   by a consumer of a good in terms of another good.
 - ¿To how many units of good $Y$, at most, would I be willing to give
   up in order to obtain another unit of good $X$?
 
 
-** Marginal Rate\NL of Substitution\NL (II)
+** Marginal Rate of Substitution (II)
 
 #+figure: ./figures/fig-t11-rms01.pdf 0.45
 
@@ -109,7 +110,7 @@
   \[ \RMS \approx \left| \frac{\Delta Y}{\Delta X} \right|_{I_0} \]
 
 
-** Marginal Rate\NL of Substitution\NL (and III)
+** Marginal Rate of Substitution (and III)
 
 #+figure: ./figures/fig-t11-rms02.pdf 0.45
 
@@ -136,35 +137,37 @@
 - Other technical assumptions.
 
 
+
 * Other cases: Consumer preferences
 
 
-** Other cases\NL of preferences\NL (I)
+** Other cases of preferences (I)
 
 #+figure: ./figures/fig-t11-nreg01.pdf 0.45
 
 - *Perfect substitutes*.
 
 
-** Other cases\NL of preferences\NL (II)
+** Other cases of preferences (II)
 
 #+figure: ./figures/fig-t11-nreg02.pdf 0.45
 
 - *Perfect complements*.
 
 
-** Other cases\NL of preferences\NL (III)
+** Other cases of preferences (III)
 
 #+figure: ./figures/fig-t11-nreg03.pdf 0.45
 
 - $Y$ is a *neutral good*.
 
 
-** Other cases\NL of preferences\NL (and IV)
+** Other cases of preferences (and IV)
 
 #+figure: ./figures/fig-t11-nreg04.pdf 0.45
 
 - $X$ is a *bad*.
+
 
 
 
@@ -188,7 +191,7 @@
   \[ U(X, Y) = \overline{U} \]
 
 
-** Example\NL (I)
+** Example (I)
 - Utility function:
   \[ U(X, Y) = X \cdot Y \]
 - The utility associated with basket $A = (15, 20)$ is:
@@ -197,7 +200,7 @@
   \[ U(X, Y) = X\cdot Y = 300 \]
 
 
-** Example\NL (and II)
+** Example (and II)
 
 #+figure: ./figures/fig-t11-fu01.pdf 0.45
 
@@ -205,21 +208,21 @@
   \[ Y = \frac{300}{X} \]
 
 
-** Ordinal utility\NL (I)
+** Ordinal utility (I)
 
 #+figure: ./figures/fig-t11-map02.pdf 0.45
 
 - The utility function assigns each indifference curve to a different number.
 
 
-** Ordinal utility\NL (II)
+** Ordinal utility (II)
 - The utility function values have no special meaning, apart from
   ordering the baskets.
 - There are infinite utility functions that represent exactly the same
   preferences.
 
 
-** Ordinal utility\NL (and III)
+** Ordinal utility (and III)
 
 #+figure: ./figures/fig-t11-map03.pdf 0.48
 
@@ -228,7 +231,7 @@
 - Both $U(X, Y)$ and $V(X, Y)$ represent the same preferences.
 
 
-** Marginal utility\NL (I)
+** Marginal utility (I)
 - The *marginal utility* of $X$ measures the variation in consumer’s
   utility with variations in the consumption of $X$, but /keeping
   constant the consumption of $Y$/.
@@ -238,14 +241,14 @@
      \UMY = \frac{\partial U(X, Y)}{\partial Y} \]
 
 
-** Marginal utility\NL (and II)
+** Marginal utility (and II)
 - If the assumption of non-satiation is fulfilled:
   \[ \UMX > 0; \quad \UMY > 0. \]
 - Except for the sign, the value of marginal utility has no
   interesting interpretation.
 
 
-** Marginal utility and RMS\NL (I)
+** Marginal utility and RMS (I)
 
 - Variation in utility when the consumptions of $X$ and $Y$ change
   simultaneously:
@@ -255,7 +258,7 @@
   \[ 0 = \UMX\; \diff X + \UMY\; \diff Y \]
 
 
-** Marginal utility and RMS\NL (II)
+** Marginal utility and RMS (II)
 
 - The slope of the indifference curve is:
   \[ \left. \frac{\diff Y}{\diff X} \right|_{U=\overline{U}} =
@@ -265,7 +268,7 @@
   \[ \RMS =  \frac{\UMX}{\UMY} \]
 
 
-** Marginal utility and RMS\NL (III)
+** Marginal utility and RMS (III)
 
 - Example: $U(X, Y) = XY$.
 - Marginal utilities:
@@ -279,7 +282,7 @@
   \[\RMS = \frac{\UMX}{\UMY} = \frac{Y}{X} \]
 
 
-** Marginal utility and RMS\NL (and IV)
+** Marginal utility and RMS (and IV)
 
 #+figure: ./figures/fig-t11-fu02.pdf 0.45
 

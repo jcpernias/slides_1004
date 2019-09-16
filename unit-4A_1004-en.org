@@ -9,12 +9,14 @@
 #+end_bibbox
 
 * The intertemporal choice
-** The consumption\NL decision in two periods
+
+** The consumption decision in two periods
 - The consumer lives for two time periods.
 - In each period he/she has a monetary income: $M_1$ in the first
   period and $M_2$ in the second one.
 - He/she must decide which fraction of the income of each period is
   used for consumption: $C_1$ y $C_2$.
+
 
 ** The financial markets
 - The consumer has access to a financial market where the interest
@@ -23,14 +25,15 @@
   interest rate.
 
 
-** Intertemporal\NL preferences\NL (I)
+** Intertemporal preferences (I)
 - The consumer has regular preferences on $C_1$ and $C_2$.
 - The slope at a point on a indifference curve is the \RMS{} with a
   negative sign.
 - From the utility function, $U = U(C_1, C_2)$:
   \[\RMS = \frac{\mlabel{\UMgLabel_{C_1}}}{\mlabel{\UMgLabel_{C_2}}} \]
 
-** Intertemporal\NL preferences\NL (and II)
+
+** Intertemporal preferences (and II)
 - If $\RMS > 1$ the consumer is willing to give up more than 1 € of
   future consumption in exchange for increasing in 1 € present
   consumption: *preference for present consumption*.
@@ -38,7 +41,8 @@
   than 1 € of present consumption: *preference for future
   consumption*.
 
-** The budget constraint\NL (I)
+
+** The budget constraint (I)
 
 #+figure: ./figures/fig-t21-ciri01.pdf 0.55
 
@@ -46,7 +50,8 @@
   money. In this case $(C_1, C_2) = (M_1, M_2)$.
 - Access to the financial market provides him/her with more options.
 
-** The budget constraint\NL (II)
+
+** The budget constraint (II)
 - The consumer can borrow money to increase his/her consumption in
   period 1 above the income in that period:
   \[ C_1 - M_1 > 0 \]
@@ -56,7 +61,8 @@
 - Intertemporal budget constraint when borrowing:
   \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1\]
 
-** The budget constraint\NL (and III)
+
+** The budget constraint (and III)
 - The consumer can lend a part of his/her income in the first period. In this case:
   \[ M_1 - C_1 > 0 \]
 - Consumption in period 2 would be higher than the income in that period:
@@ -64,7 +70,8 @@
 - Intertemporal budget constraint when lending:
   \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1 \]
 
-** The intertemporal\NL budget constraint\NL (I)
+
+** The intertemporal budget constraint (I)
  - In both cases we reach the same budget constraint:
    \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1 \]
  - We can rewrite the intertemporal budget constraint as:
@@ -73,13 +80,15 @@
  - The intertemporal budget constraint in terms of future values:
    \[  M_1(1+r) + M_2 = C_1(1 + r) + C_2 \]
 
-** The intertemporal\NL budget constraint\NL (II)
+
+** The intertemporal budget constraint (II)
 
 #+figure: ./figures/fig-t21-ciri02.pdf 0.55
 
 - The slope of the intertemporal budget constraint is equal to $-(1+r)$
 
-** The intertemporal\NL budget constraint\NL (and III)
+
+** The intertemporal budget constraint (and III)
 
 #+figure: ./figures/fig-t21-ciri03.pdf 0.55
 
@@ -87,7 +96,8 @@
   pivots around the point of initial endowments.
 - If $r$ increases, the line rotates clockwise.
 
-** The intertemporal\NL choice\NL (I)
+
+** The intertemporal choice (I)
 - The rational consumer chooses the combination of present and future
   consumption on his/her intertemporal budget constraint that brings a
   higher satisfaction level.
@@ -95,7 +105,8 @@
 - If the solution is interior the tangency condition is fulfilled:
   \[ \RMS{} = 1 + r \]
 
-** The intertemporal\NL choice\NL (II)
+
+** The intertemporal choice (II)
 
 #+figure: ./figures/fig-t21-ciri04.pdf 0.55
 
@@ -103,7 +114,8 @@
   \[ M_1 > C_1 \]
 - The consumer lends a part of his/her income in the initial period.
 
-** The intertemporal\NL choice\NL (and III)
+
+** The intertemporal choice (and III)
 
 #+figure: ./figures/fig-t21-ciri05.pdf 0.55
 
@@ -112,7 +124,10 @@
 - The consumer requests a loan in the first period.
 
 
-** Saving
+
+* Saving
+
+** Savings
 - Saving of consumer in the first period is
   \[ S = M_1 - C_1 \]
 - When the consumer lends a part of his/her income saving is positive:
@@ -120,14 +135,16 @@
 - When the consumer borrows in the first period saving is negative:
   \[ S = M_1 - C_1 < 0 \]
 
-** The savings curve\NL (I)
+
+** The savings curve (I)
 - The *savings curve* indicates the quantity of income the consumer
   saves for each possible interest rate:
   \[ S = S(r) \]
 - It is obtained by analysing the different choices of present and
   future consumption as the interest rate varies.
 
-** The savings curve\NL (II)
+
+** The savings curve (II)
 
 #+figure: ./figures/fig-t21-ciri06.pdf 0.55
 
@@ -135,7 +152,8 @@
   in the interest rate increases the savings of borrowers.
 - The substitution effect and the income effect reinforce each other.
 
-** The savings curve\NL (III)
+
+** The savings curve (III)
 
 #+figure: ./figures/fig-t21-ciri07.pdf 0.55
 
@@ -145,7 +163,7 @@
   rate (although the savings would still be positive).
 
 
-** The savings curve\NL (and IV)
+** The savings curve (and IV)
 
 #+figure: ./figures/fig-t21-cisv01.pdf 0.55
 

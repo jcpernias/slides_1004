@@ -11,6 +11,7 @@
 
 * La conducta del consumidor
 
+
 ** El consumidor
 - El *consumidor* dispone, en un determinado periodo de tiempo, de una
   *renta monetaria* de $M$ euros.
@@ -24,14 +25,14 @@
 - Un único período temporal.
 
 
-** Cestas de consumo\NL (I)
+** Cestas de consumo (I)
 - Una *cesta de consumo* es una determinada combinación de unidades
   del bien $X$ y unidades del bien $Y$.
 - Representa cuántas unidades de cada bien son consumidas en un
   determinado periodo de tiempo.
 
 
-** Cestas de consumo\NL (y II)
+** Cestas de consumo (y II)
 #+figure: ./figures/fig-t10-xy.pdf 0.45
 
 - La cesta $A$ está compuesta por 1 unidad del bien $X$ y 3 unidades
@@ -45,6 +46,7 @@
 
 
 * La restricción presupuestaria
+
 
 ** Gasto
 - Si un consumidor elige la cesta $(X_0, Y_0)$, su *gasto total* es
@@ -60,7 +62,7 @@
   \[ M \geq P_X X + P_Y Y \]
 
 
-** La restricción\NL presupuestaria\NL (I)
+** La restricción presupuestaria (I)
 - La *restricción presupuestaria* son todas aquellas cestas que
   implican un gasto exactamente igual a la renta del consumidor:
   \[ M = P_X X + P_Y Y \]
@@ -69,7 +71,7 @@
   \[ Y = \frac{M}{P_Y} - \frac{P_X}{P_Y} X \]
 
 
-** La restricción\NL presupuestaria\NL (y II)
+** La restricción presupuestaria (y II)
 #+figure: ./figures/fig-t10-rp1.pdf 0.5
 
 - Los puntos de corte con los ejes son los *consumos máximos* de cada
@@ -87,7 +89,7 @@
 #   de agua por kg de pan} \]
 
 
-** Ejemplo\NL (I)
+** Ejemplo (I)
 - El conjunto de oportunidades cuando $M = 120$ €, $P_X = 6$ €/u. y
   $P_Y = 3$ €/u. está formado por todas las cestas que satisfacen:
   \[ 120 \geq 6 X + 3 Y \]
@@ -97,7 +99,7 @@
   \[ Y = 40 - 2 X \]
 
 
-** Ejemplo\NL (II)
+** Ejemplo (II)
 
 #+figure: ./figures/fig-t10-rp1b.pdf 0.45
 
@@ -106,7 +108,7 @@
 - Precio relativo: $P_X/P_Y = 2$ unidades de $Y$ por cada unidad de $X$.
 
 
-** Ejemplo\NL (y III)
+** Ejemplo (y III)
 #+figure: ./figures/fig-t10-rp3.pdf 0.45
 
 - Gasto asociado a la cesta
@@ -115,13 +117,13 @@
   - $C$: $6\cdot 5 + 3 \cdot 30 = 120 € = M$
 
 
-** Precio relativo y\NL coste de oportunidad\NL (I)
+** Precio relativo y coste de oportunidad (I)
 - Si el consumidor gasta toda su renta, el *coste de oportunidad* de
   consumir una unidad adicional del bien $X$ son las unidades de $Y$
   que debe dejar de consumir.
 
 
-** Precio relativo y\NL coste de oportunidad\NL (y II)
+** Precio relativo y coste de oportunidad (y II)
 #+figure: ./figures/fig-t10-rp5.pdf 0.45
 
 - Por cada unidad adicional de $X$, el consumidor renuncia a 2
@@ -131,7 +133,7 @@
   \[ \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_X}{P_Y} = \frac{6}{3} = 2\]
 
 
-** Variaciones en un precio\NL (I)
+** Variaciones en un precio (I)
 #+figure: ./figures/fig-t10-rp6.pdf 0.45
 
 - Una disminución del precio de $X$:
@@ -139,7 +141,7 @@
 - El conjunto de oportunidades se expande.
 
 
-** Variaciones en un precio\NL (y II)
+** Variaciones en un precio (y II)
 #+figure: ./figures/fig-t10-rp7.pdf 0.45
 
 - Un aumento del precio de $Y$:
@@ -157,7 +159,7 @@
 - El conjunto de oportunidades se expande.
 
 
-** Variaciones en\NL precios y renta\NL (I)
+** Variaciones en precios y renta (I)
 #+figure: ./figures/fig-t10-rp10.pdf 0.45
 
 - Disminución de $P_X$, $P'_X < P_X$, y disminución de $M$, $M' < M$.
@@ -165,7 +167,7 @@
 - Pero otras opciones que antes no eran accesibles, ahora lo son.
 
 
-** Variaciones en\NL precios y renta\NL (y II)
+** Variaciones en precios y renta (y II)
 #+figure: ./figures/fig-t10-rp11.pdf 0.45
 
 - Cambio de precios y renta en la misma proporción:
@@ -174,6 +176,7 @@
 
 
 * Extensiones
+
 
 ** Bienes compuestos
 - Centramos nuestra atención en el consumo de un bien: $X$.

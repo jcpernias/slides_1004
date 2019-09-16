@@ -11,6 +11,7 @@
 
 * Variaciones en la renta
 
+
 ** Cambios en la renta
 
 #+figure: ./figures/fig-t15-crc2.pdf 0.55
@@ -19,12 +20,14 @@
   presupuestaria se desplaza hacia la derecha.
 - Los precios no cambian: las rectas presupuestarias son paralelas.
 
-** Cambios en la\NL decisión de consumo
+
+** Cambios en la decisión de consumo
 
 #+figure: ./figures/fig-t15-crc3.pdf 0.55
 
 - El consumidor selecciona una cesta diferente para cada nivel de
   renta monetaria.
+
 
 ** Curva renta consumo
 
@@ -34,6 +37,7 @@
   elige un consumidor para cada posible valor de la renta monetaria,
   manteniendo constantes los precios de los bienes.
 
+
 ** Curva de Engel
 
 #+figure: ./figures/fig-t15-eng.pdf 0.55
@@ -41,6 +45,7 @@
 - La *curva de Engel* relaciona la cantidad demandada de un bien con
   la renta monetaria de un consumidor, manteniendo constantes los
   precios de los bienes.
+
 
 ** Bienes normales y bienes inferiores
 
@@ -53,9 +58,11 @@
   \[ \frac{\diff X}{\diff M} < 0 \]
 
 
+
 * Variaciones en el precio de un bien
 
-** Cambios en el\NL precio de un bien
+
+** Cambios en el precio de un bien
 
 #+figure: ./figures/fig-t15-cpc2.pdf 0.55
 
@@ -64,11 +71,13 @@
 - La pendiente de la recta presupuestaria es menos pronunciada cuanto
   menor es el precio de $X$.
 
-** Cambios en la\NL decisión de consumo
+
+** Cambios en la decisión de consumo
 
 #+figure: ./figures/fig-t15-cpc3.pdf 0.55
 
 - El consumidor elige una cesta diferente para cada $P_X$.
+
 
 ** Curva precio consumo
 
@@ -78,13 +87,15 @@
   elige para cada posible precio del bien $X$, manteniendo constantes
   la renta monetaria y el resto de precios.
 
-** La curva de\NL demanda individual
+
+** La curva de demanda individual
 
 #+figure: ./figures/fig-t15-dem.pdf 0.55
 
 - La *curva de demanda* relaciona la cantidad demandada de un bien con
   el precio de ese bien, manteniendo constantes la renta monetaria y
   el precio de los restantes bienes.
+
 
 ** Bienes sustitutivos y complementarios
 - La \CPC{} muestra también como varía el consumo de $Y$ conforme

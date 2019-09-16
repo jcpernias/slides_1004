@@ -11,6 +11,7 @@
 
 * Introducción
 
+
 ** Ley de la demanda
 
 #+figure: ./figures/fig-t16-eres20.pdf 0.55
@@ -31,9 +32,11 @@
 - ¿Bajo qué condiciones tiene pendiente positiva la curva de demanda?
 
 
+
 * Cambio en el precio de un bien
 
-** Efectos del cambio\NL de un precio
+
+** Efectos del cambio de un precio
 Si el precio del bien $X$ aumenta:
 - Cambian los precios relativos. El consumidor trata de *sustituir* el
   consumo del bien $X$, ahora relativamente más caro, por el de otros
@@ -53,7 +56,7 @@ Si el precio del bien $X$ aumenta:
 - $\ET = \ES + \ER$
 
 
-** Descomposición\NL del efecto total\NL (I)
+** Descomposición del efecto total (I)
 - ¿Cómo podemos determinar qué parte del cambio se debe al efecto
   sustitución y qué parte se debe al efecto renta?
 - Planteemos cuál sería la cantidad demandada por el consumidor si su
@@ -64,7 +67,7 @@ Si el precio del bien $X$ aumenta:
   $X_0$ y después de la subida del precio, $X_1$.
 
 
-** Descomposición\NL del efecto total\NL (y II)
+** Descomposición del efecto total (y II)
 
 - A partir de la cantidad demandada inicial, $X_0$, la cantidad
   demandada final, $X_1$ y la cantidad que se hubiese demandado si
@@ -78,21 +81,21 @@ Si el precio del bien $X$ aumenta:
 |                     |             | y la renta real.           |
 
 
-** La descomposición\NL de Hicks
+** La descomposición de Hicks
 
 - Hicks equipara la renta real con el nivel de utilidad.
 - Si sólo cambian los precios relativos y la renta real es constante, la cesta óptima debe de estar en la misma curva de indiferencia que la elección inicial.
 - Para descomponer el efecto total, buscamos un punto de la curva de indiferencia inicial donde la \RMS{} coincida con los precios relativos finales.
 
 
-** Ejemplo\NL (I)
+** Ejemplo (I)
 - Función de utilidad: $U(X, Y) = X^{2/3}Y^{1/3}$.
 - Renta monetaria: $M = 72$ €.
 - Precios iniciales: $P_X = 2$ €/ud. y $P_Y = 1$ €/ud.
 - Precio final de $X$: $P'_X = 16$ €/ud.
 
 
-** Ejemplo\NL (II)
+** Ejemplo (II)
 
 #+figure: ./figures/fig-t16-eres02.pdf 0.55
 
@@ -100,7 +103,7 @@ Si el precio del bien $X$ aumenta:
   \[ \ET = 3 - 24 = -21 \]
 
 
-** Ejemplo\NL (III)
+** Ejemplo (III)
 
 #+figure: ./figures/fig-t16-eres03.pdf 0.55
 
@@ -109,7 +112,7 @@ Si el precio del bien $X$ aumenta:
 - La \RMS{} en $E_H$ es igual al precio relativo final: $P'_X/P_Y$.
 
 
-** Ejemplo\NL (y IV)
+** Ejemplo (y IV)
 
 #+figure: ./figures/fig-t16-eres04.pdf 0.55
 
@@ -118,14 +121,16 @@ Si el precio del bien $X$ aumenta:
 - $\ET = \ES + \ER = -21$.
 
 
+
 * Signos de los efectos
-** El signo del\NL efecto sustitución
+
+** El signo del efecto sustitución
 - El *efecto sustitución* siempre tiene *signo negativo*.
 - La variación en la cantidad debida al efecto sustitución tiene el
   signo contrario a la variación en el precio.
 
 
-** El signo del\NL efecto renta
+** El signo del efecto renta
 - Un aumento del precio implica un disminución de la renta real.
 - Si el *bien es normal*, un aumento del precio disminuye la demanda
   como consecuencia del efecto renta. En este caso, el *efecto renta*
@@ -135,18 +140,20 @@ Si el precio del bien $X$ aumenta:
   *signo positivo*.
 
 
-** Bienes normales\NL (I)
+** Bienes normales (I)
 - El *efecto total* de un *bien normal* tiene *signo negativo*:
   \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  +\underset{(-)}{\ER} \]
 
-** Bienes normales\NL (y II)
+
+** Bienes normales (y II)
 
 #+figure: ./figures/fig-t16-eres10.pdf 0.55
 - El efecto sustitución y el efecto renta se refuerzan mutuamente.
 
 - Curva de demanda con pendiente negativa.
 
-** Bienes inferiores\NL (I)
+
+** Bienes inferiores (I)
 
 - El *efecto total* de un bien inferior puede tener *signo negativo o
   positivo*:
@@ -159,14 +166,15 @@ Si el precio del bien $X$ aumenta:
   \big(|\ER| < |\ES|\big) \]
 
 
-** Bienes inferiores\NL (y II)
+** Bienes inferiores (y II)
 
 #+figure: ./figures/fig-t16-eres11.pdf 0.55
 
 - El efecto renta contrarresta parcialmente el efecto sustitución.
 - Curva de demanda con pendiente negativa.
 
-** Bienes Giffen\NL (I)
+
+** Bienes Giffen (I)
 
 - Un bien Giffen es un bien inferior cuyo efecto renta es mayor, en
   términos absolutos, que el efecto sustitución:
@@ -174,7 +182,7 @@ Si el precio del bien $X$ aumenta:
   \big(|\ER| > |\ES|\big) \]
 
 
-** Bienes Giffen\NL (II)
+** Bienes Giffen (II)
 
 #+figure: ./figures/fig-t16-eres12.pdf 0.55
 
@@ -182,7 +190,7 @@ Si el precio del bien $X$ aumenta:
 - Curva de demanda con pendiente positiva.
 
 
-** Bienes Giffen\NL (y III)
+** Bienes Giffen (y III)
 
 - ¿Bajo qué condiciones podemos encontrar un bien Giffen?
   + Bien inferior.
@@ -190,15 +198,17 @@ Si el precio del bien $X$ aumenta:
   + Efecto renta grande (el gasto en el bien representa una parte importante del presupuesto de los consumidores, por ejemplo).
 
 
+
 * Descomposición de Slutsky                                        :noexport:
 
-** Descomposición\NL de Slutsky\NL (I)
+
+** Descomposición de Slutsky (I)
 
 - Slutsky identifica *renta real* con *poder de compra*.
 - La elección cuando sólo cambian los precios relativos debe de encontrarse en una recta presupuestaria que permita comprar la cesta inicial a los precios finales.
 
 
-** Descomposición\NL de Slutsky\NL (II)
+** Descomposición de Slutsky (II)
 
 #+figure: ./figures/fig-t16-eres05a.pdf 0.55
 
@@ -209,7 +219,7 @@ Si el precio del bien $X$ aumenta:
 
 
 
-** Descomposición\NL de Slutsky\NL (III)
+** Descomposición de Slutsky (III)
 
 #+figure: ./figures/fig-t16-eres05.pdf 0.55
 
@@ -218,7 +228,7 @@ Si el precio del bien $X$ aumenta:
 - $\ET = \ES + \ER = -21$.
 
 
-** Descomposición\NL de Slutsky\NL (y IV)
+** Descomposición de Slutsky (y IV)
 
 #+figure: ./figures/fig-t16-eres06.pdf 0.55
 

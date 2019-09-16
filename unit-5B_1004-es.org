@@ -10,12 +10,14 @@
 #+end_bibbox
 
 * La producción a largo plazo
-** Producción con\NL dos factores variables
+
+** Producción con dos factores variables
 - A largo plazo todos los factores son variables.
 - Función de producción a largo plazo:
   \[ Q = F(K, L) \]
 
-** Producto marginal\NL de los factores
+
+** Producto marginal de los factores
 
 - El *producto marginal del trabajo* es la tasa a la que crece la
   producción por unidad adicional de trabajo:
@@ -23,6 +25,7 @@
 - El *producto marginal del capital* es la tasa a la que crece la
   producción por unidad adicional de capital:
   \[ \PMgK = \frac{\partial Q}{\partial K} = \frac{\partial F(K, L)}{\partial K}  \]
+
 
 ** Las isocuantas
 - Una *isocuanta* es el conjunto de combinaciones de factores con las
@@ -39,7 +42,7 @@
   niveles de producción.
 
 
-** La pendiente\NL de las isocuantas\NL (I)
+** La pendiente de las isocuantas (I)
 - Diferencial total de la función de producción:
   \[ \diff Q = \PMgK \diff K + \PMgL \diff L \]
 - Si nos movemos a lo largo de una isocuanta, $\diff Q = 0$. Entonces:
@@ -48,7 +51,8 @@
   \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} =
        -\frac{\PMgL}{\PMgK} \]
 
-** La pendiente\NL de las isocuantas\NL (y II)
+
+** La pendiente de las isocuantas (y II)
 - Si una combinación de factores es técnicamente eficiente para
   obtener un determinado nivel de producción se debe cumplir que:
   $\PMgL > 0$ y $\PMgK > 0$.
@@ -58,16 +62,19 @@
   \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} =
        -\frac{\PMgL}{\PMgK} < 0\]
 
-** La relación marginal de\NL sustitución técnica\NL (I)
+
+** La relación marginal de sustitución técnica (I)
 - La *relación marginal de sustitución técnica*, $\RMST$, es el número
   de unidades de capital que pueden ser sustituidas por unidad de
   trabajo, manteniendo el nivel de producción constante.
 
-** La relación marginal de\NL sustitución técnica\NL (y II)
+
+** La relación marginal de sustitución técnica (y II)
 - Coincide con la pendiente de la isocuanta con signo negativo:
   \[ \RMST = -\left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} \]
 - Por tanto:
   \[ \RMST = \frac{\PMgL}{\PMgK} \]
+
 
 ** Convexidad
 
@@ -77,7 +84,7 @@
 - La convexidad implica que la $\RMST$ es decreciente.
 
 
-** Convexidad y\NL rendimientos\NL decrecientes de\NL un factor
+** Convexidad y rendimientos decrecientes de un factor
 - *Convexidad y rendimientos decrecientes de un factor* son dos propiedades distintas: una no implica a la otra.
 - Puede cumplirse la ley de rendimientos decrecientes de un factor sin
   que la $\RMST$ sea decreciente:
@@ -86,6 +93,7 @@
   rendimientos decrecientes de un factor:
   \[ Q = K L \]
 
+
 ** Sustituibilidad
 
 #+figure: ./figures/fig-t26-is05.pdf 0.5
@@ -93,6 +101,7 @@
 - La curvatura de las isocuanta indica el grado de sustituibilidad
   de un factor por otro a la hora de obtener un determinado nivel de
   producción.
+
 
 ** Factores perfectamente sustituibles
 
@@ -103,6 +112,7 @@
 - La $\RMST$ toma siempre el mismo valor.
 - Ejemplo:
   \[ Q = L + K \]
+
 
 ** Función de producción de proporciones fijas
 
@@ -117,14 +127,18 @@
 - Ejemplo:
   \[ Q = \min\{K, L\} \]
 
+
+
 * Los rendimientos de escala
 
-** Los rendimientos\NL de escala\NL (I)
+
+** Los rendimientos de escala (I)
 - *Rendimientos de escala*: ¿en qué medida aumenta la producción
   cuando se incrementa el uso de *todos* los factores en la misma
   proporción?
 
-** Los rendimientos\NL de escala\NL (y II)
+
+** Los rendimientos de escala (y II)
 - Por ejemplo, partimos de una determinada combinación de factores:
   \[ Q_0 = F(4, 3) = 10 \]
 - Triplicamos la utilización de factores y obtenemos un nuevo nivel de
@@ -134,13 +148,15 @@
   proporción que los factores: $Q_1 = 3 Q_0$. Es decir:
   \[   F(3 \cdot 4, 3 \cdot 3) = 3 F(4, 3) \]
 
-** Rendimientos\NL constantes\NL de escala\NL (I)
+
+** Rendimientos constantes de escala (I)
 - Existen *rendimientos constantes de escala* si al aumentar el uso de
   los factores en una proporción $\lambda$, $\lambda > 1$, el nivel de
   producción cambia exactamente en esa misma proporción:
   \[ F(\lambda K, \lambda L) = \lambda F(K, L) \]
 
-** Rendimientos\NL constantes\NL de escala\NL (y II)
+
+** Rendimientos constantes de escala (y II)
 
 #+figure: ./figures/fig-t26-re01.pdf 0.5
 
@@ -148,13 +164,14 @@
 - $C = 3 A$ y $Q_C = 3 Q_A$.
 
 
-** Rendimientos\NL crecientes\NL de escala\NL (I)
+** Rendimientos crecientes de escala (I)
 - Existen *rendimientos crecientes de escala* si al aumentar
   el uso de los factores en una proporción $\lambda$, $\lambda > 1$,
   el nivel de producción se incrementa más que proporcionalmente:
   \[ F(\lambda K, \lambda L) > \lambda F(K, L) \]
 
-** Rendimientos\NL crecientes\NL de escala\NL (y II)
+
+** Rendimientos crecientes de escala (y II)
 
 #+figure: ./figures/fig-t26-re02.pdf 0.5
 
@@ -162,7 +179,7 @@
 - $C = 3 A$ y $Q_C > 3 Q_A$.
 
 
-** Rendimientos\NL decrecientes\NL de escala\NL (I)
+** Rendimientos decrecientes de escala (I)
 - Existen *rendimientos decrecientes de escala* si al aumentar el uso
   de los factores en una proporción $\lambda$, $\lambda > 1$, la
   proporción a la que aumenta el nivel de producción es inferior a
@@ -170,17 +187,19 @@
   \[ F(\lambda K, \lambda L) < \lambda F(K, L) \]
 
 
-** Rendimientos\NL decrecientes\NL de escala\NL (y II)
+** Rendimientos decrecientes de escala (y II)
 
 #+figure: ./figures/fig-t26-re03.pdf 0.5
 
 - $B = 2 A$ y $Q_B < 2 Q_A$.
 - $C = 3 A$ y $Q_B < 3 Q_A$.
 
+
 ** Rendimientos de escala variables
 - Una misma tecnología puede presentar diferentes tipos de
   rendimientos de escala dependiendo del nivel de producción en el que
   opere la empresa.
+
 
 ** Rendimientos de escala y rendimientos de un factor
 - Son conceptos independientes: el tipo de rendimientos de escala no

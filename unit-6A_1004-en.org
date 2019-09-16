@@ -10,15 +10,18 @@
 #+end_bibbox
 
 * Costs in the short run
+
 ** Maximization of profits
 - A *rational* firm makes its decisions with the goal of *maximizing its profits*.
 - We decompose the problem of maximizing profits in two parts:
   + How to minimize the production costs
   + How much to produce
 
+
 ** The firm’s behaviour
 - The firm can purchase at the market price the desired amount of a factor.
 - The firm by itself cannot alter the prices it pays for the factors.
+
 
 ** Total cost
 - *Total cost*: value of the remuneration of the factors at their market prices.
@@ -28,12 +31,14 @@
   \[ C = r K + w L \]
   where $w$ is the wage and $r$ the price of capital.
 
-** Total cost in the\NL short run
+
+** Total cost in the short run
 - In the short run capital is a fixed factor: $K = \Kbar$.
 - Total costs in the short run:
   \[ C = r \Kbar + w L \]
 
-** Fixed and variable\NL costs
+
+** Fixed and variable costs
 - The *fixed costs* are those associated to the use of fixed factors:
   \[ \CF = r \Kbar \]
 - The *variable costs* are the remuneration of variable factors:
@@ -42,15 +47,19 @@
   the variable cost:
   \[ C = \CF + \CV \]
 
+
+
 * Costs curves in the short run
-** Costs and production\NL (I)
+
+** Costs and production (I)
 - In the short run the firm can only vary its level of production by
   varying the usage of labour.
 - Changes in the production level cause changes in the variable costs.
 - The fixed costs are independent of the production level:
   \[ \frac{\diff \CF}{\diff Q} = 0 \]
 
-** Costs and production\NL (II)
+
+** Costs and production (II)
 
 #+figure: ./figures/fig-t30-sr01.pdf 0.55
 
@@ -58,12 +67,14 @@
   using a determined level of labour.
 - In the short run, $Q$ can only be changed by varying $L$.
 
-** Costs and production\NL (and III)
+
+** Costs and production (and III)
 
 #+figure: ./figures/fig-t30-sr02.pdf 0.55
 
 - The inverse of the total product function shows the needed labour to
   reach a determined level of production.
+
 
 ** The variable cost curve
 
@@ -73,6 +84,7 @@
   which a determined level of production can be obtained:
   \[ \CV(Q) = w f^{-1}(Q) \]
 
+
 ** Total cost curve
 
 #+figure: ./figures/fig-t30-sr04.pdf 0.55
@@ -81,7 +93,8 @@
 - The *total cost curve* is obtained by adding the fixed and the
   variable cost for each level of production.
 
-** The cost curves\NL in the short term
+
+** The cost curves in the short term
 - The fixed cost does not depend on the production level:
   \[ \CF(Q) = r \Kbar \]
 - The variable cost is obtained by inverting the total product
@@ -101,6 +114,7 @@
      \frac{\diff \CF}{\diff Q} + \frac{\diff \CV}{\diff Q} =
      \frac{\diff \CV}{\diff Q} \]
 
+
 ** Average cost
 - The *average cost* is the ratio between total cost and production:
   \[ \CMe = \frac{C}{Q} \]
@@ -111,7 +125,7 @@
   \[ \CMe = \CFMe + \CVMe  \]
 
 
-** Relationship between\NL $\PMg$, $\PMe$, $\CMg$ and $\CMe$ \NL (I)
+** Relationship between $\PMg$, $\PMe$, $\CMg$ and $\CMe$  (I)
 - The variable cost is:
   \[ \CV = w L \]
 - Dividing by the level of production, we get the average variable
@@ -124,7 +138,7 @@
      \frac{w}{\PMgL} \]
 
 
-** Relationship between\NL $\PMg$, $\PMe$, $\CMg$ and $\CMe$ \NL (II)
+** Relationship between $\PMg$, $\PMe$, $\CMg$ and $\CMe$  (II)
 
 #+figure: ./figures/fig-t30-sr05.pdf 0.55
 
@@ -132,7 +146,8 @@
   shape of the average and marginal cost curves.
 - $\PMgL$ and $\PMeL$ have a shape of an inverted U.
 
-** Relationship between\NL $\PMg$, $\PMe$, $\CMg$ and $\CMe$ \NL (and III)
+
+** Relationship between $\PMg$, $\PMe$, $\CMg$ and $\CMe$  (and III)
 
 #+figure: ./figures/fig-t30-sr06.pdf 0.55
 
@@ -140,7 +155,8 @@
 - The $\CMg$ curve crosses the $\CVMe$ curve at the minimum of the
   average variable costs.
 
-** Average variable cost\NL and marginal cost\NL curves
+
+** Average variable cost and marginal cost curves
 
 #+figure: ./figures/fig-t30-sr06.pdf 0.55
 
@@ -149,14 +165,15 @@
   \CVMe$.
 
 
-** The average fixed cost\NL curve
+** The average fixed cost curve
 
 #+figure: ./figures/fig-t30-sr07.pdf 0.55
 
 - The *average fixed cost curve* decreases as production increases:
   \[ \CFMe(Q) = \frac{r \Kbar}{Q} \]
 
-** Average cost curve\NL (I)
+
+** Average cost curve (I)
 
 #+figure: ./figures/fig-t30-sr08.pdf 0.55
 
@@ -165,7 +182,7 @@
 - The $\CMg$ curve crosses the $\CMe$ curve at the minimum average cost.
 
 
-** The average cost curve\NL (and II)
+** The average cost curve (and II)
 
 #+figure: ./figures/fig-t30-sr08.pdf 0.55
 

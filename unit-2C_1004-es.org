@@ -11,7 +11,8 @@
 
 * La elección óptima
 
-** Elección racional\NL (I)
+
+** Elección racional (I)
 - El consumidor selecciona, de entre todas las cestas que tiene
   a su alcance, aquélla que le reporta un mayor bienestar:
   #+BEGIN_EXPORT LaTeX
@@ -22,7 +23,7 @@
   #+END_EXPORT
 
 
-** Elección racional\NL (y II)
+** Elección racional (y II)
 - Si se cumple el supuesto de no saturación, la cesta óptima es el
   punto de la restricción presupuestaria por el que pasa la curva de
   indiferencia más alta:
@@ -35,7 +36,9 @@
 
 
 
+
 * Soluciones interiores
+
 
 ** Soluciones interiores
 - *Solución interior*: la cesta óptima $(X^*, Y^*)$ contiene alguna
@@ -43,7 +46,7 @@
   \[ X^* >0; \quad Y^* > 0. \]
 
 
-** Condición de tangencia\NL (I)
+** Condición de tangencia (I)
 #+figure: ./figures/fig-t12-eq01.pdf 0.45
 
 - En el punto $A$: $\RMS > P_X/P_Y$.
@@ -51,14 +54,14 @@
   la valoración del mercado.
 
 
-** Condición de tangencia\NL (II)
+** Condición de tangencia (II)
 #+figure: ./figures/fig-t12-eq01a.pdf 0.45
 
 - El consumidor puede obtener un mayor nivel de satisfacción si
   incrementa su consumo de $X$.
 
 
-** Condición de tangencia\NL (III)
+** Condición de tangencia (III)
 #+figure: ./figures/fig-t12-eq02.pdf 0.45
 
 - En el punto $B$: $\RMS < P_X/P_Y$.
@@ -66,14 +69,14 @@
   la valoración del mercado.
 
 
-** Condición de tangencia\NL (IV)
+** Condición de tangencia (IV)
 #+figure: ./figures/fig-t12-eq02a.pdf 0.45
 
 - El consumidor puede obtener un mayor nivel de satisfacción si
   disminuye su consumo de $X$.
 
 
-** Condición de tangencia\NL (y V)
+** Condición de tangencia (y V)
 #+figure: ./figures/fig-t12-eq03.pdf 0.45
 
 - En el punto $E$: $\RMS = P_X/P_Y$.
@@ -83,13 +86,13 @@
   de $X$.
 
 
-** Ejemplo:\NL solución interior\NL (I)
+** Ejemplo: solución interior (I)
 - Función de utilidad: $U(X, Y) = X Y$.
 - Precios: $P_X = 2$ € por unidad; $P_Y = 2$ € por unidad.
 - Renta monetaria: $M = 70$ €.
 
 
-** Ejemplo:\NL solución interior\NL (y II)
+** Ejemplo: solución interior (y II)
 #+figure: ./figures/fig-t12-ej01.pdf 0.55
 
 - Solución interior:
@@ -97,15 +100,17 @@
 
 
 
+
 * Soluciones de esquina
 
-** Soluciones de esquina\NL (I)
+
+** Soluciones de esquina (I)
 - En una *solución de esquina*, alguno de los bienes no está presente
   en la cesta óptima:
   \[ X^* = M/P_X, Y^* = 0;\quad\text{o}\quad X^* = 0, Y^* = M/P_Y. \]
 
 
-** Soluciones de esquina\NL (II)
+** Soluciones de esquina (II)
 
 #+figure: ./figures/fig-t12-eq10.pdf 0.45
 
@@ -114,7 +119,7 @@
   unidades del bien $X$.
 
 
-** Soluciones de esquina\NL (y III)
+** Soluciones de esquina (y III)
 
 #+figure: ./figures/fig-t12-eq11.pdf 0.45
 
@@ -123,13 +128,13 @@
   unidades del bien $Y$.
 
 
-** Ejemplo:\NL solución de esquina\NL (I)
+** Ejemplo: solución de esquina (I)
 - Función de utilidad: $U(X, Y) = (X + 50) Y$.
 - Precios: $P_X = 2$ € por unidad; $P_Y = 2$ € por unidad.
 - Renta monetaria: $M = 70$ €.
 
 
-** Ejemplo:\NL solución de esquina\NL (y II)
+** Ejemplo: solución de esquina (y II)
 #+figure: ./figures/fig-t12-ej02.pdf 0.55
 
 - Solución de esquina:

@@ -10,7 +10,8 @@
 #+end_bibbox
 
 * Cost minimization in the long run
-** The minimization\NL of the production cost
+
+** The minimization of the production cost
 - The firm chooses the combination of factors that minimizes the cost
   of producing a determined level of production, $\Qbar$:
   #+BEGIN_EXPORT LaTeX
@@ -19,6 +20,7 @@
       \text{subject to\ } \Qbar = F(K, L)
     \end{gather*}
   #+END_EXPORT
+
 
 ** The isoquant
 
@@ -29,7 +31,8 @@
 - The isoquant contains all the options the firm has to obtain $\Qbar$
   units of product.
 
-** The isocost lines\NL (I)
+
+** The isocost lines (I)
 - An *isocost curve* is the set of all the combinations of factors
   that, at market prices, represent the same cost:
   \[ \Cbar = r K + w L \]
@@ -37,7 +40,8 @@
   isocost is a straight line:
   \[ K = \frac{\Cbar}{r} - \frac{w}{r} L \]
 
-** The isocost lines\NL (II)
+
+** The isocost lines (II)
 
 #+figure: ./figures/fig-t31-eq02.pdf 0.5
 
@@ -46,13 +50,15 @@
 - To keep constant the production cost if the firm hires more units of
   $L$, it has to stop using some units of $K$.
 
-** The isocost lines\NL (and III)
+
+** The isocost lines (and III)
 - The slope of the isocost is equal to the relative price of factors
   with negative sign.
 
 - The *relative price of factors*, $w/r$, is the number of units of
   $K$ that can be replaced per unit of $L$ without increasing the cost
   of production.
+
 
 ** The isocost map
 
@@ -64,7 +70,8 @@
   associated cost:
   \[ C_1 < C_2 < C_3 < \dotsb \]
 
-** The optimal choice\NL (I)
+
+** The optimal choice (I)
 
 #+figure: ./figures/fig-t31-eq04.pdf 0.5
 
@@ -73,7 +80,8 @@
 - Combinations like $A$ or $B$, where an isocost line crosses the
   isoquant cannot be optimal.
 
-** The optimal choice\NL (II)
+
+** The optimal choice (II)
 
 #+figure: ./figures/fig-t31-eq06.pdf 0.5
 
@@ -83,7 +91,7 @@
   $L$.
 
 
-** The optimal choice\NL (III)
+** The optimal choice (III)
 
 #+figure: ./figures/fig-t31-eq07.pdf 0.5
 
@@ -92,7 +100,8 @@
 - The firm can produce $\Qbar$ at a lower cost if it replaces $L$ by
   $K$.
 
-** The optimal choice\NL (and IV)
+
+** The optimal choice (and IV)
 
 #+figure: ./figures/fig-t31-eq05.pdf 0.5
 
@@ -100,7 +109,8 @@
 - Tangency condition:
   \[ \RMST = \frac{w}{r} \]
 
-** Duality\NL(I)
+
+** Duality(I)
 - We have presented the problem of the choice of the optimal
   combination of factors as the one of the minimization of production
   costs.
@@ -113,7 +123,8 @@
     \end{gather*}
   #+END_EXPORT
 
-** Duality\NL (and II)
+
+** Duality (and II)
 
 #+figure: ./figures/fig-t31-eq08.pdf 0.5
 
@@ -122,7 +133,9 @@
   \[ \RMST = \frac{w}{r} \]
 
 
+
 * Cost curves in the long run
+
 ** The expansion path of the product
 
 #+figure: ./figures/fig-t31-exp02.pdf 0.5
@@ -131,6 +144,7 @@
   corresponds a different optimal combination.
 - The set of those optimal combinations is the *expansion path of the
   product*.
+
 
 ** Conditional demands of factors
 - The *conditional demand of a factor* shows the optimal level of
@@ -146,6 +160,7 @@
   *long-run cost curve*:
   \[ \CT_{\LP}(Q) = r K(Q) + w L(Q) \]
 
+
 ** Long-run total cost curve
 
 #+figure: ./figures/fig-t31-clp01.pdf 0.5
@@ -154,7 +169,8 @@
   option of not producing anything without costs:
   \[ \CT_{\LP}(0) = 0 \]
 
-** Average cost and\NL marginal cost\NL(I)
+
+** Average cost and marginal cost(I)
 
 - Long-run average cost:
   \[ \CMeLP(Q) = \frac{\CT_{\LP}(Q)}{Q} \]
@@ -162,32 +178,36 @@
   \[ \CMgLP(Q) = \frac{\diff \CT_{\LP}(Q)}{\diff Q} \]
 
 
-** Average cost and\NL marginal cost\NL(II)
+** Average cost and marginal cost(II)
 
 #+figure: ./figures/fig-t31-env08.pdf 0.53
 
 - The curves cross at the minimum unit cost in the long-run.
 
-** Average  cost and\NL marginal cost\NL(and III)
+
+** Average  cost and marginal cost(and III)
 - The slope of the average cost depends on the relative position of
   the $\CMeLP$ and $\CMgLP$ curves:
   + $\CMeLP$ decreases when $\CMgLP < \CMeLP$.
   + $\CMeLP$ increases when $\CMgLP > \CMeLP$.
   + $\CMeLP$ reaches a minimum when $\CMgLP = \CMeLP$.
 
-** Economies and diseconomies of scale\NL (I)
+
+** Economies and diseconomies of scale (I)
 - There exist *economies of scale* when costs increase in a lower
   proportion than production.
 - When costs increase in a higher proportion than production there are
   *diseconomies of scale*.
 
-** Economies and diseconomies of scale\NL (and II)
+
+** Economies and diseconomies of scale (and II)
 - When there are economies of scale, the $\CMeLP$ decreases with
   production.
 - When there are diseconomies of scale, the $\CMeLP$ increases with
   production.
 
-** Returns to scale and costs in the long-run\NL(I)
+
+** Returns to scale and costs in the long-run(I)
 - If technology is characterized by constant returns to scale, then
   costs increase in the same proportion than production.
 - For example, the firm can double its production by doubling the
@@ -196,7 +216,8 @@
 - In that case, costs also double:
   \[ \CT_{\LP}(Q_1) = r 2 K_0 + w 2 L_0 = 2 (r K_0 + w L_0) = 2 \CT_{\LP}(Q_0) \]
 
-** Returns to scale and costs in the long-run\NL(II)
+
+** Returns to scale and costs in the long-run(II)
 
 #+figure: ./figures/fig-t31-clp02.pdf 0.5
 
@@ -204,7 +225,8 @@
   production:
   \[ \CT_{\LP}(Q) = c Q \]
 
-** Returns to scale and costs in the long-run\NL(III)
+
+** Returns to scale and costs in the long-run(III)
 
 #+figure: ./figures/fig-t31-clp03.pdf 0.5
 
@@ -212,7 +234,8 @@
   cost are equal to a same constant:
   \[ \CMeLP(Q) = \CMgLP(Q) = c \]
 
-** Returns to scale and costs in the long-run\NL(and IV)
+
+** Returns to scale and costs in the long-run(and IV)
 - With increasing returns to scale, when doubling the usage of factors
   production increases more than he double: there are *economies of
   scale*.
@@ -221,7 +244,9 @@
 
 
 
+
 * Relationship between short-run and long-run costs
+
 ** The short-run choice
 
 #+figure: ./figures/fig-t31-exp03.pdf 0.5
@@ -230,20 +255,23 @@
 - Different levels of production can only be reached by altering the
   level of $L$.
 
-** The short-run and\NL the long-run choice
+
+** The short-run and the long-run choice
 
 #+figure: ./figures/fig-t31-exp04.pdf 0.5
 
 - In the long-run the firm can alter the usage of both factors.
 - Just for a production level the short-run and the long-run decisions coincide, $C$.
 
-** Short-run\NL and long-run costs\NL (I)
+
+** Short-run and long-run costs (I)
 
 #+figure: ./figures/fig-t31-exp05.pdf 0.5
 
 - Short-run costs are higher than long-run costs, except for a level of production.
 
-** Short-run\NL and long-run costs\NL (II)
+
+** Short-run and long-run costs (II)
 
 #+figure: ./figures/fig-t31-env20.pdf 0.5
 
@@ -251,7 +279,8 @@
 - Each short-run cost curve has a tangency point with the long-run
   cost curve.
 
-** Short-run\NL and long-run costs\NL (and III)
+
+** Short-run and long-run costs (and III)
 
 #+figure: ./figures/fig-t31-env21.pdf 0.5
 
@@ -260,9 +289,12 @@
 - For that level of production the short-run marginal cost and the
   long-run marginal cost coincide.
 
+
+
 * The envelope
 
-** The choice of the\NL plant size\NL (I)
+
+** The choice of the plant size (I)
 
 #+figure: ./figures/fig-t31-env01.pdf 0.55
 
@@ -271,7 +303,7 @@
 - Which would be its long-run decision?
 
 
-** The choice of the\NL plant size\NL (and II)
+** The choice of the plant size (and II)
 
 #+figure: ./figures/fig-t31-env02.pdf 0.55
 
@@ -280,14 +312,16 @@
 - The plant size $K_2$ is more efficient for production levels higher
   than $Q_A$.
 
-** The envelope\NL (I)
+
+** The envelope (I)
 
 #+figure: ./figures/fig-t31-env03.pdf 0.55
 
 - The long-run average cost curve is the *lower envelope* of the
   short-run curves.
 
-** The envelope\NL (II)
+
+** The envelope (II)
 
 #+figure: ./figures/fig-t31-env04.pdf 0.55
 
@@ -295,14 +329,15 @@
   of the short-run marginal cost curves.
 
 
-** The envelope\NL (III)
+** The envelope (III)
 
 #+figure: ./figures/fig-t31-env05.pdf 0.55
 
 - If the firm has more options, the long-run average cost curve is
   smoother.
 
-** The envelope\NL (and IV)
+
+** The envelope (and IV)
 
 #+figure: ./figures/fig-t31-env06.pdf 0.55
 

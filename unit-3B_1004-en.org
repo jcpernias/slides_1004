@@ -11,6 +11,7 @@
 
 * Substitution effect and income effect
 
+
 ** Law of demand
 
 #+figure: ./figures/fig-t16-eres20.pdf 0.55
@@ -31,9 +32,12 @@
 - A *Giffen good* is a good whose demand curve has a positive slope.
 - Under which conditions does the demand curve have a positive slope?
 
+
+
 * Changes in the price of a good
 
-** Effects of\NL price change
+
+** Effects of price change
 If the price of good $X$ increases:
 - Relative prices change. The consumer tries to *substitute* the
   consumption of good $X$, now relatively more expensive, for other
@@ -52,7 +56,7 @@ If the price of good $X$ increases:
 - $\ET = \ES + \ER$
 
 
-** Total effect split\NL (I)
+** Total effect split (I)
 - How can we determine which part of the change is due to the
   substitution effect and which is due to the income effect?
 - Let’s consider what would be the demanded quantity by the consumer
@@ -63,7 +67,7 @@ If the price of good $X$ increases:
   the price, $X_0$ and after the increase of the price, $X_1$.
 
 
-** Total effect split\NL (and II)
+** Total effect split (and II)
 
 - From the initial quantity demanded, $X_0$; the final quantity
   demanded, $X_1$; and the quantity demanded if just relative prices had
@@ -87,14 +91,14 @@ If the price of good $X$ increases:
   relative prices.
 
 
-** Example\NL (I)
+** Example (I)
 - Utility function: $U(X, Y) = X^{2/3}Y^{1/3}$.
 - Monetary income: $M = 72$ €.
 - Initial prices: $P_X = 2$ €/u. y $P_Y = 1$ €/u.
 - Final price of $X$: $P'_X = 16$ €/u.
 
 
-** Example\NL (II)
+** Example (II)
 
 #+figure: ./figures/fig-t16-eres02.pdf 0.55
 
@@ -102,7 +106,7 @@ If the price of good $X$ increases:
   \[ \ET = 3 - 24 = -21 \]
 
 
-** Example\NL (III)
+** Example (III)
 
 #+figure: ./figures/fig-t16-eres03.pdf 0.55
 
@@ -111,7 +115,7 @@ If the price of good $X$ increases:
 - The \RMS{} at $E_H$ is equal to the final relative price: $P'_X/P_Y$.
 
 
-** Example\NL (and IV)
+** Example (and IV)
 
 #+figure: ./figures/fig-t16-eres04.pdf 0.55
 
@@ -119,15 +123,18 @@ If the price of good $X$ increases:
 - $\ER = 3 - 12 = -9$.
 - $\ET = \ES + \ER = -21$.
 
+
+
 * Effect signs
 
-** The sign of\NL the substitution effect
+
+** The sign of the substitution effect
 - The *substitution effect* has a *negative sign*.
 - The variation in quantity due to the substitution effect has the
   opposite sign with respect to the variation in price.
 
 
-** The sign of\NL the income effect
+** The sign of the income effect
 - An increase of the price implies a decrease of real income.
 - If the *good is normal*, an increase of the price reduces demand as
   a consequence of the income effect. In this case, the *income
@@ -137,11 +144,12 @@ If the price of good $X$ increases:
   effect* has a *positive sign*.
 
 
-** Normal goods\NL (I)
+** Normal goods (I)
 - The *total effect* of a *normal good* has *negative sign*:
   \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  +\underset{(-)}{\ER} \]
 
-** Normal goods\NL (and II)
+
+** Normal goods (and II)
 
 #+figure: ./figures/fig-t16-eres10.pdf 0.55
 - Substitution effect and income effect reinforce each other.
@@ -149,7 +157,7 @@ If the price of good $X$ increases:
 - Demand curve with a negative slope.
 
 
-** Inferior goods\NL (I)
+** Inferior goods (I)
 
 - The *total effect* of an *inferior good* can have a *negative or
   positive sign*:
@@ -163,14 +171,15 @@ If the price of good $X$ increases:
   \big(|\ER| < |\ES|\big) \]
 
 
-** Inferior goods\NL (and II)
+** Inferior goods (and II)
 
 #+figure: ./figures/fig-t16-eres11.pdf 0.55
 
 - The income effect partially counteracts the substitution effect.
 - Demand curve with negative slope.
 
-** Giffen goods\NL (I)
+
+** Giffen goods (I)
 
 - A Giffen good is an inferior good whose income effect is greater, in
   absolute terms, than the substitution effect:
@@ -178,7 +187,7 @@ If the price of good $X$ increases:
   \big(|\ER| > |\ES|\big) \]
 
 
-** Giffen goods\NL (II)
+** Giffen goods (II)
 
 #+figure: ./figures/fig-t16-eres12.pdf 0.55
 
@@ -187,7 +196,7 @@ If the price of good $X$ increases:
 - Demand curve with positive slope.
 
 
-** Giffen goods\NL (and III)
+** Giffen goods (and III)
 
 - Under which conditions can we find a Giffen good?
   + Inferior good.
@@ -195,16 +204,19 @@ If the price of good $X$ increases:
   + Large income effect (the expenditure in the good represents an
     important share of the consumers budget, for example).
 
+
+
 * Slutsky decomposition                                            :noexport:
 
-** Slutsky decomposition\NL (I)
+
+** Slutsky decomposition (I)
 
 - Slutsky identifies *real income* with *purchasing power*.
 - The choice when just relative prices change must be on a budget line
   that allows you to buy the initial basket at final prices.
 
 
-** Slutsky decomposition\NL (II)
+** Slutsky decomposition (II)
 
 #+figure: ./figures/fig-t16-eres05a.pdf 0.55
 
@@ -214,7 +226,7 @@ If the price of good $X$ increases:
   price: $P'_X/P_Y$.
 
 
-** Slutsky decomposition\NL (III)
+** Slutsky decomposition (III)
 
 #+figure: ./figures/fig-t16-eres05.pdf 0.55
 
@@ -223,7 +235,7 @@ If the price of good $X$ increases:
 - $\ET = \ES + \ER= -21$.
 
 
-** Slutsky decomposition\NL (and IV)
+** Slutsky decomposition (and IV)
 
 #+figure: ./figures/fig-t16-eres06.pdf 0.55
 

@@ -11,6 +11,7 @@
 #+end_bibbox
 
 * Consumer’s Behavior
+
 ** Consumer
 - *Consumer* has, in a given period of time, an
   *income* of $M$ euros.
@@ -23,23 +24,28 @@
 - Perfect divisibility.
 - A unique period of time.
 
-** Market basket\NL (I)
+
+** Market basket (I)
 - A *market basket* is a certain combination of units of good $X$ and units of good $Y$.
 - It represents how many units of each good are consumed in a certain period of time.
 
-** Market baskets\NL (and II)
+
+** Market baskets (and II)
 #+figure: ./figures/fig-t10-xy.pdf 0.45
 
 - Market basket $A$ is composed by 1 unit of good $X$ and 3 units of
   good $Y$: $A = (1, 3)$.
 - $B = (4, 0)$.
 
+
 ** Rational choice
 - Between all disposable market baskets, a *rational* consumer chooses
   the one that generates greater well-being.
 
 
+
 * The budget constraint
+
 ** Expenditure
 - If a consumer chooses the market basket $(X_0, Y_0)$, his *total
   expenditure* is $P_X X_0 + P_Y Y_0$ euros.
@@ -53,7 +59,8 @@
 - Consumer can choose any basket of his *set of opportunities*:
   \[ M \geq P_X X + P_Y Y \]
 
-** The budget\NL constraint\NL (I)
+
+** The budget constraint (I)
 - The *budget constraints* are all the baskets which imply an
   expenditure exactly equal to consumer’s income:
   \[ M = P_X X + P_Y Y \]
@@ -61,13 +68,15 @@
   when consumption of X takes a determined value:
   \[ Y = \frac{M}{P_Y} - \frac{P_X}{P_Y} X \]
 
-** The budget\NL constraint\NL (and II)
+
+** The budget constraint (and II)
 #+figure: ./figures/fig-t10-rp1.pdf 0.5
 
 - The intersection points with the axes are the *maximum consumptions*
   of each good: $M/P_X$ and $M/P_Y$.
 - The slope of the Budget constraint is equal to the *relative price*
   with negative sign: $-P_X/P_Y$.
+
 
 ** Relative price
 - The *relative price* is the Price of a good measured in units of
@@ -78,7 +87,8 @@
 #   €. Relative price: \[ \frac{P_P}{P_A} = \frac{3}{0.3} = 10\text{\ l
 #   of wáter per kg of bread} \]
 
-** Example\NL (I)
+
+** Example (I)
 - The set of opportunities when $M = 120$ €, $P_X = 6$ €/u. and $P_Y =
   3$ €/u. consists of all baskets that satisfy:
   \[ 120 \geq 6 X + 3 Y \]
@@ -87,7 +97,8 @@
 - Another way of expressing it:
   \[ Y = 40 - 2 X \]
 
-** Example\NL (II)
+
+** Example (II)
 
 #+figure: ./figures/fig-t10-rp1b.pdf 0.45
 
@@ -95,7 +106,8 @@
 - Maximum consumption of $Y$: $40$ units.
 - Realtive price: $P_X/P_Y = 2$ units of $Y$ for each unit of $X$.
 
-** Example\NL (and III)
+
+** Example (and III)
 #+figure: ./figures/fig-t10-rp3.pdf 0.45
 
 - Expenditure associated to the basket
@@ -104,12 +116,13 @@
   - $C$: $6\cdot 5 + 3 \cdot 30 = 120 € = M$
 
 
-** Relative price and\NL opportunity cost\NL (I)
+** Relative price and opportunity cost (I)
 - If the consumer spends all his income, the *opportunity cost* of
   consuming an additional unit of good $X$ are the units of good $Y$
   he has to refuse to.
 
-** Relative price and\NL opportunity cost\NL (and II)
+
+** Relative price and opportunity cost (and II)
 #+figure: ./figures/fig-t10-rp5.pdf 0.45
 
 - For each additional unit of $X$, consumer renounces 2
@@ -118,14 +131,16 @@
 - Opportunity cost coincides with the relative price:
   \[ \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_X}{P_Y} = \frac{6}{3} = 2\]
 
-** Variations in a price\NL (I)
+
+** Variations in a price (I)
 #+figure: ./figures/fig-t10-rp6.pdf 0.45
 
 - A decrease in the price of $X$:
   \[ P'_X < P_X\]
 - The set of opppotunities expands.
 
-** Variations in a price\NL (and II)
+
+** Variations in a price (and II)
 #+figure: ./figures/fig-t10-rp7.pdf 0.45
 
 - An increase in the Price of $Y$:
@@ -143,19 +158,22 @@
 - The set of opportunities expands.
 
 
-** Variations in\NL prices and income\NL (I)
+
+** Variations in prices and income (I)
 #+figure: ./figures/fig-t10-rp10.pdf 0.45
 
 - Reduction of $P_X$, $P'_X < P_X$, and decrease of $M$, $M' < M$.
 - Some options are no longer available.
 - But other options which were not available, now are possible.
 
-** Variations in\NL prices and income\NL (and II)
+
+** Variations in prices and income (and II)
 #+figure: ./figures/fig-t10-rp11.pdf 0.45
 
 - Changes in prices and income in the same proportion:
   \[ P'_{X} = k P_{X}; P'_{Y} = k P_{Y};  M' = k M \]
 - The set of opportunities does not vary.
+
 
 
 * Extensions
@@ -169,6 +187,7 @@
 - Budget constraint:
   \[ M = P_X X + Y \]
 
+
 ** Other cases
 - The Budget constraint is just a straight line in the case in which:
   1. the consumer can buy any amount of goods X and Y;
@@ -177,17 +196,20 @@
 - If either of these two conditions is not fulfilled, the Budget
   constraint is not linear.
 
+
 ** Rationing
 
 #+figure: ./figures/fig-t10-rac1.pdf 0.45
 
 - *Rationing*: The consumption of good $X$ cannot be greater than $\bar{X}$, an amount established by the Government.
 
+
 ** Subsidies
 #+figure: ./figures/fig-t10-orp2.pdf 0.45
 
 - The first $\bar{X}$ units of $X$ are sold at a reduced price $P'_X$.
 - Additional units are sold at their full price $P_X > P'_X$.
+
 
 ** Donations
 #+figure: ./figures/fig-t10-orp3.pdf 0.45
