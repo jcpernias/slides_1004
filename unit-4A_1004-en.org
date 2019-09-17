@@ -30,7 +30,9 @@
 - The slope at a point on a indifference curve is the \RMS{} with a
   negative sign.
 - From the utility function, $U = U(C_1, C_2)$:
+  #+begin_export latex
   \[\RMS = \frac{\mlabel{\UMgLabel_{C_1}}}{\mlabel{\UMgLabel_{C_2}}} \]
+  #+end_export
 
 
 ** Intertemporal preferences (and II)
@@ -54,31 +56,49 @@
 ** The budget constraint (II)
 - The consumer can borrow money to increase his/her consumption in
   period 1 above the income in that period:
+  #+begin_export latex
   \[ C_1 - M_1 > 0 \]
+  #+end_export
 - Consumption in period 2 would be equal to the remaining income after
   repaying the loan with the interests:
+  #+begin_export latex
   \[ C_2 = M_2 - (1 + r) (C_1 - M_1) \]
+  #+end_export
 - Intertemporal budget constraint when borrowing:
+  #+begin_export latex
   \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1\]
+  #+end_export
 
 
 ** The budget constraint (and III)
 - The consumer can lend a part of his/her income in the first period. In this case:
+  #+begin_export latex
   \[ M_1 - C_1 > 0 \]
+  #+end_export
 - Consumption in period 2 would be higher than the income in that period:
+  #+begin_export latex
   \[ C_2 = M_2 + (1 + r) (M_1 - C_1) \]
+  #+end_export
 - Intertemporal budget constraint when lending:
+  #+begin_export latex
   \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1 \]
+  #+end_export
 
 
 ** The intertemporal budget constraint (I)
  - In both cases we reach the same budget constraint:
+   #+begin_export latex
    \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1 \]
+   #+end_export
  - We can rewrite the intertemporal budget constraint as:
+   #+begin_export latex
    \[  M_1 + \frac{M_2}{1+ r} = C_1 + \frac{C_2}{1 + r} \]
+   #+end_export
  - The present value of the income flow is equal to the present value of the consumption flow.
  - The intertemporal budget constraint in terms of future values:
+   #+begin_export latex
    \[  M_1(1+r) + M_2 = C_1(1 + r) + C_2 \]
+   #+end_export
 
 
 ** The intertemporal budget constraint (II)
@@ -103,7 +123,9 @@
   higher satisfaction level.
 
 - If the solution is interior the tangency condition is fulfilled:
+  #+begin_export latex
   \[ \RMS{} = 1 + r \]
+  #+end_export
 
 
 ** The intertemporal choice (II)
@@ -111,7 +133,9 @@
 #+figure: ./figures/fig-t21-ciri04.pdf 0.55
 
 - The optimum choice in this case implies:
+  #+begin_export latex
   \[ M_1 > C_1 \]
+  #+end_export
 - The consumer lends a part of his/her income in the initial period.
 
 
@@ -120,7 +144,9 @@
 #+figure: ./figures/fig-t21-ciri05.pdf 0.55
 
 - The optimum choice in this case implies:
+  #+begin_export latex
   \[ M_1 < C_1 \]
+  #+end_export
 - The consumer requests a loan in the first period.
 
 
@@ -129,17 +155,25 @@
 
 ** Savings
 - Saving of consumer in the first period is
+  #+begin_export latex
   \[ S = M_1 - C_1 \]
+  #+end_export
 - When the consumer lends a part of his/her income saving is positive:
+  #+begin_export latex
   \[ S = M_1 - C_1 > 0 \]
+  #+end_export
 - When the consumer borrows in the first period saving is negative:
+  #+begin_export latex
   \[ S = M_1 - C_1 < 0 \]
+  #+end_export
 
 
 ** The savings curve (I)
 - The *savings curve* indicates the quantity of income the consumer
   saves for each possible interest rate:
+  #+begin_export latex
   \[ S = S(r) \]
+  #+end_export
 - It is obtained by analysing the different choices of present and
   future consumption as the interest rate varies.
 

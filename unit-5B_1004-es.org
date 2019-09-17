@@ -14,17 +14,23 @@
 ** Producción con dos factores variables
 - A largo plazo todos los factores son variables.
 - Función de producción a largo plazo:
+  #+begin_export latex
   \[ Q = F(K, L) \]
+  #+end_export
 
 
 ** Producto marginal de los factores
 
 - El *producto marginal del trabajo* es la tasa a la que crece la
   producción por unidad adicional de trabajo:
+  #+begin_export latex
   \[ \PMgL = \frac{\partial Q}{\partial L} = \frac{\partial F(K, L)}{\partial L}  \]
+  #+end_export
 - El *producto marginal del capital* es la tasa a la que crece la
   producción por unidad adicional de capital:
+  #+begin_export latex
   \[ \PMgK = \frac{\partial Q}{\partial K} = \frac{\partial F(K, L)}{\partial K}  \]
+  #+end_export
 
 
 ** Las isocuantas
@@ -44,12 +50,17 @@
 
 ** La pendiente de las isocuantas (I)
 - Diferencial total de la función de producción:
+  #+begin_export latex
   \[ \diff Q = \PMgK \diff K + \PMgL \diff L \]
+  #+end_export
 - Si nos movemos a lo largo de una isocuanta, $\diff Q = 0$. Entonces:
+  #+begin_export latex
   \[ 0 = \PMgK \diff K + \PMgL \diff L \]
+  #+end_export
 - Operando:
-  \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} =
-       -\frac{\PMgL}{\PMgK} \]
+  #+begin_export latex
+  \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} = -\frac{\PMgL}{\PMgK} \]
+  #+end_export
 
 
 ** La pendiente de las isocuantas (y II)
@@ -59,8 +70,9 @@
 
 - Las isocuantas tienen pendiente negativa en las combinaciones
   técnicamente eficientes.
-  \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} =
-       -\frac{\PMgL}{\PMgK} < 0\]
+  #+begin_export latex
+  \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} = -\frac{\PMgL}{\PMgK} < 0\]
+  #+end_export
 
 
 ** La relación marginal de sustitución técnica (I)
@@ -71,9 +83,13 @@
 
 ** La relación marginal de sustitución técnica (y II)
 - Coincide con la pendiente de la isocuanta con signo negativo:
+  #+begin_export latex
   \[ \RMST = -\left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} \]
+  #+end_export
 - Por tanto:
+  #+begin_export latex
   \[ \RMST = \frac{\PMgL}{\PMgK} \]
+  #+end_export
 
 
 ** Convexidad
@@ -88,10 +104,14 @@
 - *Convexidad y rendimientos decrecientes de un factor* son dos propiedades distintas: una no implica a la otra.
 - Puede cumplirse la ley de rendimientos decrecientes de un factor sin
   que la $\RMST$ sea decreciente:
+  #+begin_export latex
   \[ Q = \big(K + L\big)^{1/2} \]
+  #+end_export
 - La $\RMST$ puede ser decreciente pero no cumplirse la ley de
   rendimientos decrecientes de un factor:
+  #+begin_export latex
   \[ Q = K L \]
+  #+end_export
 
 
 ** Sustituibilidad
@@ -111,7 +131,9 @@
   sustituirse siempre a la misma tasa.
 - La $\RMST$ toma siempre el mismo valor.
 - Ejemplo:
+  #+begin_export latex
   \[ Q = L + K \]
+  #+end_export
 
 
 ** Función de producción de proporciones fijas
@@ -125,7 +147,9 @@
   eficientes.
 
 - Ejemplo:
+  #+begin_export latex
   \[ Q = \min\{K, L\} \]
+  #+end_export
 
 
 
@@ -140,20 +164,28 @@
 
 ** Los rendimientos de escala (y II)
 - Por ejemplo, partimos de una determinada combinación de factores:
+  #+begin_export latex
   \[ Q_0 = F(4, 3) = 10 \]
+  #+end_export
 - Triplicamos la utilización de factores y obtenemos un nuevo nivel de
   producción:
+  #+begin_export latex
   \[ Q_1 = F(12, 9) = 30 \]
+  #+end_export
 - En nuestro ejemplo, la producción ha aumentado en la misma
   proporción que los factores: $Q_1 = 3 Q_0$. Es decir:
+  #+begin_export latex
   \[   F(3 \cdot 4, 3 \cdot 3) = 3 F(4, 3) \]
+  #+end_export
 
 
 ** Rendimientos constantes de escala (I)
 - Existen *rendimientos constantes de escala* si al aumentar el uso de
   los factores en una proporción $\lambda$, $\lambda > 1$, el nivel de
   producción cambia exactamente en esa misma proporción:
+  #+begin_export latex
   \[ F(\lambda K, \lambda L) = \lambda F(K, L) \]
+  #+end_export
 
 
 ** Rendimientos constantes de escala (y II)
@@ -168,7 +200,9 @@
 - Existen *rendimientos crecientes de escala* si al aumentar
   el uso de los factores en una proporción $\lambda$, $\lambda > 1$,
   el nivel de producción se incrementa más que proporcionalmente:
+  #+begin_export latex
   \[ F(\lambda K, \lambda L) > \lambda F(K, L) \]
+  #+end_export
 
 
 ** Rendimientos crecientes de escala (y II)
@@ -184,7 +218,9 @@
   de los factores en una proporción $\lambda$, $\lambda > 1$, la
   proporción a la que aumenta el nivel de producción es inferior a
   $\lambda$:
+  #+begin_export latex
   \[ F(\lambda K, \lambda L) < \lambda F(K, L) \]
+  #+end_export
 
 
 ** Rendimientos decrecientes de escala (y II)

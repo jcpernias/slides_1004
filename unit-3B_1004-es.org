@@ -100,7 +100,9 @@ Si el precio del bien $X$ aumenta:
 #+figure: ./figures/fig-t16-eres02.pdf 0.55
 
 - Efecto total del aumento de $P_X$:
+  #+BEGIN_EXPORT LATEX
   \[ \ET = 3 - 24 = -21 \]
+  #+END_EXPORT
 
 
 ** Ejemplo (III)
@@ -142,7 +144,9 @@ Si el precio del bien $X$ aumenta:
 
 ** Bienes normales (I)
 - El *efecto total* de un *bien normal* tiene *signo negativo*:
+  #+begin_export latex
   \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  +\underset{(-)}{\ER} \]
+  #+end_export
 
 
 ** Bienes normales (y II)
@@ -157,13 +161,18 @@ Si el precio del bien $X$ aumenta:
 
 - El *efecto total* de un bien inferior puede tener *signo negativo o
   positivo*:
+  #+begin_export latex
   \[ \underset{(?)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \]
+  #+end_export
 - Frecuentemente, la magnitud del efecto renta es pequeña comparada
   con la del efecto sustitución.
+  #+BEGIN_EXPORT LATEX
   \[ |\ER| < |\ES| \]
+  #+END_EXPORT
 - En este caso, la demanda de un bien inferior tiene pendiente negativa:
-  \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad
-  \big(|\ER| < |\ES|\big) \]
+  #+begin_export latex
+  \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad \big(|\ER| < |\ES|\big) \]
+  #+end_export
 
 
 ** Bienes inferiores (y II)
@@ -178,8 +187,9 @@ Si el precio del bien $X$ aumenta:
 
 - Un bien Giffen es un bien inferior cuyo efecto renta es mayor, en
   términos absolutos, que el efecto sustitución:
-  \[ \underset{(+)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad
-  \big(|\ER| > |\ES|\big) \]
+  #+begin_export latex
+  \[ \underset{(+)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad \big(|\ER| > |\ES|\big) \]
+  #+end_export
 
 
 ** Bienes Giffen (II)

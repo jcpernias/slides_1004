@@ -34,7 +34,9 @@
 - Aunque alguno de los factores sea propiedad de la empresa debemos de
   incluir su *coste de oportunidad*.
 - El coste total es:
+  #+begin_export latex
   \[ C = r K + w L \]
+  #+end_export
 
 
 ** El corto plazo
@@ -46,18 +48,26 @@
 
 ** Costes fijos y costes variables
 - Los *costes fijos* son los asociados al uso los factores fijos:
+  #+begin_export latex
   \[ \CF = r \Kbar \]
+  #+end_export
 - Los *costes variables* son las retribuciones de los factores
   variables:
+  #+begin_export latex
   \[ \CV = w L \]
+  #+end_export
 
 
 ** Coste total a corto plazo
 - Costes totales a corto plazo:
+  #+begin_export latex
   \[ C = r \Kbar + w L \]
+  #+end_export
 - El *coste total a corto plazo* es la suma del coste fijo y el coste
   variable:
+  #+BEGIN_EXPORT LATEX
   \[ C = \CF + \CV \]
+  #+END_EXPORT
 
 
 
@@ -69,7 +79,9 @@
 
 - La función de producto total muestra la producción que obtiene la
   empresa usando un determinado nivel de trabajo.
+  #+begin_export latex
   \[ Q = f(L) \]
+  #+end_export
 
 
 ** Producción y costes (y II)
@@ -78,7 +90,9 @@
 
 - La inversa de la función de producto total muestra el trabajo
   necesario para alcanzar un determinado nivel de producción.
+  #+begin_export latex
   \[ L = f^{-1}(Q) \]
+  #+end_export
 
 
 ** La curva de coste variable
@@ -87,7 +101,9 @@
 
 - La *curva de coste variable* indica cuál es el mínimo coste variable
   al que se puede obtener un determinado nivel de producción:
+  #+begin_export latex
   \[ \CV(Q) = w f^{-1}(Q) \]
+  #+end_export
 
 
 ** La curva de coste total
@@ -101,47 +117,64 @@
 
 ** Las curvas de costes a corto plazo
 - El coste fijo no depende del nivel de producción:
+  #+begin_export latex
   \[ \CF(Q) = r \Kbar \]
+  #+end_export
 - El coste variable se obtiene invirtiendo la función de producto
   total a corto plazo:
+  #+begin_export latex
   \[ \CV(Q) = w f^{-1}(Q) \]
+  #+end_export
 - El coste total es la suma del coste fijo y el coste variable:
+  #+begin_export latex
   \[ \CT(Q) = r \Kbar + w f^{-1}(Q) \]
+  #+end_export
 
 
 ** El coste marginal
 - El *coste marginal* es la tasa a la que cambia el coste total por
   unidad adicional de producción:
+  #+begin_export latex
   \[ \CMg = \frac{\diff C}{\diff Q} \]
+  #+end_export
 - El coste marginal se puede expresar también como la derivada del
   coste variable con respecto de $Q$:
-  \[ \CMg =
-     \frac{\diff \CF}{\diff Q} + \frac{\diff \CV}{\diff Q} =
-     \frac{\diff \CV}{\diff Q} \]
+  #+begin_export latex
+  \[ \CMg = \frac{\diff \CF}{\diff Q} + \frac{\diff \CV}{\diff Q} = \frac{\diff \CV}{\diff Q} \]
+  #+end_export
 
 
 ** El coste medio
 - El *coste medio* es el cociente entre coste total y producción:
+  #+begin_export latex
   \[ \CMe = \frac{C}{Q} \]
+  #+end_export
 - El *coste fijo medio* y el *coste variable medio* se definen de
   forma similar:
+  #+begin_export latex
   \[ \CFMe = \frac{\CF}{Q} \qquad \CVMe = \frac{\CV}{Q} \]
+  #+end_export
 - Es fácil comprobar que
+  #+begin_export latex
   \[ \CMe = \CFMe + \CVMe  \]
+  #+end_export
 
 
 ** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (I)
 - El coste variable es:
+  #+begin_export latex
   \[ \CV = w L \]
+  #+end_export
 - Dividiendo por el nivel de producción, obtenemos el coste variable
   medio:
+  #+begin_export latex
   \[ \CVMe = w \frac{L}{Q} = w\frac{1}{Q/L} = \frac{w}{\PMeL} \]
+  #+end_export
 - Por otro lado, la tasa a la que cambia el $\CV$ por unidad adicional
   de $Q$ es el coste marginal:
-  \[ \CMg = \frac{\diff \CV}{\diff Q} =
-      w \frac{\diff L}{\diff Q} =
-      w\frac{1}{\diff Q/\diff L} =
-      \frac{w}{\PMgL} \]
+  #+begin_export latex
+  \[ \CMg = \frac{\diff \CV}{\diff Q} = w \frac{\diff L}{\diff Q} = w\frac{1}{\diff Q/\diff L} = \frac{w}{\PMgL} \]
+  #+end_export
 
 
 ** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (II)
@@ -177,7 +210,9 @@
 
 - La *curva de coste fijo medio* decrece conforme aumenta la
   producción:
+  #+begin_export latex
   \[ \CFMe(Q) = \frac{r \Kbar}{Q} \]
+  #+end_export
 
 
 ** La curva de coste medio (I)

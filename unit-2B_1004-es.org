@@ -85,7 +85,9 @@
 - Si se cumple el supuesto de transitividad, cada cesta pertenece a
   una y *sólo* a una curva de indiferencia.
 - Si las curvas de indiferencia se cortan llegamos a una
+  contradicción: #+begin_export latex
   contradicción: \[B \sim C \text{\ y\ } C \sim A\text{, pero\ } B \succ A.\]
+  contradicción: #+end_export
 
 
 ** Mapa de curvas de indiferencia
@@ -108,7 +110,9 @@
 
 - La $RMS$ es la tasa a la que un consumidor puede sustituir un bien
   por otro, manteniéndose en la misma curva de indiferencia.
+  #+begin_export latex
   \[ \RMS \approx \left| \frac{\Delta Y}{\Delta X} \right|_{I_0} \]
+  #+end_export
 
 
 ** Relación Marginal de Sustitución (y III)
@@ -123,7 +127,9 @@
 #+figure: ./figures/fig-t11-rms03.pdf 0.45
 
 - La *convexidad* de las curvas de indiferencia implica que la $\RMS$ es decreciente:
+  #+BEGIN_EXPORT LATEX
   \[ \RMS(A) > \RMS(B) \]
+  #+END_EXPORT
 
 - El valor relativo que un consumidor asigna a un bien es
   menor cuantas más unidades consuma de ese bien.
@@ -185,16 +191,24 @@
 - La función de utilidad asigna el mismo número a todas las cestas que
   son indiferentes entre sí.
 - Podemos obtener una curva de indiferencia encontrando todos los puntos que producen el mismo valor de la función de utilidad:
+  #+begin_export latex
   \[ U(X, Y) = \overline{U} \]
+  #+end_export
 
 
 ** Ejemplo (I)
 - Función de utilidad:
+  #+begin_export latex
   \[ U(X, Y) = X \cdot Y \]
+  #+end_export
 - La utilidad asociada a la cesta $A = (15, 20)$ es:
+  #+begin_export latex
   \[ U(15, 20) = 15 \cdot 20 = 300 \]
+  #+end_export
 - Las cestas indiferentes a $A$ producen el mismo valor de la función de utilidad:
+  #+begin_export latex
   \[ U(X, Y) = X\cdot Y = 300 \]
+  #+end_export
 
 
 ** Ejemplo (y II)
@@ -202,7 +216,9 @@
 #+figure: ./figures/fig-t11-fu01.pdf 0.45
 
 - Curva de indiferencia que contiene $A$:
+  #+begin_export latex
   \[ Y = \frac{300}{X} \]
+  #+end_export
 
 
 ** Utilidad ordinal (I)
@@ -225,20 +241,25 @@
 #+figure: ./figures/fig-t11-map03.pdf 0.48
 
 - Definamos $V(X, Y)$ como:
+  #+begin_export latex
   \[ V(X, Y) = \sqrt{U(X, Y)} = X^{1/2}  Y^{1/2} \]
+  #+end_export
 - Tanto $U(X, Y)$ como $V(X, Y)$ representan las mismas preferencias.
 
 
 ** Utilidad marginal (I)
 - La *utilidad marginal* de $X$ mide la variación en la utilidad del consumidor al variar el consumo de $X$, pero /manteniendo constante el consumo de $Y$/.
 - La utilidad marginal de un bien coincide con la derivada parcial de la función de utilidad:
-  \[ \UMX = \frac{\partial U(X, Y)}{\partial X}; \quad
-     \UMY = \frac{\partial U(X, Y)}{\partial Y} \]
+  #+begin_export latex
+  \[ \UMX = \frac{\partial U(X, Y)}{\partial X}; \quad \UMY = \frac{\partial U(X, Y)}{\partial Y} \]
+  #+end_export
 
 
 ** Utilidad marginal (y II)
 - Si se cumple el supuesto de no saturación:
+  #+begin_export latex
   \[ \UMX > 0; \quad \UMY > 0. \]
+  #+end_export
 - Salvo su signo, el valor de la utilidad marginal no tiene ninguna interpretación interesante.
 
 
@@ -246,21 +267,28 @@
 
 - Variación en la utilidad cuando cambian simultáneamente el consumo
   de $X$ y el de $Y$:
+  #+begin_export latex
   \[ \diff U = \UMX\; \diff X + \UMY\; \diff Y \]
+  #+end_export
 - Si el cambio se produce a lo largo de una curva de indiferencia, la
   utilidad no varía; por lo que $\diff U = 0$:
+  #+begin_export latex
   \[ 0 = \UMX\; \diff X + \UMY\; \diff Y \]
+  #+end_export
 
 
 ** Utilidad marginal y la RMS (II)
 
 - La pendiente de la curva de indiferencia es:
-  \[ \left. \frac{\diff Y}{\diff X} \right|_{U=\overline{U}} =
-     -\frac{\UMX}{\UMY} \]
+  #+begin_export latex
+  \[ \left. \frac{\diff Y}{\diff X} \right|_{U=\overline{U}} = -\frac{\UMX}{\UMY} \]
+  #+end_export
 
 - La relación marginal de sustitución coincide con el cociente de
   utilidades marginales:
+  #+begin_export latex
   \[ \RMS =  \frac{\UMX}{\UMY} \]
+  #+end_export
 
 
 ** Utilidad marginal y la RMS (III)
@@ -275,7 +303,9 @@
   #+END_EXPORT
 - Relación marginal de sustitución:
   #
+  #+begin_export latex
   \[\RMS = \frac{\UMX}{\UMY} = \frac{Y}{X} \]
+  #+end_export
 
 
 ** Utilidad marginal y la RMS (y IV)
@@ -293,8 +323,14 @@
 
 ** Algunas funciones de utilidad
 - Sustitutos perfectos:
+  #+begin_export latex
   \[ U(X, Y) = a X + b Y; \quad a, b > 0. \]
+  #+end_export
 - Complementos perfectos:
+  #+begin_export latex
   \[ U(X, Y) = \min\{a X, b Y\}; \quad a, b > 0. \]
+  #+end_export
 - Cobb-Douglas
+  #+begin_export latex
   \[ U(X, Y) = X^a Y^b; \quad a,b > 0. \]
+  #+end_export

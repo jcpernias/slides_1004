@@ -50,11 +50,15 @@
 
 - Consumption of *normal goods* grows when income increases. The slope
   of the Engel curve is positive in this case.
+  #+begin_export latex
   \[ \frac{\diff X}{\diff M} > 0 \]
+  #+end_export
 - Demanded quantity of *inferior goods* decreases as income
   increases. The slope of the Engel curve of an inferior good is
   negative.
+  #+begin_export latex
   \[ \frac{\diff X}{\diff M} < 0 \]
+  #+end_export
 
 
 
@@ -101,7 +105,11 @@
   of $X$ varies, /ceteris paribus/.
 - Good $X$ is a *substitute* of good $Y$ if the demand of $Y$
   increases when the price of $X$ does so:
+  #+begin_export latex
   \[ \frac{\diff Y}{\diff P_X} > 0 \]
+  #+end_export
 - Good $X$ is a *complement* of good $Y$ if the demand of $Y$
   decreases when the price of $X$ increases:
+  #+begin_export latex
   \[ \frac{\diff Y}{\diff P_X} < 0 \]
+  #+end_export

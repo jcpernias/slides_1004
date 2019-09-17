@@ -12,6 +12,7 @@
 
 * Consumer’s Behavior
 
+
 ** Consumer
 - *Consumer* has, in a given period of time, an
   *income* of $M$ euros.
@@ -44,7 +45,9 @@
 
 
 
+
 * The budget constraint
+
 
 ** Expenditure
 - If a consumer chooses the market basket $(X_0, Y_0)$, his *total
@@ -57,16 +60,22 @@
 - Consumer cannot borrow or lend.
 - Total expenditure cannot be higher than income.
 - Consumer can choose any basket of his *set of opportunities*:
+  #+begin_export latex
   \[ M \geq P_X X + P_Y Y \]
+  #+end_export
 
 
 ** The budget constraint (I)
 - The *budget constraints* are all the baskets which imply an
   expenditure exactly equal to consumer’s income:
+  #+begin_export latex
   \[ M = P_X X + P_Y Y \]
+  #+end_export
 - Another way of expressing it indicates the maximum consumption of Y
   when consumption of X takes a determined value:
+  #+begin_export latex
   \[ Y = \frac{M}{P_Y} - \frac{P_X}{P_Y} X \]
+  #+end_export
 
 
 ** The budget constraint (and II)
@@ -91,11 +100,17 @@
 ** Example (I)
 - The set of opportunities when $M = 120$ €, $P_X = 6$ €/u. and $P_Y =
   3$ €/u. consists of all baskets that satisfy:
+  #+begin_export latex
   \[ 120 \geq 6 X + 3 Y \]
+  #+end_export
 - The budget constraint in this case is:
+  #+begin_export latex
   \[ 120 = 6 X + 3 Y \]
+  #+end_export
 - Another way of expressing it:
+  #+begin_export latex
   \[ Y = 40 - 2 X \]
+  #+end_export
 
 
 ** Example (II)
@@ -127,16 +142,22 @@
 
 - For each additional unit of $X$, consumer renounces 2
   units of $Y$:
+  #+begin_export latex
   \[\left| \frac{\Delta Y}{\Delta X}\right| = \frac{20}{10} = 2  \]
+  #+end_export
 - Opportunity cost coincides with the relative price:
+  #+begin_export latex
   \[ \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_X}{P_Y} = \frac{6}{3} = 2\]
+  #+end_export
 
 
 ** Variations in a price (I)
 #+figure: ./figures/fig-t10-rp6.pdf 0.45
 
 - A decrease in the price of $X$:
+  #+begin_export latex
   \[ P'_X < P_X\]
+  #+end_export
 - The set of opppotunities expands.
 
 
@@ -144,7 +165,9 @@
 #+figure: ./figures/fig-t10-rp7.pdf 0.45
 
 - An increase in the Price of $Y$:
+  #+begin_export latex
   \[ P'_Y > P_Y \]
+  #+end_export
 - The set of opportunities shrinks.
 
 
@@ -153,7 +176,9 @@
 #+figure: ./figures/fig-t10-rp8.pdf 0.45
 
 - An increase in income:
+  #+begin_export latex
   \[ M' > M \]
+  #+end_export
 - The slope of the constraint does not vary.
 - The set of opportunities expands.
 
@@ -171,8 +196,11 @@
 #+figure: ./figures/fig-t10-rp11.pdf 0.45
 
 - Changes in prices and income in the same proportion:
+  #+begin_export latex
   \[ P'_{X} = k P_{X}; P'_{Y} = k P_{Y};  M' = k M \]
+  #+end_export
 - The set of opportunities does not vary.
+
 
 
 
@@ -185,7 +213,9 @@
   the consumer spends on other goods.
 - Given that $Y$ is measured in euros, $P_Y = 1$.
 - Budget constraint:
+  #+begin_export latex
   \[ M = P_X X + Y \]
+  #+end_export
 
 
 ** Other cases

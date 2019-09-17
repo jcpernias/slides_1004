@@ -85,7 +85,9 @@
 - If the assumption of transitivity is fulfilled, each basket belongs
   to one and *only* one indifference curve.
 - If the indifference curves intersect we find a contradiction:
+  #+begin_export latex
   \[B \sim C \text{\ and\ } C \sim A\text{, but\ } B \succ A.\]
+  #+end_export
 
 
 ** Indifference curves map
@@ -107,7 +109,9 @@
 #+figure: ./figures/fig-t11-rms01.pdf 0.45
 
 - The $\RMS$ is the rate at which a consumer can replace a good for another, staying on the same indifference curve.
+  #+begin_export latex
   \[ \RMS \approx \left| \frac{\Delta Y}{\Delta X} \right|_{I_0} \]
+  #+end_export
 
 
 ** Marginal Rate of Substitution (and III)
@@ -123,7 +127,9 @@
 #+figure: ./figures/fig-t11-rms03.pdf 0.45
 
 - The *convexity* of the indifference curves implies that the $\RMS$ is decreasing:
+  #+BEGIN_EXPORT LATEX
   \[ \RMS(A) > \RMS(B) \]
+  #+END_EXPORT
 
 - The relative value a consumer assigns to a good is smaller the more
   units of that good are consumed.
@@ -188,16 +194,24 @@
   are indifferent to each other.
 - We can obtain an indifference curve by finding all points that
   produce the same value of the utility function:
+  #+begin_export latex
   \[ U(X, Y) = \overline{U} \]
+  #+end_export
 
 
 ** Example (I)
 - Utility function:
+  #+begin_export latex
   \[ U(X, Y) = X \cdot Y \]
+  #+end_export
 - The utility associated with basket $A = (15, 20)$ is:
+  #+begin_export latex
   \[ U(15, 20) = 15 \cdot 20 = 300 \]
+  #+end_export
 - Indifferent to $A$ baskets produce the same value of the utility function:
+  #+begin_export latex
   \[ U(X, Y) = X\cdot Y = 300 \]
+  #+end_export
 
 
 ** Example (and II)
@@ -205,7 +219,9 @@
 #+figure: ./figures/fig-t11-fu01.pdf 0.45
 
 - Indifference curve which contains $A$:
+  #+begin_export latex
   \[ Y = \frac{300}{X} \]
+  #+end_export
 
 
 ** Ordinal utility (I)
@@ -227,7 +243,9 @@
 #+figure: ./figures/fig-t11-map03.pdf 0.48
 
 - Let’s define $V(X, Y)$ as:
+  #+begin_export latex
   \[ V(X, Y) = \sqrt{U(X, Y)} = X^{1/2}  Y^{1/2} \]
+  #+end_export
 - Both $U(X, Y)$ and $V(X, Y)$ represent the same preferences.
 
 
@@ -237,13 +255,16 @@
   constant the consumption of $Y$/.
 - The marginal utility of a good coincides with the partial derivative
   of the utility function:
-  \[ \UMX = \frac{\partial U(X, Y)}{\partial X}; \quad
-     \UMY = \frac{\partial U(X, Y)}{\partial Y} \]
+  #+begin_export latex
+  \[ \UMX = \frac{\partial U(X, Y)}{\partial X}; \quad \UMY = \frac{\partial U(X, Y)}{\partial Y} \]
+  #+end_export
 
 
 ** Marginal utility (and II)
 - If the assumption of non-satiation is fulfilled:
+  #+begin_export latex
   \[ \UMX > 0; \quad \UMY > 0. \]
+  #+end_export
 - Except for the sign, the value of marginal utility has no
   interesting interpretation.
 
@@ -252,20 +273,27 @@
 
 - Variation in utility when the consumptions of $X$ and $Y$ change
   simultaneously:
+  #+begin_export latex
   \[ \diff U = \UMX\; \diff X + \UMY\; \diff Y \]
+  #+end_export
 - If the change occurs along an indifference curve, utility does not
   vary; so $\diff U = 0$:
+  #+begin_export latex
   \[ 0 = \UMX\; \diff X + \UMY\; \diff Y \]
+  #+end_export
 
 
 ** Marginal utility and RMS (II)
 
 - The slope of the indifference curve is:
-  \[ \left. \frac{\diff Y}{\diff X} \right|_{U=\overline{U}} =
-     -\frac{\UMX}{\UMY} \]
+  #+begin_export latex
+  \[ \left. \frac{\diff Y}{\diff X} \right|_{U=\overline{U}} = -\frac{\UMX}{\UMY} \]
+  #+end_export
 
 - The marginal rate of substitution coincides with the ratio of marginal utilities:
+  #+begin_export latex
   \[ \RMS =  \frac{\UMX}{\UMY} \]
+  #+end_export
 
 
 ** Marginal utility and RMS (III)
@@ -279,7 +307,9 @@
     \end{equation*}
   #+END_EXPORT
 - Marginal rate of substitution:
+  #+begin_export latex
   \[\RMS = \frac{\UMX}{\UMY} = \frac{Y}{X} \]
+  #+end_export
 
 
 ** Marginal utility and RMS (and IV)
@@ -296,8 +326,14 @@
 
 ** Some utility functions
 - Perfect substitutes:
+  #+begin_export latex
   \[ U(X, Y) = a X + b Y; \quad a, b > 0. \]
+  #+end_export
 - Perfect complements:
+  #+begin_export latex
   \[ U(X, Y) = \min\{a X, b Y\}; \quad a, b > 0. \]
+  #+end_export
 - Cobb-Douglas
+  #+begin_export latex
   \[ U(X, Y) = X^a Y^b; \quad a,b > 0. \]
+  #+end_export

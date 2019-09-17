@@ -27,16 +27,22 @@
 
 - La restricción a la que se enfrenta la empresa es una curva
   isocuanta:
+  #+begin_export latex
   \[ \Qbar = F(K, L) \]
+  #+end_export
 
 
 ** Las isocostes (I)
 - Una *curva isocoste* es el conjunto de todas las combinaciones de
   factores que, a los precios de mercado, representan el mismo coste:
+  #+begin_export latex
   \[ \Cbar = r K + w L \]
+  #+end_export
 - Las decisiones de la empresa no pueden alterar los precios de los
   factores. Por tanto, la isocoste es una línea recta:
+  #+begin_export latex
   \[ K = \frac{\Cbar}{r} - \frac{w}{r} L \]
+  #+end_export
 
 
 ** Las isocostes (II)
@@ -44,7 +50,9 @@
 #+figure: ./figures/fig-t31-eq02.pdf 0.5
 
 - La pendiente de la isocoste es negativa:
+  #+begin_export latex
   \[\left.\frac{\diff K}{\diff L}\right|_{\Cbar} = -\frac{w}{r} \]
+  #+end_export
 
 
 ** Las isocostes (y III)
@@ -64,7 +72,9 @@
   isocoste diferente.
 - Cuanto más alejada del origen esté la isocoste, mayor es el coste
   asociado:
+  #+begin_export latex
   \[ C_1 < C_2 < C_3 < \dotsb \]
+  #+end_export
 
 
 ** La elección óptima (I)
@@ -82,7 +92,9 @@
 #+figure: ./figures/fig-t31-eq06.pdf 0.5
 
 - En la combinación $A$:
+  #+begin_export latex
   \[ \RMST > \frac{w}{r} \]
+  #+end_export
 - La empresa puede producir $\Qbar$ a un menor coste si sustituye $K$
   por $L$.
 
@@ -92,7 +104,9 @@
 #+figure: ./figures/fig-t31-eq07.pdf 0.5
 
 - En la combinación $B$:
+  #+begin_export latex
   \[ \RMST < \frac{w}{r} \]
+  #+end_export
 - La empresa puede producir $\Qbar$ a un menor coste si sustituye $L$
   por $K$.
 
@@ -103,7 +117,9 @@
 
 - Solución interior.
 - Condición de tangencia:
+  #+begin_export latex
   \[ \RMST = \frac{w}{r} \]
+  #+end_export
 
 
 ** Dualidad(I)
@@ -125,7 +141,9 @@
 
 - Solución interior.
 - Condición de tangencia:
+  #+begin_export latex
   \[ \RMST = \frac{w}{r} \]
+  #+end_export
 
 
 
@@ -155,7 +173,9 @@
 
 - Usando las demandas condicionales de los factores, obtenemos la
   *curva de coste a largo plazo*:
+  #+begin_export latex
   \[ \CT_{\LP}(Q) = r K(Q) + w L(Q) \]
+  #+end_export
 
 
 ** La curva de coste total a largo plazo
@@ -164,15 +184,21 @@
 
 - A largo plazo no hay costes fijos. La empresa siempre tiene la
   opción de no producir nada sin incurrir en costes:
+  #+BEGIN_EXPORT LATEX
   \[ \CT_{\LP}(0) = 0 \]
+  #+END_EXPORT
 
 
 ** Coste medio y coste marginal(I)
 
 - Coste medio a largo plazo:
+  #+begin_export latex
   \[ \CMeLP(Q) = \frac{\CT_{\LP}(Q)}{Q} \]
+  #+end_export
 - Coste marginal a largo plazo:
+  #+begin_export latex
   \[ \CMgLP(Q) = \frac{\diff \CT_{\LP}(Q)}{\diff Q} \]
+  #+end_export
 
 
 ** Coste medio y coste marginal(II)
@@ -210,9 +236,13 @@
   producción.
 - Por ejemplo, la empresa puede duplicar su producción duplicando la
   utilización de todos los factores de producción:
+  #+begin_export latex
   \[ Q_1 = F(2 K_0, 2 L_0) = 2 F(K_0, L_0) = 2 Q_0 \]
+  #+end_export
 - En ese caso, los costes también se duplican:
+  #+begin_export latex
   \[ \CT_{\LP}(Q_1) = r 2 K_0 + w 2 L_0 = 2 (r K_0 + w L_0) = 2 \CT_{\LP}(Q_0) \]
+  #+end_export
 
 
 ** Rendimientos de escala y costes a largo plazo(II)
@@ -221,7 +251,9 @@
 
 - En presencia de rendimientos constantes de escala, la función de
   coste es lineal en la producción:
+  #+begin_export latex
   \[ \CT_{\LP}(Q) = c Q \]
+  #+end_export
 
 
 ** Rendimientos de escala y costes a largo plazo(III)
@@ -230,7 +262,9 @@
 
 - En presencia de rendimientos constantes de escala, el coste medio y
   marginal son iguales a una misma constante:
+  #+begin_export latex
   \[ \CMeLP(Q) = \CMgLP(Q) = c \]
+  #+end_export
 
 
 ** Rendimientos de escala y costes a largo plazo(y IV)
@@ -371,7 +405,9 @@
 ** Funciones homogéneas
 - Una función $g$ es homogénea de grado $k$ si, para todo $\lambda > 0$:
   #
+  #+begin_export latex
   \[ g(\lambda x_1, \lambda x_2) = \lambda^k g(x_1, x_2) \]
+  #+end_export
 
 - Si $g$ es un función homogénea de grado $k \geq 1$, la derivada parcial $\partial g/\partial x_i$ es homogénea de grado $k-1$.
 
@@ -379,7 +415,9 @@
 ** Rendimientos constantes a escala
 - Una tecnología con rendimientos constantes a escala implica que la función de producción es homogénea de grado 1:
   #
+  #+begin_export latex
   \[ F(\lambda K, \lambda L) = \lambda F(K, L) \]
+  #+end_export
 - En este caso, tanto $\PMgL$ como $\PMgK$ son funciones homogéneas de grado 0.
 - Los rendimientos marginales de los factores son independientes de la escala de producción:
   #+BEGIN_EXPORT LaTeX

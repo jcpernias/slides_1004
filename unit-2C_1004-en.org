@@ -43,7 +43,9 @@
 ** Interior solutions
 - *Interior solution*: the optimal basket $(X^*, Y^*)$ contains some
   unit of each good:
+  #+begin_export latex
   \[ X^* >0; \quad Y^* > 0. \]
+  #+end_export
 
 
 ** Tangency condition (I)
@@ -96,7 +98,9 @@
 #+figure: ./figures/fig-t12-ej01.pdf 0.55
 
 - Interior solution:
+  #+begin_export latex
   \[ X^* = 17.5; Y^*=17.5. \]
+  #+end_export
 
 
 
@@ -107,7 +111,9 @@
 ** Corner solutions (I)
 - In a *corner solution*, some good is not present in the optimal
   basket:
+  #+begin_export latex
   \[ X^* = M/P_X, Y^* = 0;\quad\text{or}\quad X^* = 0, Y^* = M/P_Y. \]
+  #+end_export
 
 
 ** Corner solutions (II)
@@ -138,12 +144,16 @@
 #+figure: ./figures/fig-t12-ej02.pdf 0.55
 
 - Corner solution:
+  #+begin_export latex
   \[ X^* = 0; Y^*=35. \]
+  #+end_export
 
 
 ** Optimum conditions
 - Interior solution:
+  #+begin_export latex
   \[ \RMS = P_X/P_Y; \quad X^*, Y^* > 0. \]
+  #+end_export
 - Corner solutions:
   #+BEGIN_EXPORT LaTeX
     \begin{gather*}

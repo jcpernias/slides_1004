@@ -60,7 +60,9 @@
 - Divisibilidad infinita: los factores de producción, $K$ y $L$, y el
   nivel de producción, $Q$, son variables continuas.
 - La función de producción puede expresarse como:
+  #+begin_export latex
   \[ Q = F(K, L) \]
+  #+end_export
 
 
 ** Dimensión temporal de la producción
@@ -88,7 +90,9 @@
 ** Producción con un factor variable
 - A corto plazo el capital es un factor fijo: $K = \overline{K}$.
 - Función de producción a corto plazo:
+  #+begin_export latex
   \[ Q = F(\Kbar, L) = f(L) \]
+  #+end_export
 - La única forma en que la empresa puede alterar su nivel de
   producción es variar el uso del factor variable.
 
@@ -99,7 +103,9 @@
 
 - El *producto total* es el nivel de producción que se obtiene cuando
   se utilizan $L$ unidades de trabajo:
+  #+begin_export latex
   \[ Q = f(L) \]
+  #+end_export
 
 
 ** Producto marginal del trabajo
@@ -108,7 +114,9 @@
 
 - El *producto marginal del trabajo* es la tasa a la que crece la
   producción por unidad adicional de trabajo:
+  #+begin_export latex
   \[ \PMgL = \frac{\diff Q}{\diff L} = \frac{\diff f(L)}{\diff L} \]
+  #+end_export
 
 
 ** La curva de producto marginal (I)
@@ -159,7 +167,9 @@
 
 - El *producto medio del trabajo* es el número de unidades producidas
   por hora de trabajo:
+  #+begin_export latex
   \[ \PMeL = \frac{Q}{L} = \frac{f(L)}{L}\]
+  #+end_export
 
 
 ** La curva de producto medio

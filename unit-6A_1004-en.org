@@ -28,24 +28,34 @@
 - Although some of the factors are owned by the firm, we must include
   the *opportunity cost*.
 - The total cost is:
+  #+begin_export latex
   \[ C = r K + w L \]
+  #+end_export
   where $w$ is the wage and $r$ the price of capital.
 
 
 ** Total cost in the short run
 - In the short run capital is a fixed factor: $K = \Kbar$.
 - Total costs in the short run:
+  #+begin_export latex
   \[ C = r \Kbar + w L \]
+  #+end_export
 
 
 ** Fixed and variable costs
 - The *fixed costs* are those associated to the use of fixed factors:
+  #+begin_export latex
   \[ \CF = r \Kbar \]
+  #+end_export
 - The *variable costs* are the remuneration of variable factors:
+  #+begin_export latex
   \[ \CV = w L \]
+  #+end_export
 - The *total cost in the short run* is the sum of the fixed cost and
   the variable cost:
+  #+BEGIN_EXPORT LATEX
   \[ C = \CF + \CV \]
+  #+END_EXPORT
 
 
 
@@ -56,7 +66,9 @@
   varying the usage of labour.
 - Changes in the production level cause changes in the variable costs.
 - The fixed costs are independent of the production level:
+  #+begin_export latex
   \[ \frac{\diff \CF}{\diff Q} = 0 \]
+  #+end_export
 
 
 ** Costs and production (II)
@@ -82,7 +94,9 @@
 
 - The *variable cost curve* indicates the minimum variable cost at
   which a determined level of production can be obtained:
+  #+begin_export latex
   \[ \CV(Q) = w f^{-1}(Q) \]
+  #+end_export
 
 
 ** Total cost curve
@@ -96,46 +110,64 @@
 
 ** The cost curves in the short term
 - The fixed cost does not depend on the production level:
+  #+begin_export latex
   \[ \CF(Q) = r \Kbar \]
+  #+end_export
 - The variable cost is obtained by inverting the total product
   function in the short term:
+  #+begin_export latex
   \[ \CV(Q) = w f^{-1}(Q) \]
+  #+end_export
 - Total cost is the sum of fixed and variable cost:
+  #+begin_export latex
   \[ \CT(Q) = r \Kbar + w f^{-1}(Q) \]
+  #+end_export
 
 
 ** Marginal cost
 - The *marginal cost* is the rate at which total cost varies per
   additional unit of production:
+  #+begin_export latex
   \[ \CMg = \frac{\diff C}{\diff Q} \]
+  #+end_export
 - The marginal cost can be expressed as the derivative of variable
   cost with respect to $Q$:
-  \[ \CMg =
-     \frac{\diff \CF}{\diff Q} + \frac{\diff \CV}{\diff Q} =
-     \frac{\diff \CV}{\diff Q} \]
+  #+begin_export latex
+  \[ \CMg = \frac{\diff \CF}{\diff Q} + \frac{\diff \CV}{\diff Q} = \frac{\diff \CV}{\diff Q} \]
+  #+end_export
 
 
 ** Average cost
 - The *average cost* is the ratio between total cost and production:
+  #+begin_export latex
   \[ \CMe = \frac{C}{Q} \]
+  #+end_export
 - The *average fixed cost* and the *average variable cost* are defined
   in a similar way:
+  #+begin_export latex
   \[ \CFMe = \frac{\CF}{Q} \qquad \CVMe = \frac{\CV}{Q} \]
+  #+end_export
 - It is easy to check that
+  #+begin_export latex
   \[ \CMe = \CFMe + \CVMe  \]
+  #+end_export
 
 
 ** Relationship between $\PMg$, $\PMe$, $\CMg$ and $\CMe$  (I)
 - The variable cost is:
+  #+begin_export latex
   \[ \CV = w L \]
+  #+end_export
 - Dividing by the level of production, we get the average variable
   cost:
+  #+begin_export latex
   \[ \CVMe = w \frac{L}{Q} = w\frac{1}{Q/L} = \frac{w}{\PMeL} \]
+  #+end_export
 - On the other hand, the rate at which the $\CV$ changes per
   additional unit of $Q$ is the marginal cost:
-  \[ \CMg = \frac{\diff \CV}{\diff Q} =
-     w \frac{\diff L}{\diff Q} = w\frac{1}{\diff Q/\diff L} =
-     \frac{w}{\PMgL} \]
+  #+begin_export latex
+  \[ \CMg = \frac{\diff \CV}{\diff Q} = w \frac{\diff L}{\diff Q} = w\frac{1}{\diff Q/\diff L} = \frac{w}{\PMgL} \]
+  #+end_export
 
 
 ** Relationship between $\PMg$, $\PMe$, $\CMg$ and $\CMe$  (II)
@@ -170,7 +202,9 @@
 #+figure: ./figures/fig-t30-sr07.pdf 0.55
 
 - The *average fixed cost curve* decreases as production increases:
+  #+begin_export latex
   \[ \CFMe(Q) = \frac{r \Kbar}{Q} \]
+  #+end_export
 
 
 ** Average cost curve (I)

@@ -30,7 +30,9 @@
 - La pendiente en un punto de una curva de indiferencia es la \RMS{}
   con signo negativo.
 - A partir de la función de utilidad, $U = U(C_1, C_2)$:
+  #+begin_export latex
   \[\RMS = \frac{\mlabel{\UMgLabel_{C_1}}}{\mlabel{\UMgLabel_{C_2}}} \]
+  #+end_export
 
 
 ** Las preferencias intertemporales (y II)
@@ -53,33 +55,51 @@
 ** La restricción presupuestaria (II)
 - El consumidor puede pedir prestado para incrementar su consumo en el
   periodo 1 por encima de su renta en ese periodo:
+  #+begin_export latex
   \[ C_1 - M_1 > 0 \]
+  #+end_export
 - El consumo en el periodo 2 sería igual a la renta que le queda
   después de devolver el préstamo con los intereses:
+  #+begin_export latex
   \[ C_2 = M_2 - (1 + r) (C_1 - M_1) \]
+  #+end_export
 - Restricción intertemporal cuando pide prestado:
+  #+begin_export latex
   \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1\]
+  #+end_export
 
 
 ** La restricción presupuestaria (y III)
 - El consumidor puede prestar parte de su renta del primer periodo. En
   ese caso:
+  #+begin_export latex
   \[ M_1 - C_1 > 0 \]
+  #+end_export
 - El consumo en el periodo 2 sería  mayor que la renta de ese periodo:
+  #+begin_export latex
   \[ C_2 = M_2 + (1 + r) (M_1 - C_1) \]
+  #+end_export
 - Restricción intertemporal cuando presta:
+  #+begin_export latex
   \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1 \]
+  #+end_export
 
 
 ** La restricción intertemporal (I)
  - En los dos casos llegamos a la misma restricción presupuestaria:
+   #+begin_export latex
    \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1 \]
+   #+end_export
  - Podemos reescribir la restricción intertemporal como:
+   #+begin_export latex
    \[  M_1 + \frac{M_2}{1+ r} = C_1 + \frac{C_2}{1 + r} \]
+   #+end_export
  - El valor presente del flujo de renta es igual al valor presente del
    flujo de consumo.
  - La restricción intertemporal en términos de valores futuros:
+   #+begin_export latex
    \[  M_1(1+r) + M_2 = C_1(1 + r) + C_2 \]
+   #+end_export
 
 
 ** La restricción intertemporal (II)
@@ -104,7 +124,9 @@
   nivel de satisfacción.
 
 - Si la solución es interior se cumple la condición de tangencia:
+  #+begin_export latex
   \[ \RMS{} = 1 + r \]
+  #+end_export
 
 
 ** La elección intertemporal (II)
@@ -112,7 +134,9 @@
 #+figure: ./figures/fig-t21-ciri04.pdf 0.55
 
 - La elección óptima en este caso implica:
+  #+begin_export latex
   \[ M_1 > C_1 \]
+  #+end_export
 - El consumidor presta parte de su renta en el periodo inicial.
 
 
@@ -121,7 +145,9 @@
 #+figure: ./figures/fig-t21-ciri05.pdf 0.55
 
 - La elección óptima en este caso implica:
+  #+begin_export latex
   \[ M_1 < C_1 \]
+  #+end_export
 - El consumidor pide un préstamo en el primer periodo.
 
 
@@ -130,18 +156,26 @@
 
 ** El ahorro
 - El ahorro del consumidor en el primer periodo es
+  #+begin_export latex
   \[ S = M_1 - C_1 \]
+  #+end_export
 - Cuando el consumidor presta parte de su renta el ahorro es positivo:
+  #+begin_export latex
   \[ S = M_1 - C_1 > 0 \]
+  #+end_export
 - Cuando el consumidor pide prestado en el primer periodo el ahorro es
   negativo:
+  #+begin_export latex
   \[ S = M_1 - C_1 < 0 \]
+  #+end_export
 
 
 ** La curva de ahorro (I)
 - La *curva de ahorro* indica la cantidad de renta que ahorra el
   consumidor para cada posible tipo de interés:
+  #+begin_export latex
   \[ S = S(r) \]
+  #+end_export
 - La obtenemos analizando las diferentes elecciones de consumo
   presente y futuro conforme varía el tipo de interés.
 

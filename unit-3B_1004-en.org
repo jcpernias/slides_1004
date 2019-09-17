@@ -103,7 +103,9 @@ If the price of good $X$ increases:
 #+figure: ./figures/fig-t16-eres02.pdf 0.55
 
 - Total effect of the increase of $P_X$:
+  #+BEGIN_EXPORT LATEX
   \[ \ET = 3 - 24 = -21 \]
+  #+END_EXPORT
 
 
 ** Example (III)
@@ -146,7 +148,9 @@ If the price of good $X$ increases:
 
 ** Normal goods (I)
 - The *total effect* of a *normal good* has *negative sign*:
+  #+begin_export latex
   \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  +\underset{(-)}{\ER} \]
+  #+end_export
 
 
 ** Normal goods (and II)
@@ -161,14 +165,19 @@ If the price of good $X$ increases:
 
 - The *total effect* of an *inferior good* can have a *negative or
   positive sign*:
+  #+begin_export latex
   \[ \underset{(?)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \]
+  #+end_export
 
 - Frequently, the magnitude of the income effect is small compared to
   that of the substitution effect.
+  #+BEGIN_EXPORT LATEX
   \[ |\ER| < |\ES| \]
+  #+END_EXPORT
 - In this case, the demand of an inferior good has a negative slope:
-  \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad
-  \big(|\ER| < |\ES|\big) \]
+  #+begin_export latex
+  \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad \big(|\ER| < |\ES|\big) \]
+  #+end_export
 
 
 ** Inferior goods (and II)
@@ -183,8 +192,9 @@ If the price of good $X$ increases:
 
 - A Giffen good is an inferior good whose income effect is greater, in
   absolute terms, than the substitution effect:
-  \[ \underset{(+)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad
-  \big(|\ER| > |\ES|\big) \]
+  #+begin_export latex
+  \[ \underset{(+)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad \big(|\ER| > |\ES|\big) \]
+  #+end_export
 
 
 ** Giffen goods (II)

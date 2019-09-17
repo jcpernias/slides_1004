@@ -35,10 +35,14 @@
 ** The isocost lines (I)
 - An *isocost curve* is the set of all the combinations of factors
   that, at market prices, represent the same cost:
+  #+begin_export latex
   \[ \Cbar = r K + w L \]
+  #+end_export
 - If the firm decisions cannot alter prices of the factors, the
   isocost is a straight line:
+  #+begin_export latex
   \[ K = \frac{\Cbar}{r} - \frac{w}{r} L \]
+  #+end_export
 
 
 ** The isocost lines (II)
@@ -46,7 +50,9 @@
 #+figure: ./figures/fig-t31-eq02.pdf 0.5
 
 - The slope of the isocost line is negative:
+  #+begin_export latex
   \[\left.\frac{\diff K}{\diff L}\right|_{\Cbar} = -\frac{w}{r} \]
+  #+end_export
 - To keep constant the production cost if the firm hires more units of
   $L$, it has to stop using some units of $K$.
 
@@ -68,7 +74,9 @@
   different isocost.
 - The more distant from the origin is the isocost, higher is the
   associated cost:
+  #+begin_export latex
   \[ C_1 < C_2 < C_3 < \dotsb \]
+  #+end_export
 
 
 ** The optimal choice (I)
@@ -86,7 +94,9 @@
 #+figure: ./figures/fig-t31-eq06.pdf 0.5
 
 - In the combination $A$:
+  #+begin_export latex
   \[ \RMST > \frac{w}{r} \]
+  #+end_export
 - The firm can produce $\Qbar$ at a lower cost if it replaces $K$ by
   $L$.
 
@@ -96,7 +106,9 @@
 #+figure: ./figures/fig-t31-eq07.pdf 0.5
 
 - In the combination $B$:
+  #+begin_export latex
   \[ \RMST < \frac{w}{r} \]
+  #+end_export
 - The firm can produce $\Qbar$ at a lower cost if it replaces $L$ by
   $K$.
 
@@ -107,7 +119,9 @@
 
 - Interior solution.
 - Tangency condition:
+  #+begin_export latex
   \[ \RMST = \frac{w}{r} \]
+  #+end_export
 
 
 ** Duality(I)
@@ -130,7 +144,9 @@
 
 - Interior solution.
 - Tangency condition:
+  #+begin_export latex
   \[ \RMST = \frac{w}{r} \]
+  #+end_export
 
 
 
@@ -158,7 +174,9 @@
 
 - Using the conditional demands of factors, we obtain the
   *long-run cost curve*:
+  #+begin_export latex
   \[ \CT_{\LP}(Q) = r K(Q) + w L(Q) \]
+  #+end_export
 
 
 ** Long-run total cost curve
@@ -167,15 +185,21 @@
 
 - In the long-run there are no fixed costs. The firm always has the
   option of not producing anything without costs:
+  #+BEGIN_EXPORT LATEX
   \[ \CT_{\LP}(0) = 0 \]
+  #+END_EXPORT
 
 
 ** Average cost and marginal cost(I)
 
 - Long-run average cost:
+  #+begin_export latex
   \[ \CMeLP(Q) = \frac{\CT_{\LP}(Q)}{Q} \]
+  #+end_export
 - Marginal cost in the long-run:
+  #+begin_export latex
   \[ \CMgLP(Q) = \frac{\diff \CT_{\LP}(Q)}{\diff Q} \]
+  #+end_export
 
 
 ** Average cost and marginal cost(II)
@@ -212,9 +236,13 @@
   costs increase in the same proportion than production.
 - For example, the firm can double its production by doubling the
   usage of all the factors of production:
+  #+begin_export latex
   \[ Q_1 = F(2 K_0, 2 L_0) = 2 F(K_0, L_0) = 2 Q_0 \]
+  #+end_export
 - In that case, costs also double:
+  #+begin_export latex
   \[ \CT_{\LP}(Q_1) = r 2 K_0 + w 2 L_0 = 2 (r K_0 + w L_0) = 2 \CT_{\LP}(Q_0) \]
+  #+end_export
 
 
 ** Returns to scale and costs in the long-run(II)
@@ -223,7 +251,9 @@
 
 - With constant returns to scale, the cost function is linear in
   production:
+  #+begin_export latex
   \[ \CT_{\LP}(Q) = c Q \]
+  #+end_export
 
 
 ** Returns to scale and costs in the long-run(III)
@@ -232,7 +262,9 @@
 
 - With constant returns to scale, the average cost and the marginal
   cost are equal to a same constant:
+  #+begin_export latex
   \[ \CMeLP(Q) = \CMgLP(Q) = c \]
+  #+end_export
 
 
 ** Returns to scale and costs in the long-run(and IV)

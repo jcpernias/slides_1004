@@ -43,7 +43,9 @@
 ** Soluciones interiores
 - *Solución interior*: la cesta óptima $(X^*, Y^*)$ contiene alguna
   unidad de cada uno de los bienes:
+  #+begin_export latex
   \[ X^* >0; \quad Y^* > 0. \]
+  #+end_export
 
 
 ** Condición de tangencia (I)
@@ -96,7 +98,9 @@
 #+figure: ./figures/fig-t12-ej01.pdf 0.55
 
 - Solución interior:
+  #+begin_export latex
   \[ X^* = 17.5; Y^*=17.5. \]
+  #+end_export
 
 
 
@@ -107,7 +111,9 @@
 ** Soluciones de esquina (I)
 - En una *solución de esquina*, alguno de los bienes no está presente
   en la cesta óptima:
+  #+begin_export latex
   \[ X^* = M/P_X, Y^* = 0;\quad\text{o}\quad X^* = 0, Y^* = M/P_Y. \]
+  #+end_export
 
 
 ** Soluciones de esquina (II)
@@ -138,12 +144,16 @@
 #+figure: ./figures/fig-t12-ej02.pdf 0.55
 
 - Solución de esquina:
+  #+begin_export latex
   \[ X^* = 0; Y^*=35. \]
+  #+end_export
 
 
 ** Condiciones de óptimo
 - Solución interior:
+  #+begin_export latex
   \[ \RMS = P_X/P_Y; \quad X^*, Y^* > 0. \]
+  #+end_export
 - Soluciones de esquina:
   #+BEGIN_EXPORT LaTeX
     \begin{gather*}
