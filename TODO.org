@@ -6,7 +6,137 @@
 * DONE unit 1D english. Check unicorn10 figure
 * TODO Whitespace at the top of the outline slide.
 * TODO Parallel build from scratch fails
->>>>>>> macros
 * TODO Regexp for display equations: \(\\\[.*\\\]\) → #+begin_export latex
 \1
 #+end_latex
+* TODO Unit 2A figures:
+- #+figure: ./figures/fig-t10-xy.pdf 0.45
+- #+figure: ./figures/fig-t10-rp1.pdf 0.5
+- #+figure: ./figures/fig-t10-rp1b.pdf 0.45
+- #+figure: ./figures/fig-t10-rp3.pdf 0.45
+- #+figure: ./figures/fig-t10-rp5.pdf 0.45
+- #+figure: ./figures/fig-t10-rp6.pdf 0.45
+- #+figure: ./figures/fig-t10-rp7.pdf 0.45
+- #+figure: ./figures/fig-t10-rp8.pdf 0.45
+- #+figure: ./figures/fig-t10-rp10.pdf 0.45
+- #+figure: ./figures/fig-t10-rp11.pdf 0.45
+- #+figure: ./figures/fig-t10-rac1.pdf 0.45
+- #+figure: ./figures/fig-t10-orp2.pdf 0.45
+- #+figure: ./figures/fig-t10-orp3.pdf 0.45
+* TODO Unit 2B figures:
+- #+figure: ./figures/fig-t11-ci02.pdf 0.45
+- #+figure: ./figures/fig-t11-ci03.pdf 0.45
+- #+figure: ./figures/fig-t11-ci04.pdf 0.45
+- #+figure: ./figures/fig-t11-ci05.pdf 0.45
+- #+figure: ./figures/fig-t11-ci06.pdf 0.45
+- #+figure: ./figures/fig-t11-tr01.pdf 0.45
+- #+figure: ./figures/fig-t11-map01.pdf 0.45
+- #+figure: ./figures/fig-t11-rms01.pdf 0.45
+- #+figure: ./figures/fig-t11-rms02.pdf 0.45
+- #+figure: ./figures/fig-t11-rms03.pdf 0.45
+- #+figure: ./figures/fig-t11-nreg01.pdf 0.45
+- #+figure: ./figures/fig-t11-nreg02.pdf 0.45
+- #+figure: ./figures/fig-t11-nreg03.pdf 0.45
+- #+figure: ./figures/fig-t11-nreg04.pdf 0.45
+- #+figure: ./figures/fig-t11-fu01.pdf 0.45
+- #+figure: ./figures/fig-t11-map02.pdf 0.45
+- #+figure: ./figures/fig-t11-map03.pdf 0.48
+- #+figure: ./figures/fig-t11-fu02.pdf 0.45
+* TODO Unit 2C figures:
+- #+figure: ./figures/fig-t12-eq01.pdf 0.45
+- #+figure: ./figures/fig-t12-eq01a.pdf 0.45
+- #+figure: ./figures/fig-t12-eq02.pdf 0.45
+- #+figure: ./figures/fig-t12-eq02a.pdf 0.45
+- #+figure: ./figures/fig-t12-eq03.pdf 0.45
+- #+figure: ./figures/fig-t12-ej01.pdf 0.55
+- #+figure: ./figures/fig-t12-eq10.pdf 0.45
+- #+figure: ./figures/fig-t12-eq11.pdf 0.45
+- #+figure: ./figures/fig-t12-ej02.pdf 0.55
+* TODO Unit 3A figures:
+- #+figure: ./figures/fig-t15-crc2.pdf 0.55
+- #+figure: ./figures/fig-t15-crc3.pdf 0.55
+- #+figure: ./figures/fig-t15-crc.pdf 0.55
+- #+figure: ./figures/fig-t15-eng.pdf 0.55
+- #+figure: ./figures/fig-t15-cpc2.pdf 0.55
+- #+figure: ./figures/fig-t15-cpc3.pdf 0.55
+- #+figure: ./figures/fig-t15-cpc.pdf 0.55
+- #+figure: ./figures/fig-t15-dem.pdf 0.55
+* TODO Unit 3B figures:
+- #+figure: ./figures/fig-t16-eres20.pdf 0.55
+- #+figure: ./figures/fig-t16-eres22.pdf 0.55
+- #+figure: ./figures/fig-t16-eres02.pdf 0.55
+- #+figure: ./figures/fig-t16-eres03.pdf 0.55
+- #+figure: ./figures/fig-t16-eres04.pdf 0.55
+- #+figure: ./figures/fig-t16-eres10.pdf 0.55
+- #+figure: ./figures/fig-t16-eres11.pdf 0.55
+- #+figure: ./figures/fig-t16-eres12.pdf 0.55
+- #+figure: ./figures/fig-t16-eres05a.pdf 0.55
+- #+figure: ./figures/fig-t16-eres05.pdf 0.55
+- #+figure: ./figures/fig-t16-eres06.pdf 0.55
+* TODO Unit 4A:
+- #+figure: ./figures/fig-t21-ciri01.pdf 0.55
+- #+figure: ./figures/fig-t21-ciri02.pdf 0.55
+- #+figure: ./figures/fig-t21-ciri03.pdf 0.55
+- #+figure: ./figures/fig-t21-ciri04.pdf 0.55
+- #+figure: ./figures/fig-t21-ciri05.pdf 0.55
+- #+figure: ./figures/fig-t21-ciri06.pdf 0.55
+- #+figure: ./figures/fig-t21-ciri07.pdf 0.55
+- #+figure: ./figures/fig-t21-cisv01.pdf 0.55
+* TODO Unit 5A figures:
+- #+figure: ./figures/fig-t25-cp01.pdf 0.5
+- #+figure: ./figures/fig-t25-cp03.pdf 0.5
+- #+figure: ./figures/fig-t25-cp06.pdf 0.5
+- #+figure: ./figures/fig-t25-cp06a.pdf 0.5
+- #+figure: ./figures/fig-t25-cp06b.pdf 0.5
+- #+figure: ./figures/fig-t25-cp08.pdf 0.5
+- #+figure: ./figures/fig-t25-cp02.pdf 0.5
+- #+figure: ./figures/fig-t25-cp07.pdf 0.5
+- #+figure: ./figures/fig-t25-cp05.pdf 0.5
+- #+figure: ./figures/fig-t25-cp04.pdf 0.5
+* TODO Unit 5B figures:
+- #+figure: ./figures/fig-t26-is01.pdf 0.5
+- #+figure: ./figures/fig-t26-is02.pdf 0.5
+- #+figure: ./figures/fig-t26-is05.pdf 0.5
+- #+figure: ./figures/fig-t26-is03.pdf 0.5
+- #+figure: ./figures/fig-t26-is04.pdf 0.5
+- #+figure: ./figures/fig-t26-re01.pdf 0.5
+- #+figure: ./figures/fig-t26-re02.pdf 0.5
+- #+figure: ./figures/fig-t26-re03.pdf 0.5
+* TODO Unit 6A figures:
+- #+figure: ./figures/fig-t30-sr01.pdf 0.55
+- #+figure: ./figures/fig-t30-sr02.pdf 0.55
+- #+figure: ./figures/fig-t30-sr03.pdf 0.55
+- #+figure: ./figures/fig-t30-sr04.pdf 0.55
+- #+figure: ./figures/fig-t30-sr05.pdf 0.55
+- #+figure: ./figures/fig-t30-sr06.pdf 0.55
+- #+figure: ./figures/fig-t30-sr06.pdf 0.55
+- #+figure: ./figures/fig-t30-sr07.pdf 0.55
+- #+figure: ./figures/fig-t30-sr08.pdf 0.55
+- #+figure: ./figures/fig-t30-sr08.pdf 0.55
+* TODO Unit 6B figures:
+- #+figure: ./figures/fig-t31-eq01.pdf 0.5
+- #+figure: ./figures/fig-t31-eq02.pdf 0.5
+- #+figure: ./figures/fig-t31-eq03.pdf 0.5
+- #+figure: ./figures/fig-t31-eq04.pdf 0.5
+- #+figure: ./figures/fig-t31-eq06.pdf 0.5
+- #+figure: ./figures/fig-t31-eq07.pdf 0.5
+- #+figure: ./figures/fig-t31-eq05.pdf 0.5
+- #+figure: ./figures/fig-t31-eq08.pdf 0.5
+- #+figure: ./figures/fig-t31-exp02.pdf 0.5
+- #+figure: ./figures/fig-t31-clp01.pdf 0.5
+- #+figure: ./figures/fig-t31-env08.pdf 0.53
+- #+figure: ./figures/fig-t31-clp02.pdf 0.5
+- #+figure: ./figures/fig-t31-clp03.pdf 0.5
+- #+figure: ./figures/fig-t31-exp03.pdf 0.5
+- #+figure: ./figures/fig-t31-exp04.pdf 0.5
+- #+figure: ./figures/fig-t31-exp05.pdf 0.5
+- #+figure: ./figures/fig-t31-env20.pdf 0.5
+- #+figure: ./figures/fig-t31-env21.pdf 0.5
+- #+figure: ./figures/fig-t31-env01.pdf 0.55
+- #+figure: ./figures/fig-t31-env02.pdf 0.55
+- #+figure: ./figures/fig-t31-env03.pdf 0.55
+- #+figure: ./figures/fig-t31-env04.pdf 0.55
+- #+figure: ./figures/fig-t31-env05.pdf 0.55
+- #+figure: ./figures/fig-t31-env06.pdf 0.55
+- #+figure: ./figures/fig-t31-env07.pdf 0.55
+* TODO Bind info to C-h i.
