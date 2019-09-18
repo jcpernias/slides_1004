@@ -1,8 +1,8 @@
 SHELL := /bin/sh
 
 subject_code := 1004
-units := 1A 1B 1C 1D 1E 2A 2B 2C
-unit_figs := 1A 1B 1C 1D 1E 2A 2B 2C
+units := 1A 1B 1C 1D 1E 2A 2B 2C 5B
+unit_figs := 1A 1B 1C 1D 1E 2A 2B 2C 5B
 
 TEXI2DVI_SILENT := -q
 # TEXI2DVI_SILENT :=
