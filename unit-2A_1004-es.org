@@ -33,7 +33,7 @@
 
 
 ** Cestas de consumo (y II)
-#+figure: ./figures/fig-t10-xy.pdf 0.45
+#+MATS: figcol fig-2A_1004-xy-*.pdf 0.45
 
 - La cesta $A$ está compuesta por 1 unidad del bien $X$ y 3 unidades
   del bien $Y$: $A = (1, 3)$.
@@ -78,7 +78,7 @@
 
 
 ** La restricción presupuestaria (y II)
-#+figure: ./figures/fig-t10-rp1.pdf 0.5
+#+MATS: figcol fig-2A_1004-rp1-*.pdf 0.5
 
 - Los puntos de corte con los ejes son los *consumos máximos* de cada
   bien: $M/P_X$ y $M/P_Y$.
@@ -113,7 +113,7 @@
 
 ** Ejemplo (II)
 
-#+figure: ./figures/fig-t10-rp1b.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp1b-*.pdf 0.45
 
 - Consumo máximo de $X$: $20$ unidades.
 - Consumo máximo de $Y$: $40$ unidades.
@@ -121,7 +121,7 @@
 
 
 ** Ejemplo (y III)
-#+figure: ./figures/fig-t10-rp3.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp3-*.pdf 0.45
 
 - Gasto asociado a la cesta
   - $A$: $6\cdot 5 + 3 \cdot 35 = 135 € > M$
@@ -136,7 +136,7 @@
 
 
 ** Precio relativo y coste de oportunidad (y II)
-#+figure: ./figures/fig-t10-rp5.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp5-*.pdf 0.45
 
 - Por cada unidad adicional de $X$, el consumidor renuncia a 2
   unidades de $Y$:
@@ -150,7 +150,7 @@
 
 
 ** Variaciones en un precio (I)
-#+figure: ./figures/fig-t10-rp6.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp6-*.pdf 0.45
 
 - Una disminución del precio de $X$:
   #+begin_export latex
@@ -160,7 +160,7 @@
 
 
 ** Variaciones en un precio (y II)
-#+figure: ./figures/fig-t10-rp7.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp7-*.pdf 0.45
 
 - Un aumento del precio de $Y$:
   #+begin_export latex
@@ -171,7 +171,7 @@
 
 ** Variaciones en la renta
 
-#+figure: ./figures/fig-t10-rp8.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp8-*.pdf 0.45
 
 - Un aumento de la renta:
   #+begin_export latex
@@ -182,7 +182,7 @@
 
 
 ** Variaciones en precios y renta (I)
-#+figure: ./figures/fig-t10-rp10.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp10-*.pdf 0.45
 
 - Disminución de $P_X$, $P'_X < P_X$, y disminución de $M$, $M' < M$.
 - Algunas opciones ya no están disponibles.
@@ -190,7 +190,7 @@
 
 
 ** Variaciones en precios y renta (y II)
-#+figure: ./figures/fig-t10-rp11.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp11-*.pdf 0.45
 
 - Cambio de precios y renta en la misma proporción:
   #+begin_export latex
@@ -226,14 +226,14 @@
 
 ** Racionamiento
 
-#+figure: ./figures/fig-t10-rac1.pdf 0.45
+#+MATS: figcol fig-2A_1004-rac1-*.pdf 0.45
 
 - *Racionamiento*: El consumo del bien $X$ no puede ser mayor que
   $\bar{X}$, una cantidad fijada por el Gobierno.
 
 
 ** Subvenciones
-#+figure: ./figures/fig-t10-orp2.pdf 0.45
+#+MATS: figcol fig-2A_1004-orp2-*.pdf 0.45
 
 - Las primeras $\bar{X}$ unidades de $X$ se venden a un precio
   reducido $P'_X$.
@@ -241,7 +241,7 @@
 
 
 ** Donaciones
-#+figure: ./figures/fig-t10-orp3.pdf 0.45
+#+MATS: figcol fig-2A_1004-orp3-*.pdf 0.45
 
 - El consumidor no paga nada por las primeras $\bar{X}$ unidades de
   $X$.
