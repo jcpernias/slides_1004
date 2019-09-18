@@ -1,0 +1,813 @@
+#+STARTUP: indent hidestars content
+
+#+TITLE: Unit 5A figures
+
+#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+
+#+begin_src latex :tangle fig-t25-cp01.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+
+## Load code
+source("./R/srprod.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Qtop <- 50
+PMgtop <- 1.25
+PMgbottom <- -0.2
+Ltop <- 120
+
+xscale <- width/Ltop
+yscale <- height/Qtop
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+A <- c(L[tA], Q[tA])
+B <- c(L[tB], Q[tB])
+
+
+Coordinates(A=A, B=B)
+
+@
+
+  \draw[help lines]
+     let \p1 = (A) in
+     (0, \y1) node[left, font=\scriptsize] {$Q_{A}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$L_{A}$}
+     ;
+
+  \draw[help lines]
+     let \p1 = (B) in
+     (0, \y1) node[left, font=\scriptsize] {$Q_{B}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$L_{B}$}
+     ;
+
+  \draw[IMe]
+    plot[smooth] coordinates
+    <<Plot>>=
+cat("{",
+  paste(coord(L, Q), collapse="\n"),
+    "}")
+@
+    node[right, font=\footnotesize] {$f(L)$}
+      ;
+
+
+  \node[dot] at (A) {};
+  \node[dot] at (B) {};
+
+\draw[axis] (0,\Sexpr{Qtop}) node[left] {$Q$} |-
+   node[left] {\phantom{$\PMgL$}}
+   (\Sexpr{Ltop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t25-cp03.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+
+## Load code
+source("./R/srprod.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Qtop <- 50
+PMgtop <- 1.25
+PMgbottom <- -0.2
+Ltop <- 120
+
+xscale <- width/Ltop
+yscale <- height/Qtop
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+A <- c(L[tA], Q[tA])
+B <- c(L[tB], Q[tB])
+dA <- c(1, PMg[tA])
+dB <- c(1, PMg[tB])
+
+Coordinates(A=A, B = B, dA = dA, dB = dB)
+
+@
+
+  \draw[help lines]
+     let \p1 = (A) in
+     (0, \y1) node[left, font=\scriptsize] {$Q_{A}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$L_{A}$}
+     ;
+
+  \draw[help lines]
+     let \p1 = (B) in
+     (0, \y1) node[left, font=\scriptsize] {$Q_{B}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$L_{B}$}
+     ;
+
+
+  \draw[IMe]
+    plot[smooth] coordinates
+    <<Plot>>=
+cat("{",
+  paste(coord(L, Q), collapse="\n"),
+    "}")
+@
+    node[right, font=\footnotesize] {$f(L)$}
+      ;
+
+
+  \draw[CMe, DarkGreen]
+      ($(A) - 8*(dA)$) -- ($(A) + 8*(dA)$)
+      ($(B) - 10*(dB)$) -- ($(B) + 10*(dB)$)
+      ;
+
+
+
+  \node[dot] at (A) {};
+  \node[dot] at (B) {};
+
+
+
+\draw[axis] (0,\Sexpr{Qtop}) node[left] {$Q$} |-
+   node[left] {\phantom{$\PMgL$}}
+   (\Sexpr{Ltop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t25-cp06.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+
+## Load code
+source("./R/srprod.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Qtop <- 50
+PMgtop <- 1.25
+PMgbottom <- -0.2
+Ltop <- 120
+
+xscale <- width/Ltop
+yscale <- height/(PMgtop - PMgbottom)
+
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+A <- c(L[tA], PMg[tA])
+B <- c(L[tB], PMg[tB])
+
+
+Coordinates(A=A, B=B)
+
+@
+   \draw[help lines]
+     let \p1 = (A) in
+     (A) --
+     (\x1, 0) node[below, font=\scriptsize] {$L_{A}$}
+     ;
+
+  \draw[help lines]
+     let \p1 = (B) in
+     (B) --
+     (\x1, 0) node[below, font=\scriptsize] {$L_{B}$}
+     ;
+
+
+  \draw[IMe, DarkGreen]
+    plot[smooth] coordinates
+<<PMg>>=
+  cat("{",
+      paste(coord(L, PMg), collapse="\n"),
+      "}")
+@
+    node[right, font=\footnotesize] {$\PMgL$}
+      ;
+
+
+
+  \node[dot] at (A) {};
+  \node[dot] at (B) {};
+
+
+\draw[axis, <->] (0,\Sexpr{PMgtop})
+    node[left] {$\PMgL$} --
+    (0,-\Sexpr{-PMgbottom})
+    ;
+\draw[axis, ->] (0, 0) --
+    (\Sexpr{Ltop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t25-cp06a.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+
+## Load code
+source("./R/srprod.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Qtop <- 50
+PMgtop <- 1.25
+PMgbottom <- -0.2
+Ltop <- 120
+
+xscale <- width/Ltop
+yscale <- height/(PMgtop - PMgbottom)
+
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+C <- c(L[tC], PMg[tC])
+D <- c((L[tD0] + L[tD1])/2, (PMg[tD0] + PMg[tD1])/2)
+
+
+Coordinates(C=C, D=D)
+
+@
+
+  %% \draw[help lines]
+  %%    let \p1 = (D) in
+  %%    (\x1, 0) node[below, font=\scriptsize] {$L_{D}$}
+  %%    ;
+
+  \draw[help lines]
+     let \p1 = (C) in
+     (C) --
+     (\x1, 0) node[below, font=\scriptsize] {$L_{C}$}
+     ;
+
+  \draw[IMe, DarkGreen]
+    plot[smooth] coordinates
+<<PMg>>=
+  cat("{",
+      paste(coord(L, PMg), collapse="\n"),
+      "}")
+@
+    node[right, font=\footnotesize] {$\PMgL$}
+      ;
+
+
+
+  \node[dot] at (C) {};
+  %% \node[dot] at (D) {};
+
+
+\draw[axis, <->] (0,\Sexpr{PMgtop})
+    node[left] {$\PMgL$} --
+    (0,-\Sexpr{-PMgbottom})
+    ;
+\draw[axis, ->] (0, 0) --
+    (\Sexpr{Ltop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t25-cp06b.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+
+## Load code
+source("./R/srprod.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Qtop <- 50
+PMgtop <- 1.25
+PMgbottom <- -0.2
+Ltop <- 120
+
+xscale <- width/Ltop
+yscale <- height/(PMgtop - PMgbottom)
+
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+C <- c(L[tC], PMg[tC])
+D <- c((L[tD0] + L[tD1])/2, (PMg[tD0] + PMg[tD1])/2)
+
+
+Coordinates(C=C, D=D)
+
+@
+
+  \draw[help lines]
+     let \p1 = (D) in
+     (\x1, 0) node[below, font=\scriptsize] {$L_{D}$}
+     ;
+
+  %% \draw[help lines]
+  %%    let \p1 = (C) in
+  %%    (C) --
+  %%    (\x1, 0) node[below, font=\scriptsize] {$L_{C}$}
+  %%    ;
+
+  \draw[IMe, DarkGreen]
+    plot[smooth] coordinates
+<<PMg>>=
+  cat("{",
+      paste(coord(L, PMg), collapse="\n"),
+      "}")
+@
+    node[right, font=\footnotesize] {$\PMgL$}
+      ;
+
+
+
+  %% \node[dot] at (C) {};
+  \node[dot] at (D) {};
+
+
+\draw[axis, <->] (0,\Sexpr{PMgtop})
+    node[left] {$\PMgL$} --
+    (0,-\Sexpr{-PMgbottom})
+    ;
+\draw[axis, ->] (0, 0) --
+    (\Sexpr{Ltop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t25-cp08.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srprod.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Qtop <- 42
+PMgtop <- 1.25
+PMgbottom <- -0.2
+Ltop <- 120
+
+xscale <- width/Ltop
+yscale <- height/Qtop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+tI <- N - 2
+
+I <- c(L[tI], Q[tI])
+D <- c((L[tD0] + L[tD1])/2, (Q[tD0] + Q[tD1])/2)
+
+tE <- which.min(abs (Q[1:tD0] - Q[tI]))
+E <- c(L[tE], Q[tE])
+
+Coordinates(D=D, I = I, E = E)
+
+
+@
+
+  \draw[help lines]
+     let \p1 = (D) in
+     (D) --
+     (\x1, 0) node[below, font=\scriptsize] {$L_{D}$}
+     ;
+
+  \draw[help lines]
+     let \p1 = (I) in
+     (0, \y1) -|
+     (\x1, 0) node[below, font=\scriptsize] {$L_{1}$}
+     ;
+
+   \draw[help lines]
+     let \p1 = (E) in
+     (E) --
+     (\x1, 0) node[below, font=\scriptsize] {$L_{2}$}
+     ;
+
+
+  \draw[IMe]
+    plot[smooth] coordinates
+    <<Plot>>=
+cat("{",
+  paste(coord(L, Q), collapse="\n"),
+    "}")
+@
+    node[right, font=\footnotesize] {$f(L)$}
+      ;
+
+
+  \draw[CMe, DarkGreen]
+      ($(D) - 9*(1, 0)$) -- ($(D) + 9*(1, 0)$)
+      ;
+
+
+
+  \node[dot] at (I) {};
+  \node[dot] at (D) {};
+  \node[dot] at (E) {};
+
+\draw[axis] (0,\Sexpr{Qtop}) node[left] {$Q$} |-
+   node[left] {\phantom{$\PMgL$}}
+   (\Sexpr{Ltop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t25-cp02.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+
+
+## Load code
+source("./R/srprod.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Qtop <- 50
+PMgtop <- 1.25
+PMgbottom <- -0.2
+Ltop <- 120
+
+xscale <- width/Ltop
+yscale <- height/Qtop
+
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+A <- c(L[tA], Q[tA])
+B <- c(L[tB], Q[tB])
+
+
+Coordinates(A=A, B=B)
+
+
+
+@
+
+  \draw[help lines]
+     let \p1 = (A) in
+     (0, \y1) node[left, font=\scriptsize] {$Q_{A}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$L_{A}$}
+     ;
+
+  \draw[help lines]
+     let \p1 = (B) in
+     (0, \y1) node[left, font=\scriptsize] {$Q_{B}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$L_{B}$}
+     ;
+
+
+  \draw[IMe]
+    plot[smooth] coordinates
+    <<Plot>>=
+cat("{",
+  paste(coord(L, Q), collapse="\n"),
+    "}")
+@
+    node[right, font=\footnotesize] {$f(L)$}
+      ;
+
+  \draw[CMe]
+      (0, 0) -- (A)
+      (0, 0) -- (B)
+      ;
+
+
+  \node[dot] at (A) {};
+  \node[dot] at (B) {};
+
+
+\draw[axis] (0,\Sexpr{Qtop}) node[left] {$Q$} |-
+   node[left] {\phantom{$\PMgL$}}
+    (\Sexpr{Ltop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t25-cp07.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+
+## Load code
+source("./R/srprod.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Qtop <- 50
+PMgtop <- 1.25
+PMgbottom <- -0.2
+Ltop <- 120
+
+xscale <- width/Ltop
+yscale <- height/PMgtop
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+A <- c(L[tA], PMe[tA])
+B <- c(L[tB], PMe[tB])
+
+
+Coordinates(A=A, B=B)
+
+
+@
+
+  \draw[help lines]
+     let \p1 = (A) in
+     (A) --
+     (\x1, 0) node[below, font=\scriptsize] {$L_{A}$}
+     ;
+
+  \draw[help lines]
+     let \p1 = (B) in
+     (B) --
+     (\x1, 0) node[below, font=\scriptsize] {$L_{B}$}
+     ;
+
+  \draw[IMe, Brown]
+    plot[smooth] coordinates
+<<PMe>>=
+  cat("{",
+      paste(coord(L, PMe), collapse="\n"),
+      "}")
+@
+    node[right, font=\footnotesize] {$\PMeL$}
+    ;
+
+
+  \node[dot] at (A) {};
+  \node[dot] at (B) {};
+
+
+\draw[axis, <-] (0,\Sexpr{PMgtop})
+    node[left] {$\PMeL$} --
+    (0,0) node[left] {\phantom{$\PMgL$}}
+    ;
+\draw[axis, ->] (0, 0) --
+    (\Sexpr{Ltop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t25-cp05.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+
+## Load code
+source("./R/srprod.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Qtop <- 50
+PMgtop <- 1.25
+PMgbottom <- -0.2
+Ltop <- 120
+
+xscale <- width/Ltop
+yscale <- height/(PMgtop - PMgbottom)
+
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+E <- c((L[tE0] + L[tE1])/2, (PMg[tE0] + PMg[tE1])/2)
+D <- c((L[tD0] + L[tD1])/2, 0)
+
+Coordinates(D=D, E = E)
+
+
+@
+
+  \draw[help lines]
+     let \p1 = (D) in
+     (\x1, 0) node[below, font=\scriptsize] {$L_{D}$}
+     ;
+
+  \draw[help lines]
+     let \p1 = (E) in
+     (E) --
+     (\x1, 0) node[below, font=\scriptsize] {$L_{E}$}
+     ;
+
+  \draw[IMe, Brown]
+    plot[smooth] coordinates
+    <<PMe>>=
+cat("{",
+  paste(coord(L, PMe), collapse="\n"),
+    "}")
+@
+    node[right, font=\footnotesize] {$\PMeL$}
+      ;
+
+  \draw[IMe, DarkGreen]
+    plot[smooth] coordinates
+    <<PMg>>=
+cat("{",
+  paste(coord(L, PMg), collapse="\n"),
+    "}")
+@
+    node[right, font=\footnotesize] {$\PMgL$}
+      ;
+
+
+
+  \node[dot] at (D) {};
+  \node[dot] at (E) {};
+
+
+\draw[axis, <->] (0,\Sexpr{PMgtop})
+    node[left, align=left] {$\PMeL$ \\ $\PMgL$} --
+    (0,-\Sexpr{-PMgbottom})
+    ;
+\draw[axis, ->] (0, 0) --
+    (\Sexpr{Ltop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t25-cp04.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srprod.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Qtop <- 50
+PMgtop <- 1.25
+PMgbottom <- -0.2
+Ltop <- 120
+
+xscale <- width/Ltop
+yscale <- height/Qtop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+E <- c((L[tE0] + L[tE1])/2, (Q[tE0] + Q[tE1])/2)
+D <- c((L[tD0] + L[tD1])/2, (Q[tD0] + Q[tD1])/2)
+dE <- c(1, E[2] / E[1])
+Coordinates(D=D, E = E, dE=dE)
+
+
+@
+
+  \draw[help lines]
+     let \p1 = (D) in
+     (0, \y1) node[left, font=\scriptsize] {$Q_{D}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$L_{D}$}
+     ;
+
+  \draw[help lines]
+     let \p1 = (E) in
+     (0, \y1) node[left, font=\scriptsize] {$Q_{E}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$L_{E}$}
+     ;
+
+  \draw[IMe]
+    plot[smooth] coordinates
+    <<Plot>>=
+cat("{",
+  paste(coord(L, Q), collapse="\n"),
+    "}")
+@
+    node[right, font=\footnotesize] {$f(L)$}
+      ;
+
+  \draw[CMe]
+      (0, 0) -- (E)
+      ;
+
+  \draw[CMe, DarkGreen]
+      ($(E) - 7*(dE)$) -- ($(E) + 7*(dE)$)
+      ($(D) - 10*(1, 0)$) -- ($(D) + 10*(1, 0)$)
+      ;
+
+
+
+  \node[dot] at (E) {};
+  \node[dot] at (D) {};
+
+\draw[axis] (0,\Sexpr{Qtop}) node[left] {$Q$} |-
+   node[left] {\phantom{$\PMgL$}}
+   (\Sexpr{Ltop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src

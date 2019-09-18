@@ -1,0 +1,377 @@
+#+STARTUP: indent hidestars content
+
+#+TITLE: Unit 2C figures
+
+#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+
+#+begin_src latex :tangle fig-t12-eq01.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+  \coordinate (A) at (3, 45) ;
+  \coordinate (B) at (45, 6) ;
+ \draw[CMe] (15, 45) .. controls +(280:20) and +(175:20) .. (45, 23)
+     node[right] { $I_{2}$ }
+     ;
+
+  \draw[CMe] (A) .. controls +(280:30) and +(175:30) .. (B)
+     node[right] { $I_{0}$ }
+     node[pos=0.1] (C) {}
+     node[pos=0.8] (D) {}
+     ;
+
+  \path[name path=R] ($ (C)!10cm!180:(D) $) -- ($ (D)!15cm!180:(C) $) ;
+  \path[name path=X] (0, 0) -- (50, 0) ;
+  \path[name path=Y] (0, 0) -- (0, 50) ;
+  \path[name intersections={of=R and X, name=M}] ;
+  \path[name intersections={of=R and Y, name=N}] ;
+
+  \draw[IMe] (N-1) -- (M-1) ;
+
+  \coordinate (E) at ($ (C)!.5!(D) $);
+  \coordinate (F) at ($(A) + (6, 0) $) ;
+  \coordinate (G) at ($(B) + (0, 8) $) ;
+
+
+
+  \draw[CMe]
+    let \p1=(N-1),\p2=(M-1), \n1={atan(-\y1/\x2)} in
+       (F) .. controls +(280:3) and +(\n1:-10) .. (E)
+       .. controls +(\n1:10) and +(175:4) .. (G)
+     node[right] { $I_{1}$ }
+    ;
+
+
+  % \node[dot, label={45:$E$}] at (E)  {} ;
+  \node[dot, label={45:$A$}] at (C)  {} ;
+  % \node[dot, label={45:$B$}] at (D)  {} ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t12-eq01a.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+  \coordinate (A) at (3, 45) ;
+  \coordinate (B) at (45, 6) ;
+ \draw[CMe] (15, 45) .. controls +(280:20) and +(175:20) .. (45, 23)
+     node[right] { $I_{2}$ }
+     ;
+
+  \draw[CMe] (A) .. controls +(280:30) and +(175:30) .. (B)
+     node[right] { $I_{0}$ }
+     node[pos=0.1] (C) {}
+     node[pos=0.8] (D) {}
+     ;
+
+  \path[name path=R] ($ (C)!10cm!180:(D) $) -- ($ (D)!15cm!180:(C) $) ;
+  \path[name path=X] (0, 0) -- (50, 0) ;
+  \path[name path=Y] (0, 0) -- (0, 50) ;
+  \path[name intersections={of=R and X, name=M}] ;
+  \path[name intersections={of=R and Y, name=N}] ;
+
+  \draw[IMe] (N-1) -- (M-1) ;
+
+  \coordinate (E) at ($ (C)!.5!(D) $);
+  \coordinate (F) at ($(A) + (6, 0) $) ;
+  \coordinate (G) at ($(B) + (0, 8) $) ;
+
+
+
+  \draw[CMe]
+    let \p1=(N-1),\p2=(M-1), \n1={atan(-\y1/\x2)} in
+       (F) .. controls +(280:3) and +(\n1:-10) .. (E)
+       .. controls +(\n1:10) and +(175:4) .. (G)
+     node[right] { $I_{1}$ }
+    ;
+
+
+  % \node[dot, label={45:$E$}] at (E)  {} ;
+  \node[dot, label={45:$A$}] at (C)  {} ;
+  % \node[dot, label={45:$B$}] at (D)  {} ;
+
+  \draw[decorate, decoration={markings,
+      mark=at position 0.15 with {\arrow[IMe]{stealth}},
+      mark=at position 0.40 with {\arrow[IMe]{stealth}},
+      mark=at position 0.65 with {\arrow[IMe]{stealth}}}]
+    (C) -- (E) ;
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t12-eq02.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+  \coordinate (A) at (3, 45) ;
+  \coordinate (B) at (45, 6) ;
+ \draw[CMe] (15, 45) .. controls +(280:20) and +(175:20) .. (45, 23)
+     node[right] { $I_{2}$ }
+     ;
+
+  \draw[CMe] (A) .. controls +(280:30) and +(175:30) .. (B)
+     node[right] { $I_{0}$ }
+     node[pos=0.1] (C) {}
+     node[pos=0.8] (D) {}
+     ;
+
+  \path[name path=R] ($ (C)!10cm!180:(D) $) -- ($ (D)!15cm!180:(C) $) ;
+  \path[name path=X] (0, 0) -- (50, 0) ;
+  \path[name path=Y] (0, 0) -- (0, 50) ;
+  \path[name intersections={of=R and X, name=M}] ;
+  \path[name intersections={of=R and Y, name=N}] ;
+
+  \draw[IMe] (N-1) -- (M-1) ;
+
+  \coordinate (E) at ($ (C)!.5!(D) $);
+  \coordinate (F) at ($(A) + (6, 0) $) ;
+  \coordinate (G) at ($(B) + (0, 8) $) ;
+
+
+
+  \draw[CMe]
+    let \p1=(N-1),\p2=(M-1), \n1={atan(-\y1/\x2)} in
+       (F) .. controls +(280:3) and +(\n1:-10) .. (E)
+       .. controls +(\n1:10) and +(175:4) .. (G)
+     node[right] { $I_{1}$ }
+    ;
+
+
+  % \node[dot, label={45:$E$}] at (E)  {} ;
+  % \node[dot, label={45:$A$}] at (C)  {} ;
+  \node[dot, label={45:$B$}] at (D)  {} ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t12-eq02a.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+  \coordinate (A) at (3, 45) ;
+  \coordinate (B) at (45, 6) ;
+ \draw[CMe] (15, 45) .. controls +(280:20) and +(175:20) .. (45, 23)
+     node[right] { $I_{2}$ }
+     ;
+
+  \draw[CMe] (A) .. controls +(280:30) and +(175:30) .. (B)
+     node[right] { $I_{0}$ }
+     node[pos=0.1] (C) {}
+     node[pos=0.8] (D) {}
+     ;
+
+  \path[name path=R] ($ (C)!10cm!180:(D) $) -- ($ (D)!15cm!180:(C) $) ;
+  \path[name path=X] (0, 0) -- (50, 0) ;
+  \path[name path=Y] (0, 0) -- (0, 50) ;
+  \path[name intersections={of=R and X, name=M}] ;
+  \path[name intersections={of=R and Y, name=N}] ;
+
+  \draw[IMe] (N-1) -- (M-1) ;
+
+  \coordinate (E) at ($ (C)!.5!(D) $);
+  \coordinate (F) at ($(A) + (6, 0) $) ;
+  \coordinate (G) at ($(B) + (0, 8) $) ;
+
+
+
+  \draw[CMe]
+    let \p1=(N-1),\p2=(M-1), \n1={atan(-\y1/\x2)} in
+       (F) .. controls +(280:3) and +(\n1:-10) .. (E)
+       .. controls +(\n1:10) and +(175:4) .. (G)
+     node[right] { $I_{1}$ }
+    ;
+
+ \draw[decorate, decoration={markings,
+      mark=at position 0.15 with {\arrow[IMe]{stealth}},
+      mark=at position 0.40 with {\arrow[IMe]{stealth}},
+      mark=at position 0.65 with {\arrow[IMe]{stealth}}}]
+    (D) -- (E) ;
+
+
+  % \node[dot, label={45:$E$}] at (E)  {} ;
+  % \node[dot, label={45:$A$}] at (C)  {} ;
+  \node[dot, label={45:$B$}] at (D)  {} ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t12-eq03.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+  \coordinate (A) at (3, 45) ;
+  \coordinate (B) at (45, 6) ;
+
+  \draw[CMe] (15, 45) .. controls +(280:20) and +(175:20) .. (45, 23)
+     node[right] { $I_{2}$ }
+     ;
+
+  \draw[CMe] (A) .. controls +(280:30) and +(175:30) .. (B)
+     node[right] { $I_{0}$ }
+     node[pos=0.1] (C) {}
+     node[pos=0.8] (D) {}
+     ;
+
+  \path[name path=R] ($ (C)!10cm!180:(D) $) -- ($ (D)!15cm!180:(C) $) ;
+  \path[name path=X] (0, 0) -- (50, 0) ;
+  \path[name path=Y] (0, 0) -- (0, 50) ;
+  \path[name intersections={of=R and X, name=M}] ;
+  \path[name intersections={of=R and Y, name=N}] ;
+
+  \draw[IMe] (N-1) -- (M-1) ;
+
+  \coordinate (E) at ($ (C)!.5!(D) $);
+  \coordinate (F) at ($(A) + (6, 0) $) ;
+  \coordinate (G) at ($(B) + (0, 8) $) ;
+
+
+
+  \draw[CMe]
+    let \p1=(N-1),\p2=(M-1), \n1={atan(-\y1/\x2)} in
+       (F) .. controls +(280:3) and +(\n1:-10) .. (E)
+       .. controls +(\n1:10) and +(175:4) .. (G)
+     node[right] { $I_{1}$ }
+    ;
+
+ \draw[decorate, decoration={markings,
+      mark=at position 0.15 with {\arrow[IMe]{stealth}},
+      mark=at position 0.40 with {\arrow[IMe]{stealth}},
+      mark=at position 0.65 with {\arrow[IMe]{stealth}}}]
+    (C) -- (E) ;
+
+ \draw[decorate, decoration={markings,
+      mark=at position 0.15 with {\arrow[IMe]{stealth}},
+      mark=at position 0.40 with {\arrow[IMe]{stealth}},
+      mark=at position 0.65 with {\arrow[IMe]{stealth}}}]
+    (D) -- (E) ;
+
+  \node[dot, label={45:$E$}] at (E)  {} ;
+  % \node[dot, label={45:$A$}] at (C)  {} ;
+  % \node[dot, label={45:$B$}] at (D)  {} ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t12-ej01.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+  \newcommand*{\Utwo}{306.25}
+
+
+
+  \draw[help lines] (0, 17.7) node[left] {$17.5$}  -|
+     (17.5, 0) node[below] {$17.5$} ;
+  \draw[CMe, domain=6.7:43,smooth] plot (\x,\Utwo/\x)
+    node[right, font=\footnotesize] {$U  = 306.25$}
+    ;
+
+
+  \draw[IMe]  (0, 35) node[left] {$35$} --  (35, 0) node[below] {$35$} ;
+
+
+  \node[dot, label=45:{$E$}] at (17.5, 17.5) {};
+
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t12-eq10.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+  \coordinate (A) at (0, 15) ;
+  \coordinate (B) at (45, 3) ;
+
+  \foreach \i in {0, 1, 2, 3}
+     \draw[CMe] ($ (A) + \i*(0, 8) $)
+        .. controls +(315:15) and +(175:15) ..
+        ($ (B) + \i*(0, 6) $)
+        node[right] { $I_{\i}$ }
+        node[pos=0] (E) {}
+     ;
+  \coordinate (Z) at ($ (A) + 3*(0, 8) $) ;
+  \path let \p1=(Z) in coordinate (P) at (0, \y1) ;
+  \path let \p1=(Z) in coordinate (Q) at ($ 0.6*(\y1, 0) $) ;
+
+  \draw[IMe] let \p1=($ (A) + 3*(0, 8) $) in (0, \y1) -- ($ 0.6*(\y1, 0) $) ;
+
+ \draw[decorate, decoration={markings,
+      mark=at position 0.27 with {\arrow[IMe]{stealth}},
+      mark=at position 0.5 with {\arrow[IMe]{stealth}},
+      mark=at position 0.8 with {\arrow[IMe]{stealth}}}]
+    (Q) -- (P) ;
+
+  \node[dot, label={45:$E$}] at (E)  {} ;
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t12-eq11.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+  \coordinate (A) at (5, 45) ;
+  \coordinate (B) at (20, 0) ;
+
+  \foreach \i in {0, 1, 2, 3}
+     \draw[CMe] ($ (A) + \i*(8, 0) $) node[right] { $I_{\i}$ }
+        .. controls +(275:5) and +(135:15) ..
+        ($ (B) + \i*(8, 0) $)
+        node[pos=1] (E) {}
+     ;
+
+  \coordinate (Z) at ($ (B) + 3*(8, 0) $) ;
+  \path let \p1=(Z) in coordinate (P) at (\x1, 0) ;
+  \path let \p1=(Z) in coordinate (Q) at ($ 0.6*(0, \x1) $) ;
+
+ \draw[decorate, decoration={markings,
+      mark=at position 0.33 with {\arrow[IMe]{stealth}},
+      mark=at position 0.58 with {\arrow[IMe]{stealth}},
+      mark=at position 0.85 with {\arrow[IMe]{stealth}}}]
+    (Q) -- (P) ;
+
+  \draw[IMe] let \p1=($ (B) + 3*(8, 0) $) in (\x1, 0) -- ($ 0.6*(0, \x1) $) ;
+  \node[dot, label={45:$E$}] at (E)  {} ;
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t12-ej02.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+  \newcommand*{\Utwo}{1750}
+
+
+
+  % \draw[help lines] (0, 17.7) node[left] {$17.5$}  -|
+  %    (17.5, 0) node[below] {$17.5$} ;
+  \draw[CMe, domain=0:43,smooth] plot (\x,{\Utwo/(\x+50)})
+    node[right, font=\footnotesize] {$U  = 1750$}
+    ;
+
+  \draw[CMe, domain=0:43,smooth] plot (\x,{1200/(\x+50)})
+    node[right, font=\footnotesize] {$U  = 1200$}
+    ;
+
+  \draw[CMe, domain=0:43,smooth] plot (\x,{600/(\x+50)})
+    node[right, font=\footnotesize] {$U  = 600$}
+    ;
+
+
+  \draw[IMe]  (0, 35) node[left] {$35$} --  (35, 0) node[below] {$35$} ;
+
+
+  \node[dot, label=45:{$E$}] at (0, 35) {};
+
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src

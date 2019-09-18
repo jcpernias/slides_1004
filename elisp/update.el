@@ -22,7 +22,7 @@
          ("fig-t11-ci02" "fig-t11-ci03" "fig-t11-ci04" "fig-t11-ci05"
            "fig-t11-ci06" "fig-t11-tr01" "fig-t11-map01" "fig-t11-rms01"
            "fig-t11-rms02" "fig-t11-rms03" "fig-t11-nreg01" "fig-t11-nreg02"
-           "fig-t1a1-nreg03" "fig-t11-nreg04" "fig-t11-fu01" "fig-t11-map02"
+           "fig-t11-nreg03" "fig-t11-nreg04" "fig-t11-fu01" "fig-t11-map02"
            "fig-t11-map03" "fig-t11-fu02"))
        ("unit-2C-figs" .
          ("fig-t12-eq01" "fig-t12-eq01a" "fig-t12-eq02" "fig-t12-eq02a"
@@ -66,28 +66,52 @@
 #+TITLE: %s
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+
 ")
 
 
-(setq begin-src-block "#+begin_src latex :tangle %s :noweb yes")
-(setq end-src-block "#+end_src")
+(setq begin-src-block "#+begin_src latex :tangle %s :noweb yes\n")
+(setq end-src-block "#+end_src\n\n")
 
 (setq orig-dir (expand-file-name "~/Teaching/courses/EC1004/docs/slides_1004"))
-(setq unit-files (car fig-files-list))
-(setq figs-file-name (car unit-files))
-(setq figure-files (cdr unit-files))
 
-(dolist (item figure-files)
-  (message item))
 
+(defun extract-fig-unit (name)
+  (string-match "^\\(?:fig\\|unit\\)-\\([^-]+\\)-" name)
+  (match-string 1 name))
+
+;; get full path to original fig file
 (defun which-file (base-name dir)
-  (file-name-completion base-name dir))
+  (let ((unit (extract-fig-unit base-name))
+        (path))
+    (setq path (concat (file-name-as-directory dir) unit))
+    (concat (file-name-as-directory path)
+            (file-name-completion (concat base-name ".") path))))
+
+(defun insert-fig-block (base-name)
+  (let ((full-path (which-file base-name orig-dir)))
+    (insert (format begin-src-block (file-name-nondirectory full-path)))
+    (insert-file-contents full-path)
+    (goto-char (point-max))
+    (insert end-src-block)))
 
 
+(defun create-figs-file (unit-files)
+  (let ((figs-file-name (car unit-files))
+        (figure-files (cdr unit-files))
+        (org-file-name)
+        (unit))
+    (with-temp-buffer
+      (setq unit (extract-fig-unit figs-file-name))
+      (insert (format figs-file-preamble
+                      (concat "Unit " unit " figures")))
+      (dolist (item figure-files)
+        (insert-fig-block item))
+      (setq org-file-name
+            (concat "unit-" unit "_1004-figs.org"))
+      (write-file (concat (file-name-as-directory "..") org-file-name))
+      )))
 
-(which-file "fig-t15-crc2"
-            (expand-file-name "~/Teaching/courses/EC1004/docs/slides_1004/t15"))
 
-(file-name-completion "update" (expand-file-name "~/Teaching/slides_1004/elisp/"))
-
-(file-directory-p (expand-file-name "~/Teaching/courses/EC1004/docs/slides_1004/t10"))
+(dolist (item fig-files-list)
+  (create-figs-file item))

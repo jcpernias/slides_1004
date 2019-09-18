@@ -1,0 +1,594 @@
+#+STARTUP: indent hidestars content
+
+#+TITLE: Unit 2B figures
+
+#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+
+#+begin_src latex :tangle fig-t11-ci02.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+\coordinate (G) at (4.4, 48) ;
+\coordinate (H) at (48, 8) ;
+
+\coordinate (C1) at (8, 15) ;
+\coordinate (C2) at (30, 9) ;
+
+\path[CMe] (G) ..controls (C1) and (C2).. (H)
+    node[pos=0.05] (B) {}
+    node[pos=0.20] (C) {}
+    node[pos=0.37] (A) {}
+    node[pos=0.60] (D) {}
+    node[pos=0.85] (E) {}
+;
+
+
+  \fill[betterfill] (A) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (A) ;
+
+
+
+  \path[CMe] node[dot, label={45:$A$}] at (A) {} ;
+  \node[dot, label={45:$M$}] at (25,35) {} ;
+  \node[dot, label={45:$P$}] at (5,10) {} ;
+
+
+  \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-ci03.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+\coordinate (G) at (4.4, 48) ;
+\coordinate (H) at (48, 8) ;
+
+\coordinate (C1) at (8, 15) ;
+\coordinate (C2) at (30, 9) ;
+
+\path[CMe] (G) ..controls (C1) and (C2).. (H)
+    node[pos=0.05] (B) {}
+    node[pos=0.20] (C) {}
+    node[pos=0.37] (A) {}
+    node[pos=0.60] (D) {}
+    node[pos=0.85] (E) {}
+;
+
+
+  \fill[betterfill] (A) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (A) ;
+
+
+  \node[dot, label={45:$A$}] at (A) {};
+  \node[dot, label={45:$B$}] at (B) {};
+  \node[dot, label={45:$C$}] at (C) {};
+  \node[dot, label={45:$D$}] at (D) {};
+  \node[dot, label={45:$E$}] at (E) {};
+
+
+
+
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-ci04.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+\coordinate (G) at (4.4, 48) ;
+\coordinate (H) at (48, 8) ;
+
+\coordinate (C1) at (8, 15) ;
+\coordinate (C2) at (30, 9) ;
+
+\path[CMe] (G) ..controls (C1) and (C2).. (H)
+    node[pos=0.05] (B) {}
+    node[pos=0.20] (C) {}
+    node[pos=0.37] (A) {}
+    node[pos=0.60] (D) {}
+    node[pos=0.85] (E) {}
+;
+
+
+  \fill[betterfill] (A) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (A) ;
+
+  \fill[betterfill] (B) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (B) ;
+
+  \fill[betterfill] (C) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (C) ;
+
+  \fill[betterfill] (D) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (D) ;
+
+  \fill[betterfill] (E) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (E) ;
+
+
+  \node[dot, label={45:$A$}] at (A) {};
+  \node[dot, label={45:$B$}] at (B) {};
+  \node[dot, label={45:$C$}] at (C) {};
+  \node[dot, label={45:$D$}] at (D) {};
+  \node[dot, label={45:$E$}] at (E) {};
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-ci05.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+\coordinate (G) at (4.4, 48) ;
+\coordinate (H) at (48, 8) ;
+
+\coordinate (C1) at (8, 15) ;
+\coordinate (C2) at (30, 9) ;
+
+\path[CMe] (G) ..controls (C1) and (C2).. (H)
+    node[pos=0.05] (B) {}
+    node[pos=0.20] (C) {}
+    node[pos=0.37] (A) {}
+    node[pos=0.60] (D) {}
+    node[pos=0.85] (E) {}
+;
+
+\draw[CMe] (G) ..controls (C1) and (C2).. (H) ;
+
+
+
+  \fill[betterfill] (A) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (A) ;
+
+  \fill[betterfill] (B) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (B) ;
+
+  \fill[betterfill] (C) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (C) ;
+
+  \fill[betterfill] (D) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (D) ;
+
+  \fill[betterfill] (E) rectangle (48, 48) ;
+  \fill[worsefill] (0, 0) rectangle (E) ;
+
+
+
+
+  \node[dot, label={45:$A$}] at (A) {};
+  \node[dot, label={45:$B$}] at (B) {};
+  \node[dot, label={45:$C$}] at (C) {};
+  \node[dot, label={45:$D$}] at (D) {};
+  \node[dot, label={45:$E$}] at (E) {};
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-ci06.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+\coordinate (G) at (4.4, 48) ;
+\coordinate (H) at (48, 8) ;
+
+\coordinate (C1) at (8, 15) ;
+\coordinate (C2) at (30, 9) ;
+
+
+
+
+
+\fill[worsefill, smooth] (0, 0) -- (0, 48) --
+ (G) ..controls (C1) and (C2).. (H)
+  -- (48, 0) -- cycle
+;
+
+\fill[betterfill, smooth] (48, 48) --
+  (G) ..controls (C1) and (C2).. (H)
+  -- cycle
+;
+
+
+\draw[CMe] (G) ..controls (C1) and (C2).. (H) node[right] {$I_{A}$}
+      node[pos=0.37, dot, label={45:$A$}] (A) {}
+;
+
+% \node[font=\scriptsize, align=center] at (35,25) { Conjunto \\ mejor };
+% \node[font=\scriptsize, align=center] at (10, 10) { Conjunto \\ peor };
+
+
+
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-tr01.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+  \coordinate (I0-start) at (5, 35) ;
+  \coordinate (I0-end) at (45, 8) ;
+  \coordinate (I1-start) at (20, 45) ;
+  \coordinate (I1-end) at (35, 3) ;
+
+  \draw[CMe, name path=I0] (I0-start) ..
+     controls (15, 20) and (35, 10) .. (I0-end)
+     node[right] {$I_{0}$}
+     node[pos=0.2, dot, label= { 45:$A$ }] (A) { }
+     ;
+
+  \begin{scope}[on background layer]
+    \fill[PeachPuff] (A) rectangle (48, 48) ;
+  \end{scope}
+
+  \draw[CMe, name path=I1] (I1-start) ..
+    controls (21, 30) and (25, 15)
+    .. (I1-end)
+     node[right] {$I_{1}$}
+     node[pos=0.2, dot, label={45:$B$}] { }
+     ;
+
+   \path[name intersections={of=I0 and I1, name=C}];
+   \draw[CMe] node[dot, label={45:$C$}] at (C-1) { };
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-map01.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\Uone}{120}
+  \newcommand*{\Utwo}{300}
+  \newcommand*{\Uthree}{520}
+  \newcommand*{\Ufour}{770}
+
+
+  \draw[CMe, domain=2.8:43,smooth] plot (\x,\Uone/\x)
+    node[right] {$I_{1}$}
+    ;
+
+  \draw[CMe, domain=6.7:43,smooth] plot (\x,\Utwo/\x)
+    node[right] {$I_{2}$}
+    ;
+
+  \draw[CMe, domain=11.2:43,smooth] plot (\x,\Uthree/\x)
+    node[right] {$I_{3}$}
+    ;
+
+  \draw[CMe, domain=16:43,smooth] plot (\x,\Ufour/\x)
+    node[right] {$I_{4}$}
+    ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-rms01.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\const}{225}
+  \newcommand*{\Ax}{8}
+  \newcommand*{\Bx}{25}
+
+  \coordinate (A) at ($ (\Ax, \const/\Ax) $) ;
+  \coordinate (B) at ($ (\Bx, \const/\Bx) $) ;
+  \coordinate (C) at ($ (\Bx, \const/\Ax) $) ;
+
+  \draw[shift arrow, DarkGreen, ->, font = \small, shorten >= 0pt]
+    (A) -- (C) node[pos=0.5, above] {$\Delta X$} ;
+  \draw[shift arrow, DarkGreen, ->, font = \small, shorten >= 3pt]
+    (C) -- (B) node[pos=0.5, right] {$\Delta Y$} ;
+
+
+  \draw[CMe, domain=5:45,smooth] plot (\x,\const/\x) node[right] {$I_{0}$}
+    node[dot, label={-135:$A$}] at (A) {}
+    node[dot, label={-135:$B$}] at (B) {}
+    ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-rms02.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\const}{225}
+  \newcommand*{\Ax}{8}
+  \newcommand*{\Bx}{25}
+  \newcommand*{\Adx}{3}
+  \newcommand*{\Bdx}{8}
+
+
+  \coordinate (A) at ($ (\Ax, \const/\Ax) $) ;
+  \coordinate (Atg) at ($ (1, {-\const/(\Ax*\Ax)}) $) ;
+  \coordinate (A1) at ($ (A) -\Adx*(Atg) $) ;
+  \coordinate (A2) at ($ (A) +\Adx*(Atg) $) ;
+
+
+  % \coordinate (B) at ($ (\Bx, \const/\Bx) $) ;
+  % \coordinate (Btg) at ($ (1, {-\const/(\Bx*\Bx)}) $) ;
+  % \coordinate (B1) at ($ (B) -\Bdx*(Btg) $) ;
+  % \coordinate (B2) at ($ (B) +\Bdx*(Btg) $) ;
+
+  % \draw[IMe]  (B1) --  (B2) ;
+
+
+
+  \draw[CMe, domain=5:45,smooth] plot (\x,\const/\x) node[right] {$I_{0}$};
+  \draw[curve, DarkGreen]  (A1) --  (A2) ;
+  \node[dot, label={45:$A$}] at (A) {} ;
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-rms03.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\const}{225}
+  \newcommand*{\Ax}{8}
+  \newcommand*{\Bx}{25}
+  \newcommand*{\Adx}{3}
+  \newcommand*{\Bdx}{8}
+
+
+  \coordinate (A) at ($ (\Ax, \const/\Ax) $) ;
+  \coordinate (Atg) at ($ (1, {-\const/(\Ax*\Ax)}) $) ;
+  \coordinate (A1) at ($ (A) -\Adx*(Atg) $) ;
+  \coordinate (A2) at ($ (A) +\Adx*(Atg) $) ;
+
+
+  \coordinate (B) at ($ (\Bx, \const/\Bx) $) ;
+  \coordinate (Btg) at ($ (1, {-\const/(\Bx*\Bx)}) $) ;
+  \coordinate (B1) at ($ (B) -\Bdx*(Btg) $) ;
+  \coordinate (B2) at ($ (B) +\Bdx*(Btg) $) ;
+
+
+
+
+
+  \draw[CMe, domain=5:45,smooth] plot (\x,\const/\x) node[right] {$I_{0}$};
+  \draw[curve, DarkGreen]  (A1) --  (A2) ;
+  \node[dot, label={45:$A$}] at (A) {} ;
+
+  \draw[curve, DarkGreen]  (B1) --  (B2) ;
+  \node[dot, label={45:$B$}] at (B) {} ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-nreg01.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\Xcoord}{15}
+  \newcommand*{\Ycoord}{10}
+  \newcommand*{\slope}{\Ycoord/\Xcoord}
+
+
+  \foreach \i in {0, 1, 2, 3}
+     \draw[CMe]
+       node (A) at ($ (\Xcoord, 0) + \i*(10, 0) $) {}
+       node (B) at ($ (0, \Ycoord) + \i*\slope*(0, 10) $) {}
+       (A) -- (B)
+       node[pos=0.35, font=\footnotesize, right=2pt] { $I_{\i}$ } ;
+
+  \draw[shift arrow, ->, shorten <= 6pt]
+       ($ (A)!0.5!(B) $) --
+       ($ (A)!0.5!(B)!10cm!90:(A) $) ;
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-nreg02.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\Xcoord}{4}
+  \newcommand*{\Ycoord}{3}
+  \newcommand*{\dX}{7.5}
+  \newcommand*{\dY}{5}
+
+  \foreach \i in {0, 1, 2, 3}
+     \draw[CMe] ($ (\Xcoord, 45) + \i*(\dX, 0) $) |-
+         ($ (45, \Ycoord) + \i*(0, \dY) $)
+       node[font=\footnotesize, right] { $I_{\i}$ } ;
+
+  \coordinate (A) at ($ (\Xcoord, \Ycoord) + 3*(\dX, \dY) $);
+  \coordinate (B) at ($ (\Xcoord, \Ycoord) + 4*(\dX, \dY) $);
+  \draw[shift arrow, ->, shorten <= 6pt]   (A) -- ($ (A)!10cm!(B) $) ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-nreg03.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand{\Xcoord}{10}
+  \newcommand{\dX}{8}
+
+
+  \foreach \i in {0, 1, 2, 3 }
+     \draw[CMe] ($ (\Xcoord, 0) + \i*(\dX, 0) $) --
+         ($ (\Xcoord, 45) + \i*(\dX, 0) $)
+       node[font=\footnotesize, above] { $I_{\i}$ } ;
+
+  \coordinate (A) at ($ (\Xcoord, 22.5) + 3*(\dX, 0) $);
+  \coordinate (B) at ($ (\Xcoord, 22.5) + 4*(\dX, 0) $);
+  \draw[shift arrow, ->, shorten <= 6pt]   (A) -- ($ (A)!10cm!(B) $) ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-nreg04.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\Sx}{20}
+  \newcommand*{\Sy}{5}
+  \newcommand*{\Ex}{45}
+  \newcommand*{\Ey}{28}
+  \newcommand*{\dX}{6}
+  \newcommand*{\dY}{8}
+
+
+  \foreach \i/\nm in {0/A, 1/B, 2/C, 3/D}
+     \draw[CMe] ($ (\Sx, \Sy) - \i*(\dX, -\dX) $) ..
+         controls +(5:12cm) and +(260:8cm) ..
+         ($ (\Ex, \Ey) - \i*(\dX, -\dX) $)
+       node[font=\footnotesize, above] { $I_{\i}$ }
+       node[pos=0.55] (\nm) { };
+
+  \draw[shift arrow, ->, shorten <= 6pt]   (D) -- ($ (D)!12cm!180:(C) $) ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-fu01.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\Uone}{120}
+  \newcommand*{\Utwo}{300}
+  \newcommand*{\Uthree}{520}
+  \newcommand*{\Ufour}{770}
+
+
+  % \draw[CMe, domain=2.8:43,smooth] plot (\x,\Uone/\x)
+  %   node[right, font=\footnotesize] {$U = 120$}
+  %   ;
+
+  \draw[help lines] (0, 20) node[left] {$20$}  -|
+     (15, 0) node[below] {$15$} ;
+  \draw[CMe, domain=6.7:35,smooth] plot (\x,\Utwo/\x)
+    node[right, font=\footnotesize] {$U  = 300$}
+    ;
+
+  \node[dot, label=45:{$A$}] at (15, 20) {};
+
+  % \draw[CMe, domain=11.2:43,smooth] plot (\x,\Uthree/\x)
+  %   node[right, font=\footnotesize] {$U = 520$}
+  %   ;
+
+  % \draw[CMe, domain=16:43,smooth] plot (\x,\Ufour/\x)
+  %   node[right, font=\footnotesize] {$U  = 770$}
+  %   ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-map02.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\Uone}{120}
+  \newcommand*{\Utwo}{300}
+  \newcommand*{\Uthree}{520}
+  \newcommand*{\Ufour}{770}
+
+
+  \draw[CMe, domain=2.8:35,smooth] plot (\x,\Uone/\x)
+    node[right, font=\footnotesize] {$U = 120$}
+    ;
+
+  % \draw[help lines] (0, 20) node[left] {$20$}  -|
+  %    (15, 0) node[below] {$15$} ;
+  \draw[CMe, domain=6.7:35,smooth] plot (\x,\Utwo/\x)
+    node[right, font=\footnotesize] {$U  = 300$}
+    ;
+
+  % \node[dot, label=45:{$A$}] at (15, 20) {};
+
+  \draw[CMe, domain=11.2:35,smooth] plot (\x,\Uthree/\x)
+    node[right, font=\footnotesize] {$U = 520$}
+    ;
+
+  \draw[CMe, domain=16:35,smooth] plot (\x,\Ufour/\x)
+    node[right, font=\footnotesize] {$U  = 770$}
+    ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-map03.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\Uone}{120}
+  \newcommand*{\Utwo}{300}
+  \newcommand*{\Uthree}{520}
+  \newcommand*{\Ufour}{770}
+
+
+  \draw[CMe, domain=2.8:35,smooth] plot (\x,\Uone/\x)
+    node[right, font=\footnotesize] {$V = 10.95$}
+    ;
+
+  % \draw[help lines] (0, 20) node[left] {$20$}  -|
+  %    (15, 0) node[below] {$15$} ;
+  \draw[CMe, domain=6.7:35,smooth] plot (\x,\Utwo/\x)
+    node[right, font=\footnotesize] {$V  = 17.32$}
+    ;
+
+  % \node[dot, label=45:{$A$}] at (15, 20) {};
+
+  \draw[CMe, domain=11.2:35,smooth] plot (\x,\Uthree/\x)
+    node[right, font=\footnotesize] {$V = 22.80$}
+    ;
+
+  \draw[CMe, domain=16:35,smooth] plot (\x,\Ufour/\x)
+    node[right, font=\footnotesize] {$V  = 27.75$}
+    ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t11-fu02.tex :noweb yes
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\Uone}{120}
+  \newcommand*{\Utwo}{300}
+  \newcommand*{\Uthree}{520}
+  \newcommand*{\Ufour}{770}
+
+
+  % \draw[CMe, domain=2.8:43,smooth] plot (\x,\Uone/\x)
+  %   node[right, font=\footnotesize] {$U = 120$}
+  %   ;
+
+  \draw[help lines] (0, 20) node[left] {$20$}  -|
+     (15, 0) node[below] {$15$} ;
+  \draw[CMe, domain=6.7:35,smooth] plot (\x,\Utwo/\x)
+    node[right, font=\footnotesize] {$U  = 300$}
+    ;
+
+ \newcommand*{\const}{225}
+ \newcommand*{\Ax}{15}
+ \newcommand*{\Adx}{6}
+
+
+
+  \coordinate (A) at ($ (15, 20) $) ;
+  \coordinate (Atg) at ($ (1, {-\Utwo/(\Ax*\Ax)}) $) ;
+  \coordinate (A1) at ($ (A) -\Adx*(Atg) $) ;
+  \coordinate (A2) at ($ (A) +\Adx*(Atg) $) ;
+
+  \draw[curve, DarkGreen]  (A1) --  (A2) ;
+
+
+  \node[dot, label=45:{$A$}] at (15, 20) {};
+
+  % \draw[CMe, domain=11.2:43,smooth] plot (\x,\Uthree/\x)
+  %   node[right, font=\footnotesize] {$U = 520$}
+  %   ;
+
+  % \draw[CMe, domain=16:43,smooth] plot (\x,\Ufour/\x)
+  %   node[right, font=\footnotesize] {$U  = 770$}
+  %   ;
+
+
+\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+\end{tikzpicture}
+#+end_src

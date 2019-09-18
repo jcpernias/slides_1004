@@ -1,0 +1,310 @@
+#+STARTUP: indent hidestars content
+
+#+TITLE: Unit 5B figures
+
+#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+
+#+begin_src latex :tangle fig-t26-is01.tex :noweb yes
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+
+  \begin{scope}
+
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:17]
+      (\x, 25/\x)
+      node[right, font=\scriptsize] {$Q = 5$}
+      ;
+    \draw[CMe]
+      plot[smooth, samples=128, domain=3.764:17]
+      (\x, 64/\x)
+      node[right, font=\scriptsize] {$Q = 8$}
+      ;
+    \draw[CMe]
+      plot[smooth, samples=128, domain=7.117:17]
+      (\x, 121/\x)
+      node[right, font=\scriptsize] {$Q = 11$}
+      ;
+  \end{scope}
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}#+end_src
+
+#+begin_src latex :tangle fig-t26-is02.tex :noweb yes
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+
+  \coordinate (A) at (4, 6.25);
+  \coordinate (B) at (10, 2.5);
+
+  \coordinate (dA) at (1, -1.5625);
+  \coordinate (dB) at (1, -0.25);
+
+
+  \draw[CMe]
+    plot[smooth, samples=128, domain=1.470:17]
+    (\x, 25/\x)
+    node[right, font=\scriptsize] {$\overline{Q}$}
+    ;
+
+  \draw[curve, DarkGreen]
+    ($(A) + 1*(dA)$) -- ($(A) - 1*(dA)$)
+    ($(B) + 2*(dB)$) -- ($(B) - 2*(dB)$)
+    ;
+
+  \node[dot] at (A) {};
+  \node[dot] at (B) {};
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}#+end_src
+
+#+begin_src latex :tangle fig-t26-is05.tex :noweb yes
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+
+
+
+  \draw[CMe]
+    plot[smooth, samples=128, domain=1.470:17]
+    (\x, 25/\x)
+    node[right, font=\scriptsize] {$\overline{Q}$}
+    ;
+
+
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}#+end_src
+
+#+begin_src latex :tangle fig-t26-is03.tex :noweb yes
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+
+  \begin{scope}
+
+    \draw[CMe]
+      (1, 6) -- (5, 2)
+      node[right, font=\scriptsize] {$Q_{1}$}
+      ;
+    \draw[CMe]
+      (1, 12) -- (11, 2)
+      node[right, font=\scriptsize] {$Q_{2}$}
+      ;
+    \draw[CMe]
+      (2, 17) -- (17, 2)
+      node[right, font=\scriptsize] {$Q_{3}$}
+      ;
+  \end{scope}
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}#+end_src
+
+#+begin_src latex :tangle fig-t26-is04.tex :noweb yes
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+
+  \begin{scope}
+    \draw[curve, DarkGreen, thin, nearly transparent]
+      (0, 0) -- (17, 17)
+      ;
+
+    \draw[CMe]
+      (3,  17) |- (17, 3)
+      node[right, font=\scriptsize] {$Q_{1}$}
+      ;
+    \draw[CMe]
+      (6,  17) |- (17, 6)
+      node[right, font=\scriptsize] {$Q_{2}$}
+      ;
+    \draw[CMe]
+      (9,  17) |- (17, 9)
+      node[right, font=\scriptsize] {$Q_{3}$}
+      ;
+  \end{scope}
+
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}#+end_src
+
+#+begin_src latex :tangle fig-t26-re01.tex :noweb yes
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+  \newcommand*{\Ax}{4}
+  \newcommand*{\Ay}{3}
+  \newcommand*{\Bx}{8}
+  \newcommand*{\By}{6}
+  \newcommand*{\Cx}{12}
+  \newcommand*{\Cy}{9}
+
+  \coordinate (A) at (\Ax, \Ay) ;
+  \coordinate (B) at (\Bx, \By) ;
+  \coordinate (C) at (\Cx, \Cy) ;
+
+  \draw[help lines]
+     (0, \Ay) node[left, font=\scriptsize] {\Ay} -|
+     (\Ax, 0) node[below, font=\scriptsize] {\Ax}
+     (0, \By) node[left, font=\scriptsize] {\By}  -|
+     (\Bx, 0) node[below, font=\scriptsize] {\Bx}
+     (0, \Cy) node[left, font=\scriptsize] {\Cy} -|
+     (\Cx, 0) node[below, font=\scriptsize] {\Cx}
+     ;
+
+  \draw[CMe]
+    (1, 12) .. controls +(-90:3) and +(135:3) ..
+    (\Ax, \Ay) .. controls +(-45:3) and +(180:3) ..
+    (15, 1)
+    node[right, font=\scriptsize] {$Q = 10$}
+    ;
+
+  \draw[CMe]
+    (5, 15) .. controls +(-90:3) and +(135:3) ..
+    (\Bx, \By) .. controls +(-45:3) and +(170:2) ..
+    (15, 3)
+    node[right, font=\scriptsize] {$Q = 20$}
+    ;
+
+  \draw[CMe]
+    (9, 17) .. controls +(-90:2) and +(135:2) ..
+    (\Cx, \Cy) .. controls +(-45:1) and +(160:1) ..
+    (15, 7)
+    node[right, font=\scriptsize] {$Q = 30$}
+    ;
+
+
+  \draw[curve, DarkGreen, nearly transparent]
+    (0, 0) -- (16, 12)
+    ;
+
+  \node[dot, label={[font=\scriptsize]above:$A$}] at (A) {};
+  \node[dot, label={[font=\scriptsize]above:$B$}] at (B) {};
+  \node[dot, label={[font=\scriptsize]above:$C$}] at (C) {};
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}#+end_src
+
+#+begin_src latex :tangle fig-t26-re02.tex :noweb yes
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+  \newcommand*{\Ax}{4}
+  \newcommand*{\Ay}{3}
+  \newcommand*{\Bx}{8}
+  \newcommand*{\By}{6}
+  \newcommand*{\Cx}{12}
+  \newcommand*{\Cy}{9}
+
+  \coordinate (A) at (\Ax, \Ay) ;
+  \coordinate (B) at (\Bx, \By) ;
+  \coordinate (C) at (\Cx, \Cy) ;
+
+  \draw[help lines]
+     (0, \Ay) node[left, font=\scriptsize] {\Ay} -|
+     (\Ax, 0) node[below, font=\scriptsize] {\Ax}
+     (0, \By) node[left, font=\scriptsize] {\By}  -|
+     (\Bx, 0) node[below, font=\scriptsize] {\Bx}
+     (0, \Cy) node[left, font=\scriptsize] {\Cy} -|
+     (\Cx, 0) node[below, font=\scriptsize] {\Cx}
+     ;
+
+  \draw[CMe]
+    (1, 12) .. controls +(-90:3) and +(135:3) ..
+    (\Ax, \Ay) .. controls +(-45:3) and +(180:3) ..
+    (15, 1)
+    node[right, font=\scriptsize] {$Q = 10$}
+    ;
+
+  \draw[CMe]
+    (4, 14) .. controls +(-90:3) and +(135:3) ..
+    ($(\Bx, \By) - (1, 0.5)$) .. controls +(-45:3) and +(180:2) ..
+    (15, 3)
+    node[right, font=\scriptsize] {$Q = 20$}
+    ;
+
+  \draw[CMe]
+    (6.6, 15) .. controls +(-90:2) and +(135:2) ..
+    ($(\Cx, \Cy) - (3, 1.5)$) .. controls +(-45:2) and +(180:2) ..
+    (15, 6)
+    node[right, font=\scriptsize] {$Q = 30$}
+    ;
+
+
+  \draw[curve, DarkGreen, nearly transparent]
+    (0, 0) -- (16, 12)
+    ;
+
+  \node[dot, label={[font=\scriptsize]above:$A$}] at (A) {};
+  \node[dot, label={[font=\scriptsize]above:$B$}] at (B) {};
+  \node[dot, label={[font=\scriptsize]above:$C$}] at (C) {};
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}#+end_src
+
+#+begin_src latex :tangle fig-t26-re03.tex :noweb yes
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+  \newcommand*{\Ax}{4}
+  \newcommand*{\Ay}{3}
+  \newcommand*{\Bx}{8}
+  \newcommand*{\By}{6}
+  \newcommand*{\Cx}{12}
+  \newcommand*{\Cy}{9}
+
+  \coordinate (A) at (\Ax, \Ay) ;
+  \coordinate (B) at (\Bx, \By) ;
+  \coordinate (C) at (\Cx, \Cy) ;
+
+  \draw[help lines]
+     (0, \Ay) node[left, font=\scriptsize] {\Ay} -|
+     (\Ax, 0) node[below, font=\scriptsize] {\Ax}
+     (0, \By) node[left, font=\scriptsize] {\By}  -|
+     (\Bx, 0) node[below, font=\scriptsize] {\Bx}
+     (0, \Cy) node[left, font=\scriptsize] {\Cy} -|
+     (\Cx, 0) node[below, font=\scriptsize] {\Cx}
+     ;
+
+  \draw[CMe]
+    (1, 12) .. controls +(-90:3) and +(135:3) ..
+    (\Ax, \Ay) .. controls +(-45:3) and +(180:3) ..
+    (15, 1)
+    node[right, font=\scriptsize] {$Q = 10$}
+    ;
+
+  \draw[CMe]
+    (7, 14) .. controls +(-90:3) and +(135:2) ..
+    ($(\Bx, \By) + (1.2, 0.6)$) .. controls +(-45:2) and +(180:2) ..
+    (15, 4)
+    node[right, font=\scriptsize] {$Q = 20$}
+    ;
+
+  \draw[CMe]
+    (12, 15) .. controls +(-90:2.75) and +(135:0.75) ..
+    ($(\Cx, \Cy) + (1.5, 1)$) .. controls +(-45:0.75) and +(170:0.3) ..
+    (15, 9)
+    node[right, font=\scriptsize] {$Q = 30$}
+    ;
+
+
+  \draw[curve, DarkGreen, nearly transparent]
+    (0, 0) -- (16, 12)
+    ;
+
+  \node[dot, label={[font=\scriptsize]above:$A$}] at (A) {};
+  \node[dot, label={[font=\scriptsize]above:$B$}] at (B) {};
+  \node[dot, label={[font=\scriptsize]above:$C$}] at (C) {};
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}#+end_src

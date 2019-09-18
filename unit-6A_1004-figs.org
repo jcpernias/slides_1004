@@ -1,0 +1,621 @@
+#+STARTUP: indent hidestars content
+
+#+TITLE: Unit 6A figures
+
+#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+
+#+begin_src latex :tangle fig-t30-sr01.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5                              # cm
+height <- 5
+
+Xtop <- 500
+Ytop <- 95
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+idx <- 60
+Coordinates(Q0 = c(0, Q[idx, 2]),
+            L0 = c(Q[idx, 1], 0),
+            Dot=Q[idx, ])
+
+@
+
+\draw[help lines]
+  (Q0) node[left, font=\scriptsize] {$f(L_{0})$} -|
+  (L0) node[below, font=\scriptsize] {$L_{0}$}
+  ;
+
+\draw[decorate, decoration={markings,
+  mark=at position 0.25 with {\arrow{stealth}},
+  mark=at position 0.75 with {\arrow{stealth}}}]
+  (L0) -- (Dot) -- (Q0)
+  ;
+
+\draw[IMe]
+<<prod>>=
+plotCoord(Q)
+@
+  node[right, font=\footnotesize]  {$f(L)$}
+  ;
+
+\node[dot] at (Dot) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left] {$Q$} |-
+   (\Sexpr{Xtop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t30-sr02.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5                              # cm
+height <- 5
+
+Xtop <- 500
+Ytop <- 95
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+idx <- 60
+Coordinates(Q0 = c(0, Q[idx, 2]),
+            L0 = c(Q[idx, 1], 0),
+            Dot=Q[idx, ])
+
+@
+
+\draw[help lines]
+  (Q0) node[left, font=\scriptsize] {$Q_{0}$} -|
+  (L0) node[below, font=\scriptsize] {$f^{-1}(Q_{0})$}
+  ;
+
+\draw[decorate, decoration={markings,
+  mark=at position 0.25 with {\arrow{stealth}},
+  mark=at position 0.75 with {\arrow{stealth}}}]
+  (Q0) -- (Dot) -- (L0)
+  ;
+
+\draw[IMe]
+<<prod>>=
+plotCoord(Q)
+@
+  node[right, font=\footnotesize]  {$f^{-1}(Q)$}
+  ;
+
+\node[dot] at (Dot) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left] {$Q$} |-
+   node[left, font=\scriptsize] {\phantom{$f(L_{0})$}}
+   (\Sexpr{Xtop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t30-sr03.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5                             # cm
+height <- 5
+
+Xtop <- 95
+Ytop <- 500
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+idx <- 60
+Coordinates(C0 = c(0, CV[idx, 2]),
+            Q0 = c(CV[idx, 1], 0),
+            Dot=CV[idx, ])
+
+@
+
+\draw[help lines]
+  (C0) node[left, font=\scriptsize] {$\CV(Q_{0})$} -|
+  (Q0) node[below, font=\scriptsize] {$Q_{0}$}
+  ;
+
+\draw[decorate, decoration={markings,
+  mark=at position 0.25 with {\arrow{stealth}},
+  mark=at position 0.75 with {\arrow{stealth}}}]
+  (Q0) -- (Dot) -- (C0)
+  ;
+
+\draw[IMe]
+<<CV>>=
+plotCoord(CV)
+@
+  node[right, font=\footnotesize]  {$\CV$}
+  ;
+
+\node[dot] at (Dot) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left] {$\CV$} |-
+   node[left, font=\scriptsize] {\phantom{$\CV(Q_{0})$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t30-sr04.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5                              # cm
+height <- 5
+
+Xtop <- 95
+Ytop <- 500
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+\draw[IMe, CadetBlue]
+<<CF>>=
+plotCoord(CF)
+@
+  node[right, font=\footnotesize]  {$\CF$}
+  ;
+
+
+\draw[IMe]
+<<CV>>=
+plotCoord(CV)
+@
+  node[right, font=\footnotesize]  {$\CV$}
+  ;
+
+\draw[IMe, DarkBlue]
+<<CT>>=
+plotCoord(CT)
+@
+  node[right, font=\footnotesize]  {$\CT$}
+  ;
+
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CV$} |-
+   node[left, font=\scriptsize] {\phantom{$\CV(Q_{0})$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CF$}
+   (Ylabel2.south east) node[anchor=north east, inner ysep = 0]  {$\CT$}
+   ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t30-sr05.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5                              # cm
+height <- 5
+
+Xtop <- 500
+Ytop <- 0.7
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+## idx <- 60
+## Coordinates(Q0 = c(0, Q[idx, 2]),
+##             L0 = c(Q[idx, 1], 0),
+##             Dot=Q[idx, ])
+
+@
+
+
+\draw[IMe, Brown]
+<<PMe>>=
+plotCoord(PMe)
+@
+  node[right, font=\footnotesize]  {$\PMeL$}
+  ;
+
+\draw[IMe, DarkGreen]
+<<PMg>>=
+plotCoord(PMg)
+@
+  node[right, font=\footnotesize]  {$\PMgL$}
+  ;
+
+
+
+
+%% \draw[axis] (0,\Sexpr{Ytop})
+%%    node[left, align=left] {$\PMgL$\\$\PMeL$} |-
+%%    %% node[left, font=\scriptsize] {\phantom{$f(L_{0})$}}
+%%    (\Sexpr{Xtop}, 0) node[below] {$L$} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep = 0] (Ylabel) {$\PMgL$} |-
+   %% node[left, font=\scriptsize] {\phantom{$\CV(Q_{0})$}}
+   (\Sexpr{Xtop}, 0) node[below] {$L$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\PMeL$}
+   %% (Ylabel2.south east) node[anchor=north east]  {$\CT$}
+   ;
+
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t30-sr06.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5                              # cm
+height <- 5
+
+Xtop <- 95
+Ytop <- 10
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[IMe, Brown]
+<<CVMe>>=
+plotCoord(CVMe)
+@
+  node[above, font=\footnotesize]  {$\CVMe$}
+  ;
+
+\draw[IMe, DarkGreen]
+<<CMg>>=
+plotCoord(CMg)
+@
+  node[right, font=\footnotesize]  {$\CMg$}
+  ;
+
+
+%% \draw[axis] (0,\Sexpr{Ytop}) node[anchor=north east, align=left] {$\CVMe$\\$CMg$} |-
+%%    node[left] {\phantom{$\CFMe$}}
+%%    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
+   node[left] {\phantom{$\CVMe$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMg$}
+   %% (Ylabel2.south east) node[anchor=north east]  {$\CT$}
+   ;
+
+
+
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t30-sr06.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5                              # cm
+height <- 5
+
+Xtop <- 95
+Ytop <- 10
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[IMe, Brown]
+<<CVMe>>=
+plotCoord(CVMe)
+@
+  node[above, font=\footnotesize]  {$\CVMe$}
+  ;
+
+\draw[IMe, DarkGreen]
+<<CMg>>=
+plotCoord(CMg)
+@
+  node[right, font=\footnotesize]  {$\CMg$}
+  ;
+
+
+%% \draw[axis] (0,\Sexpr{Ytop}) node[anchor=north east, align=left] {$\CVMe$\\$CMg$} |-
+%%    node[left] {\phantom{$\CFMe$}}
+%%    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
+   node[left] {\phantom{$\CVMe$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMg$}
+   %% (Ylabel2.south east) node[anchor=north east]  {$\CT$}
+   ;
+
+
+
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t30-sr07.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5                              # cm
+height <- 5
+
+Xtop <- 95
+Ytop <- 10
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[IMe, CadetBlue]
+<<CFMe>>=
+plotCoord(CFMe)
+@
+  node[right, font=\footnotesize]  {$\CFMe$}
+  ;
+
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left] {$\CFMe$} |-
+   node[left] {\phantom{$\CVMe$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t30-sr08.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5                              # cm
+height <- 5
+
+Xtop <- 105
+Ytop <- 10
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[IMe, Brown]
+<<CVMe>>=
+plotCoord(CVMe)
+@
+  node[right, font=\footnotesize]  {$\CVMe$}
+  ;
+
+
+\draw[IMe, DarkBlue]
+<<CMe>>=
+plotCoord(CMe)
+@
+  node[above, font=\footnotesize]  {$\CMe$}
+  ;
+
+
+\draw[IMe, DarkGreen]
+<<CMg>>=
+plotCoord(CMg)
+@
+  node[right, font=\footnotesize]  {$\CMg$}
+  ;
+
+
+%% \draw[axis] (0,\Sexpr{Ytop}) node[anchor=north east, align=left] {$\CMe$\\$\CVMe$\\$CMg$} |-
+%%    node[left] {\phantom{$\CVMe$}}
+%%    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
+   node[left] {\phantom{$\CVMe$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMg$}
+   (Ylabel2.south east) node[anchor=north east, inner ysep = 0]  {$\CMe$}
+   ;
+
+
+
+
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-t30-sr08.Rnw :noweb yes
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5                              # cm
+height <- 5
+
+Xtop <- 105
+Ytop <- 10
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[IMe, Brown]
+<<CVMe>>=
+plotCoord(CVMe)
+@
+  node[right, font=\footnotesize]  {$\CVMe$}
+  ;
+
+
+\draw[IMe, DarkBlue]
+<<CMe>>=
+plotCoord(CMe)
+@
+  node[above, font=\footnotesize]  {$\CMe$}
+  ;
+
+
+\draw[IMe, DarkGreen]
+<<CMg>>=
+plotCoord(CMg)
+@
+  node[right, font=\footnotesize]  {$\CMg$}
+  ;
+
+
+%% \draw[axis] (0,\Sexpr{Ytop}) node[anchor=north east, align=left] {$\CMe$\\$\CVMe$\\$CMg$} |-
+%%    node[left] {\phantom{$\CVMe$}}
+%%    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
+   node[left] {\phantom{$\CVMe$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMg$}
+   (Ylabel2.south east) node[anchor=north east, inner ysep = 0]  {$\CMe$}
+   ;
+
+
+
+
+\end{tikzpicture}
+#+end_src
