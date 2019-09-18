@@ -10,7 +10,7 @@ class Matcher:
     """A regexp and a handler in case of match"""
 
     def __init__(self, pat, handler):
-        self.pat = re.compile(pat)
+        self.pat = re.compile(pat, re.IGNORECASE)
         self.handler = handler
 
     def process(self, text):
