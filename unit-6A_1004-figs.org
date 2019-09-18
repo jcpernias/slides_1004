@@ -4,7 +4,7 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
-#+begin_src latex :tangle fig-t30-sr01.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr01.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -64,7 +64,7 @@ plotCoord(Q)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t30-sr02.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr02.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -124,7 +124,7 @@ plotCoord(Q)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t30-sr03.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr03.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -184,7 +184,7 @@ plotCoord(CV)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t30-sr04.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr04.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -245,7 +245,7 @@ plotCoord(CT)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t30-sr05.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr05.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -314,7 +314,7 @@ plotCoord(PMg)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t30-sr06.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr06.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -375,7 +375,7 @@ plotCoord(CMg)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t30-sr06.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr06.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -436,7 +436,7 @@ plotCoord(CMg)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t30-sr07.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr07.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -478,7 +478,7 @@ plotCoord(CFMe)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t30-sr08.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr08.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -549,7 +549,7 @@ plotCoord(CMg)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t30-sr08.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr08.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @

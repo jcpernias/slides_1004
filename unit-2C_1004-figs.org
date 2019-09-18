@@ -4,7 +4,7 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
-#+begin_src latex :tangle fig-t12-eq01.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq01.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
   \coordinate (A) at (3, 45) ;
@@ -50,7 +50,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t12-eq01a.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq01a.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
   \coordinate (A) at (3, 45) ;
@@ -101,7 +101,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t12-eq02.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq02.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
   \coordinate (A) at (3, 45) ;
@@ -147,7 +147,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t12-eq02a.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq02a.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
   \coordinate (A) at (3, 45) ;
@@ -199,7 +199,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t12-eq03.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq03.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
   \coordinate (A) at (3, 45) ;
@@ -257,7 +257,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t12-ej01.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-ej01.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
   \newcommand*{\Utwo}{306.25}
@@ -282,7 +282,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t12-eq10.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq10.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
   \coordinate (A) at (0, 15) ;
@@ -313,7 +313,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t12-eq11.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq11.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
   \coordinate (A) at (5, 45) ;
@@ -343,7 +343,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t12-ej02.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-ej02.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
   \newcommand*{\Utwo}{1750}

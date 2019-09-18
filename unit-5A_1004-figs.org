@@ -4,7 +4,7 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
-#+begin_src latex :tangle fig-t25-cp01.Rnw :noweb yes
+#+begin_src latex :tangle fig-5A_1004-cp01.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -76,7 +76,7 @@ cat("{",
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t25-cp03.Rnw :noweb yes
+#+begin_src latex :tangle fig-5A_1004-cp03.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -159,7 +159,7 @@ cat("{",
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t25-cp06.Rnw :noweb yes
+#+begin_src latex :tangle fig-5A_1004-cp06.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -238,7 +238,7 @@ Coordinates(A=A, B=B)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t25-cp06a.Rnw :noweb yes
+#+begin_src latex :tangle fig-5A_1004-cp06a.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -316,7 +316,7 @@ Coordinates(C=C, D=D)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t25-cp06b.Rnw :noweb yes
+#+begin_src latex :tangle fig-5A_1004-cp06b.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -394,7 +394,7 @@ Coordinates(C=C, D=D)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t25-cp08.Rnw :noweb yes
+#+begin_src latex :tangle fig-5A_1004-cp08.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -483,7 +483,7 @@ cat("{",
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t25-cp02.Rnw :noweb yes
+#+begin_src latex :tangle fig-5A_1004-cp02.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -567,7 +567,7 @@ cat("{",
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t25-cp07.Rnw :noweb yes
+#+begin_src latex :tangle fig-5A_1004-cp07.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -644,7 +644,7 @@ Coordinates(A=A, B=B)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t25-cp05.Rnw :noweb yes
+#+begin_src latex :tangle fig-5A_1004-cp05.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -732,7 +732,7 @@ cat("{",
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t25-cp04.Rnw :noweb yes
+#+begin_src latex :tangle fig-5A_1004-cp04.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @

@@ -4,7 +4,7 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
-#+begin_src latex :tangle fig-t31-eq01.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq01.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
 
 
@@ -32,7 +32,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-eq02.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq02.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
 
 
@@ -61,7 +61,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-eq03.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq03.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
 
 
@@ -89,7 +89,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-eq04.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq04.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
 
   \coordinate (A) at (2.2917961, 10.908475) ;
@@ -125,7 +125,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-eq06.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq06.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
 
   \coordinate (A) at (2.2917961, 10.908475) ;
@@ -169,7 +169,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-eq07.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq07.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
 
   \coordinate (A) at (2.2917961, 10.908475) ;
@@ -213,7 +213,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-eq05.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq05.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
 
   \coordinate (A) at (2.2917961, 10.908475) ;
@@ -268,7 +268,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-eq08.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq08.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
 
   \coordinate (A) at (2.2917961, 10.908475) ;
@@ -335,7 +335,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-exp02.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-exp02.tex :noweb yes
 \begin{tikzpicture}[xscale=0.3125, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -419,7 +419,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-clp01.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-clp01.tex :noweb yes
 \begin{tikzpicture}[yscale=0.71428571, xscale=0.071428571]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -503,7 +503,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-env08.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env08.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -581,7 +581,7 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t31-clp02.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-clp02.tex :noweb yes
 \begin{tikzpicture}[yscale=1, xscale=1]
 
   \draw[CMe, very thick, Brown]
@@ -595,7 +595,7 @@ plotCMg(parL, domCMgL)
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-clp03.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-clp03.tex :noweb yes
 \begin{tikzpicture}[yscale=1, xscale=1]
 
   \draw[CMe, very thick, Brown]
@@ -615,7 +615,7 @@ plotCMg(parL, domCMgL)
 %%% End:
 #+end_src
 
-#+begin_src latex :tangle fig-t31-exp03.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-exp03.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -669,7 +669,7 @@ plotCMg(parL, domCMgL)
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-exp04.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-exp04.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -727,7 +727,7 @@ plotCMg(parL, domCMgL)
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-exp05.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-exp05.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -788,7 +788,7 @@ plotCMg(parL, domCMgL)
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t31-env20.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env20.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -852,7 +852,7 @@ plotCoord(CL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t31-env21.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env21.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -959,7 +959,7 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t31-env01.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env01.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1033,7 +1033,7 @@ plotCMg(par60, domg60)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t31-env02.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env02.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1123,7 +1123,7 @@ plotCMe(par60, dom60)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t31-env03.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env03.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1227,7 +1227,7 @@ plotCMe(par60, domL60a)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t31-env04.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env04.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1350,7 +1350,7 @@ plotCMg(par30, domgL30a)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t31-env05.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env05.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1437,7 +1437,7 @@ plotCMe(par70, domL70)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t31-env06.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env06.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1544,7 +1544,7 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-t31-env07.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env07.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @

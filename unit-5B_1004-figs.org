@@ -4,7 +4,7 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
-#+begin_src latex :tangle fig-t26-is01.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-is01.tex :noweb yes
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
 
   \begin{scope}
@@ -32,7 +32,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t26-is02.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-is02.tex :noweb yes
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
 
   \coordinate (A) at (4, 6.25);
@@ -62,7 +62,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t26-is05.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-is05.tex :noweb yes
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
 
 
@@ -81,7 +81,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t26-is03.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-is03.tex :noweb yes
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
 
   \begin{scope}
@@ -106,7 +106,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t26-is04.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-is04.tex :noweb yes
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
 
   \begin{scope}
@@ -135,7 +135,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t26-re01.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-re01.tex :noweb yes
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
   \newcommand*{\Ax}{4}
   \newcommand*{\Ay}{3}
@@ -193,7 +193,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t26-re02.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-re02.tex :noweb yes
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
   \newcommand*{\Ax}{4}
   \newcommand*{\Ay}{3}
@@ -251,7 +251,7 @@
     ;
 \end{tikzpicture}#+end_src
 
-#+begin_src latex :tangle fig-t26-re03.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-re03.tex :noweb yes
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
   \newcommand*{\Ax}{4}
   \newcommand*{\Ay}{3}

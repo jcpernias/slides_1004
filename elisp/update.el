@@ -88,9 +88,15 @@
     (concat (file-name-as-directory path)
             (file-name-completion (concat base-name ".") path))))
 
-(defun insert-fig-block (base-name)
-  (let ((full-path (which-file base-name orig-dir)))
-    (insert (format begin-src-block (file-name-nondirectory full-path)))
+(defun insert-fig-block (base-name unit)
+  (let ((full-path (which-file base-name orig-dir))
+        (new-name))
+    (setq new-name
+          (replace-regexp-in-string
+           "-t[0-9]\\{2\\}-"
+           (concat "-" unit "_1004-")
+           (file-name-nondirectory full-path)))
+    (insert (format begin-src-block new-name))
     (insert-file-contents full-path)
     (goto-char (point-max))
     (insert end-src-block)))
@@ -106,7 +112,7 @@
       (insert (format figs-file-preamble
                       (concat "Unit " unit " figures")))
       (dolist (item figure-files)
-        (insert-fig-block item))
+        (insert-fig-block item unit))
       (setq org-file-name
             (concat "unit-" unit "_1004-figs.org"))
       (write-file (concat (file-name-as-directory "..") org-file-name))

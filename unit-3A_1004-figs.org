@@ -4,7 +4,7 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
-#+begin_src latex :tangle fig-t15-crc2.Rnw :noweb yes
+#+begin_src latex :tangle fig-3A_1004-crc2.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -58,7 +58,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-t15-crc3.Rnw :noweb yes
+#+begin_src latex :tangle fig-3A_1004-crc3.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -114,7 +114,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-t15-crc.Rnw :noweb yes
+#+begin_src latex :tangle fig-3A_1004-crc.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -170,7 +170,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-t15-eng.Rnw :noweb yes
+#+begin_src latex :tangle fig-3A_1004-eng.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -238,7 +238,7 @@ Axis(maxX, maxM, "$X$", "$M$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-t15-cpc2.Rnw :noweb yes
+#+begin_src latex :tangle fig-3A_1004-cpc2.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -292,7 +292,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-t15-cpc3.Rnw :noweb yes
+#+begin_src latex :tangle fig-3A_1004-cpc3.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -347,7 +347,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-t15-cpc.Rnw :noweb yes
+#+begin_src latex :tangle fig-3A_1004-cpc.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -405,7 +405,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-t15-dem.Rnw :noweb yes
+#+begin_src latex :tangle fig-3A_1004-dem.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
