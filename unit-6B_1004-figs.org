@@ -30,7 +30,8 @@
     (0, 22) node[left] {$K$} |-
     (22, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq02.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
@@ -59,7 +60,8 @@
     (0, 22) node[left] {$K$} |-
     (22, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq03.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
@@ -87,7 +89,8 @@
     (0, 22) node[left] {$K$} |-
     (22, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq04.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
@@ -123,7 +126,8 @@
     (0, 22) node[left] {$K$} |-
     (22, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq06.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
@@ -167,7 +171,8 @@
     (0, 22) node[left] {$K$} |-
     (22, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq07.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
@@ -211,7 +216,8 @@
     (0, 22) node[left] {$K$} |-
     (22, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq05.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
@@ -266,7 +272,8 @@
     (0, 22) node[left] {$K$} |-
     (22, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq08.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
@@ -333,7 +340,8 @@
     (0, 22) node[left] {$K$} |-
     (22, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-exp02.tex :noweb yes
 \begin{tikzpicture}[xscale=0.3125, yscale=0.3125]
@@ -417,7 +425,8 @@
     (0, 16) node[left] {$K$} |-
     (16, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-clp01.tex :noweb yes
 \begin{tikzpicture}[yscale=0.71428571, xscale=0.071428571]
@@ -501,7 +510,8 @@
     (0, 7) node[left] {$\CT$} |-
     (70, 0) node[below] {$Q$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-env08.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
@@ -579,6 +589,7 @@ plotCMg(parL, domCMgL)
    node[left] {\phantom{$\CMg$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-clp02.tex :noweb yes
@@ -593,7 +604,8 @@ plotCMg(parL, domCMgL)
     (0, 5) node[left] {$\CT$} |-
     (5, 0) node[below] {$Q$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-clp03.tex :noweb yes
 \begin{tikzpicture}[yscale=1, xscale=1]
@@ -613,6 +625,7 @@ plotCMg(parL, domCMgL)
 %%% mode: latex
 %%% TeX-master: t
 %%% End:
+
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-exp03.tex :noweb yes
@@ -667,7 +680,8 @@ plotCMg(parL, domCMgL)
     (0, 16) node[left] {$K$} |-
     (18, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-exp04.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
@@ -725,7 +739,8 @@ plotCMg(parL, domCMgL)
     (0, 16) node[left] {$K$} |-
     (18, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-exp05.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
@@ -786,7 +801,8 @@ plotCMg(parL, domCMgL)
     (0, 16) node[left] {$K$} |-
     (18, 0) node[below] {$L$}
     ;
-\end{tikzpicture}#+end_src
+\end{tikzpicture}
+#+end_src
 
 #+begin_src latex :tangle fig-6B_1004-env20.Rnw :noweb yes
 <<setup, cache=FALSE, include=FALSE>>=
@@ -850,6 +866,7 @@ plotCoord(CL)
    %% node[left] {\phantom{$\CMg$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-env21.Rnw :noweb yes
@@ -957,6 +974,7 @@ plotCMg(parL, domCMgL)
    %% node[left] {\phantom{$\CMg$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-env01.Rnw :noweb yes
@@ -1031,6 +1049,7 @@ plotCMg(par60, domg60)
    node[left] {\phantom{$\CMg$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-env02.Rnw :noweb yes
@@ -1121,6 +1140,7 @@ plotCMe(par60, dom60)
    node[left] {\phantom{$\CMg$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-env03.Rnw :noweb yes
@@ -1225,6 +1245,7 @@ plotCMe(par60, domL60a)
    node[left] {\phantom{$\CMg$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-env04.Rnw :noweb yes
@@ -1348,6 +1369,7 @@ plotCMg(par30, domgL30a)
    node[left] {\phantom{$\CMg$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-env05.Rnw :noweb yes
@@ -1435,6 +1457,7 @@ plotCMe(par70, domL70)
    node[left] {\phantom{$\CMg$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-env06.Rnw :noweb yes
@@ -1542,6 +1565,7 @@ plotCMg(parL, domCMgL)
    node[left] {\phantom{$\CMg$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-env07.Rnw :noweb yes
@@ -1620,4 +1644,5 @@ plotCMg(parL, domCMgL)
    node[left] {\phantom{$\CMg$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
+
 #+end_src

@@ -71,7 +71,7 @@
 
 
 (setq begin-src-block "#+begin_src latex :tangle %s :noweb yes\n")
-(setq end-src-block "#+end_src\n\n")
+(setq end-src-block "\n#+end_src\n\n")
 
 (setq orig-dir (expand-file-name "~/Teaching/courses/EC1004/docs/slides_1004"))
 

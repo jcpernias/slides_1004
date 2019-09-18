@@ -74,6 +74,7 @@ cat("{",
    node[left] {\phantom{$\PMgL$}}
    (\Sexpr{Ltop}, 0) node[below] {$L$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-5A_1004-cp03.Rnw :noweb yes
@@ -157,6 +158,7 @@ cat("{",
    node[left] {\phantom{$\PMgL$}}
    (\Sexpr{Ltop}, 0) node[below] {$L$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-5A_1004-cp06.Rnw :noweb yes
@@ -236,6 +238,7 @@ Coordinates(A=A, B=B)
 \draw[axis, ->] (0, 0) --
     (\Sexpr{Ltop}, 0) node[below] {$L$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-5A_1004-cp06a.Rnw :noweb yes
@@ -314,6 +317,7 @@ Coordinates(C=C, D=D)
 \draw[axis, ->] (0, 0) --
     (\Sexpr{Ltop}, 0) node[below] {$L$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-5A_1004-cp06b.Rnw :noweb yes
@@ -392,6 +396,7 @@ Coordinates(C=C, D=D)
 \draw[axis, ->] (0, 0) --
     (\Sexpr{Ltop}, 0) node[below] {$L$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-5A_1004-cp08.Rnw :noweb yes
@@ -481,6 +486,7 @@ cat("{",
    node[left] {\phantom{$\PMgL$}}
    (\Sexpr{Ltop}, 0) node[below] {$L$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-5A_1004-cp02.Rnw :noweb yes
@@ -565,6 +571,7 @@ cat("{",
    node[left] {\phantom{$\PMgL$}}
     (\Sexpr{Ltop}, 0) node[below] {$L$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-5A_1004-cp07.Rnw :noweb yes
@@ -642,6 +649,7 @@ Coordinates(A=A, B=B)
 \draw[axis, ->] (0, 0) --
     (\Sexpr{Ltop}, 0) node[below] {$L$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-5A_1004-cp05.Rnw :noweb yes
@@ -730,6 +738,7 @@ cat("{",
 \draw[axis, ->] (0, 0) --
     (\Sexpr{Ltop}, 0) node[below] {$L$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-5A_1004-cp04.Rnw :noweb yes
@@ -810,4 +819,5 @@ cat("{",
    node[left] {\phantom{$\PMgL$}}
    (\Sexpr{Ltop}, 0) node[below] {$L$} ;
 \end{tikzpicture}
+
 #+end_src

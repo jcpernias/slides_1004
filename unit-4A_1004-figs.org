@@ -117,6 +117,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 \draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
     (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-4A_1004-ciri02.Rnw :noweb yes
@@ -232,6 +233,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 \draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
     (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-4A_1004-ciri03.Rnw :noweb yes
@@ -347,6 +349,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 \draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
     (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-4A_1004-ciri04.Rnw :noweb yes
@@ -462,6 +465,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 \draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
     (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-4A_1004-ciri05.Rnw :noweb yes
@@ -577,6 +581,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 \draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
     (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-4A_1004-ciri06.Rnw :noweb yes
@@ -697,6 +702,7 @@ Coordinates(End=End, R02 = R02, R12 = R12,
 \draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
     (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-4A_1004-ciri07.Rnw :noweb yes
@@ -812,6 +818,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 \draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
     (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-4A_1004-cisv01.tex :noweb yes
@@ -832,4 +839,5 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 \draw[axis, <->] (-25, 0) -- (75, 0) node[below] {$S$} ;
 \draw[axis, ->] (10, 0) node[below] {$0$} -- (10, 100) node[left] {$r$}  ;
 \end{tikzpicture}
+
 #+end_src

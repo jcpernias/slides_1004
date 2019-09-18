@@ -74,6 +74,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \end{tikzpicture}
 
+
 #+end_src
 
 #+begin_src latex :tangle fig-3B_1004-eres22.Rnw :noweb yes
@@ -135,6 +136,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \end{tikzpicture}
 
+
 #+end_src
 
 #+begin_src latex :tangle fig-3B_1004-eres02.tex :noweb yes
@@ -187,6 +189,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-3B_1004-eres03.tex :noweb yes
@@ -242,6 +245,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-3B_1004-eres04.tex :noweb yes
@@ -307,6 +311,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-3B_1004-eres10.Rnw :noweb yes
@@ -376,6 +381,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \end{tikzpicture}
 
+
 #+end_src
 
 #+begin_src latex :tangle fig-3B_1004-eres11.Rnw :noweb yes
@@ -444,6 +450,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \end{tikzpicture}
 
+
 #+end_src
 
 #+begin_src latex :tangle fig-3B_1004-eres12.Rnw :noweb yes
@@ -510,6 +517,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \end{tikzpicture}
 
+
 #+end_src
 
 #+begin_src latex :tangle fig-3B_1004-eres05a.tex :noweb yes
@@ -574,6 +582,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-3B_1004-eres05.tex :noweb yes
@@ -637,6 +646,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-3B_1004-eres06.tex :noweb yes
@@ -700,4 +710,5 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src

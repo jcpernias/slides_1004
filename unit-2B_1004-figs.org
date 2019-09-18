@@ -34,6 +34,7 @@
 
   \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-ci03.tex :noweb yes
@@ -71,6 +72,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-ci04.tex :noweb yes
@@ -115,6 +117,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-ci05.tex :noweb yes
@@ -164,6 +167,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-ci06.tex :noweb yes
@@ -203,6 +207,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-tr01.tex :noweb yes
@@ -235,6 +240,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-map01.tex :noweb yes
@@ -264,6 +270,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-rms01.tex :noweb yes
@@ -290,6 +297,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-rms02.tex :noweb yes
@@ -322,6 +330,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-rms03.tex :noweb yes
@@ -358,6 +367,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-nreg01.tex :noweb yes
@@ -380,6 +390,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-nreg02.tex :noweb yes
@@ -401,6 +412,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-nreg03.tex :noweb yes
@@ -421,6 +433,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-nreg04.tex :noweb yes
@@ -445,6 +458,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-fu01.tex :noweb yes
@@ -478,6 +492,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-map02.tex :noweb yes
@@ -511,6 +526,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-map03.tex :noweb yes
@@ -544,6 +560,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2B_1004-fu02.tex :noweb yes
@@ -591,4 +608,5 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src

@@ -16,6 +16,7 @@
 
 \draw[axis] (0,5) node[left] {$Y$} |- (5, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-rp1.tex :noweb yes
@@ -55,6 +56,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-rp1b.tex :noweb yes
@@ -95,6 +97,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-rp3.tex :noweb yes
@@ -142,6 +145,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-rp5.tex :noweb yes
@@ -190,6 +194,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-rp6.tex :noweb yes
@@ -224,6 +229,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-rp7.tex :noweb yes
@@ -261,6 +267,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-rp8.tex :noweb yes
@@ -300,6 +307,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-rp10.tex :noweb yes
@@ -350,6 +358,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-rp11.tex :noweb yes
@@ -380,6 +389,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-rac1.tex :noweb yes
@@ -425,6 +435,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-orp2.tex :noweb yes
@@ -488,6 +499,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2A_1004-orp3.tex :noweb yes
@@ -539,4 +551,5 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src

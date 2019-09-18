@@ -48,6 +48,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2C_1004-eq01a.tex :noweb yes
@@ -99,6 +100,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2C_1004-eq02.tex :noweb yes
@@ -145,6 +147,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2C_1004-eq02a.tex :noweb yes
@@ -197,6 +200,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2C_1004-eq03.tex :noweb yes
@@ -255,6 +259,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2C_1004-ej01.tex :noweb yes
@@ -280,6 +285,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2C_1004-eq10.tex :noweb yes
@@ -311,6 +317,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2C_1004-eq11.tex :noweb yes
@@ -341,6 +348,7 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src
 
 #+begin_src latex :tangle fig-2C_1004-ej02.tex :noweb yes
@@ -374,4 +382,5 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
+
 #+end_src

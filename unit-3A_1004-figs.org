@@ -56,6 +56,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \end{tikzpicture}
 
+
 #+end_src
 
 #+begin_src latex :tangle fig-3A_1004-crc3.Rnw :noweb yes
@@ -112,6 +113,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 \end{tikzpicture}
 
+
 #+end_src
 
 #+begin_src latex :tangle fig-3A_1004-crc.Rnw :noweb yes
@@ -167,6 +169,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 
 \end{tikzpicture}
+
 
 #+end_src
 
@@ -236,6 +239,7 @@ Axis(maxX, maxM, "$X$", "$M$")
 
 \end{tikzpicture}
 
+
 #+end_src
 
 #+begin_src latex :tangle fig-3A_1004-cpc2.Rnw :noweb yes
@@ -289,6 +293,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 
 \end{tikzpicture}
+
 
 #+end_src
 
@@ -344,6 +349,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 
 \end{tikzpicture}
+
 
 #+end_src
 
@@ -402,6 +408,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 
 \end{tikzpicture}
+
 
 #+end_src
 
@@ -466,5 +473,6 @@ Axis(maxX, maxP, "$X$", "$P_X$")
 
 
 \end{tikzpicture}
+
 
 #+end_src
