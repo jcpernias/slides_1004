@@ -45,7 +45,7 @@
 
 ** La restricción presupuestaria (I)
 
-#+figure: ./figures/fig-t21-ciri01.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri01-*.pdf 0.55
 
 - El consumidor siempre tiene la opción de no pedir prestado ni
   prestar. En este caso $(C_1, C_2) = (M_1, M_2)$.
@@ -104,14 +104,14 @@
 
 ** La restricción intertemporal (II)
 
-#+figure: ./figures/fig-t21-ciri02.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri02-*.pdf 0.55
 
 - La pendiente de la restricción intertemporal es igual a $-(1+r)$
 
 
 ** La restricción intertemporal (y III)
 
-#+figure: ./figures/fig-t21-ciri03.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri03-*.pdf 0.55
 
 - Cuando el tipo de interés varía la restricción intertemporal pivota
   alrededor del punto de las dotaciones iniciales.
@@ -131,7 +131,7 @@
 
 ** La elección intertemporal (II)
 
-#+figure: ./figures/fig-t21-ciri04.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri04-*.pdf 0.55
 
 - La elección óptima en este caso implica:
   #+begin_export latex
@@ -142,7 +142,7 @@
 
 ** La elección intertemporal (y III)
 
-#+figure: ./figures/fig-t21-ciri05.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri05-*.pdf 0.55
 
 - La elección óptima en este caso implica:
   #+begin_export latex
@@ -182,7 +182,7 @@
 
 ** La curva de ahorro (II)
 
-#+figure: ./figures/fig-t21-ciri06.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri06-*.pdf 0.55
 
 - Si el consumo en el primer periodo es un bien normal, un aumento del
   tipo de interés aumenta el ahorro de los prestatarios.
@@ -191,7 +191,7 @@
 
 ** La curva de ahorro (III)
 
-#+figure: ./figures/fig-t21-ciri07.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri07-*.pdf 0.55
 
 - En el caso de un prestamista, el efecto renta tiene signo contrario
   al efecto sustitución.
@@ -201,7 +201,7 @@
 
 ** La curva de ahorro (y IV)
 
-#+figure: ./figures/fig-t21-cisv01.pdf 0.55
+#+MATS: figcol fig-4A_1004-cisv01-*.pdf 0.55
 
 - La curva de ahorro individual puede volverse hacia atrás para tipos
   de interés elevados.

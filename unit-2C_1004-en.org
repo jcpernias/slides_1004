@@ -49,7 +49,7 @@
 
 
 ** Tangency condition (I)
-#+figure: ./figures/fig-t12-eq01.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq01-*.pdf 0.45
 
 - At point $A$: $\RMS > P_X/P_Y$.
 - The valuation of the consumer of another unit of good $X$ is higher
@@ -57,14 +57,14 @@
 
 
 ** Tangency condition (II)
-#+figure: ./figures/fig-t12-eq01a.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq01a-*.pdf 0.45
 
 - The consumer can get a higher level of satisfaction if he/she
   increases the consumption of $X$.
 
 
 ** Tangency condition (III)
-#+figure: ./figures/fig-t12-eq02.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq02-*.pdf 0.45
 
 - At point $B$: $\RMS < P_X/P_Y$.
 - The valuation of the consumer of another unit of good $X$ is lower
@@ -72,14 +72,14 @@
 
 
 ** Tangency condition (IV)
-#+figure: ./figures/fig-t12-eq02a.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq02a-*.pdf 0.45
 
 - The consumer can get a higher level of satisfaction by decreasing
   the consumption of $X$.
 
 
 ** Tangency condition (and V)
-#+figure: ./figures/fig-t12-eq03.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq03-*.pdf 0.45
 
 - At point $E$: $\RMS = P_X/P_Y$.
 - The valuation of the consumer of another unit of good $X$ is equal
@@ -95,7 +95,7 @@
 
 
 ** Example: interior solution (and II)
-#+figure: ./figures/fig-t12-ej01.pdf 0.55
+#+MATS: figcol fig-2C_1004-ej01-*.pdf 0.55
 
 - Interior solution:
   #+begin_export latex
@@ -118,7 +118,7 @@
 
 ** Corner solutions (II)
 
-#+figure: ./figures/fig-t12-eq10.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq10-*.pdf 0.45
 
 - In all the points of the budget line: $\RMS < P_X/P_Y$.
 - The consumer buys $Y^*=M/P_Y$ units of good $Y$ and $0$
@@ -127,7 +127,7 @@
 
 ** Corner solutions (and III)
 
-#+figure: ./figures/fig-t12-eq11.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq11-*.pdf 0.45
 
 - In all the points of the budget line: $\RMS > P_X/P_Y$.
 - The consumer buys $X^*=M/P_X$ units of good $X$ and $0$
@@ -141,7 +141,7 @@
 
 
 ** Example: corner solution (and II)
-#+figure: ./figures/fig-t12-ej02.pdf 0.55
+#+MATS: figcol fig-2C_1004-ej02-*.pdf 0.55
 
 - Corner solution:
   #+begin_export latex

@@ -14,7 +14,7 @@
 
 ** Cambios en la renta
 
-#+figure: ./figures/fig-t15-crc2.pdf 0.55
+#+MATS: figcol fig-3A_1004-crc2-*.pdf 0.55
 
 - Conforme aumenta la renta, $M < M' < M''$, la restricción
   presupuestaria se desplaza hacia la derecha.
@@ -23,7 +23,7 @@
 
 ** Cambios en la decisión de consumo
 
-#+figure: ./figures/fig-t15-crc3.pdf 0.55
+#+MATS: figcol fig-3A_1004-crc3-*.pdf 0.55
 
 - El consumidor selecciona una cesta diferente para cada nivel de
   renta monetaria.
@@ -31,7 +31,7 @@
 
 ** Curva renta consumo
 
-#+figure: ./figures/fig-t15-crc.pdf 0.55
+#+MATS: figcol fig-3A_1004-crc-*.pdf 0.55
 
 - La *curva de renta consumo*, \CRC, está formada por las cestas que
   elige un consumidor para cada posible valor de la renta monetaria,
@@ -40,7 +40,7 @@
 
 ** Curva de Engel
 
-#+figure: ./figures/fig-t15-eng.pdf 0.55
+#+MATS: figcol fig-3A_1004-eng-*.pdf 0.55
 
 - La *curva de Engel* relaciona la cantidad demandada de un bien con
   la renta monetaria de un consumidor, manteniendo constantes los
@@ -68,7 +68,7 @@
 
 ** Cambios en el precio de un bien
 
-#+figure: ./figures/fig-t15-cpc2.pdf 0.55
+#+MATS: figcol fig-3A_1004-cpc2-*.pdf 0.55
 
 - Al disminuir el precio del bien $X$, $P_X > P'_X > P''_X$ la
   restricción presupuestaria rota hacia la derecha.
@@ -78,14 +78,14 @@
 
 ** Cambios en la decisión de consumo
 
-#+figure: ./figures/fig-t15-cpc3.pdf 0.55
+#+MATS: figcol fig-3A_1004-cpc3-*.pdf 0.55
 
 - El consumidor elige una cesta diferente para cada $P_X$.
 
 
 ** Curva precio consumo
 
-#+figure: ./figures/fig-t15-cpc.pdf 0.55
+#+MATS: figcol fig-3A_1004-cpc-*.pdf 0.55
 
 - La *curva de precio consumo* recoge las cestas que el consumidor
   elige para cada posible precio del bien $X$, manteniendo constantes
@@ -94,7 +94,7 @@
 
 ** La curva de demanda individual
 
-#+figure: ./figures/fig-t15-dem.pdf 0.55
+#+MATS: figcol fig-3A_1004-dem-*.pdf 0.55
 
 - La *curva de demanda* relaciona la cantidad demandada de un bien con
   el precio de ese bien, manteniendo constantes la renta monetaria y

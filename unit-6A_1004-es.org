@@ -75,7 +75,7 @@
 
 ** Producción y costes (I)
 
-#+figure: ./figures/fig-t30-sr01.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr01-*.pdf 0.55
 
 - La función de producto total muestra la producción que obtiene la
   empresa usando un determinado nivel de trabajo.
@@ -86,7 +86,7 @@
 
 ** Producción y costes (y II)
 
-#+figure: ./figures/fig-t30-sr02.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr02-*.pdf 0.55
 
 - La inversa de la función de producto total muestra el trabajo
   necesario para alcanzar un determinado nivel de producción.
@@ -97,7 +97,7 @@
 
 ** La curva de coste variable
 
-#+figure: ./figures/fig-t30-sr03.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr03-*.pdf 0.55
 
 - La *curva de coste variable* indica cuál es el mínimo coste variable
   al que se puede obtener un determinado nivel de producción:
@@ -108,7 +108,7 @@
 
 ** La curva de coste total
 
-#+figure: ./figures/fig-t30-sr04.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr04-*.pdf 0.55
 
 - El coste fijo no depende del nivel de producción.
 - La *curva de coste total* se obtiene sumando el coste fijo y el
@@ -179,7 +179,7 @@
 
 ** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (II)
 
-#+figure: ./figures/fig-t30-sr05.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr05-*.pdf 0.55
 
 - La forma de las curvas de producto medio y marginal determina la
   forma de las curvas de coste medio y marginal.
@@ -188,7 +188,7 @@
 
 ** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (y III)
 
-#+figure: ./figures/fig-t30-sr06.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr06-*.pdf 0.55
 
 - Las curvas de coste medio y marginal tienen forma de U.
 - La curva de $\CMg$ corta con la de $\CVMe$ en el mínimo de los
@@ -197,7 +197,7 @@
 
 ** Las curvas de coste variable medio y coste marginal
 
-#+figure: ./figures/fig-t30-sr06.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr06-*.pdf 0.55
 
 - Cuando $\CMg < \CVMe$, el coste variable medio decrece con $Q$.
 - El coste variable medio crece con la producción cuando $\CMg >
@@ -206,7 +206,7 @@
 
 ** La curva de coste fijo medio
 
-#+figure: ./figures/fig-t30-sr07.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr07-*.pdf 0.55
 
 - La *curva de coste fijo medio* decrece conforme aumenta la
   producción:
@@ -217,7 +217,7 @@
 
 ** La curva de coste medio (I)
 
-#+figure: ./figures/fig-t30-sr08.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr08-*.pdf 0.55
 
 - La curva de $\CMe$ es la suma del $\CVMe$ y el $\CFMe$ para cada
   nivel de producción.
@@ -227,7 +227,7 @@
 
 ** La curva de coste medio (y II)
 
-#+figure: ./figures/fig-t30-sr08.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr08-*.pdf 0.55
 
 - La curva de $\CMe$ decrece con $Q$ cuando $\CMg < \CMe$.
 - La curva de $\CMe$ es creciente siempre que $\CMg > \CMe$.

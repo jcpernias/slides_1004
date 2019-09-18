@@ -41,7 +41,7 @@
 
 ** El mapa de isocuantas
 
-#+figure: ./figures/fig-t26-is01.pdf 0.5
+#+MATS: figcol fig-5B_1004-is01-*.pdf 0.5
 
 - A cada nivel de producción le corresponde una isocuanta diferente.
 - Las isocuantas más alejadas del origen están asociadas con mayores
@@ -94,7 +94,7 @@
 
 ** Convexidad
 
-#+figure: ./figures/fig-t26-is02.pdf 0.5
+#+MATS: figcol fig-5B_1004-is02-*.pdf 0.5
 
 - Suponemos que las isocuantas son convexas.
 - La convexidad implica que la $\RMST$ es decreciente.
@@ -116,7 +116,7 @@
 
 ** Sustituibilidad
 
-#+figure: ./figures/fig-t26-is05.pdf 0.5
+#+MATS: figcol fig-5B_1004-is05-*.pdf 0.5
 
 - La curvatura de las isocuanta indica el grado de sustituibilidad
   de un factor por otro a la hora de obtener un determinado nivel de
@@ -125,7 +125,7 @@
 
 ** Factores perfectamente sustituibles
 
-#+figure: ./figures/fig-t26-is03.pdf 0.5
+#+MATS: figcol fig-5B_1004-is03-*.pdf 0.5
 
 - *Sustituibilidad perfecta*: los factores pueden
   sustituirse siempre a la misma tasa.
@@ -138,7 +138,7 @@
 
 ** Función de producción de proporciones fijas
 
-#+figure: ./figures/fig-t26-is04.pdf 0.5
+#+MATS: figcol fig-5B_1004-is04-*.pdf 0.5
 
 - *Tecnología de proporciones fijas*: en todos los puntos técnicamente
   eficientes, los factores se combinan en la misma proporción.
@@ -190,7 +190,7 @@
 
 ** Rendimientos constantes de escala (y II)
 
-#+figure: ./figures/fig-t26-re01.pdf 0.5
+#+MATS: figcol fig-5B_1004-re01-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B = 2 Q_A$.
 - $C = 3 A$ y $Q_C = 3 Q_A$.
@@ -207,7 +207,7 @@
 
 ** Rendimientos crecientes de escala (y II)
 
-#+figure: ./figures/fig-t26-re02.pdf 0.5
+#+MATS: figcol fig-5B_1004-re02-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B > 2 Q_A$.
 - $C = 3 A$ y $Q_C > 3 Q_A$.
@@ -225,7 +225,7 @@
 
 ** Rendimientos decrecientes de escala (y II)
 
-#+figure: ./figures/fig-t26-re03.pdf 0.5
+#+MATS: figcol fig-5B_1004-re03-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B < 2 Q_A$.
 - $C = 3 A$ y $Q_B < 3 Q_A$.

@@ -46,7 +46,7 @@
 
 ** The budget constraint (I)
 
-#+figure: ./figures/fig-t21-ciri01.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri01-*.pdf 0.55
 
 - The consumer always has the option of not borrowing and not lending
   money. In this case $(C_1, C_2) = (M_1, M_2)$.
@@ -103,14 +103,14 @@
 
 ** The intertemporal budget constraint (II)
 
-#+figure: ./figures/fig-t21-ciri02.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri02-*.pdf 0.55
 
 - The slope of the intertemporal budget constraint is equal to $-(1+r)$
 
 
 ** The intertemporal budget constraint (and III)
 
-#+figure: ./figures/fig-t21-ciri03.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri03-*.pdf 0.55
 
 - When the interest rate varies the intertemporal budget constraint
   pivots around the point of initial endowments.
@@ -130,7 +130,7 @@
 
 ** The intertemporal choice (II)
 
-#+figure: ./figures/fig-t21-ciri04.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri04-*.pdf 0.55
 
 - The optimum choice in this case implies:
   #+begin_export latex
@@ -141,7 +141,7 @@
 
 ** The intertemporal choice (and III)
 
-#+figure: ./figures/fig-t21-ciri05.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri05-*.pdf 0.55
 
 - The optimum choice in this case implies:
   #+begin_export latex
@@ -180,7 +180,7 @@
 
 ** The savings curve (II)
 
-#+figure: ./figures/fig-t21-ciri06.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri06-*.pdf 0.55
 
 - If consumption in the first period is of a normal good, an increase
   in the interest rate increases the savings of borrowers.
@@ -189,7 +189,7 @@
 
 ** The savings curve (III)
 
-#+figure: ./figures/fig-t21-ciri07.pdf 0.55
+#+MATS: figcol fig-4A_1004-ciri07-*.pdf 0.55
 
 - In the case of a lender, the income effect has the opposite sign of
   the substitution effect.
@@ -199,7 +199,7 @@
 
 ** The savings curve (and IV)
 
-#+figure: ./figures/fig-t21-cisv01.pdf 0.55
+#+MATS: figcol fig-4A_1004-cisv01-*.pdf 0.55
 
 - The individual savings curve can go back towards itself for high
   interest rates.

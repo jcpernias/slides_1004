@@ -14,7 +14,7 @@
 
 ** Variations in income
 
-#+figure: ./figures/fig-t15-crc2.pdf 0.55
+#+MATS: figcol fig-3A_1004-crc2-*.pdf 0.55
 
 - As income increases, $M < M' < M''$, the budget line
   shifts to the right.
@@ -23,14 +23,14 @@
 
 ** Changes in the consumption decision
 
-#+figure: ./figures/fig-t15-crc3.pdf 0.55
+#+MATS: figcol fig-3A_1004-crc3-*.pdf 0.55
 
 - The consumer chooses a different basket for each level of monetary income.
 
 
 ** Income-consumption curve
 
-#+figure: ./figures/fig-t15-crc.pdf 0.55
+#+MATS: figcol fig-3A_1004-crc-*.pdf 0.55
 
 - The *income-consumption curve*, \CRC, is set up by the baskets that
   a consumer chooses for each possible value of the monetary rent,
@@ -39,7 +39,7 @@
 
 ** Engel curve
 
-#+figure: ./figures/fig-t15-eng.pdf 0.55
+#+MATS: figcol fig-3A_1004-eng-*.pdf 0.55
 
 - The *Engel curve* relates the demanded quantity of a good to the
   monetary rent of a consumer, keeping constant the prices of goods.
@@ -67,7 +67,7 @@
 
 ** Changes in the price of a good
 
-#+figure: ./figures/fig-t15-cpc2.pdf 0.55
+#+MATS: figcol fig-3A_1004-cpc2-*.pdf 0.55
 
 - When the price of good $X$ decreases, $P_X > P'_X > P''_X$ the
   budget constraint pivots on the point $M/P_Y$ to the right.
@@ -77,14 +77,14 @@
 
 ** Changes in the consumption decision
 
-#+figure: ./figures/fig-t15-cpc3.pdf 0.55
+#+MATS: figcol fig-3A_1004-cpc3-*.pdf 0.55
 
 - The consumer chooses a different basket for each $P_X$.
 
 
 ** Price-consumption curve
 
-#+figure: ./figures/fig-t15-cpc.pdf 0.55
+#+MATS: figcol fig-3A_1004-cpc-*.pdf 0.55
 
 - The *price-consumption curve* includes the baskets the consumer
   chooses for each possible price of good $X$, keeping constant the
@@ -93,7 +93,7 @@
 
 ** Individual demand curve
 
-#+figure: ./figures/fig-t15-dem.pdf 0.55
+#+MATS: figcol fig-3A_1004-dem-*.pdf 0.55
 
 - The *demand curve* relates the demanded quantity of a good with the
   price of that good, keeping constant the monetary rent and the price

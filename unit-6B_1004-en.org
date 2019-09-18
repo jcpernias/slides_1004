@@ -24,7 +24,7 @@
 
 ** The isoquant
 
-#+figure: ./figures/fig-t31-eq01.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq01-*.pdf 0.5
 
 - The restriction the firm faces is the isoquant that corresponds to
   the production level $\Qbar$.
@@ -47,7 +47,7 @@
 
 ** The isocost lines (II)
 
-#+figure: ./figures/fig-t31-eq02.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq02-*.pdf 0.5
 
 - The slope of the isocost line is negative:
   #+begin_export latex
@@ -68,7 +68,7 @@
 
 ** The isocost map
 
-#+figure: ./figures/fig-t31-eq03.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq03-*.pdf 0.5
 
 - To each level of cost, $C_1, C_2, \dotsc$, it corresponds a
   different isocost.
@@ -81,7 +81,7 @@
 
 ** The optimal choice (I)
 
-#+figure: ./figures/fig-t31-eq04.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq04-*.pdf 0.5
 
 - The firm chooses the combination of factors that minimizes the cost
   of producing $\Qbar$ units.
@@ -91,7 +91,7 @@
 
 ** The optimal choice (II)
 
-#+figure: ./figures/fig-t31-eq06.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq06-*.pdf 0.5
 
 - In the combination $A$:
   #+begin_export latex
@@ -103,7 +103,7 @@
 
 ** The optimal choice (III)
 
-#+figure: ./figures/fig-t31-eq07.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq07-*.pdf 0.5
 
 - In the combination $B$:
   #+begin_export latex
@@ -115,7 +115,7 @@
 
 ** The optimal choice (and IV)
 
-#+figure: ./figures/fig-t31-eq05.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq05-*.pdf 0.5
 
 - Interior solution.
 - Tangency condition:
@@ -140,7 +140,7 @@
 
 ** Duality (and II)
 
-#+figure: ./figures/fig-t31-eq08.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq08-*.pdf 0.5
 
 - Interior solution.
 - Tangency condition:
@@ -154,7 +154,7 @@
 
 ** The expansion path of the product
 
-#+figure: ./figures/fig-t31-exp02.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp02-*.pdf 0.5
 
 - Given the prices of the factors, to each level of production
   corresponds a different optimal combination.
@@ -181,7 +181,7 @@
 
 ** Long-run total cost curve
 
-#+figure: ./figures/fig-t31-clp01.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp01-*.pdf 0.5
 
 - In the long-run there are no fixed costs. The firm always has the
   option of not producing anything without costs:
@@ -204,7 +204,7 @@
 
 ** Average cost and marginal cost(II)
 
-#+figure: ./figures/fig-t31-env08.pdf 0.53
+#+MATS: figcol fig-6B_1004-env08-*.pdf 0.53
 
 - The curves cross at the minimum unit cost in the long-run.
 
@@ -247,7 +247,7 @@
 
 ** Returns to scale and costs in the long-run(II)
 
-#+figure: ./figures/fig-t31-clp02.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp02-*.pdf 0.5
 
 - With constant returns to scale, the cost function is linear in
   production:
@@ -258,7 +258,7 @@
 
 ** Returns to scale and costs in the long-run(III)
 
-#+figure: ./figures/fig-t31-clp03.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp03-*.pdf 0.5
 
 - With constant returns to scale, the average cost and the marginal
   cost are equal to a same constant:
@@ -281,7 +281,7 @@
 
 ** The short-run choice
 
-#+figure: ./figures/fig-t31-exp03.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp03-*.pdf 0.5
 
 - In the short-run the level of $K$ is fixed.
 - Different levels of production can only be reached by altering the
@@ -290,7 +290,7 @@
 
 ** The short-run and the long-run choice
 
-#+figure: ./figures/fig-t31-exp04.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp04-*.pdf 0.5
 
 - In the long-run the firm can alter the usage of both factors.
 - Just for a production level the short-run and the long-run decisions coincide, $C$.
@@ -298,14 +298,14 @@
 
 ** Short-run and long-run costs (I)
 
-#+figure: ./figures/fig-t31-exp05.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp05-*.pdf 0.5
 
 - Short-run costs are higher than long-run costs, except for a level of production.
 
 
 ** Short-run and long-run costs (II)
 
-#+figure: ./figures/fig-t31-env20.pdf 0.5
+#+MATS: figcol fig-6B_1004-env20-*.pdf 0.5
 
 - The long-run cost curve is below the short-run cost curves.
 - Each short-run cost curve has a tangency point with the long-run
@@ -314,7 +314,7 @@
 
 ** Short-run and long-run costs (and III)
 
-#+figure: ./figures/fig-t31-env21.pdf 0.5
+#+MATS: figcol fig-6B_1004-env21-*.pdf 0.5
 
 - Short-run average cost curves are above the long-run average cost
   curve and are tangent to $\CMeLP$ for a level of production.
@@ -328,7 +328,7 @@
 
 ** The choice of the plant size (I)
 
-#+figure: ./figures/fig-t31-env01.pdf 0.55
+#+MATS: figcol fig-6B_1004-env01-*.pdf 0.55
 
 - Let’s suppose the firm can only choose between two plant sizes:
   $K_1$ < $K_2$.
@@ -337,7 +337,7 @@
 
 ** The choice of the plant size (and II)
 
-#+figure: ./figures/fig-t31-env02.pdf 0.55
+#+MATS: figcol fig-6B_1004-env02-*.pdf 0.55
 
 - If in the long-run it expects to produce less than $Q_A$, it is less
   costly to use the plant size $K_1$.
@@ -347,7 +347,7 @@
 
 ** The envelope (I)
 
-#+figure: ./figures/fig-t31-env03.pdf 0.55
+#+MATS: figcol fig-6B_1004-env03-*.pdf 0.55
 
 - The long-run average cost curve is the *lower envelope* of the
   short-run curves.
@@ -355,7 +355,7 @@
 
 ** The envelope (II)
 
-#+figure: ./figures/fig-t31-env04.pdf 0.55
+#+MATS: figcol fig-6B_1004-env04-*.pdf 0.55
 
 - The long-run marginal cost curve is formed by the relevant sections
   of the short-run marginal cost curves.
@@ -363,7 +363,7 @@
 
 ** The envelope (III)
 
-#+figure: ./figures/fig-t31-env05.pdf 0.55
+#+MATS: figcol fig-6B_1004-env05-*.pdf 0.55
 
 - If the firm has more options, the long-run average cost curve is
   smoother.
@@ -371,7 +371,7 @@
 
 ** The envelope (and IV)
 
-#+figure: ./figures/fig-t31-env06.pdf 0.55
+#+MATS: figcol fig-6B_1004-env06-*.pdf 0.55
 
 - When the firm can choose between a continuous set of plant sizes,
   each short-run average cost curve is tangent to the $\CMeLP$ at a
@@ -380,7 +380,7 @@
 
 ** The efficient plant size
 
-#+figure: ./figures/fig-t31-env07.pdf 0.55
+#+MATS: figcol fig-6B_1004-env07-*.pdf 0.55
 
 - The *efficient plant size* corresponds to the minimum unit cost in
   the long-run.

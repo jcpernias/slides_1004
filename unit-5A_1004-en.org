@@ -99,7 +99,7 @@
 
 ** Total product
 
-#+figure: ./figures/fig-t25-cp01.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp01-*.pdf 0.5
 
 - The *total product* is the level of production obtained when $L$
   units of labour are used:
@@ -110,7 +110,7 @@
 
 ** Marginal product of labour
 
-#+figure: ./figures/fig-t25-cp03.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp03-*.pdf 0.5
 
 - The *marginal product of labour* is the rate at which production
   grows per additional unit of labour:
@@ -121,14 +121,14 @@
 
 ** The curve of marginal product (I)
 
-#+figure: ./figures/fig-t25-cp06.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp06-*.pdf 0.5
 
 - The marginal product curve has shape of an inverted U.
 
 
 ** The curve of marginal product (and II)
 
-#+figure: ./figures/fig-t25-cp06a.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp06a-*.pdf 0.5
 
 - The $\PMgL$ is growing for low values of $L$.
 - For values of $L$ higher than $L_C$, the $\PMgL$ decreases with $L$.
@@ -143,7 +143,7 @@
 
 ** Technical efficiency (I)
 
-#+figure: ./figures/fig-t25-cp06b.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp06b-*.pdf 0.5
 
 - The $\PMgL$ is negative when $L > L_D$.
 - Beyond $L_D$, additional units of labour cause decreases in total
@@ -152,7 +152,7 @@
 
 ** Technical efficiency (and II)
 
-#+figure: ./figures/fig-t25-cp08.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp08-*.pdf 0.5
 
 - Production reaches a maximum at $L_D$.
 - Higher levels of $L$, such as $L_1$, are not technically efficient.
@@ -162,7 +162,7 @@
 
 ** Average product of labour
 
-#+figure: ./figures/fig-t25-cp02.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp02-*.pdf 0.5
 
 - The *average product of labour* is the number of units produced per
   hour of work:
@@ -172,13 +172,13 @@
 
 
 ** The curve of average product
-#+figure: ./figures/fig-t25-cp07.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp07-*.pdf 0.5
 - The curve of average product of labour has shape of an inverted U.
 
 
 ** Total, average, and marginal product (I)
 
-#+figure: ./figures/fig-t25-cp05.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp05-*.pdf 0.5
 
 - The curve of $\PMeL$ is increasing when $\PMgL > \PMeL$.
 - When $\PMgL < \PMeL$ the curve of $\PMeL$ has a negative slope.
@@ -187,7 +187,7 @@
 
 ** Total, average, and marginal product (and II)
 
-#+figure: ./figures/fig-t25-cp04.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp04-*.pdf 0.5
 
 - Total product reaches a maximum at $L_D$, where $\PMgL = 0$.
 - If $\PMgL = \PMeL$ the average product reaches a maximum at $L_E$.

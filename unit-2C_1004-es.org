@@ -49,7 +49,7 @@
 
 
 ** Condición de tangencia (I)
-#+figure: ./figures/fig-t12-eq01.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq01-*.pdf 0.45
 
 - En el punto $A$: $\RMS > P_X/P_Y$.
 - La valoración del consumidor de una unidad más de $X$ es superior a
@@ -57,14 +57,14 @@
 
 
 ** Condición de tangencia (II)
-#+figure: ./figures/fig-t12-eq01a.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq01a-*.pdf 0.45
 
 - El consumidor puede obtener un mayor nivel de satisfacción si
   incrementa su consumo de $X$.
 
 
 ** Condición de tangencia (III)
-#+figure: ./figures/fig-t12-eq02.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq02-*.pdf 0.45
 
 - En el punto $B$: $\RMS < P_X/P_Y$.
 - La valoración del consumidor de una unidad más de $X$ es inferior a
@@ -72,14 +72,14 @@
 
 
 ** Condición de tangencia (IV)
-#+figure: ./figures/fig-t12-eq02a.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq02a-*.pdf 0.45
 
 - El consumidor puede obtener un mayor nivel de satisfacción si
   disminuye su consumo de $X$.
 
 
 ** Condición de tangencia (y V)
-#+figure: ./figures/fig-t12-eq03.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq03-*.pdf 0.45
 
 - En el punto $E$: $\RMS = P_X/P_Y$.
 - La valoración del consumidor de una unidad adicional de $X$ coincide
@@ -95,7 +95,7 @@
 
 
 ** Ejemplo: solución interior (y II)
-#+figure: ./figures/fig-t12-ej01.pdf 0.55
+#+MATS: figcol fig-2C_1004-ej01-*.pdf 0.55
 
 - Solución interior:
   #+begin_export latex
@@ -118,7 +118,7 @@
 
 ** Soluciones de esquina (II)
 
-#+figure: ./figures/fig-t12-eq10.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq10-*.pdf 0.45
 
 - En todos los puntos de la recta presupuestaria: $\RMS < P_X/P_Y$.
 - El consumidor compra $Y^*=M/P_Y$ unidades del bien $Y$ y $0$
@@ -127,7 +127,7 @@
 
 ** Soluciones de esquina (y III)
 
-#+figure: ./figures/fig-t12-eq11.pdf 0.45
+#+MATS: figcol fig-2C_1004-eq11-*.pdf 0.45
 
 - En todos los puntos de la recta presupuestaria: $\RMS > P_X/P_Y$.
 - El consumidor compra $X^*=M/P_X$ unidades del bien $X$ y $0$
@@ -141,7 +141,7 @@
 
 
 ** Ejemplo: solución de esquina (y II)
-#+figure: ./figures/fig-t12-ej02.pdf 0.55
+#+MATS: figcol fig-2C_1004-ej02-*.pdf 0.55
 
 - Solución de esquina:
   #+begin_export latex

@@ -36,7 +36,7 @@
 
 
 ** Non-satiation (and III)
-#+figure: ./figures/fig-t11-ci02.pdf 0.45
+#+MATS: figcol fig-2B_1004-ci02-*.pdf 0.45
 
 - $M \succ A$.
 - $A \succ P$.
@@ -49,25 +49,25 @@
 
 
 ** Indifference curves (II)
-#+figure: ./figures/fig-t11-ci03.pdf 0.45
+#+MATS: figcol fig-2B_1004-ci03-*.pdf 0.45
 
 - Baskets which are indifferent to $A$ cannot be in the shaded areas (non-satiation assumption).
 
 
 ** Indifference curves (III)
-#+figure: ./figures/fig-t11-ci04.pdf 0.45
+#+MATS: figcol fig-2B_1004-ci04-*.pdf 0.45
 
 - We apply the same reasoning to other baskets indifferent to $A$.
 
 
 ** Indifference curves (IV)
-#+figure: ./figures/fig-t11-ci05.pdf 0.45
+#+MATS: figcol fig-2B_1004-ci05-*.pdf 0.45
 
 - The indifference curve has a negative slope.
 
 
 ** Indifference curves (and V)
-#+figure: ./figures/fig-t11-ci06.pdf 0.45
+#+MATS: figcol fig-2B_1004-ci06-*.pdf 0.45
 
 - Baskets preferred to $A$ are placed above and to the right of the indifference curve.
 - None of the baskets placed below and to the left of the indifference curve is preferred to $A$.
@@ -80,7 +80,7 @@
 
 
 ** Transitivity (and II)
-#+figure: ./figures/fig-t11-tr01.pdf 0.45
+#+MATS: figcol fig-2B_1004-tr01-*.pdf 0.45
 
 - If the assumption of transitivity is fulfilled, each basket belongs
   to one and *only* one indifference curve.
@@ -92,7 +92,7 @@
 
 ** Indifference curves map
 
-#+figure: ./figures/fig-t11-map01.pdf 0.45
+#+MATS: figcol fig-2B_1004-map01-*.pdf 0.45
 
 - The *indifference curves map* represents the preferences of a consumer.
 
@@ -106,7 +106,7 @@
 
 ** Marginal Rate of Substitution (II)
 
-#+figure: ./figures/fig-t11-rms01.pdf 0.45
+#+MATS: figcol fig-2B_1004-rms01-*.pdf 0.45
 
 - The $\RMS$ is the rate at which a consumer can replace a good for another, staying on the same indifference curve.
   #+begin_export latex
@@ -116,7 +116,7 @@
 
 ** Marginal Rate of Substitution (and III)
 
-#+figure: ./figures/fig-t11-rms02.pdf 0.45
+#+MATS: figcol fig-2B_1004-rms02-*.pdf 0.45
 
 - The $\RMS$ coincides with the slope, with negative sign, at a point
   of the indifference curve.
@@ -124,7 +124,7 @@
 
 ** Convexity
 
-#+figure: ./figures/fig-t11-rms03.pdf 0.45
+#+MATS: figcol fig-2B_1004-rms03-*.pdf 0.45
 
 - The *convexity* of the indifference curves implies that the $\RMS$ is decreasing:
   #+BEGIN_EXPORT LATEX
@@ -149,28 +149,28 @@
 
 ** Other cases of preferences (I)
 
-#+figure: ./figures/fig-t11-nreg01.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg01-*.pdf 0.45
 
 - *Perfect substitutes*.
 
 
 ** Other cases of preferences (II)
 
-#+figure: ./figures/fig-t11-nreg02.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg02-*.pdf 0.45
 
 - *Perfect complements*.
 
 
 ** Other cases of preferences (III)
 
-#+figure: ./figures/fig-t11-nreg03.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg03-*.pdf 0.45
 
 - $Y$ is a *neutral good*.
 
 
 ** Other cases of preferences (and IV)
 
-#+figure: ./figures/fig-t11-nreg04.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg04-*.pdf 0.45
 
 - $X$ is a *bad*.
 
@@ -216,7 +216,7 @@
 
 ** Example (and II)
 
-#+figure: ./figures/fig-t11-fu01.pdf 0.45
+#+MATS: figcol fig-2B_1004-fu01-*.pdf 0.45
 
 - Indifference curve which contains $A$:
   #+begin_export latex
@@ -226,7 +226,7 @@
 
 ** Ordinal utility (I)
 
-#+figure: ./figures/fig-t11-map02.pdf 0.45
+#+MATS: figcol fig-2B_1004-map02-*.pdf 0.45
 
 - The utility function assigns each indifference curve to a different number.
 
@@ -240,7 +240,7 @@
 
 ** Ordinal utility (and III)
 
-#+figure: ./figures/fig-t11-map03.pdf 0.48
+#+MATS: figcol fig-2B_1004-map03-*.pdf 0.48
 
 - Let’s define $V(X, Y)$ as:
   #+begin_export latex
@@ -314,7 +314,7 @@
 
 ** Marginal utility and RMS (and IV)
 
-#+figure: ./figures/fig-t11-fu02.pdf 0.45
+#+MATS: figcol fig-2B_1004-fu02-*.pdf 0.45
 
 - $\RMS(A) = 20/15 = 1.33$ units of $Y$ per unit of $X$.
 - The slope of the indifference curve at point $A$ is $-1.33$

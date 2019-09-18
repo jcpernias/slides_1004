@@ -41,7 +41,7 @@
 
 ** Isoquant map
 
-#+figure: ./figures/fig-t26-is01.pdf 0.5
+#+MATS: figcol fig-5B_1004-is01-*.pdf 0.5
 
 - A different isoquant corresponds to each level of production .
 - The more distant from the origin isoquants are associated with
@@ -86,7 +86,7 @@
 
 ** Convexity
 
-#+figure: ./figures/fig-t26-is02.pdf 0.5
+#+MATS: figcol fig-5B_1004-is02-*.pdf 0.5
 
 - We assume that the isoquants are convex.
 - Convexity implies the $\RMST$ is decreasing.
@@ -109,14 +109,14 @@
 
 ** Substitutability
 
-#+figure: ./figures/fig-t26-is05.pdf 0.5
+#+MATS: figcol fig-5B_1004-is05-*.pdf 0.5
 
 - The curvature of the isoquants indicates the degree of substitutability of a factor for other when obtaining a certain level of production.
 
 
 ** Perfectly substitutable factors
 
-#+figure: ./figures/fig-t26-is03.pdf 0.5
+#+MATS: figcol fig-5B_1004-is03-*.pdf 0.5
 
 - *Perfect substitutability of factors*: the factors can be
   substituted always at the same rate.
@@ -129,7 +129,7 @@
 
 ** Fixed-proportions production function
 
-#+figure: ./figures/fig-t26-is04.pdf 0.5
+#+MATS: figcol fig-5B_1004-is04-*.pdf 0.5
 
 - *Fixed-proportions technology*: at the technically efficient points
   the factors are always combined in the same proportion.
@@ -177,7 +177,7 @@
 
 ** Constant returns to scale (and II)
 
-#+figure: ./figures/fig-t26-re01.pdf 0.5
+#+MATS: figcol fig-5B_1004-re01-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B = 2 Q_A$.
 - $C = 3 A$ y $Q_C = 3 Q_A$.
@@ -194,7 +194,7 @@
 
 ** Increasing returns to scale (and II)
 
-#+figure: ./figures/fig-t26-re02.pdf 0.5
+#+MATS: figcol fig-5B_1004-re02-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B > 2 Q_A$.
 - $C = 3 A$ y $Q_C > 3 Q_A$.
@@ -212,7 +212,7 @@
 
 ** Decreasing returns to scale (and II)
 
-#+figure: ./figures/fig-t26-re03.pdf 0.5
+#+MATS: figcol fig-5B_1004-re03-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B < 2 Q_A$.
 - $C = 3 A$ y $Q_B < 3 Q_A$.

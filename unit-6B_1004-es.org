@@ -23,7 +23,7 @@
 
 ** La isocuanta
 
-#+figure: ./figures/fig-t31-eq01.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq01-*.pdf 0.5
 
 - La restricción a la que se enfrenta la empresa es una curva
   isocuanta:
@@ -47,7 +47,7 @@
 
 ** Las isocostes (II)
 
-#+figure: ./figures/fig-t31-eq02.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq02-*.pdf 0.5
 
 - La pendiente de la isocoste es negativa:
   #+begin_export latex
@@ -66,7 +66,7 @@
 
 ** El mapa de isocostes
 
-#+figure: ./figures/fig-t31-eq03.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq03-*.pdf 0.5
 
 - A cada nivel de coste, $C_1, C_2, \dotsc$, le corresponde una
   isocoste diferente.
@@ -79,7 +79,7 @@
 
 ** La elección óptima (I)
 
-#+figure: ./figures/fig-t31-eq04.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq04-*.pdf 0.5
 
 - La empresa selecciona aquella combinación de factores que minimiza
   el coste de producir $\Qbar$ unidades.
@@ -89,7 +89,7 @@
 
 ** La elección óptima (II)
 
-#+figure: ./figures/fig-t31-eq06.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq06-*.pdf 0.5
 
 - En la combinación $A$:
   #+begin_export latex
@@ -101,7 +101,7 @@
 
 ** La elección óptima (III)
 
-#+figure: ./figures/fig-t31-eq07.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq07-*.pdf 0.5
 
 - En la combinación $B$:
   #+begin_export latex
@@ -113,7 +113,7 @@
 
 ** La elección óptima (y IV)
 
-#+figure: ./figures/fig-t31-eq05.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq05-*.pdf 0.5
 
 - Solución interior.
 - Condición de tangencia:
@@ -137,7 +137,7 @@
 
 ** Dualidad (y II)
 
-#+figure: ./figures/fig-t31-eq08.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq08-*.pdf 0.5
 
 - Solución interior.
 - Condición de tangencia:
@@ -153,7 +153,7 @@
 
 ** La senda de expansión del producto
 
-#+figure: ./figures/fig-t31-exp02.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp02-*.pdf 0.5
 
 - Dados los precios de los factores, a cada nivel de producción le
   corresponde una combinación óptima diferente.
@@ -180,7 +180,7 @@
 
 ** La curva de coste total a largo plazo
 
-#+figure: ./figures/fig-t31-clp01.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp01-*.pdf 0.5
 
 - A largo plazo no hay costes fijos. La empresa siempre tiene la
   opción de no producir nada sin incurrir en costes:
@@ -203,7 +203,7 @@
 
 ** Coste medio y coste marginal(II)
 
-#+figure: ./figures/fig-t31-env08.pdf 0.53
+#+MATS: figcol fig-6B_1004-env08-*.pdf 0.53
 
 - Las curvas se cortan en el mínimo coste unitario a largo plazo.
 
@@ -247,7 +247,7 @@
 
 ** Rendimientos de escala y costes a largo plazo(II)
 
-#+figure: ./figures/fig-t31-clp02.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp02-*.pdf 0.5
 
 - En presencia de rendimientos constantes de escala, la función de
   coste es lineal en la producción:
@@ -258,7 +258,7 @@
 
 ** Rendimientos de escala y costes a largo plazo(III)
 
-#+figure: ./figures/fig-t31-clp03.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp03-*.pdf 0.5
 
 - En presencia de rendimientos constantes de escala, el coste medio y
   marginal son iguales a una misma constante:
@@ -281,7 +281,7 @@
 
 ** La elección a corto plazo
 
-#+figure: ./figures/fig-t31-exp03.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp03-*.pdf 0.5
 
 - A corto plazo el nivel de $K$ es fijo.
 - Sólo se pueden alcanzar distintos niveles de producción alterando el
@@ -290,7 +290,7 @@
 
 ** La elección a corto y a largo plazo
 
-#+figure: ./figures/fig-t31-exp04.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp04-*.pdf 0.5
 
 - A largo plazo la empresa puede alterar el uso de ambos factores.
 - Sólo para un nivel de producción coinciden la decisión de corto
@@ -299,7 +299,7 @@
 
 ** Costes a corto y a largo plazo (I)
 
-#+figure: ./figures/fig-t31-exp05.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp05-*.pdf 0.5
 
 - Los costes a corto plazo son superiores a los costes a largo plazo,
   excepto para un nivel de producción.
@@ -307,7 +307,7 @@
 
 ** Costes a corto y a largo plazo (II)
 
-#+figure: ./figures/fig-t31-env20.pdf 0.5
+#+MATS: figcol fig-6B_1004-env20-*.pdf 0.5
 
 - Las curva de coste a largo plazo está por debajo de las curvas de
   costes a corto plazo.
@@ -317,7 +317,7 @@
 
 ** Costes a corto y a largo plazo (y III)
 
-#+figure: ./figures/fig-t31-env21.pdf 0.5
+#+MATS: figcol fig-6B_1004-env21-*.pdf 0.5
 
 - Las curvas de coste medio a corto plazo están por encima de la curva
   de coste medio a largo plazo y son tangentes a $\CMeLP$ para un
@@ -332,7 +332,7 @@
 
 ** La elección del tamaño de la planta (I)
 
-#+figure: ./figures/fig-t31-env01.pdf 0.55
+#+MATS: figcol fig-6B_1004-env01-*.pdf 0.55
 
 - Supongamos que la empresa sólo puede elegir entre dos posible
   tamaños de planta: $K_1$ < $K_2$.
@@ -341,7 +341,7 @@
 
 ** La elección del tamaño de la planta (y II)
 
-#+figure: ./figures/fig-t31-env02.pdf 0.55
+#+MATS: figcol fig-6B_1004-env02-*.pdf 0.55
 
 - Si a largo plazo espera producir menos que $Q_A$, es menos costoso
   usar el tamaño de planta $K_1$.
@@ -351,7 +351,7 @@
 
 ** La envolvente (I)
 
-#+figure: ./figures/fig-t31-env03.pdf 0.55
+#+MATS: figcol fig-6B_1004-env03-*.pdf 0.55
 
 - La curva de coste medio a largo plazo es la *envolvente inferior* de
   las curvas de corto plazo.
@@ -359,7 +359,7 @@
 
 ** La envolvente (II)
 
-#+figure: ./figures/fig-t31-env04.pdf 0.55
+#+MATS: figcol fig-6B_1004-env04-*.pdf 0.55
 
 - La curva de costes marginales a largo plazo está compuesta por los
   tramos relevantes de las curvas de costes marginales a corto plazo.
@@ -367,7 +367,7 @@
 
 ** La envolvente (III)
 
-#+figure: ./figures/fig-t31-env05.pdf 0.55
+#+MATS: figcol fig-6B_1004-env05-*.pdf 0.55
 
 - Si la empresa dispone de más opciones la curva de costes medios a
   largo plazo es más suave.
@@ -375,7 +375,7 @@
 
 ** La envolvente (y IV)
 
-#+figure: ./figures/fig-t31-env06.pdf 0.55
+#+MATS: figcol fig-6B_1004-env06-*.pdf 0.55
 
 - Cuando la empresa puede elegir entre un continuo de tamaños de
   planta, cada curva de coste medio a corto es tangente a $\CMeLP$ en
@@ -384,7 +384,7 @@
 
 ** El tamaño eficiente de la planta
 
-#+figure: ./figures/fig-t31-env07.pdf 0.55
+#+MATS: figcol fig-6B_1004-env07-*.pdf 0.55
 
 - El *tamaño eficiente de la planta* se corresponde con el mínimo
   coste unitario a largo plazo.

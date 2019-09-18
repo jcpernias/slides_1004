@@ -14,7 +14,7 @@
 
 ** Ley de la demanda
 
-#+figure: ./figures/fig-t16-eres20.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres20-*.pdf 0.55
 
 - Un aumento /ceteris paribus/ de $P_X$ reduce la cantidad demandada
   de $X$.
@@ -22,7 +22,7 @@
 
 ** ¿Ley de la demanda?
 
-#+figure: ./figures/fig-t16-eres22.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres22-*.pdf 0.55
 - No hay nada en el análisis del consumidor que excluya la posibilidad
   de que la cantidad demandada aumente cuando aumenta el precio.
 
@@ -97,7 +97,7 @@ Si el precio del bien $X$ aumenta:
 
 ** Ejemplo (II)
 
-#+figure: ./figures/fig-t16-eres02.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres02-*.pdf 0.55
 
 - Efecto total del aumento de $P_X$:
   #+BEGIN_EXPORT LATEX
@@ -107,7 +107,7 @@ Si el precio del bien $X$ aumenta:
 
 ** Ejemplo (III)
 
-#+figure: ./figures/fig-t16-eres03.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres03-*.pdf 0.55
 
 - $E_H$: elección si la renta real no cambia.
 - $E_H$ está en la misma curva de indiferencia que $E_0$.
@@ -116,7 +116,7 @@ Si el precio del bien $X$ aumenta:
 
 ** Ejemplo (y IV)
 
-#+figure: ./figures/fig-t16-eres04.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres04-*.pdf 0.55
 
 - $\ES = 12 - 24 = -12$.
 - $\ER = 3 - 12 = -9$.
@@ -151,7 +151,7 @@ Si el precio del bien $X$ aumenta:
 
 ** Bienes normales (y II)
 
-#+figure: ./figures/fig-t16-eres10.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres10-*.pdf 0.55
 - El efecto sustitución y el efecto renta se refuerzan mutuamente.
 
 - Curva de demanda con pendiente negativa.
@@ -177,7 +177,7 @@ Si el precio del bien $X$ aumenta:
 
 ** Bienes inferiores (y II)
 
-#+figure: ./figures/fig-t16-eres11.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres11-*.pdf 0.55
 
 - El efecto renta contrarresta parcialmente el efecto sustitución.
 - Curva de demanda con pendiente negativa.
@@ -194,7 +194,7 @@ Si el precio del bien $X$ aumenta:
 
 ** Bienes Giffen (II)
 
-#+figure: ./figures/fig-t16-eres12.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres12-*.pdf 0.55
 
 - El efecto renta es mayor en términos absolutos que el efecto sustitución.
 - Curva de demanda con pendiente positiva.
@@ -220,7 +220,7 @@ Si el precio del bien $X$ aumenta:
 
 ** Descomposición de Slutsky (II)
 
-#+figure: ./figures/fig-t16-eres05a.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres05a-*.pdf 0.55
 
 - $E_S$: elección si la renta real no cambia.
 - $E_S$ está en una restricción presupuestaria que pasa por $E_0$.
@@ -231,7 +231,7 @@ Si el precio del bien $X$ aumenta:
 
 ** Descomposición de Slutsky (III)
 
-#+figure: ./figures/fig-t16-eres05.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres05-*.pdf 0.55
 
 - $\ES = 17 - 24 = -7$.
 - $\ER = 3 - 17 = -14$.
@@ -240,7 +240,7 @@ Si el precio del bien $X$ aumenta:
 
 ** Descomposición de Slutsky (y IV)
 
-#+figure: ./figures/fig-t16-eres06.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres06-*.pdf 0.55
 
 - Las propuestas de Hicks y Slutsky generan resultados diferentes.
 - Ambas coinciden cuando el cambio en los precios es muy pequeño o en

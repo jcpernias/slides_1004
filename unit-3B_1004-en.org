@@ -14,7 +14,7 @@
 
 ** Law of demand
 
-#+figure: ./figures/fig-t16-eres20.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres20-*.pdf 0.55
 
 - An increase /ceteris paribus/ in $P_X$ reduces the demanded quantity
   of $X$.
@@ -22,7 +22,7 @@
 
 ** Law of demand?
 
-#+figure: ./figures/fig-t16-eres22.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres22-*.pdf 0.55
 - There is nothing in the consumer analysis that excludes the
   possibility of an increase in the demanded quantity when the price
   increases.
@@ -100,7 +100,7 @@ If the price of good $X$ increases:
 
 ** Example (II)
 
-#+figure: ./figures/fig-t16-eres02.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres02-*.pdf 0.55
 
 - Total effect of the increase of $P_X$:
   #+BEGIN_EXPORT LATEX
@@ -110,7 +110,7 @@ If the price of good $X$ increases:
 
 ** Example (III)
 
-#+figure: ./figures/fig-t16-eres03.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres03-*.pdf 0.55
 
 - $E_H$: choice if real income does not change.
 - $E_H$ is on the same indifference curve as $E_0$.
@@ -119,7 +119,7 @@ If the price of good $X$ increases:
 
 ** Example (and IV)
 
-#+figure: ./figures/fig-t16-eres04.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres04-*.pdf 0.55
 
 - $\ES = 12 - 24 = -12$.
 - $\ER = 3 - 12 = -9$.
@@ -155,7 +155,7 @@ If the price of good $X$ increases:
 
 ** Normal goods (and II)
 
-#+figure: ./figures/fig-t16-eres10.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres10-*.pdf 0.55
 - Substitution effect and income effect reinforce each other.
 
 - Demand curve with a negative slope.
@@ -182,7 +182,7 @@ If the price of good $X$ increases:
 
 ** Inferior goods (and II)
 
-#+figure: ./figures/fig-t16-eres11.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres11-*.pdf 0.55
 
 - The income effect partially counteracts the substitution effect.
 - Demand curve with negative slope.
@@ -199,7 +199,7 @@ If the price of good $X$ increases:
 
 ** Giffen goods (II)
 
-#+figure: ./figures/fig-t16-eres12.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres12-*.pdf 0.55
 
 - The income effect is higher in absolute terms than the substitution
   effect.
@@ -228,7 +228,7 @@ If the price of good $X$ increases:
 
 ** Slutsky decomposition (II)
 
-#+figure: ./figures/fig-t16-eres05a.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres05a-*.pdf 0.55
 
 - $E_S$: choice if real income does not change.
 - $E_S$ is on a budget line that goes through $E_0$.
@@ -238,7 +238,7 @@ If the price of good $X$ increases:
 
 ** Slutsky decomposition (III)
 
-#+figure: ./figures/fig-t16-eres05.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres05-*.pdf 0.55
 
 - $\ES = 17 - 24 = -7$.
 - $\ER = 3 - 17 = -14$.
@@ -247,7 +247,7 @@ If the price of good $X$ increases:
 
 ** Slutsky decomposition (and IV)
 
-#+figure: ./figures/fig-t16-eres06.pdf 0.55
+#+MATS: figcol fig-3B_1004-eres06-*.pdf 0.55
 
 - The proposals of Hicks and Slutsky generate different results.
 - Both coincide when the variation in prices is very small or in cases

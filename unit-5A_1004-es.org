@@ -99,7 +99,7 @@
 
 ** Producto total
 
-#+figure: ./figures/fig-t25-cp01.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp01-*.pdf 0.5
 
 - El *producto total* es el nivel de producción que se obtiene cuando
   se utilizan $L$ unidades de trabajo:
@@ -110,7 +110,7 @@
 
 ** Producto marginal del trabajo
 
-#+figure: ./figures/fig-t25-cp03.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp03-*.pdf 0.5
 
 - El *producto marginal del trabajo* es la tasa a la que crece la
   producción por unidad adicional de trabajo:
@@ -121,14 +121,14 @@
 
 ** La curva de producto marginal (I)
 
-#+figure: ./figures/fig-t25-cp06.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp06-*.pdf 0.5
 
 - La curva de producto marginal tiene forma de U invertida.
 
 
 ** La curva de producto marginal (y II)
 
-#+figure: ./figures/fig-t25-cp06a.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp06a-*.pdf 0.5
 
 - El $\PMgL$ es creciente para valores bajos de $L$.
 - Para valores de $L$ mayores que $L_C$, el $\PMgL$ decrece con $L$.
@@ -144,7 +144,7 @@
 
 ** Eficiencia técnica (I)
 
-#+figure: ./figures/fig-t25-cp06b.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp06b-*.pdf 0.5
 
 - El $\PMgL$ es negativo cuando $L > L_D$.
 - Más allá de $L_D$, la producción disminuye cuando se utilizan más
@@ -153,7 +153,7 @@
 
 ** Eficiencia técnica (y II)
 
-#+figure: ./figures/fig-t25-cp08.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp08-*.pdf 0.5
 
 - El uso de más unidades de trabajo que $L_D$ es técnicamente
   ineficiente.
@@ -163,7 +163,7 @@
 
 ** Producto medio del trabajo
 
-#+figure: ./figures/fig-t25-cp02.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp02-*.pdf 0.5
 
 - El *producto medio del trabajo* es el número de unidades producidas
   por hora de trabajo:
@@ -173,13 +173,13 @@
 
 
 ** La curva de producto medio
-#+figure: ./figures/fig-t25-cp07.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp07-*.pdf 0.5
 - La curva de producto medio del trabajo tiene forma de U invertida.
 
 
 ** Producto total, medio y marginal (I)
 
-#+figure: ./figures/fig-t25-cp05.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp05-*.pdf 0.5
 
 - La curva de $\PMeL$ es creciente cuando $\PMgL > \PMeL$.
 - La curva de $\PMeL$ tiene pendiente negativa cuando $\PMgL < \PMeL$.
@@ -188,7 +188,7 @@
 
 ** Producto total, medio y marginal (y II)
 
-#+figure: ./figures/fig-t25-cp04.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp04-*.pdf 0.5
 
 - El producto total es máximo en $L_D$, donde $\PMgL = 0$.
 - El producto medio es máximo en $L_E$, donde $\PMgL = \PMeL$.
