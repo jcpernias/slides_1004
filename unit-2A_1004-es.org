@@ -13,34 +13,41 @@
 
 
 ** El consumidor
-- El *consumidor* dispone, en un determinado periodo de tiempo, de una
-  *renta monetaria* de $M$ euros.
-- Puede comprar en los diferentes mercados de bienes.
+
+- El *consumidor* dispone de una *renta monetaria*, $M$, para comprar
+  en los diferentes mercados de bienes en un determinado periodo de
+  tiempo.
+
 - Por cada unidad comprada de un bien paga siempre el mismo precio.
 
 
 ** Simplificaciones
-- Sólo dos bienes $X$ e $Y$, con precios $P_X$ y $P_Y$.
+
+- Sólo dos bienes $X$ e $Y$, cuyos precios son $P_X$ y $P_Y$.
+
 - Divisibilidad perfecta.
+
 - Un único período temporal.
 
 
 ** Cestas de consumo (I)
-- Una *cesta de consumo* es una determinada combinación de unidades
-  del bien $X$ y unidades del bien $Y$.
-- Representa cuántas unidades de cada bien son consumidas en un
-  determinado periodo de tiempo.
+
+- Una *cesta de consumo* es una combinación de unidades
+  del bien $X$ y unidades del bien $Y$.
 
 
 ** Cestas de consumo (y II)
+
 #+MATS: figcol fig-2A_1004-xy-*.pdf 0.45
 
-- La cesta $A$ está compuesta por 1 unidad del bien $X$ y 3 unidades
-  del bien $Y$: $A = (1, 3)$.
-- $B = (4, 0)$.
+- En la cesta $A$ hay 1 unidad del bien $X$ y 3 unidades
+  del bien $Y$.
+
+- En la cesta $B$ sólo hay cuatro unidades del bien $X$.
 
 
 ** La elección racional
+
 - De entre todas las cestas que tiene a su alcance, el consumidor
   *racional* selecciona aquélla que le reporta un mayor bienestar.
 
@@ -49,123 +56,110 @@
 
 
 ** Gasto
-- Si un consumidor elige la cesta $(X_0, Y_0)$, su *gasto total* es
+
+- El *gasto total* de un consumidor que elige la cesta $(X_0, Y_0)$ es
   $P_X X_0 + P_Y Y_0$ euros.
-- Gasto en el bien $X$: $P_X X_0$ euros.
-- Gasto en el bien $Y$: $P_Y Y_0$ euros.
+
+- El gasto en el bien $X$ es $P_X X_0$ euros.
+
+- El gasto en el bien $Y$ es $P_Y Y_0$ euros.
 
 
 ** El conjunto de oportunidades
-- El consumidor no puede pedir prestado ni prestar.
-- El gasto total no puede ser superior a la renta monetaria.
-- El consumidor puede escoger cualquier cesta de su *conjunto de oportunidades*:
+
+- El *conjunto de oportunidades* está formado por todas las cestas que
+  puede comprar un consumidor:
   #+begin_export latex
   \[ M \geq P_X X + P_Y Y \]
-  #+end_latex
+  #+end_export
 
 
 ** La restricción presupuestaria (I)
-- La *restricción presupuestaria* son todas aquellas cestas que
-  implican un gasto exactamente igual a la renta del consumidor:
+
+- La *restricción presupuestaria* es el conjunto de cestas que agotan
+  la renta del consumidor:
   #+begin_export latex
   \[ M = P_X X + P_Y Y \]
-  #+end_latex
-- Otra forma de expresarla indica el consumo máximo de Y cuando el
-  consumo de X toma un valor en particular:
+  #+end_export
+
+- Otra forma de expresarla:
   #+begin_export latex
   \[ Y = \frac{M}{P_Y} - \frac{P_X}{P_Y} X \]
-  #+end_latex
+  #+end_export
 
 
-** La restricción presupuestaria (y II)
+** La restricción presupuestaria (II)
+
 #+MATS: figcol fig-2A_1004-rp1-*.pdf 0.5
 
 - Los puntos de corte con los ejes son los *consumos máximos* de cada
   bien: $M/P_X$ y $M/P_Y$.
-- La pendiente de la restricción presupuestaria es igual al *precio
-  relativo* con signo negativo: $-P_X/P_Y$.
+
+- La pendiente es igual al *precio relativo* con signo negativo:
+  $-P_X/P_Y$.
+
+
+** La restricción presupuestaria (y III)
+
+#+MATS: figcol fig-2A_1004-rp3-*.pdf 0.45
+
+- Una cesta como la $A$ es inaccesible dados los precios y la renta
+  del consumidor.
+
+- El consumidor puede adquirir la cesta $B$ sin gastar toda su renta.
+
+- El consumidor gasta toda su renta si compra la cesta $C$.
 
 
 ** El precio relativo
-- El *precio relativo* es el precio de un bien medido en unidades de
-  otro bien.
-- Indica a qué tasa se puede sustituir un bien por otro en el mercado.
-# - Ejemplo: Precio de 1 kg de pan: $3$ €. Precio de 1 l de agua: $0.30$
-#   €. Precio relativo: \[ \frac{P_P}{P_A} = \frac{3}{0.3} = 10\text{\ l
-#   de agua por kg de pan} \]
+
+- El *precio relativo* del bien $X$, $P_X / P_Y$, es el precio de $X$
+  medido en unidades de $Y$.
+
+- Indica a qué tasa los consumidores que gastan toda su renta pueden
+  sustituir un bien por otro.
 
 
-** Ejemplo (I)
-- El conjunto de oportunidades cuando $M = 120$ €, $P_X = 6$ €/u. y
-  $P_Y = 3$ €/u. está formado por todas las cestas que satisfacen:
-  #+begin_export latex
-  \[ 120 \geq 6 X + 3 Y \]
-  #+end_latex
-- La restricción presupuestaria en este caso es:
-  #+begin_export latex
-  \[ 120 = 6 X + 3 Y \]
-  #+end_latex
-- Otra forma de expresarla:
-  #+begin_export latex
-  \[ Y = 40 - 2 X \]
-  #+end_latex
+** El coste de oportunidad
 
-
-** Ejemplo (II)
-
-#+MATS: figcol fig-2A_1004-rp1b-*.pdf 0.45
-
-- Consumo máximo de $X$: $20$ unidades.
-- Consumo máximo de $Y$: $40$ unidades.
-- Precio relativo: $P_X/P_Y = 2$ unidades de $Y$ por cada unidad de $X$.
-
-
-** Ejemplo (y III)
-#+MATS: figcol fig-2A_1004-rp3-*.pdf 0.45
-
-- Gasto asociado a la cesta
-  - $A$: $6\cdot 5 + 3 \cdot 35 = 135 € > M$
-  - $B$: $6\cdot 12 + 3 \cdot 5 =  87 € < M$
-  - $C$: $6\cdot 5 + 3 \cdot 30 = 120 € = M$
-
-
-** Precio relativo y coste de oportunidad (I)
 - Si el consumidor gasta toda su renta, el *coste de oportunidad* de
   consumir una unidad adicional del bien $X$ son las unidades de $Y$
   que debe dejar de consumir.
 
 
-** Precio relativo y coste de oportunidad (y II)
+** Precio relativo y coste de oportunidad
+
 #+MATS: figcol fig-2A_1004-rp5-*.pdf 0.45
 
-- Por cada unidad adicional de $X$, el consumidor renuncia a 2
-  unidades de $Y$:
-  #+begin_export latex
-  \[\left| \frac{\Delta Y}{\Delta X}\right| = \frac{20}{10} = 2  \]
-  #+end_latex
 - El coste de oportunidad coincide con el precio relativo:
   #+begin_export latex
-  \[ \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_X}{P_Y} = \frac{6}{3} = 2\]
-  #+end_latex
+  \[ \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_X}{P_Y} \]
+  #+end_export
 
+
+* Variaciones en los precios y en la renta
 
 ** Variaciones en un precio (I)
+
 #+MATS: figcol fig-2A_1004-rp6-*.pdf 0.45
 
 - Una disminución del precio de $X$:
   #+begin_export latex
   \[ P'_X < P_X\]
-  #+end_latex
+  #+end_export
+
 - El conjunto de oportunidades se expande.
 
 
 ** Variaciones en un precio (y II)
+
 #+MATS: figcol fig-2A_1004-rp7-*.pdf 0.45
 
 - Un aumento del precio de $Y$:
   #+begin_export latex
   \[ P'_Y > P_Y \]
-  #+end_latex
+  #+end_export
+
 - El conjunto de oportunidades se contrae.
 
 
@@ -176,26 +170,32 @@
 - Un aumento de la renta:
   #+begin_export latex
   \[ M' > M \]
-  #+end_latex
-- La pendiente de la restricción no varía.
+  #+end_export
+
 - El conjunto de oportunidades se expande.
 
 
 ** Variaciones en precios y renta (I)
+
 #+MATS: figcol fig-2A_1004-rp10-*.pdf 0.45
 
 - Disminución de $P_X$, $P'_X < P_X$, y disminución de $M$, $M' < M$.
+
 - Algunas opciones ya no están disponibles.
-- Pero otras opciones que antes no eran accesibles, ahora lo son.
+
+- Pero también hay otras opciones que antes no eran accesibles y ahora
+  sí lo son.
 
 
 ** Variaciones en precios y renta (y II)
+
 #+MATS: figcol fig-2A_1004-rp11-*.pdf 0.45
 
 - Cambio de precios y renta en la misma proporción:
   #+begin_export latex
   \[ P'_{X} = k P_{X}; P'_{Y} = k P_{Y};  M' = k M \]
-  #+end_latex
+  #+end_export
+
 - El conjunto de oportunidades no cambia.
 
 
@@ -203,24 +203,32 @@
 
 
 ** Bienes compuestos
-- Centramos nuestra atención en el consumo de un bien: $X$.
-- Entonces el bien $Y$ es un *bien compuesto*: $Y$ representa la
-  cantidad de dinero que el consumidor gasta en otros bienes.
+
+- Construcción teórica útil cuando queremos centrarnos en el consumo
+  de un bien $X$.
+
+- Usamos un *bien compuesto* en el papel del bien $Y$: la cantidad de
+  dinero que el consumidor gasta en otros bienes distintos de $X$.
+
 - Dado que $Y$ se mide en euros, $P_Y = 1$.
+
 - Restricción presupuestaria:
   #+begin_export latex
   \[ M = P_X X + Y \]
-  #+end_latex
+  #+end_export
 
 
-** Otros casos
-- La restricción presupuestaria sólo es una simple línea recta en el
-  caso en que:
-  1. el consumidor puede comprar cuaquier cantidad de los bienes X
-     e Y;
+** Restricciones presupuestarias no lineales
+
+- La restricción presupuestaria es lineal si:
+
+  1. el consumidor puede adquirir cualquier cantidad de los bienes $X$
+     e $Y$ que pueda pagar con su renta; y
+
   2. los precios, $P_X$ y $P_Y$, son independientes de las cantidades
      que compre el consumidor.
-- Si cualquiera de estas dos condiciones se incumple, la restricción
+
+- Si se incumple alguna de esas condiciones la restricción
   presupuestaria no es lineal.
 
 
@@ -229,18 +237,30 @@
 #+MATS: figcol fig-2A_1004-rac1-*.pdf 0.45
 
 - *Racionamiento*: El consumo del bien $X$ no puede ser mayor que
-  $\bar{X}$, una cantidad fijada por el Gobierno.
+  $\bar{X}$.
 
 
 ** Subvenciones
+
 #+MATS: figcol fig-2A_1004-orp2-*.pdf 0.45
 
 - Las primeras $\bar{X}$ unidades de $X$ se venden a un precio
   reducido $P'_X$.
+
 - Las restantes unidades se venden al precio completo $P_X > P'_X$.
+
+** Descuentos por volumen
+
+#+MATS: figcol fig-2A_1004-orp4-*.pdf 0.45
+
+- Las primeras $\bar{X}$ unidades de $X$ se venden al precio
+  normal $P_X$.
+
+- Las restantes unidades se venden a un precio menor $P'_X < P_X$.
 
 
 ** Donaciones
+
 #+MATS: figcol fig-2A_1004-orp3-*.pdf 0.45
 
 - El consumidor no paga nada por las primeras $\bar{X}$ unidades de
