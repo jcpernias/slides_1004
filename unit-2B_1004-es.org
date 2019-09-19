@@ -11,83 +11,104 @@
 
 * Las preferencias del consumidor
 
+** Introducción
+
+- Usaremos algunos supuestos para describir las preferencias de los
+  consumidores.
+
 
 ** Completitud
-- El supuesto de *completitud* afirma que el consumidor es capaz de ordenar dos cestas cualesquiera de acuerdo con sus preferencias.
-- Si un consumidor tiene que comparar dos cestas, $A$ y $B$,
-  entonces:
+
+- *Completitud*: el consumidor es capaz de ordenar dos cestas
+  cualesquiera de acuerdo con sus preferencias.
+
+- Un consumidor que compara dos cestas, $A$ y $B$:
+
   + o prefiere $A$ a $B$: $A \succ B$;
+
   + o prefiere $B$ a $A$: $B \succ A$;
+
   + o se muestra indiferente: $A \sim B$.
 
 
 ** No saturación (I)
-- Cuando se cumple el supuesto de *no saturación* un consumidor
-  prefiere cestas que contengan más unidades de al menos uno de los
-  bienes y no menos unidades de los restantes bienes.
+
+- *No saturación*: el consumidor prefiere cestas con más unidades de
+  al menos uno de los bienes y no menos unidades de los restantes
+  bienes.
 
 
-** No saturación (II)
-- Bajo este supuesto, podemos afirmar que:
-  + $A = (2, 3) \succ B = (1, 3)$.
-  + $A = (2, 3) \succ C = (1, 1)$.
-- Sólo con este supuesto no podemos determinar como ordenaría el consumidor las cestas $A=(2, 3)$ y $D = (1, 4)$.
+** No saturación (y II)
 
-
-** No saturación (y III)
 #+MATS: figcol fig-2B_1004-ci02-*.pdf 0.45
 
 - $M \succ A$.
+
 - $A \succ P$.
 
 
 ** Curvas de indiferencia (I)
-- Una *curva de indiferencia* es un conjunto de cestas de consumo, y comprende todas las cestas que son indiferentes entre sí.
+
+- Una *curva de indiferencia* es un conjunto de cestas de consumo que
+  son indiferentes entre sí.
+
 - Cada cesta pertenece a una curva de indiferencia.
 
 
 ** Curvas de indiferencia (II)
+
 #+MATS: figcol fig-2B_1004-ci03-*.pdf 0.45
 
 - Las cestas indiferentes a $A$ no pueden estar en las zonas
-  sombreadas (supuesto de no saturación).
+  sombreadas.
 
 
 ** Curvas de indiferencia (III)
+
 #+MATS: figcol fig-2B_1004-ci04-*.pdf 0.45
 
 - Aplicamos el mismo razonamiento a otras cestas indiferentes a $A$.
 
 
 ** Curvas de indiferencia (IV)
+
 #+MATS: figcol fig-2B_1004-ci05-*.pdf 0.45
 
 - La curva de indiferencia tiene pendiente negativa.
 
 
 ** Curvas de indiferencia (y V)
+
 #+MATS: figcol fig-2B_1004-ci06-*.pdf 0.45
 
-- Las cestas preferidas a $A$ se sitúan por encima y a la derecha de la curva de indiferencia.
-- Ninguna de las cestas situadas debajo y a la izquierda de la curva de indiferencia es preferida a $A$.
+- Las cestas como $M$, que son preferidas a $A$, se sitúan por encima
+  y a la derecha de la curva de indiferencia de $A$.
+
+- La cesta $A$ es preferida a cestas como $P$, situadas por debajo y a
+  la izquierda de la curva de indiferencia de $A$.
 
 
 ** Transitividad (I)
-- El supuesto de *transitividad* implica un cierto tipo de
-  consistencia en las preferencias del consumidor.
-- Si $A \succ B$ y $B \succ C$, entonces $A \succ C$.
-- Si $A \sim B$ y $B \sim C$, entonces $A \sim C$.
+
+- *Transitividad*:
+
+  + Si $A \succ B$ y $B \succ C$, entonces $A \succ C$.
+
+  + Si $A \sim B$ y $B \sim C$, entonces $A \sim C$.
 
 
 ** Transitividad (y II)
+
 #+MATS: figcol fig-2B_1004-tr01-*.pdf 0.45
 
 - Si se cumple el supuesto de transitividad, cada cesta pertenece a
   una y *sólo* a una curva de indiferencia.
-- Si las curvas de indiferencia se cortan llegamos a una
-  contradicción: #+begin_export latex
-  contradicción: \[B \sim C \text{\ y\ } C \sim A\text{, pero\ } B \succ A.\]
-  contradicción: #+end_export
+
+- Si las curvas de indiferencia se cortaran las preferencias serían
+  inconsistentes:
+  #+begin_export latex
+  \[B \sim C \text{\ y\ } C \sim A\text{, pero\ } B \succ A.\]
+  #+end_export
 
 
 ** Mapa de curvas de indiferencia
@@ -99,9 +120,12 @@
 
 
 ** Relación Marginal de Sustitución (I)
-- La *Relación Marginal de Sustitución*, $\RMS$, mide la valoración por parte de un consumidor de un bien en términos de otro bien.
-- ¿A cuántas unidades del bien $Y$, como máximo, estaría dispuesto a
-  renunciar a cambio de una unidad más del bien $X$?
+
+- La *Relación Marginal de Sustitución*, $\RMS$, mide cómo un
+  consumidor valora un bien en términos de otro bien.
+
+- ¿Cuántas unidades, como máximo, del bien $Y$ estaría dispuesto a
+  cambiar por una unidad más del bien $X$?
 
 
 ** Relación Marginal de Sustitución (II)
@@ -119,32 +143,39 @@
 
 #+MATS: figcol fig-2B_1004-rms02-*.pdf 0.45
 
-- La $\RMS$ coincide con la pendiente, con signo negativo, en un punto de la curva de indiferencia.
+- En cada punto de la curva de indiferencia, la $\RMS$ coincide con la
+  pendiente con signo negativo.
 
 
 ** Convexidad
 
 #+MATS: figcol fig-2B_1004-rms03-*.pdf 0.45
 
-- La *convexidad* de las curvas de indiferencia implica que la $\RMS$ es decreciente:
+- *Convexidad* de las curvas de indiferencia: la $\RMS$
+  es decreciente:
   #+BEGIN_EXPORT LATEX
   \[ \RMS(A) > \RMS(B) \]
   #+END_EXPORT
 
-- El valor relativo que un consumidor asigna a un bien es
-  menor cuantas más unidades consuma de ese bien.
+- Cuantas más unidades consume de un bien, menos se valora una unidad
+  adicional de ese bien.
 
 
 ** Preferencias regulares
+
 - *Completitud*.
+
 - *Transitividad*.
-- *No saturación* (o *monotonicidad*, o *insaciabilidad*).
+
+- *No saturación*.
+
 - *Convexidad*.
+
 - Otros supuestos técnicos.
 
 
 
-* Otros casos: Las preferencias del consumidor
+* Casos especiales
 
 
 ** Otros casos de preferencias (I)

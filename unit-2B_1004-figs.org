@@ -4,6 +4,10 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
+* Las preferencias
+
+** No saturación (y II)
+
 #+begin_src latex :tangle fig-2B_1004-ci02.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
@@ -34,8 +38,9 @@
 
   \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
-
 #+end_src
+
+** Curvas de indiferencia (II)
 
 #+begin_src latex :tangle fig-2B_1004-ci03.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
@@ -72,8 +77,9 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
-
 #+end_src
+
+** Curvas de indiferencia (III)
 
 #+begin_src latex :tangle fig-2B_1004-ci04.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
@@ -117,8 +123,9 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
-
 #+end_src
+
+** Curvas de indiferencia (IV)
 
 #+begin_src latex :tangle fig-2B_1004-ci05.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
@@ -167,48 +174,42 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
-
 #+end_src
+
+** Curvas de indiferencia (y V)
 
 #+begin_src latex :tangle fig-2B_1004-ci06.tex :noweb yes
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
-\coordinate (G) at (4.4, 48) ;
-\coordinate (H) at (48, 8) ;
+    \coordinate (G) at (4.4, 48) ;
+    \coordinate (H) at (48, 8) ;
 
-\coordinate (C1) at (8, 15) ;
-\coordinate (C2) at (30, 9) ;
+    \coordinate (C1) at (8, 15) ;
+    \coordinate (C2) at (30, 9) ;
 
+    \fill[worsefill, smooth] (0, 0) -- (0, 48) --
+     (G) ..controls (C1) and (C2).. (H)
+      -- (48, 0) -- cycle
+    ;
 
+    \fill[betterfill, smooth] (48, 48) --
+      (G) ..controls (C1) and (C2).. (H)
+      -- cycle
+    ;
 
+    \draw[CMe] (G) ..controls (C1) and (C2).. (H) node[right] {$I_{A}$}
+          node[pos=0.37, dot, label={45:$A$}] (A) {}
+    ;
 
-
-\fill[worsefill, smooth] (0, 0) -- (0, 48) --
- (G) ..controls (C1) and (C2).. (H)
-  -- (48, 0) -- cycle
-;
-
-\fill[betterfill, smooth] (48, 48) --
-  (G) ..controls (C1) and (C2).. (H)
-  -- cycle
-;
-
-
-\draw[CMe] (G) ..controls (C1) and (C2).. (H) node[right] {$I_{A}$}
-      node[pos=0.37, dot, label={45:$A$}] (A) {}
-;
-
-% \node[font=\scriptsize, align=center] at (35,25) { Conjunto \\ mejor };
-% \node[font=\scriptsize, align=center] at (10, 10) { Conjunto \\ peor };
+    \node[dot, label={45:$M$}] at (25,35) {} ;
+    \node[dot, label={45:$P$}] at (5,10) {} ;
 
 
-
-
-
-\draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
-\end{tikzpicture}
-
+    \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+  \end{tikzpicture}
 #+end_src
+
+** Transitividad (y II)
 
 #+begin_src latex :tangle fig-2B_1004-tr01.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
@@ -240,8 +241,9 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
-
 #+end_src
+
+** Mapa de curvas de indiferencia
 
 #+begin_src latex :tangle fig-2B_1004-map01.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
@@ -270,8 +272,10 @@
 
 \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
-
 #+end_src
+
+
+** RMS (II)
 
 #+begin_src latex :tangle fig-2B_1004-rms01.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
@@ -299,6 +303,8 @@
 \end{tikzpicture}
 
 #+end_src
+
+** RMS (y III)
 
 #+begin_src latex :tangle fig-2B_1004-rms02.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
@@ -332,6 +338,8 @@
 \end{tikzpicture}
 
 #+end_src
+
+** Convexidad
 
 #+begin_src latex :tangle fig-2B_1004-rms03.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
@@ -370,6 +378,10 @@
 
 #+end_src
 
+* Otros casos
+
+** Sustitutos perfectos
+
 #+begin_src latex :tangle fig-2B_1004-nreg01.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
   \newcommand*{\Xcoord}{15}
@@ -393,6 +405,8 @@
 
 #+end_src
 
+** Complementos perfectos
+
 #+begin_src latex :tangle fig-2B_1004-nreg02.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
   \newcommand*{\Xcoord}{4}
@@ -415,6 +429,9 @@
 
 #+end_src
 
+
+** Bien neutro
+
 #+begin_src latex :tangle fig-2B_1004-nreg03.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
   \newcommand{\Xcoord}{10}
@@ -435,6 +452,8 @@
 \end{tikzpicture}
 
 #+end_src
+
+** Mal
 
 #+begin_src latex :tangle fig-2B_1004-nreg04.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
@@ -460,6 +479,8 @@
 \end{tikzpicture}
 
 #+end_src
+
+* Función de utilidad
 
 #+begin_src latex :tangle fig-2B_1004-fu01.tex :noweb yes
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
