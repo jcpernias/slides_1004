@@ -513,7 +513,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env08.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env08.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -804,7 +804,7 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env20.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env20.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -869,7 +869,7 @@ plotCoord(CL)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env21.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env21.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -977,7 +977,7 @@ plotCMg(parL, domCMgL)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env01.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env01.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1052,7 +1052,7 @@ plotCMg(par60, domg60)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env02.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env02.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1143,7 +1143,7 @@ plotCMe(par60, dom60)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env03.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env03.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1248,7 +1248,7 @@ plotCMe(par60, domL60a)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env04.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env04.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1372,7 +1372,7 @@ plotCMg(par30, domgL30a)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env05.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env05.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1460,7 +1460,7 @@ plotCMe(par70, domL70)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env06.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env06.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1568,7 +1568,7 @@ plotCMg(parL, domCMgL)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env07.Rnw :noweb yes
+#+begin_src latex :tangle fig-6B_1004-env07.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @

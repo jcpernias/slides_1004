@@ -4,7 +4,7 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
-#+begin_src latex :tangle fig-6A_1004-sr01.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr01.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -65,7 +65,7 @@ plotCoord(Q)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6A_1004-sr02.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr02.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -126,7 +126,7 @@ plotCoord(Q)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6A_1004-sr03.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr03.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -187,7 +187,7 @@ plotCoord(CV)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6A_1004-sr04.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr04.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -249,7 +249,7 @@ plotCoord(CT)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6A_1004-sr05.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr05.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -319,7 +319,7 @@ plotCoord(PMg)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6A_1004-sr06.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr06.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -381,69 +381,7 @@ plotCoord(CMg)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6A_1004-sr06.Rnw :noweb yes
-<<setup, cache=FALSE, include=FALSE>>=
-  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
-@
-
-<<init>>=
-
-## Load code
-source("./R/srcost.R")
-
-## Graphics parameters
-
-width <- 5.5                              # cm
-height <- 5
-
-Xtop <- 95
-Ytop <- 10
-
-xscale <- width/Xtop
-yscale <- height/Ytop
-
-
-@
-
-\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
-
-
-
-\draw[IMe, Brown]
-<<CVMe>>=
-plotCoord(CVMe)
-@
-  node[above, font=\footnotesize]  {$\CVMe$}
-  ;
-
-\draw[IMe, DarkGreen]
-<<CMg>>=
-plotCoord(CMg)
-@
-  node[right, font=\footnotesize]  {$\CMg$}
-  ;
-
-
-%% \draw[axis] (0,\Sexpr{Ytop}) node[anchor=north east, align=left] {$\CVMe$\\$CMg$} |-
-%%    node[left] {\phantom{$\CFMe$}}
-%%    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
-
-\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
-   node[left] {\phantom{$\CVMe$}}
-   (\Sexpr{Xtop}, 0) node[below] {$Q$}
-   ;
-\draw
-   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMg$}
-   %% (Ylabel2.south east) node[anchor=north east]  {$\CT$}
-   ;
-
-
-
-\end{tikzpicture}
-
-#+end_src
-
-#+begin_src latex :tangle fig-6A_1004-sr07.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr07.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -486,79 +424,7 @@ plotCoord(CFMe)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6A_1004-sr08.Rnw :noweb yes
-<<setup, cache=FALSE, include=FALSE>>=
-  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
-@
-
-<<init>>=
-
-## Load code
-source("./R/srcost.R")
-
-## Graphics parameters
-
-width <- 5.5                              # cm
-height <- 5
-
-Xtop <- 105
-Ytop <- 10
-
-xscale <- width/Xtop
-yscale <- height/Ytop
-
-
-@
-
-\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
-
-
-
-\draw[IMe, Brown]
-<<CVMe>>=
-plotCoord(CVMe)
-@
-  node[right, font=\footnotesize]  {$\CVMe$}
-  ;
-
-
-\draw[IMe, DarkBlue]
-<<CMe>>=
-plotCoord(CMe)
-@
-  node[above, font=\footnotesize]  {$\CMe$}
-  ;
-
-
-\draw[IMe, DarkGreen]
-<<CMg>>=
-plotCoord(CMg)
-@
-  node[right, font=\footnotesize]  {$\CMg$}
-  ;
-
-
-%% \draw[axis] (0,\Sexpr{Ytop}) node[anchor=north east, align=left] {$\CMe$\\$\CVMe$\\$CMg$} |-
-%%    node[left] {\phantom{$\CVMe$}}
-%%    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
-
-\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
-   node[left] {\phantom{$\CVMe$}}
-   (\Sexpr{Xtop}, 0) node[below] {$Q$}
-   ;
-\draw
-   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMg$}
-   (Ylabel2.south east) node[anchor=north east, inner ysep = 0]  {$\CMe$}
-   ;
-
-
-
-
-\end{tikzpicture}
-
-#+end_src
-
-#+begin_src latex :tangle fig-6A_1004-sr08.Rnw :noweb yes
+#+begin_src latex :tangle fig-6A_1004-sr08.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @

@@ -4,7 +4,7 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
-#+begin_src latex :tangle fig-3B_1004-eres20.Rnw :noweb yes
+#+begin_src latex :tangle fig-3B_1004-eres20.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -77,7 +77,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres22.Rnw :noweb yes
+#+begin_src latex :tangle fig-3B_1004-eres22.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -314,7 +314,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres10.Rnw :noweb yes
+#+begin_src latex :tangle fig-3B_1004-eres10.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -384,7 +384,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres11.Rnw :noweb yes
+#+begin_src latex :tangle fig-3B_1004-eres11.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -453,7 +453,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres12.Rnw :noweb yes
+#+begin_src latex :tangle fig-3B_1004-eres12.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @

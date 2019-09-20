@@ -4,7 +4,7 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
-#+begin_src latex :tangle fig-4A_1004-ciri01.Rnw :noweb yes
+#+begin_src latex :tangle fig-4A_1004-ciri01.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -120,7 +120,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 
 #+end_src
 
-#+begin_src latex :tangle fig-4A_1004-ciri02.Rnw :noweb yes
+#+begin_src latex :tangle fig-4A_1004-ciri02.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -236,7 +236,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 
 #+end_src
 
-#+begin_src latex :tangle fig-4A_1004-ciri03.Rnw :noweb yes
+#+begin_src latex :tangle fig-4A_1004-ciri03.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -352,7 +352,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 
 #+end_src
 
-#+begin_src latex :tangle fig-4A_1004-ciri04.Rnw :noweb yes
+#+begin_src latex :tangle fig-4A_1004-ciri04.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -468,7 +468,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 
 #+end_src
 
-#+begin_src latex :tangle fig-4A_1004-ciri05.Rnw :noweb yes
+#+begin_src latex :tangle fig-4A_1004-ciri05.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -584,7 +584,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 
 #+end_src
 
-#+begin_src latex :tangle fig-4A_1004-ciri06.Rnw :noweb yes
+#+begin_src latex :tangle fig-4A_1004-ciri06.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -705,7 +705,7 @@ Coordinates(End=End, R02 = R02, R12 = R12,
 
 #+end_src
 
-#+begin_src latex :tangle fig-4A_1004-ciri07.Rnw :noweb yes
+#+begin_src latex :tangle fig-4A_1004-ciri07.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
