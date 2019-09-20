@@ -85,7 +85,7 @@ Coordinates(E0 = E0, E1 = E1, E2 = E2)
 \draw[CMe] \Sexpr{PBpath(I1)} ;
 \draw[CMe] \Sexpr{PBpath(I2)} ;
 
-%% \draw[curve, very thick, DarkGreen, domain=0:70]
+%% \draw[curve, very thick, DarkGreen!70!Black, domain=0:70]
 %% plot (\x, {\Sexpr{b}*\x-\Sexpr{-c}*\x^2})
 %% node[right] {$\mathit{CRC}$};
 
@@ -145,7 +145,7 @@ Coordinates(E0 = E0, E1 = E1, E2 = E2)
   \draw[CMe] \Sexpr{PBpath(I1)} ;
   \draw[CMe] \Sexpr{PBpath(I2)} ;
 
-  \draw[curve, very thick, DarkGreen, domain=0:70]
+  \draw[curve, very thick, DarkGreen!70!Black, domain=0:70]
     plot (\x, {\Sexpr{b}*\x-\Sexpr{-c}*\x^2})
     node[right] {\CRC};
 
@@ -217,7 +217,7 @@ Coordinates(E0 = c(E0[1], sum(E0)),
   %% \draw[CMe] \Sexpr{PBpath(I1)} ;
   %% \draw[CMe] \Sexpr{PBpath(I2)} ;
 
-  \draw[curve, very thick, DarkGreen, domain=0:60]
+  \draw[curve, very thick, DarkGreen!70!Black, domain=0:60]
     plot (\x, {\Sexpr{b-slope}*\x-\Sexpr{-c}*\x^2})
     node[right] {$\CE$};
 
@@ -282,7 +282,7 @@ Coordinates(E0 = opt[1,], E1 = opt[2, ], E2 = opt[3,])
   %% \draw[CMe] \Sexpr{PBpath(I1)} ;
   %% \draw[CMe] \Sexpr{PBpath(I2)} ;
 
-  %% \draw[curve, very thick, DarkGreen]
+  %% \draw[curve, very thick, DarkGreen!70!Black]
   %%    \Sexpr{PBpath(CPC)} node[right] {$\mathit{CPC}$};
 
   %% \node[dot] at (E0) {};
@@ -340,7 +340,7 @@ Coordinates(E0 = opt[1,], E1 = opt[2, ], E2 = opt[3,])
   \draw[CMe] \Sexpr{PBpath(I1)} ;
   \draw[CMe] \Sexpr{PBpath(I2)} ;
 
-  %% \draw[curve, very thick, DarkGreen]
+  %% \draw[curve, very thick, DarkGreen!70!Black]
   %%    \Sexpr{PBpath(CPC)} node[right] {$\mathit{CPC}$};
   \begin{scope}[label distance=-4pt]
   \node[dot, label={[font=\scriptsize]45:$E$}] at (E0) {};
@@ -400,7 +400,7 @@ Coordinates(E0 = opt[1,], E1 = opt[2, ], E2 = opt[3,])
   \draw[CMe] \Sexpr{PBpath(I1)} ;
   \draw[CMe] \Sexpr{PBpath(I2)} ;
 
-  \draw[curve, very thick, DarkGreen]
+  \draw[curve, very thick, DarkGreen!70!Black]
      \Sexpr{PBpath(CPC)} node[right] {\CPC};
 
   \begin{scope}[label distance=-4pt]
@@ -462,7 +462,7 @@ Coordinates(E0 = c(opt[1, 1], -sl0),
 
 
 
-  \draw[curve, very thick, DarkGreen]
+  \draw[curve, very thick, DarkGreen!70!Black]
     plot[smooth] coordinates
 <<Coord>>=
 cat("{",

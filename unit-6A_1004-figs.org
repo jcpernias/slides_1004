@@ -291,7 +291,7 @@ plotCoord(PMe)
   node[right, font=\footnotesize]  {$\PMeL$}
   ;
 
-\draw[IMe, DarkGreen]
+\draw[IMe, DarkGreen!70!Black]
 <<PMg>>=
 plotCoord(PMg)
 @
@@ -354,7 +354,7 @@ plotCoord(CVMe)
   node[above, font=\footnotesize]  {$\CVMe$}
   ;
 
-\draw[IMe, DarkGreen]
+\draw[IMe, DarkGreen!70!Black]
 <<CMg>>=
 plotCoord(CMg)
 @
@@ -468,7 +468,7 @@ plotCoord(CMe)
   ;
 
 
-\draw[IMe, DarkGreen]
+\draw[IMe, DarkGreen!70!Black]
 <<CMg>>=
 plotCoord(CMg)
 @

@@ -142,7 +142,7 @@ cat("{",
       ;
 
 
-  \draw[CMe, DarkGreen]
+  \draw[CMe, DarkGreen!70!Black]
       ($(A) - 8*(dA)$) -- ($(A) + 8*(dA)$)
       ($(B) - 10*(dB)$) -- ($(B) + 10*(dB)$)
       ;
@@ -215,7 +215,7 @@ Coordinates(A=A, B=B)
      ;
 
 
-  \draw[IMe, DarkGreen]
+  \draw[IMe, DarkGreen!70!Black]
     plot[smooth] coordinates
 <<PMg>>=
   cat("{",
@@ -294,7 +294,7 @@ Coordinates(C=C, D=D)
      (\x1, 0) node[below, font=\scriptsize] {$L_{C}$}
      ;
 
-  \draw[IMe, DarkGreen]
+  \draw[IMe, DarkGreen!70!Black]
     plot[smooth] coordinates
 <<PMg>>=
   cat("{",
@@ -373,7 +373,7 @@ Coordinates(C=C, D=D)
   %%    (\x1, 0) node[below, font=\scriptsize] {$L_{C}$}
   %%    ;
 
-  \draw[IMe, DarkGreen]
+  \draw[IMe, DarkGreen!70!Black]
     plot[smooth] coordinates
 <<PMg>>=
   cat("{",
@@ -472,7 +472,7 @@ cat("{",
       ;
 
 
-  \draw[CMe, DarkGreen]
+  \draw[CMe, DarkGreen!70!Black]
       ($(D) - 9*(1, 0)$) -- ($(D) + 9*(1, 0)$)
       ;
 
@@ -715,7 +715,7 @@ cat("{",
     node[right, font=\footnotesize] {$\PMeL$}
       ;
 
-  \draw[IMe, DarkGreen]
+  \draw[IMe, DarkGreen!70!Black]
     plot[smooth] coordinates
     <<PMg>>=
 cat("{",
@@ -805,7 +805,7 @@ cat("{",
       (0, 0) -- (E)
       ;
 
-  \draw[CMe, DarkGreen]
+  \draw[CMe, DarkGreen!70!Black]
       ($(E) - 7*(dE)$) -- ($(E) + 7*(dE)$)
       ($(D) - 10*(1, 0)$) -- ($(D) + 10*(1, 0)$)
       ;

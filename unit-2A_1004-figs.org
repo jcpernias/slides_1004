@@ -126,13 +126,13 @@
 
     \coordinate (C2) at ($ (C)!40pt!90:(D) $) ;
     \coordinate (D2) at ($ (D)!40pt!-90:(C) $) ;
-    \draw[shift arrow, DarkGreen, ->] (C2) -- (D2) ;
+    \draw[shift arrow, DarkGreen!70!Black, ->] (C2) -- (D2) ;
 
-    \draw[shift arrow, DarkGreen, ->]
+    \draw[shift arrow, DarkGreen!70!Black, ->]
       ($(0, \Cy)+(-1.5,0)$) -- ($(0, \Dy)+(-1.5,0)$)
       node[pos=0.5, left] { $\Delta Y$ } ;
 
-    \draw[shift arrow, DarkGreen, ->]
+    \draw[shift arrow, DarkGreen!70!Black, ->]
       ($(\Cx, 0)+(0, -1.5)$) -- ($(\Dx, 0)+(0, -1.5)$)
       node[pos=0.5, below] { $\Delta X$ } ;
 
@@ -161,7 +161,7 @@
 \draw[IMe] (Rx2) node[below] {$M/P'_{X}$} --
      (Ry) node[left] {$M/P_{Y}$} node[pos=0.1] (B) {} ;
 
-\draw[shift arrow, DarkGreen, ->] (A) -- (B) ;
+\draw[shift arrow, DarkGreen!70!Black, ->] (A) -- (B) ;
 
 <<axes>>
 \end{tikzpicture}
@@ -188,7 +188,7 @@
 \path[name intersections={of=R2 and V, name=i}] ;
 
 
-\draw[shift arrow, DarkGreen, ->, shorten >= 4pt] (A) -- (i-1) ;
+\draw[shift arrow, DarkGreen!70!Black, ->, shorten >= 4pt] (A) -- (i-1) ;
 
 
 <<axes>>
@@ -219,7 +219,7 @@
 \draw[IMe] (Rx2) node[below] {$M'/P_{X}$} --
      (Ry2) node[left] {$M'/P_{Y}$}  node[pos=0.55] (B) {} ;
 
-\draw[shift arrow, DarkGreen, ->] (A) -- (B) ;
+\draw[shift arrow, DarkGreen!70!Black, ->] (A) -- (B) ;
 
 
 <<axes>>
@@ -259,8 +259,8 @@
 \draw[IMe] (Rx2) node[below] {$M'/P'_{X}$} --
      (Ry2) node[left] {$M'/P_{Y}$}  node[pos=0.1] (B) {} ;
 
-\draw[shift arrow, DarkGreen, ->, shorten >= 6pt] (A-1) -- (B-1) ;
-\draw[shift arrow, DarkGreen, ->, shorten <= 4pt] (C-1) -- (D-1) ;
+\draw[shift arrow, DarkGreen!70!Black, ->, shorten >= 6pt] (A-1) -- (B-1) ;
+\draw[shift arrow, DarkGreen!70!Black, ->, shorten <= 4pt] (C-1) -- (D-1) ;
 
 
 

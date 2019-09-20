@@ -403,11 +403,11 @@
   %   ;
 
 
-  \draw[curve, DarkGreen, very thick]
+  \draw[curve, DarkGreen!70!Black, very thick]
     (0, 0) -- (15, 10.4166667)
     ;
 
-  % \draw[curve, DarkGreen]
+  % \draw[curve, DarkGreen!70!Black]
   %   (0, 4.16666667) -- (15, 4.16666667)
   %   ;
 
@@ -488,11 +488,11 @@
   %   ;
 
 
-  % \draw[curve, DarkGreen, very thick]
+  % \draw[curve, DarkGreen!70!Black, very thick]
   %   (0, 0) -- (15, 10.4166667)
   %   ;
 
-  % \draw[curve, DarkGreen]
+  % \draw[curve, DarkGreen!70!Black]
   %   (0, 4.16666667) -- (15, 4.16666667)
   %   ;
 
@@ -558,7 +558,7 @@ Coordinates(Q1=c(50, 0),
 %%   ;
 
 
-%% \draw[curve, DarkGreen]
+%% \draw[curve, DarkGreen!70!Black]
 %% <<CMg50>>=
 %% plotCMg(par50, domg50)
 %% @
@@ -716,7 +716,7 @@ plotCMg(parL, domCMgL)
     (\x, 56.25/\x)
     ;
 
-  \draw[curve, DarkGreen, very thick]
+  \draw[curve, DarkGreen!70!Black, very thick]
     (0, 0) -- (15, 10.4166667)
     ;
 
@@ -778,7 +778,7 @@ plotCMg(parL, domCMgL)
     (\x, 56.25/\x)
     ;
 
-  \draw[curve, DarkGreen, very thick, nearly transparent]
+  \draw[curve, DarkGreen!70!Black, very thick, nearly transparent]
     (0, 0) -- (15, 10.4166667)
     ;
 
@@ -921,7 +921,7 @@ plotCMe(par30, dom30)
   ;
 
 
-\draw[curve, DarkGreen]
+\draw[curve, DarkGreen!70!Black]
 <<CMg30>>=
 plotCMg(par30, domg30)
 @
@@ -939,7 +939,7 @@ plotCMg(par30, domg30)
 %%   ;
 
 
-%% \draw[curve, DarkGreen]
+%% \draw[curve, DarkGreen!70!Black]
 %% <<CMg60>>=
 %% plotCMg(par60, domg60)
 %% @
@@ -1017,7 +1017,7 @@ plotCMe(par30, dom30)
   ;
 
 
-\draw[curve, DarkGreen]
+\draw[curve, DarkGreen!70!Black]
 <<CMg30>>=
 plotCMg(par30, domg30)
 @
@@ -1035,7 +1035,7 @@ plotCMe(par60, dom60)
   ;
 
 
-\draw[curve, DarkGreen]
+\draw[curve, DarkGreen!70!Black]
 <<CMg60>>=
 plotCMg(par60, domg60)
 @
@@ -1104,7 +1104,7 @@ plotCMe(par30, dom30)
   ;
 
 
-%% \draw[curve, DarkGreen]
+%% \draw[curve, DarkGreen!70!Black]
 %% <<CMg30>>=
 %% plotCMg(par30, domg30)
 %% @
@@ -1122,7 +1122,7 @@ plotCMe(par60, dom60)
   ;
 
 
-%% \draw[curve, DarkGreen]
+%% \draw[curve, DarkGreen!70!Black]
 %% <<CMg60>>=
 %% plotCMg(par60, domg60)
 %% @
@@ -1204,7 +1204,7 @@ plotCMe(par30, domL30a)
   ;
 
 
-%% \draw[curve, DarkGreen]
+%% \draw[curve, DarkGreen!70!Black]
 %% <<CMg30>>=
 %% plotCMg(par30, domg30)
 %% @
@@ -1231,7 +1231,7 @@ plotCMe(par60, domL60a)
 
 
 
-%% \draw[curve, DarkGreen]
+%% \draw[curve, DarkGreen!70!Black]
 %% <<CMg60>>=
 %% plotCMg(par60, domg60)
 %% @
@@ -1309,7 +1309,7 @@ plotCMe(par30, domL30a)
   ;
 
 
-\draw[curve, DarkGreen, nearly transparent]
+\draw[curve, DarkGreen!70!Black, nearly transparent]
 <<CMg30>>=
 plotCMg(par30, domg30)
 @
@@ -1336,7 +1336,7 @@ plotCMe(par60, domL60a)
 
 
 
-\draw[curve, DarkGreen, nearly transparent]
+\draw[curve, DarkGreen!70!Black, nearly transparent]
 <<CMg60>>=
 plotCMg(par60, domg60)
 @
@@ -1344,22 +1344,22 @@ plotCMg(par60, domg60)
   ;
 
 
-\draw[curve, DarkGreen, very thick]
+\draw[curve, DarkGreen!70!Black, very thick]
 <<CMg60L>>=
 plotCMg(par60, domgL60a)
 @
   node[above, font=\scriptsize] {$\CMgLP$}
   ;
 
-\draw[curve, DarkGreen, very thick]
+\draw[curve, DarkGreen!70!Black, very thick]
 <<CMg30L>>=
 plotCMg(par30, domgL30a)
 @
   %% node[above, font=\scriptsize] {$\CMgLP$}
   ;
 
-\node[dot, DarkGreen] at (CMg1X) {} ;
-\node[dot, DarkGreen] at (CMg2X) {} ;
+\node[dot, DarkGreen!70!Black] at (CMg1X) {} ;
+\node[dot, DarkGreen!70!Black] at (CMg2X) {} ;
 
 
 
@@ -1512,7 +1512,7 @@ plotCMe(par30, dom30)
   ;
 
 
-\draw[curve, DarkGreen]
+\draw[curve, DarkGreen!70!Black]
 <<CMg30>>=
 plotCMg(par30, domg30)
 @
@@ -1530,7 +1530,7 @@ plotCMe(par60, dom60)
   ;
 
 
-\draw[curve, DarkGreen]
+\draw[curve, DarkGreen!70!Black]
 <<CMg60>>=
 plotCMg(par60, domg60)
 @
@@ -1613,7 +1613,7 @@ plotCMe(par50, dom50)
   ;
 
 
-\draw[curve, DarkGreen]
+\draw[curve, DarkGreen!70!Black]
 <<CMg50>>=
 plotCMg(par50, domg50)
 @

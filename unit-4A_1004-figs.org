@@ -105,11 +105,11 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
        %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
      \end{scope}
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
   %%    ;
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
   %%    ;
 
@@ -221,11 +221,11 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
        %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
      \end{scope}
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
   %%    ;
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
   %%    ;
 
@@ -337,11 +337,11 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
        %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
      \end{scope}
 
-  \draw[curve, DarkGreen, thick, >=stealth', ->]
+  \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
      ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
      ;
 
-  \draw[curve, DarkGreen, thick, >=stealth', ->]
+  \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
      ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
      ;
 
@@ -453,11 +453,11 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
        %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
      \end{scope}
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
   %%    ;
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
   %%    ;
 
@@ -569,11 +569,11 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
        %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
      \end{scope}
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
   %%    ;
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
   %%    ;
 
@@ -690,11 +690,11 @@ Coordinates(End=End, R02 = R02, R12 = R12,
        \node[dot, label={[font=\scriptsize]right:$E_{1}$}] at (E3) {};
      \end{scope}
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
   %%    ;
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
   %%    ;
 
@@ -806,11 +806,11 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
        %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
      \end{scope}
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
   %%    ;
 
-  %% \draw[curve, DarkGreen, thick, >=stealth', ->]
+  %% \draw[curve, DarkGreen!70!Black, thick, >=stealth', ->]
   %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
   %%    ;
 
@@ -826,7 +826,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 
 
 
-  \draw[CMe, DarkGreen] (-20, 2)
+  \draw[CMe, DarkGreen!70!Black] (-20, 2)
      .. controls (70, 30) and (70, 70) ..
      (60, 80)
      node[pos=0.8, right, font = \footnotesize] {$S(r)$}
