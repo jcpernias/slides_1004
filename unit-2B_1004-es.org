@@ -11,10 +11,11 @@
 
 * Las preferencias del consumidor
 
+
 ** Introducción
 
-- Usaremos algunos supuestos para describir las preferencias de los
-  consumidores.
+- Describiremos las preferencias de los consumidores mediante algunos
+  supuestos.
 
 
 ** Completitud
@@ -81,8 +82,8 @@
 
 #+MATS: figcol fig-2B_1004-ci06-*.pdf 0.45
 
-- Las cestas como $M$, que son preferidas a $A$, se sitúan por encima
-  y a la derecha de la curva de indiferencia de $A$.
+- Las cestas preferidas a $A$, como $M$, se sitúan por encima y a la
+  derecha de la curva de indiferencia de $A$.
 
 - La cesta $A$ es preferida a cestas como $P$, situadas por debajo y a
   la izquierda de la curva de indiferencia de $A$.
@@ -178,28 +179,28 @@
 * Casos especiales
 
 
-** Otros casos de preferencias (I)
+** Sustitutos perfectos
 
 #+MATS: figcol fig-2B_1004-nreg01-*.pdf 0.45
 
-- *Sustitutos perfectos*.
+- $X$ e $Y$ son *sustitutos perfectos*.
 
 
-** Otros casos de preferencias (II)
+** Complementos perfectos
 
 #+MATS: figcol fig-2B_1004-nreg02-*.pdf 0.45
 
-- *Complementos perfectos*.
+- $X$ e $Y$ son *complementos perfectos*.
 
 
-** Otros casos de preferencias (III)
+** Bienes neutros
 
 #+MATS: figcol fig-2B_1004-nreg03-*.pdf 0.45
 
 - $Y$ es un *bien neutro*.
 
 
-** Otros casos de preferencias (y IV)
+** Males
 
 #+MATS: figcol fig-2B_1004-nreg04-*.pdf 0.45
 
@@ -210,45 +211,25 @@
 
 * La función de utilidad
 
-
 ** Función de utilidad
-- La *función de utilidad* asigna un valor numérico a cada cesta de acuerdo con las preferencias del consumidor, de forma que
+
+- La *función de utilidad* asigna un valor numérico a cada cesta de
+  forma que cestas más preferidas reciben valores más altos:
+
   + si $A \succ B$, entonces $U(X_A, Y_A) > U(X_B, Y_B)$;
+
   + si $A \sim B$, entonces $U(X_A, Y_A) = U(X_B, Y_B)$.
-- Las preferencias de un consumidor, bajo ciertos supuestos, pueden ser representadas mediante una función de utilidad.
+
+- Usamos la función de utilidad para representar las preferencias de
+  un consumidor.
 
 
 ** Función de utilidad y curvas de indiferencia
-- La función de utilidad asigna el mismo número a todas las cestas que
+
+- La función de utilidad asigna el mismo valor a todas las cestas que
   son indiferentes entre sí.
-- Podemos obtener una curva de indiferencia encontrando todos los puntos que producen el mismo valor de la función de utilidad:
   #+begin_export latex
   \[ U(X, Y) = \overline{U} \]
-  #+end_export
-
-
-** Ejemplo (I)
-- Función de utilidad:
-  #+begin_export latex
-  \[ U(X, Y) = X \cdot Y \]
-  #+end_export
-- La utilidad asociada a la cesta $A = (15, 20)$ es:
-  #+begin_export latex
-  \[ U(15, 20) = 15 \cdot 20 = 300 \]
-  #+end_export
-- Las cestas indiferentes a $A$ producen el mismo valor de la función de utilidad:
-  #+begin_export latex
-  \[ U(X, Y) = X\cdot Y = 300 \]
-  #+end_export
-
-
-** Ejemplo (y II)
-
-#+MATS: figcol fig-2B_1004-fu01-*.pdf 0.45
-
-- Curva de indiferencia que contiene $A$:
-  #+begin_export latex
-  \[ Y = \frac{300}{X} \]
   #+end_export
 
 
@@ -261,28 +242,34 @@
 
 
 ** Utilidad ordinal (II)
-- Los valores de la función de utilidad no tienen ningún significado
-  especial, aparte de ordenar las cestas.
+
+#+MATS: figcol fig-2B_1004-map03-*.pdf 0.48
+
 - Existen infinitas funciones de utilidad que representan exactamente
   las mismas preferencias.
+
+- $V(X, Y) = \sqrt{U(X, Y)}$
 
 
 ** Utilidad ordinal (y III)
 
-#+MATS: figcol fig-2B_1004-map03-*.pdf 0.48
+- Los valores de la función de utilidad no tienen unidades ni ningún
+  significado especial.
 
-- Definamos $V(X, Y)$ como:
-  #+begin_export latex
-  \[ V(X, Y) = \sqrt{U(X, Y)} = X^{1/2}  Y^{1/2} \]
-  #+end_export
-- Tanto $U(X, Y)$ como $V(X, Y)$ representan las mismas preferencias.
+- Sólo son útiles para ordenar las cestas de acuerdo a las
+  preferencias del consumidor.
 
 
 ** Utilidad marginal (I)
-- La *utilidad marginal* de $X$ mide la variación en la utilidad del consumidor al variar el consumo de $X$, pero /manteniendo constante el consumo de $Y$/.
-- La utilidad marginal de un bien coincide con la derivada parcial de la función de utilidad:
+
+- La *utilidad marginal* de un bien mide la variación en la utilidad
+  del consumidor al cambiar el consumo de ese bien, pero /manteniendo
+  constante el consumo de los restantes bienes./
   #+begin_export latex
-  \[ \UMX = \frac{\partial U(X, Y)}{\partial X}; \quad \UMY = \frac{\partial U(X, Y)}{\partial Y} \]
+  \[
+    \UMX = \frac{\partial U(X, Y)}{\partial X}; \quad
+    \UMY = \frac{\partial U(X, Y)}{\partial Y}.
+  \]
   #+end_export
 
 
@@ -291,7 +278,6 @@
   #+begin_export latex
   \[ \UMX > 0; \quad \UMY > 0. \]
   #+end_export
-- Salvo su signo, el valor de la utilidad marginal no tiene ninguna interpretación interesante.
 
 
 ** Utilidad marginal y la RMS (I)
@@ -301,6 +287,7 @@
   #+begin_export latex
   \[ \diff U = \UMX\; \diff X + \UMY\; \diff Y \]
   #+end_export
+
 - Si el cambio se produce a lo largo de una curva de indiferencia, la
   utilidad no varía; por lo que $\diff U = 0$:
   #+begin_export latex
@@ -312,7 +299,10 @@
 
 - La pendiente de la curva de indiferencia es:
   #+begin_export latex
-  \[ \left. \frac{\diff Y}{\diff X} \right|_{U=\overline{U}} = -\frac{\UMX}{\UMY} \]
+  \[
+    \left. \frac{\diff Y}{\diff X} \right|_{U=\overline{U}} =
+    -\frac{\UMX}{\UMY}
+  \]
   #+end_export
 
 - La relación marginal de sustitución coincide con el cociente de
@@ -322,46 +312,65 @@
   #+end_export
 
 
-** Utilidad marginal y la RMS (III)
-
-- Ejemplo: $U(X, Y) = XY$.
-- Utilidades marginales:
-  #+BEGIN_EXPORT LaTeX
-    \begin{equation*}
-     \UMX = \frac{\partial U}{\partial X} = Y;  \quad
-     \UMY = \frac{\partial U}{\partial Y} = X
-    \end{equation*}
-  #+END_EXPORT
-- Relación marginal de sustitución:
-  #
-  #+begin_export latex
-  \[\RMS = \frac{\UMX}{\UMY} = \frac{Y}{X} \]
-  #+end_export
-
-
-** Utilidad marginal y la RMS (y IV)
-
-#+MATS: figcol fig-2B_1004-fu02-*.pdf 0.45
-
-- $\RMS(A) = 20/15 = 1.33$ unidades de $Y$ por unidad de $X$.
-- La pendiente de la curva de indiferencia en el punto $A$ es $-1.33$
-  unidades de $Y$ por unidad de $X$.
-
-
-
 * Algunas funciones de utilidad
 
 
-** Algunas funciones de utilidad
+** Función de utilidad Cobb-Douglas
+
+- Función de utilidad *Cobb-Douglas*:
+  #+begin_export latex
+  \[ U(X, Y) = X^a Y^b; \quad a,b > 0. \]
+  #+end_export
+
+- Utilidades marginales:
+  #+begin_export latex
+  \[
+    \UMX = a X^{a-1} Y^b; \quad
+    \UMY = b X^a Y^{b-1}.
+  \]
+  #+end_export
+
+- Relación marginal de sustitución:
+  #+begin_export latex
+  \[
+    \RMS = \frac{a}{b} \frac{Y}{X}
+  \]
+  #+end_export
+
+
+** Sustitutos perfectos
+
 - Sustitutos perfectos:
   #+begin_export latex
   \[ U(X, Y) = a X + b Y; \quad a, b > 0. \]
   #+end_export
+
+- Utilidades marginales:
+  #+begin_export latex
+  \[
+    \UMX = a; \quad
+    \UMY = b.
+  \]
+  #+end_export
+
+- Relación marginal de sustitución:
+  #+begin_export latex
+  \[
+    \RMS = \frac{a}{b}
+  \]
+  #+end_export
+
+
+** Complementos perfectos
+
 - Complementos perfectos:
   #+begin_export latex
   \[ U(X, Y) = \min\{a X, b Y\}; \quad a, b > 0. \]
   #+end_export
-- Cobb-Douglas
-  #+begin_export latex
-  \[ U(X, Y) = X^a Y^b; \quad a,b > 0. \]
-  #+end_export
+
+- Utilidades marginales: no están bien definidas en todos los puntos
+  de las curvas de indiferencia.
+
+
+- Relación marginal de sustitución: no está bien definida en todos los
+  puntos de las curvas de indiferencia.
