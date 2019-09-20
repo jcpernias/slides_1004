@@ -115,7 +115,7 @@
         (insert-fig-block item unit))
       (setq org-file-name
             (concat "unit-" unit "_1004-figs.org"))
-      (write-file (concat (file-name-as-directory "..") org-file-name))
+      (write-file (concat (file-name-as-directory ".") org-file-name))
       )))
 
 
