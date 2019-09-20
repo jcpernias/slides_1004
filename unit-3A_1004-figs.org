@@ -4,62 +4,52 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
-#+begin_src latex :tangle fig-3A_1004-crc2.Rnw :noweb yes
-<<setup, cache=FALSE, include=FALSE>>=
-  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
-@
+
+* Variaciones en la renta
 
 
-<<init>>=
-source("./R/CRC.R")
-width <- 6
-height <- 5
-@
+** Cambios en la renta
+
+#+begin_src latex :tangle fig-3A_1004-crc2.Rnw :noweb no
+  <<setup, cache=FALSE, include=FALSE>>=
+    opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+  @
+
+  <<init>>=
+    source("./R/CRC.R")
+    width <- 6
+   height <- 5
+  @
 
 
+  \begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+    yscale = \Sexpr{height / maxY}]
 
-\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
-  yscale = \Sexpr{height / maxY}]
-
-<<coords>>=
-
-Coordinates(E0 = E0, E1 = E1, E2 = E2)
-
-@
+  <<coords>>=
+  Coordinates(E0 = E0, E1 = E1, E2 = E2)
+  @
 
 
-  \draw[IMe]
-    (0, \Sexpr{Y0}) node[left, font=\scriptsize] {$M/P_{Y}$} --
-    (\Sexpr{Y0}, 0) node[below, font=\scriptsize] {$M/P_{X}$}
-    (0, \Sexpr{Y1}) node[left, font=\scriptsize] {$M'/P_{Y}$} --
-    (\Sexpr{Y1}, 0) node[below, font=\scriptsize] {$M'/P_{X}$}
-    (0, \Sexpr{Y2}) node[left, font=\scriptsize] {$M''/P_{Y}$} --
-    (\Sexpr{Y2}, 0) node[below, font=\scriptsize] {$M''/P_{X}$};
-
-  %% \draw[CMe] \Sexpr{PBpath(I0)} ;
-  %% \draw[CMe] \Sexpr{PBpath(I1)} ;
-  %% \draw[CMe] \Sexpr{PBpath(I2)} ;
-
-  %% \draw[curve, very thick, DarkGreen, domain=0:70]
-  %%   plot (\x, {\Sexpr{b}*\x-\Sexpr{-c}*\x^2})
-  %%   node[right] {$\mathit{CRC}$};
-
-  %% \node[dot] at (E0) {};
-  %% \node[dot] at (E1) {};
-  %% \node[dot] at (E2) {};
-
-<<Axes>>=
-Axis(maxX, maxY, "$X$", "$Y$")
-@
+    \draw[IMe]
+      (0, \Sexpr{Y0}) node[left, font=\scriptsize] {$M/P_{Y}$} --
+      (\Sexpr{Y0}, 0) node[below, font=\scriptsize] {$M/P_{X}$}
+      (0, \Sexpr{Y1}) node[left, font=\scriptsize] {$M'/P_{Y}$} --
+      (\Sexpr{Y1}, 0) node[below, font=\scriptsize] {$M'/P_{X}$}
+      (0, \Sexpr{Y2}) node[left, font=\scriptsize] {$M''/P_{Y}$} --
+      (\Sexpr{Y2}, 0) node[below, font=\scriptsize] {$M''/P_{X}$};
 
 
+  <<Axes>>=
+  Axis(maxX, maxY, "$X$", "$Y$")
+  @
 
-\end{tikzpicture}
-
-
+  \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-3A_1004-crc3.Rnw :noweb yes
+
+** Cambios en la decisión de consumo
+
+#+begin_src latex :tangle fig-3A_1004-crc3.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -116,7 +106,10 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3A_1004-crc.Rnw :noweb yes
+
+** Curva renta-consumo
+
+#+begin_src latex :tangle fig-3A_1004-crc.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -173,7 +166,10 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3A_1004-eng.Rnw :noweb yes
+
+** Curva de Engel
+
+#+begin_src latex :tangle fig-3A_1004-eng.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -242,7 +238,14 @@ Axis(maxX, maxM, "$X$", "$M$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3A_1004-cpc2.Rnw :noweb yes
+
+
+* Variaciones en el precio de un bien
+
+
+** Cambios en el precio de un bien
+
+#+begin_src latex :tangle fig-3A_1004-cpc2.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -297,7 +300,10 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3A_1004-cpc3.Rnw :noweb yes
+
+** Cambios en la decisión de consumo
+
+#+begin_src latex :tangle fig-3A_1004-cpc3.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -353,7 +359,10 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3A_1004-cpc.Rnw :noweb yes
+
+** Curva precio consumo
+
+#+begin_src latex :tangle fig-3A_1004-cpc.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -412,7 +421,10 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3A_1004-dem.Rnw :noweb yes
+
+** La curva de demanda individual
+
+#+begin_src latex :tangle fig-3A_1004-dem.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -470,9 +482,5 @@ cat("{",
 Axis(maxX, maxP, "$X$", "$P_X$")
 @
 
-
-
 \end{tikzpicture}
-
-
 #+end_src

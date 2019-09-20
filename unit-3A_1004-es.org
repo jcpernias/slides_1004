@@ -18,6 +18,7 @@
 
 - Conforme aumenta la renta, $M < M' < M''$, la restricción
   presupuestaria se desplaza hacia la derecha.
+
 - Los precios no cambian: las rectas presupuestarias son paralelas.
 
 
@@ -54,6 +55,7 @@
   #+begin_export latex
   \[ \frac{\diff X}{\diff M} > 0 \]
   #+end_export
+
 - La cantidad demandada de los *bienes inferiores* disminuye a medida
   que la renta aumenta. La pendiente de la curva de Engel de un bien
   inferior es negativa.
@@ -72,6 +74,7 @@
 
 - Al disminuir el precio del bien $X$, $P_X > P'_X > P''_X$ la
   restricción presupuestaria rota hacia la derecha.
+
 - La pendiente de la recta presupuestaria es menos pronunciada cuanto
   menor es el precio de $X$.
 
@@ -104,11 +107,13 @@
 ** Bienes sustitutivos y complementarios
 - La \CPC{} muestra también como varía el consumo de $Y$ conforme
   varía, /ceteris paribus/, el precio de $X$.
+
 - El bien $X$ es *sustitutivo* del bien $Y$ si la demanda de $Y$ crece
   cuando aumenta el precio de $X$:
   #+begin_export latex
   \[ \frac{\diff Y}{\diff P_X} > 0 \]
   #+end_export
+
 - El bien $X$ es *complementario* del bien $Y$ si cae la demanda de
   $Y$ al aumentar el precio de $X$:
   #+begin_export latex

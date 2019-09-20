@@ -18,6 +18,7 @@
 
 - As income increases, $M < M' < M''$, the budget line
   shifts to the right.
+
 - Prices do not change: the budget lines are parallel.
 
 
@@ -25,7 +26,8 @@
 
 #+MATS: figcol fig-3A_1004-crc3-*.pdf 0.55
 
-- The consumer chooses a different basket for each level of monetary income.
+- The consumer chooses a different basket for each level of monetary
+  income.
 
 
 ** Income-consumption curve
@@ -53,6 +55,7 @@
   #+begin_export latex
   \[ \frac{\diff X}{\diff M} > 0 \]
   #+end_export
+
 - Demanded quantity of *inferior goods* decreases as income
   increases. The slope of the Engel curve of an inferior good is
   negative.
@@ -71,6 +74,7 @@
 
 - When the price of good $X$ decreases, $P_X > P'_X > P''_X$ the
   budget constraint pivots on the point $M/P_Y$ to the right.
+
 - The slope of the budget line is less pronounced the smaller is the
   price of $X$.
 
@@ -101,13 +105,16 @@
 
 
 ** Substitutive and complementary goods
+
 - The \CPC{} also shows how the consumption of $Y$ varies as the price
   of $X$ varies, /ceteris paribus/.
+
 - Good $X$ is a *substitute* of good $Y$ if the demand of $Y$
   increases when the price of $X$ does so:
   #+begin_export latex
   \[ \frac{\diff Y}{\diff P_X} > 0 \]
   #+end_export
+
 - Good $X$ is a *complement* of good $Y$ if the demand of $Y$
   decreases when the price of $X$ increases:
   #+begin_export latex

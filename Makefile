@@ -1,8 +1,8 @@
 SHELL := /bin/sh
 
 subject_code := 1004
-units := 1A 1B 1C 1D 1E 2A 2B 2C 5B
-unit_figs := 1A 1B 1C 1D 1E 2A 2B 2C 5B
+units := 1A 1B 1C 1D 1E 2A 2B 2C 3A 5B
+unit_figs := 1A 1B 1C 1D 1E 2A 2B 2C 3A 5B
 
 TEXI2DVI_SILENT := -q
 # TEXI2DVI_SILENT :=
@@ -15,6 +15,7 @@ builddir := $(rootdir)/build
 outdir := $(rootdir)/pdf
 elispdir := $(rootdir)/elisp
 pythondir := $(rootdir)/python
+Rdir := $(rootdir)/R
 texdir := $(rootdir)/tex
 depsdir := $(rootdir)/.deps
 imgdir := $(rootdir)/img
@@ -27,6 +28,7 @@ emacsbin := /usr/local/bin/emacs
 texi2dvibin := /usr/local/opt/texinfo/bin/texi2dvi
 envbin  := /usr/local/opt/coreutils/libexec/gnubin/env
 pythonbin := /usr/local/bin/python3
+Rscriptbin := /usr/local/bin/Rscript
 
 ## Variables
 ## ================================================================================
@@ -46,6 +48,8 @@ TEXI2DVI := $(envbin) TEXI2DVI_USE_RECORDER=yes \
 MAKEORGDEPS := $(pythonbin) $(pythondir)/makeorgdeps.py
 MAKETEXDEPS := $(pythonbin) $(pythondir)/maketexdeps.py
 MAKEFIGDEPS := $(pythonbin) $(pythondir)/makefigdeps.py
+
+RSCRIPT := $(Rscriptbin) -e
 
 docs_es := $(addsuffix _$(subject_code)-es, \
 	$(addprefix hdout-, $(units)) \
@@ -103,6 +107,12 @@ define fig-wrapper
 \begin{document}
 \input{$(realpath $(builddir))/$2}
 \end{document}
+endef
+
+
+# $(call knit,in,out)
+define knit
+"source(\"./R/common.R\"); library(knitr); options(knitr.package.root.dir=\"${rootdir}\"); knit(\"$1\", \"$2\")"
 endef
 
 vpath %.pdf $(figdir)
@@ -164,6 +174,9 @@ $(figdir)/fig-%.pdf: $(builddir)/fig-%.tex | $(figdir)
 $(depsdir)/unit-%-figs.d: unit-%-figs.org | $(depsdir)
 	$(MAKEFIGDEPS) -o $@ $<
 
+# from R to latex
+$(builddir)/%.tex: $(builddir)/%.Rnw | $(builddir)
+	$(RSCRIPT) $(call knit,$<,$@)
 
 ## automatic dependencies
 ifeq ($(INCLUDEDEPS),yes)
