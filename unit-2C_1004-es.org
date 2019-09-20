@@ -13,8 +13,9 @@
 
 
 ** Elección racional (I)
-- El consumidor selecciona, de entre todas las cestas que tiene
-  a su alcance, aquélla que le reporta un mayor bienestar:
+
+- El consumidor selecciona aquella cesta que le reporta un mayor
+  bienestar, de entre todas las que tiene a su alcance:
   #+BEGIN_EXPORT LaTeX
   \begin{gather*}
     \max_{\displaystyle\{X^*, Y^*\}} U(X, Y) \\
@@ -24,9 +25,9 @@
 
 
 ** Elección racional (y II)
-- Si se cumple el supuesto de no saturación, la cesta óptima es el
-  punto de la restricción presupuestaria por el que pasa la curva de
-  indiferencia más alta:
+
+- Si se cumple el supuesto de no saturación, la cesta óptima estará
+  sobre la restricción presupuestaria:
   #+BEGIN_EXPORT LaTeX
   \begin{gather*}
     \max_{\displaystyle\{X^*, Y^*\}} U(X, Y) \\
@@ -49,14 +50,17 @@
 
 
 ** Condición de tangencia (I)
+
 #+MATS: figcol fig-2C_1004-eq01-*.pdf 0.45
 
 - En el punto $A$: $\RMS > P_X/P_Y$.
+
 - La valoración del consumidor de una unidad más de $X$ es superior a
-  la valoración del mercado.
+  lo que tiene que pagar por ella en el mercado.
 
 
 ** Condición de tangencia (II)
+
 #+MATS: figcol fig-2C_1004-eq01a-*.pdf 0.45
 
 - El consumidor puede obtener un mayor nivel de satisfacción si
@@ -64,14 +68,17 @@
 
 
 ** Condición de tangencia (III)
+
 #+MATS: figcol fig-2C_1004-eq02-*.pdf 0.45
 
 - En el punto $B$: $\RMS < P_X/P_Y$.
-- La valoración del consumidor de una unidad más de $X$ es inferior a
-  la valoración del mercado.
+
+- La valoración del consumidor de una unidad adicional de $X$ no es
+  tan alta como lo que tiene que pagar por ella en el mercado.
 
 
 ** Condición de tangencia (IV)
+
 #+MATS: figcol fig-2C_1004-eq02a-*.pdf 0.45
 
 - El consumidor puede obtener un mayor nivel de satisfacción si
@@ -79,30 +86,50 @@
 
 
 ** Condición de tangencia (y V)
+
 #+MATS: figcol fig-2C_1004-eq03-*.pdf 0.45
 
 - En el punto $E$: $\RMS = P_X/P_Y$.
+
 - La valoración del consumidor de una unidad adicional de $X$ coincide
   con la valoración del mercado.
+
 - El consumidor no puede aumentar su satisfacción variando el consumo
   de $X$.
 
 
+** Condiciones de óptimo
+
+- Solución interior ($X^*, Y^* > 0$):
+
+  + Restricción presupuestaria:
+    #+begin_export latex
+      \[ M = P_{X} X + P_{Y} Y \]
+    #+end_export
+
+  + Condición de tangencia:
+    #+begin_export latex
+    \[ \RMS = P_X/P_Y \]
+    #+end_export
+
+
 ** Ejemplo: solución interior (I)
+
 - Función de utilidad: $U(X, Y) = X Y$.
+
 - Precios: $P_X = 2$ € por unidad; $P_Y = 2$ € por unidad.
+
 - Renta monetaria: $M = 70$ €.
 
 
 ** Ejemplo: solución interior (y II)
+
 #+MATS: figcol fig-2C_1004-ej01-*.pdf 0.55
 
 - Solución interior:
   #+begin_export latex
   \[ X^* = 17.5; Y^*=17.5. \]
   #+end_export
-
-
 
 
 * Soluciones de esquina
@@ -134,30 +161,32 @@
   unidades del bien $Y$.
 
 
-** Ejemplo: solución de esquina (I)
+** Condiciones de óptimo
+
+- Sólo compra $X$ ($X^* = M/P_X, Y^* = 0$):
+  #+begin_export latex
+  \[ \RMS > P_X/P_Y \]
+  #+end_export
+
+- Sólo compra Y ($X^* = 0, Y^* = M/P_Y$):
+  #+begin_export latex
+  \[ \RMS < P_X/P_Y \]
+  #+end_export
+
+** Ejemplo (I)
+
 - Función de utilidad: $U(X, Y) = (X + 50) Y$.
+
 - Precios: $P_X = 2$ € por unidad; $P_Y = 2$ € por unidad.
+
 - Renta monetaria: $M = 70$ €.
 
 
-** Ejemplo: solución de esquina (y II)
+** Ejemplo (y II)
+
 #+MATS: figcol fig-2C_1004-ej02-*.pdf 0.55
 
 - Solución de esquina:
   #+begin_export latex
   \[ X^* = 0; Y^*=35. \]
   #+end_export
-
-
-** Condiciones de óptimo
-- Solución interior:
-  #+begin_export latex
-  \[ \RMS = P_X/P_Y; \quad X^*, Y^* > 0. \]
-  #+end_export
-- Soluciones de esquina:
-  #+BEGIN_EXPORT LaTeX
-    \begin{gather*}
-      \RMS > P_X/P_Y; \quad X^* = M/P_X, Y^* = 0. \\
-      \RMS < P_X/P_Y; \quad X^* = 0, Y^* = M/P_Y.
-    \end{gather*}
-  #+END_EXPORT
