@@ -12,13 +12,13 @@
 * La conducta del consumidor
 
 
-** El consumidor
+** Los consumidores
 
-- El *consumidor* dispone de una *renta monetaria*, $M$, para comprar
-  en los diferentes mercados de bienes en un determinado periodo de
-  tiempo.
+- Cada *consumidor* dispone de una cantidad fija de *renta monetaria*,
+  $M$, con la que puede comprar en los diferentes mercados de bienes.
 
-- Por cada unidad comprada de un bien paga siempre el mismo precio.
+- Un consumidor puede comprar cualquier número de unidades de un bien
+  al precio de mercado.
 
 
 ** Simplificaciones
@@ -32,7 +32,7 @@
 
 ** Cestas de consumo (I)
 
-- Una *cesta de consumo* es una combinación de unidades
+- Una *cesta de consumo* es un par de números que representan unidades
   del bien $X$ y unidades del bien $Y$.
 
 
@@ -40,41 +40,41 @@
 
 #+MATS: figcol fig-2A_1004-xy-*.pdf 0.45
 
-- En la cesta $A$ hay 1 unidad del bien $X$ y 3 unidades
-  del bien $Y$.
+- La cesta $A$ se compone de 1 unidad del bien $X$ y 3 unidades del
+  bien $Y$.
 
-- En la cesta $B$ sólo hay cuatro unidades del bien $X$.
+- En la cesta $B$ sólo hay 4 unidades del bien $X$ y 0 unidades del
+  bien $Y$.
 
 
 ** La elección racional
 
-- De entre todas las cestas que tiene a su alcance, el consumidor
-  *racional* selecciona aquélla que le reporta un mayor bienestar.
+- El consumidor *racional* selecciona la mejor cesta de entre todas
+  las que puede comprar.
 
 
 * La restricción presupuestaria
 
-
-** Gasto
+** El gasto del consumidor
 
 - El *gasto total* de un consumidor que elige la cesta $(X_0, Y_0)$ es
   $P_X X_0 + P_Y Y_0$ euros.
 
-- El gasto en el bien $X$ es $P_X X_0$ euros.
+- $P_X X_0$ es la cantidad de dinero que gasta en $X$.
 
-- El gasto en el bien $Y$ es $P_Y Y_0$ euros.
+- $P_Y Y_0$ es la cantidad de dinero que gasta en $Y$.
 
 
-** El conjunto de oportunidades
+** El conjunto presupuestario
 
-- El *conjunto de oportunidades* está formado por todas las cestas que
-  puede comprar un consumidor:
+- El *conjunto presupuestario* de un consumidor está formado por todas
+  las cestas que puede comprar:
   #+begin_export latex
   \[ M \geq P_X X + P_Y Y \]
   #+end_export
 
 
-** La restricción presupuestaria (I)
+** La recta presupuestaria (I)
 
 - La *restricción presupuestaria* es el conjunto de cestas que agotan
   la renta del consumidor:
@@ -88,27 +88,27 @@
   #+end_export
 
 
-** La restricción presupuestaria (II)
+** La recta presupuestaria (II)
 
 #+MATS: figcol fig-2A_1004-rp1-*.pdf 0.5
 
-- Los puntos de corte con los ejes son los *consumos máximos* de cada
-  bien: $M/P_X$ y $M/P_Y$.
+- Los puntos de corte con los ejes indican el número máximo de unidades
+  que el consumidor puede comprar de cada bien: $M/P_X$ y $M/P_Y$.
 
 - La pendiente es igual al *precio relativo* con signo negativo:
   $-P_X/P_Y$.
 
 
-** La restricción presupuestaria (y III)
+** La recta presupuestaria (y III)
 
 #+MATS: figcol fig-2A_1004-rp3-*.pdf 0.45
 
-- Una cesta como la $A$ es inaccesible dados los precios y la renta
+- Una cesta como la $A$ es inasequible dados los precios y la renta
   del consumidor.
 
 - El consumidor puede adquirir la cesta $B$ sin gastar toda su renta.
 
-- El consumidor gasta toda su renta si compra la cesta $C$.
+- El consumidor gasta toda su renta si elige la cesta $C$.
 
 
 ** El precio relativo
@@ -116,7 +116,7 @@
 - El *precio relativo* del bien $X$, $P_X / P_Y$, es el precio de $X$
   medido en unidades de $Y$.
 
-- Indica a qué tasa los consumidores que gastan toda su renta pueden
+- Es la tasa a la que consumidores que gastan toda su renta pueden
   sustituir un bien por otro.
 
 
@@ -137,9 +137,10 @@
   #+end_export
 
 
-* Variaciones en los precios y en la renta
+* Cambios en los precios y en la renta
 
-** Variaciones en un precio (I)
+
+** Cambios en un precio (I)
 
 #+MATS: figcol fig-2A_1004-rp6-*.pdf 0.45
 
@@ -148,10 +149,10 @@
   \[ P'_X < P_X\]
   #+end_export
 
-- El conjunto de oportunidades se expande.
+- El conjunto presupuestario se expande.
 
 
-** Variaciones en un precio (y II)
+** Cambios en un precio (y II)
 
 #+MATS: figcol fig-2A_1004-rp7-*.pdf 0.45
 
@@ -160,10 +161,10 @@
   \[ P'_Y > P_Y \]
   #+end_export
 
-- El conjunto de oportunidades se contrae.
+- El conjunto presupuestario se contrae.
 
 
-** Variaciones en la renta
+** Cambios en la renta
 
 #+MATS: figcol fig-2A_1004-rp8-*.pdf 0.45
 
@@ -172,10 +173,10 @@
   \[ M' > M \]
   #+end_export
 
-- El conjunto de oportunidades se expande.
+- El conjunto presupuestario se expande.
 
 
-** Variaciones en precios y renta (I)
+** Cambios en precios y renta (I)
 
 #+MATS: figcol fig-2A_1004-rp10-*.pdf 0.45
 
@@ -187,16 +188,16 @@
   sí lo son.
 
 
-** Variaciones en precios y renta (y II)
+** Cambios en precios y renta (y II)
 
 #+MATS: figcol fig-2A_1004-rp11-*.pdf 0.45
 
-- Cambio de precios y renta en la misma proporción:
+- Los dos precios y la renta cambian en la misma proporción:
   #+begin_export latex
   \[ P'_{X} = k P_{X}; P'_{Y} = k P_{Y};  M' = k M \]
   #+end_export
 
-- El conjunto de oportunidades no cambia.
+- El conjunto presupuestario no cambia.
 
 
 * Extensiones
@@ -204,15 +205,14 @@
 
 ** Bienes compuestos
 
-- Construcción teórica útil cuando queremos centrarnos en el consumo
-  de un bien $X$.
+- A menudo sólo estamos interesados en un bien: $X$.
 
 - Usamos un *bien compuesto* en el papel del bien $Y$: la cantidad de
   dinero que el consumidor gasta en otros bienes distintos de $X$.
 
 - Dado que $Y$ se mide en euros, $P_Y = 1$.
 
-- Restricción presupuestaria:
+- Recta presupuestaria:
   #+begin_export latex
   \[ M = P_X X + Y \]
   #+end_export
@@ -236,18 +236,20 @@
 
 #+MATS: figcol fig-2A_1004-rac1-*.pdf 0.45
 
-- *Racionamiento*: El consumo del bien $X$ no puede ser mayor que
-  $\bar{X}$.
+- *Racionamiento*: El consumidor no puede comprar más de $\bar{X}$
+  unidades del bien $X$.
 
 
 ** Subvenciones
 
 #+MATS: figcol fig-2A_1004-orp2-*.pdf 0.45
 
-- Las primeras $\bar{X}$ unidades de $X$ se venden a un precio
-  reducido $P'_X$.
+- El consumidor obtiene las primeras $\bar{X}$ unidades de $X$ a un
+  precio reducido $P'_X$.
 
-- Las restantes unidades se venden al precio completo $P_X > P'_X$.
+- Tiene que pagar el precio completo, $P_X > P'_X$, por unidades
+  adicionales.
+
 
 ** Descuentos por volumen
 

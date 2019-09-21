@@ -10,168 +10,163 @@
 - Varian: :: /Intermediate Microeconomics/. Chapters 2, 3, 4 and 5.
 #+end_bibbox
 
-* Consumer’s Behavior
+* Consumer behavior
 
+** Consumers
 
-** Consumer
-- *Consumer* has, in a given period of time, an
-  *income* of $M$ euros.
-- He can buy in the different markets of goods.
-- For each unit purchased of a good, he always pays the same price.
+- Each *consumer* has a fixed amount of *monetary income*, $M$, that
+  can be spent on the different good markets.
+
+- A consumer can buy any number of units of a good at the prevailing
+  market price.
 
 
 ** Simplifications
-- Only two goods $X$ and $Y$, with prices $P_X$ and $P_Y$.
+
+- Only two goods, $X$ and $Y$, with prices $P_X$ and $P_Y$.
+
 - Perfect divisibility.
-- A unique period of time.
+
+- Only one time period.
 
 
-** Market basket (I)
-- A *market basket* is a certain combination of units of good $X$ and units of good $Y$.
-- It represents how many units of each good are consumed in a certain period of time.
+** Consumption bundles (I)
+
+- A *consumption bundle* is a pair of numbers representing units of
+  good $X$ and units of good $Y$.
 
 
-** Market baskets (and II)
+** Consumption bundles (and II)
+
 #+MATS: figcol fig-2A_1004-xy-*.pdf 0.45
 
-- Market basket $A$ is composed by 1 unit of good $X$ and 3 units of
-  good $Y$: $A = (1, 3)$.
-- $B = (4, 0)$.
+- The consumption bundle $A$ is made up of 1 unit of good $X$ and 3
+  units of good $Y$.
+
+- There are only 4 units of $X$ in bundle $B$ and 0 units of $Y$.
 
 
 ** Rational choice
-- Between all disposable market baskets, a *rational* consumer chooses
-  the one that generates greater well-being.
 
-
+- The *rational* consumer selects the best possible bundle he can
+  afford.
 
 
 * The budget constraint
 
+** Consumer expenditures
 
-** Expenditure
-- If a consumer chooses the market basket $(X_0, Y_0)$, his *total
-  expenditure* is $P_X X_0 + P_Y Y_0$ euros.
-- Expenditure in good $X$: $P_X X_0$ euros.
-- Expenditure in good $Y$: $P_Y Y_0$ euros.
+- The *total expenditure* of a consumer choosing the market basket
+  $(X_0, Y_0)$ is $P_X X_0 + P_Y Y_0$ euros.
+
+- $P_X X_0$ is the amount of money spent on $X$.
+
+- $P_Y Y_0$ is the amount of money spent on $Y$.
 
 
-** Set of opportunities
-- Consumer cannot borrow or lend.
-- Total expenditure cannot be higher than income.
-- Consumer can choose any basket of his *set of opportunities*:
+** The budget set
+
+- The *budget set* of a consumer comprises all the bundles he can
+  afford:
   #+begin_export latex
   \[ M \geq P_X X + P_Y Y \]
   #+end_export
 
+#+latex: \clearpage{}
 
-** The budget constraint (I)
-- The *budget constraints* are all the baskets which imply an
-  expenditure exactly equal to consumer’s income:
+
+** The budget line (I)
+
+- The *budget line* are all the baskets that exhaust the consumer's
+  income:
   #+begin_export latex
   \[ M = P_X X + P_Y Y \]
   #+end_export
-- Another way of expressing it indicates the maximum consumption of Y
-  when consumption of X takes a determined value:
+
+- Another expression:
   #+begin_export latex
   \[ Y = \frac{M}{P_Y} - \frac{P_X}{P_Y} X \]
   #+end_export
 
 
-** The budget constraint (and II)
+** The budget line (II)
+
 #+MATS: figcol fig-2A_1004-rp1-*.pdf 0.5
 
-- The intersection points with the axes are the *maximum consumptions*
-  of each good: $M/P_X$ and $M/P_Y$.
-- The slope of the Budget constraint is equal to the *relative price*
-  with negative sign: $-P_X/P_Y$.
+- The intersection points with the axes show the maximum number of
+  units the consumer can buy of each good: $M/P_X$ and $M/P_Y$.
+
+- The slope of the budget line is the *relative price* with negative
+  sign: $-P_X/P_Y$.
 
 
-** Relative price
-- The *relative price* is the Price of a good measured in units of
-  another good.
-- Indicates at which rate agood may be substituted for another in the
-  market.
-# - Example: Price of 1 kg of bread: $3$ €. Price of 1 l of water: $0.30$
-#   €. Relative price: \[ \frac{P_P}{P_A} = \frac{3}{0.3} = 10\text{\ l
-#   of wáter per kg of bread} \]
+** The budget line (and III)
 
-
-** Example (I)
-- The set of opportunities when $M = 120$ €, $P_X = 6$ €/u. and $P_Y =
-  3$ €/u. consists of all baskets that satisfy:
-  #+begin_export latex
-  \[ 120 \geq 6 X + 3 Y \]
-  #+end_export
-- The budget constraint in this case is:
-  #+begin_export latex
-  \[ 120 = 6 X + 3 Y \]
-  #+end_export
-- Another way of expressing it:
-  #+begin_export latex
-  \[ Y = 40 - 2 X \]
-  #+end_export
-
-
-** Example (II)
-
-#+MATS: figcol fig-2A_1004-rp1b-*.pdf 0.45
-
-- Maximum consumption of $X$: $20$ units.
-- Maximum consumption of $Y$: $40$ units.
-- Realtive price: $P_X/P_Y = 2$ units of $Y$ for each unit of $X$.
-
-
-** Example (and III)
 #+MATS: figcol fig-2A_1004-rp3-*.pdf 0.45
 
-- Expenditure associated to the basket
-  - $A$: $6\cdot 5 + 3 \cdot 35 = 135 € > M$
-  - $B$: $6\cdot 12 + 3 \cdot 5 =  87 € < M$
-  - $C$: $6\cdot 5 + 3 \cdot 30 = 120 € = M$
+- A bundle like $A$ is unaffordable at the current prices and the
+  consumer's income.
+
+- The consumer does not spend all his income if he purchases $B$.
+
+- The consumer exhausts his income if he chooses $C$.
 
 
-** Relative price and opportunity cost (I)
+
+** The relative price
+
+- The *relative price* of good $X$, $P_X/P_Y$, is the price of $X$ in
+  units of good $Y$.
+
+- It is the rate at which consumers that spend all their income may
+  substitute one good for another.
+
+
+** The opportunity cost
+
 - If the consumer spends all his income, the *opportunity cost* of
   consuming an additional unit of good $X$ are the units of good $Y$
-  he has to refuse to.
+  he has to give up.
 
 
-** Relative price and opportunity cost (and II)
+** The relative price and the opportunity cost
+
 #+MATS: figcol fig-2A_1004-rp5-*.pdf 0.45
 
-- For each additional unit of $X$, consumer renounces 2
-  units of $Y$:
+- The opportunity cost coincides with the relative price:
   #+begin_export latex
-  \[\left| \frac{\Delta Y}{\Delta X}\right| = \frac{20}{10} = 2  \]
-  #+end_export
-- Opportunity cost coincides with the relative price:
-  #+begin_export latex
-  \[ \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_X}{P_Y} = \frac{6}{3} = 2\]
+  \[ \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_X}{P_Y} \]
   #+end_export
 
 
-** Variations in a price (I)
+
+* Changes in prices and income
+
+** Changes in a price (I)
+
 #+MATS: figcol fig-2A_1004-rp6-*.pdf 0.45
 
-- A decrease in the price of $X$:
+- A reduction of the price of $X$:
   #+begin_export latex
   \[ P'_X < P_X\]
   #+end_export
-- The set of opppotunities expands.
+
+- The budget set expands.
 
 
-** Variations in a price (and II)
+** Changes in a price (and II)
+
 #+MATS: figcol fig-2A_1004-rp7-*.pdf 0.45
 
-- An increase in the Price of $Y$:
+- An increase in the price of $Y$:
   #+begin_export latex
   \[ P'_Y > P_Y \]
   #+end_export
-- The set of opportunities shrinks.
+
+- The budget set shrinks.
 
 
-** Variations in income
+** Changes in income
 
 #+MATS: figcol fig-2A_1004-rp8-*.pdf 0.45
 
@@ -179,27 +174,32 @@
   #+begin_export latex
   \[ M' > M \]
   #+end_export
-- The slope of the constraint does not vary.
-- The set of opportunities expands.
+
+- The budget set expands.
 
 
+** Changes in prices and income (I)
 
-** Variations in prices and income (I)
 #+MATS: figcol fig-2A_1004-rp10-*.pdf 0.45
 
-- Reduction of $P_X$, $P'_X < P_X$, and decrease of $M$, $M' < M$.
+- A decrease of $P_X$, $P'_X < P_X$, and a decrease of $M$, $M' < M$.
+
 - Some options are no longer available.
-- But other options which were not available, now are possible.
+
+- But there are other options which were not affordable, and now they
+  are.
 
 
-** Variations in prices and income (and II)
+** Changes in prices and income (and II)
+
 #+MATS: figcol fig-2A_1004-rp11-*.pdf 0.45
 
-- Changes in prices and income in the same proportion:
+- Both prices and income change in the same proportion:
   #+begin_export latex
   \[ P'_{X} = k P_{X}; P'_{Y} = k P_{Y};  M' = k M \]
   #+end_export
-- The set of opportunities does not vary.
+
+- The budget set does not change.
 
 
 
@@ -208,22 +208,31 @@
 
 
 ** Composite goods
-- We focus on the consumption of a good: $X$.
-- Good $Y$ is a *composite good*: $Y$ represents the amount of money
-  the consumer spends on other goods.
+
+- Often we are only interested in one good: $X$.
+
+- We use a *composite good* playing the role of good $Y$: the amount
+  of money the consumer spends on other goods different from $X$.
+
 - Given that $Y$ is measured in euros, $P_Y = 1$.
-- Budget constraint:
+
+- Budget line:
   #+begin_export latex
   \[ M = P_X X + Y \]
   #+end_export
 
 
-** Other cases
-- The Budget constraint is just a straight line in the case in which:
-  1. the consumer can buy any amount of goods X and Y;
-  2. prices, $P_X$ and $P_Y$, are independent of the quantities
+** Non-linear budget constraints
+
+- The budget constraint is linear if:
+
+  1. the consumer can buy any amount of goods $X$ and $Y$ he can
+     afford; and
+
+  2. the prices, $P_X$ and $P_Y$, are independent of the quantities
      purchased by the consumer.
-- If either of these two conditions is not fulfilled, the Budget
+
+- If either of these two conditions is not fulfilled, the budget
   constraint is not linear.
 
 
@@ -231,17 +240,33 @@
 
 #+MATS: figcol fig-2A_1004-rac1-*.pdf 0.45
 
-- *Rationing*: The consumption of good $X$ cannot be greater than $\bar{X}$, an amount established by the Government.
+- *Rationing*: The consumer cannot buy more than $\bar{X}$ units of
+  good $X$.
 
 
 ** Subsidies
+
 #+MATS: figcol fig-2A_1004-orp2-*.pdf 0.45
 
-- The first $\bar{X}$ units of $X$ are sold at a reduced price $P'_X$.
-- Additional units are sold at their full price $P_X > P'_X$.
+- The consumer get the first $\bar{X}$ units of $X$ at a reduced price
+  $P'_X$.
+
+- He pays the full price, $P_X > P'_X$, for additional units.
+
+
+** Quantity discounts
+
+#+MATS: figcol fig-2A_1004-orp4-*.pdf 0.45
+
+- The first $\bar{X}$ units of $X$ are sold at the normal price $P_X$.
+
+- Further units are sold at a lower price $P'_X < P_X$.
+
 
 
 ** Donations
+
 #+MATS: figcol fig-2A_1004-orp3-*.pdf 0.45
 
-- The consumer does not pay anything for the first $\bar{X}$ units of $X$.
+- The consumer does not pay anything for the first $\bar{X}$ units of
+  $X$.
