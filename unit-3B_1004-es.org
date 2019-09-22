@@ -12,24 +12,27 @@
 * Introducción
 
 
-** Ley de la demanda
+** Ley de la demanda (I)
 
 #+MATS: figcol fig-3B_1004-eres20-*.pdf 0.55
 
-- Un aumento /ceteris paribus/ de $P_X$ reduce la cantidad demandada
+- Un aumento de $P_X$, /ceteris paribus/, reduce la cantidad demandada
   de $X$.
 
 
-** ¿Ley de la demanda?
+** Ley de la demanda (y II)
 
 #+MATS: figcol fig-3B_1004-eres22-*.pdf 0.55
-- No hay nada en el análisis del consumidor que excluya la posibilidad
-  de que la cantidad demandada aumente cuando aumenta el precio.
+
+- El análisis del consumidor no excluye la posibilidad de que la
+  cantidad demandada aumente con el propio precio.
 
 
 ** Bienes Giffen
-- Un *bien Giffen* es un bien cuya curva de demanda tiene pendiente positiva.
-- ¿Bajo qué condiciones tiene pendiente positiva la curva de demanda?
+
+- Un *bien Giffen* tiene curva de demanda con pendiente positiva.
+
+- ¿Bajo qué condiciones nos encontraríamos ante un bien Giffen?
 
 
 
@@ -37,62 +40,77 @@
 
 
 ** Efectos del cambio de un precio
-Si el precio del bien $X$ aumenta:
-- Cambian los precios relativos. El consumidor trata de *sustituir* el
-  consumo del bien $X$, ahora relativamente más caro, por el de otros
-  bienes.
-- El consumidor dispone de menos opciones de consumo. Su *renta real*
-  ha disminuido como consecuencia del aumento del precio.
+
+- Si el precio del bien $X$ aumenta:
+
+  + Cambian los precios relativos. El consumidor trata de *sustituir*
+    el consumo del bien $X$, que ahora es relativamente más caro, por
+    el de otros bienes.
+
+  + El consumidor dispone de menos opciones de consumo. Su *renta real*
+    ha disminuido como consecuencia del aumento del precio.
 
 
 ** Efecto sustitución y efecto renta
+
 - El *efecto total*, \ET, de un cambio de $P_X$ es la
   variación en la cantidad demandada del bien $X$.
+
 - El *efecto sustitución*, \ES, es la parte del efecto total
-  que puede atribuirse exclusivamente al cambio en los precios
-  relativos.
+  que puede atribuirse exclusivamente al cambio en el precio
+  relativo.
+
 - El *efecto renta*, \ER, es la parte del efecto total
   que se debe únicamente al cambio en la renta real.
+
 - $\ET = \ES + \ER$
 
 
 ** Descomposición del efecto total (I)
+
 - ¿Cómo podemos determinar qué parte del cambio se debe al efecto
   sustitución y qué parte se debe al efecto renta?
-- Planteemos cuál sería la cantidad demandada por el consumidor si su
-  renta real no hubiese cambiado y sólo se hubiesen alterado los
-  precios relativos: $X_H$.
+
+- $X_H$: la cantidad que demandaría el consumidor si su renta real no
+  hubiese cambiado y sólo hubiesen cambiado el precio relativos.
+
 - Podemos obtener el efecto sustitución y el efecto renta comparando
   $X_H$ con las cantidades demandadas antes de la subida del precio,
-  $X_0$ y después de la subida del precio, $X_1$.
+  $X_0$, y después de la subida del precio, $X_1$.
 
 
 ** Descomposición del efecto total (y II)
 
 - A partir de la cantidad demandada inicial, $X_0$, la cantidad
   demandada final, $X_1$ y la cantidad que se hubiese demandado si
-  sólo hubiesen cambiado los precios relativos, $X_H$, podemos
-  determinar:
-| Efecto sustitución: | $X_H - X_0$ | Sólo cambian los precios   |
-|                     |             | relativos.                 |
-| Efecto renta:       | $X_1 - X_H$ | Sólo cambia la renta real. |
-|                     |             |                            |
-| Efecto total:       | $X_1 - X_0$ | Cambian precios relativos  |
-|                     |             | y la renta real.           |
+  sólo hubiese cambiado el precio relativo, $X_H$:
+| Efecto sustitución: | $X_H - X_0$ | Sólo cambia el precio relativo. |
+| Efecto renta:       | $X_1 - X_H$ | Sólo cambia la renta real.      |
+| Efecto total:       | $X_1 - X_0$ | Cambian precios relativos y     |
+|                     |             | la renta real.                  |
 
 
 ** La descomposición de Hicks
 
-- Hicks equipara la renta real con el nivel de utilidad.
-- Si sólo cambian los precios relativos y la renta real es constante, la cesta óptima debe de estar en la misma curva de indiferencia que la elección inicial.
-- Para descomponer el efecto total, buscamos un punto de la curva de indiferencia inicial donde la \RMS{} coincida con los precios relativos finales.
+- [[https://en.wikipedia.org/wiki/John_Hicks][Hicks]] identifica renta real con nivel de utilidad.
+
+- Si cambia el precio relativo y la renta real es constante, la nueva
+  elección óptima debe de estar en la misma curva de indiferencia que
+  la elección inicial.
+
+- $X_H$: buscamos un punto de la curva de indiferencia inicial donde
+  la \RMS{} coincida con los precios relativos finales.
 
 
 ** Ejemplo (I)
-- Función de utilidad: $U(X, Y) = X^{2/3}Y^{1/3}$.
-- Renta monetaria: $M = 72$ €.
-- Precios iniciales: $P_X = 2$ €/ud. y $P_Y = 1$ €/ud.
-- Precio final de $X$: $P'_X = 16$ €/ud.
+
+- Función de utilidad: $U(X, Y) = X^{2/3}Y^{1/3}$
+
+- Renta monetaria: $M = \money{72}$
+
+- Precios iniciales: $P_X = \price{2}$ y $P_Y = \price{1}$
+
+- Precio final de $X$: $P'_X = \price{16}$q
 
 
 ** Ejemplo (II)
@@ -100,9 +118,9 @@ Si el precio del bien $X$ aumenta:
 #+MATS: figcol fig-3B_1004-eres02-*.pdf 0.55
 
 - Efecto total del aumento de $P_X$:
-  #+BEGIN_EXPORT LATEX
-  \[ \ET = 3 - 24 = -21 \]
-  #+END_EXPORT
+  #+begin_export latex
+  \[ \ET = 3 - 24 = \units{-21} \]
+  #+end_export
 
 
 ** Ejemplo (III)
@@ -110,7 +128,9 @@ Si el precio del bien $X$ aumenta:
 #+MATS: figcol fig-3B_1004-eres03-*.pdf 0.55
 
 - $E_H$: elección si la renta real no cambia.
+
 - $E_H$ está en la misma curva de indiferencia que $E_0$.
+
 - La \RMS{} en $E_H$ es igual al precio relativo final: $P'_X/P_Y$.
 
 
@@ -118,31 +138,40 @@ Si el precio del bien $X$ aumenta:
 
 #+MATS: figcol fig-3B_1004-eres04-*.pdf 0.55
 
-- $\ES = 12 - 24 = -12$.
-- $\ER = 3 - 12 = -9$.
-- $\ET = \ES + \ER = -21$.
+- $\ES = 12 - 24 = \units{-12}$
+
+- $\ER = 3 - 12 = \units{-9}$
+
+- $\ET = \ES + \ER = \units{-21}$
 
 
 
 * Signos de los efectos
 
+
 ** El signo del efecto sustitución
+
 - El *efecto sustitución* siempre tiene *signo negativo*.
+
 - La variación en la cantidad debida al efecto sustitución tiene el
   signo contrario a la variación en el precio.
 
 
 ** El signo del efecto renta
+
 - Un aumento del precio implica un disminución de la renta real.
-- Si el *bien es normal*, un aumento del precio disminuye la demanda
-  como consecuencia del efecto renta. En este caso, el *efecto renta*
-  tiene *signo negativo*.
-- Si el *bien es inferior*, un precio mayor hace que aumente la
-  demanda vía el efecto renta. En este caso el *efecto renta* tiene
-  *signo positivo*.
+
+- *Bienes normales*: un aumento del precio disminuye la demanda como
+  consecuencia del efecto renta. En este caso, el *efecto renta* tiene
+  *signo negativo*.
+
+- *Bienes inferiores*: un mayor precio hace que aumente la demanda vía
+  el efecto renta. En este caso el *efecto renta* tiene *signo
+  positivo*.
 
 
 ** Bienes normales (I)
+
 - El *efecto total* de un *bien normal* tiene *signo negativo*:
   #+begin_export latex
   \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  +\underset{(-)}{\ER} \]
@@ -152,9 +181,10 @@ Si el precio del bien $X$ aumenta:
 ** Bienes normales (y II)
 
 #+MATS: figcol fig-3B_1004-eres10-*.pdf 0.55
+
 - El efecto sustitución y el efecto renta se refuerzan mutuamente.
 
-- Curva de demanda con pendiente negativa.
+- La pendiente de la curva de demanda es negativa.
 
 
 ** Bienes inferiores (I)
@@ -164,14 +194,20 @@ Si el precio del bien $X$ aumenta:
   #+begin_export latex
   \[ \underset{(?)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \]
   #+end_export
+
 - Frecuentemente, la magnitud del efecto renta es pequeña comparada
-  con la del efecto sustitución.
-  #+BEGIN_EXPORT LATEX
-  \[ |\ER| < |\ES| \]
-  #+END_EXPORT
-- En este caso, la demanda de un bien inferior tiene pendiente negativa:
+  con el efecto sustitución.
   #+begin_export latex
-  \[ \underset{(-)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad \big(|\ER| < |\ES|\big) \]
+  \[ |\ER| < |\ES| \]
+  #+end_export
+
+- En este caso, la pendiente de la curva de demanda es negativa:
+  #+begin_export latex
+  \[
+    \underset{(-)}{\ET} =
+    \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad
+    \big(|\ER| < |\ES|\big)
+  \]
   #+end_export
 
 
@@ -180,7 +216,8 @@ Si el precio del bien $X$ aumenta:
 #+MATS: figcol fig-3B_1004-eres11-*.pdf 0.55
 
 - El efecto renta contrarresta parcialmente el efecto sustitución.
-- Curva de demanda con pendiente negativa.
+
+- La curva de demanda tiene pendiente negativa.
 
 
 ** Bienes Giffen (I)
@@ -188,7 +225,11 @@ Si el precio del bien $X$ aumenta:
 - Un bien Giffen es un bien inferior cuyo efecto renta es mayor, en
   términos absolutos, que el efecto sustitución:
   #+begin_export latex
-  \[ \underset{(+)}{\ET} = \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad \big(|\ER| > |\ES|\big) \]
+  \[
+    \underset{(+)}{\ET} =
+    \underset{(-)}{\ES}  + \underset{(+)}{\ER} \qquad
+    \big(|\ER| > |\ES|\big)
+  \]
   #+end_export
 
 
@@ -196,16 +237,21 @@ Si el precio del bien $X$ aumenta:
 
 #+MATS: figcol fig-3B_1004-eres12-*.pdf 0.55
 
-- El efecto renta es mayor en términos absolutos que el efecto sustitución.
-- Curva de demanda con pendiente positiva.
+- El efecto renta es mayor en términos absolutos que el efecto
+  sustitución.
+
+- La curva de demanda tiene pendiente positiva.
 
 
 ** Bienes Giffen (y III)
 
 - ¿Bajo qué condiciones podemos encontrar un bien Giffen?
+
   + Bien inferior.
-  + Efecto sustitución pequeño (por falta de buenos sustitutos, por ejemplo).
-  + Efecto renta grande (el gasto en el bien representa una parte importante del presupuesto de los consumidores, por ejemplo).
+
+  + Efecto sustitución pequeño.
+
+  + Efecto renta grande.
 
 
 
