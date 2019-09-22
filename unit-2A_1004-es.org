@@ -55,6 +55,7 @@
 
 * La restricción presupuestaria
 
+
 ** El gasto del consumidor
 
 - El *gasto total* de un consumidor que elige la cesta $(X_0, Y_0)$ es
@@ -76,8 +77,8 @@
 
 ** La recta presupuestaria (I)
 
-- La *restricción presupuestaria* es el conjunto de cestas que agotan
-  la renta del consumidor:
+- La *recta presupuestaria* es el conjunto de cestas que agotan la
+  renta del consumidor:
   #+begin_export latex
   \[ M = P_X X + P_Y Y \]
   #+end_export

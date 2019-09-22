@@ -12,6 +12,7 @@
 
 * Consumer behavior
 
+
 ** Consumers
 
 - Each *consumer* has a fixed amount of *monetary income*, $M$, that
@@ -54,6 +55,7 @@
 
 * The budget constraint
 
+
 ** Consumer expenditures
 
 - The *total expenditure* of a consumer choosing the market basket
@@ -77,7 +79,7 @@
 
 ** The budget line (I)
 
-- The *budget line* are all the baskets that exhaust the consumer's
+- The *budget line* is the set of bundles that exhaust the consumer's
   income:
   #+begin_export latex
   \[ M = P_X X + P_Y Y \]
@@ -141,6 +143,7 @@
 
 
 * Changes in prices and income
+
 
 ** Changes in a price (I)
 
