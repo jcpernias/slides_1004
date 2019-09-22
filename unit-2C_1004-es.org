@@ -14,26 +14,26 @@
 
 ** Elección racional (I)
 
-- El consumidor selecciona aquella cesta que le reporta un mayor
-  bienestar, de entre todas las que tiene a su alcance:
-  #+BEGIN_EXPORT LaTeX
+- El consumidor selecciona, de entre todas las que tiene a su alcance,
+  aquella cesta que le reporta un mayor bienestar:
+  #+Begin_export latex
   \begin{gather*}
     \max_{\displaystyle\{X^*, Y^*\}} U(X, Y) \\
     \text{sujeto a\ } M \geq P_{X} X + P_{Y} Y
   \end{gather*}
-  #+END_EXPORT
+  #+end_export
 
 
 ** Elección racional (y II)
 
 - Si se cumple el supuesto de no saturación, la cesta óptima estará
-  sobre la restricción presupuestaria:
-  #+BEGIN_EXPORT LaTeX
+  sobre la recta presupuestaria:
+  #+begin_export latex
   \begin{gather*}
     \max_{\displaystyle\{X^*, Y^*\}} U(X, Y) \\
     \text{sujeto a\ } M = P_{X} X + P_{Y} Y
   \end{gather*}
-  #+END_EXPORT
+  #+end_export
 
 
 
@@ -42,6 +42,7 @@
 
 
 ** Soluciones interiores
+
 - *Solución interior*: la cesta óptima $(X^*, Y^*)$ contiene alguna
   unidad de cada uno de los bienes:
   #+begin_export latex
@@ -55,15 +56,15 @@
 
 - En el punto $A$: $\RMS > P_X/P_Y$.
 
-- La valoración del consumidor de una unidad más de $X$ es superior a
-  lo que tiene que pagar por ella en el mercado.
+- La valoración del consumidor de una unidad más de $X$ es superior al
+  precio relativo de $X$.
 
 
 ** Condición de tangencia (II)
 
 #+MATS: figcol fig-2C_1004-eq01a-*.pdf 0.45
 
-- El consumidor puede obtener un mayor nivel de satisfacción si
+- El consumidor puede obtener un mayor nivel de utilidad si
   incrementa su consumo de $X$.
 
 
@@ -73,15 +74,15 @@
 
 - En el punto $B$: $\RMS < P_X/P_Y$.
 
-- La valoración del consumidor de una unidad adicional de $X$ no es
-  tan alta como lo que tiene que pagar por ella en el mercado.
+- La valoración del consumidor de una unidad adicional de $X$ es menor
+  que el precio relativo de $X$.
 
 
 ** Condición de tangencia (IV)
 
 #+MATS: figcol fig-2C_1004-eq02a-*.pdf 0.45
 
-- El consumidor puede obtener un mayor nivel de satisfacción si
+- El consumidor puede obtener un mayor nivel de utilidad si
   disminuye su consumo de $X$.
 
 
@@ -92,9 +93,9 @@
 - En el punto $E$: $\RMS = P_X/P_Y$.
 
 - La valoración del consumidor de una unidad adicional de $X$ coincide
-  con la valoración del mercado.
+  con el precio relativo de $X$.
 
-- El consumidor no puede aumentar su satisfacción variando el consumo
+- El consumidor no puede aumentar su utilidad variando el consumo
   de $X$.
 
 
@@ -102,7 +103,7 @@
 
 - Solución interior ($X^*, Y^* > 0$):
 
-  + Restricción presupuestaria:
+  + Recta presupuestaria:
     #+begin_export latex
       \[ M = P_{X} X + P_{Y} Y \]
     #+end_export
@@ -136,8 +137,9 @@
 
 
 ** Soluciones de esquina (I)
-- En una *solución de esquina*, alguno de los bienes no está presente
-  en la cesta óptima:
+
+- En una *solución de esquina*, el nivel de consumo óptimo de algunos
+  bienes es $0$:
   #+begin_export latex
   \[ X^* = M/P_X, Y^* = 0;\quad\text{o}\quad X^* = 0, Y^* = M/P_Y. \]
   #+end_export
@@ -148,6 +150,7 @@
 #+MATS: figcol fig-2C_1004-eq10-*.pdf 0.45
 
 - En todos los puntos de la recta presupuestaria: $\RMS < P_X/P_Y$.
+
 - El consumidor compra $Y^*=M/P_Y$ unidades del bien $Y$ y $0$
   unidades del bien $X$.
 
@@ -157,21 +160,25 @@
 #+MATS: figcol fig-2C_1004-eq11-*.pdf 0.45
 
 - En todos los puntos de la recta presupuestaria: $\RMS > P_X/P_Y$.
+
 - El consumidor compra $X^*=M/P_X$ unidades del bien $X$ y $0$
   unidades del bien $Y$.
 
 
 ** Condiciones de óptimo
 
-- Sólo compra $X$ ($X^* = M/P_X, Y^* = 0$):
-  #+begin_export latex
-  \[ \RMS > P_X/P_Y \]
-  #+end_export
+- Sólo $X$:
 
-- Sólo compra Y ($X^* = 0, Y^* = M/P_Y$):
-  #+begin_export latex
-  \[ \RMS < P_X/P_Y \]
-  #+end_export
+  + $X^* = M/P_X, Y^* = 0$
+
+  + $\RMS > P_X/P_Y$
+
+- Sólo $Y$:
+
+  + $X^* = 0, Y^* = M/P_Y$
+
+  + $\RMS < P_X/P_Y$
+
 
 ** Ejemplo (I)
 

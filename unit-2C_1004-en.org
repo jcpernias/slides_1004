@@ -13,26 +13,27 @@
 
 
 ** Rational choice (I)
-- The consumer chooses, among all available baskets, the one that
-  generates a greater welfare for him/her:
-  #+BEGIN_EXPORT LaTeX
+
+- The consumer chooses, among all affordable baskets, the one that
+  provides him with the highest level of well-being:
+  #+begin_export latex
   \begin{gather*}
     \max_{\displaystyle\{X^*, Y^*\}} U(X, Y) \\
     \text{subject to\ } M \geq P_{X} X + P_{Y} Y
   \end{gather*}
-  #+END_EXPORT
+  #+end_export
 
 
 ** Rational choice (and II)
+
 - If the non-satiation assumption is fulfilled, the optimal basket is
-  the point of the budget constraint through which the highest
-  indifference curve crosses:
-  #+BEGIN_EXPORT LaTeX
+  on the budget line:
+  #+begin_export latex
   \begin{gather*}
     \max_{\displaystyle\{X^*, Y^*\}} U(X, Y) \\
     \text{subject to\ } M = P_{X} X + P_{Y} Y
   \end{gather*}
-  #+END_EXPORT
+  #+end_export
 
 
 
@@ -41,60 +42,89 @@
 
 
 ** Interior solutions
+
 - *Interior solution*: the optimal basket $(X^*, Y^*)$ contains some
-  unit of each good:
+  units of each good:
   #+begin_export latex
   \[ X^* >0; \quad Y^* > 0. \]
   #+end_export
 
 
 ** Tangency condition (I)
+
 #+MATS: figcol fig-2C_1004-eq01-*.pdf 0.45
 
 - At point $A$: $\RMS > P_X/P_Y$.
-- The valuation of the consumer of another unit of good $X$ is higher
-  than the market valuation.
+
+- The consumer's valuation of an additional unit of good $X$ is higher
+  than the relative price of $X$.
 
 
 ** Tangency condition (II)
+
 #+MATS: figcol fig-2C_1004-eq01a-*.pdf 0.45
 
-- The consumer can get a higher level of satisfaction if he/she
-  increases the consumption of $X$.
+- The consumer can get a higher level of utility if he increases
+  the consumption of $X$.
 
 
 ** Tangency condition (III)
+
 #+MATS: figcol fig-2C_1004-eq02-*.pdf 0.45
 
 - At point $B$: $\RMS < P_X/P_Y$.
-- The valuation of the consumer of another unit of good $X$ is lower
-  than the market valuation.
+
+- The consumer's valuation of an additional unit of good $X$ is lower
+  than the relative price of $X$.
 
 
 ** Tangency condition (IV)
+
 #+MATS: figcol fig-2C_1004-eq02a-*.pdf 0.45
 
-- The consumer can get a higher level of satisfaction by decreasing
+- The consumer can get a higher level of utility by decreasing
   the consumption of $X$.
 
 
 ** Tangency condition (and V)
+
 #+MATS: figcol fig-2C_1004-eq03-*.pdf 0.45
 
 - At point $E$: $\RMS = P_X/P_Y$.
-- The valuation of the consumer of another unit of good $X$ is equal
-  to the market valuation
-- The consumer cannot increase his/her satisfaction by varying the
-  consumption of $X$.
+
+- The consumer's valuation of an additional unit of good $X$ is equal
+  to the relative price of $X$.
+
+- The consumer cannot increase his utility by varying the
+  consumption of $X$.
 
 
-** Example: interior solution (I)
+** Optimum conditions
+
+- Interior solutions ($X^*, Y^* > 0$):
+
+  + Budget line:
+    #+begin_export latex
+      \[ M = P_{X} X + P_{Y} Y \]
+    #+end_export
+
+  + Tangency condition:
+    #+begin_export latex
+    \[ \RMS = P_X/P_Y \]
+    #+end_export
+
+
+** Example (I)
+
 - Utility function: $U(X, Y) = X Y$.
+
 - Prices: $P_X = 2$ € per unit; $P_Y = 2$ € per unit.
-- Monetary rent: $M = 70$ €.
+
+- Monetary income: $M = 70$ €.
 
 
-** Example: interior solution (and II)
+** Example (and II)
+
 #+MATS: figcol fig-2C_1004-ej01-*.pdf 0.55
 
 - Interior solution:
@@ -103,14 +133,13 @@
   #+end_export
 
 
-
-
 * Corner solutions
 
 
 ** Corner solutions (I)
-- In a *corner solution*, some good is not present in the optimal
-  basket:
+
+- In a *corner solution*, the optimal consumption level for some goods
+  is $0$:
   #+begin_export latex
   \[ X^* = M/P_X, Y^* = 0;\quad\text{or}\quad X^* = 0, Y^* = M/P_Y. \]
   #+end_export
@@ -120,7 +149,8 @@
 
 #+MATS: figcol fig-2C_1004-eq10-*.pdf 0.45
 
-- In all the points of the budget line: $\RMS < P_X/P_Y$.
+- At every point on the budget line: $\RMS < P_X/P_Y$.
+
 - The consumer buys $Y^*=M/P_Y$ units of good $Y$ and $0$
   units of good $X$.
 
@@ -129,35 +159,41 @@
 
 #+MATS: figcol fig-2C_1004-eq11-*.pdf 0.45
 
-- In all the points of the budget line: $\RMS > P_X/P_Y$.
+- At every point on the budget line: $\RMS > P_X/P_Y$.
+
 - The consumer buys $X^*=M/P_X$ units of good $X$ and $0$
   units of good $Y$.
 
 
-** Example: corner solution (I)
+** Optimum conditions
+
+- Only $X$:
+
+  + $X^* = M/P_X, Y^* = 0$
+
+  + $\RMS > P_X/P_Y$
+
+- Only $Y$
+
+  + $X^* = 0, Y^* = M/P_Y$
+
+  + $\RMS < P_X/P_Y$
+
+
+** Example (I)
+
 - Utility function: $U(X, Y) = (X + 50) Y$.
+
 - Prices: $P_X = 2$ € per unit; $P_Y = 2$ € per unit.
-- Monetary rent: $M = 70$ €.
+
+- Monetary income: $M = 70$ €.
 
 
-** Example: corner solution (and II)
+** Example (and II)
+
 #+MATS: figcol fig-2C_1004-ej02-*.pdf 0.55
 
 - Corner solution:
   #+begin_export latex
   \[ X^* = 0; Y^*=35. \]
   #+end_export
-
-
-** Optimum conditions
-- Interior solution:
-  #+begin_export latex
-  \[ \RMS = P_X/P_Y; \quad X^*, Y^* > 0. \]
-  #+end_export
-- Corner solutions:
-  #+BEGIN_EXPORT LaTeX
-    \begin{gather*}
-      \RMS > P_X/P_Y; \quad X^* = M/P_X, Y^* = 0. \\
-      \RMS < P_X/P_Y; \quad X^* = 0, Y^* = M/P_Y.
-    \end{gather*}
-  #+END_EXPORT
