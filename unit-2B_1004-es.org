@@ -82,11 +82,11 @@
 
 #+MATS: figcol fig-2B_1004-ci06-*.pdf 0.45
 
-- Las cestas preferidas a $A$, como $M$, se sitúan por encima y a la
+- Las cestas preferidas a $A$ se sitúan por encima y a la
   derecha de la curva de indiferencia de $A$.
 
-- La cesta $A$ es preferida a cestas como $P$, situadas por debajo y a
-  la izquierda de la curva de indiferencia de $A$.
+- La cesta $A$ es preferida a cestas situadas por debajo y a la
+  izquierda de la curva de indiferencia de $A$.
 
 
 ** Transitividad (I)
@@ -105,14 +105,14 @@
 - Si se cumple el supuesto de transitividad, cada cesta pertenece a
   una y *sólo* a una curva de indiferencia.
 
-- Si las curvas de indiferencia se cortaran las preferencias serían
+- Si las curvas de indiferencia se cortaran, las preferencias serían
   inconsistentes:
   #+begin_export latex
   \[B \sim C \text{\ y\ } C \sim A\text{, pero\ } B \succ A.\]
   #+end_export
 
 
-** Mapa de curvas de indiferencia
+** El mapa de curvas de indiferencia
 
 #+MATS: figcol fig-2B_1004-map01-*.pdf 0.45
 
@@ -120,16 +120,16 @@
   un consumidor.
 
 
-** Relación Marginal de Sustitución (I)
+** La Relación Marginal de Sustitución (I)
 
 - La *Relación Marginal de Sustitución*, $\RMS$, mide cómo un
   consumidor valora un bien en términos de otro bien.
 
-- ¿Cuántas unidades, como máximo, del bien $Y$ estaría dispuesto a
-  cambiar por una unidad más del bien $X$?
+- Es el máximo número de unidades del bien $Y$ que el consumidor
+  estaría dispuesto a intercambiar por una unidad más del bien $X$.
 
 
-** Relación Marginal de Sustitución (II)
+** La Relación Marginal de Sustitución (II)
 
 #+MATS: figcol fig-2B_1004-rms01-*.pdf 0.45
 
@@ -140,7 +140,7 @@
   #+end_export
 
 
-** Relación Marginal de Sustitución (y III)
+** La Relación Marginal de Sustitución (y III)
 
 #+MATS: figcol fig-2B_1004-rms02-*.pdf 0.45
 
@@ -154,12 +154,12 @@
 
 - *Convexidad* de las curvas de indiferencia: la $\RMS$
   es decreciente:
-  #+BEGIN_EXPORT LATEX
+  #+begin_export latex
   \[ \RMS(A) > \RMS(B) \]
-  #+END_EXPORT
+  #+end_export
 
-- Cuantas más unidades consume de un bien, menos se valora una unidad
-  adicional de ese bien.
+- Cuantas más unidades consume de un bien, menos valora el consumidor
+  una unidad adicional.
 
 
 ** Preferencias regulares
@@ -211,10 +211,12 @@
 
 * La función de utilidad
 
-** Función de utilidad
 
-- La *función de utilidad* asigna un valor numérico a cada cesta de
-  forma que cestas más preferidas reciben valores más altos:
+** La función de utilidad
+
+- La *función de utilidad* asigna un número a cada cesta de forma que
+  cestas más preferidas reciben valores más altos que las menos
+  preferidas:
 
   + si $A \succ B$, entonces $U(X_A, Y_A) > U(X_B, Y_B)$;
 
@@ -224,7 +226,7 @@
   un consumidor.
 
 
-** Función de utilidad y curvas de indiferencia
+** La función de utilidad y las curvas de indiferencia
 
 - La función de utilidad asigna el mismo valor a todas las cestas que
   son indiferentes entre sí.
@@ -245,19 +247,19 @@
 
 #+MATS: figcol fig-2B_1004-map03-*.pdf 0.48
 
-- Existen infinitas funciones de utilidad que representan exactamente
-  las mismas preferencias.
+- Existen un número infinito de funciones de utilidad que representan
+  exactamente las mismas preferencias.
 
 - $V(X, Y) = \sqrt{U(X, Y)}$
 
 
 ** Utilidad ordinal (y III)
 
-- Los valores de la función de utilidad no tienen unidades ni ningún
-  significado especial.
+- Los valores que toma la función de utilidad no tienen unidades ni
+  ningún significado especial.
 
-- Sólo son útiles para ordenar las cestas de acuerdo a las
-  preferencias del consumidor.
+- Los valores sólo son útiles para ordenar las cestas de acuerdo a
+  las preferencias del consumidor.
 
 
 ** Utilidad marginal (I)
@@ -274,6 +276,7 @@
 
 
 ** Utilidad marginal (y II)
+
 - Si se cumple el supuesto de no saturación:
   #+begin_export latex
   \[ \UMX > 0; \quad \UMY > 0. \]
@@ -288,8 +291,8 @@
   \[ \diff U = \UMX\; \diff X + \UMY\; \diff Y \]
   #+end_export
 
-- Si el cambio se produce a lo largo de una curva de indiferencia, la
-  utilidad no varía; por lo que $\diff U = 0$:
+- $\diff U = 0$ si el cambio se produce a lo largo de una curva de
+  indiferencia:
   #+begin_export latex
   \[ 0 = \UMX\; \diff X + \UMY\; \diff Y \]
   #+end_export
