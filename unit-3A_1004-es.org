@@ -19,8 +19,6 @@
 - Conforme aumenta la renta, $M < M' < M''$, la restricción
   presupuestaria se desplaza hacia la derecha.
 
-- Los precios no cambian: las rectas presupuestarias son paralelas.
-
 
 ** Cambios en la decisión de consumo
 
@@ -34,7 +32,7 @@
 
 #+MATS: figcol fig-3A_1004-crc-*.pdf 0.55
 
-- La *curva de renta consumo*, \CRC, está formada por las cestas que
+- La *curva de renta consumo*, \CRC, es el conjunto de las cestas que
   elige un consumidor para cada posible valor de la renta monetaria,
   manteniendo constantes los precios de los bienes.
 
@@ -51,14 +49,13 @@
 ** Bienes normales y bienes inferiores
 
 - El consumo de los *bienes normales* crece cuando aumenta la
-  renta. La pendiente de la curva de Engel es positiva en este caso.
+  renta. La pendiente de la curva de Engel es positiva:
   #+begin_export latex
   \[ \frac{\diff X}{\diff M} > 0 \]
   #+end_export
 
 - La cantidad demandada de los *bienes inferiores* disminuye a medida
-  que la renta aumenta. La pendiente de la curva de Engel de un bien
-  inferior es negativa.
+  que la renta aumenta. La pendiente de la curva de Engel es negativa:
   #+begin_export latex
   \[ \frac{\diff X}{\diff M} < 0 \]
   #+end_export
@@ -72,11 +69,8 @@
 
 #+MATS: figcol fig-3A_1004-cpc2-*.pdf 0.55
 
-- Al disminuir el precio del bien $X$, $P_X > P'_X > P''_X$ la
-  restricción presupuestaria rota hacia la derecha.
-
-- La pendiente de la recta presupuestaria es menos pronunciada cuanto
-  menor es el precio de $X$.
+- Al disminuir el precio del bien $X$, $P_X > P'_X > P''_X$, la recta
+  presupuestaria gira en sentido antihorario.
 
 
 ** Cambios en la decisión de consumo
@@ -90,9 +84,9 @@
 
 #+MATS: figcol fig-3A_1004-cpc-*.pdf 0.55
 
-- La *curva de precio consumo* recoge las cestas que el consumidor
-  elige para cada posible precio del bien $X$, manteniendo constantes
-  la renta monetaria y el resto de precios.
+- La *curva de precio consumo* es el conjunto de las cestas que el
+  consumidor elige para cada posible precio del bien $X$, manteniendo
+  constantes la renta monetaria y el resto de precios.
 
 
 ** La curva de demanda individual
@@ -114,8 +108,8 @@
   \[ \frac{\diff Y}{\diff P_X} > 0 \]
   #+end_export
 
-- El bien $X$ es *complementario* del bien $Y$ si cae la demanda de
-  $Y$ al aumentar el precio de $X$:
+- El bien $X$ es *complementario* del bien $Y$ si la demanda de
+  $Y$ disminuye al aumentar el precio de $X$:
   #+begin_export latex
   \[ \frac{\diff Y}{\diff P_X} < 0 \]
   #+end_export
