@@ -8,138 +8,158 @@
 - Varian: :: /Intermediate microeconomics/. Chapter 10.
 #+end_bibbox
 
-* The intertemporal choice
+* Introduction
 
-** The consumption decision in two periods
+
+** Consumption choice in two periods
+
 - The consumer lives for two time periods.
-- In each period he/she has a monetary income: $M_1$ in the first
-  period and $M_2$ in the second one.
-- He/she must decide which fraction of the income of each period is
-  used for consumption: $C_1$ y $C_2$.
+
+- She has a monetary income $M_1$ in the first period and $M_2$ in the
+  second one.
+
+- She must decide which part of her income devotes to consumption in
+  each period: $C_1$ y $C_2$.
 
 
 ** The financial markets
-- The consumer has access to a financial market where the interest
-  rate is determined, $r$.
-- In the first period it is possible to lend or borrow at the market
-  interest rate.
 
+- The consumer has access to a financial market where she can lend or
+  borrow money in the first period at the market interest rate, $r$.
+
+
+* Intertemporal preferences
 
 ** Intertemporal preferences (I)
-- The consumer has regular preferences on $C_1$ and $C_2$.
-- The slope at a point on a indifference curve is the \RMS{} with a
-  negative sign.
-- From the utility function, $U = U(C_1, C_2)$:
+
+#+MATS: figcol fig-4A_1004-map01-*.pdf 0.50
+
+- The consumer has regular preferences on $C_1$ and $C_2$, represented
+  by the utility function $U = U(C_1, C_2)$.
+
+
+** Intertemporal preferences (II)
+
+#+MATS: figcol fig-4A_1004-rms01-*.pdf 0.50
+
+- Marginal rate of substitution:
   #+begin_export latex
   \[\RMS = \frac{\mlabel{\UMgLabel_{C_1}}}{\mlabel{\UMgLabel_{C_2}}} \]
   #+end_export
 
 
-** Intertemporal preferences (and II)
-- If $\RMS > 1$ the consumer is willing to give up more than 1 € of
-  future consumption in exchange for increasing in 1 € present
+** Intertemporal preferences (and III)
+
+- If $\RMS > 1$ the consumer is willing to give up more than \money{1}
+  of future consumption in exchange for \money{1} of present
   consumption: *preference for present consumption*.
-- When $\RMS < 1$ the consumer values 1 € of future consumption more
-  than 1 € of present consumption: *preference for future
+
+- When $\RMS < 1$ the consumer values \money{1} of future consumption
+  more than \money{1} of present consumption: *preference for future
   consumption*.
 
 
-** The budget constraint (I)
+* The intertemporal budget constraint
+
+
+** The endowment point
 
 #+MATS: figcol fig-4A_1004-ciri01-*.pdf 0.55
 
-- The consumer always has the option of not borrowing and not lending
-  money. In this case $(C_1, C_2) = (M_1, M_2)$.
-- Access to the financial market provides him/her with more options.
+- The consumer always has the option of neither borrowing nor lending
+  money. In this case: $(C_1, C_2) = (M_1, M_2)$.
+
+- The access to financial markets provides her with more options.
 
 
-** The budget constraint (II)
-- The consumer can borrow money to increase his/her consumption in
-  period 1 above the income in that period:
+** The consumer borrows money
+
+- The consumer can borrow money to increase period 1 consumption above
+  the income in that period:
   #+begin_export latex
   \[ C_1 - M_1 > 0 \]
   #+end_export
-- Consumption in period 2 would be equal to the remaining income after
-  repaying the loan with the interests:
+
+- Period 2 consumption would be equal to the period 2 income after
+  paying back the loan with interest:
   #+begin_export latex
   \[ C_2 = M_2 - (1 + r) (C_1 - M_1) \]
   #+end_export
-- Intertemporal budget constraint when borrowing:
-  #+begin_export latex
-  \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1\]
-  #+end_export
 
 
-** The budget constraint (and III)
-- The consumer can lend a part of his/her income in the first period. In this case:
+** The consumer lends money
+
+- The consumer can lend a part of her income in the first period:
   #+begin_export latex
   \[ M_1 - C_1 > 0 \]
   #+end_export
-- Consumption in period 2 would be higher than the income in that period:
+
+- Consumption in period 2 would be higher than the income in that
+  period:
   #+begin_export latex
   \[ C_2 = M_2 + (1 + r) (M_1 - C_1) \]
   #+end_export
-- Intertemporal budget constraint when lending:
+
+
+** The intertemporal budget constraint
+
+- In both cases we get the same expression of the intertemporal budget
+  line:
   #+begin_export latex
-  \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1 \]
+  \[ C_2 = M_2 + (1+ r) (M_1 - C_1) \]
   #+end_export
 
 
-** The intertemporal budget constraint (I)
- - In both cases we reach the same budget constraint:
-   #+begin_export latex
-   \[ C_2 = M_2 + (1+ r) M_1 - (1 + r) C_1 \]
-   #+end_export
- - We can rewrite the intertemporal budget constraint as:
-   #+begin_export latex
-   \[  M_1 + \frac{M_2}{1+ r} = C_1 + \frac{C_2}{1 + r} \]
-   #+end_export
- - The present value of the income flow is equal to the present value of the consumption flow.
- - The intertemporal budget constraint in terms of future values:
-   #+begin_export latex
-   \[  M_1(1+r) + M_2 = C_1(1 + r) + C_2 \]
-   #+end_export
+** Present value
+
+- We can rewrite the budget line as the equality between the present
+  value of the income stream and the present value of the consumption
+  stream:
+  #+begin_export latex
+  \[  M_1 + \frac{M_2}{1+ r} = C_1 + \frac{C_2}{1 + r} \]
+  #+end_export
 
 
-** The intertemporal budget constraint (II)
+** Future value
+
+- Alternatively, we can express the budget line in terms of future
+  values of income and consumption streams:
+  #+begin_export latex
+  \[  M_1(1+r) + M_2 = C_1(1 + r) + C_2 \]
+  #+end_export
+
+
+** The budget line and the interest rate (I)
 
 #+MATS: figcol fig-4A_1004-ciri02-*.pdf 0.55
 
 - The slope of the intertemporal budget constraint is equal to $-(1+r)$
 
 
-** The intertemporal budget constraint (and III)
+** The budget line and the interest rate (and II)
 
 #+MATS: figcol fig-4A_1004-ciri03-*.pdf 0.55
 
-- When the interest rate varies the intertemporal budget constraint
-  pivots around the point of initial endowments.
+- When the interest rate changes the intertemporal budget line pivots
+  around the point of initial endowments.
+
 - If $r$ increases, the line rotates clockwise.
 
 
-** The intertemporal choice (I)
-- The rational consumer chooses the combination of present and future
-  consumption on his/her intertemporal budget constraint that brings a
-  higher satisfaction level.
+* Consumer choice
 
-- If the solution is interior the tangency condition is fulfilled:
+** The optimal choice
+
+- The consumer chooses a combination of present and future
+  consumption on her intertemporal budget constraint.
+
+- Tangency condition:
   #+begin_export latex
   \[ \RMS{} = 1 + r \]
   #+end_export
 
 
-** The intertemporal choice (II)
-
-#+MATS: figcol fig-4A_1004-ciri04-*.pdf 0.55
-
-- The optimum choice in this case implies:
-  #+begin_export latex
-  \[ M_1 > C_1 \]
-  #+end_export
-- The consumer lends a part of his/her income in the initial period.
-
-
-** The intertemporal choice (and III)
+** Borrowers
 
 #+MATS: figcol fig-4A_1004-ciri05-*.pdf 0.55
 
@@ -147,35 +167,53 @@
   #+begin_export latex
   \[ M_1 < C_1 \]
   #+end_export
-- The consumer requests a loan in the first period.
+
+- The consumer borrows money in the first period.
 
 
 
-* Saving
+** Lenders
+
+#+MATS: figcol fig-4A_1004-ciri04-*.pdf 0.55
+
+- The optimum choice in this case implies:
+  #+begin_export latex
+  \[ M_1 > C_1 \]
+  #+end_export
+
+- The consumer lends part of her income in the initial period.
+
+
+* Savings
+
 
 ** Savings
-- Saving of consumer in the first period is
+
+
+- Consumer savings:
   #+begin_export latex
   \[ S = M_1 - C_1 \]
   #+end_export
-- When the consumer lends a part of his/her income saving is positive:
+
+- When the consumer lends part of her income, her savings are positive:
   #+begin_export latex
   \[ S = M_1 - C_1 > 0 \]
   #+end_export
-- When the consumer borrows in the first period saving is negative:
+
+- When the consumer borrows in the first period, her savings are
+  negative:
   #+begin_export latex
   \[ S = M_1 - C_1 < 0 \]
   #+end_export
 
 
 ** The savings curve (I)
-- The *savings curve* indicates the quantity of income the consumer
-  saves for each possible interest rate:
+
+- The *savings curve* shows the amount of money that the consumer
+  saves for every possible interest rate:
   #+begin_export latex
   \[ S = S(r) \]
   #+end_export
-- It is obtained by analysing the different choices of present and
-  future consumption as the interest rate varies.
 
 
 ** The savings curve (II)
@@ -184,8 +222,16 @@
 
 - If consumption in the first period is of a normal good, an increase
   in the interest rate increases the savings of borrowers.
+
 - The substitution effect and the income effect reinforce each other.
 
+
+**                                                         :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+#+latex: \mode<article>{\clearpage{}}
 
 ** The savings curve (III)
 
@@ -193,13 +239,14 @@
 
 - In the case of a lender, the income effect has the opposite sign of
   the substitution effect.
-- For high interest rates, saving could decrease with the interest
-  rate (although the savings would still be positive).
+
+- Savings could decrease with the interest rate for sufficiently high
+  interest rates, although savings would still be positive.
 
 
 ** The savings curve (and IV)
 
 #+MATS: figcol fig-4A_1004-cisv01-*.pdf 0.55
 
-- The individual savings curve can go back towards itself for high
-  interest rates.
+- The individual savings curve bends backwards for high interest
+  rates.
