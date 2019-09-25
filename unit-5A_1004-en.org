@@ -14,8 +14,8 @@
 
 ** Firms
 
-- Why do firms exist? If resources are efficiently allocated by the
-  markets, do we really need firms?
+- Why do firms exist? If markets efficiently allocate resources, do we
+  really need firms?
 
 - [[http://en.wikipedia.org/wiki/Ronald_Coase][Ronald Coase]]: firms coordinate the production process avoiding
   *transaction costs*: search, bargaining, protect trade secrets,
@@ -24,17 +24,14 @@
 
 ** Production
 
-- Using a particular *technology* firms combine *production factors*
-  to obtain the *production goods* that will then be sold in the
-  *goods markets*.
-
-- *Production*: the process that transforms production factors
-  into final products.
+- *Technology* enables firms to combine *factors of production* to
+  obtain the *produced goods* that will then be sold in the *goods
+  markets*.
 
 
-** Production factors
+** Factors of production
 
-- Labour.
+- Labor.
 
 - Land.
 
@@ -45,28 +42,39 @@
 
 ** Capital
 
-- The *capital goods* are those production factors which are
-  production goods themselves.
-
-- For example: machinery, tools, buildings and structures used for the
+- *Capital goods*: those factors of production which are themselves produced
+  goods: machinery, tools, buildings and structures used for the
   production process.
 
 - Capital as a factor of production corresponds to the concept of
-  *physical capital*. Different from the *financial capital*: the
+  *physical capital* and differs from *financial capital*: the
   amount of money needed to undertake or maintain a business.
 
 
 ** Technology
 
-- *Technological restrictions*: to produce a determined amount of a
-  good, only certain combinations of factors are *feasible*.
+- *Technological restrictions*: only certain combinations of inputs are
+  *feasible* ways to produce a given amount of output.
 
-- A combination of factors is *technologically efficient* to obtain a
-  particular level of production, if that level cannot be reached by
-  reducing the use of any of the production factors.
+- The *production function* indicates the highest output level that a
+  firm can produce for every specific combination of inputs.
 
-- The *production function* indicates the highest production level
-  that a firm can produce for every specific combination of inputs.
+
+** Temporal dimension of production
+
+- The kind of the decisions that firm faces in the *short-run* are
+  very different than those made in the *long-run*.
+
+** The short-run
+
+- In the short-run the firm cannot change the quantities of one or
+  more inputs: there are *fixed factors of production*.
+
+
+** The long-run
+
+- In the long-run firm can choose the quantities of all inputs: all
+  the inputs are *variable factors*.
 
 
 ** Simplifications
@@ -74,34 +82,13 @@
 - Firms only use two factors of production: labor, $L$, and capital,
   $K$.
 
-- Infinite divisibility: the production factors, $K$ and $L$, and the
-  level of production, $Q$, are continuous variables.
-
-- The production function can be expressed as
+- The production function relates output, $Q$, with the factors of
+  production:
   #+begin_export latex
   \[ Q = F(K, L) \]
   #+end_export
 
-
-** Temporal dimension of production
-
-- The firm faces different constraints depending on the time horizon
-  in which production decisions are considered.
-
-- We distinguish between the *short-run* and the *long-run*.
-
-
-** The short-run
-
-- The firm cannot change the quantities of one or more factors of
-  production: there are *fixed factors of production*.
-
-
-** The long-run
-
-- The firm can choose the quantities of all inputs: all the factors of
-  production are *variable*.
-
+- Perfect divisibility of $K$, $L$, and $Q$.
 
 
 * Production in the short-run
@@ -109,7 +96,7 @@
 
 ** Production with one variable factor
 
-- In the short term capital is a fixed factor: $K = \Kbar$.
+- In the short-run, capital is fixed: $K = \Kbar$.
 
 - Short-run production function:
   #+begin_export latex
@@ -120,12 +107,11 @@
   varying the usage of the variable factor.
 
 
-** Total product
+** The total product curve
 
 #+MATS: figcol fig-5A_1004-cp01-*.pdf 0.5
 
-- The *total product* is the level of production obtained when $L$
-  units of labour are used:
+- The *total product* curve relates output level and labor:
   #+begin_export latex
   \[ Q = f(L) \]
   #+end_export
@@ -136,7 +122,7 @@
 #+MATS: figcol fig-5A_1004-cp03-*.pdf 0.5
 
 - The *marginal product of labor* is the rate at which production
-  increases per additional unit of labour:
+  increases per additional unit of labor:
   #+begin_export latex
   \[ \PMgL = \frac{\diff Q}{\diff L} = \frac{\diff f(L)}{\diff L} \]
   #+end_export
@@ -146,21 +132,21 @@
 
 #+MATS: figcol fig-5A_1004-cp06-*.pdf 0.5
 
-- The marginal product curve has the shape of an inverted U.
+- The marginal product curve has an inverted U-shape.
 
 
 ** The marginal product curve (and II)
 
 #+MATS: figcol fig-5A_1004-cp06a-*.pdf 0.5
 
-- The $\PMgL$ increases with $L$ for low values of $L$.
+- The $\PMgL$ curve is increasing for low values of $L$.
 
-- The $\PMgL$ decreases with $L$ for values of $L$ higher than $L_C$.
+- The $\PMgL$ is decreasing for values of $L$ higher than $L_C$.
 
 
 ** The law of diminishing marginal returns
 
-- The *law of diminishing marginal returns* states that as additional
+- *Law of diminishing marginal returns*: as additional
   units of an input are used, /holding all other inputs fixed/, a
   point will be reached at which the resulting additions to output
   decrease.
@@ -172,55 +158,55 @@
 
 - The $\PMgL$ is negative when $L > L_D$.
 
-- Additional units of labour beyond $L_D$ cause decreases in total
-  production.
+- If labor increases beyond $L_D$, total output decreases.
 
 
 ** Technical efficiency (and II)
 
 #+MATS: figcol fig-5A_1004-cp08-*.pdf 0.5
 
-- Production reaches a maximum at $L_D$.
+- Using more than $L_D$ units of labor is not technically efficient.
 
-- Higher levels of $L$, such as $L_1$, are not technically efficient.
-
-- Using just $L_0$ units of labour the firm is able to reach the same
-  output level than with $L_1$ units.
+- The output level at $L_0$ is the same as the one at $L_1$.
 
 
-** The average product of labour
+** The average product of labor
 
 #+MATS: figcol fig-5A_1004-cp02-*.pdf 0.5
 
-- The *average product of labour* is the number of units produced per
-  hour of work:
+- The *average product of labor* is the amount of output per unit of
+  labor:
   #+begin_export latex
   \[ \PMeL = \frac{Q}{L} = \frac{f(L)}{L}\]
   #+end_export
 
 
-** The average product of labour curve
+** The average product of labor curve
 
 #+MATS: figcol fig-5A_1004-cp07-*.pdf 0.5
 
-- The average product of labor curve is shaped as an inverted U.
+- The average product of labor curve has an inverted U-shape.
 
 
 ** Total, average, and marginal product (I)
 
 #+MATS: figcol fig-5A_1004-cp05-*.pdf 0.5
 
-- The curve of $\PMeL$ is increasing when $\PMgL > \PMeL$.
+- The $\PMeL$ curve:
 
-- When $\PMgL < \PMeL$ the curve of $\PMeL$ has a negative slope.
+  + is increasing when $\PMgL > \PMeL$.
 
-- The $\PMeL$ is maximum when $\PMgL = \PMeL$.
+  + is decreasing when $\PMgL < \PMeL$.
+
+  + reaches its maximum when $\PMgL = \PMeL$.
 
 
 ** Total, average, and marginal product (and II)
 
 #+MATS: figcol fig-5A_1004-cp04-*.pdf 0.5
 
-- Total product reaches a maximum at $L_D$, where $\PMgL = 0$.
+- The total product curve attains a maximum at $L_D$, where $\PMgL =
+  0$.
 
-- If $\PMgL = \PMeL$ the average product reaches a maximum at $L_E$.
+- The average product curve reaches its maximum at $L_E$, where $\PMgL
+  = \PMeL$.

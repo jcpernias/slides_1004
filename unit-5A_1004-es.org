@@ -11,104 +11,118 @@
 
 * Naturaleza y objetivos de la empresa
 
+
 ** Las empresas
-- ¿Por qué existen las empresas?
-- Si los mercados asignan eficientemente los recursos, ¿para qué se
-  necesitan las empresas?
-- [[http://en.wikipedia.org/wiki/Ronald_Coase][Ronald Coase]]: las empresas coordinan el proceso de produccióm
+
+- ¿Por qué existen las empresas? Si los mercados asignan
+  eficientemente los recursos, ¿para qué necesitamos las empresas?
+
+- [[http://en.wikipedia.org/wiki/Ronald_Coase][Ronald Coase]]: las empresas coordinan el proceso de producción
   evitando los *costes de transacción*: búsqueda, negociación,
   mantenimiento de secretos comerciales, monitorización, etc.
 
 
 ** La producción
-- Mediante una determinada *tecnología* las empresas combinan
-  *factores de producción* para obtener los *bienes de producción* que
+
+- La *tecnología* permite que las empresas combinen *factores de
+  producción* para obtener los *bienes de producción* que
   posteriormente venderán en los *mercados de bienes*.
-- *Producción*: el proceso que transforma los factores en productos.
 
 
 ** Factores de producción
+
 - Trabajo.
+
 - Tierra.
+
 - Materias primas.
+
 - Capital.
 
 
 ** El capital
-- Los *bienes de capital* son aquellos factores de producción que son
-  ellos mismos bienes de producción.
-- Por ejemplo: máquinas, herramientas, edificios y estructuras
-  destinadas al proceso productivo.
+
+- *Bienes de capitalq*: aquellos factores de producción que son ellos
+  mismos bienes de producción: máquinas, herramientas, edificios y
+  estructuras destinadas al proceso productivo.
+
 - El capital como factor de producción se corresponde al concepto de
-  *capital físico*; /no/ es el *capital financiero*.
+  *capital físico*, el cual difiere del de *capital financiero*: la
+  cantidad de dinero necesaria para iniciar o mantener un negocio.
 
 
 ** La tecnología
-- *Restricciones tecnológicas*: para producir una determinada cantidad
-  de un bien, sólo ciertas combinaciones de factores son *factibles*.
-- Una combinación de factores es *tecnológicamente eficiente* para
-  obtener un determinado nivel de producción, si no se puede obtener
-  ese nivel de de producción reduciendo el uso de alguno de los
-  factores de producción.
-- La *función de producción* indica para cada posible combinación de
-  factores cuál es la producción máxima que puede obtenerse.
+
+- *Restricciones tecnológicas*: sólo ciertas combinaciones de factores
+  son *factibles* a la hora producir una determinada cantidad de un
+  bien.
+
+- La *función de producción* indica la producción máxima que puede
+  obtener una empresa para cada combinación de factores.
+
+
+** Dimensión temporal de la producción
+
+- El tipo de decisiones a los que se enfrenta la empresa a *corto
+  plazo* es muy diferente al de las decisiones de *largo plazo*.
+
+
+** El corto plazo
+
+- A corto plazo, la empresa no puede alterar el nivel de algunos de
+  los factores de producción: existen *factores fijos*.
+
+
+** El largo plazo
+
+- A largo plazo, la empresa puede elegir las cantidades que usa de
+  todos los factores de producción: todos los factores de producción
+  son *factores variables*.
+
 
 
 ** Simplificaciones
+
 - Las empresas sólo utilizan dos factores de producción: trabajo, $L$,
   y capital, $K$.
-- Divisibilidad infinita: los factores de producción, $K$ y $L$, y el
-  nivel de producción, $Q$, son variables continuas.
-- La función de producción puede expresarse como:
+
+- La función de producción relaciona el nivel de producción, $Q$, con
+  los factores de producción:
   #+begin_export latex
   \[ Q = F(K, L) \]
   #+end_export
 
-
-** Dimensión temporal de la producción
-- La empresa se enfrenta a diferentes restricciones dependiendo del
-  horizonte temporal en el que se consideren las decisiones de
-  producción.
-- Distinguiremos entre el *corto plazo* y el *largo plazo*.
-
-
-** El corto plazo
-- La empresa no puede alterar el nivel de uso de algunos de los
-  factores de producción.
-- Existen *factores fijos* de producción.
-
-
-** El largo plazo
-- La empresa puede elegir el nivel de uso de todos los
-  factores de producción.
-- Todos los factores de producción son *factores variables*.
-
+- Divisibilidad perfecta de $K$, $L$, y $Q$.
 
 
 * La producción a corto plazo
 
+
 ** Producción con un factor variable
-- A corto plazo el capital es un factor fijo: $K = \overline{K}$.
+
+- A corto plazo el capital es fijo: $K = \overline{K}$.
+
 - Función de producción a corto plazo:
   #+begin_export latex
   \[ Q = F(\Kbar, L) = f(L) \]
   #+end_export
+
 - La única forma en que la empresa puede alterar su nivel de
   producción es variar el uso del factor variable.
 
 
-** Producto total
+** La curva de producto total
 
 #+MATS: figcol fig-5A_1004-cp01-*.pdf 0.5
 
-- El *producto total* es el nivel de producción que se obtiene cuando
-  se utilizan $L$ unidades de trabajo:
+- La curva de *producto total* relaciona el nivel de producción y el
+  trabajo:
   #+begin_export latex
   \[ Q = f(L) \]
   #+end_export
 
 
-** Producto marginal del trabajo
+** El producto marginal del trabajo
 
 #+MATS: figcol fig-5A_1004-cp03-*.pdf 0.5
 
@@ -130,35 +144,37 @@
 
 #+MATS: figcol fig-5A_1004-cp06a-*.pdf 0.5
 
-- El $\PMgL$ es creciente para valores bajos de $L$.
-- Para valores de $L$ mayores que $L_C$, el $\PMgL$ decrece con $L$.
+- La curva de $\PMgL$ es creciente para valores bajos de $L$.
+
+- La curva de $\PMgL$ es decreciente para valores de $L$ mayores que
+  $L_C$.
 
 
-** La ley de rendimientos decrecientes de un factor
-- *Ley de los rendimientos decrecientes de un factor*: a partir de un
-  determinado nivel de uso del factor, conforme se utilizan más
-  unidades de ese factor, /manteniendo constante el uso del resto de
-  los factores/, los incrementos de producción que se obtienen son
-  cada vez menores.
+** La ley de los rendimientos decrecientes de un factor
+
+- *Ley de los rendimientos decrecientes de un factor*: conforme se
+  utilizan más unidades de un factor, /manteniendo constante el uso
+  del resto de los factores/, llega un punto a partir del cual
+  decrecen los sucesivos incrementos de producción.
 
 
 ** Eficiencia técnica (I)
 
 #+MATS: figcol fig-5A_1004-cp06b-*.pdf 0.5
 
-- El $\PMgL$ es negativo cuando $L > L_D$.
-- Más allá de $L_D$, la producción disminuye cuando se utilizan más
-  unidades de trabajo.
+- El $\PMgL$ es negativo siempre que $L > L_D$.
+
+- Si el trabajo aumenta más allá de $L_D$, la producción disminuye.
 
 
 ** Eficiencia técnica (y II)
 
 #+MATS: figcol fig-5A_1004-cp08-*.pdf 0.5
 
-- El uso de más unidades de trabajo que $L_D$ es técnicamente
-  ineficiente.
-- Usando sólo $L_0$ unidades de trabajo se puede obtener la misma
-  producción que con $L_1$ unidades.
+- El uso de más unidades de trabajo que $L_D$ no es técnicamente
+  eficiente.
+
+- La producción en $L_0$ es la misma que en $L_1$.
 
 
 ** Producto medio del trabajo
@@ -173,7 +189,9 @@
 
 
 ** La curva de producto medio
+
 #+MATS: figcol fig-5A_1004-cp07-*.pdf 0.5
+
 - La curva de producto medio del trabajo tiene forma de U invertida.
 
 
@@ -181,14 +199,19 @@
 
 #+MATS: figcol fig-5A_1004-cp05-*.pdf 0.5
 
-- La curva de $\PMeL$ es creciente cuando $\PMgL > \PMeL$.
-- La curva de $\PMeL$ tiene pendiente negativa cuando $\PMgL < \PMeL$.
-- El $\PMeL$ es máximo cuando $\PMgL = \PMeL$.
+- La curva de $\PMeL$:
+
+  + es creciente si $\PMgL > \PMeL$.
+
+  + es decreciente si $\PMgL < \PMeL$.
+
+  + llega a su máximo cuando $\PMgL = \PMeL$.
 
 
 ** Producto total, medio y marginal (y II)
 
 #+MATS: figcol fig-5A_1004-cp04-*.pdf 0.5
 
-- El producto total es máximo en $L_D$, donde $\PMgL = 0$.
-- El producto medio es máximo en $L_E$, donde $\PMgL = \PMeL$.
+- La curva de producto total alcanza un máximo en $L_D$, donde $\PMgL = 0$.
+
+- La curva de producto medio llega a su máximo en $L_E$, donde $\PMgL = \PMeL$.
