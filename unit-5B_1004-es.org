@@ -11,8 +11,11 @@
 
 * La producción a largo plazo
 
+
 ** Producción con dos factores variables
-- A largo plazo todos los factores son variables.
+
+- A largo plazo todos los factores de producción son variables.
+
 - Función de producción a largo plazo:
   #+begin_export latex
   \[ Q = F(K, L) \]
@@ -26,6 +29,7 @@
   #+begin_export latex
   \[ \PMgL = \frac{\partial Q}{\partial L} = \frac{\partial F(K, L)}{\partial L}  \]
   #+end_export
+
 - El *producto marginal del capital* es la tasa a la que crece la
   producción por unidad adicional de capital:
   #+begin_export latex
@@ -34,8 +38,9 @@
 
 
 ** Las isocuantas
-- Una *isocuanta* es el conjunto de combinaciones de factores con las
-  que se puede obtener un mismo nivel máximo de producción.
+
+- Una *isocuanta* es el conjunto de todas combinaciones de factores
+  con las que se puede obtener un mismo nivel de producción.
 
 
 
@@ -43,49 +48,44 @@
 
 #+MATS: figcol fig-5B_1004-is01-*.pdf 0.5
 
-- A cada nivel de producción le corresponde una isocuanta diferente.
+- Cada isocuanta se corresponde con un nivel de producción diferente.
+
 - Las isocuantas más alejadas del origen están asociadas con mayores
   niveles de producción.
 
 
-** La pendiente de las isocuantas (I)
+** La pendiente de las isocuantas
+
 - Diferencial total de la función de producción:
   #+begin_export latex
   \[ \diff Q = \PMgK \diff K + \PMgL \diff L \]
   #+end_export
-- Si nos movemos a lo largo de una isocuanta, $\diff Q = 0$. Entonces:
+
+- Si nos movemos a lo largo de una isocuanta, $\diff Q = 0$:
   #+begin_export latex
   \[ 0 = \PMgK \diff K + \PMgL \diff L \]
   #+end_export
-- Operando:
+
+- Finalmente:
   #+begin_export latex
   \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} = -\frac{\PMgL}{\PMgK} \]
   #+end_export
 
 
-** La pendiente de las isocuantas (y II)
-- Si una combinación de factores es técnicamente eficiente para
-  obtener un determinado nivel de producción se debe cumplir que:
-  $\PMgL > 0$ y $\PMgK > 0$.
-
-- Las isocuantas tienen pendiente negativa en las combinaciones
-  técnicamente eficientes.
-  #+begin_export latex
-  \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} = -\frac{\PMgL}{\PMgK} < 0\]
-  #+end_export
-
-
 ** La relación marginal de sustitución técnica (I)
+
 - La *relación marginal de sustitución técnica*, $\RMST$, es el número
-  de unidades de capital que pueden ser sustituidas por unidad de
-  trabajo, manteniendo el nivel de producción constante.
+  de unidades de capital que pueden ser sustituidas por una unidad
+  adicional de trabajo, /manteniendo el nivel de producción constante/.
 
 
 ** La relación marginal de sustitución técnica (y II)
+
 - Coincide con la pendiente de la isocuanta con signo negativo:
   #+begin_export latex
   \[ \RMST = -\left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} \]
   #+end_export
+
 - Por tanto:
   #+begin_export latex
   \[ \RMST = \frac{\PMgL}{\PMgK} \]
@@ -97,39 +97,26 @@
 #+MATS: figcol fig-5B_1004-is02-*.pdf 0.5
 
 - Suponemos que las isocuantas son convexas.
+
 - La convexidad implica que la $\RMST$ es decreciente.
-
-
-** Convexidad y rendimientos decrecientes de un factor
-- *Convexidad y rendimientos decrecientes de un factor* son dos propiedades distintas: una no implica a la otra.
-- Puede cumplirse la ley de rendimientos decrecientes de un factor sin
-  que la $\RMST$ sea decreciente:
-  #+begin_export latex
-  \[ Q = \big(K + L\big)^{1/2} \]
-  #+end_export
-- La $\RMST$ puede ser decreciente pero no cumplirse la ley de
-  rendimientos decrecientes de un factor:
-  #+begin_export latex
-  \[ Q = K L \]
-  #+end_export
 
 
 ** Sustituibilidad
 
 #+MATS: figcol fig-5B_1004-is05-*.pdf 0.5
 
-- La curvatura de las isocuanta indica el grado de sustituibilidad
-  de un factor por otro a la hora de obtener un determinado nivel de
-  producción.
+- La curvatura de las isocuanta indica el grado de sustituibilidad de
+  un factor por otro.
 
 
 ** Factores perfectamente sustituibles
 
 #+MATS: figcol fig-5B_1004-is03-*.pdf 0.5
 
-- *Sustituibilidad perfecta*: los factores pueden
-  sustituirse siempre a la misma tasa.
-- La $\RMST$ toma siempre el mismo valor.
+- Los factores de producción son *sustitutos perfectos*.
+
+- La $\RMST$ es constante en todos los puntos de una isocuanta.
+
 - Ejemplo:
   #+begin_export latex
   \[ Q = L + K \]
@@ -156,30 +143,15 @@
 * Los rendimientos de escala
 
 
-** Los rendimientos de escala (I)
+** Los rendimientos de escala
+
 - *Rendimientos de escala*: ¿en qué medida aumenta la producción
   cuando se incrementa el uso de *todos* los factores en la misma
   proporción?
 
 
-** Los rendimientos de escala (y II)
-- Por ejemplo, partimos de una determinada combinación de factores:
-  #+begin_export latex
-  \[ Q_0 = F(4, 3) = 10 \]
-  #+end_export
-- Triplicamos la utilización de factores y obtenemos un nuevo nivel de
-  producción:
-  #+begin_export latex
-  \[ Q_1 = F(12, 9) = 30 \]
-  #+end_export
-- En nuestro ejemplo, la producción ha aumentado en la misma
-  proporción que los factores: $Q_1 = 3 Q_0$. Es decir:
-  #+begin_export latex
-  \[   F(3 \cdot 4, 3 \cdot 3) = 3 F(4, 3) \]
-  #+end_export
-
-
 ** Rendimientos constantes de escala (I)
+
 - Existen *rendimientos constantes de escala* si al aumentar el uso de
   los factores en una proporción $\lambda$, $\lambda > 1$, el nivel de
   producción cambia exactamente en esa misma proporción:
@@ -193,10 +165,12 @@
 #+MATS: figcol fig-5B_1004-re01-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B = 2 Q_A$.
+
 - $C = 3 A$ y $Q_C = 3 Q_A$.
 
 
 ** Rendimientos crecientes de escala (I)
+
 - Existen *rendimientos crecientes de escala* si al aumentar
   el uso de los factores en una proporción $\lambda$, $\lambda > 1$,
   el nivel de producción se incrementa más que proporcionalmente:
@@ -214,6 +188,7 @@
 
 
 ** Rendimientos decrecientes de escala (I)
+
 - Existen *rendimientos decrecientes de escala* si al aumentar el uso
   de los factores en una proporción $\lambda$, $\lambda > 1$, la
   proporción a la que aumenta el nivel de producción es inferior a
@@ -235,9 +210,3 @@
 - Una misma tecnología puede presentar diferentes tipos de
   rendimientos de escala dependiendo del nivel de producción en el que
   opere la empresa.
-
-
-** Rendimientos de escala y rendimientos de un factor
-- Son conceptos independientes: el tipo de rendimientos de escala no
-  implica (ni se deduce de) el cumplimiento de la ley de rendimientos
-  decrecientes de un factor

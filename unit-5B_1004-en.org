@@ -9,11 +9,14 @@
 - Varian: :: /Intermediate microeconomics/. Chapter 18.
 #+end_bibbox
 
-* Long term production
+* Production in the long run
+
 
 ** Production with two variable factors
-- In the long term all factors are variable.
-- Long term production function:
+
+- In the long-run, all factors of production are variable.
+
+- Long-run production function:
   #+begin_export latex
   \[ Q = F(K, L) \]
   #+end_export
@@ -21,21 +24,23 @@
 
 ** Marginal product of the factors
 
-- The *marginal product of labour* is the rate at which production
-  grows per additional unit of labour:
+- The *marginal product of labor* is the rate at which production
+  increases per additional unit of labor:
   #+begin_export latex
   \[ \PMgL = \frac{\partial Q}{\partial L} = \frac{\partial F(K, L)}{\partial L}  \]
   #+end_export
+
 - The *marginal product of capital* is the rate at which production
-  grows per additional unit of capital:
+  increases per additional unit of capital:
   #+begin_export latex
   \[ \PMgK = \frac{\partial Q}{\partial K} = \frac{\partial F(K, L)}{\partial K}  \]
   #+end_export
 
 
 ** Isoquant
-- The *isoquant* is the set of combinations of factors with which it
-  can be obtained the same maximum level of production.
+
++ An *isoquant* is a set of all possible combinations of inputs that
+  yield the same output level.
 
 
 
@@ -43,41 +48,42 @@
 
 #+MATS: figcol fig-5B_1004-is01-*.pdf 0.5
 
-- A different isoquant corresponds to each level of production .
-- The more distant from the origin isoquants are associated with
-  higher production levels.
+- Each isoquant corresponds to a different level of production.
+
+- Higher isoquants represent greater output levels.
 
 
-** The slope of the isoquants (I)
+** The slope of the isoquants
+
 - Total differential of the production function:
   #+begin_export latex
   \[ \diff Q = \PMgK \diff K + \PMgL \diff L \]
   #+end_export
-- If we move along an isoquant, $\diff Q = 0$. Then:
+
+- If we move along an isoquant, $\diff Q = 0$:
   #+begin_export latex
   \[ 0 = \PMgK \diff K + \PMgL \diff L \]
   #+end_export
-- Operating:
+
+- Finally:
   #+begin_export latex
   \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} = -\frac{\PMgL}{\PMgK} \]
   #+end_export
 
 
-** The slope of the isoquants (and II)
-- If a combinations of factors is technically efficient to obtain a determined level of production it should meet that: $\PMgL > 0$ and $\PMgK > 0$.
+** The marginal rate of technical substitution (I)
 
-- Isoquants have a negative slope in the technically efficient combinations.
-  #+begin_export latex
-  \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} = -\frac{\PMgL}{\PMgK} < 0\]
-  #+end_export
+- The *marginal rate of technical substitution*, $\RMST$, is the
+  number of units of capital that can be substituted by an additional
+  unit of labor, /keeping the production level constant/.
 
+** The marginal rate of technical substitution (and II)
 
-** Marginal rate of technical substitution
-- The *marginal rate of technical substitution*, $\RMST$, is the number of units of capital that can be substituted by a unit of labour, keeping the production level constant.
 - It coincides with the slope of the isoquant with negative sign:
   #+begin_export latex
   \[ \RMST = -\left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} \]
   #+end_export
+
 - Therefore:
   #+begin_export latex
   \[ \RMST = \frac{\PMgL}{\PMgK} \]
@@ -88,39 +94,27 @@
 
 #+MATS: figcol fig-5B_1004-is02-*.pdf 0.5
 
-- We assume that the isoquants are convex.
+- We assume that isoquants are convex.
+
 - Convexity implies the $\RMST$ is decreasing.
-
-
-** Convexity and returns of a factor
-- *Convexity and diminishing returns of a factor* are two different
-  properties: one does not imply the other.
-- The law of diminishing returns of a factor can be fulfilled without
-  the $\RMST$ being decreasing:
-  #+begin_export latex
-  \[ Q = \big(K + L\big)^{1/2} \]
-  #+end_export
-- The $\RMST$ may be decreasing but the law of diminishing returns of
-  a factor may not be fulfilled:
-  #+begin_export latex
-  \[ Q = K L \]
-  #+end_export
 
 
 ** Substitutability
 
 #+MATS: figcol fig-5B_1004-is05-*.pdf 0.5
 
-- The curvature of the isoquants indicates the degree of substitutability of a factor for other when obtaining a certain level of production.
+- The curvature of the isoquants indicates the degree of
+  substitutability of one factor for another.
 
 
 ** Perfectly substitutable factors
 
 #+MATS: figcol fig-5B_1004-is03-*.pdf 0.5
 
-- *Perfect substitutability of factors*: the factors can be
-  substituted always at the same rate.
-- The $\RMST$ always takes the same value.
+- Inputs are *perfect substitutes*.
+
+- The $\RMST$ is constant at all points on an isoquant.
+
 - Example:
   #+begin_export latex
   \[ Q = L + K \]
@@ -145,31 +139,18 @@
 
 * Returns to scale
 
-** Returns to scale (I)
+
+** Returns to scale
+
 - *Returns to scale*: at which rate does the production grow when the
   usage of *all* factors is increased by the same proportion?
 
 
-** Returns to scale (and II)
-- For example, we start from a determined combination of factors:
-  #+begin_export latex
-  \[ Q_0 = F(4, 3) = 10 \]
-  #+end_export
-- We triple the usage of factors and obtain a new level of production:
-  #+begin_export latex
-  \[ Q_1 = F(12, 9) = 30 \]
-  #+end_export
-- In our example, production has increased by the same proportion as the factors: $Q_1 = 3 Q_0$. That is:
-  #+begin_export latex
-  \[   F(3 \cdot 4, 3 \cdot 3) = 3 F(4, 3) \]
-  #+end_export
-
-
 ** Constant returns to scale (I)
+
 - In general, there are *constant returns to scale* if when increasing
   the usage of the factors by a proportion $\lambda$, $\lambda > 1$,
   the level of production varies exactly in that same proportion:
-  #
   #+begin_export latex
   \[ F(\lambda K, \lambda L) = \lambda F(K, L) \]
   #+end_export
@@ -180,10 +161,12 @@
 #+MATS: figcol fig-5B_1004-re01-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B = 2 Q_A$.
+
 - $C = 3 A$ y $Q_C = 3 Q_A$.
 
 
 ** Increasing returns to scale (I)
+
 - There are *increasing returns to scale* is when increasing the usage
   of the factors by a proportion $\lambda$, $\lambda > 1$, the level
   of production increases more than proportionally:
@@ -197,10 +180,12 @@
 #+MATS: figcol fig-5B_1004-re02-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B > 2 Q_A$.
+
 - $C = 3 A$ y $Q_C > 3 Q_A$.
 
 
 ** Decreasing returns to scale (I)
+
 - There are *decreasing returns to scale* if when increasing the usage
   of the factors by a proportion $\lambda$, $\lambda > 1$,the
   proportion at which the level of production increases is lower than
@@ -215,15 +200,11 @@
 #+MATS: figcol fig-5B_1004-re03-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B < 2 Q_A$.
+
 - $C = 3 A$ y $Q_B < 3 Q_A$.
 
 
 ** Variable returns to scale
+
 - The same technology can have different types of returns to scale
   depending on the production level in which the firm operates.
-
-
-** Returns to scale and factor returns
-- They are independent concepts: the type of returns to scale does not
-  imply (nor is deduced from) the fulfilment of the law of diminishing
-  returns of a factor
