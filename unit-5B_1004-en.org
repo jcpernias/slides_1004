@@ -9,7 +9,7 @@
 - Varian: :: /Intermediate microeconomics/. Chapter 18.
 #+end_bibbox
 
-* Production in the long run
+* Production in the long-run
 
 
 ** Production with two variable factors
@@ -25,13 +25,13 @@
 ** Marginal product of the factors
 
 - The *marginal product of labor* is the rate at which production
-  increases per additional unit of labor:
+  grows per additional unit of labor:
   #+begin_export latex
   \[ \PMgL = \frac{\partial Q}{\partial L} = \frac{\partial F(K, L)}{\partial L}  \]
   #+end_export
 
 - The *marginal product of capital* is the rate at which production
-  increases per additional unit of capital:
+  grows per additional unit of capital:
   #+begin_export latex
   \[ \PMgK = \frac{\partial Q}{\partial K} = \frac{\partial F(K, L)}{\partial K}  \]
   #+end_export
@@ -55,7 +55,7 @@
 
 ** The slope of the isoquants
 
-- Total differential of the production function:
+- Totally differentiating the production function:
   #+begin_export latex
   \[ \diff Q = \PMgK \diff K + \PMgL \diff L \]
   #+end_export
@@ -77,6 +77,7 @@
   number of units of capital that can be substituted by an additional
   unit of labor, /keeping the production level constant/.
 
+
 ** The marginal rate of technical substitution (and II)
 
 - It coincides with the slope of the isoquant with negative sign:
@@ -96,22 +97,23 @@
 
 - We assume that isoquants are convex.
 
-- Convexity implies the $\RMST$ is decreasing.
+- Convexity implies a decreasing $\RMST$.
 
 
-** Substitutability
+** Substitution among inputs
 
 #+MATS: figcol fig-5B_1004-is05-*.pdf 0.5
 
-- The curvature of the isoquants indicates the degree of
-  substitutability of one factor for another.
+- The curvature of the isoquants indicates how easy it is to
+  substitute one input for the other.
 
 
-** Perfectly substitutable factors
+** Perfect substitutes
 
 #+MATS: figcol fig-5B_1004-is03-*.pdf 0.5
 
-- Inputs are *perfect substitutes*.
+- The isoquants are straight lines when inputs are *perfect
+  substitutes*.
 
 - The $\RMST$ is constant at all points on an isoquant.
 
@@ -142,17 +144,17 @@
 
 ** Returns to scale
 
-- *Returns to scale*: at which rate does the production grow when the
-  usage of *all* factors is increased by the same proportion?
+- *Returns to scale*: at which rate does the production grow when
+  *all* inputs increase in proportion?
 
 
 ** Constant returns to scale (I)
 
-- In general, there are *constant returns to scale* if when increasing
-  the usage of the factors by a proportion $\lambda$, $\lambda > 1$,
-  the level of production varies exactly in that same proportion:
+- *Constant returns to scale*: the firm increase all inputs by a
+  proportion $t$, $t > 1$, and the output level grows
+  exactly in that proportion:
   #+begin_export latex
-  \[ F(\lambda K, \lambda L) = \lambda F(K, L) \]
+  \[ F(t K, t L) = t F(K, L) \]
   #+end_export
 
 
@@ -167,11 +169,11 @@
 
 ** Increasing returns to scale (I)
 
-- There are *increasing returns to scale* is when increasing the usage
-  of the factors by a proportion $\lambda$, $\lambda > 1$, the level
-  of production increases more than proportionally:
+- *Increasing returns to scale*: the firm increase all inputs by a
+  proportion $t$, $t > 1$, and the output level grows more than
+  proportionally:
   #+begin_export latex
-  \[ F(\lambda K, \lambda L) > \lambda F(K, L) \]
+  \[ F(t K, t L) > t F(K, L) \]
   #+end_export
 
 
@@ -186,12 +188,11 @@
 
 ** Decreasing returns to scale (I)
 
-- There are *decreasing returns to scale* if when increasing the usage
-  of the factors by a proportion $\lambda$, $\lambda > 1$,the
-  proportion at which the level of production increases is lower than
-  $\lambda$:
+- *Decreasing returns to scale*: the firm increase all inputs by a
+  proportion $t$, $t > 1$, and the output level grows less than
+  proportionally:
   #+begin_export latex
-  \[ F(\lambda K, \lambda L) < \lambda F(K, L) \]
+  \[ F(t K, t L) < t F(K, L) \]
   #+end_export
 
 
@@ -206,5 +207,5 @@
 
 ** Variable returns to scale
 
-- The same technology can have different types of returns to scale
-  depending on the production level in which the firm operates.
+- Returns to scale need not be the same across all possible levels of
+  production.

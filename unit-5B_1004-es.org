@@ -56,7 +56,7 @@
 
 ** La pendiente de las isocuantas
 
-- Diferencial total de la función de producción:
+- Diferenciando totalmente la función de producción:
   #+begin_export latex
   \[ \diff Q = \PMgK \diff K + \PMgL \diff L \]
   #+end_export
@@ -98,22 +98,23 @@
 
 - Suponemos que las isocuantas son convexas.
 
-- La convexidad implica que la $\RMST$ es decreciente.
+- La convexidad implica una $\RMST$ decreciente.
 
 
-** Sustituibilidad
+** Sustitución entre factores
 
 #+MATS: figcol fig-5B_1004-is05-*.pdf 0.5
 
-- La curvatura de las isocuanta indica el grado de sustituibilidad de
-  un factor por otro.
+- La curvatura de las isocuanta indica la facilidad con que puede
+  sustituirse un factor por el otro.
 
 
-** Factores perfectamente sustituibles
+** Sustitutos perfectos
 
 #+MATS: figcol fig-5B_1004-is03-*.pdf 0.5
 
-- Los factores de producción son *sustitutos perfectos*.
+- Las isocuantas son líneas rectas cuando los factores de producción
+  son *sustitutos perfectos*.
 
 - La $\RMST$ es constante en todos los puntos de una isocuanta.
 
@@ -146,17 +147,16 @@
 ** Los rendimientos de escala
 
 - *Rendimientos de escala*: ¿en qué medida aumenta la producción
-  cuando se incrementa el uso de *todos* los factores en la misma
-  proporción?
+  cuando se incrementan *todos* los factores en la misma proporción?
 
 
 ** Rendimientos constantes de escala (I)
 
-- Existen *rendimientos constantes de escala* si al aumentar el uso de
-  los factores en una proporción $\lambda$, $\lambda > 1$, el nivel de
-  producción cambia exactamente en esa misma proporción:
+- *Rendimientos constantes de escala*: la empresa aumenta todos los
+  factores en una proporción $t$, $t > 1$, y el nivel de producción
+  crece exactamente en esa proporción:
   #+begin_export latex
-  \[ F(\lambda K, \lambda L) = \lambda F(K, L) \]
+  \[ F(t K, t L) = t F(K, L) \]
   #+end_export
 
 
@@ -171,11 +171,11 @@
 
 ** Rendimientos crecientes de escala (I)
 
-- Existen *rendimientos crecientes de escala* si al aumentar
-  el uso de los factores en una proporción $\lambda$, $\lambda > 1$,
-  el nivel de producción se incrementa más que proporcionalmente:
+- *Rendimientos crecientes de escala*: la empresa aumenta
+  todos los factores en una proporción $t$, $t > 1$, y el nivel de
+  producción crece más que proporcionalmente:
   #+begin_export latex
-  \[ F(\lambda K, \lambda L) > \lambda F(K, L) \]
+  \[ F(t K, t L) > t F(K, L) \]
   #+end_export
 
 
@@ -189,12 +189,11 @@
 
 ** Rendimientos decrecientes de escala (I)
 
-- Existen *rendimientos decrecientes de escala* si al aumentar el uso
-  de los factores en una proporción $\lambda$, $\lambda > 1$, la
-  proporción a la que aumenta el nivel de producción es inferior a
-  $\lambda$:
+- *Rendimientos decrecientes de escala*: la empresa aumenta
+  todos los factores en una proporción $t$, $t > 1$, y el nivel de
+  producción crece menos que proporcionalmente:
   #+begin_export latex
-  \[ F(\lambda K, \lambda L) < \lambda F(K, L) \]
+  \[ F(t K, t L) < t F(K, L) \]
   #+end_export
 
 
@@ -207,6 +206,6 @@
 
 
 ** Rendimientos de escala variables
-- Una misma tecnología puede presentar diferentes tipos de
-  rendimientos de escala dependiendo del nivel de producción en el que
-  opere la empresa.
+
+- Los rendimientos de escala no necesariamente son iguales para todos
+  los posibles niveles de producción.
