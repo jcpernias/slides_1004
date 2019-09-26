@@ -17,16 +17,17 @@
 - ¿Por qué existen las empresas? Si los mercados asignan
   eficientemente los recursos, ¿para qué necesitamos las empresas?
 
-- [[http://en.wikipedia.org/wiki/Ronald_Coase][Ronald Coase]]: las empresas coordinan el proceso de producción
-  evitando los *costes de transacción*: búsqueda, negociación,
-  mantenimiento de secretos comerciales, monitorización, etc.
+- [[http://en.wikipedia.org/wiki/Ronald_Coase][Ronald Coase]]: las empresas coordinan eficientemente el proceso de
+  producción evitando los *costes de transacción*: búsqueda,
+  negociación, mantenimiento de secretos comerciales, monitorización,
+  etc.
 
 
 ** La producción
 
 - La *tecnología* permite que las empresas combinen *factores de
-  producción* para obtener los *bienes de producción* que
-  posteriormente venderán en los *mercados de bienes*.
+  producción* para obtener los *bienes de producción* que venderán en
+  los *mercados de bienes*.
 
 
 ** Factores de producción
@@ -42,7 +43,7 @@
 
 ** El capital
 
-- *Bienes de capitalq*: aquellos factores de producción que son ellos
+- *Bienes de capital*: aquellos factores de producción que son ellos
   mismos bienes de producción: máquinas, herramientas, edificios y
   estructuras destinadas al proceso productivo.
 
@@ -76,9 +77,7 @@
 ** El largo plazo
 
 - A largo plazo, la empresa puede elegir las cantidades que usa de
-  todos los factores de producción: todos los factores de producción
-  son *factores variables*.
-
+  todos los factores de producción: sólo hay *factores variables*.
 
 
 ** Simplificaciones
@@ -100,15 +99,15 @@
 
 ** Producción con un factor variable
 
-- A corto plazo el capital es fijo: $K = \overline{K}$.
+- A corto plazo el capital es fijo: $K = \Kbar$.
 
 - Función de producción a corto plazo:
   #+begin_export latex
   \[ Q = F(\Kbar, L) = f(L) \]
   #+end_export
 
-- La única forma en que la empresa puede alterar su nivel de
-  producción es variar el uso del factor variable.
+- La única forma en que la empresa puede aumentar su nivel de
+  producción es usando más unidades del factor variable.
 
 
 ** La curva de producto total

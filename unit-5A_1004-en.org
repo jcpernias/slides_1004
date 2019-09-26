@@ -17,9 +17,9 @@
 - Why do firms exist? If markets efficiently allocate resources, do we
   really need firms?
 
-- [[http://en.wikipedia.org/wiki/Ronald_Coase][Ronald Coase]]: firms coordinate the production process avoiding
-  *transaction costs*: search, bargaining, protect trade secrets,
-  monitoring, etc.
+- [[http://en.wikipedia.org/wiki/Ronald_Coase][Ronald Coase]]: firms efficiently coordinate the production process by
+  avoiding *transaction costs*: searching, bargaining, protecting
+  trade secrets, monitoring, etc.
 
 
 ** Production
@@ -27,6 +27,14 @@
 - *Technology* enables firms to combine *factors of production* to
   obtain the *produced goods* that will then be sold in the *goods
   markets*.
+
+
+**                                                         :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+#+latex: \mode<article>{\clearpage{}}
 
 
 ** Factors of production
@@ -42,9 +50,9 @@
 
 ** Capital
 
-- *Capital goods*: those factors of production which are themselves produced
-  goods: machinery, tools, buildings and structures used for the
-  production process.
+- *Capital goods*: those factors of production which are themselves
+  produced goods: machinery, tools, buildings and structures used for
+  the production process.
 
 - Capital as a factor of production corresponds to the concept of
   *physical capital* and differs from *financial capital*: the
@@ -67,13 +75,13 @@
 
 ** The short-run
 
-- In the short-run the firm cannot change the quantities of one or
+- In the short-run, the firm cannot change the quantities of one or
   more inputs: there are *fixed factors of production*.
 
 
 ** The long-run
 
-- In the long-run firm can choose the quantities of all inputs: all
+- In the long-run ,the firm can choose the quantities of all inputs: all
   the inputs are *variable factors*.
 
 
@@ -103,8 +111,8 @@
   \[ Q = F(\Kbar, L) = f(L) \]
   #+end_export
 
-- The only way in which the firm can alter its output level is by
-  varying the usage of the variable factor.
+- The only way in which the firm can increase its output level is by
+  using more units of the variable input.
 
 
 ** The total product curve
@@ -150,6 +158,13 @@
   units of an input are used, /holding all other inputs fixed/, a
   point will be reached at which the resulting additions to output
   decrease.
+
+**                                                         :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+#+latex: \mode<article>{\clearpage{}}
 
 
 ** Technical efficiency (I)
