@@ -495,3 +495,63 @@ plotCoord(CMg)
 \end{tikzpicture}
 
 #+end_src
+
+
+#+begin_src latex :tangle fig-6A_1004-sr09.Rnw :noweb no
+  <<setup, cache=FALSE, include=FALSE>>=
+    opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+  @
+
+  <<init>>=
+
+  ## Load code
+  source("./R/srcost.R")
+
+  ## Graphics parameters
+
+  width <- 5.5                              # cm
+  height <- 5
+
+  Xtop <- 105
+  Ytop <- 10
+
+  xscale <- width/Xtop
+  yscale <- height/Ytop
+
+
+  @
+
+  \begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+  \draw[IMe, Brown]
+  <<CVMe>>=
+  plotCoord(CVMe)
+  @
+    node[right, font=\footnotesize]  {$\CVMe$}
+    ;
+
+
+  \draw[IMe, DarkBlue]
+  <<CMe>>=
+  plotCoord(CMe)
+  @
+    node[above, font=\footnotesize]  {$\CMe$}
+    ;
+
+
+  \draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
+     node[left] {\phantom{$\CVMe$}}
+     (\Sexpr{Xtop}, 0) node[below] {$Q$}
+     ;
+  \draw
+     (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMe$}
+     ;
+
+
+
+
+  \end{tikzpicture}
+
+#+end_src

@@ -20,9 +20,9 @@
 - Descomponemos el problema de la maximización de beneficios en dos
   partes:
 
-  + ¿Cómo minimizar los costes de producción?
+  + Cómo minimizar el coste de producir una determinada cantidad.
 
-  + ¿Cuánto producir?
+  + Cómo elegir el nivel de producción que genere más beneficios.
 
 
 ** El comportamiento de la empresa
@@ -34,21 +34,17 @@
 
   + $r$ el precio del capital.
 
-- La empresa no puede por sí sola alterar los precios de los factores.
-
 
 ** Coste total
 
-- *Coste total*: el valor de las retribuciones de los factores a sus
-  precios de mercado.
-
-- Aunque alguno de los factores sea propiedad de la empresa debemos de
-  incluir su *coste de oportunidad*.
-
-- El coste total es:
+- *Coste total*: el valor de mercado de los factores que la empresa
+  usa para producir.
   #+begin_export latex
   \[ C = r K + w L \]
   #+end_export
+
+- Aquellos factores que son propiedad de la empresa se valoran a su
+  *coste de oportunidad*.
 
 
 ** El corto plazo
@@ -61,15 +57,14 @@
     factor trabajo.
 
 
-** Costes fijos y costes variables
+** Coste fijo y coste variable
 
-- *Costes fijos*: son los asociados al uso los factores fijos:
+- *Coste fijo*:
   #+begin_export latex
   \[ \CF = r \Kbar \]
   #+end_export
 
-- *Costes variables*: son las retribuciones de los factores
-  variables:
+- *Coste variable*:
   #+begin_export latex
   \[ \CV = w L \]
   #+end_export
@@ -83,9 +78,17 @@
   #+end_export
 
 - Es la suma del coste fijo y el coste variable:
-  #+Begin_export latex
+  #+begin_export latex
   \[ C = \CF + \CV \]
   #+end_export
+
+**                                                         :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+#+latex: \mode<article>{\clearpage{}}
+
 
 
 
@@ -107,8 +110,8 @@
 
 #+MATS: figcol fig-6A_1004-sr02-*.pdf 0.55
 
-- La inversa de la función de producto total muestra el trabajo
-  necesario para alcanzar un determinado nivel de producción:
+- La inversa de la función de producto total muestra el trabajo que se
+  requiere para obtener un determinado nivel de producción:
   #+begin_export latex
   \[ L = f^{-1}(Q) \]
   #+end_export
@@ -118,8 +121,7 @@
 
 #+MATS: figcol fig-6A_1004-sr03-*.pdf 0.55
 
-- La *curva de coste variable* indica cuál es el mínimo coste variable
-  al que se puede obtener un determinado nivel de producción:
+- *Curva de coste variable*:
   #+begin_export latex
   \[ \CV(Q) = w f^{-1}(Q) \]
   #+end_export
@@ -129,7 +131,7 @@
 
 #+MATS: figcol fig-6A_1004-sr04-*.pdf 0.55
 
-- El coste fijo no depende del nivel de producción.
+- El *coste fijo* no depende del nivel de producción.
 
 - La *curva de coste total* se obtiene sumando el coste fijo y el
   coste variable para cada nivel de producción.
@@ -137,18 +139,17 @@
 
 ** Las curvas de costes a corto plazo
 
-- El coste fijo no depende del nivel de producción:
+- *Curva de coste fijo*:
   #+begin_export latex
-  \[ \CF(Q) = r \Kbar \]
+  \[ \CF = r \Kbar \]
   #+end_export
 
-- El coste variable se obtiene invirtiendo la función de producto
-  total a corto plazo:
+- *Curva de coste variable*:
   #+begin_export latex
   \[ \CV(Q) = w f^{-1}(Q) \]
   #+end_export
 
-- El coste total es la suma del coste fijo y el coste variable:
+- *Coste total a corto plazo*:
   #+begin_export latex
   \[ \CT(Q) = r \Kbar + w f^{-1}(Q) \]
   #+end_export
@@ -159,13 +160,13 @@
 - El *coste marginal* es la tasa a la que cambia el coste total por
   unidad adicional de producción:
   #+begin_export latex
-  \[ \CMg = \frac{\diff C}{\diff Q} \]
+  \[ \CMg(Q) = \frac{\diff C(Q)}{\diff Q} \]
   #+end_export
 
 - El coste marginal se puede expresar también como la derivada del
   coste variable con respecto de $Q$:
   #+begin_export latex
-  \[ \CMg = \frac{\diff \CF}{\diff Q} + \frac{\diff \CV}{\diff Q} = \frac{\diff \CV}{\diff Q} \]
+  \[ \CMg(Q) = \frac{\diff \CF}{\diff Q} + \frac{\diff \CV(Q)}{\diff Q} = \frac{\diff \CV(Q)}{\diff Q} \]
   #+end_export
 
 
@@ -173,35 +174,33 @@
 
 - *Coste fijo medio*:
   #+begin_export latex
-  \[ \CFMe = \frac{\CF}{Q} \]
+  \[ \CFMe(Q) = \frac{\CF}{Q} \]
   #+end_export
 
 - *Coste variable medio*:
   #+begin_export latex
-  \[ \CVMe = \frac{\CV}{Q} \]
+  \[ \CVMe(Q) = \frac{\CV(Q)}{Q} \]
   #+end_export
 
 - *Coste medio*:
   #+begin_export latex
-  \[ \CMe = \frac{C}{Q} = = \CFMe + \CVMe \]
+  \[ \CMe(Q) = \frac{C(Q)}{Q} =\CFMe(Q) + \CVMe(Q) \]
   #+end_export
 
 
 ** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (I)
 
-- El coste variable es:
+- Coste variable:
   #+begin_export latex
   \[ \CV = w L \]
   #+end_export
 
-- Dividiendo por el nivel de producción, obtenemos el coste variable
-  medio:
+- Coste variable medio:
   #+begin_export latex
   \[ \CVMe = w \frac{L}{Q} = w\frac{1}{Q/L} = \frac{w}{\PMeL} \]
   #+end_export
 
-- Por otro lado, la tasa a la que cambia el $\CV$ por unidad adicional
-  de $Q$ es el coste marginal:
+- Coste marginal:
   #+begin_export latex
   \[ \CMg = \frac{\diff \CV}{\diff Q} = w \frac{\diff L}{\diff Q} = w\frac{1}{\diff Q/\diff L} = \frac{w}{\PMgL} \]
   #+end_export
@@ -210,9 +209,6 @@
 ** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (II)
 
 #+MATS: figcol fig-6A_1004-sr05-*.pdf 0.55
-
-- La forma de las curvas de producto medio y marginal determina la
-  forma de las curvas de coste medio y marginal.
 
 - $\PMgL$ y $\PMeL$ tienen forma de U invertida.
 
@@ -223,18 +219,17 @@
 
 - Las curvas de coste medio y marginal tienen forma de U.
 
-- La curva de $\CMg$ corta con la de $\CVMe$ en el mínimo de los
-  costes variables medios.
-
-
 ** Las curvas de coste variable medio y coste marginal
 
 #+MATS: figcol fig-6A_1004-sr06-*.pdf 0.55
 
-- Cuando $\CMg < \CVMe$, el coste variable medio decrece con $Q$.
+- El coste variable medio:
 
-- El coste variable medio crece con la producción cuando $\CMg >
-  \CVMe$.
+  + decrece cuando $\CMg < \CVMe$.
+
+  + crece cuando $\CMg > \CVMe$.
+
+  + alcanza su mínimo cuando $\CMg = \CVMe$.
 
 
 ** La curva de coste fijo medio
@@ -242,27 +237,25 @@
 #+MATS: figcol fig-6A_1004-sr07-*.pdf 0.55
 
 - La *curva de coste fijo medio* decrece conforme aumenta la
-  producción:
-  #+begin_export latex
-  \[ \CFMe(Q) = \frac{r \Kbar}{Q} \]
-  #+end_export
+  producción.
 
 
 ** La curva de coste medio (I)
 
-#+MATS: figcol fig-6A_1004-sr08-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr09-*.pdf 0.55
 
 - La curva de $\CMe$ es la suma del $\CVMe$ y el $\CFMe$ para cada
   nivel de producción.
-
-- La curva de $\CMg$ corta con la de $\CMe$ en el mínimo coste
-  medio.
 
 
 ** La curva de coste medio (y II)
 
 #+MATS: figcol fig-6A_1004-sr08-*.pdf 0.55
 
-- La curva de $\CMe$ decrece con $Q$ cuando $\CMg < \CMe$.
+- El coste medio:
 
-- La curva de $\CMe$ es creciente siempre que $\CMg > \CMe$.
+  + decrece  cuando $\CMg < \CMe$.
+
+  + crece cuando $\CMg > \CMe$.
+
+  + alcanza su mínimo cuando $\CMg = \CMe$.
