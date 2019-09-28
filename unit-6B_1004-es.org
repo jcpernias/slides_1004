@@ -11,9 +11,11 @@
 
 * La minimización del coste a largo plazo
 
+
 ** La minimización del coste de producción
+
 - La empresa elige la combinación de factores que minimiza el coste de
-  producir un determinado nivel de producción, $\Qbar$:
+  obtener un determinado nivel de producción, $\Qbar$:
   #+BEGIN_EXPORT LaTeX
     \begin{gather*}
       \min_{\{K^{*}, L^{*}\}} C = r K + w L \\
@@ -21,43 +23,52 @@
     \end{gather*}
   #+END_EXPORT
 
+
+**                                                         :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+#+latex: \mode<article>{\clearpage{}}
+
+
 ** La isocuanta
 
 #+MATS: figcol fig-6B_1004-eq01-*.pdf 0.5
 
-- La restricción a la que se enfrenta la empresa es una curva
-  isocuanta:
+- La empresa selecciona la combinación de factores menos costosa de la
+  isocuanta $\Qbar$.
   #+begin_export latex
   \[ \Qbar = F(K, L) \]
   #+end_export
 
 
-** Las isocostes (I)
-- Una *curva isocoste* es el conjunto de todas las combinaciones de
-  factores que, a los precios de mercado, representan el mismo coste:
+** La isocostes (I)
+
+- *Recta isocoste*: todas las combinaciones de factores que
+  representan el mismo coste:
   #+begin_export latex
   \[ \Cbar = r K + w L \]
   #+end_export
-- Las decisiones de la empresa no pueden alterar los precios de los
-  factores. Por tanto, la isocoste es una línea recta:
+
+- A menudo la escribimos como:
   #+begin_export latex
   \[ K = \frac{\Cbar}{r} - \frac{w}{r} L \]
   #+end_export
 
 
-** Las isocostes (II)
+** La isocostes (y II)
 
 #+MATS: figcol fig-6B_1004-eq02-*.pdf 0.5
 
-- La pendiente de la isocoste es negativa:
+- La pendiente de la isocoste es igual al precio relativo de los
+  factores con signo negativo:
   #+begin_export latex
   \[\left.\frac{\diff K}{\diff L}\right|_{\Cbar} = -\frac{w}{r} \]
   #+end_export
 
 
-** Las isocostes (y III)
-- La pendiente de la isocoste es igual al precio relativo de los
-  factores con signo negativo.
+** El precio relativo de los factores
 
 - El *precio relativo de los factores*, $w/r$, es el número de
   unidades de $K$ que pueden ser sustituidas por unidad de $L$ sin
@@ -68,13 +79,9 @@
 
 #+MATS: figcol fig-6B_1004-eq03-*.pdf 0.5
 
-- A cada nivel de coste, $C_1, C_2, \dotsc$, le corresponde una
-  isocoste diferente.
-- Cuanto más alejada del origen esté la isocoste, mayor es el coste
-  asociado:
-  #+begin_export latex
-  \[ C_1 < C_2 < C_3 < \dotsb \]
-  #+end_export
+- A cada nivel de coste le corresponde una isocoste diferente.
+
+- Las isocostes más altas representan mayores costes.
 
 
 ** La elección óptima (I)
@@ -83,8 +90,9 @@
 
 - La empresa selecciona aquella combinación de factores que minimiza
   el coste de producir $\Qbar$ unidades.
+
 - Combinaciones como $A$ o $B$, donde una isocoste corta a la
-  isocuanta no pueden ser óptimas.
+  isocuanta, no pueden ser óptimas.
 
 
 ** La elección óptima (II)
@@ -95,6 +103,7 @@
   #+begin_export latex
   \[ \RMST > \frac{w}{r} \]
   #+end_export
+
 - La empresa puede producir $\Qbar$ a un menor coste si sustituye $K$
   por $L$.
 
@@ -107,6 +116,7 @@
   #+begin_export latex
   \[ \RMST < \frac{w}{r} \]
   #+end_export
+
 - La empresa puede producir $\Qbar$ a un menor coste si sustituye $L$
   por $K$.
 
@@ -115,17 +125,20 @@
 
 #+MATS: figcol fig-6B_1004-eq05-*.pdf 0.5
 
-- Solución interior.
+- Isocuanta:
+  #+begin_export latex
+  \[ \Qbar = F(K, L) \]
+  #+end_export
+
 - Condición de tangencia:
   #+begin_export latex
   \[ \RMST = \frac{w}{r} \]
   #+end_export
 
 
-** Dualidad(I)
-- Hemos planteado el problema de la empresa como la minimización de
-  los costes de producción dado un nivel de producción, $\Qbar$.
-- Programa *dual*: maximización de la producción dado un determinado
+** Dualidad (I)
+
+- *Programa dual*: maximización de la producción dado un determinado
   coste de producción, $\Cbar$:
   #+BEGIN_EXPORT LaTeX
     \begin{gather*}
@@ -139,12 +152,15 @@
 
 #+MATS: figcol fig-6B_1004-eq08-*.pdf 0.5
 
-- Solución interior.
+- Isocoste:
+  #+begin_export latex
+  \[ \Cbar = r K + w L \]
+  #+end_export
+
 - Condición de tangencia:
   #+begin_export latex
   \[ \RMST = \frac{w}{r} \]
   #+end_export
-
 
 
 
@@ -155,15 +171,15 @@
 
 #+MATS: figcol fig-6B_1004-exp02-*.pdf 0.5
 
-- Dados los precios de los factores, a cada nivel de producción le
-  corresponde una combinación óptima diferente.
-- El conjunto de esas combinaciones óptimas es la *senda de expansión
-  del producto*.
+- Dados los precios de los factores, hay una combinación óptima
+  diferente para cada nivel de producción: *senda de expansión del
+  producto*.
 
 
-** Las demandas condicionales de factores
-- La *demanda condicional de un factor* muestra el nivel óptimo de
-  utilización del factor para cada nivel de producción:
+** Las demanda condicional de un factor
+
+- La *demanda condicional de un factor* muestra la cantidad óptima del
+  factor para cada nivel de producción:
   #+BEGIN_EXPORT LaTeX
     \begin{gather*}
       L = L(Q) \\
@@ -171,119 +187,120 @@
     \end{gather*}
   #+END_EXPORT
 
-- Usando las demandas condicionales de los factores, obtenemos la
-  *curva de coste a largo plazo*:
-  #+begin_export latex
-  \[ \CT_{\LP}(Q) = r K(Q) + w L(Q) \]
-  #+end_export
-
 
 ** La curva de coste total a largo plazo
 
 #+MATS: figcol fig-6B_1004-clp01-*.pdf 0.5
 
-- A largo plazo no hay costes fijos. La empresa siempre tiene la
-  opción de no producir nada sin incurrir en costes:
-  #+BEGIN_EXPORT LATEX
-  \[ \CT_{\LP}(0) = 0 \]
-  #+END_EXPORT
+- *Curva de coste a largo plazo*:
+  #+begin_export latex
+  \[ \CT_{\LP}(Q) = r K(Q) + w L(Q) \]
+  #+end_export
 
 
-** Coste medio y coste marginal(I)
+** Coste medio y coste marginal (I)
 
 - Coste medio a largo plazo:
   #+begin_export latex
   \[ \CMeLP(Q) = \frac{\CT_{\LP}(Q)}{Q} \]
   #+end_export
+
 - Coste marginal a largo plazo:
   #+begin_export latex
   \[ \CMgLP(Q) = \frac{\diff \CT_{\LP}(Q)}{\diff Q} \]
   #+end_export
 
 
-** Coste medio y coste marginal(II)
+**                                                         :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+#+latex: \mode<article>{\clearpage{}}
+
+
+** Coste medio y coste marginal (II)
 
 #+MATS: figcol fig-6B_1004-env08-*.pdf 0.53
 
-- Las curvas se cortan en el mínimo coste unitario a largo plazo.
+- Las curvas $\CMeLP$ y $\CMgLP$ se cortan en el mínimo coste unitario
+  a largo plazo.
 
 
-** Coste medio y coste marginal(y III)
-- La pendiente del coste medio depende de la posición relativa de las
-  curvas de $\CMeLP$ y de $\CMgLP$:
-  + $\CMeLP$ decrece cuando $\CMgLP < \CMeLP$.
-  + $\CMeLP$ crece cuando $\CMgLP > \CMeLP$.
-  + $\CMeLP$ alcanza un mínimo cuando $\CMgLP = \CMeLP$.
+** Coste medio y coste marginal (y III)
+
+- La curva de $\CMeLP$:
+
+  + decrece cuando $\CMgLP < \CMeLP$.
+
+  + crece cuando $\CMgLP > \CMeLP$.
+
+  + alcanza un mínimo cuando $\CMgLP = \CMeLP$.
 
 
 ** Economías y deseconomías de escala (I)
-- Existen *economías de escala* cuando los costes aumentan en menor
-  proporción que la producción.
-- Cuando los costes crecen más rápidamente que la producción hay
-  *deseconomías de escala*.
+
+- Existen *economías de escala* cuando los costes totales aumentan en
+  menor proporción que la producción.
+
+- Hay *deseconomías de escala* cuando los costes totales crecen más
+  rápidamente que la producción.
 
 
 ** Economías y deseconomías de escala (y II)
-- Cuando existen economías de escala, el $\CMeLP$ decrece con la
-  producción.
-- Cuando existen deseconomías de escala, el $\CMeLP$ crece con la
-  producción.
+
+- Cuando existen economías de escala, el $\CMeLP$ es decreciente.
+
+- Cuando existen deseconomías de escala, el $\CMeLP$ es creciente.
 
 
-** Rendimientos de escala y costes a largo plazo(I)
-- Si la tecnología se caracteriza por tener rendimientos constantes de
-  escala entonces los costes crecen en la misma proporción que la
-  producción.
-- Por ejemplo, la empresa puede duplicar su producción duplicando la
-  utilización de todos los factores de producción:
-  #+begin_export latex
-  \[ Q_1 = F(2 K_0, 2 L_0) = 2 F(K_0, L_0) = 2 Q_0 \]
-  #+end_export
-- En ese caso, los costes también se duplican:
-  #+begin_export latex
-  \[ \CT_{\LP}(Q_1) = r 2 K_0 + w 2 L_0 = 2 (r K_0 + w L_0) = 2 \CT_{\LP}(Q_0) \]
-  #+end_export
+** Rendimientos de escala y costes a largo plazo (I)
+
+- Los costes crecen en la misma proporción que la producción cuando
+  hay rendimientos constantes de escala.
 
 
-** Rendimientos de escala y costes a largo plazo(II)
+** Rendimientos de escala y costes a largo plazo (II)
 
 #+MATS: figcol fig-6B_1004-clp02-*.pdf 0.5
 
-- En presencia de rendimientos constantes de escala, la función de
-  coste es lineal en la producción:
+- La función de costes es lineal cuando hay rendimientos constantes de
+  escala:
   #+begin_export latex
   \[ \CT_{\LP}(Q) = c Q \]
   #+end_export
 
 
-** Rendimientos de escala y costes a largo plazo(III)
+** Rendimientos de escala y costes a largo plazo (III)
 
 #+MATS: figcol fig-6B_1004-clp03-*.pdf 0.5
 
-- En presencia de rendimientos constantes de escala, el coste medio y
-  marginal son iguales a una misma constante:
+- El coste medio y marginal son iguales a una misma constante cuando
+  hay rendimientos constantes de escala:
   #+begin_export latex
   \[ \CMeLP(Q) = \CMgLP(Q) = c \]
   #+end_export
 
 
-** Rendimientos de escala y costes a largo plazo(y IV)
-- En presencia de rendimientos crecientes de escala, al duplicar el
-  uso de los factores la producción aumenta más del doble: hay
-  *economías de escala*.
-- En presencia de rendimientos decrecientes de escala, los costes
-  crecen más rápidamente que la producción: hay *deseconomías de
-  escala*.
+** Rendimientos de escala y costes a largo plazo (y IV)
+
+- Si hay rendimientos crecientes de escala la producción crece más
+  rápido que los costes: hay *economías de escala*.
+
+- Si hay rendimientos decrecientes de escala, la producción crece más
+  despacio que los costes: hay *deseconomías de escala*.
 
 
 
 * Relación entre los costes a corto y a largo plazo
 
+
 ** La elección a corto plazo
 
 #+MATS: figcol fig-6B_1004-exp03-*.pdf 0.5
 
-- A corto plazo el nivel de $K$ es fijo.
+- A corto plazo, el nivel de $K$ es fijo.
+
 - Sólo se pueden alcanzar distintos niveles de producción alterando el
   nivel de $L$.
 
@@ -292,9 +309,10 @@
 
 #+MATS: figcol fig-6B_1004-exp04-*.pdf 0.5
 
-- A largo plazo la empresa puede alterar el uso de ambos factores.
+- A largo plazo, la empresa puede cambiar todos los factores.
+
 - Sólo para un nivel de producción coinciden la decisión de corto
-  plazo y la de largo plazo, $C$.
+  plazo y la de largo plazo.
 
 
 ** Costes a corto y a largo plazo (I)
@@ -311,20 +329,18 @@
 
 - Las curva de coste a largo plazo está por debajo de las curvas de
   costes a corto plazo.
-- Cada curva de costes a corto tiene un punto de tangencia con la
-  curva de costes a largo plazo.
+
+- Cada curva de costes a corto tiene es tangente a la
+  curva de costes a largo plazo en un punto.
 
 
 ** Costes a corto y a largo plazo (y III)
 
 #+MATS: figcol fig-6B_1004-env21-*.pdf 0.5
 
-- Las curvas de coste medio a corto plazo están por encima de la curva
-  de coste medio a largo plazo y son tangentes a $\CMeLP$ para un
+- Cada curva de coste medio a corto plazo está por encima de la curva
+  de coste medio a largo plazo y es tangente a $\CMeLP$ para un
   nivel de producción.
-- Para ese nivel de producción coinciden el coste marginal de corto
-  plazo y el coste marginal de largo plazo.
-
 
 
 * La envolvente
@@ -334,17 +350,18 @@
 
 #+MATS: figcol fig-6B_1004-env01-*.pdf 0.55
 
-- Supongamos que la empresa sólo puede elegir entre dos posible
-  tamaños de planta: $K_1$ < $K_2$.
-- ¿Cuál será su decisión a largo plazo?
+- Consideremos primero el caso en que la empresa sólo puede elegir
+  entre dos tamaños de planta: $K_1$ < $K_2$, ¿cuál será su decisión a
+  largo plazo?
 
 
 ** La elección del tamaño de la planta (y II)
 
 #+MATS: figcol fig-6B_1004-env02-*.pdf 0.55
 
-- Si a largo plazo espera producir menos que $Q_A$, es menos costoso
-  usar el tamaño de planta $K_1$.
+- Si la empresa espera producir a largo plazo menos que $Q_A$, el
+  tamaño de planta $K_1$ tiene menores costes.
+
 - El tamaño de planta $K_2$ es más eficiente para niveles de
   producción superiores a $Q_A$.
 
@@ -359,21 +376,13 @@
 
 ** La envolvente (II)
 
-#+MATS: figcol fig-6B_1004-env04-*.pdf 0.55
-
-- La curva de costes marginales a largo plazo está compuesta por los
-  tramos relevantes de las curvas de costes marginales a corto plazo.
-
-
-** La envolvente (III)
-
 #+MATS: figcol fig-6B_1004-env05-*.pdf 0.55
 
-- Si la empresa dispone de más opciones la curva de costes medios a
-  largo plazo es más suave.
+- Si la empresa puede elegir entre más tamaños de planta, la curva de
+  costes medios a largo plazo es más suave.
 
 
-** La envolvente (y IV)
+** La envolvente (y III)
 
 #+MATS: figcol fig-6B_1004-env06-*.pdf 0.55
 
@@ -388,7 +397,8 @@
 
 - El *tamaño eficiente de la planta* se corresponde con el mínimo
   coste unitario a largo plazo.
-- Para el nivel de producción $Q_e$ coinciden $\CMeLP$, $\CMe_{e}$,
+
+- Para ese nivel de producción, $Q_e$, coinciden $\CMeLP$, $\CMe_{e}$,
   $\CMgLP$ y $\CMg_{e}$.
 
 

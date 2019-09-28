@@ -11,9 +11,11 @@
 
 * Cost minimization in the long run
 
+
 ** The minimization of the production cost
+
 - The firm chooses the combination of factors that minimizes the cost
-  of producing a determined level of production, $\Qbar$:
+  of producing a determined output level, $\Qbar$:
   #+BEGIN_EXPORT LaTeX
     \begin{gather*}
       \min_{\{K^{*}, L^{*}\}} C = r K + w L \\
@@ -26,40 +28,34 @@
 
 #+MATS: figcol fig-6B_1004-eq01-*.pdf 0.5
 
-- The restriction the firm faces is the isoquant that corresponds to
-  the production level $\Qbar$.
-- The isoquant contains all the options the firm has to obtain $\Qbar$
-  units of product.
+- The firm chooses the less costly input combination on the isoquant $\Qbar$.
 
 
-** The isocost lines (I)
-- An *isocost curve* is the set of all the combinations of factors
-  that, at market prices, represent the same cost:
+** Isocosts (I)
+
+- *Isocost line*: all input combinations that represent the same cost:
   #+begin_export latex
   \[ \Cbar = r K + w L \]
   #+end_export
-- If the firm decisions cannot alter prices of the factors, the
-  isocost is a straight line:
+
+- Often, we write it as:
   #+begin_export latex
   \[ K = \frac{\Cbar}{r} - \frac{w}{r} L \]
   #+end_export
 
 
-** The isocost lines (II)
+** Isocosts (and II)
 
 #+MATS: figcol fig-6B_1004-eq02-*.pdf 0.5
 
-- The slope of the isocost line is negative:
+- The slope of the isocost line is equal to the relative price of
+  factors with negative sign:
   #+begin_export latex
   \[\left.\frac{\diff K}{\diff L}\right|_{\Cbar} = -\frac{w}{r} \]
   #+end_export
-- To keep constant the production cost if the firm hires more units of
-  $L$, it has to stop using some units of $K$.
 
 
-** The isocost lines (and III)
-- The slope of the isocost is equal to the relative price of factors
-  with negative sign.
+** The relative input price
 
 - The *relative price of factors*, $w/r$, is the number of units of
   $K$ that can be replaced per unit of $L$ without increasing the cost
@@ -70,23 +66,20 @@
 
 #+MATS: figcol fig-6B_1004-eq03-*.pdf 0.5
 
-- To each level of cost, $C_1, C_2, \dotsc$, it corresponds a
-  different isocost.
-- The more distant from the origin is the isocost, higher is the
-  associated cost:
-  #+begin_export latex
-  \[ C_1 < C_2 < C_3 < \dotsb \]
-  #+end_export
+- Each isocost line corresponds to a different cost level.
+
+- The higher the isocost line, the greater the cost.
 
 
 ** The optimal choice (I)
 
 #+MATS: figcol fig-6B_1004-eq04-*.pdf 0.5
 
-- The firm chooses the combination of factors that minimizes the cost
-  of producing $\Qbar$ units.
+- The firm chooses the combination of factors of production that
+  minimizes the cost of producing $\Qbar$ units.
+
 - Combinations like $A$ or $B$, where an isocost line crosses the
-  isoquant cannot be optimal.
+  isoquant, cannot be optimal.
 
 
 ** The optimal choice (II)
@@ -117,7 +110,11 @@
 
 #+MATS: figcol fig-6B_1004-eq05-*.pdf 0.5
 
-- Interior solution.
+- Isoquant:
+  #+begin_export latex
+  \[ \Qbar = F(K, L) \]
+  #+end_export
+
 - Tangency condition:
   #+begin_export latex
   \[ \RMST = \frac{w}{r} \]
@@ -125,11 +122,8 @@
 
 
 ** Duality(I)
-- We have presented the problem of the choice of the optimal
-  combination of factors as the one of the minimization of production
-  costs.
-- Alternatively we can present the problem of maximizing production
-  given a determined production cost, $\Cbar$:
+- *Dual program*: maximize production for a given cost of production,
+  $\Cbar$:
   #+BEGIN_EXPORT LaTeX
     \begin{gather*}
       \max_{\{K^{*}, L^{*}\}} Q = F(K, L)  \\
@@ -142,7 +136,12 @@
 
 #+MATS: figcol fig-6B_1004-eq08-*.pdf 0.5
 
-- Interior solution.
+- Isocost line:
+  #+begin_export latex
+  \[ \Cbar = r K + w L \]
+  #+end_export
+
+
 - Tangency condition:
   #+begin_export latex
   \[ \RMST = \frac{w}{r} \]
@@ -152,19 +151,19 @@
 
 * Cost curves in the long run
 
-** The expansion path of the product
+
+** The product expansion path of the
 
 #+MATS: figcol fig-6B_1004-exp02-*.pdf 0.5
 
-- Given the prices of the factors, to each level of production
-  corresponds a different optimal combination.
-- The set of those optimal combinations is the *expansion path of the
-  product*.
+- Given the input prices, there is a different optimal combination for
+  each output level: the *product expansion path*.
 
 
-** Conditional demands of factors
-- The *conditional demand of a factor* shows the optimal level of
-  usage of that factor for each level of production:
+** Conditional demand of and input
+
+- The *conditional demand of an input* shows the optimal quantity of
+  that input for each level of production:
   #+BEGIN_EXPORT LaTeX
     \begin{gather*}
       L = L(Q) \\
@@ -172,135 +171,143 @@
     \end{gather*}
   #+END_EXPORT
 
-- Using the conditional demands of factors, we obtain the
-  *long-run cost curve*:
+
+
+** The long-run total cost curve
+
+#+MATS: figcol fig-6B_1004-clp01-*.pdf 0.5
+
+- The *long-run total cost curve*:
   #+begin_export latex
   \[ \CT_{\LP}(Q) = r K(Q) + w L(Q) \]
   #+end_export
 
 
-** Long-run total cost curve
-
-#+MATS: figcol fig-6B_1004-clp01-*.pdf 0.5
-
-- In the long-run there are no fixed costs. The firm always has the
-  option of not producing anything without costs:
-  #+BEGIN_EXPORT LATEX
-  \[ \CT_{\LP}(0) = 0 \]
-  #+END_EXPORT
-
-
-** Average cost and marginal cost(I)
+** Average cost and marginal cost (I)
 
 - Long-run average cost:
   #+begin_export latex
   \[ \CMeLP(Q) = \frac{\CT_{\LP}(Q)}{Q} \]
   #+end_export
-- Marginal cost in the long-run:
+
+- Long-run marginal cost:
   #+begin_export latex
   \[ \CMgLP(Q) = \frac{\diff \CT_{\LP}(Q)}{\diff Q} \]
   #+end_export
 
 
-** Average cost and marginal cost(II)
+**                                                         :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+#+latex: \mode<article>{\clearpage{}}
+
+
+
+** Average cost and marginal cost (II)
 
 #+MATS: figcol fig-6B_1004-env08-*.pdf 0.53
 
-- The curves cross at the minimum unit cost in the long-run.
+- The $\CMeLP$ and $\CMgLP$ curves cross at the minimum unit cost in
+  the long-run.
 
 
-** Average  cost and marginal cost(and III)
-- The slope of the average cost depends on the relative position of
-  the $\CMeLP$ and $\CMgLP$ curves:
-  + $\CMeLP$ decreases when $\CMgLP < \CMeLP$.
-  + $\CMeLP$ increases when $\CMgLP > \CMeLP$.
-  + $\CMeLP$ reaches a minimum when $\CMgLP = \CMeLP$.
+** Average  cost and marginal cost (and III)
+
+- The $\CMeLP$ curve:
+
+  + decreases when $\CMgLP < \CMeLP$.
+
+  + increases when $\CMgLP > \CMeLP$.
+
+  + reaches a minimum when $\CMgLP = \CMeLP$.
 
 
 ** Economies and diseconomies of scale (I)
-- There exist *economies of scale* when costs increase in a lower
-  proportion than production.
-- When costs increase in a higher proportion than production there are
-  *diseconomies of scale*.
+
+- There exist *economies of scale* when total cost increase less than
+  proportionally to production.
+
+- There exist *diseconomies of scale* when total cost grows faster
+  than output.
 
 
 ** Economies and diseconomies of scale (and II)
-- When there are economies of scale, the $\CMeLP$ decreases with
-  production.
-- When there are diseconomies of scale, the $\CMeLP$ increases with
-  production.
+
+- When there are economies of scale, the $\CMeLP$ is decreasing.
+
+- When there are diseconomies of scale, the $\CMeLP$ is increasing.
 
 
-** Returns to scale and costs in the long-run(I)
-- If technology is characterized by constant returns to scale, then
-  costs increase in the same proportion than production.
-- For example, the firm can double its production by doubling the
-  usage of all the factors of production:
-  #+begin_export latex
-  \[ Q_1 = F(2 K_0, 2 L_0) = 2 F(K_0, L_0) = 2 Q_0 \]
-  #+end_export
-- In that case, costs also double:
-  #+begin_export latex
-  \[ \CT_{\LP}(Q_1) = r 2 K_0 + w 2 L_0 = 2 (r K_0 + w L_0) = 2 \CT_{\LP}(Q_0) \]
-  #+end_export
+** Returns to scale and costs in the long-run (I)
+
+- Total costs increase in the same proportion than production when
+  there are constant returns to scale.
 
 
-** Returns to scale and costs in the long-run(II)
+** Returns to scale and costs in the long-run (II)
 
 #+MATS: figcol fig-6B_1004-clp02-*.pdf 0.5
 
-- With constant returns to scale, the cost function is linear in
-  production:
+- The cost function is linear when there are constant returns to
+  scale:
   #+begin_export latex
   \[ \CT_{\LP}(Q) = c Q \]
   #+end_export
 
 
-** Returns to scale and costs in the long-run(III)
+** Returns to scale and costs in the long-run (III)
 
 #+MATS: figcol fig-6B_1004-clp03-*.pdf 0.5
 
-- With constant returns to scale, the average cost and the marginal
-  cost are equal to a same constant:
+- The average and the marginal costs are both equal to the same
+  constant when there are constant returns to scale::
   #+begin_export latex
   \[ \CMeLP(Q) = \CMgLP(Q) = c \]
   #+end_export
 
 
-** Returns to scale and costs in the long-run(and IV)
-- With increasing returns to scale, when doubling the usage of factors
-  production increases more than he double: there are *economies of
-  scale*.
-- With decreasing returns to scale, costs increase more quickly than
-  production: there are *diseconomies of scale*.
+** Returns to scale and costs in the long-run (and IV)
+
+- If there are increasing returns to scale, output grows faster than
+  costs: there are *economies of scale*.
+
+- If there are decreasing returns to scale, output grows slower than
+  costs: there are *diseconomies of scale*.
 
 
 
 
 * Relationship between short-run and long-run costs
 
+
 ** The short-run choice
 
 #+MATS: figcol fig-6B_1004-exp03-*.pdf 0.5
 
-- In the short-run the level of $K$ is fixed.
-- Different levels of production can only be reached by altering the
-  level of $L$.
+- In the short-run, the level of $K$ is fixed.
+
+- Different output levels can only be reached by altering the level of
+  $L$.
 
 
-** The short-run and the long-run choice
+** The short-run and the long-run choices
 
 #+MATS: figcol fig-6B_1004-exp04-*.pdf 0.5
 
-- In the long-run the firm can alter the usage of both factors.
-- Just for a production level the short-run and the long-run decisions coincide, $C$.
+- In the long-run, the firm can change all inputs.
+
+- Only at one output level the long-run choice is the same as the
+  short-run one.
 
 
 ** Short-run and long-run costs (I)
 
 #+MATS: figcol fig-6B_1004-exp05-*.pdf 0.5
 
-- Short-run costs are higher than long-run costs, except for a level of production.
+- Short-run costs are higher than long-run costs, except for one level
+  of production.
 
 
 ** Short-run and long-run costs (II)
@@ -308,19 +315,17 @@
 #+MATS: figcol fig-6B_1004-env20-*.pdf 0.5
 
 - The long-run cost curve is below the short-run cost curves.
-- Each short-run cost curve has a tangency point with the long-run
-  cost curve.
+
+- Each short-run cost curve is tangent to the long-run cost curve at
+  one point.
 
 
 ** Short-run and long-run costs (and III)
 
 #+MATS: figcol fig-6B_1004-env21-*.pdf 0.5
 
-- Short-run average cost curves are above the long-run average cost
-  curve and are tangent to $\CMeLP$ for a level of production.
-- For that level of production the short-run marginal cost and the
-  long-run marginal cost coincide.
-
+- Each short-run average cost curve is above the long-run average cost
+  curve and is tangent to $\CMeLP$ at one output level.
 
 
 * The envelope
@@ -330,19 +335,20 @@
 
 #+MATS: figcol fig-6B_1004-env01-*.pdf 0.55
 
-- Let’s suppose the firm can only choose between two plant sizes:
-  $K_1$ < $K_2$.
-- Which would be its long-run decision?
+- Consider first the case in which the firm can only choose between
+  two plant sizes: $K_1$ < $K_2$. Which would be its long-run
+  decision?
 
 
 ** The choice of the plant size (and II)
 
 #+MATS: figcol fig-6B_1004-env02-*.pdf 0.55
 
-- If in the long-run it expects to produce less than $Q_A$, it is less
-  costly to use the plant size $K_1$.
-- The plant size $K_2$ is more efficient for production levels higher
-  than $Q_A$.
+- If the firm expects to produce less than $Q_A$ in the long-run, the
+  plant size $K_1$ has lower costs.
+
+- The plant size $K_2$ is more efficient for output levels higher than
+  $Q_A$.
 
 
 ** The envelope (I)
@@ -355,26 +361,26 @@
 
 ** The envelope (II)
 
-#+MATS: figcol fig-6B_1004-env04-*.pdf 0.55
-
-- The long-run marginal cost curve is formed by the relevant sections
-  of the short-run marginal cost curves.
-
-
-** The envelope (III)
-
 #+MATS: figcol fig-6B_1004-env05-*.pdf 0.55
 
-- If the firm has more options, the long-run average cost curve is
-  smoother.
+- If the firm can choose among more plant sizes, the long-run average
+  cost curve is smoother.
 
 
-** The envelope (and IV)
+**                                                         :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+#+latex: \mode<article>{\clearpage{}}
+
+
+** The envelope (and III)
 
 #+MATS: figcol fig-6B_1004-env06-*.pdf 0.55
 
-- When the firm can choose between a continuous set of plant sizes,
-  each short-run average cost curve is tangent to the $\CMeLP$ at a
+- When the firm can choose among a continuum of plant sizes, each
+  short-run average cost curve is tangent to the $\CMeLP$ at one
   point.
 
 
@@ -382,7 +388,8 @@
 
 #+MATS: figcol fig-6B_1004-env07-*.pdf 0.55
 
-- The *efficient plant size* corresponds to the minimum unit cost in
-  the long-run.
-- For the production level $Q_e$, $\CMeLP$, $\CMe_{e}$, $\CMgLP$ and
+- The *efficient plant size* corresponds to the minimum long-run unit
+  cost.
+
+- At that production level, $Q_e$, $\CMeLP$, $\CMe_{e}$, $\CMgLP$ and
   $\CMg_{e}$ coincide.

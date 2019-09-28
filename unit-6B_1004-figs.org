@@ -438,73 +438,11 @@
   \coordinate (E)  at (6,   4.1666667) ;
   \coordinate (slope) at ($ (1, -{125/180})$) ;
 
-  % \draw[help lines]
-  %   let \p1=(Bl), \p2=(E), \p3=(Al) in
-  %   (0, \y1) node[left, font=\scriptsize] {$K(Q_{1})$ } -|
-  %   (\x1, 0) node[below, font=\scriptsize] {$L(Q_{1})$ }
-  %   (0, \y2) node[left, font=\scriptsize] {$K(Q_{2})$ } -|
-  %   (\x2, 0) node[below, font=\scriptsize] {$L(Q_{2})$ }
-  %   (0, \y3) node[left, font=\scriptsize] {$K(Q_{3})$ } -|
-  %   (\x3, 0) node[below, font=\scriptsize] {$L(Q_{3})$ }
-  %   ;
-
-  % \draw[IMe]
-  %   ($ (Al) - 2*(slope) $) -- ($ (Al) + 2*(slope) $)
-  %   ($ (E) - 1.5*(slope) $) -- ($ (E) + 1.5*(slope) $)
-  %   ($ (Bl) - 1.2*(slope) $) -- ($ (Bl) + 1.2*(slope) $)
-    % (0.75, 3.6458333) -- (4.56, 1)
-    % (1.5, 7.29166667) -- (10.56, 1)
-    % (3, 10.4166667) -- (14.5, 2.4305556)
-    % (3.5, 11.111111) -- (15, 3.125)
-    % (0.75, 4.6875) -- (6.42, 0.75)
-    % (1, 15.972222) -- (18, 4.166667)
-    % (4.08, 18) -- (18, 8.333333)
-    ;
-
-
-  \draw[CMe, very thick, Brown]
+  \draw[CMe, very thick, Brown!40!Black]
   plot[smooth, samples=128, domain=0:60]
     (\x, {0.69444444*sqrt(\x)} )
     node[right, font=\footnotesize] {$\CT_{\LP}$ }
     ;
-
-  % \draw[CMe]
-  %   plot[smooth, samples=128, domain=3:11]
-  %   (\x, 25/\x)
-  %   node[right, font=\scriptsize] {$Q_{2}$ }
-  %   ;
-  % \draw[CMe]
-  %   plot[smooth, samples=128, domain=5:15]
-  %   (\x, 56.25/\x)
-  %   node[right, font=\scriptsize] {$Q_{3}$ }
-  %   ;
-  % \draw[CMe]
-  %   plot[smooth, samples=128, domain=5.55555:15]
-  %   (\x, 100/\x)
-  %   ;
-  % \draw[CMe]
-  %   plot[smooth, samples=128, domain=8.6805555:15]
-  %   (\x, 156.25/\x)
-  %   ;
-
-
-  % \draw[curve, DarkGreen!70!Black, very thick]
-  %   (0, 0) -- (15, 10.4166667)
-  %   ;
-
-  % \draw[curve, DarkGreen!70!Black]
-  %   (0, 4.16666667) -- (15, 4.16666667)
-  %   ;
-
-
-    % \begin{scope}[label distance=0pt]
-    %   \node[dot] at (Al) {} ;
-    %   \node[dot] at (Bl) {} ;
-      % \node[dot, label={[font=\scriptsize]90:$A_{C}$}] at (Ac) {} ;
-      % \node[dot, label={[font=\scriptsize]45:$B_{C}$}] at (Bc) {} ;
-    %   \node[dot] at (E) {} ;
-    % \end{scope}
-
 
   \draw[axis]
     (0, 7) node[left] {$\CT$} |-
@@ -566,7 +504,7 @@ Coordinates(Q1=c(50, 0),
 %%   ;
 
 
-\draw[curve, brown, very thick]
+\draw[curve, brown!40!Black, very thick]
 <<CMeL>>=
 plotCMe(parL, domCMeL)
 @
@@ -595,7 +533,7 @@ plotCMg(parL, domCMgL)
 #+begin_src latex :tangle fig-6B_1004-clp02.tex :noweb yes
 \begin{tikzpicture}[yscale=1, xscale=1]
 
-  \draw[CMe, very thick, Brown]
+  \draw[CMe, very thick, Brown!40!Black]
     (0, 0) -- (3, 4)
     node[right, font=\footnotesize] {$\CT_{\LP}$ }
     ;
@@ -610,7 +548,7 @@ plotCMg(parL, domCMgL)
 #+begin_src latex :tangle fig-6B_1004-clp03.tex :noweb yes
 \begin{tikzpicture}[yscale=1, xscale=1]
 
-  \draw[CMe, very thick, Brown]
+  \draw[CMe, very thick, Brown!40!Black]
     (0, 1.2) node[left, font=\scriptsize] {$c$} -- (4.5, 1.2)
     node[pos=0.85, above, font=\footnotesize] {$\CMeLP = \CMgLP$ }
     ;
@@ -621,11 +559,6 @@ plotCMg(parL, domCMgL)
    (5, 0) node[below] {$Q$}
    ;
 \end{tikzpicture}
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: t
-%%% End:
-
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-exp03.tex :noweb yes
@@ -636,16 +569,6 @@ plotCMg(parL, domCMgL)
   \coordinate (Ac) at (13.5, 4.1666667) ;
   \coordinate (Bc) at (1.5, 4.16666667) ;
   \coordinate (E)  at (6,   4.1666667) ;
-
-
-  % \draw[IMe]
-  %   (0.75, 3.6458333) -- (4.56, 1)
-  %   (1.5, 7.29166667) -- (10.56, 1)
-  %   (3, 10.4166667) -- (14.5, 2.4305556)
-  %   (3.5, 11.111111) -- (15, 3.125)
-  %   (0.75, 4.6875) -- (6.42, 0.75)
-  %   ;
-
 
   \draw[CMe]
   plot[smooth, samples=128, domain=1.2:7]
@@ -670,9 +593,9 @@ plotCMg(parL, domCMgL)
     \begin{scope}[label distance=0pt]
       % \node[dot, label={[font=\scriptsize]-90:$A_{L}$}] at (Al) {} ;
       % \node[dot, label={[font=\scriptsize]-90:$B_{L}$}] at (Bl) {} ;
-      \node[dot, label={[font=\scriptsize]90:$A_{C}$}] at (Ac) {} ;
-      \node[dot, label={[font=\scriptsize]45:$B_{C}$}] at (Bc) {} ;
-      \node[dot, label={[font=\scriptsize]90:$C$}] at (E) {} ;
+      \node[dot, label={[font=\scriptsize]90:$T$}] at (Ac) {} ;
+      \node[dot, label={[font=\scriptsize]45:$R$}] at (Bc) {} ;
+      \node[dot, label={[font=\scriptsize]90:$S$}] at (E) {} ;
     \end{scope}
 
 
@@ -727,11 +650,11 @@ plotCMg(parL, domCMgL)
 
 
     \begin{scope}[label distance=0pt]
-      \node[dot, label={[font=\scriptsize]-90:$A_{L}$}] at (Al) {} ;
-      \node[dot, label={[font=\scriptsize]-90:$B_{L}$}] at (Bl) {} ;
-      \node[dot, label={[font=\scriptsize]90:$A_{C}$}] at (Ac) {} ;
-      \node[dot, label={[font=\scriptsize]45:$B_{C}$}] at (Bc) {} ;
-      \node[dot, label={[font=\scriptsize]90:$C$}] at (E) {} ;
+      \node[dot, label={[font=\scriptsize]-90:$T'$}] at (Al) {} ;
+      \node[dot, label={[font=\scriptsize]-90:$R'$}] at (Bl) {} ;
+      \node[dot, label={[font=\scriptsize]90:$T$}] at (Ac) {} ;
+      \node[dot, label={[font=\scriptsize]45:$R$}] at (Bc) {} ;
+      \node[dot, label={[font=\scriptsize]90:$S$}] at (E) {} ;
     \end{scope}
 
 
@@ -789,11 +712,11 @@ plotCMg(parL, domCMgL)
 
 
     \begin{scope}[label distance=0pt]
-      \node[dot, label={[font=\scriptsize]-90:$A_{L}$}] at (Al) {} ;
-      \node[dot, label={[font=\scriptsize]-90:$B_{L}$}] at (Bl) {} ;
-      \node[dot, label={[font=\scriptsize]90:$A_{C}$}] at (Ac) {} ;
-      \node[dot, label={[font=\scriptsize]45:$B_{C}$}] at (Bc) {} ;
-      \node[dot, label={[font=\scriptsize]90:$C$}] at (E) {} ;
+      \node[dot, label={[font=\scriptsize]-90:$T'$}] at (Al) {} ;
+      \node[dot, label={[font=\scriptsize]-90:$R'$}] at (Bl) {} ;
+      \node[dot, label={[font=\scriptsize]90:$T$}] at (Ac) {} ;
+      \node[dot, label={[font=\scriptsize]45:$R$}] at (Bc) {} ;
+      \node[dot, label={[font=\scriptsize]90:$S$}] at (E) {} ;
     \end{scope}
 
 
@@ -839,7 +762,7 @@ Coordinates(A=c30)
 
 \draw[help lines]
   let \p1=(A) in
-  (\x1, 0) node[below, font=\scriptsize] {$Q_{1}$} -- (A)
+  (\x1, 0) node[below, font=\scriptsize] {$Q_{S}$} -- (A)
   ;
 
 \draw[curve, Orange!70!Black]
@@ -850,7 +773,7 @@ plotCoord(C30)
   ;
 
 
-\draw[curve, Brown]
+\draw[curve, Brown!40!Black]
 <<CMeL>>=
 plotCoord(CL)
 @
@@ -906,7 +829,7 @@ Coordinates(Q1=c(30, 0), Q2=c(60, 0),
 @
 
 \draw[help lines]
-  (Q1) node[below, font=\scriptsize] {$Q_{1}$} --
+  (Q1) node[below, font=\scriptsize] {$Q_{S}$} --
   (CMe1)
   %% (Q2) node[below, font=\scriptsize] {$Q_{2}$} --
   %% (CMg2)
@@ -929,26 +852,7 @@ plotCMg(par30, domg30)
   ;
 
 
-
-
-%% \draw[curve, orange]
-%% <<CMe60>>=
-%% plotCMe(par60, dom60)
-%% @
-%%    node[above, font=\scriptsize] {$\CMe_{2}$}
-%%   ;
-
-
-%% \draw[curve, DarkGreen!70!Black]
-%% <<CMg60>>=
-%% plotCMg(par60, domg60)
-%% @
-%%    node[above, font=\scriptsize] {$\CMg_{2}$}
-%%   ;
-
-
-
-\draw[curve, brown, very thick]
+\draw[curve, brown!40!Black, very thick]
 <<CMeL>>=
 plotCMe(parL, domCMeL)
 @
@@ -965,9 +869,7 @@ plotCMg(parL, domCMgL)
 
 
 \node[dot] at (CMe1) {} ;
-%% \node[dot] at (CMe2) {} ;
-\node[dot] at (CMg1) {} ;
-%% \node[dot] at (CMg2) {} ;
+
 
 \draw[axis] (0,\Sexpr{Ytop})
    node[left, align=left] {$\CMe$\\$\CMg$} |-
@@ -1196,7 +1098,7 @@ plotCMe(par30, dom30)
 
 
 
-\draw[curve, brown, very thick]
+\draw[curve, brown!40!Black, very thick]
 <<CMe30L>>=
 plotCMe(par30, domL30a)
 @
@@ -1221,7 +1123,7 @@ plotCMe(par60, dom60)
   %% node[above, font=\scriptsize] {$\CMe_{2}$}
   ;
 
-\draw[curve, brown, very thick]
+\draw[curve, brown!40!Black, very thick]
 <<CMe60L>>=
 plotCMe(par60, domL60a)
 @
@@ -1301,7 +1203,7 @@ plotCMe(par30, dom30)
 
 
 
-\draw[curve, brown, very thick]
+\draw[curve, brown!40!Black, very thick]
 <<CMe30L>>=
 plotCMe(par30, domL30a)
 @
@@ -1326,7 +1228,7 @@ plotCMe(par60, dom60)
   %% node[above, font=\scriptsize] {$\CMe_{2}$}
   ;
 
-\draw[curve, brown, very thick]
+\draw[curve, brown!40!Black, very thick]
 <<CMe60L>>=
 plotCMe(par60, domL60a)
 @
@@ -1437,7 +1339,7 @@ plotCMe(par70, dom70)
 @
   ;
 
-\draw[curve, brown, very thick]
+\draw[curve, brown!40!Black, very thick]
 <<CMeLP>>=
 plotCMe(par15, domL15)
 plotCMe(par30, domL30)
@@ -1461,110 +1363,110 @@ plotCMe(par70, domL70)
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-env06.Rnw :noweb no
-<<setup, cache=FALSE, include=FALSE>>=
-  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
-@
+  <<setup, cache=FALSE, include=FALSE>>=
+    opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+  @
 
-<<init>>=
+  <<init>>=
 
-## Load code
-source("./R/cost.R")
+  ## Load code
+  source("./R/cost.R")
 
-## Graphics parameters
+  ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+  width <- 5                              # cm
+  height <- 5
 
-Xtop <- 90
-Ytop <- 200
+  Xtop <- 90
+  Ytop <- 200
 
-xscale <- width/Xtop
-yscale <- height/Ytop
-
-
-@
-
-\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
-
-<<Coordinates>>=
-Coordinates(Q1=c(30, 0), Q2=c(60, 0),
-            CMe1=CMe(par30, Q=30),
-            CMg1=CMg(par30, Q=30),
-            CMe2=CMe(par60, Q=60),
-            CMg2=CMg(par60, Q=60),
-            label=CMe(par30, dom30[1]))
-
-@
-
-\draw[help lines]
-  (Q1) node[below, font=\scriptsize] {$Q_{1}$} --
-  (CMe1)
-  (Q2) node[below, font=\scriptsize] {$Q_{2}$} --
-  (CMg2)
-  ;
+  xscale <- width/Xtop
+  yscale <- height/Ytop
 
 
-\draw[curve, orange]
-<<CMe30>>=
-plotCMe(par30, dom30)
-@
-  node[above, font=\scriptsize] at (label) {$\CMe_{1}$}
-  ;
+  @
+
+  \begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+  <<Coordinates>>=
+  Coordinates(Q1=c(30, 0), Q2=c(60, 0),
+              CMe1=CMe(par30, Q=30),
+              CMg1=CMg(par30, Q=30),
+              CMe2=CMe(par60, Q=60),
+              CMg2=CMg(par60, Q=60),
+              label=CMe(par30, dom30[1]))
+
+  @
+
+  \draw[help lines]
+    (Q1) node[below, font=\scriptsize] {$Q_{1}$} --
+    (CMe1)
+    (Q2) node[below, font=\scriptsize] {$Q_{2}$} --
+    (CMe2)
+    ;
 
 
-\draw[curve, DarkGreen!70!Black]
-<<CMg30>>=
-plotCMg(par30, domg30)
-@
-   node[above, font=\scriptsize] {$\CMg_{1}$}
-  ;
+  \draw[curve, orange]
+  <<CMe30>>=
+  plotCMe(par30, dom30)
+  @
+    node[above, font=\scriptsize] at (label) {$\CMe_{1}$}
+    ;
 
 
-
-
-\draw[curve, orange]
-<<CMe60>>=
-plotCMe(par60, dom60)
-@
-   node[above, font=\scriptsize] {$\CMe_{2}$}
-  ;
-
-
-\draw[curve, DarkGreen!70!Black]
-<<CMg60>>=
-plotCMg(par60, domg60)
-@
-   node[above, font=\scriptsize] {$\CMg_{2}$}
-  ;
+  \draw[curve, DarkGreen!70!Black]
+  <<CMg30>>=
+  plotCMg(par30, domg30)
+  @
+     node[above, font=\scriptsize] {$\CMg_{1}$}
+    ;
 
 
 
-\draw[curve, brown, very thick]
-<<CMeL>>=
-plotCMe(parL, domCMeL)
-@
-  node[right, font=\scriptsize] {$\CMeLP$}
-  ;
+
+  \draw[curve, orange]
+  <<CMe60>>=
+  plotCMe(par60, dom60)
+  @
+     node[above, font=\scriptsize] {$\CMe_{2}$}
+    ;
 
 
-\draw[curve, magenta, very thick]
-<<CMgL>>=
-plotCMg(parL, domCMgL)
-@
-  node[right, font=\scriptsize] {$\CMgLP$}
-  ;
+  \draw[curve, DarkGreen!70!Black]
+  <<CMg60>>=
+  plotCMg(par60, domg60)
+  @
+     node[above, font=\scriptsize] {$\CMg_{2}$}
+    ;
 
 
-\node[dot] at (CMe1) {} ;
-\node[dot] at (CMe2) {} ;
-\node[dot] at (CMg1) {} ;
-\node[dot] at (CMg2) {} ;
 
-\draw[axis] (0,\Sexpr{Ytop})
-   node[left, align=left] {$\CMe$\\$\CMg$} |-
-   node[left] {\phantom{$\CMg$}}
-   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
-\end{tikzpicture}
+  \draw[curve, brown!40!Black, very thick]
+  <<CMeL>>=
+  plotCMe(parL, domCMeL)
+  @
+    node[right, font=\scriptsize] {$\CMeLP$}
+    ;
+
+
+  \draw[curve, magenta, very thick]
+  <<CMgL>>=
+  plotCMg(parL, domCMgL)
+  @
+    node[right, font=\scriptsize] {$\CMgLP$}
+    ;
+
+
+  \node[dot] at (CMe1) {} ;
+  \node[dot] at (CMe2) {} ;
+  % \node[dot] at (CMg1) {} ;
+  % \node[dot] at (CMg2) {} ;
+
+  \draw[axis] (0,\Sexpr{Ytop})
+     node[left, align=left] {$\CMe$\\$\CMg$} |-
+     node[left] {\phantom{$\CMg$}}
+     (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+  \end{tikzpicture}
 
 #+end_src
 
@@ -1621,7 +1523,7 @@ plotCMg(par50, domg50)
   ;
 
 
-\draw[curve, brown, very thick]
+\draw[curve, brown!40!Black, very thick]
 <<CMeL>>=
 plotCMe(parL, domCMeL)
 @
