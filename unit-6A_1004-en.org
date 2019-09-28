@@ -24,7 +24,7 @@
   + How to choose the most profitable output level.
 
 
-** The firm’s behaviour
+** Input markets
 
 - The firm can use any amount of inputs at their market prices:
 
@@ -92,24 +92,26 @@
 * Costs curves in the short-run
 
 
-** Costs and production (I)
+** Total product function:
 
 #+MATS: figcol fig-6A_1004-sr01-*.pdf 0.55
 
-- The total product function relates the firm's output level and labor:
+- Total product function:
     #+begin_export latex
   \[ Q = f(L) \]
   #+end_export
 
 
-** Costs and production (and II)
+** The conditional labor demand function
 
 #+MATS: figcol fig-6A_1004-sr02-*.pdf 0.55
 
-- The inverse of the total product function shows the amount of labor
-  required to obtain a given level of output:
+- The *conditional labor demand* shows how much labor the firm should
+  hire to produce a given output level.
+
+- It is the inverse of the total product function:
   #+begin_export latex
-  \[ L = f^{-1}(Q) \]
+  \[ L(Q) = f^{-1}(Q) \]
   #+end_export
 
 
@@ -119,7 +121,7 @@
 
 - *Variable cost curve*:
   #+begin_export latex
-  \[ \CV(Q) = w f^{-1}(Q) \]
+  \[ \CV(Q) = w L(Q) \]
   #+end_export
 
 
@@ -142,12 +144,12 @@
 
 - *Variable cost curve*:
   #+begin_export latex
-  \[ \CV(Q) = w f^{-1}(Q) \]
+  \[ \CV(Q) = w L(Q) \]
   #+end_export
 
 - *Short-run total cost*:
   #+begin_export latex
-  \[ \CT(Q) = r \Kbar + w f^{-1}(Q) \]
+  \[ \CT(Q) = r \Kbar + w L(Q) \]
   #+end_export
 
 

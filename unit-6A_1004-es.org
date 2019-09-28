@@ -25,7 +25,7 @@
   + Cómo elegir el nivel de producción que genere más beneficios.
 
 
-** El comportamiento de la empresa
+** Los mercados de factores
 
 - La empresa puede usar cualquier cantidad de los factores de
   producción a sus precios de mercado:
@@ -82,6 +82,7 @@
   \[ C = \CF + \CV \]
   #+end_export
 
+
 **                                                         :B_ignoreheading:
 :PROPERTIES:
 :BEAMER_env: ignoreheading
@@ -95,25 +96,27 @@
 * Las curvas de costes a corto plazo
 
 
-** Producción y costes (I)
+** La función de producto total
 
 #+MATS: figcol fig-6A_1004-sr01-*.pdf 0.55
 
-- La función de producto total relaciona la producción de la
-  empresa y el trabajo.
+- Función de producto total:
   #+begin_export latex
   \[ Q = f(L) \]
   #+end_export
 
 
-** Producción y costes (y II)
+** La demanda condicionada de trabajo
 
 #+MATS: figcol fig-6A_1004-sr02-*.pdf 0.55
 
-- La inversa de la función de producto total muestra el trabajo que se
-  requiere para obtener un determinado nivel de producción:
+- La *demanda condicional de trabajo* muestra cuánto trabajo ha de
+  contratar la empresa para conseguir un nivel determinado de
+  producción.
+
+- Es la inversa de la función de producto total:
   #+begin_export latex
-  \[ L = f^{-1}(Q) \]
+  \[ L(Q) = f^{-1}(Q) \]
   #+end_export
 
 
@@ -123,7 +126,7 @@
 
 - *Curva de coste variable*:
   #+begin_export latex
-  \[ \CV(Q) = w f^{-1}(Q) \]
+  \[ \CV(Q) = w L(Q) \]
   #+end_export
 
 
@@ -146,12 +149,12 @@
 
 - *Curva de coste variable*:
   #+begin_export latex
-  \[ \CV(Q) = w f^{-1}(Q) \]
+  \[ \CV(Q) = w L(Q) \]
   #+end_export
 
 - *Coste total a corto plazo*:
   #+begin_export latex
-  \[ \CT(Q) = r \Kbar + w f^{-1}(Q) \]
+  \[ \CT(Q) = r \Kbar + w L(Q) \]
   #+end_export
 
 
@@ -218,6 +221,7 @@
 #+MATS: figcol fig-6A_1004-sr06-*.pdf 0.55
 
 - Las curvas de coste medio y marginal tienen forma de U.
+
 
 ** Las curvas de coste variable medio y coste marginal
 

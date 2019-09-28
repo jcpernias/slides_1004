@@ -39,7 +39,7 @@ Coordinates(Q0 = c(0, Q[idx, 2]),
 @
 
 \draw[help lines]
-  (Q0) node[left, font=\scriptsize] {$f(L_{0})$} -|
+  (Q0) node[left, font=\scriptsize] {$Q_{0}$} -|
   (L0) node[below, font=\scriptsize] {$L_{0}$}
   ;
 
@@ -80,8 +80,8 @@ source("./R/srcost.R")
 width <- 5.5                              # cm
 height <- 5
 
-Xtop <- 500
-Ytop <- 95
+Ytop <- 500
+Xtop <- 95
 
 xscale <- width/Xtop
 yscale <- height/Ytop
@@ -93,15 +93,15 @@ yscale <- height/Ytop
 
 <<coord>>=
 idx <- 60
-Coordinates(Q0 = c(0, Q[idx, 2]),
-            L0 = c(Q[idx, 1], 0),
-            Dot=Q[idx, ])
+Coordinates(Q0 = c(Q[idx, 2], 0),
+            L0 = c(0, Q[idx, 1]),
+            Dot=Q[idx, c(2, 1)])
 
 @
 
 \draw[help lines]
-  (Q0) node[left, font=\scriptsize] {$Q_{0}$} -|
-  (L0) node[below, font=\scriptsize] {$f^{-1}(Q_{0})$}
+  (Q0) node[below, font=\scriptsize] {$Q_{0}$} |-
+  (L0) node[left, font=\scriptsize] {$L_{0}$}
   ;
 
 \draw[decorate, decoration={markings,
@@ -112,16 +112,15 @@ Coordinates(Q0 = c(0, Q[idx, 2]),
 
 \draw[IMe]
 <<prod>>=
-plotCoord(Q)
+plotCoord(CV)
 @
-  node[right, font=\footnotesize]  {$f^{-1}(Q)$}
+  node[right, font=\footnotesize]  {$L(Q)$}
   ;
 
 \node[dot] at (Dot) {} ;
 
-\draw[axis] (0,\Sexpr{Ytop}) node[left] {$Q$} |-
-   node[left, font=\scriptsize] {\phantom{$f(L_{0})$}}
-   (\Sexpr{Xtop}, 0) node[below] {$L$} ;
+\draw[axis] (0,\Sexpr{Ytop}) node[left] {$L$} |-
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
 
 #+end_src
