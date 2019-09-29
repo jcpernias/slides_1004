@@ -141,3 +141,4 @@
 - #+figure: ./figures/fig-t31-env07.pdf 0.55
 * DONE Bind info to C-h i.
 * TODO R locale warnings
+* TODO bibliography section formatting
