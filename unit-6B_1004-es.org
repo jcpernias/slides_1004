@@ -16,20 +16,14 @@
 
 - La empresa elige la combinación de factores que minimiza el coste de
   obtener un determinado nivel de producción, $\Qbar$:
-  #+BEGIN_EXPORT LaTeX
+  #+begin_export latex
     \begin{gather*}
       \min_{\{K^{*}, L^{*}\}} C = r K + w L \\
       \text{sujeto a\ } \Qbar = F(K, L)
     \end{gather*}
-  #+END_EXPORT
+  #+end_export
 
-
-**                                                         :B_ignoreheading:
-:PROPERTIES:
-:BEAMER_env: ignoreheading
-:END:
-
-#+latex: \mode<article>{\clearpage{}}
+#+MATS: pagebreak
 
 
 ** La isocuanta
@@ -210,13 +204,7 @@
   \[ \CMgLP(Q) = \frac{\diff \CT_{\LP}(Q)}{\diff Q} \]
   #+end_export
 
-
-**                                                         :B_ignoreheading:
-:PROPERTIES:
-:BEAMER_env: ignoreheading
-:END:
-
-#+latex: \mode<article>{\clearpage{}}
+#+MATS: pagebreak
 
 
 ** Coste medio y coste marginal (II)

@@ -30,6 +30,7 @@
 
 * Intertemporal preferences
 
+
 ** Intertemporal preferences (I)
 
 #+MATS: figcol fig-4A_1004-map01-*.pdf 0.50
@@ -148,6 +149,7 @@
 
 * Consumer choice
 
+
 ** The optimal choice
 
 - The consumer chooses a combination of present and future
@@ -225,13 +227,8 @@
 
 - The substitution effect and the income effect reinforce each other.
 
+#+MATS: pagebreak
 
-**                                                         :B_ignoreheading:
-:PROPERTIES:
-:BEAMER_env: ignoreheading
-:END:
-
-#+latex: \mode<article>{\clearpage{}}
 
 ** The savings curve (III)
 

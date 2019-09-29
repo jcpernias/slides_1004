@@ -28,13 +28,7 @@
   obtain the *produced goods* that will then be sold in the *goods
   markets*.
 
-
-**                                                         :B_ignoreheading:
-:PROPERTIES:
-:BEAMER_env: ignoreheading
-:END:
-
-#+latex: \mode<article>{\clearpage{}}
+#+MATS: pagebreak
 
 
 ** Factors of production
@@ -72,6 +66,7 @@
 
 - The kind of the decisions that firm faces in the *short-run* are
   very different than those made in the *long-run*.
+
 
 ** The short-run
 
@@ -159,12 +154,7 @@
   point will be reached at which the resulting additions to output
   decrease.
 
-**                                                         :B_ignoreheading:
-:PROPERTIES:
-:BEAMER_env: ignoreheading
-:END:
-
-#+latex: \mode<article>{\clearpage{}}
+#+MATS: pagebreak
 
 
 ** Technical efficiency (I)

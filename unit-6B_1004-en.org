@@ -195,14 +195,7 @@
   \[ \CMgLP(Q) = \frac{\diff \CT_{\LP}(Q)}{\diff Q} \]
   #+end_export
 
-
-**                                                         :B_ignoreheading:
-:PROPERTIES:
-:BEAMER_env: ignoreheading
-:END:
-
-#+latex: \mode<article>{\clearpage{}}
-
+#+MATS: pagebreak
 
 
 ** Average cost and marginal cost (II)
@@ -366,13 +359,7 @@
 - If the firm can choose among more plant sizes, the long-run average
   cost curve is smoother.
 
-
-**                                                         :B_ignoreheading:
-:PROPERTIES:
-:BEAMER_env: ignoreheading
-:END:
-
-#+latex: \mode<article>{\clearpage{}}
+#+MATS: pagebreak
 
 
 ** The envelope (and III)

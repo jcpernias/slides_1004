@@ -74,7 +74,7 @@
   \[ M \geq P_X X + P_Y Y \]
   #+end_export
 
-#+latex: \clearpage{}
+#+MATS: pagebreak
 
 
 ** The budget line (I)

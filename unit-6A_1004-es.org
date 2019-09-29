@@ -82,15 +82,7 @@
   \[ C = \CF + \CV \]
   #+end_export
 
-
-**                                                         :B_ignoreheading:
-:PROPERTIES:
-:BEAMER_env: ignoreheading
-:END:
-
-#+latex: \mode<article>{\clearpage{}}
-
-
+#+MATS: pagebreak
 
 
 * Las curvas de costes a corto plazo
