@@ -2,7 +2,14 @@
 
 #+TITLE: Unit 5A figures
 
+
+
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+
+* La producción a corto plazo
+
+
+** La curva de producto total
 
 #+begin_src latex :tangle fig-5A_1004-cp01.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
@@ -76,6 +83,9 @@ cat("{",
 \end{tikzpicture}
 
 #+end_src
+
+
+** El producto marginal del trabajo
 
 #+begin_src latex :tangle fig-5A_1004-cp03.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
@@ -161,6 +171,9 @@ cat("{",
 
 #+end_src
 
+
+** La curva de producto marginal (I)
+
 #+begin_src latex :tangle fig-5A_1004-cp06.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
@@ -241,6 +254,9 @@ Coordinates(A=A, B=B)
 
 #+end_src
 
+
+** La curva de producto marginal (y II)
+
 #+begin_src latex :tangle fig-5A_1004-cp06a.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
@@ -320,6 +336,9 @@ Coordinates(C=C, D=D)
 
 #+end_src
 
+
+** Eficiencia técnica (I)
+
 #+begin_src latex :tangle fig-5A_1004-cp06b.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
@@ -398,6 +417,9 @@ Coordinates(C=C, D=D)
 \end{tikzpicture}
 
 #+end_src
+
+
+** Eficiencia técnica (y II)
 
 #+begin_src latex :tangle fig-5A_1004-cp08.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
@@ -489,6 +511,9 @@ cat("{",
 
 #+end_src
 
+
+** Producto medio del trabajo
+
 #+begin_src latex :tangle fig-5A_1004-cp02.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
@@ -574,6 +599,9 @@ cat("{",
 
 #+end_src
 
+
+** La curva de producto medio
+
 #+begin_src latex :tangle fig-5A_1004-cp07.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
@@ -651,6 +679,9 @@ Coordinates(A=A, B=B)
 \end{tikzpicture}
 
 #+end_src
+
+
+** Producto total, medio y marginal (I)
 
 #+begin_src latex :tangle fig-5A_1004-cp05.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
@@ -740,6 +771,9 @@ cat("{",
 \end{tikzpicture}
 
 #+end_src
+
+
+** Producto total, medio y marginal (y II)
 
 #+begin_src latex :tangle fig-5A_1004-cp04.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
