@@ -65,6 +65,7 @@
                   ((string= type "fig") (handle-fig keyword value))
                   ((string= type "figcol") (handle-figcol keyword value))
                   ((string= type "bib") (handle-bib keyword value))
+                  ((string= type "pagebreak") (handle-pagebreak keyword value))
                   (t nil))))))))
 
 ;; Handlers
@@ -88,6 +89,23 @@
       'node-property
       (list :key "UNNUMBERED" :value "t"))))))
 
+(defun handle-pagebreak (element value)
+  "Handle page breaks in handouts"
+  (org-element-set-element
+   element
+   (org-element-create                  ;; Empty headline
+    'headline
+    (list :level (get-current-level element)
+          :post-blank (get-post-blank element))
+    (org-element-create                 ;; ignoreheading property
+     'property-drawer nil
+     (org-element-create
+      'node-property
+      (list :key "BEAMER_env" :value "ignoreheading")))
+    (org-element-create                  ;; latex code
+     'keyword
+     (list :key "latex"
+           :value "\\mode<article>{\\clearpage{}}")))))
 
 ;; Handling columns
 
