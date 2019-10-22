@@ -295,9 +295,9 @@
   \coordinate (C) at ($ (\Ax, \const/\Bx) $) ;
 
   \draw[shift arrow, DarkGreen!70!Black, ->, font = \small, shorten >= 0pt]
-    (A) -- (C) node[pos=0.5, left] {$\Delta X$} ;
+    (A) -- (C) node[pos=0.5, left] {$\Delta Y$} ;
   \draw[shift arrow, DarkGreen!70!Black, ->, font = \small, shorten >= 3pt]
-    (C) -- (B) node[pos=0.5, below] {$\Delta Y$} ;
+    (C) -- (B) node[pos=0.5, below] {$\Delta X$} ;
 
 
   \draw[CMe, domain=5:45,smooth] plot (\x,\const/\x) node[right] {$I_{0}$}
