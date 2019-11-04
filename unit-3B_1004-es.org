@@ -110,7 +110,7 @@
 
 - Precios iniciales: $P_X = \price{2}$ y $P_Y = \price{1}$
 
-- Precio final de $X$: $P'_X = \price{16}$q
+- Precio final de $X$: $P'_X = \price{16}$
 
 
 ** Ejemplo (II)
