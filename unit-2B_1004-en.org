@@ -314,14 +314,14 @@
 
 - The *Cobb-Douglas* utility function:
   #+begin_export latex
-  \[ U(X, Y) = X^a Y^b; \quad a,b > 0. \]
+  \[ U(X, Y) = c X^a Y^b; \quad a,b,c > 0. \]
   #+end_export
 
 - Marginal utilities:
   #+begin_export latex
   \[
-    \UMX = a X^{a-1} Y^b; \quad
-    \UMY = b X^a Y^{b-1}.
+    \UMX = c a X^{a-1} Y^b; \quad
+    \UMY = c b X^a Y^{b-1}.
   \]
   #+end_export
 
