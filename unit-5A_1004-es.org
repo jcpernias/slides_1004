@@ -173,7 +173,7 @@
 - El uso de más unidades de trabajo que $L_D$ no es técnicamente
   eficiente.
 
-- La producción en $L_0$ es la misma que en $L_1$.
+- La producción en $L_2$ es la misma que en $L_1$.
 
 
 ** Producto medio del trabajo

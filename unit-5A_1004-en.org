@@ -172,7 +172,7 @@
 
 - Using more than $L_D$ units of labor is not technically efficient.
 
-- The output level at $L_0$ is the same as the one at $L_1$.
+- The output level at $L_2$ is the same as the one at $L_1$.
 
 
 ** The average product of labor
