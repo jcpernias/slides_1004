@@ -202,7 +202,7 @@
 
 - $B = 2 A$ y $Q_B < 2 Q_A$.
 
-- $C = 3 A$ y $Q_B < 3 Q_A$.
+- $C = 3 A$ y $Q_C < 3 Q_A$.
 
 
 ** Variable returns to scale
