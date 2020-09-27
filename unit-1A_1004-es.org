@@ -27,13 +27,12 @@
 
 ** Microeconomía y macroeconomía
 
-- La *microeconomía* estudia cómo toman decisiones e interaccionan los
-  *agentes económicos*, las *economías domésticas* y las *empresas*, en
-  los *mercados*.
+- La *microeconomía* estudia cómo los *agentes económicos* toman
+  decisiones e interaccionan en los *mercados*.
 
 - La *macroeconomía* se centra en aspectos referidos al sistema
-  económico en su conjunto: paro, inflación, crecimiento económico,
-  etc.
+  económico en su conjunto: *desempleo*, *inflación*, *crecimiento
+  económico*, etc.
 
 
 ** Problemas económicos fundamentales

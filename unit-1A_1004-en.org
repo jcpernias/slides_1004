@@ -27,11 +27,11 @@
 
 ** Microeconomics and macroeconomics
 
-- *Microeconomics* studies how economic agents, *domestic economies*
-  and *firms*, make decisions and interact in the *markets*.
+- *Microeconomics* studies how *economic agents* make decisions and
+  interact in the *markets*.
 
 - *Macroeconomics* focuses on issues related to the economic system as
-  a whole: unemployment, inflation, economic growth, etc.
+  a whole: *unemployment*, *inflation*, *economic growth*, etc.
 
 
 ** Fundamental economic problems
