@@ -51,7 +51,7 @@
 
 ** La restricción presupuestaria (II)
 
-#+begin_src latex :tangle fig-2A_1004-rp1b.tex :noweb yes
+#+begin_src latex :tangle fig-2A_1004-rp1.tex :noweb yes
   \begin{tikzpicture}[<<scale>>]
     <<macros>>
 
@@ -60,7 +60,7 @@
     \coordinate (O) at (0, 0);
 
 
-    \draw[IMe] (Rx) node[below] {$\MaxX$} -- (Ry) node[left] {$\MaxY$} ;
+    \draw[IMe] (Rx) node[below] {$M/P_X$} -- (Ry) node[left] {$M/P_Y$} ;
 
     \draw[Green] ($ (Rx)!3cm!(Ry) $) arc[radius = 3cm,
       start angle={atan2(\MaxY, -\MaxX)},
@@ -74,7 +74,7 @@
       \end{scope}
 
     \node[above, font=\small] at ($ (Rx)!4cm!(O) $) { $\alpha$ } ;
-    \node[font=\small] at (30, 30) { $\tan \alpha = -2$ };
+    \node[font=\small] at (30, 30) { $\tan \alpha = -\dfrac{P_X}{P_Y}$ };
 
     <<axes>>
   \end{tikzpicture}
