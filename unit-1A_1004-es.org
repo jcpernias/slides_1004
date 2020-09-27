@@ -85,21 +85,6 @@
 
 ** Modelos y realidad (I)
 
-- /La traición de las imágenes/, René Magritte, 1928--1929.
-
-#+ATTR_LATEX: :options scale=0.45
-#+MATS: figcol magritte.jpg 0.55
-
-#+begin_tightquote
-  "The famous pipe. How people reproached me for it! And yet, could
-  you stuff my pipe? No, it's just a representation, is it not? So
-  if I had written on my picture 'This is a pipe,' I'd have been
-  lying!"
-#+end_tightquote
-
-
-** Modelos y realidad (II)
-
 - [[https://es.wikipedia.org/wiki/Joan_Robinson][Joan Robinson]]
 
 #+ATTR_LATEX: :options scale=0.3
@@ -111,17 +96,7 @@
 #+end_tightquote
 
 
-** Modelos y realidad (III)
-
-- [[https://es.wikipedia.org/wiki/Jorge_Luis_Borges][Jorge Luis Borges]]
-
-#+ATTR_LATEX: :options scale=0.2
-#+MATS: figcol jorge_luis_borges.jpg 0.35
-
-- [[https://youtu.be/zwDA3GmcwJU][Del rigor en la ciencia]]
-
-
-** Modelos y realidad (y IV)
+** Modelos y realidad (y II)
 
 - Si un modelo produce predicciones correctas, el realismo de sus
   supuestos no es tan importante.
