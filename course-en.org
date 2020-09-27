@@ -3,7 +3,7 @@
 #+AUTHOR: Introduction to Microeconomics \\
 #+AUTHOR: AE / EC / FC 1004 \\
 #+AUTHOR: DA0204
-#+DATE: Academic year 2019--2020
+#+DATE: Academic year 2020--2021
 
 #+OPTIONS: toc:nil ':t ^:{} num:1 H:2 title:nil
 
