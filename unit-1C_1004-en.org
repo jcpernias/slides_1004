@@ -14,7 +14,7 @@
 
 ** Markets
 
-- A market is the set of buyers and sellers of a particular good or
+- A market is the set of *buyers* and *sellers* of a particular good or
   service.
 
 
@@ -22,16 +22,16 @@
 
 - Characteristics:
 
-  + Homogeneous product.
+  + *Homogeneous product*.
 
-  + Large number of *buyers* and *sellers*.
+  + Large number of buyers and sellers.
 
-  + Perfect information.
+  + *Perfect information*.
 
 
 ** Competitive markets (and II)
 
-- *Absence of market power*.
+- Absence of *market power*.
 
 - Buyers and sellers are *price-takers*.
 
@@ -57,19 +57,21 @@
 
 ** The individual demand schedule and curve
 
-- They show the quantity a consumer demands at each possible price.
+- They show the quantity a consumer demands at each price.
 
-- The demand curve has negative slope.
+- The *demand curve* has *negative slope*.
 
 #+begin_center
 #+MATS: fig fig-1C_1004-dtab-*.pdf
 #+end_center
 
 
-** Market demand curve (I)
+** Market demand
 
-- For each possible price we add the quantities demanded by each one
+- The *market demand* is the sum of the quantities demanded by each one
   of the consumers.
+
+** Market demand curve (I)
 
 - Demand in a market consisting of three consumers (K, L and M):
 
@@ -97,8 +99,7 @@
 
 #+MATS: figcol fig-1C_1004-d3-*.pdf 0.45
 
-- The market price has fallen to $P_B$, but no other determinant of
-  demand has changed.
+- The market price falls to $P_B$, /ceteris paribus/.
 
 - Now the quantity demanded is $Q_B$.
 
@@ -115,10 +116,10 @@
 
 - The *income* of consumers:
 
-  + *Normal good*: the quantity demanded increases when income
+  + *Normal good*: the demand increases when income
     increases.
 
-  + *Inferior good*: the quantity demanded decreases when income
+  + *Inferior good*: the demand decreases when income
     increases.
 
 
@@ -126,13 +127,11 @@
 
 - *Prices of other goods*:
 
-  + *Complementary goods*: goods that are usually consumed together: the
-    quantity demanded increases if the price of a complementary good
-    falls.
+  + *Substitute goods*:the demand increases if the price of a
+    substitute good increases.
 
-  + *Substitute goods*: one good is used in place of the other: the
-    quantity demanded increases if the price of a substitute good
-    increases.
+  + *Complementary goods*: the demand decreases if the price of a
+    complementary good increases.
 
 
 ** Other determinants of demand (and III)
@@ -140,9 +139,9 @@
 - *Market size*: the higher is the amount of consumers, the higher is
   the demand.
 
-- Consumers *tastes and preferences*.
+- Consumers *tastes*.
 
-- Consumers *expectations*.
+- *Consumers expectations*.
 
 
 ** Shifts in the demand (I)
@@ -189,7 +188,7 @@
 - The price of a good is one of the determinants of the quantity
   supplied.
 
-- In a competitive market, as the price of the good increases the
+- /Ceteris paribus/, as the price of the good increases the
   quantity supplied increases.
 
 
@@ -197,7 +196,7 @@
 
 - Indicate the quantity a firm wants to sell at each possible price.
 
-- The supply curve has positive slope.
+- The *supply curve* has *positive slope*.
 
   #+begin_center
   #+MATS: fig fig-1C_1004-otab-*.pdf
@@ -225,9 +224,9 @@
 
 ** Other determinants of supply (I)
 
-- *Price of the factors of production*: if the price of a factor of
-  production increases, the costs increase and the benefits fall. The
-  quantity supplied decreases when the price of the factors increases.
+- *The prices of the factors of production*: if an input price
+  increases, the costs increase and the benefits fall. The quantity
+  supplied decreases when the input prices increase.
 
 - *Technology*: an improvement in the technology used to produce the
   good reduces production costs, so that the quantity supplied by
@@ -239,7 +238,7 @@
 - *Market size*: the higher is the number of producers, the higher is
   the supply.
 
-- Producers *expectations*.
+- *Producers expectations*.
 
 
 ** Shifts in the supply (I)
@@ -289,7 +288,7 @@
 
 #+MATS: figcol fig-1C_1004-eq3-*.pdf 0.45
 
-- When the price exceeds the equilibrium price, suppliers dare unable
+- *Surplus*: the price exceeds the equilibrium price and suppliers are unable
   to sell all they want.
 
 
@@ -297,8 +296,8 @@
 
 #+MATS: figcol fig-1C_1004-eq4-*.pdf 0.45
 
-- When the price is below the equilibrium price, production is lower
-  than the quantity consumers are willing to buy.
+- *Shortage*: the price is below the equilibrium price and the
+  production is lower than the quantity consumers are willing to buy.
 
 
 ** Exchange points

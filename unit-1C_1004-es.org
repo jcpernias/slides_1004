@@ -14,7 +14,7 @@
 
 ** Mercados
 
-- Un mercado es el conjunto de compradores y vendedores de un
+- Un mercado es el conjunto de *compradores* y *vendedores* de un
   determinado bien o servicio.
 
 
@@ -22,16 +22,16 @@
 
 - Características:
 
-  + Producto homogéneo.
+  + *Producto homogéneo*.
 
-  + Gran número de *compradores* y de *vendedores*.
+  + Gran número de compradores y de vendedores.
 
-  + Información perfecta.
+  + *Información perfecta*.
 
 
 ** Mercados competitivos (y II)
 
-- *Ausencia de poder de mercado*.
+- Ausencia de *poder de mercado*.
 
 - Tanto compradores como vendedores son *precio aceptantes*.
 
@@ -58,20 +58,21 @@
 
 ** La tabla y la curva de demanda individual
 
-- Indican qué cantidad desea comprar un consumidor para cada posible
-  precio.
+- Indican qué cantidad desea comprar un consumidor para cada precio.
 
-- La curva de demanda tiene pendiente negativa.
+- La *curva de demanda* tiene *pendiente negativa*.
 
 #+begin_center
 #+MATS: fig fig-1C_1004-dtab-*.pdf
 #+end_center
 
 
-** La curva de demanda de mercado (I)
+** La demanda de mercado
 
-- Para cada posible precio sumamos las cantidades que demandan cada
+- La *demanda de mercado* es la suma de las cantidades demandas por cada
   uno de los consumidores.
+
+** La curva de demanda de mercado (I)
 
 - Demandas en un mercado compuesto por tres consumidores (K, L y M):
 
@@ -99,10 +100,9 @@
 
 #+MATS: figcol fig-1C_1004-d3-*.pdf 0.45
 
-- El precio de mercado ha bajado hasta $P_B$ y no ha cambiado ningún
-  otro determinante de la demanda.
+- El precio de mercado baja hasta $P_B$, /ceteris paribus/.
 
-- La cantidad demandada ahora es $Q_B$.
+- Ahora se demandan $Q_B$ unidades.
 
 
 ** Cambios en el precio (y III)
@@ -117,10 +117,10 @@
 
 - La *renta* de los consumidores:
 
-  + *Bien normal*: la cantidad demandada aumenta cuando aumenta la
+  + *Bien normal*: la demanda aumenta cuando aumenta la
     renta.
 
-  + *Bien inferior*: la cantidad demandada disminuye cuando aumenta la
+  + *Bien inferior*: la demanda disminuye cuando aumenta la
     renta.
 
 
@@ -128,11 +128,11 @@
 
 - Los *precios de otros bienes*:
 
-  + *Bienes complementarios*: se suelen consumir conjuntamente: la
-    demanda aumenta si baja el precio de un bien complementario.
+  + *Bienes sustitutivos*: la demanda aumenta si aumenta el precio de
+    un bien sustitutivo.
 
-  + *Bienes sustitutivos*: se usa uno en lugar de otros: la demanda
-    aumenta si aumenta el precio de un bien sustitutivo.
+  + *Bienes complementarios*: la demanda disminuye si aumenta el
+    precio de un bien complementario.
 
 
 ** Otros determinantes de la demanda (y III)
@@ -142,7 +142,7 @@
 
 - Los *gustos* de los consumidores.
 
-- Las *expectativas* de los consumidores.
+- Las *expectativas de los consumidores*.
 
 
 ** Desplazamientos de la demanda (I)
@@ -190,8 +190,8 @@
 - El precio de bien es uno de los determinantes de la cantidad
   ofrecida.
 
-- En un mercado competitivo conforme aumenta el precio del bien la
-  cantidad ofrecida aumenta.
+- /Ceteris paribus/, conforme aumenta el precio del bien la cantidad
+  ofrecida aumenta.
 
 
 ** La tabla y la curva de oferta individual
@@ -199,7 +199,7 @@
 - Indican qué cantidad desea vender una empresa para cada posible
   precio.
 
-- La curva de oferta tiene pendiente positiva.
+- La *curva de oferta* tiene *pendiente positiva*.
 
   #+begin_center
   #+MATS: fig fig-1C_1004-otab-*.pdf
@@ -242,7 +242,7 @@
 - *Tamaño del mercado*: cuanto mayor es el número de productores mayor
   es la oferta.
 
-- *Expectativas* de los productores.
+- *Expectativas de los productores*.
 
 
 ** Desplazamientos de la oferta (I)
@@ -291,8 +291,8 @@
 
 #+MATS: figcol fig-1C_1004-eq3-*.pdf 0.45
 
-- Cuando el precio es superior al de equilibrio, los oferentes no
-  consiguen vender todo lo que querrían.
+- *Excedente*: el precio es superior al de equilibrio y los oferentes
+  no consiguen vender todo lo que querrían.
 
 
 ** Escasez
@@ -300,8 +300,8 @@
 
 #+MATS: figcol fig-1C_1004-eq4-*.pdf 0.45
 
-- Cuando el precio es inferior al de equilibrio la producción es menor
-  que la cantidad que desean comprar los consumidores.
+- *Escasez*: el precio es inferior al de equilibrio y la producción es
+  menor que la cantidad que desean comprar los consumidores.
 
 
 ** Puntos de intercambio
