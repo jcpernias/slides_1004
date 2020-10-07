@@ -13,7 +13,8 @@
 
 ** Intervención económica del estado
 
-- Instituciones.
+- Instituciones: defensa nacional, orden público, sistema judicial,
+  etc.
 
 - Impuestos, subvenciones y transferencias.
 
@@ -21,7 +22,9 @@
 
 ** Justificación
 
-- Los *fallos de mercado* minan la eficiencia de la economía.
+Razones para la intervención:
+
+- Los *fallos de mercado* minan la *eficiencia* de la economía.
 
 - *Equidad*: redistribución de la renta.
 

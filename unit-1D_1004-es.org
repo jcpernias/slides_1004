@@ -27,8 +27,8 @@
 
 ** Cálculo de la elasticidad precio
 
-- Se calcula como el cambio porcentual de la cantidad demandada
-  dividido por el cambio porcentual en el precio:
+- Se calcula como el *cambio porcentual* de la cantidad demandada
+  dividido por el *cambio porcentual* en el precio:
   #+begin_export latex
   \[
     E_d = \frac{\text{variación porcentual de $Q^d$}}{%
@@ -36,6 +36,8 @@
     \frac{\Delta\% Q^d}{\Delta\% P}
   \]
   #+end_export
+
+** Cambios porcentuales
 
 - Cambio porcentual en $Q^d$ y en $P$:
   #+begin_export latex
@@ -53,17 +55,15 @@
 
 - Elasticidad en el arco $\overline{AB}$:
   #+begin_export latex
-  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = \frac{100\%}{-33.3\%} = -3\]
+  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = -3\]
   #+end_export
 
 
 ** Interpretación
 
-- La elasticidad precio de la demanda es negativa: precio y cantidad
-  demandada se mueven en direcciones opuestas.
+- La elasticidad precio de la demanda es negativa.
 
-- La elasticidad es un número puro independiente de las unidades en
-  que se miden los cantidades y los precios.
+- La elasticidad es un número puro, sin unidades.
 
 - Una elasticidad $E_d = -3$ indica que la magnitud de la variación
   relativa de la cantidad demandada es 3 veces superior a la variación
@@ -78,26 +78,14 @@
 
 - Elasticidad en $\overline{BC}$: $E_d = -1$.
 
-- En general, $E_d$ toma diferentes valores a lo largo de la curva de
-  demanda
-
 
 ** Demanda elástica y demanda inelástica
 
-- Tramo *elástico* de la demanda:
-  #+begin_export latex
-  \[ E_d < -1\]
-  #+end_export
+- Tramo *elástico* de la demanda: $E_d < -1$.
 
-- Tramo *inelástico* de la demanda:
-  #+begin_export latex
-  \[ -1 < E_d \leq 0\]
-  #+end_export
+- Tramo *inelástico* de la demanda: $-1 < E_d \leq 0$.
 
-- *Elasticidad unitaria* de la demanda:
-  #+begin_export latex
-  \[ E_d = -1 \]
-  #+end_export
+- *Elasticidad unitaria* de la demanda: $E_d = -1$.
 
 
 ** Determinantes de la elasticidad precio
@@ -111,7 +99,7 @@
 - Horizonte temporal.
 
 
-** Pendiente de la demanda y elasticidad precio (I)
+** Pendiente de la curva de demanda
 
 - La *pendiente de la demanda* es el cociente de las variaciones
   *absolutas* de la cantidad demandada y del precio:
@@ -121,6 +109,8 @@
       \text{variación de $P$}} = \frac{\Delta Q^d}{\Delta P}
   \]
   #+end_export
+
+** Pendiente y elasticidad precio (I)
 
 - Como la elasticidad precio, la pendiente de la demanda es negativa.
 
@@ -134,13 +124,13 @@
 
 - Elasticidad en el arco $\overline{AB}$:
   #+begin_export latex
-  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = \frac{100\%}{-33.3\%} = -3\]
+  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = -3\]
   #+end_export
 
 - Pendiente en el arco $\overline{AB}$:
   #+begin_export latex
   \[
-    \frac{\Delta Q^d}{\Delta P} = \frac{200}{-10} = -20 \text{\ kg por
+    \frac{\Delta Q^d}{\Delta P} = -20 \text{\ kg por
       \texteuro/kg}
   \]
   #+end_export
@@ -162,15 +152,14 @@
 
 ** Elasticidad arco (I)
 
-- Necesitamos dos puntos de la curva de demanda.
+- Sólo necesitamos dos puntos de la curva de demanda.
 
-- Calculamos los cambios porcentuales de la cantidad demandada y de
-  los precios:
+- Cambios porcentuales de la cantidad demandada y de los precios:
   #+begin_export latex
-  \begin{gather*}
-    \Delta\% Q^d = 100 \cdot (Q^d_{2}-Q^d_{1})/Q^d_{1} \\
+  \[
+    \Delta\% Q^d = 100 \cdot (Q^d_{2}-Q^d_{1})/Q^d_{1}; \qquad
     \Delta\% P = 100 \cdot (P_{2}-P_{1})/P_{1}
-  \end{gather*}
+  \]
   #+end_export
 
 - Elasticidad arco:
@@ -183,30 +172,20 @@
 
 #+MATS: figcol fig-1D_1004-unicorn10-*.pdf 0.45
 
-- $\Delta\% Q^d = 100\%$
-
-- $\Delta\% P = -33.33\%$
-
-- $E_d = -3$
+- Cuando baja el precio: $E_d = -3$
 
 
 ** Elasticidad arco (y III)
 
 #+MATS: figcol fig-1D_1004-unicorn3-*.pdf 0.45
 
-- $\Delta\% Q^d = -50\%$
-
-- $\Delta\% P = 50\%$
-
-- $E_d = -1$ \textcolor{DarkRed}{!!!}
+- Cuando sube el precio: \textcolor{DarkRed}{¡¡¡} $E_d =-1$
+  \textcolor{DarkRed}{!!!}
 
 
 ** Fórmula del punto medio (I)
 
-- La fórmula simple de la elasticidad arco proporciona valores
-  diferentes dependiendo de la dirección del cambio del precio.
-
-- Para evitar este problema se puede usar la fórmula del punto medio:
+- La *fórmula del punto medio* define las variaciones porcentuales de otro modo:
   #+begin_export latex
   \[
     \Delta\% Q^d = 100 \cdot \Delta Q^d/Q^d_m; \quad
@@ -223,11 +202,10 @@
 
 #+MATS: figcol fig-1D_1004-unicorn4-*.pdf 0.45
 
-- $\Delta\% Q^d = 66.67\%$
-
-- $\Delta\% P = -40\%$
-
-- $E_d = -1.67$
+- Se obtiene el mismo resultado suba o baje el precio:
+  #+begin_export latex
+    \[ E_d = -1.67 \]
+  #+end_export
 
 
 ** Elasticidad punto (I)
@@ -248,10 +226,7 @@
 
 #+MATS: figcol fig-1D_1004-unicorn5-*.pdf 0.45
 
-- Pendiente de la curva de demanda:
-  #+begin_export latex
-  \[ \frac{\diff Q^d}{\diff P} = -20 \text{\ kg por €/kg} \]
-  #+end_export
+- Elasticidad en diferentes puntos de una curva de demanda lineal.
 
 
 ** Algunos casos especiales (I)
@@ -268,30 +243,6 @@
 
 ** Algunos casos especiales (II)
 
-#+MATS: figcol fig-1D_1004-elast6-*.pdf 0.45
-
-- Demanda de elasticidad constante:
-  #+begin_export latex
-  \[ Q^d = \frac{30}{P^{1/2}} \]
-  #+end_export
-
-- $E_d = -1/2$
-
-
-** Algunos casos especiales (III)
-
-#+MATS: figcol fig-1D_1004-elast7-*.pdf 0.45
-
-- Demanda de elasticidad constante:
-  #+begin_export latex
-  \[ Q^d = \frac{150}{P^2} \]
-  #+end_export
-
-- $E_d = -2$
-
-
-** Algunos casos especiales (IV)
-
 #+MATS: figcol fig-1D_1004-elast9-*.pdf 0.45
 
 - Demanda perfectamente elástica:
@@ -302,7 +253,7 @@
 - $E_d = -\infty$
 
 
-** Algunos casos especiales (y V)
+** Algunos casos especiales (y III)
 
 #+MATS: figcol fig-1D_1004-ingr1-*.pdf 0.5
 
@@ -312,6 +263,7 @@
   #+end_export
   donde $a, b>0$.
 
+#+MATS: pagebreak
 
 * Elasticidad precio e ingresos totales
 
@@ -320,8 +272,7 @@
 
 #+MATS: figcol fig-1D_1004-ingr3-*.pdf 0.4
 
-- Los ingresos totales son la cantidad de dinero que reciben los
-  vendedores del bien:
+- Los ingresos totales de los vendedores del bien:
   #+begin_export latex
   \[ I_1 = P_1 \cdot Q_1 \]
   #+end_export
@@ -391,42 +342,11 @@
 
 * Otras elasticidades de la demanda
 
-
-** Función de demanda
-
-- La *función de demanda* relaciona la cantidad demandada con todos
-  sus determinantes:
-  #+begin_export latex
-  \[ Q^d = Q^d(P, P_o, M, X, Y, Z, \dots) \]
-  #+end_export
-
-- $P$: precio del bien.
-
-- $P_o$: precios de otros bienes.
-
-- $M$: renta de los consumidores.
-
-- $X, Y, Z, \dots$: otros determinantes.
-
-
-** Función y curva de demanda
-
-- Obtenemos la *curva de demanda* dando valores concretos a todos los
-  determinantes de la demanda exceptuando el precio del bien:
-  #+begin_export latex
-  \[
-    Q^d = Q^d(P, \overline{P}_o, \overline{M}, \overline{X},
-    \overline{Y}, \overline{Z}, \dots) = Q^d(P)
-   \]
-  #+end_export
-
-
 ** Derivadas parciales
 
-- Las *derivadas parciales* de la función de demanda miden el cambio
-  en la cantidad demandada cuando cambia uno de los determinantes de
-  la demanda, /manteniendo constantes los valores del resto de
-  variables/.
+- Las *derivadas parciales* de la demanda miden el cambio en la
+  cantidad demandada cuando cambia uno de los determinantes de la
+  demanda, /manteniendo constantes los restantes determinantes/.
 
 
 ** Elasticidad cruzada
@@ -487,8 +407,8 @@
 
 ** Determinantes de la elasticidad de la oferta
 
-- Flexibilidad con que los vendedores pueden adaptar su producción a
-  cambios en el precio.
+- Flexibilidad de adaptación de la producción a cambios en el
+  precio.
 
 - Horizonte temporal.
 
@@ -497,45 +417,25 @@
 
 #+MATS: figcol fig-1D_1004-elast10-*.pdf 0.45
 
-- Oferta perfectamente inelástica.
-
-- $\Delta\% Q^s = 0\%$
-
-- $\Delta\% P = 28.6\%$
-
-- $E_s = 0$
+- Oferta perfectamente inelástica: \[E_s = 0\]
 
 
 ** Algunos casos (II)
 
 #+MATS: figcol fig-1D_1004-elast11-*.pdf 0.45
 
-- Tramo inelástico de la oferta.
-
-- $\Delta\% Q^s = 12.5\%$
-
-- $\Delta\% P = 28.6\%$
-
-- $E_s = 0.44$
+- Tramo inelástico de la oferta: \[E_s = 0.44\]
 
 
 ** Algunos casos (III)
 
 #+MATS: figcol fig-1D_1004-elast12-*.pdf 0.45
 
-- Tramo elástico de la oferta.
-
-- $\Delta\% Q^s = 50\%$
-
-- $\Delta\% P = 28.6\%$
-
-- $E_s = 1.75$
+- Tramo elástico de la oferta: \[E_s = 1.75\]
 
 
 ** Algunos casos (y IV)
 
 #+MATS: figcol fig-1D_1004-elast13-*.pdf 0.45
 
-- Oferta perfectamente elástica.
-
-- $E_s = \infty$
+- Oferta perfectamente elástica: \[E_s = \infty\]

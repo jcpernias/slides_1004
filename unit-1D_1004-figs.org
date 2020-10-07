@@ -117,16 +117,19 @@
   \begin{tikzpicture}[xscale=0.05, yscale=0.1]
     \coordinate (A) at (20, 30);
     \coordinate (B) at (40, 20);
+    \coordinate (C) at (60, 10);
 
     \draw[help lines]
-      let \p1=(A), \p2=(B) in
+      let \p1=(A), \p2=(B), \p3=(C) in
       (0, \y1) node[left] {$30$} -| (\x1, 0) node[below] {$200$}
       (0, \y2) node[left] {$20$} -| (\x2, 0) node[below] {$400$}
+      (0, \y3) node[left] {$10$} -| (\x3, 0) node[below] {$600$}
       ;
     \draw[IMe] (0, 40) -- (80, 0) node[pos=0.95, above right] { $D(P)$ };
     \draw[axis] (0, 50) node[left] {$P$} |- (100, 0) node[below] {$Q$} ;
     \node[dot, label=above right:{$E_{d} = -3$}] at (A) {};
     \node[dot, label=above right:{$E_{d} = -1$}] at (B) {};
+    \node[dot, label=above right:{$E_{d} = -1/3$}] at (C) {};
     % \draw[shift arrow, ->, DarkGreen!70!Black]
     %  ($ (A) + (1, 0.1) $) -- ($ (B) + (1, 0.1) $) ;
 
@@ -212,9 +215,9 @@
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-ingr1.tex :noweb yes
   \begin{tikzpicture}
-    \draw[help lines] (0, 2.25) node[left] {$\dfrac{a}{2}$}
+    \draw[help lines] (0, 2.25) node[left] {$\dfrac{a}{2 b}$}
         -| (2.25, 0) ;
-    \draw[IMe] (0, 4.5) node[left] {$a$} --
+    \draw[IMe] (0, 4.5) node[left] {$\dfrac{a}{b}$} --
         node[left, pos = 0.875]
         { $D$ } (4.5, 0)  ;
     \draw[curve, DarkGreen!70!Black, decorate, decoration=brace]
@@ -227,9 +230,9 @@
        (2.4, 2.3)
         -- node[above right, font = \small] {$-1 < E_d \leq 0$}
        (4.6, 0.1) ;
-    \node[below left = 0pt and -6pt, curve label] at (2.25, 0)      {$\dfrac{a}{2 b}$} ;
-    \node[below left = 0pt and -6pt, curve label] at (4.5, 0)  {$\dfrac{a}{b}$} ;
-    \draw[axis] (5, 0) node[below] {$Q$} -| (0, 5) node[left] {$P$} ;
+    \node[below left = 0pt and -6pt, curve label] at (2.25, 0)      {$\dfrac{a}{2}$} ;
+    \node[below left = 0pt and -6pt, curve label] at (4.5, 0)  {$a$} ;
+    \draw[axis] (5, 0) node[below] {$Q$} -| (0, 5.2) node[left] {$P$} ;
     \node[dot] at (2.25, 2.25) { } ;
   \end{tikzpicture}
 #+END_SRC
@@ -241,7 +244,7 @@
 ** Figures and tables
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-ingr3.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.18, yscale=0.83333]
+  \begin{tikzpicture}[xscale=0.16, yscale=0.75]
     \coordinate (A) at (9.375, 4);
     \coordinate (B) at (16.66667, 3);
 
@@ -263,7 +266,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-ingr4.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.18, yscale=0.83333]
+  \begin{tikzpicture}[xscale=0.16, yscale=0.75]
     \coordinate (A) at (9.375, 4);
     \coordinate (B) at (16.66667, 3);
 
@@ -286,7 +289,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-ingr5.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.18, yscale=0.83333]
+  \begin{tikzpicture}[xscale=0.16, yscale=0.75]
     \coordinate (A) at (9.375, 4);
     \coordinate (B) at (16.66667, 3);
 
@@ -320,7 +323,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-ingr6.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.18, yscale=0.83333]
+  \begin{tikzpicture}[xscale=0.16, yscale=0.75]
     \coordinate (A) at (15, 4);
     \coordinate (B) at (17.32051, 3);
 
@@ -479,7 +482,7 @@
 ** Figures and tables
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-elast10.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
+  \begin{tikzpicture}[xscale=0.15, yscale=0.75]
 
      \draw[help lines]
        (0, 4) node[left] {$4$} -| (15, 0) node[below] {$15$}
@@ -495,7 +498,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-elast11.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
+  \begin{tikzpicture}[xscale=0.15, yscale=0.75]
     \coordinate (A) at (15, 3) ;
     \coordinate (B) at (17, 4) ;
 
@@ -513,7 +516,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-elast12.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
+  \begin{tikzpicture}[xscale=0.15, yscale=0.75]
     \coordinate (A) at (15, 3) ;
     \coordinate (B) at (25, 4) ;
 
@@ -531,7 +534,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-elast13.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.1666667, yscale=0.83333]
+  \begin{tikzpicture}[xscale=0.15, yscale=0.75]
     \coordinate (A) at (15, 3) ;
     \coordinate (B) at (25, 4) ;
 
