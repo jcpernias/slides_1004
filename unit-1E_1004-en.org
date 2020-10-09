@@ -13,7 +13,8 @@
 
 ** Government intervention
 
-- Institutions.
+- Institutions: national security, domestic order, administration of
+  justice, etc.
 
 - Taxes, subsidies and transfers.
 
@@ -22,7 +23,7 @@
 
 ** Justification
 
-- *Market failures* undermine economic efficiency.
+- *Market failures* undermine *economic efficiency*.
 
 - *Equity*: income redistribution.
 
