@@ -38,13 +38,11 @@
 
 ** Cestas de consumo (y II)
 
-#+MATS: figcol fig-2A_1004-xy-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-xy-*.pdf 0.4
 
-- La cesta $A$ se compone de 1 unidad del bien $X$ y 3 unidades del
-  bien $Y$.
+- Cesta $A$: 1 unidad del bien $X$ y 3 unidades del bien $Y$.
 
-- En la cesta $B$ sólo hay 4 unidades del bien $X$ y 0 unidades del
-  bien $Y$.
+- Cesta $B$: 4 unidades de $X$ y 0 unidades de $Y$.
 
 
 ** La elección racional
@@ -58,12 +56,12 @@
 
 ** El gasto del consumidor
 
-- El *gasto total* de un consumidor que elige la cesta $(X_0, Y_0)$ es
+- El *gasto total* por comprar $(X_0, Y_0)$ es
   $P_X X_0 + P_Y Y_0$ euros.
 
-- $P_X X_0$ es la cantidad de dinero que gasta en $X$.
+- $P_X X_0$ es el dinero gastado en $X$.
 
-- $P_Y Y_0$ es la cantidad de dinero que gasta en $Y$.
+- $P_Y Y_0$ es el dinero gastado en $Y$.
 
 
 ** El conjunto presupuestario
@@ -91,25 +89,28 @@
 
 ** La recta presupuestaria (II)
 
-#+MATS: figcol fig-2A_1004-rp1-*.pdf 0.5
+#+MATS: figcol fig-2A_1004-rp1-*.pdf 0.4
 
-- Los puntos de corte con los ejes indican el número máximo de unidades
-  que el consumidor puede comprar de cada bien: $M/P_X$ y $M/P_Y$.
-
-- La pendiente es igual al *precio relativo* con signo negativo:
-  $-P_X/P_Y$.
+- Puntos de corte: número máximo de unidades que el consumidor puede
+  comprar de cada bien.
 
 
-** La recta presupuestaria (y III)
+** La recta presupuestaria (III)
 
-#+MATS: figcol fig-2A_1004-rp3-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp3-*.pdf 0.4
 
-- Una cesta como la $A$ es inasequible dados los precios y la renta
-  del consumidor.
+- Cestas como $A$ son inasequibles.
 
 - El consumidor puede adquirir la cesta $B$ sin gastar toda su renta.
 
 - El consumidor gasta toda su renta si elige la cesta $C$.
+
+** La recta presupuestaria (y IV)
+
+#+MATS: figcol fig-2A_1004-rp4-*.pdf 0.4
+
+- La pendiente es igual al *precio relativo* con signo negativo.
+
 
 
 ** El precio relativo
@@ -117,8 +118,6 @@
 - El *precio relativo* del bien $X$, $P_X / P_Y$, es el precio de $X$
   medido en unidades de $Y$.
 
-- Es la tasa a la que consumidores que gastan toda su renta pueden
-  sustituir un bien por otro.
 
 
 ** El coste de oportunidad
@@ -130,7 +129,7 @@
 
 ** Precio relativo y coste de oportunidad
 
-#+MATS: figcol fig-2A_1004-rp5-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp5-*.pdf 0.4
 
 - El coste de oportunidad coincide con el precio relativo:
   #+begin_export latex
@@ -143,62 +142,36 @@
 
 ** Cambios en un precio (I)
 
-#+MATS: figcol fig-2A_1004-rp6-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp6-*.pdf 0.4
 
 - Una disminución del precio de $X$:
   #+begin_export latex
   \[ P'_X < P_X\]
   #+end_export
 
-- El conjunto presupuestario se expande.
 
 
 ** Cambios en un precio (y II)
 
-#+MATS: figcol fig-2A_1004-rp7-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp7-*.pdf 0.4
 
 - Un aumento del precio de $Y$:
   #+begin_export latex
   \[ P'_Y > P_Y \]
   #+end_export
 
-- El conjunto presupuestario se contrae.
 
 
 ** Cambios en la renta
 
-#+MATS: figcol fig-2A_1004-rp8-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp8-*.pdf 0.4
 
 - Un aumento de la renta:
   #+begin_export latex
   \[ M' > M \]
   #+end_export
 
-- El conjunto presupuestario se expande.
 
-
-** Cambios en precios y renta (I)
-
-#+MATS: figcol fig-2A_1004-rp10-*.pdf 0.45
-
-- Disminución de $P_X$, $P'_X < P_X$, y disminución de $M$, $M' < M$.
-
-- Algunas opciones ya no están disponibles.
-
-- Pero también hay otras opciones que antes no eran accesibles y ahora
-  sí lo son.
-
-
-** Cambios en precios y renta (y II)
-
-#+MATS: figcol fig-2A_1004-rp11-*.pdf 0.45
-
-- Los dos precios y la renta cambian en la misma proporción:
-  #+begin_export latex
-  \[ P'_{X} = k P_{X}; P'_{Y} = k P_{Y};  M' = k M \]
-  #+end_export
-
-- El conjunto presupuestario no cambia.
 
 
 * Extensiones

@@ -39,12 +39,11 @@
 
 ** Consumption bundles (and II)
 
-#+MATS: figcol fig-2A_1004-xy-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-xy-*.pdf 0.4
 
-- The consumption bundle $A$ is made up of 1 unit of good $X$ and 3
-  units of good $Y$.
+- Bundle $A$: 1 unit of good $X$ and 3 units of good $Y$.
 
-- There are only 4 units of $X$ in bundle $B$ and 0 units of $Y$.
+- Bundle $B$: 4 units of $X$ and 0 units of $Y$.
 
 
 ** Rational choice
@@ -58,12 +57,12 @@
 
 ** Consumer expenditures
 
-- The *total expenditure* of a consumer choosing the market basket
+- The *total expenditure* of buying
   $(X_0, Y_0)$ is $P_X X_0 + P_Y Y_0$ euros.
 
-- $P_X X_0$ is the amount of money spent on $X$.
+- $P_X X_0$ is the money spent on $X$.
 
-- $P_Y Y_0$ is the amount of money spent on $Y$.
+- $P_Y Y_0$ is the money spent on $Y$.
 
 
 ** The budget set
@@ -73,8 +72,6 @@
   #+begin_export latex
   \[ M \geq P_X X + P_Y Y \]
   #+end_export
-
-#+MATS: pagebreak
 
 
 ** The budget line (I)
@@ -93,25 +90,28 @@
 
 ** The budget line (II)
 
-#+MATS: figcol fig-2A_1004-rp1-*.pdf 0.5
+#+MATS: figcol fig-2A_1004-rp1-*.pdf 0.4
 
-- The intersection points with the axes show the maximum number of
-  units the consumer can buy of each good: $M/P_X$ and $M/P_Y$.
-
-- The slope of the budget line is the *relative price* with negative
-  sign: $-P_X/P_Y$.
+- Intersection points: the maximum number of units the consumer can
+  buy of each .
 
 
-** The budget line (and III)
+** The budget line (III)
 
-#+MATS: figcol fig-2A_1004-rp3-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp3-*.pdf 0.4
 
-- A bundle like $A$ is unaffordable at the current prices and the
-  consumer's income.
+- A bundle like $A$ is unaffordable.
 
 - The consumer does not spend all his income if he purchases $B$.
 
 - The consumer exhausts his income if he chooses $C$.
+
+** The budget line (and IV)
+
+#+MATS: figcol fig-2A_1004-rp4-*.pdf 0.4
+
+- The slope of the budget line is the *relative price* with negative
+  sign.
 
 
 
@@ -120,8 +120,6 @@
 - The *relative price* of good $X$, $P_X/P_Y$, is the price of $X$ in
   units of good $Y$.
 
-- It is the rate at which consumers that spend all their income may
-  substitute one good for another.
 
 
 ** The opportunity cost
@@ -133,7 +131,7 @@
 
 ** The relative price and the opportunity cost
 
-#+MATS: figcol fig-2A_1004-rp5-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp5-*.pdf 0.4
 
 - The opportunity cost coincides with the relative price:
   #+begin_export latex
@@ -147,62 +145,37 @@
 
 ** Changes in a price (I)
 
-#+MATS: figcol fig-2A_1004-rp6-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp6-*.pdf 0.4
 
 - A reduction of the price of $X$:
   #+begin_export latex
   \[ P'_X < P_X\]
   #+end_export
 
-- The budget set expands.
 
 
 ** Changes in a price (and II)
 
-#+MATS: figcol fig-2A_1004-rp7-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp7-*.pdf 0.4
 
 - An increase in the price of $Y$:
   #+begin_export latex
   \[ P'_Y > P_Y \]
   #+end_export
 
-- The budget set shrinks.
 
 
 ** Changes in income
 
-#+MATS: figcol fig-2A_1004-rp8-*.pdf 0.45
+#+MATS: figcol fig-2A_1004-rp8-*.pdf 0.4
 
 - An increase in income:
   #+begin_export latex
   \[ M' > M \]
   #+end_export
 
-- The budget set expands.
 
 
-** Changes in prices and income (I)
-
-#+MATS: figcol fig-2A_1004-rp10-*.pdf 0.45
-
-- A decrease of $P_X$, $P'_X < P_X$, and a decrease of $M$, $M' < M$.
-
-- Some options are no longer available.
-
-- But there are other options which were not affordable, and now they
-  are.
-
-
-** Changes in prices and income (and II)
-
-#+MATS: figcol fig-2A_1004-rp11-*.pdf 0.45
-
-- Both prices and income change in the same proportion:
-  #+begin_export latex
-  \[ P'_{X} = k P_{X}; P'_{Y} = k P_{Y};  M' = k M \]
-  #+end_export
-
-- The budget set does not change.
 
 
 
