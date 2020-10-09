@@ -482,7 +482,7 @@
 ** Figures and tables
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-elast10.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.15, yscale=0.75]
+  \begin{tikzpicture}[xscale=0.135, yscale=0.675]
 
      \draw[help lines]
        (0, 4) node[left] {$4$} -| (15, 0) node[below] {$15$}
@@ -498,7 +498,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-elast11.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.15, yscale=0.75]
+  \begin{tikzpicture}[xscale=0.135, yscale=0.675]
     \coordinate (A) at (15, 3) ;
     \coordinate (B) at (17, 4) ;
 
@@ -516,7 +516,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-elast12.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.15, yscale=0.75]
+  \begin{tikzpicture}[xscale=0.135, yscale=0.675]
     \coordinate (A) at (15, 3) ;
     \coordinate (B) at (25, 4) ;
 
@@ -534,7 +534,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-1D_1004-elast13.tex :noweb yes
-  \begin{tikzpicture}[xscale=0.15, yscale=0.75]
+  \begin{tikzpicture}[xscale=0.135, yscale=0.675]
     \coordinate (A) at (15, 3) ;
     \coordinate (B) at (25, 4) ;
 

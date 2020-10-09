@@ -272,7 +272,7 @@
 
 #+MATS: figcol fig-1D_1004-ingr3-*.pdf 0.4
 
-- Los ingresos totales de los vendedores del bien:
+- Ingresos totales de los vendedores:
   #+begin_export latex
   \[ I_1 = P_1 \cdot Q_1 \]
   #+end_export
@@ -407,35 +407,35 @@
 
 ** Determinantes de la elasticidad de la oferta
 
-- Flexibilidad de adaptación de la producción a cambios en el
-  precio.
+- Facilidad con la que la producción puede adaptarse a los cambios de
+  precios.
 
 - Horizonte temporal.
 
 
 ** Algunos casos (I)
 
-#+MATS: figcol fig-1D_1004-elast10-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-elast10-*.pdf 0.4
 
 - Oferta perfectamente inelástica: \[E_s = 0\]
 
 
 ** Algunos casos (II)
 
-#+MATS: figcol fig-1D_1004-elast11-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-elast11-*.pdf 0.4
 
 - Tramo inelástico de la oferta: \[E_s = 0.44\]
 
 
 ** Algunos casos (III)
 
-#+MATS: figcol fig-1D_1004-elast12-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-elast12-*.pdf 0.4
 
 - Tramo elástico de la oferta: \[E_s = 1.75\]
 
 
 ** Algunos casos (y IV)
 
-#+MATS: figcol fig-1D_1004-elast13-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-elast13-*.pdf 0.4
 
 - Oferta perfectamente elástica: \[E_s = \infty\]

@@ -27,8 +27,8 @@
 
 ** Computation of the price elasticity
 
-- It is computed as the percentage changes in quantity demanded
-  divided by the percent change in the price:
+- It is computed as the *percentage change* in quantity demanded
+  divided by the *percent change* in the price:
   #+begin_export latex
   \[
     E_d = \frac{\text{percentage change in $Q^d$}}{%
@@ -36,6 +36,8 @@
     \frac{\Delta\% Q^d}{\Delta\% P}
   \]
   #+end_export
+
+** Percentage changes
 
 - Percentage change in $Q^d$ and in $P$:
   #+begin_export latex
@@ -53,17 +55,15 @@
 
 - Elasticity in the arc $\overline{AB}$:
   #+begin_export latex
-  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = \frac{100\%}{-33.3\%} = -3\]
+  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = -3\]
   #+end_export
 
 
 ** Interpretation
 
-- The price elasticity of demand is negative: price and quantity
-  demanded move in opposite directions.
+- The price elasticity of demand is negative.
 
-- The price elasticity is a pure number independent of the units in
-  which the quantity demanded and the price are measured.
+- The price elasticity is a pure number, with no units of measurement.
 
 - An elasticity $E_d = -3$ indicates that the magnitude of the
   relative variation in the quantity demanded is 3 times greater than
@@ -78,25 +78,15 @@
 
 - Elasticity in $\overline{BC}$: $E_d = -1$.
 
-- In general, $E_d$ takes different values along the demand curve
-
 
 ** Elastic demand and inelastic demand
 
-- An *elastic* portion of the demand curve:
-  #+begin_export latex
-  \[ E_d < -1\]
-  #+end_export
+- An *elastic* portion of the demand curve: $E_d < -1$.
 
-- An *inelastic* portion of the demand curve:
-  #+begin_export latex
-  \[ -1 < E_d \leq 0\]
-  #+end_export
 
-- *Unitary elasticity* of demand:
-  #+begin_export latex
-  \[ E_d = -1 \]
-  #+end_export
+- An *inelastic* portion of the demand curve: $-1 < E_d \leq 0$.
+
+- *Unitary elasticity* of demand: $E_d = -1$.
 
 
 ** Determinants of price elasticity
@@ -110,7 +100,7 @@
 - Time horizon.
 
 
-** Slope of demand and price elasticity (I)
+** Slope of the demand curve
 
 - The *slope of demand* is the ratio of the *absolute* variations in
   the quantity demanded and the price:
@@ -120,6 +110,8 @@
       \text{variation in $P$}} = \frac{\Delta Q^d}{\Delta P}
   \]
   #+end_export
+
+** Slope of demand and price elasticity (I)
 
 - Like price elasticity, the slope of demand is negative.
 
@@ -133,13 +125,13 @@
 
 - Elasticity in the arc $\overline{AB}$:
   #+begin_export latex
-  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = \frac{100\%}{-33.3\%} = -3\]
+  \[ E_d = \frac{\Delta\% Q^d}{\Delta\% P} = -3\]
   #+end_export
 
 - Slope in the arc $\overline{AB}$:
   #+begin_export latex
   \[
-    \frac{\Delta Q^d}{\Delta P} = \frac{200}{-10} =
+    \frac{\Delta Q^d}{\Delta P} =
     -20 \text{\ kg by \texteuro/kg}
   \]
   #+end_export
@@ -162,15 +154,14 @@
 
 ** Arc elasticity (I)
 
-- We need two points in the demand curve.
+- We only need two points in the demand curve.
 
-- We calculate the percentage changes in the quantity demanded and the
-  price:
+- Percentage changes in the quantity demanded and the price:
   #+begin_export latex
-  \begin{gather*}
-    \Delta\% Q^d = 100 \cdot (Q^d_{2}-Q^d_{1})/Q^d_{1} \\
+  \[
+    \Delta\% Q^d = 100 \cdot (Q^d_{2}-Q^d_{1})/Q^d_{1} \qquad
     \Delta\% P = 100 \cdot (P_{2}-P_{1})/P_{1}
-  \end{gather*}
+  \]
   #+end_export
 
 - Arc elasticity:
@@ -185,30 +176,20 @@
 
 #+MATS: figcol fig-1D_1004-unicorn10-*.pdf 0.45
 
-- $\Delta\% Q^d = 100\%$
-
-- $\Delta\% P = -33.33\%$
-
-- $E_d = -3$
+- After a price drop: $E_d = -3$.
 
 
 ** Arc elasticity (and III)
 
 #+MATS: figcol fig-1D_1004-unicorn3-*.pdf 0.45
 
-- $\Delta\% Q^d = -50\%$
-
-- $\Delta\% P = 50\%$
-
-- $E_d = -1$ \textcolor{DarkRed}{!!!}
+- After a price increase: \textcolor{DarkRed}{¡¡¡} $E_d =-1$
+  \textcolor{DarkRed}{!!!}
 
 
-** Midpoint method (I)
+** The midpoint formula (I)
 
-- The simple formula of arc elasticity yields different values
-  depending on the direction of the price change.
-
-- To avoid this problem we can use the midpoint formula:
+- The midpoint formula computes percentage changes differently:
   #+begin_export latex
   \[
     \Delta\% Q^d = 100 \cdot \Delta Q^d/Q^d_m; \quad
@@ -223,15 +204,12 @@
   #+end_export
 
 
-** Midpoint formula (and II)
+** The midpoint formula (and II)
 
 #+MATS: figcol fig-1D_1004-unicorn4-*.pdf 0.45
 
-- $\Delta\% Q^d = 66.67\%$
-
-- $\Delta\% P = -40\%$
-
-- $E_d = -1.67$
+- The result is independent of the direction of the price change:
+  \[E_d = -1.67\].
 
 
 ** Point elasticity (I)
@@ -252,12 +230,7 @@
 
 #+MATS: figcol fig-1D_1004-unicorn5-*.pdf 0.45
 
-- Slope of the demand curve:
-  #+begin_export latex
-  \[
-    \frac{\diff Q^d}{\diff P} = -20 \text{\ kg per €/kg}
-  \]
-  #+end_export
+- Elasticity in different point of the demand curve:
 
 
 ** Some special cases (I)
@@ -274,30 +247,6 @@
 
 ** Some special cases (II)
 
-#+MATS: figcol fig-1D_1004-elast6-*.pdf 0.45
-
-- Constant elasticity demand:
-  #+begin_export latex
-  \[ Q^d = \frac{30}{P^{1/2}} \]
-  #+end_export
-
-- $E_d = -1/2$.
-
-
-** Some special cases (III)
-
-#+MATS: figcol fig-1D_1004-elast7-*.pdf 0.45
-
-- Constant elasticity demand:
-  #+begin_export latex
-  \[ Q^d = \frac{150}{P^2} \]
-  #+end_export
-
-- $E_d = -2$.
-
-
-** Some special cases (IV)
-
 #+MATS: figcol fig-1D_1004-elast9-*.pdf 0.45
 
 - Perfectly elastic demand:
@@ -308,7 +257,7 @@
 - $E_d = -\infty$
 
 
-** Some special cases (and V)
+** Some special cases (and III)
 
 #+MATS: figcol fig-1D_1004-ingr1-*.pdf 0.5
 
@@ -318,6 +267,7 @@
   #+end_export
   where $a, b>0$.
 
+#+MATS: pagebreak
 
 * Price elasticity and total revenue
 
@@ -326,8 +276,7 @@
 
 #+MATS: figcol fig-1D_1004-ingr3-*.pdf 0.4
 
-- Total revenue is the amount of money received by sellers of the
-  good:
+- Sellers' total revenue:
   #+begin_export latex
   \[
     \IT_1 = P_1 \cdot Q_1
@@ -402,40 +351,11 @@
 * Other elasticities of demand
 
 
-** Demand function
-
-- The *demand function* relates the quantity demanded with all its
-  determinants:
-  #+begin_export latex
-  \[ Q^d = Q^d(P, P_o, M, X, Y, Z, \dots) \]
-  #+end_export
-
-- $P$: price of the good.
-
-- $P_o$: prices of other goods.
-
-- $M$: consumers’ income.
-
-- $X, Y, Z, \dots$: other determinants.
-
-
-** Function and curve of demand
-
-- We obtain the *demand curve* giving specific values to all the
-  determinants of demand except for the price of the good:
-  #+begin_export latex
-  \[
-    Q^d = Q^d(P, \overline{P}_o, \overline{M}, \overline{X},
-    \overline{Y}, \overline{Z}, \dots) = Q^d(P)
-  \]
-  #+end_export
-
-
 ** Partial derivatives
 
 - The *partial derivatives* of the demand function measure the change
   in the quantity demanded when one of the determinants of demand
-  changes, /the values of the remaining of variables held constant/.
+  changes, /the values of the remaining determinants held constant/.
 
 
 ** Cross elasticity
@@ -502,55 +422,38 @@
 
 ** Determinants of the elasticity of supply
 
-- Flexibility with which sellers can adapt their production to changes
-  in price.
+- Ease with which production can adapt to price changes.
 
 - Time horizon.
 
 
 ** Some cases (I)
 
-#+MATS: figcol fig-1D_1004-elast10-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-elast10-*.pdf 0.4
 
-- Perfectly inelastic supply.
-
-- $\Delta\% Q^s = 0\%$
-
-- $\Delta\% P = 28.6\%$
-
-- $E_s = 0$
+- Perfectly inelastic supply:
+  \[E_s = 0\]
 
 
 ** Some cases (II)
 
-#+MATS: figcol fig-1D_1004-elast11-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-elast11-*.pdf 0.4
 
-- An inelastic portion of the supply curve.
-
-- $\Delta\% Q^s = 12.5\%$
-
-- $\Delta\% P = 28.6\%$
-
-- $E_s = 0.44$
+- An inelastic portion of the supply curve:
+  \[E_s = 0.44\]
 
 
 ** Some cases (III)
 
-#+MATS: figcol fig-1D_1004-elast12-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-elast12-*.pdf 0.4
 
-- An elastic portion of the supply curve.
-
-- $\Delta\% Q^s = 50\%$
-
-- $\Delta\% P = 28.6\%$
-
-- $E_s = 1.75$
+- An elastic portion of the supply curve:
+  \[E_s = 1.75\]
 
 
 ** Some cases (and IV)
 
-#+MATS: figcol fig-1D_1004-elast13-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-elast13-*.pdf 0.4
 
-- Perfectly elastic supply.
-
-- $E_s = \infty$
+- Perfectly elastic supply:
+  \[E_s = \infty\]
