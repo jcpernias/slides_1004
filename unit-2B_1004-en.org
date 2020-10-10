@@ -16,10 +16,12 @@
 - We use some assumptions to describe consumer preferences.
 
 
-** Completeness
+** Completeness (I)
 
 - *Completeness*: the consumer is able to rank any two baskets
   according to his preferences.
+
+** Completeness (and II)
 
 - When comparing two baskets, $A$ and $B$, the consumer either:
 
@@ -38,7 +40,7 @@
 
 ** Non-satiation (and II)
 
-#+MATS: figcol fig-2B_1004-ci02-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-ci02-*.pdf 0.5
 
 - $M \succ A$.
 
@@ -47,42 +49,30 @@
 
 ** Indifference curves (I)
 
-- An *indifference curve* is a set of consumption bundles that are
+- An *indifference curve* comprises consumption bundles that are
   indifferent to each other.
 
-- Each basket belongs to an indifference curve.
+- Each bundle belongs to an indifference curve.
 
 
 ** Indifference curves (II)
 
-#+MATS: figcol fig-2B_1004-ci03-*.pdf 0.45
-
-- Baskets which are indifferent to $A$ cannot be in the shaded areas.
-
-
-** Indifference curves (III)
-
-#+MATS: figcol fig-2B_1004-ci04-*.pdf 0.45
-
-- We use the same reasoning to other baskets indifferent to $A$.
-
-
-** Indifference curves (IV)
-
-#+MATS: figcol fig-2B_1004-ci05-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-ci03b-*.pdf 0.5
 
 - The indifference curve has negative slope.
 
+- All bundles on the curve are indifferent to $A$:
+  \[ A \sim B \sim C \]
 
-** Indifference curves (and V)
 
-#+MATS: figcol fig-2B_1004-ci06-*.pdf 0.45
+** Indifference curves (and III)
 
-- Baskets preferred to $A$ are located above and to the right of $A$'s
-  indifference curve.
+#+MATS: figcol fig-2B_1004-ci06-*.pdf 0.5
 
-- The basket $A$ is preferred to baskets located below and to the left
-  of $A$'s indifference curve.
+- $M \succ A$.
+
+
+- $A \succ P$.
 
 
 ** Transitivity (I)
@@ -94,12 +84,18 @@
   + If $A \sim B$ and $B \sim C$, then $A \sim C$.
 
 
-** Transitivity (and II)
+** Transitivity (II)
 
-#+MATS: figcol fig-2B_1004-tr01-*.pdf 0.45
+- If the assumption of transitivity is fulfilled:
 
-- If the assumption of transitivity is fulfilled, each basket belongs
-  to one and *only* one indifference curve.
+  + Each basket belongs to one and *only* one indifference curve.
+
+  + Indifference curves do not cross.
+
+
+** Transitivity (and III)
+
+#+MATS: figcol fig-2B_1004-tr01-*.pdf 0.5
 
 - If the indifference curves intersect, preferences would be
   inconsistent:
@@ -110,7 +106,7 @@
 
 ** The indifference curve map
 
-#+MATS: figcol fig-2B_1004-map01-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-map01-*.pdf 0.5
 
 - The *indifference curve map* represents the preferences of a
   consumer.
@@ -118,16 +114,14 @@
 
 ** The Marginal Rate of Substitution (I)
 
-- The *Marginal Rate of Substitution*, $\RMS$, measures the valuation
-  by a consumer of a good in terms of another good.
-
-- It is the maximum number of units of good $Y$ that the consumer
-  would be willing to trade for an additional unit of good $X$.
+- The *Marginal Rate of Substitution*, $\RMS$, is the maximum number
+  of units of good $Y$ that the consumer would be willing to trade for
+  an additional unit of good $X$.
 
 
 ** The Marginal Rate of Substitution (II)
 
-#+MATS: figcol fig-2B_1004-rms01-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-rms01-*.pdf 0.5
 
 - The $\RMS$ is the rate at which a consumer could substitute a good
   for another, staying on the same indifference curve.
@@ -138,7 +132,7 @@
 
 ** The Marginal Rate of Substitution (and III)
 
-#+MATS: figcol fig-2B_1004-rms02-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-rms02-*.pdf 0.5
 
 - At every point of the indifference curve, the $\RMS$ coincides with
   the slope with negative sign.
@@ -146,9 +140,9 @@
 
 ** Convexity
 
-#+MATS: figcol fig-2B_1004-rms03-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-rms03-*.pdf 0.5
 
-- *Convexity*: the $\RMS$ is decreasing:
+- *Convexity*: $\RMS$ is decreasing:
   #+begin_export latex
   \[ \RMS(A) > \RMS(B) \]
   #+end_export
@@ -176,28 +170,28 @@
 
 ** Perfect substitutes
 
-#+MATS: figcol fig-2B_1004-nreg01-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg01-*.pdf 0.5
 
 - $X$ and $Y$ are *perfect substitutes*.
 
 
 ** Perfect complements
 
-#+MATS: figcol fig-2B_1004-nreg02-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg02-*.pdf 0.5
 
 - $X$ and $Y$ are *perfect complements*.
 
 
 ** Neutrals
 
-#+MATS: figcol fig-2B_1004-nreg03-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg03-*.pdf 0.5
 
 - $Y$ is a *neutral good*.
 
 
 ** Bads
 
-#+MATS: figcol fig-2B_1004-nreg04-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg04-*.pdf 0.5
 
 - $X$ is a *bad*.
 
@@ -214,8 +208,6 @@
   + if $A \succ B$, then $U(X_A, Y_A) > U(X_B, Y_B)$;
 
   + if $A \sim B$, then $U(X_A, Y_A) = U(X_B, Y_B)$.
-
-- We use utility functions to represent consumer preferences.
 
 
 ** The utility function and indifference curves
@@ -250,8 +242,8 @@
 - The values produced by the utility function have no measurement
   units nor any special meaning.
 
-- Those values are only useful to rank the different bundles according
-  to the consumer's preferences.
+- Those values are only useful to *order* the different bundles
+  according to the consumer's preferences.
 
 
 

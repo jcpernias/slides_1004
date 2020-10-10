@@ -82,6 +82,39 @@
 #+end_src
 
 
+#+begin_src latex :tangle fig-2B_1004-ci03b.tex :noweb yes
+  \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+
+    \coordinate (G) at (4.4, 48) ;
+    \coordinate (H) at (48, 8) ;
+
+    \coordinate (C1) at (8, 15) ;
+    \coordinate (C2) at (30, 9) ;
+
+    \path[CMe] (G) ..controls (C1) and (C2).. (H)
+      node[pos=0.05] (B) {}
+      node[pos=0.20] (C) {}
+      node[pos=0.37] (A) {}
+      node[pos=0.60] (D) {}
+      node[pos=0.85] (E) {}
+      ;
+
+      \draw[CMe] (G) ..controls (C1) and (C2).. (H) ;
+
+
+
+    \fill[betterfill] (A) rectangle (48, 48) ;
+    \fill[worsefill] (0, 0) rectangle (A) ;
+
+    \node[dot, label={45:$A$}] at (A) {};
+    \node[dot, label={45:$B$}] at (C) {};
+    \node[dot, label={45:$C$}] at (D) {};
+
+  \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+  \end{tikzpicture}
+#+end_src
+
+
 ** Curvas de indiferencia (III)
 
 #+begin_src latex :tangle fig-2B_1004-ci04.tex :noweb yes
@@ -253,7 +286,7 @@
 ** Mapa de curvas de indiferencia
 
 #+begin_src latex :tangle fig-2B_1004-map01.tex :noweb yes
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\Uone}{120}
   \newcommand*{\Utwo}{300}
   \newcommand*{\Uthree}{520}
@@ -285,7 +318,7 @@
 ** RMS (II)
 
 #+begin_src latex :tangle fig-2B_1004-rms01.tex :noweb yes
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\const}{225}
   \newcommand*{\Ax}{8}
   \newcommand*{\Bx}{25}
@@ -316,7 +349,7 @@
 ** RMS (y III)
 
 #+begin_src latex :tangle fig-2B_1004-rms02.tex :noweb yes
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\const}{225}
   \newcommand*{\Ax}{8}
   \newcommand*{\Bx}{25}
@@ -352,7 +385,7 @@
 ** Convexidad
 
 #+begin_src latex :tangle fig-2B_1004-rms03.tex :noweb yes
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\const}{225}
   \newcommand*{\Ax}{8}
   \newcommand*{\Bx}{25}
@@ -395,7 +428,7 @@
 ** Sustitutos perfectos
 
 #+begin_src latex :tangle fig-2B_1004-nreg01.tex :noweb yes
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\Xcoord}{15}
   \newcommand*{\Ycoord}{10}
   \newcommand*{\slope}{\Ycoord/\Xcoord}
@@ -421,7 +454,7 @@
 ** Complementos perfectos
 
 #+begin_src latex :tangle fig-2B_1004-nreg02.tex :noweb yes
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\Xcoord}{4}
   \newcommand*{\Ycoord}{3}
   \newcommand*{\dX}{7.5}
@@ -446,7 +479,7 @@
 ** Bien neutro
 
 #+begin_src latex :tangle fig-2B_1004-nreg03.tex :noweb yes
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand{\Xcoord}{10}
   \newcommand{\dX}{8}
 
@@ -470,7 +503,7 @@
 ** Mal
 
 #+begin_src latex :tangle fig-2B_1004-nreg04.tex :noweb yes
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\Sx}{20}
   \newcommand*{\Sy}{5}
   \newcommand*{\Ex}{45}

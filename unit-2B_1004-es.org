@@ -18,10 +18,12 @@
   supuestos.
 
 
-** Completitud
+** Completitud (I)
 
 - *Completitud*: el consumidor es capaz de ordenar dos cestas
   cualesquiera de acuerdo con sus preferencias.
+
+** Completitud (y II)
 
 - Un consumidor que compara dos cestas, $A$ y $B$:
 
@@ -41,7 +43,7 @@
 
 ** No saturación (y II)
 
-#+MATS: figcol fig-2B_1004-ci02-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-ci02-*.pdf 0.5
 
 - $M \succ A$.
 
@@ -50,7 +52,7 @@
 
 ** Curvas de indiferencia (I)
 
-- Una *curva de indiferencia* es un conjunto de cestas de consumo que
+- Una *curva de indiferencia* se compone de cestas de consumo que
   son indiferentes entre sí.
 
 - Cada cesta pertenece a una curva de indiferencia.
@@ -58,35 +60,22 @@
 
 ** Curvas de indiferencia (II)
 
-#+MATS: figcol fig-2B_1004-ci03-*.pdf 0.45
-
-- Las cestas indiferentes a $A$ no pueden estar en las zonas
-  sombreadas.
-
-
-** Curvas de indiferencia (III)
-
-#+MATS: figcol fig-2B_1004-ci04-*.pdf 0.45
-
-- Aplicamos el mismo razonamiento a otras cestas indiferentes a $A$.
-
-
-** Curvas de indiferencia (IV)
-
-#+MATS: figcol fig-2B_1004-ci05-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-ci03b-*.pdf 0.5
 
 - La curva de indiferencia tiene pendiente negativa.
 
+- Todas las cestas de la curva son indiferentes a $A$:
+  \[ A \sim B \sim C \]
 
-** Curvas de indiferencia (y V)
 
-#+MATS: figcol fig-2B_1004-ci06-*.pdf 0.45
+** Curvas de indiferencia (y III)
 
-- Las cestas preferidas a $A$ se sitúan por encima y a la
-  derecha de la curva de indiferencia de $A$.
+#+MATS: figcol fig-2B_1004-ci06-*.pdf 0.5
 
-- La cesta $A$ es preferida a cestas situadas por debajo y a la
-  izquierda de la curva de indiferencia de $A$.
+- $M \succ A$.
+
+
+- $A \succ P$.
 
 
 ** Transitividad (I)
@@ -97,13 +86,19 @@
 
   + Si $A \sim B$ y $B \sim C$, entonces $A \sim C$.
 
+** Transitividad (II)
 
-** Transitividad (y II)
+- Si se cumple el supuesto de transitividad:
 
-#+MATS: figcol fig-2B_1004-tr01-*.pdf 0.45
+  + Cada cesta pertenece a una y *sólo* a una curva de indiferencia.
 
-- Si se cumple el supuesto de transitividad, cada cesta pertenece a
-  una y *sólo* a una curva de indiferencia.
+  + Las curvas de indiferencia no se cruzan.
+
+
+
+** Transitividad (y III)
+
+#+MATS: figcol fig-2B_1004-tr01-*.pdf 0.5
 
 - Si las curvas de indiferencia se cortaran, las preferencias serían
   inconsistentes:
@@ -114,7 +109,7 @@
 
 ** El mapa de curvas de indiferencia
 
-#+MATS: figcol fig-2B_1004-map01-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-map01-*.pdf 0.5
 
 - El *mapa de curvas de indiferencia* representa las preferencias de
   un consumidor.
@@ -122,16 +117,14 @@
 
 ** La Relación Marginal de Sustitución (I)
 
-- La *Relación Marginal de Sustitución*, $\RMS$, mide cómo un
-  consumidor valora un bien en términos de otro bien.
-
-- Es el máximo número de unidades del bien $Y$ que el consumidor
-  estaría dispuesto a intercambiar por una unidad más del bien $X$.
+- La *Relación Marginal de Sustitución*, $\RMS$, es el máximo número
+  de unidades del bien $Y$ que el consumidor estaría dispuesto a
+  intercambiar por una unidad adicional del bien $X$.
 
 
 ** La Relación Marginal de Sustitución (II)
 
-#+MATS: figcol fig-2B_1004-rms01-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-rms01-*.pdf 0.5
 
 - La $RMS$ es la tasa a la que un consumidor puede sustituir un bien
   por otro, manteniéndose en la misma curva de indiferencia.
@@ -142,7 +135,7 @@
 
 ** La Relación Marginal de Sustitución (y III)
 
-#+MATS: figcol fig-2B_1004-rms02-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-rms02-*.pdf 0.5
 
 - En cada punto de la curva de indiferencia, la $\RMS$ coincide con la
   pendiente con signo negativo.
@@ -150,10 +143,9 @@
 
 ** Convexidad
 
-#+MATS: figcol fig-2B_1004-rms03-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-rms03-*.pdf 0.5
 
-- *Convexidad* de las curvas de indiferencia: la $\RMS$
-  es decreciente:
+- *Convexidad*: la $\RMS$ es decreciente:
   #+begin_export latex
   \[ \RMS(A) > \RMS(B) \]
   #+end_export
@@ -181,28 +173,28 @@
 
 ** Sustitutos perfectos
 
-#+MATS: figcol fig-2B_1004-nreg01-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg01-*.pdf 0.5
 
 - $X$ e $Y$ son *sustitutos perfectos*.
 
 
 ** Complementos perfectos
 
-#+MATS: figcol fig-2B_1004-nreg02-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg02-*.pdf 0.5
 
 - $X$ e $Y$ son *complementos perfectos*.
 
 
 ** Bienes neutros
 
-#+MATS: figcol fig-2B_1004-nreg03-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg03-*.pdf 0.5
 
 - $Y$ es un *bien neutro*.
 
 
 ** Males
 
-#+MATS: figcol fig-2B_1004-nreg04-*.pdf 0.45
+#+MATS: figcol fig-2B_1004-nreg04-*.pdf 0.5
 
 - $X$ es un *mal*.
 
@@ -221,9 +213,6 @@
   + si $A \succ B$, entonces $U(X_A, Y_A) > U(X_B, Y_B)$;
 
   + si $A \sim B$, entonces $U(X_A, Y_A) = U(X_B, Y_B)$.
-
-- Usamos la función de utilidad para representar las preferencias de
-  un consumidor.
 
 
 ** La función de utilidad y las curvas de indiferencia
@@ -258,7 +247,7 @@
 - Los valores que toma la función de utilidad no tienen unidades ni
   ningún significado especial.
 
-- Los valores sólo son útiles para ordenar las cestas de acuerdo a
+- Los valores sólo son útiles para *ordenar* las cestas de acuerdo a
   las preferencias del consumidor.
 
 
