@@ -26,8 +26,8 @@ source("./R/srprod.R")
 
 ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+width <- 4.5                              # cm
+height <- 4.5
 
 Qtop <- 50
 PMgtop <- 1.25
@@ -53,14 +53,14 @@ Coordinates(A=A, B=B)
 
   \draw[help lines]
      let \p1 = (A) in
-     (0, \y1) node[left, font=\scriptsize] {$Q_{A}$} -|
-     (\x1, 0) node[below, font=\scriptsize] {$L_{A}$}
+     (0, \y1) node[left] {$Q_{A}$} -|
+     (\x1, 0) node[below] {$L_{A}$}
      ;
 
   \draw[help lines]
      let \p1 = (B) in
-     (0, \y1) node[left, font=\scriptsize] {$Q_{B}$} -|
-     (\x1, 0) node[below, font=\scriptsize] {$L_{B}$}
+     (0, \y1) node[left] {$Q_{B}$} -|
+     (\x1, 0) node[below] {$L_{B}$}
      ;
 
   \draw[IMe]
@@ -70,7 +70,7 @@ cat("{",
   paste(coord(L, Q), collapse="\n"),
     "}")
 @
-    node[right, font=\footnotesize] {$f(L)$}
+    node[right, font=\small] {$f(L)$}
       ;
 
 
@@ -102,8 +102,8 @@ source("./R/srprod.R")
 
 ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+width <- 4.5                              # cm
+height <- 4.5
 
 Qtop <- 50
 PMgtop <- 1.25
@@ -130,14 +130,14 @@ Coordinates(A=A, B = B, dA = dA, dB = dB)
 
   \draw[help lines]
      let \p1 = (A) in
-     (0, \y1) node[left, font=\scriptsize] {$Q_{A}$} -|
-     (\x1, 0) node[below, font=\scriptsize] {$L_{A}$}
+     (0, \y1) node[left] {$Q_{A}$} -|
+     (\x1, 0) node[below] {$L_{A}$}
      ;
 
   \draw[help lines]
      let \p1 = (B) in
-     (0, \y1) node[left, font=\scriptsize] {$Q_{B}$} -|
-     (\x1, 0) node[below, font=\scriptsize] {$L_{B}$}
+     (0, \y1) node[left] {$Q_{B}$} -|
+     (\x1, 0) node[below] {$L_{B}$}
      ;
 
 
@@ -148,7 +148,7 @@ cat("{",
   paste(coord(L, Q), collapse="\n"),
     "}")
 @
-    node[right, font=\footnotesize] {$f(L)$}
+    node[right, font=\small] {$f(L)$}
       ;
 
 
@@ -189,8 +189,8 @@ source("./R/srprod.R")
 
 ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+width <- 4.5                              # cm
+height <- 4.5
 
 Qtop <- 50
 PMgtop <- 1.25
@@ -210,21 +210,22 @@ yscale <- height/(PMgtop - PMgbottom)
 
 A <- c(L[tA], PMg[tA])
 B <- c(L[tB], PMg[tB])
+E <- c((L[tE0] + L[tE1])/2, (PMg[tE0] + PMg[tE1])/2)
 
 
-Coordinates(A=A, B=B)
+Coordinates(A=A, B=B, E=E)
 
 @
    \draw[help lines]
      let \p1 = (A) in
      (A) --
-     (\x1, 0) node[below, font=\scriptsize] {$L_{A}$}
+     (\x1, 0) node[below] {$L_{A}$}
      ;
 
   \draw[help lines]
      let \p1 = (B) in
      (B) --
-     (\x1, 0) node[below, font=\scriptsize] {$L_{B}$}
+     (\x1, 0) node[below] {$L_{B}$}
      ;
 
 
@@ -235,9 +236,9 @@ Coordinates(A=A, B=B)
       paste(coord(L, PMg), collapse="\n"),
       "}")
 @
-    node[right, font=\footnotesize] {$\PMgL$}
       ;
 
+  \node[right, font=\small] at ($(E) + (-8, 0.32)$){$\PMgL$} ;
 
 
   \node[dot] at (A) {};
@@ -272,8 +273,8 @@ source("./R/srprod.R")
 
 ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+width <- 4.5                              # cm
+height <- 4.5
 
 Qtop <- 50
 PMgtop <- 1.25
@@ -293,21 +294,22 @@ yscale <- height/(PMgtop - PMgbottom)
 
 C <- c(L[tC], PMg[tC])
 D <- c((L[tD0] + L[tD1])/2, (PMg[tD0] + PMg[tD1])/2)
+E <- c((L[tE0] + L[tE1])/2, (PMg[tE0] + PMg[tE1])/2)
 
 
-Coordinates(C=C, D=D)
+Coordinates(C=C, D=D, E=E)
 
 @
 
   %% \draw[help lines]
   %%    let \p1 = (D) in
-  %%    (\x1, 0) node[below, font=\scriptsize] {$L_{D}$}
+  %%    (\x1, 0) node[below] {$L_{D}$}
   %%    ;
 
   \draw[help lines]
      let \p1 = (C) in
      (C) --
-     (\x1, 0) node[below, font=\scriptsize] {$L_{C}$}
+     (\x1, 0) node[below] {$L_{C}$}
      ;
 
   \draw[IMe, DarkGreen!70!Black]
@@ -317,9 +319,9 @@ Coordinates(C=C, D=D)
       paste(coord(L, PMg), collapse="\n"),
       "}")
 @
-    node[right, font=\footnotesize] {$\PMgL$}
       ;
 
+  \node[right, font=\small] at ($(E) + (-8, 0.32)$){$\PMgL$} ;
 
 
   \node[dot] at (C) {};
@@ -354,8 +356,8 @@ source("./R/srprod.R")
 
 ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+width <- 4.5                              # cm
+height <- 4.5
 
 Qtop <- 50
 PMgtop <- 1.25
@@ -375,21 +377,22 @@ yscale <- height/(PMgtop - PMgbottom)
 
 C <- c(L[tC], PMg[tC])
 D <- c((L[tD0] + L[tD1])/2, (PMg[tD0] + PMg[tD1])/2)
+E <- c((L[tE0] + L[tE1])/2, (PMg[tE0] + PMg[tE1])/2)
 
 
-Coordinates(C=C, D=D)
+Coordinates(C=C, D=D, E=E)
 
 @
 
   \draw[help lines]
      let \p1 = (D) in
-     (\x1, 0) node[below, font=\scriptsize] {$L_{D}$}
+     (\x1, 0) node[below] {$L_{D}$}
      ;
 
   %% \draw[help lines]
   %%    let \p1 = (C) in
   %%    (C) --
-  %%    (\x1, 0) node[below, font=\scriptsize] {$L_{C}$}
+  %%    (\x1, 0) node[below] {$L_{C}$}
   %%    ;
 
   \draw[IMe, DarkGreen!70!Black]
@@ -399,8 +402,8 @@ Coordinates(C=C, D=D)
       paste(coord(L, PMg), collapse="\n"),
       "}")
 @
-    node[right, font=\footnotesize] {$\PMgL$}
       ;
+  \node[right, font=\small] at ($(E) + (-8, 0.32)$){$\PMgL$} ;
 
 
 
@@ -433,8 +436,8 @@ source("./R/srprod.R")
 
 ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+width <- 4.5                              # cm
+height <- 4.5
 
 Qtop <- 42
 PMgtop <- 1.25
@@ -467,19 +470,19 @@ Coordinates(D=D, I = I, E = E)
   \draw[help lines]
      let \p1 = (D) in
      (D) --
-     (\x1, 0) node[below, font=\scriptsize] {$L_{D}$}
+     (\x1, 0) node[below] {$L_{D}$}
      ;
 
   \draw[help lines]
      let \p1 = (I) in
      (0, \y1) -|
-     (\x1, 0) node[below, font=\scriptsize] {$L_{1}$}
+     (\x1, 0) node[below] {$L_{1}$}
      ;
 
    \draw[help lines]
      let \p1 = (E) in
      (E) --
-     (\x1, 0) node[below, font=\scriptsize] {$L_{2}$}
+     (\x1, 0) node[below] {$L_{2}$}
      ;
 
 
@@ -490,7 +493,7 @@ cat("{",
   paste(coord(L, Q), collapse="\n"),
     "}")
 @
-    node[right, font=\footnotesize] {$f(L)$}
+    node[right, font=\small] {$f(L)$}
       ;
 
 
@@ -530,8 +533,8 @@ source("./R/srprod.R")
 
 ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+width <- 4.5                              # cm
+height <- 4.5
 
 Qtop <- 50
 PMgtop <- 1.25
@@ -561,14 +564,14 @@ Coordinates(A=A, B=B)
 
   \draw[help lines]
      let \p1 = (A) in
-     (0, \y1) node[left, font=\scriptsize] {$Q_{A}$} -|
-     (\x1, 0) node[below, font=\scriptsize] {$L_{A}$}
+     (0, \y1) node[left] {$Q_{A}$} -|
+     (\x1, 0) node[below] {$L_{A}$}
      ;
 
   \draw[help lines]
      let \p1 = (B) in
-     (0, \y1) node[left, font=\scriptsize] {$Q_{B}$} -|
-     (\x1, 0) node[below, font=\scriptsize] {$L_{B}$}
+     (0, \y1) node[left] {$Q_{B}$} -|
+     (\x1, 0) node[below] {$L_{B}$}
      ;
 
 
@@ -579,7 +582,7 @@ cat("{",
   paste(coord(L, Q), collapse="\n"),
     "}")
 @
-    node[right, font=\footnotesize] {$f(L)$}
+    node[right, font=\small] {$f(L)$}
       ;
 
   \draw[CMe]
@@ -617,8 +620,8 @@ source("./R/srprod.R")
 
 ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+width <- 4.5                              # cm
+height <- 4.5
 
 Qtop <- 50
 PMgtop <- 1.25
@@ -646,13 +649,13 @@ Coordinates(A=A, B=B)
   \draw[help lines]
      let \p1 = (A) in
      (A) --
-     (\x1, 0) node[below, font=\scriptsize] {$L_{A}$}
+     (\x1, 0) node[below] {$L_{A}$}
      ;
 
   \draw[help lines]
      let \p1 = (B) in
      (B) --
-     (\x1, 0) node[below, font=\scriptsize] {$L_{B}$}
+     (\x1, 0) node[below] {$L_{B}$}
      ;
 
   \draw[IMe, Brown]
@@ -662,7 +665,7 @@ Coordinates(A=A, B=B)
       paste(coord(L, PMe), collapse="\n"),
       "}")
 @
-    node[right, font=\footnotesize] {$\PMeL$}
+    node[right, font=\small] {$\PMeL$}
     ;
 
 
@@ -698,8 +701,8 @@ source("./R/srprod.R")
 
 ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+width <- 4.5                              # cm
+height <- 4.5
 
 Qtop <- 50
 PMgtop <- 1.25
@@ -727,13 +730,13 @@ Coordinates(D=D, E = E)
 
   \draw[help lines]
      let \p1 = (D) in
-     (\x1, 0) node[below, font=\scriptsize] {$L_{D}$}
+     (\x1, 0) node[below] {$L_{D}$}
      ;
 
   \draw[help lines]
      let \p1 = (E) in
      (E) --
-     (\x1, 0) node[below, font=\scriptsize] {$L_{E}$}
+     (\x1, 0) node[below] {$L_{E}$}
      ;
 
   \draw[IMe, Brown]
@@ -743,7 +746,7 @@ cat("{",
   paste(coord(L, PMe), collapse="\n"),
     "}")
 @
-    node[right, font=\footnotesize] {$\PMeL$}
+    node[right, font=\small] {$\PMeL$}
       ;
 
   \draw[IMe, DarkGreen!70!Black]
@@ -753,10 +756,9 @@ cat("{",
   paste(coord(L, PMg), collapse="\n"),
     "}")
 @
-    node[right, font=\footnotesize] {$\PMgL$}
       ;
 
-
+  \node[right, font=\small] at ($(E) + (-8, 0.32)$){$\PMgL$} ;
 
   \node[dot] at (D) {};
   \node[dot] at (E) {};
@@ -787,8 +789,8 @@ source("./R/srprod.R")
 
 ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+width <- 4.5                              # cm
+height <- 4.5
 
 Qtop <- 50
 PMgtop <- 1.25
@@ -815,14 +817,14 @@ Coordinates(D=D, E = E, dE=dE)
 
   \draw[help lines]
      let \p1 = (D) in
-     (0, \y1) node[left, font=\scriptsize] {$Q_{D}$} -|
-     (\x1, 0) node[below, font=\scriptsize] {$L_{D}$}
+     (0, \y1) node[left] {$Q_{D}$} -|
+     (\x1, 0) node[below] {$L_{D}$}
      ;
 
   \draw[help lines]
      let \p1 = (E) in
-     (0, \y1) node[left, font=\scriptsize] {$Q_{E}$} -|
-     (\x1, 0) node[below, font=\scriptsize] {$L_{E}$}
+     (0, \y1) node[left] {$Q_{E}$} -|
+     (\x1, 0) node[below] {$L_{E}$}
      ;
 
   \draw[IMe]
@@ -832,7 +834,7 @@ cat("{",
   paste(coord(L, Q), collapse="\n"),
     "}")
 @
-    node[right, font=\footnotesize] {$f(L)$}
+    node[right, font=\small] {$f(L)$}
       ;
 
   \draw[CMe]

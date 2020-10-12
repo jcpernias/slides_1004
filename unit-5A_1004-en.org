@@ -14,8 +14,7 @@
 
 ** Firms
 
-- Why do firms exist? If markets efficiently allocate resources, do we
-  really need firms?
+- Why do firms exist?
 
 - [[http://en.wikipedia.org/wiki/Ronald_Coase][Ronald Coase]]: firms efficiently coordinate the production process by
   avoiding *transaction costs*: searching, bargaining, protecting
@@ -25,27 +24,20 @@
 ** Production
 
 - *Technology* enables firms to combine *factors of production* to
-  obtain the *produced goods* that will then be sold in the *goods
+  produce the *goods* that will then be sold in the *goods
   markets*.
-
-#+MATS: pagebreak
 
 
 ** Factors of production
 
 - Labor.
 
-- Land.
-
-- Raw materials.
-
 - Capital.
 
 
 ** Capital
 
-- *Capital goods*: those factors of production which are themselves
-  produced goods: machinery, tools, buildings and structures used for
+- *Capital goods*: machinery, tools, buildings and structures used for
   the production process.
 
 - Capital as a factor of production corresponds to the concept of
@@ -82,8 +74,7 @@
 
 ** Simplifications
 
-- Firms only use two factors of production: labor, $L$, and capital,
-  $K$.
+- Firms only use labor, $L$, and capital, $K$.
 
 - The production function relates output, $Q$, with the factors of
   production:
@@ -106,13 +97,10 @@
   \[ Q = F(\Kbar, L) = f(L) \]
   #+end_export
 
-- The only way in which the firm can increase its output level is by
-  using more units of the variable input.
-
 
 ** The total product curve
 
-#+MATS: figcol fig-5A_1004-cp01-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp01-*.pdf 0.45
 
 - The *total product* curve relates output level and labor:
   #+begin_export latex
@@ -122,7 +110,7 @@
 
 ** The marginal product of labor
 
-#+MATS: figcol fig-5A_1004-cp03-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp03-*.pdf 0.45
 
 - The *marginal product of labor* is the rate at which production
   increases per additional unit of labor:
@@ -131,20 +119,11 @@
   #+end_export
 
 
-** The marginal product of labor curve (I)
+** The marginal product of labor curve
 
-#+MATS: figcol fig-5A_1004-cp06-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp06-*.pdf 0.45
 
 - The marginal product curve has an inverted U-shape.
-
-
-** The marginal product curve (and II)
-
-#+MATS: figcol fig-5A_1004-cp06a-*.pdf 0.5
-
-- The $\PMgL$ curve is increasing for low values of $L$.
-
-- The $\PMgL$ is decreasing for values of $L$ higher than $L_C$.
 
 
 ** The law of diminishing marginal returns
@@ -154,12 +133,19 @@
   point will be reached at which the resulting additions to output
   decrease.
 
-#+MATS: pagebreak
+
+** Diminishing marginal returns to labaor
+
+#+MATS: figcol fig-5A_1004-cp06a-*.pdf 0.45
+
+- The $\PMgL$ curve is increasing for low values of $L$.
+
+- The $\PMgL$ is decreasing for values of $L$ higher than $L_C$.
 
 
 ** Technical efficiency (I)
 
-#+MATS: figcol fig-5A_1004-cp06b-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp06b-*.pdf 0.45
 
 - The $\PMgL$ is negative when $L > L_D$.
 
@@ -168,7 +154,7 @@
 
 ** Technical efficiency (and II)
 
-#+MATS: figcol fig-5A_1004-cp08-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp08-*.pdf 0.45
 
 - Using more than $L_D$ units of labor is not technically efficient.
 
@@ -177,7 +163,7 @@
 
 ** The average product of labor
 
-#+MATS: figcol fig-5A_1004-cp02-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp02-*.pdf 0.45
 
 - The *average product of labor* is the amount of output per unit of
   labor:
@@ -188,14 +174,14 @@
 
 ** The average product of labor curve
 
-#+MATS: figcol fig-5A_1004-cp07-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp07-*.pdf 0.45
 
 - The average product of labor curve has an inverted U-shape.
 
 
 ** Total, average, and marginal product (I)
 
-#+MATS: figcol fig-5A_1004-cp05-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp05-*.pdf 0.45
 
 - The $\PMeL$ curve:
 
@@ -203,15 +189,15 @@
 
   + is decreasing when $\PMgL < \PMeL$.
 
-  + reaches its maximum when $\PMgL = \PMeL$.
+  + reaches its maximum when $\PMgL$ and $\PMeL$ are equal.
 
 
 ** Total, average, and marginal product (and II)
 
-#+MATS: figcol fig-5A_1004-cp04-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp04-*.pdf 0.45
 
 - The total product curve attains a maximum at $L_D$, where $\PMgL =
   0$.
 
-- The average product curve reaches its maximum at $L_E$, where $\PMgL
-  = \PMeL$.
+- The average product curve reaches its maximum at $L_E$, where
+  $\PMgL$ and $\PMeL$ are equal.

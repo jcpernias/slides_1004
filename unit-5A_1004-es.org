@@ -1,3 +1,4 @@
+
 # -*- ispell-dictionary: "spanish" -*-
 #+SETUPFILE: ./course-es.org
 
@@ -14,8 +15,7 @@
 
 ** Las empresas
 
-- ¿Por qué existen las empresas? Si los mercados asignan
-  eficientemente los recursos, ¿para qué necesitamos las empresas?
+- ¿Por qué existen las empresas?
 
 - [[http://en.wikipedia.org/wiki/Ronald_Coase][Ronald Coase]]: las empresas coordinan eficientemente el proceso de
   producción evitando los *costes de transacción*: búsqueda,
@@ -26,7 +26,7 @@
 ** La producción
 
 - La *tecnología* permite que las empresas combinen *factores de
-  producción* para obtener los *bienes de producción* que venderán en
+  producción* para producir los *bienes* que venderán en
   los *mercados de bienes*.
 
 
@@ -34,18 +34,13 @@
 
 - Trabajo.
 
-- Tierra.
-
-- Materias primas.
-
 - Capital.
 
 
 ** El capital
 
-- *Bienes de capital*: aquellos factores de producción que son ellos
-  mismos bienes de producción: máquinas, herramientas, edificios y
-  estructuras destinadas al proceso productivo.
+- *Bienes de capital*: máquinas, herramientas, edificios y estructuras
+  destinadas al proceso productivo.
 
 - El capital como factor de producción se corresponde al concepto de
   *capital físico*, el cual difiere del de *capital financiero*: la
@@ -82,11 +77,10 @@
 
 ** Simplificaciones
 
-- Las empresas sólo utilizan dos factores de producción: trabajo, $L$,
-  y capital, $K$.
+- Las empresas sólo utilizan trabajo, $L$, y capital, $K$.
 
-- La función de producción relaciona el nivel de producción, $Q$, con
-  los factores de producción:
+- La *función de producción* relaciona la producción, $Q$, con los
+  factores de producción:
   #+begin_export latex
   \[ Q = F(K, L) \]
   #+end_export
@@ -106,13 +100,11 @@
   \[ Q = F(\Kbar, L) = f(L) \]
   #+end_export
 
-- La única forma en que la empresa puede aumentar su nivel de
-  producción es usando más unidades del factor variable.
 
 
 ** La curva de producto total
 
-#+MATS: figcol fig-5A_1004-cp01-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp01-*.pdf 0.45
 
 - La curva de *producto total* relaciona el nivel de producción y el
   trabajo:
@@ -123,7 +115,7 @@
 
 ** El producto marginal del trabajo
 
-#+MATS: figcol fig-5A_1004-cp03-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp03-*.pdf 0.45
 
 - El *producto marginal del trabajo* es la tasa a la que crece la
   producción por unidad adicional de trabajo:
@@ -132,21 +124,11 @@
   #+end_export
 
 
-** La curva de producto marginal (I)
+** La curva de producto marginal
 
-#+MATS: figcol fig-5A_1004-cp06-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp06-*.pdf 0.45
 
 - La curva de producto marginal tiene forma de U invertida.
-
-
-** La curva de producto marginal (y II)
-
-#+MATS: figcol fig-5A_1004-cp06a-*.pdf 0.5
-
-- La curva de $\PMgL$ es creciente para valores bajos de $L$.
-
-- La curva de $\PMgL$ es decreciente para valores de $L$ mayores que
-  $L_C$.
 
 
 ** La ley de los rendimientos decrecientes de un factor
@@ -157,18 +139,28 @@
   decrecen los sucesivos incrementos de producción.
 
 
+** Rendimientos decrecientes del trabajo
+
+#+MATS: figcol fig-5A_1004-cp06a-*.pdf 0.45
+
+- La curva de $\PMgL$ es creciente para valores bajos de $L$.
+
+- La curva de $\PMgL$ es decreciente para valores de $L$ mayores que
+  $L_C$.
+
+
 ** Eficiencia técnica (I)
 
-#+MATS: figcol fig-5A_1004-cp06b-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp06b-*.pdf 0.45
 
-- El $\PMgL$ es negativo siempre que $L > L_D$.
+- El $\PMgL$ es negativo cuando $L > L_D$.
 
 - Si el trabajo aumenta más allá de $L_D$, la producción disminuye.
 
 
 ** Eficiencia técnica (y II)
 
-#+MATS: figcol fig-5A_1004-cp08-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp08-*.pdf 0.45
 
 - El uso de más unidades de trabajo que $L_D$ no es técnicamente
   eficiente.
@@ -178,7 +170,7 @@
 
 ** Producto medio del trabajo
 
-#+MATS: figcol fig-5A_1004-cp02-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp02-*.pdf 0.45
 
 - El *producto medio del trabajo* es el número de unidades producidas
   por hora de trabajo:
@@ -189,14 +181,14 @@
 
 ** La curva de producto medio
 
-#+MATS: figcol fig-5A_1004-cp07-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp07-*.pdf 0.45
 
 - La curva de producto medio del trabajo tiene forma de U invertida.
 
 
 ** Producto total, medio y marginal (I)
 
-#+MATS: figcol fig-5A_1004-cp05-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp05-*.pdf 0.45
 
 - La curva de $\PMeL$:
 
@@ -204,13 +196,15 @@
 
   + es decreciente si $\PMgL < \PMeL$.
 
-  + llega a su máximo cuando $\PMgL = \PMeL$.
+  + llega a su máximo cuando se igualan $\PMgL$ y $\PMeL$.
 
 
 ** Producto total, medio y marginal (y II)
 
-#+MATS: figcol fig-5A_1004-cp04-*.pdf 0.5
+#+MATS: figcol fig-5A_1004-cp04-*.pdf 0.45
 
-- La curva de producto total alcanza un máximo en $L_D$, donde $\PMgL = 0$.
+- La curva de producto total alcanza un máximo en $L_D$, donde $\PMgL
+  = 0$.
 
-- La curva de producto medio llega a su máximo en $L_E$, donde $\PMgL = \PMeL$.
+- La curva de producto medio llega a su máximo en $L_E$, donde se
+  igualan $\PMgL$ y $\PMeL$.
