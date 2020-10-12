@@ -4,347 +4,287 @@
 
 #+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
 
+* La minimización del coste a largo plazo
+
 #+begin_src latex :tangle fig-6B_1004-eq01.tex :noweb yes
-\begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$\overline{Q}$}
+      ;
 
-
-
-  % \draw[IMe]
-  %   (0, 8.33333) -- (12, 0)
-  %   (0, 4.16667) -- (6, 0)
-  %   (0, 12.5) -- (18, 0)
-  %   (0, 16.66667) -- (18, 4.166667)
-  %   (4.08, 18) -- (18, 8.333333)
-  %   ;
-
-
-  \draw[CMe]
-    plot[smooth, samples=128, domain=1.470:18]
-    (\x, 25/\x)
-    node[right, font=\scriptsize] {$\overline{Q}$}
-    ;
-
-
-  \draw[axis]
-    (0, 22) node[left] {$K$} |-
-    (22, 0) node[below] {$L$}
-    ;
-\end{tikzpicture}
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq02.tex :noweb yes
-\begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
+    \draw[IMe]
+      (0, 12.5) node[left, font=\small] {$\Cbar/r$} --
+      (18, 0) node[below, font=\small] {$\Cbar/w$}
+      ;
 
-
-
-
-  \draw[IMe]
-    % (0, 8.33333) -- (12, 0)
-    % (0, 4.16667) -- (6, 0)
-    (0, 12.5) node[left, font=\scriptsize] {$\Cbar/r$} --
-    (18, 0) node[below, font=\scriptsize] {$\Cbar/w$}
-    % (0, 16.66667) -- (18, 4.166667)
-    % (4.08, 18) -- (18, 8.333333)
-    ;
-
-
-  % \draw[CMe]
-  %   plot[smooth, samples=128, domain=1.470:18]
-  %   (\x, 25/\x)
-  %   node[right, font=\scriptsize] {$\overline{Q}$}
-  %   ;
-
-
-  \draw[axis]
-    (0, 22) node[left] {$K$} |-
-    (22, 0) node[below] {$L$}
-    ;
-\end{tikzpicture}
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq03.tex :noweb yes
-\begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
+    \draw[IMe]
+      (1, 3.47222) -- (4.56, 1) (4.56, 1.2) node[right, font=\small] {$C_{1}$}
+      (1, 7.63889) -- (10.56, 1) (10.56, 1.2) node[right, font=\small] {$C_{2}$}
+      (1, 11.805556) -- (15.84, 1.5) node[right, font=\small] {$C_{3}$}
+      (1, 15.972222) -- (18, 4.166667) node[right, font=\small] {$C_{4}$}
+      (4.08, 18) -- (18, 8.333333) node[right, font=\small] {$C_{5}$}
+      ;
 
-
-
-  \draw[IMe]
-    (1, 3.47222) -- (4.56, 1) node[right, font=\scriptsize] {$C_{1}$}
-    (1, 7.63889) -- (10.56, 1) node[right, font=\scriptsize] {$C_{2}$}
-    (1, 11.805556) -- (15.84, 1.5) node[right, font=\scriptsize] {$C_{3}$}
-    (1, 15.972222) -- (18, 4.166667) node[right, font=\scriptsize] {$C_{4}$}
-    (4.08, 18) -- (18, 8.333333) node[right, font=\scriptsize] {$C_{5}$}
-    ;
-
-
-  % \draw[CMe]
-  %   plot[smooth, samples=128, domain=1.470:18]
-  %   (\x, 25/\x)
-  %   node[right, font=\scriptsize] {$\overline{Q}$}
-  %   ;
-
-
-  \draw[axis]
-    (0, 22) node[left] {$K$} |-
-    (22, 0) node[below] {$L$}
-    ;
-\end{tikzpicture}
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq04.tex :noweb yes
-\begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
-  \coordinate (A) at (2.2917961, 10.908475) ;
-  \coordinate (B) at (15.708201, 1.591525) ;
-  % \coordinate (E) at (6, 4.166667) ;
+    \coordinate (A) at (2.2917961, 10.908475) ;
+    \coordinate (B) at (15.708201, 1.591525) ;
 
+    \draw[IMe]
+      (1, 3.47222) -- (4.56, 1)
+      (1, 7.63889) -- (10.56, 1)
+      (1, 11.805556) -- (16.56, 1)
+      (1, 15.972222) -- (18, 4.166667)
+      (4.08, 18) -- (18, 8.333333)
+      ;
 
-
-  \draw[IMe]
-    (1, 3.47222) -- (4.56, 1)
-    (1, 7.63889) -- (10.56, 1)
-    (1, 11.805556) -- (16.56, 1)
-    (1, 15.972222) -- (18, 4.166667)
-    (4.08, 18) -- (18, 8.333333)
-    ;
-
-
-  \draw[CMe]
-    plot[smooth, samples=128, domain=1.470:18]
-    (\x, 25/\x)
-    node[right, font=\scriptsize] {$\overline{Q}$}
-    ;
-    \begin{scope}[label distance=-3pt]
-      \node[dot, label={[font=\scriptsize]45:$A$}] at (A) {} ;
-      \node[dot, label={[font=\scriptsize]45:$B$}] at (B) {} ;
-      % \node[dot, label={[font=\scriptsize]45:$E$}] at (E) {} ;
-    \end{scope}
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$\overline{Q}$}
+      ;
+      \begin{scope}[label distance=-3pt]
+        \node[dot, label={[font=\small]45:$A$}] at (A) {} ;
+        \node[dot, label={[font=\small,yshift=2]90:$B$}] at (B) {} ;
+      \end{scope}
 
 
-  \draw[axis]
-    (0, 22) node[left] {$K$} |-
-    (22, 0) node[below] {$L$}
-    ;
-\end{tikzpicture}
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq06.tex :noweb yes
-\begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
-  \coordinate (A) at (2.2917961, 10.908475) ;
-  \coordinate (B) at (15.708201, 1.591525) ;
-  % \coordinate (E) at (6, 4.166667) ;
+    \coordinate (A) at (2.2917961, 10.908475) ;
+    \coordinate (B) at (15.708201, 1.591525) ;
 
+    \draw[IMe]
+      (1, 3.47222) -- (4.56, 1)
+      (1, 7.63889) -- (10.56, 1)
+      (1, 11.805556) -- (16.56, 1)
+      (1, 15.972222) -- (18, 4.166667)
+      (4.08, 18) -- (18, 8.333333)
+      ;
 
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$\overline{Q}$}
+      ;
 
-  \draw[IMe]
-    (1, 3.47222) -- (4.56, 1)
-    (1, 7.63889) -- (10.56, 1)
-    (1, 11.805556) -- (16.56, 1)
-    (1, 15.972222) -- (18, 4.166667)
-    (4.08, 18) -- (18, 8.333333)
-    ;
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[CMe]{stealth}},
+        mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
+      plot[samples=128, domain=2.2917961:6]
+      (\x, 25/\x)
+      ;
 
-
-  \draw[CMe]
-    plot[smooth, samples=128, domain=1.470:18]
-    (\x, 25/\x)
-    node[right, font=\scriptsize] {$\overline{Q}$}
-    ;
-
-    \draw[decorate, decoration={markings,
-      mark=at position 0.33 with {\arrow[CMe]{stealth}},
-      mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
-    plot[samples=128, domain=2.2917961:6]
-    (\x, 25/\x)
-    ;
-
-    \begin{scope}[label distance=-3pt]
-      \node[dot, label={[font=\scriptsize]45:$A$}] at (A) {} ;
-      % \node[dot, label={[font=\scriptsize]45:$B$}] at (B) {} ;
-      % \node[dot, label={[font=\scriptsize]45:$E$}] at (E) {} ;
-    \end{scope}
+      \begin{scope}[label distance=-3pt]
+        \node[dot, label={[font=\small]45:$A$}] at (A) {} ;
+      \end{scope}
 
 
-  \draw[axis]
-    (0, 22) node[left] {$K$} |-
-    (22, 0) node[below] {$L$}
-    ;
-\end{tikzpicture}
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq07.tex :noweb yes
-\begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
-  \coordinate (A) at (2.2917961, 10.908475) ;
-  \coordinate (B) at (15.708201, 1.591525) ;
-  % \coordinate (E) at (6, 4.166667) ;
+    \coordinate (A) at (2.2917961, 10.908475) ;
+    \coordinate (B) at (15.708201, 1.591525) ;
 
+    \draw[IMe]
+      (1, 3.47222) -- (4.56, 1)
+      (1, 7.63889) -- (10.56, 1)
+      (1, 11.805556) -- (16.56, 1)
+      (1, 15.972222) -- (18, 4.166667)
+      (4.08, 18) -- (18, 8.333333)
+      ;
 
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$\overline{Q}$}
+      ;
 
-  \draw[IMe]
-    (1, 3.47222) -- (4.56, 1)
-    (1, 7.63889) -- (10.56, 1)
-    (1, 11.805556) -- (16.56, 1)
-    (1, 15.972222) -- (18, 4.166667)
-    (4.08, 18) -- (18, 8.333333)
-    ;
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[CMe]{stealth}},
+        mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
+      plot[samples=128, domain=15.708201:6]
+      (\x, 25/\x)
+      ;
 
-
-  \draw[CMe]
-    plot[smooth, samples=128, domain=1.470:18]
-    (\x, 25/\x)
-    node[right, font=\scriptsize] {$\overline{Q}$}
-    ;
-
-    \draw[decorate, decoration={markings,
-      mark=at position 0.33 with {\arrow[CMe]{stealth}},
-      mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
-    plot[samples=128, domain=15.708201:6]
-    (\x, 25/\x)
-    ;
-
-    \begin{scope}[label distance=-3pt]
-      % \node[dot, label={[font=\scriptsize]45:$A$}] at (A) {} ;
-      \node[dot, label={[font=\scriptsize]45:$B$}] at (B) {} ;
-      % \node[dot, label={[font=\scriptsize]45:$E$}] at (E) {} ;
-    \end{scope}
+      \begin{scope}[label distance=-3pt]
+        \node[dot, label={[font=\small,yshift=2]90:$B$}] at (B) {} ;
+      \end{scope}
 
 
-  \draw[axis]
-    (0, 22) node[left] {$K$} |-
-    (22, 0) node[below] {$L$}
-    ;
-\end{tikzpicture}
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq05.tex :noweb yes
-\begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
-  \coordinate (A) at (2.2917961, 10.908475) ;
-  \coordinate (B) at (15.708201, 1.591525) ;
-  \coordinate (E) at (6, 4.166667) ;
+    \coordinate (A) at (2.2917961, 10.908475) ;
+    \coordinate (B) at (15.708201, 1.591525) ;
+    \coordinate (E) at (6, 4.166667) ;
 
-  \draw[help lines]
-    let \p1 = (E) in
-    (0, \y1) node[left, font=\scriptsize] {$K^{*}$} -|
-    (\x1, 0) node[below, font=\scriptsize] {$L^{*}$}
-    ;
+    \draw[help lines]
+      let \p1 = (E) in
+      (0, \y1) node[left, font=\small] {$K^{*}$} -|
+      (\x1, 0) node[below, font=\small] {$L^{*}$}
+      ;
 
-  \draw[IMe]
-    (1, 3.47222) -- (4.56, 1)
-    (1, 7.63889) -- (10.56, 1)
-    (1, 11.805556) -- (16.56, 1)
-    (1, 15.972222) -- (18, 4.166667)
-    (4.08, 18) -- (18, 8.333333)
-    ;
-
-
-  \draw[CMe]
-    plot[smooth, samples=128, domain=1.470:18]
-    (\x, 25/\x)
-    node[right, font=\scriptsize] {$\overline{Q}$}
-    ;
+    \draw[IMe]
+      (1, 3.47222) -- (4.56, 1)
+      (1, 7.63889) -- (10.56, 1)
+      (1, 11.805556) -- (16.56, 1)
+      (1, 15.972222) -- (18, 4.166667)
+      (4.08, 18) -- (18, 8.333333)
+      ;
 
 
-    \draw[decorate, decoration={markings,
-      mark=at position 0.33 with {\arrow[CMe]{stealth}},
-      mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
-    plot[samples=128, domain=15.708201:6]
-    (\x, 25/\x)
-    ;
-    \draw[decorate, decoration={markings,
-      mark=at position 0.33 with {\arrow[CMe]{stealth}},
-      mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
-    plot[samples=128, domain=2.2917961:6]
-    (\x, 25/\x)
-    ;
-
-    \begin{scope}[label distance=-3pt]
-      % \node[dot, label={[font=\scriptsize]45:$A$}] at (A) {} ;
-      % \node[dot, label={[font=\scriptsize]45:$B$}] at (B) {} ;
-      \node[dot, label={[font=\scriptsize]45:$E$}] at (E) {} ;
-    \end{scope}
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$\overline{Q}$}
+      ;
 
 
-  \draw[axis]
-    (0, 22) node[left] {$K$} |-
-    (22, 0) node[below] {$L$}
-    ;
-\end{tikzpicture}
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[CMe]{stealth}},
+        mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
+      plot[samples=128, domain=15.708201:6]
+      (\x, 25/\x)
+      ;
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[CMe]{stealth}},
+        mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
+      plot[samples=128, domain=2.2917961:6]
+      (\x, 25/\x)
+      ;
+
+      \begin{scope}[label distance=-3pt]
+        \node[dot, label={[font=\small]45:$E$}] at (E) {} ;
+      \end{scope}
+
+
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-eq08.tex :noweb yes
-\begin{tikzpicture}[xscale=0.2272727, yscale=0.2272727]
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
-  \coordinate (A) at (2.2917961, 10.908475) ;
-  \coordinate (B) at (15.708201, 1.591525) ;
-  \coordinate (E) at (9, 6.25) ;
+    \coordinate (A) at (2.2917961, 10.908475) ;
+    \coordinate (B) at (15.708201, 1.591525) ;
+    \coordinate (E) at (9, 6.25) ;
 
-  \draw[help lines]
-    let \p1 = (E) in
-    (0, \y1) node[left, font=\scriptsize] {$K^{*}$} -|
-    (\x1, 0) node[below, font=\scriptsize] {$L^{*}$}
-    ;
+    \draw[help lines]
+      let \p1 = (E) in
+      (0, \y1) node[left, font=\small] {$K^{*}$} -|
+      (\x1, 0) node[below, font=\small] {$L^{*}$}
+      ;
 
-  \draw[IMe]
-    (0, 12.5) node[left, font=\scriptsize] {$\Cbar/r$} --
-    (18, 0) node[below, font=\scriptsize] {$\Cbar/w$}
-    % (1, 3.47222) -- (4.56, 1)
-    % (1, 7.63889) -- (10.56, 1)
-    % (1, 11.805556) -- (16.56, 1)
-    % (1, 15.972222) -- (18, 4.166667)
-    % (4.08, 18) -- (18, 8.333333)
-    ;
+    \draw[IMe]
+      (0, 12.5) node[left, font=\small] {$\Cbar/r$} --
+      (18, 0) node[below, font=\small] {$\Cbar/w$}
+      ;
 
 
-  \draw[CMe]
-    plot[smooth, samples=128, domain=1.470:18]
-    (\x, 25/\x)
-    node[right, font=\scriptsize] {$Q_{1}$}
-    ;
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$Q_{1}$}
+      ;
 
- \draw[CMe]
-    plot[smooth, samples=128, domain=3.2:18]
-    (\x, 56.25/\x)
-    node[right, font=\scriptsize] {$Q_{2}$ }
-    ;
+   \draw[CMe]
+      plot[smooth, samples=128, domain=3.2:18]
+      (\x, 56.25/\x)
+      node[right, font=\small, yshift=2] {$Q_{2}$ }
+      ;
 
- \draw[CMe]
-    plot[smooth, samples=128, domain=5.555556:18]
-    (\x, 100/\x)
-    node[right, font=\scriptsize] {$Q_{3}$ }
-    ;
-
-
-    \draw[decorate, decoration={markings,
-      mark=at position 0.33 with {\arrow[IMe]{stealth}},
-      mark=at position 0.66 with {\arrow[IMe]{stealth}}}]
-    (16.56, 1) -- (E)
-    ;
-    \draw[decorate, decoration={markings,
-      mark=at position 0.33 with {\arrow[IMe]{stealth}},
-      mark=at position 0.66 with {\arrow[IMe]{stealth}}}]
-    (1, 11.805556) -- (E)
-    ;
-
-    \begin{scope}[label distance=-3pt]
-      % \node[dot, label={[font=\scriptsize]45:$A$}] at (A) {} ;
-      % \node[dot, label={[font=\scriptsize]45:$B$}] at (B) {} ;
-      \node[dot, label={[font=\scriptsize]45:$E$}] at (E) {} ;
-    \end{scope}
+   \draw[CMe]
+      plot[smooth, samples=128, domain=5.555556:18]
+      (\x, 100/\x)
+      node[right, font=\small] {$Q_{3}$ }
+      ;
 
 
-  \draw[axis]
-    (0, 22) node[left] {$K$} |-
-    (22, 0) node[below] {$L$}
-    ;
-\end{tikzpicture}
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[IMe]{stealth}},
+        mark=at position 0.66 with {\arrow[IMe]{stealth}}}]
+      (16.56, 1) -- (E)
+      ;
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[IMe]{stealth}},
+        mark=at position 0.66 with {\arrow[IMe]{stealth}}}]
+      (1, 11.805556) -- (E)
+      ;
+
+      \begin{scope}[label distance=-3pt]
+        \node[dot, label={[font=\small]45:$E$}] at (E) {} ;
+      \end{scope}
+
+
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
 #+end_src
 
+
+
+* Las curvas de coste a largo plazo
+
 #+begin_src latex :tangle fig-6B_1004-exp02.tex :noweb yes
-\begin{tikzpicture}[xscale=0.3125, yscale=0.3125]
+\begin{tikzpicture}[xscale=0.28, yscale=0.28]
 
   \coordinate (Al) at (9, 6.25) ;
   \coordinate (Bl) at (3, 2.0833333) ;
@@ -355,68 +295,48 @@
 
   \draw[help lines]
     let \p1=(Bl), \p2=(E), \p3=(Al) in
-    (0, \y1) node[left, font=\scriptsize] {$K(Q_{1})$ } -|
-    (\x1, 0) node[below, font=\scriptsize] {$L(Q_{1})$ }
-    (0, \y2) node[left, font=\scriptsize] {$K(Q_{2})$ } -|
-    (\x2, 0) node[below, font=\scriptsize] {$L(Q_{2})$ }
-    (0, \y3) node[left, font=\scriptsize] {$K(Q_{3})$ } -|
-    (\x3, 0) node[below, font=\scriptsize] {$L(Q_{3})$ }
+    (0, \y1) node[left, font=\small] {$K(Q_{1})$ } -|
+    (\x1, 0) node[below, font=\small, xshift=-5] {$L(Q_{1})$ }
+    (0, \y2) node[left, font=\small] {$K(Q_{2})$ } -|
+    (\x2, 0) node[below, font=\small] {$L(Q_{2})$ }
+    (0, \y3) node[left, font=\small] {$K(Q_{3})$ } -|
+    (\x3, 0) node[below, font=\small,xshift=5] {$L(Q_{3})$ }
     ;
 
   \draw[IMe]
     ($ (Al) - 2*(slope) $) -- ($ (Al) + 2*(slope) $)
     ($ (E) - 1.5*(slope) $) -- ($ (E) + 1.5*(slope) $)
     ($ (Bl) - 1.2*(slope) $) -- ($ (Bl) + 1.2*(slope) $)
-    % (0.75, 3.6458333) -- (4.56, 1)
-    % (1.5, 7.29166667) -- (10.56, 1)
-    % (3, 10.4166667) -- (14.5, 2.4305556)
-    % (3.5, 11.111111) -- (15, 3.125)
-    % (0.75, 4.6875) -- (6.42, 0.75)
-    % (1, 15.972222) -- (18, 4.166667)
-    % (4.08, 18) -- (18, 8.333333)
     ;
 
 
   \draw[CMe]
   plot[smooth, samples=128, domain=1.2:7]
     (\x, 6.25/\x)
-    node[right, font=\scriptsize] {$Q_{1}$ }
+    node[right, font=\small] {$Q_{1}$ }
     ;
 
   \draw[CMe]
     plot[smooth, samples=128, domain=3:11]
     (\x, 25/\x)
-    node[right, font=\scriptsize] {$Q_{2}$ }
+    node[right, font=\small] {$Q_{2}$ }
     ;
   \draw[CMe]
     plot[smooth, samples=128, domain=5:15]
     (\x, 56.25/\x)
-    node[right, font=\scriptsize] {$Q_{3}$ }
+    node[right, font=\small] {$Q_{3}$ }
     ;
-  % \draw[CMe]
-  %   plot[smooth, samples=128, domain=5.55555:15]
-  %   (\x, 100/\x)
-  %   ;
-  % \draw[CMe]
-  %   plot[smooth, samples=128, domain=8.6805555:15]
-  %   (\x, 156.25/\x)
-  %   ;
 
 
   \draw[curve, DarkGreen!70!Black, very thick]
     (0, 0) -- (15, 10.4166667)
     ;
 
-  % \draw[curve, DarkGreen!70!Black]
-  %   (0, 4.16666667) -- (15, 4.16666667)
-  %   ;
 
 
     \begin{scope}[label distance=0pt]
       \node[dot] at (Al) {} ;
       \node[dot] at (Bl) {} ;
-      % \node[dot, label={[font=\scriptsize]90:$A_{C}$}] at (Ac) {} ;
-      % \node[dot, label={[font=\scriptsize]45:$B_{C}$}] at (Bc) {} ;
       \node[dot] at (E) {} ;
     \end{scope}
 
@@ -429,7 +349,7 @@
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-clp01.tex :noweb yes
-\begin{tikzpicture}[yscale=0.71428571, xscale=0.071428571]
+\begin{tikzpicture}[yscale=0.64, xscale=0.064]
 
   \coordinate (Al) at (9, 6.25) ;
   \coordinate (Bl) at (3, 2.0833333) ;
@@ -441,7 +361,7 @@
   \draw[CMe, very thick, Brown!40!Black]
   plot[smooth, samples=128, domain=0:60]
     (\x, {0.69444444*sqrt(\x)} )
-    node[right, font=\footnotesize] {$\CT_{\LP}$ }
+    node[right, font=\small] {$\CT_{\LP}$ }
     ;
 
   \draw[axis]
@@ -463,8 +383,8 @@ source("./R/cost.R")
 
 ## Graphics parameters
 
-width <- 5.5                              # cm
-height <- 5
+width <- 5.5 * 0.82                             # cm
+height <- 5 * 0.9
 
 Xtop <- 90
 Ytop <- 200
@@ -483,7 +403,7 @@ Coordinates(Q1=c(50, 0),
 @
 
 %% \draw[help lines]
-%%   (Q1) node[below, font=\scriptsize] {$Q_{e}$} --
+%%   (Q1) node[below, font=\small] {$Q_{e}$} --
 %%   (CMe1)
 %%   ;
 
@@ -492,7 +412,7 @@ Coordinates(Q1=c(50, 0),
 %% <<CMe50>>=
 %% plotCMe(par50, dom50)
 %% @
-%%   node[right, font=\scriptsize] {$\CMe_{e}$}
+%%   node[right, font=\small] {$\CMe_{e}$}
 %%   ;
 
 
@@ -500,7 +420,7 @@ Coordinates(Q1=c(50, 0),
 %% <<CMg50>>=
 %% plotCMg(par50, domg50)
 %% @
-%%   node[above, font=\scriptsize] {$\CMg_{e}$}
+%%   node[above, font=\small] {$\CMg_{e}$}
 %%   ;
 
 
@@ -508,7 +428,7 @@ Coordinates(Q1=c(50, 0),
 <<CMeL>>=
 plotCMe(parL, domCMeL)
 @
-  node[above, font=\scriptsize] {$\CMeLP$}
+  node[above, font=\small] {$\CMeLP$}
   ;
 
 
@@ -516,7 +436,7 @@ plotCMe(parL, domCMeL)
 <<CMgL>>=
 plotCMg(parL, domCMgL)
 @
-  node[right, font=\scriptsize] {$\CMgLP$}
+  node[right, font=\small] {$\CMgLP$}
   ;
 
 
@@ -531,11 +451,11 @@ plotCMg(parL, domCMgL)
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-clp02.tex :noweb yes
-\begin{tikzpicture}[yscale=1, xscale=1]
+\begin{tikzpicture}[yscale=0.9, xscale=0.9]
 
   \draw[CMe, very thick, Brown!40!Black]
     (0, 0) -- (3, 4)
-    node[right, font=\footnotesize] {$\CT_{\LP}$ }
+    node[right, font=\small] {$\CT_{\LP}$ }
     ;
 
   \draw[axis]
@@ -546,11 +466,11 @@ plotCMg(parL, domCMgL)
 #+end_src
 
 #+begin_src latex :tangle fig-6B_1004-clp03.tex :noweb yes
-\begin{tikzpicture}[yscale=1, xscale=1]
+\begin{tikzpicture}[yscale=0.9, xscale=0.9]
 
   \draw[CMe, very thick, Brown!40!Black]
-    (0, 1.2) node[left, font=\scriptsize] {$c$} -- (4.5, 1.2)
-    node[pos=0.85, above, font=\footnotesize] {$\CMeLP = \CMgLP$ }
+    (0, 1.2) node[left, font=\small] {$c$} -- (4.5, 1.2)
+    node[pos=0.78, above, font=\small] {$\CMeLP = \CMgLP$ }
     ;
 
 
@@ -560,6 +480,10 @@ plotCMg(parL, domCMgL)
    ;
 \end{tikzpicture}
 #+end_src
+
+
+
+* Relación entre los costes a corto y a largo plazo
 
 #+begin_src latex :tangle fig-6B_1004-exp03.tex :noweb yes
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
@@ -585,17 +509,17 @@ plotCMg(parL, domCMgL)
     ;
 
   \draw[curve, Orange!70!Black, very thick]
-    (0, 4.16666667) node[left, font=\scriptsize] {$\Kbar$}
+    (0, 4.16666667) node[left, font=\small] {$\Kbar$}
     -- (16.5, 4.16666667)
     ;
 
 
     \begin{scope}[label distance=0pt]
-      % \node[dot, label={[font=\scriptsize]-90:$A_{L}$}] at (Al) {} ;
-      % \node[dot, label={[font=\scriptsize]-90:$B_{L}$}] at (Bl) {} ;
-      \node[dot, label={[font=\scriptsize]90:$T$}] at (Ac) {} ;
-      \node[dot, label={[font=\scriptsize]45:$R$}] at (Bc) {} ;
-      \node[dot, label={[font=\scriptsize]90:$S$}] at (E) {} ;
+      % \node[dot, label={[font=\small]-90:$A_{L}$}] at (Al) {} ;
+      % \node[dot, label={[font=\small]-90:$B_{L}$}] at (Bl) {} ;
+      \node[dot, label={[font=\small]90:$T$}] at (Ac) {} ;
+      \node[dot, label={[font=\small]45:$R$}] at (Bc) {} ;
+      \node[dot, label={[font=\small]90:$S$}] at (E) {} ;
     \end{scope}
 
 
@@ -644,17 +568,17 @@ plotCMg(parL, domCMgL)
     ;
 
   \draw[curve, Orange!70!Black, very thick]
-    (0, 4.16666667) node[left, font=\scriptsize] {$\Kbar$}
+    (0, 4.16666667) node[left, font=\small] {$\Kbar$}
     -- (16.5, 4.16666667)
     ;
 
 
     \begin{scope}[label distance=0pt]
-      \node[dot, label={[font=\scriptsize]-90:$T'$}] at (Al) {} ;
-      \node[dot, label={[font=\scriptsize]-90:$R'$}] at (Bl) {} ;
-      \node[dot, label={[font=\scriptsize]90:$T$}] at (Ac) {} ;
-      \node[dot, label={[font=\scriptsize]45:$R$}] at (Bc) {} ;
-      \node[dot, label={[font=\scriptsize]90:$S$}] at (E) {} ;
+      \node[dot, label={[font=\small]-90:$T'$}] at (Al) {} ;
+      \node[dot, label={[font=\small]-90:$R'$}] at (Bl) {} ;
+      \node[dot, label={[font=\small]90:$T$}] at (Ac) {} ;
+      \node[dot, label={[font=\small]45:$R$}] at (Bc) {} ;
+      \node[dot, label={[font=\small]90:$S$}] at (E) {} ;
     \end{scope}
 
 
@@ -706,17 +630,17 @@ plotCMg(parL, domCMgL)
     ;
 
   \draw[curve, Orange!70!Black, very thick, nearly transparent]
-    (0, 4.16666667) node[left, font=\scriptsize] {$\Kbar$}
+    (0, 4.16666667) node[left, font=\small] {$\Kbar$}
     -- (16.5, 4.16666667)
     ;
 
 
     \begin{scope}[label distance=0pt]
-      \node[dot, label={[font=\scriptsize]-90:$T'$}] at (Al) {} ;
-      \node[dot, label={[font=\scriptsize]-90:$R'$}] at (Bl) {} ;
-      \node[dot, label={[font=\scriptsize]90:$T$}] at (Ac) {} ;
-      \node[dot, label={[font=\scriptsize]45:$R$}] at (Bc) {} ;
-      \node[dot, label={[font=\scriptsize]90:$S$}] at (E) {} ;
+      \node[dot, label={[font=\small]-90:$T'$}] at (Al) {} ;
+      \node[dot, label={[font=\small]-90:$R'$}] at (Bl) {} ;
+      \node[dot, label={[font=\small]90:$T$}] at (Ac) {} ;
+      \node[dot, label={[font=\small]45:$R$}] at (Bc) {} ;
+      \node[dot, label={[font=\small]90:$S$}] at (E) {} ;
     \end{scope}
 
 
@@ -739,8 +663,8 @@ source("./R/cost.R")
 
 ## Graphics parameters
 
-width <- 5                            # cm
-height <- 5
+width <- 5 * 0.9                           # cm
+height <- 5 * 0.9
 
 Xtop <- 55
 Ytop <- 5
@@ -762,14 +686,14 @@ Coordinates(A=c30)
 
 \draw[help lines]
   let \p1=(A) in
-  (\x1, 0) node[below, font=\scriptsize] {$Q_{S}$} -- (A)
+  (\x1, 0) node[below, font=\small] {$Q_{S}$} -- (A)
   ;
 
 \draw[curve, Orange!70!Black]
 <<CMe30>>=
 plotCoord(C30)
 @
-  node[above, font=\scriptsize]  {$\CT_{\CP}$}
+  node[above, font=\small]  {$\CT_{\CP}$}
   ;
 
 
@@ -777,7 +701,7 @@ plotCoord(C30)
 <<CMeL>>=
 plotCoord(CL)
 @
-  node[above right, font=\scriptsize] {$\CT_{\LP}$}
+  node[above right, font=\small] {$\CT_{\LP}$}
   ;
 
 
@@ -804,8 +728,8 @@ source("./R/cost.R")
 
 ## Graphics parameters
 
-width <- 5                              # cm
-height <- 5
+width <- 5 * 0.9                            # cm
+height <- 5 * 0.9
 
 Xtop <- 90
 Ytop <- 200
@@ -829,9 +753,9 @@ Coordinates(Q1=c(30, 0), Q2=c(60, 0),
 @
 
 \draw[help lines]
-  (Q1) node[below, font=\scriptsize] {$Q_{S}$} --
+  (Q1) node[below, font=\small] {$Q_{S}$} --
   (CMe1)
-  %% (Q2) node[below, font=\scriptsize] {$Q_{2}$} --
+  %% (Q2) node[below, font=\small] {$Q_{2}$} --
   %% (CMg2)
   ;
 
@@ -840,7 +764,7 @@ Coordinates(Q1=c(30, 0), Q2=c(60, 0),
 <<CMe30>>=
 plotCMe(par30, dom30)
 @
-  node[above, font=\scriptsize] at (label) {$\CMe_{1}$}
+  node[above, font=\small, xshift=4] at (label) {$\CMe_{\CP}$}
   ;
 
 
@@ -848,7 +772,7 @@ plotCMe(par30, dom30)
 <<CMg30>>=
 plotCMg(par30, domg30)
 @
-   node[above, font=\scriptsize] {$\CMg_{1}$}
+   node[above, font=\small, xshift=-4] {$\CMg_{\CP}$}
   ;
 
 
@@ -856,7 +780,7 @@ plotCMg(par30, domg30)
 <<CMeL>>=
 plotCMe(parL, domCMeL)
 @
-  node[above, font=\scriptsize] {$\CMeLP$}
+  node[above, font=\small] {$\CMeLP$}
   ;
 
 
@@ -864,7 +788,7 @@ plotCMe(parL, domCMeL)
 <<CMgL>>=
 plotCMg(parL, domCMgL)
 @
-  node[above, font=\scriptsize] {$\CMgLP$}
+  node[above, font=\small] {$\CMgLP$}
   ;
 
 
@@ -878,6 +802,11 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 
 #+end_src
+
+
+
+* La envolvente
+
 
 #+begin_src latex :tangle fig-6B_1004-env01.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
@@ -915,7 +844,7 @@ Coordinates(label=CMe(par30, dom30[1]))
 <<CMe30>>=
 plotCMe(par30, dom30)
 @
-  node[above, font=\scriptsize] at (label) {$\CMe_{1}$}
+  node[above, font=\small] at (label) {$\CMe_{1}$}
   ;
 
 
@@ -923,7 +852,7 @@ plotCMe(par30, dom30)
 <<CMg30>>=
 plotCMg(par30, domg30)
 @
-  node[above, font=\scriptsize] {$\CMg_{1}$}
+  node[above, font=\small] {$\CMg_{1}$}
   ;
 
 
@@ -933,7 +862,7 @@ plotCMg(par30, domg30)
 <<CMe60>>=
 plotCMe(par60, dom60)
 @
-  node[above, font=\scriptsize] {$\CMe_{2}$}
+  node[above, font=\small] {$\CMe_{2}$}
   ;
 
 
@@ -941,7 +870,7 @@ plotCMe(par60, dom60)
 <<CMg60>>=
 plotCMg(par60, domg60)
 @
-  node[above, font=\scriptsize] {$\CMg_{2}$}
+  node[above, font=\small] {$\CMg_{2}$}
   ;
 
 
@@ -992,9 +921,9 @@ Coordinates(Ql = c(Ql, 0), Qh = c(Qh, 0), QX = c(Q3060, 0),
 @
 
 \draw[help lines]
-   (QX) node[below, font=\scriptsize] {$Q_{A}$} -- (CMeX)
-   (Ql) node[below, font=\scriptsize] {$Q_{B}$} -- (CMe2l)
-   (Qh) node[below, font=\scriptsize] {$Q_{C}$} -- (CMe1h)
+   (QX) node[below, font=\small] {$Q_{A}$} -- (CMeX)
+   (Ql) node[below, font=\small] {$Q_{B}$} -- (CMe2l)
+   (Qh) node[below, font=\small] {$Q_{C}$} -- (CMe1h)
    ;
 
 
@@ -1002,7 +931,7 @@ Coordinates(Ql = c(Ql, 0), Qh = c(Qh, 0), QX = c(Q3060, 0),
 <<CMe30>>=
 plotCMe(par30, dom30)
 @
-  node[above, font=\scriptsize] at (label) {$\CMe_{1}$}
+  node[above, font=\small] at (label) {$\CMe_{1}$}
   ;
 
 
@@ -1010,7 +939,7 @@ plotCMe(par30, dom30)
 %% <<CMg30>>=
 %% plotCMg(par30, domg30)
 %% @
-%%   node[above, font=\scriptsize] {$\CMg_{1}$}
+%%   node[above, font=\small] {$\CMg_{1}$}
 %%   ;
 
 
@@ -1020,7 +949,7 @@ plotCMe(par30, dom30)
 <<CMe60>>=
 plotCMe(par60, dom60)
 @
-  node[above, font=\scriptsize] {$\CMe_{2}$}
+  node[above, font=\small] {$\CMe_{2}$}
   ;
 
 
@@ -1028,7 +957,7 @@ plotCMe(par60, dom60)
 %% <<CMg60>>=
 %% plotCMg(par60, domg60)
 %% @
-%%   node[above, font=\scriptsize] {$\CMg_{2}$}
+%%   node[above, font=\small] {$\CMg_{2}$}
 %%   ;
 
 \node[dot] at (CMe1l) {} ;
@@ -1093,7 +1022,7 @@ Coordinates(Ql = c(Ql, 0), Qh = c(Qh, 0), QX = c(Q3060, 0),
 <<CMe30>>=
 plotCMe(par30, dom30)
 @
-  %% node[above, font=\scriptsize] {$\CMe_{1}$}
+  %% node[above, font=\small] {$\CMe_{1}$}
   ;
 
 
@@ -1102,7 +1031,7 @@ plotCMe(par30, dom30)
 <<CMe30L>>=
 plotCMe(par30, domL30a)
 @
-  %% node[above, font=\scriptsize] {$\CMe_{1}$}
+  %% node[above, font=\small] {$\CMe_{1}$}
   ;
 
 
@@ -1110,7 +1039,7 @@ plotCMe(par30, domL30a)
 %% <<CMg30>>=
 %% plotCMg(par30, domg30)
 %% @
-%%   node[above, font=\scriptsize] {$\CMg_{1}$}
+%%   node[above, font=\small] {$\CMg_{1}$}
 %%   ;
 
 
@@ -1120,14 +1049,14 @@ plotCMe(par30, domL30a)
 <<CMe60>>=
 plotCMe(par60, dom60)
 @
-  %% node[above, font=\scriptsize] {$\CMe_{2}$}
+  %% node[above, font=\small] {$\CMe_{2}$}
   ;
 
 \draw[curve, brown!40!Black, very thick]
 <<CMe60L>>=
 plotCMe(par60, domL60a)
 @
-  node[above, font=\scriptsize] {$\CMeLP$}
+  node[above, font=\small] {$\CMeLP$}
   ;
 
 
@@ -1137,7 +1066,7 @@ plotCMe(par60, domL60a)
 %% <<CMg60>>=
 %% plotCMg(par60, domg60)
 %% @
-%%   node[above, font=\scriptsize] {$\CMg_{2}$}
+%%   node[above, font=\small] {$\CMg_{2}$}
 %%   ;
 
 
@@ -1190,7 +1119,7 @@ Coordinates(QX = c(Q3060, 0),
 
 
 \draw[help lines]
-   (QX) node[below, font=\scriptsize] {$Q_{A}$} -- (CMg1X)
+   (QX) node[below, font=\small] {$Q_{A}$} -- (CMg1X)
    ;
 
 
@@ -1198,7 +1127,7 @@ Coordinates(QX = c(Q3060, 0),
 <<CMe30>>=
 plotCMe(par30, dom30)
 @
-  %% node[above, font=\scriptsize] {$\CMe_{1}$}
+  %% node[above, font=\small] {$\CMe_{1}$}
   ;
 
 
@@ -1207,7 +1136,7 @@ plotCMe(par30, dom30)
 <<CMe30L>>=
 plotCMe(par30, domL30a)
 @
-  %% node[above, font=\scriptsize] {$\CMe_{1}$}
+  %% node[above, font=\small] {$\CMe_{1}$}
   ;
 
 
@@ -1215,7 +1144,7 @@ plotCMe(par30, domL30a)
 <<CMg30>>=
 plotCMg(par30, domg30)
 @
-  %% node[above, font=\scriptsize] {$\CMg_{1}$}
+  %% node[above, font=\small] {$\CMg_{1}$}
   ;
 
 
@@ -1225,14 +1154,14 @@ plotCMg(par30, domg30)
 <<CMe60>>=
 plotCMe(par60, dom60)
 @
-  %% node[above, font=\scriptsize] {$\CMe_{2}$}
+  %% node[above, font=\small] {$\CMe_{2}$}
   ;
 
 \draw[curve, brown!40!Black, very thick]
 <<CMe60L>>=
 plotCMe(par60, domL60a)
 @
-  node[above, font=\scriptsize] {$\CMeLP$}
+  node[above, font=\small] {$\CMeLP$}
   ;
 
 
@@ -1242,7 +1171,7 @@ plotCMe(par60, domL60a)
 <<CMg60>>=
 plotCMg(par60, domg60)
 @
-  %% node[above, font=\scriptsize] {$\CMg_{2}$}
+  %% node[above, font=\small] {$\CMg_{2}$}
   ;
 
 
@@ -1250,14 +1179,14 @@ plotCMg(par60, domg60)
 <<CMg60L>>=
 plotCMg(par60, domgL60a)
 @
-  node[above, font=\scriptsize] {$\CMgLP$}
+  node[above, font=\small] {$\CMgLP$}
   ;
 
 \draw[curve, DarkGreen!70!Black, very thick]
 <<CMg30L>>=
 plotCMg(par30, domgL30a)
 @
-  %% node[above, font=\scriptsize] {$\CMgLP$}
+  %% node[above, font=\small] {$\CMgLP$}
   ;
 
 \node[dot, DarkGreen!70!Black] at (CMg1X) {} ;
@@ -1349,7 +1278,7 @@ plotCMe(par60, domL60)
 plotCMe(par70, domL70)
 
 @
-  node[right, font=\scriptsize] {$\CMeLP$}
+  node[right, font=\small] {$\CMeLP$}
   ;
 
 
@@ -1399,9 +1328,9 @@ plotCMe(par70, domL70)
   @
 
   \draw[help lines]
-    (Q1) node[below, font=\scriptsize] {$Q_{1}$} --
+    (Q1) node[below, font=\small] {$Q_{1}$} --
     (CMe1)
-    (Q2) node[below, font=\scriptsize] {$Q_{2}$} --
+    (Q2) node[below, font=\small] {$Q_{2}$} --
     (CMe2)
     ;
 
@@ -1410,7 +1339,7 @@ plotCMe(par70, domL70)
   <<CMe30>>=
   plotCMe(par30, dom30)
   @
-    node[above, font=\scriptsize] at (label) {$\CMe_{1}$}
+    node[above, font=\small] at (label) {$\CMe_{1}$}
     ;
 
 
@@ -1418,7 +1347,7 @@ plotCMe(par70, domL70)
   <<CMg30>>=
   plotCMg(par30, domg30)
   @
-     node[above, font=\scriptsize] {$\CMg_{1}$}
+     node[above, font=\small] {$\CMg_{1}$}
     ;
 
 
@@ -1428,7 +1357,7 @@ plotCMe(par70, domL70)
   <<CMe60>>=
   plotCMe(par60, dom60)
   @
-     node[above, font=\scriptsize] {$\CMe_{2}$}
+     node[above, font=\small] {$\CMe_{2}$}
     ;
 
 
@@ -1436,7 +1365,7 @@ plotCMe(par70, domL70)
   <<CMg60>>=
   plotCMg(par60, domg60)
   @
-     node[above, font=\scriptsize] {$\CMg_{2}$}
+     node[above, font=\small] {$\CMg_{2}$}
     ;
 
 
@@ -1445,7 +1374,7 @@ plotCMe(par70, domL70)
   <<CMeL>>=
   plotCMe(parL, domCMeL)
   @
-    node[right, font=\scriptsize] {$\CMeLP$}
+    node[right, font=\small] {$\CMeLP$}
     ;
 
 
@@ -1453,7 +1382,7 @@ plotCMe(par70, domL70)
   <<CMgL>>=
   plotCMg(parL, domCMgL)
   @
-    node[right, font=\scriptsize] {$\CMgLP$}
+    node[right, font=\small] {$\CMgLP$}
     ;
 
 
@@ -1502,7 +1431,7 @@ Coordinates(Q1=c(50, 0),
 @
 
 \draw[help lines]
-  (Q1) node[below, font=\scriptsize] {$Q_{e}$} --
+  (Q1) node[below, font=\small] {$Q_{e}$} --
   (CMe1)
   ;
 
@@ -1511,7 +1440,7 @@ Coordinates(Q1=c(50, 0),
 <<CMe50>>=
 plotCMe(par50, dom50)
 @
-  node[right, font=\scriptsize] {$\CMe_{e}$}
+  node[right, font=\small] {$\CMe_{e}$}
   ;
 
 
@@ -1519,7 +1448,7 @@ plotCMe(par50, dom50)
 <<CMg50>>=
 plotCMg(par50, domg50)
 @
-  node[above, font=\scriptsize] {$\CMg_{e}$}
+  node[above, font=\small] {$\CMg_{e}$}
   ;
 
 
@@ -1527,7 +1456,7 @@ plotCMg(par50, domg50)
 <<CMeL>>=
 plotCMe(parL, domCMeL)
 @
-  node[right, font=\scriptsize] {$\CMeLP$}
+  node[right, font=\small] {$\CMeLP$}
   ;
 
 
@@ -1535,7 +1464,7 @@ plotCMe(parL, domCMeL)
 <<CMgL>>=
 plotCMg(parL, domCMgL)
 @
-  node[right, font=\scriptsize] {$\CMgLP$}
+  node[right, font=\small] {$\CMgLP$}
   ;
 
 

@@ -17,36 +17,37 @@
 - The firm chooses the combination of factors that minimizes the cost
   of producing a determined output level, $\Qbar$:
   #+BEGIN_EXPORT LaTeX
-    \begin{gather*}
-      \min_{\{K^{*}, L^{*}\}} C = r K + w L \\
-      \text{subject to\ } \Qbar = F(K, L)
-    \end{gather*}
+    \[
+      \min_{\displaystyle\{K^{*}, L^{*}\}} C = r K + w L
+      \stext{subject to\ } \Qbar = F(K, L)
+    \]
   #+END_EXPORT
 
 
 ** The isoquant
 
-#+MATS: figcol fig-6B_1004-eq01-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq01-*.pdf 0.45
 
 - The firm chooses the less costly input combination on the isoquant $\Qbar$.
 
 
-** Isocosts (I)
+** Isocost lines (I)
 
-- *Isocost line*: all input combinations that represent the same cost:
+- An *isocost line* contains all input combinations that represent the
+  same cost level $\Cbar$:
   #+begin_export latex
   \[ \Cbar = r K + w L \]
   #+end_export
 
-- Often, we write it as:
+- Often, it is written as:
   #+begin_export latex
   \[ K = \frac{\Cbar}{r} - \frac{w}{r} L \]
   #+end_export
 
 
-** Isocosts (and II)
+** Isocost lines (and II)
 
-#+MATS: figcol fig-6B_1004-eq02-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq02-*.pdf 0.45
 
 - The slope of the isocost line is equal to the relative price of
   factors with negative sign:
@@ -58,13 +59,12 @@
 ** The relative input price
 
 - The *relative price of factors*, $w/r$, is the number of units of
-  $K$ that can be replaced per unit of $L$ without increasing the cost
-  of production.
+  $K$ that can be replaced per unit of $L$ keeping costs constant.
 
 
-** The isocost map
+** The isocost lines map
 
-#+MATS: figcol fig-6B_1004-eq03-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq03-*.pdf 0.45
 
 - Each isocost line corresponds to a different cost level.
 
@@ -73,18 +73,17 @@
 
 ** The optimal choice (I)
 
-#+MATS: figcol fig-6B_1004-eq04-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq04-*.pdf 0.45
 
 - The firm chooses the combination of factors of production that
   minimizes the cost of producing $\Qbar$ units.
 
-- Combinations like $A$ or $B$, where an isocost line crosses the
-  isoquant, cannot be optimal.
+- Combinations like $A$ or $B$ cannot be optimal.
 
 
 ** The optimal choice (II)
 
-#+MATS: figcol fig-6B_1004-eq06-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq06-*.pdf 0.45
 
 - In the combination $A$:
   #+begin_export latex
@@ -96,7 +95,7 @@
 
 ** The optimal choice (III)
 
-#+MATS: figcol fig-6B_1004-eq07-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq07-*.pdf 0.45
 
 - In the combination $B$:
   #+begin_export latex
@@ -108,7 +107,7 @@
 
 ** The optimal choice (and IV)
 
-#+MATS: figcol fig-6B_1004-eq05-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq05-*.pdf 0.45
 
 - Isoquant:
   #+begin_export latex
@@ -124,17 +123,17 @@
 ** Duality(I)
 - *Dual program*: maximize production for a given cost of production,
   $\Cbar$:
-  #+BEGIN_EXPORT LaTeX
-    \begin{gather*}
-      \max_{\{K^{*}, L^{*}\}} Q = F(K, L)  \\
-      \text{subject to\ } \Cbar = r K + w L
-    \end{gather*}
-  #+END_EXPORT
+  #+begin_export latex
+    \[
+      \max_{\displaystyle\{K^{*}, L^{*}\}} Q = F(K, L)
+      \stext{subject to\ } \Cbar = r K + w L
+    \]
+  #+end_export
 
 
 ** Duality (and II)
 
-#+MATS: figcol fig-6B_1004-eq08-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq08-*.pdf 0.45
 
 - Isocost line:
   #+begin_export latex
@@ -147,12 +146,13 @@
   \[ \RMST = \frac{w}{r} \]
   #+end_export
 
+#+MATS: pagebreak
 
 
 * Cost curves in the long run
 
 
-** The product expansion path of the
+** Product expansion path
 
 #+MATS: figcol fig-6B_1004-exp02-*.pdf 0.5
 
@@ -160,22 +160,16 @@
   each output level: the *product expansion path*.
 
 
-** Conditional demand of and input
+** Conditional demand of an input
 
 - The *conditional demand of an input* shows the optimal quantity of
-  that input for each level of production:
-  #+BEGIN_EXPORT LaTeX
-    \begin{gather*}
-      L = L(Q) \\
-      K = K(Q)
-    \end{gather*}
-  #+END_EXPORT
+  that input for each level of production: $L = L(Q)$ and $K = K(Q)$.
 
 
 
 ** The long-run total cost curve
 
-#+MATS: figcol fig-6B_1004-clp01-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp01-*.pdf 0.47
 
 - The *long-run total cost curve*:
   #+begin_export latex
@@ -195,18 +189,10 @@
   \[ \CMgLP(Q) = \frac{\diff \CT_{\LP}(Q)}{\diff Q} \]
   #+end_export
 
-#+MATS: pagebreak
 
+** Average cost and marginal cost (and II)
 
-** Average cost and marginal cost (II)
-
-#+MATS: figcol fig-6B_1004-env08-*.pdf 0.53
-
-- The $\CMeLP$ and $\CMgLP$ curves cross at the minimum unit cost in
-  the long-run.
-
-
-** Average  cost and marginal cost (and III)
+#+MATS: figcol fig-6B_1004-env08-*.pdf 0.45
 
 - The $\CMeLP$ curve:
 
@@ -215,6 +201,7 @@
   + increases when $\CMgLP > \CMeLP$.
 
   + reaches a minimum when $\CMgLP = \CMeLP$.
+
 
 
 ** Economies and diseconomies of scale (I)
@@ -241,7 +228,7 @@
 
 ** Returns to scale and costs in the long-run (II)
 
-#+MATS: figcol fig-6B_1004-clp02-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp02-*.pdf 0.45
 
 - The cost function is linear when there are constant returns to
   scale:
@@ -252,10 +239,10 @@
 
 ** Returns to scale and costs in the long-run (III)
 
-#+MATS: figcol fig-6B_1004-clp03-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp03-*.pdf 0.45
 
 - The average and the marginal costs are both equal to the same
-  constant when there are constant returns to scale::
+  constant when there are constant returns to scale:
   #+begin_export latex
   \[ \CMeLP(Q) = \CMgLP(Q) = c \]
   #+end_export
@@ -277,17 +264,15 @@
 
 ** The short-run choice
 
-#+MATS: figcol fig-6B_1004-exp03-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp03-*.pdf 0.45
 
-- In the short-run, the level of $K$ is fixed.
-
-- Different output levels can only be reached by altering the level of
-  $L$.
+- In the short-run, the level of $K$ is fixed and different output
+  levels can only be reached by altering the level of $L$.
 
 
 ** The short-run and the long-run choices
 
-#+MATS: figcol fig-6B_1004-exp04-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp04-*.pdf 0.45
 
 - In the long-run, the firm can change all inputs.
 
@@ -297,7 +282,7 @@
 
 ** Short-run and long-run costs (I)
 
-#+MATS: figcol fig-6B_1004-exp05-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp05-*.pdf 0.45
 
 - Short-run costs are higher than long-run costs, except for one level
   of production.
@@ -305,7 +290,7 @@
 
 ** Short-run and long-run costs (II)
 
-#+MATS: figcol fig-6B_1004-env20-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-env20-*.pdf 0.45
 
 - The long-run cost curve is below the short-run cost curves.
 
@@ -315,13 +300,13 @@
 
 ** Short-run and long-run costs (and III)
 
-#+MATS: figcol fig-6B_1004-env21-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-env21-*.pdf 0.45
 
 - Each short-run average cost curve is above the long-run average cost
   curve and is tangent to $\CMeLP$ at one output level.
 
 
-* The envelope
+* The envelope                                                     :noexport:
 
 
 ** The choice of the plant size (I)

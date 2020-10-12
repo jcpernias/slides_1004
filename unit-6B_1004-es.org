@@ -17,18 +17,16 @@
 - La empresa elige la combinación de factores que minimiza el coste de
   obtener un determinado nivel de producción, $\Qbar$:
   #+begin_export latex
-    \begin{gather*}
-      \min_{\{K^{*}, L^{*}\}} C = r K + w L \\
-      \text{sujeto a\ } \Qbar = F(K, L)
-    \end{gather*}
+    \[
+      \min_{\displaystyle\{K^{*}, L^{*}\}} C = r K + w L
+      \stext{sujeto a\ } \Qbar = F(K, L)
+    \]
   #+end_export
-
-#+MATS: pagebreak
 
 
 ** La isocuanta
 
-#+MATS: figcol fig-6B_1004-eq01-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq01-*.pdf 0.45
 
 - La empresa selecciona la combinación de factores menos costosa de la
   isocuanta $\Qbar$.
@@ -39,13 +37,13 @@
 
 ** La isocostes (I)
 
-- *Recta isocoste*: todas las combinaciones de factores que
-  representan el mismo coste:
+- Una *recta isocoste* recoge todas las combinaciones de factores que
+  representan el mismo nivel de coste $\Cbar$:
   #+begin_export latex
   \[ \Cbar = r K + w L \]
   #+end_export
 
-- A menudo la escribimos como:
+- A menudo se expresa como:
   #+begin_export latex
   \[ K = \frac{\Cbar}{r} - \frac{w}{r} L \]
   #+end_export
@@ -53,7 +51,7 @@
 
 ** La isocostes (y II)
 
-#+MATS: figcol fig-6B_1004-eq02-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq02-*.pdf 0.45
 
 - La pendiente de la isocoste es igual al precio relativo de los
   factores con signo negativo:
@@ -65,13 +63,13 @@
 ** El precio relativo de los factores
 
 - El *precio relativo de los factores*, $w/r$, es el número de
-  unidades de $K$ que pueden ser sustituidas por unidad de $L$ sin
-  elevar el coste de producción.
+  unidades de $K$ que pueden ser sustituidas por unidad de $L$
+  manteniendo constantes los costes.
 
 
 ** El mapa de isocostes
 
-#+MATS: figcol fig-6B_1004-eq03-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq03-*.pdf 0.45
 
 - A cada nivel de coste le corresponde una isocoste diferente.
 
@@ -80,18 +78,17 @@
 
 ** La elección óptima (I)
 
-#+MATS: figcol fig-6B_1004-eq04-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq04-*.pdf 0.45
 
 - La empresa selecciona aquella combinación de factores que minimiza
   el coste de producir $\Qbar$ unidades.
 
-- Combinaciones como $A$ o $B$, donde una isocoste corta a la
-  isocuanta, no pueden ser óptimas.
+- Combinaciones como $A$ o $B$ no pueden ser óptimas.
 
 
 ** La elección óptima (II)
 
-#+MATS: figcol fig-6B_1004-eq06-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq06-*.pdf 0.45
 
 - En la combinación $A$:
   #+begin_export latex
@@ -104,7 +101,7 @@
 
 ** La elección óptima (III)
 
-#+MATS: figcol fig-6B_1004-eq07-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq07-*.pdf 0.45
 
 - En la combinación $B$:
   #+begin_export latex
@@ -117,7 +114,7 @@
 
 ** La elección óptima (y IV)
 
-#+MATS: figcol fig-6B_1004-eq05-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq05-*.pdf 0.45
 
 - Isocuanta:
   #+begin_export latex
@@ -134,17 +131,17 @@
 
 - *Programa dual*: maximización de la producción dado un determinado
   coste de producción, $\Cbar$:
-  #+BEGIN_EXPORT LaTeX
-    \begin{gather*}
-      \max_{\{K^{*}, L^{*}\}} Q = F(K, L)  \\
-      \text{sujeto a\ } \Cbar = r K + w L
-    \end{gather*}
-  #+END_EXPORT
+  #+begin_export latex
+    \[
+      \max_{\displaystyle\{K^{*}, L^{*}\}} Q = F(K, L)
+      \stext{sujeto a\ } \Cbar = r K + w L
+    \]
+  #+end_export
 
 
 ** Dualidad (y II)
 
-#+MATS: figcol fig-6B_1004-eq08-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-eq08-*.pdf 0.45
 
 - Isocoste:
   #+begin_export latex
@@ -156,7 +153,7 @@
   \[ \RMST = \frac{w}{r} \]
   #+end_export
 
-
+#+MATS: pagebreak
 
 * Las curvas de costes a largo plazo
 
@@ -170,21 +167,15 @@
   producto*.
 
 
-** Las demanda condicional de un factor
+** Demanda condicional de un factor
 
 - La *demanda condicional de un factor* muestra la cantidad óptima del
-  factor para cada nivel de producción:
-  #+BEGIN_EXPORT LaTeX
-    \begin{gather*}
-      L = L(Q) \\
-      K = K(Q)
-    \end{gather*}
-  #+END_EXPORT
+  factor para cada nivel de producción: $L = L(Q)$ y $K = K(Q)$.
 
 
 ** La curva de coste total a largo plazo
 
-#+MATS: figcol fig-6B_1004-clp01-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp01-*.pdf 0.45
 
 - *Curva de coste a largo plazo*:
   #+begin_export latex
@@ -204,26 +195,19 @@
   \[ \CMgLP(Q) = \frac{\diff \CT_{\LP}(Q)}{\diff Q} \]
   #+end_export
 
-#+MATS: pagebreak
 
+** Coste medio y coste marginal (y II)
 
-** Coste medio y coste marginal (II)
+#+MATS: figcol fig-6B_1004-env08-*.pdf 0.47
 
-#+MATS: figcol fig-6B_1004-env08-*.pdf 0.53
+- La curva $\CMeLP$:
 
-- Las curvas $\CMeLP$ y $\CMgLP$ se cortan en el mínimo coste unitario
-  a largo plazo.
+  + decrece si $\CMgLP < \CMeLP$.
 
-
-** Coste medio y coste marginal (y III)
-
-- La curva de $\CMeLP$:
-
-  + decrece cuando $\CMgLP < \CMeLP$.
-
-  + crece cuando $\CMgLP > \CMeLP$.
+  + crece si $\CMgLP > \CMeLP$.
 
   + alcanza un mínimo cuando $\CMgLP = \CMeLP$.
+
 
 
 ** Economías y deseconomías de escala (I)
@@ -250,7 +234,7 @@
 
 ** Rendimientos de escala y costes a largo plazo (II)
 
-#+MATS: figcol fig-6B_1004-clp02-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp02-*.pdf 0.45
 
 - La función de costes es lineal cuando hay rendimientos constantes de
   escala:
@@ -261,7 +245,7 @@
 
 ** Rendimientos de escala y costes a largo plazo (III)
 
-#+MATS: figcol fig-6B_1004-clp03-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-clp03-*.pdf 0.45
 
 - El coste medio y marginal son iguales a una misma constante cuando
   hay rendimientos constantes de escala:
@@ -285,17 +269,15 @@
 
 ** La elección a corto plazo
 
-#+MATS: figcol fig-6B_1004-exp03-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp03-*.pdf 0.45
 
-- A corto plazo, el nivel de $K$ es fijo.
-
-- Sólo se pueden alcanzar distintos niveles de producción alterando el
-  nivel de $L$.
+- A corto plazo, el nivel de $K$ es fijo y sólo se pueden alcanzar
+  distintos niveles de producción alterando el nivel de $L$.
 
 
 ** La elección a corto y a largo plazo
 
-#+MATS: figcol fig-6B_1004-exp04-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp04-*.pdf 0.45
 
 - A largo plazo, la empresa puede cambiar todos los factores.
 
@@ -305,7 +287,7 @@
 
 ** Costes a corto y a largo plazo (I)
 
-#+MATS: figcol fig-6B_1004-exp05-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-exp05-*.pdf 0.45
 
 - Los costes a corto plazo son superiores a los costes a largo plazo,
   excepto para un nivel de producción.
@@ -313,25 +295,25 @@
 
 ** Costes a corto y a largo plazo (II)
 
-#+MATS: figcol fig-6B_1004-env20-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-env20-*.pdf 0.45
 
 - Las curva de coste a largo plazo está por debajo de las curvas de
   costes a corto plazo.
 
-- Cada curva de costes a corto tiene es tangente a la
-  curva de costes a largo plazo en un punto.
+- Cada curva de costes a corto es tangente a la curva de costes a
+  largo plazo en un punto.
 
 
 ** Costes a corto y a largo plazo (y III)
 
-#+MATS: figcol fig-6B_1004-env21-*.pdf 0.5
+#+MATS: figcol fig-6B_1004-env21-*.pdf 0.45
 
 - Cada curva de coste medio a corto plazo está por encima de la curva
   de coste medio a largo plazo y es tangente a $\CMeLP$ para un
   nivel de producción.
 
 
-* La envolvente
+* La envolvente                                                    :noexport:
 
 
 ** La elección del tamaño de la planta (I)
