@@ -23,15 +23,16 @@
 - *Completitud*: el consumidor es capaz de ordenar dos cestas
   cualesquiera de acuerdo con sus preferencias.
 
+
 ** Completitud (y II)
 
 - Un consumidor que compara dos cestas, $A$ y $B$:
 
-  + o prefiere $A$ a $B$: $A \succ B$;
+  + prefiere $A$ a $B$: $A \succ B$;
 
-  + o prefiere $B$ a $A$: $B \succ A$;
+  + prefiere $B$ a $A$: $B \succ A$; o
 
-  + o se muestra indiferente: $A \sim B$.
+  + se muestra indiferente: $A \sim B$.
 
 
 ** No saturación (I)
@@ -85,6 +86,7 @@
   + Si $A \succ B$ y $B \succ C$, entonces $A \succ C$.
 
   + Si $A \sim B$ y $B \sim C$, entonces $A \sim C$.
+
 
 ** Transitividad (II)
 
