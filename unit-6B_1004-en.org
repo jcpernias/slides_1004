@@ -270,14 +270,23 @@
   levels can only be reached by altering the level of $L$.
 
 
+
 ** The short-run and the long-run choices
 
-#+MATS: figcol fig-6B_1004-exp04-*.pdf 0.45
+#+MATS: figcol fig-6B_1004-exp06-*.pdf 0.45
 
 - In the long-run, the firm can change all inputs.
 
+
+
+
+** The short-run and the long-run choices
+
+#+MATS: figcol fig-6B_1004-exp07-*.pdf 0.45
+
 - Only at one output level the long-run choice is the same as the
   short-run one.
+
 
 
 ** Short-run and long-run costs (I)

@@ -155,6 +155,7 @@
 
 #+MATS: pagebreak
 
+
 * Las curvas de costes a largo plazo
 
 
@@ -275,11 +276,16 @@
   distintos niveles de producción alterando el nivel de $L$.
 
 
-** La elección a corto y a largo plazo
+** La elección a largo plazo
 
-#+MATS: figcol fig-6B_1004-exp04-*.pdf 0.45
+#+MATS: figcol fig-6B_1004-exp06-*.pdf 0.45
 
 - A largo plazo, la empresa puede cambiar todos los factores.
+
+
+** La elección a corto y a largo plazo
+
+#+MATS: figcol fig-6B_1004-exp07-*.pdf 0.45
 
 - Sólo para un nivel de producción coinciden la decisión de corto
   plazo y la de largo plazo.
