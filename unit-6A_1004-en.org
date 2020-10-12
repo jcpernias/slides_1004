@@ -77,7 +77,7 @@
 
 ** Total product function:
 
-#+MATS: figcol fig-6A_1004-sr01-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr01-*.pdf 0.5
 
 - Total product function:
     #+begin_export latex
@@ -87,7 +87,7 @@
 
 ** The conditional labor demand function
 
-#+MATS: figcol fig-6A_1004-sr02-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr02-*.pdf 0.5
 
 - The *conditional labor demand* shows how much labor the firm should
   hire to produce a given output level.
@@ -100,7 +100,7 @@
 
 ** The variable cost curve
 
-#+MATS: figcol fig-6A_1004-sr03-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr03-*.pdf 0.5
 
 - *Variable cost curve*:
   #+begin_export latex
@@ -110,7 +110,7 @@
 
 ** Total cost curve
 
-#+MATS: figcol fig-6A_1004-sr04-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr04-*.pdf 0.5
 
 - The *fixed cost* does not depend on the production level.
 
@@ -180,41 +180,41 @@
 
 ** Relationship between $\PMg$, $\PMe$, $\CMg$ and $\CMe$  (II)
 
-#+MATS: figcol fig-6A_1004-sr05-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr05-*.pdf 0.5
 
 - $\PMgL$ and $\PMeL$ have inverted U-shapes.
 
 
 ** Relationship between $\PMg$, $\PMe$, $\CMg$ and $\CMe$  (and III)
 
-#+MATS: figcol fig-6A_1004-sr06-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr06-*.pdf 0.5
 
 - The average and marginal cost curves are U-shaped.
 
 
 ** The average variable cost and marginal cost curves
 
-#+MATS: figcol fig-6A_1004-sr06-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr06-*.pdf 0.5
 
 - The average variable cost:
 
-  + decreases when $\CMg < \CVMe$.
+  + decreases if $\CMg < \CVMe$.
 
-  + increases when $\CMg > \CVMe$.
+  + increases if $\CMg > \CVMe$.
 
   + attains its minimum when $\CMg = \CVMe$.
 
 
 ** The average fixed cost curve
 
-#+MATS: figcol fig-6A_1004-sr07-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr07-*.pdf 0.5
 
 - The *average fixed cost curve* decreases as production increases.
 
 
 ** The average cost curve (I)
 
-#+MATS: figcol fig-6A_1004-sr09-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr09-*.pdf 0.5
 
 - The $\CMe$ curve is the sum of the $\CVMe$ and the $\CFMe$ at each
   level of production.
@@ -222,12 +222,12 @@
 
 ** The average cost curve (and II)
 
-#+MATS: figcol fig-6A_1004-sr08-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr08-*.pdf 0.5
 
 - The average cost:
 
-  + decreases when $\CMg < \CMe$.
+  + decreases if $\CMg < \CMe$.
 
-  + increases when $\CMg > \CMe$.
+  + increases if $\CMg > \CMe$.
 
   + attains its minimum when $\CMg = \CMe$.

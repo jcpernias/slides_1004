@@ -92,8 +92,8 @@
 #+MATS: figcol fig-6A_1004-sr02-*.pdf 0.5
 
 - La *demanda condicional de trabajo* muestra cuánto trabajo ha de
-  contratar la empresa para conseguir un nivel determinado de
-  producción.
+  contratar la empresa para conseguir una nivel producción
+  determinada.
 
 - Es la inversa de la función de producto total:
   #+begin_export latex
@@ -201,9 +201,9 @@
 
 - El coste variable medio:
 
-  + decrece cuando $\CMg < \CVMe$.
+  + decrece si $\CMg < \CVMe$.
 
-  + crece cuando $\CMg > \CVMe$.
+  + crece si $\CMg > \CVMe$.
 
   + alcanza su mínimo cuando $\CMg = \CVMe$.
 
@@ -230,8 +230,8 @@
 
 - El coste medio:
 
-  + decrece  cuando $\CMg < \CMe$.
+  + decrece si $\CMg < \CMe$.
 
-  + crece cuando $\CMg > \CMe$.
+  + crece si $\CMg > \CMe$.
 
   + alcanza su mínimo cuando $\CMg = \CMe$.

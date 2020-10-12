@@ -196,9 +196,9 @@
 
 - The $\CMeLP$ curve:
 
-  + decreases when $\CMgLP < \CMeLP$.
+  + decreases if $\CMgLP < \CMeLP$.
 
-  + increases when $\CMgLP > \CMeLP$.
+  + increases if $\CMgLP > \CMeLP$.
 
   + reaches a minimum when $\CMgLP = \CMeLP$.
 
