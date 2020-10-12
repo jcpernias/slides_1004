@@ -68,7 +68,7 @@
 
 ** The long-run
 
-- In the long-run ,the firm can choose the quantities of all inputs: all
+- In the long-run, the firm can choose the quantities of all inputs: all
   the inputs are *variable factors*.
 
 
