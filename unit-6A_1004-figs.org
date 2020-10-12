@@ -16,8 +16,8 @@ source("./R/srcost.R")
 
 ## Graphics parameters
 
-width <- 5.5                              # cm
-height <- 5
+width <- 5.5 * 0.9                             # cm
+height <- 5 * 0.9
 
 Xtop <- 500
 Ytop <- 95
@@ -39,8 +39,8 @@ Coordinates(Q0 = c(0, Q[idx, 2]),
 @
 
 \draw[help lines]
-  (Q0) node[left, font=\scriptsize] {$Q_{0}$} -|
-  (L0) node[below, font=\scriptsize] {$L_{0}$}
+  (Q0) node[left, font=\small] {$Q_{0}$} -|
+  (L0) node[below, font=\small] {$L_{0}$}
   ;
 
 \draw[decorate, decoration={markings,
@@ -53,7 +53,7 @@ Coordinates(Q0 = c(0, Q[idx, 2]),
 <<prod>>=
 plotCoord(Q)
 @
-  node[right, font=\footnotesize]  {$f(L)$}
+  node[right, font=\small]  {$f(L)$}
   ;
 
 \node[dot] at (Dot) {} ;
@@ -77,8 +77,8 @@ source("./R/srcost.R")
 
 ## Graphics parameters
 
-width <- 5.5                              # cm
-height <- 5
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
 
 Ytop <- 500
 Xtop <- 95
@@ -100,8 +100,8 @@ Coordinates(Q0 = c(Q[idx, 2], 0),
 @
 
 \draw[help lines]
-  (Q0) node[below, font=\scriptsize] {$Q_{0}$} |-
-  (L0) node[left, font=\scriptsize] {$L_{0}$}
+  (Q0) node[below, font=\small] {$Q_{0}$} |-
+  (L0) node[left, font=\small] {$L_{0}$}
   ;
 
 \draw[decorate, decoration={markings,
@@ -114,7 +114,7 @@ Coordinates(Q0 = c(Q[idx, 2], 0),
 <<prod>>=
 plotCoord(CV)
 @
-  node[right, font=\footnotesize]  {$L(Q)$}
+  node[right, font=\small]  {$L(Q)$}
   ;
 
 \node[dot] at (Dot) {} ;
@@ -137,8 +137,8 @@ source("./R/srcost.R")
 
 ## Graphics parameters
 
-width <- 5.5                             # cm
-height <- 5
+width <- 5.5 * 0.9                             # cm
+height <- 5 * 0.9
 
 Xtop <- 95
 Ytop <- 500
@@ -160,8 +160,8 @@ Coordinates(C0 = c(0, CV[idx, 2]),
 @
 
 \draw[help lines]
-  (C0) node[left, font=\scriptsize] {$\CV(Q_{0})$} -|
-  (Q0) node[below, font=\scriptsize] {$Q_{0}$}
+  (C0) node[left, font=\small] {$\CV(Q_{0})$} -|
+  (Q0) node[below, font=\small] {$Q_{0}$}
   ;
 
 \draw[decorate, decoration={markings,
@@ -174,13 +174,13 @@ Coordinates(C0 = c(0, CV[idx, 2]),
 <<CV>>=
 plotCoord(CV)
 @
-  node[right, font=\footnotesize]  {$\CV$}
+  node[right, font=\small]  {$\CV$}
   ;
 
 \node[dot] at (Dot) {} ;
 
 \draw[axis] (0,\Sexpr{Ytop}) node[left] {$\CV$} |-
-   node[left, font=\scriptsize] {\phantom{$\CV(Q_{0})$}}
+   node[left, font=\small] {\phantom{$\CV(Q_{0})$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
 \end{tikzpicture}
 
@@ -198,8 +198,8 @@ source("./R/srcost.R")
 
 ## Graphics parameters
 
-width <- 5.5                              # cm
-height <- 5
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
 
 Xtop <- 95
 Ytop <- 500
@@ -217,7 +217,7 @@ yscale <- height/Ytop
 <<CF>>=
 plotCoord(CF)
 @
-  node[right, font=\footnotesize]  {$\CF$}
+  node[right, font=\small]  {$\CF$}
   ;
 
 
@@ -225,19 +225,18 @@ plotCoord(CF)
 <<CV>>=
 plotCoord(CV)
 @
-  node[right, font=\footnotesize]  {$\CV$}
+  node[right, font=\small]  {$\CV$}
   ;
 
 \draw[IMe, DarkBlue]
 <<CT>>=
 plotCoord(CT)
 @
-  node[right, font=\footnotesize]  {$\CT$}
+  node[right, font=\small]  {$\CT$}
   ;
 
 
 \draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CV$} |-
-   node[left, font=\scriptsize] {\phantom{$\CV(Q_{0})$}}
    (\Sexpr{Xtop}, 0) node[below] {$Q$}
    ;
 \draw
@@ -260,8 +259,8 @@ source("./R/srcost.R")
 
 ## Graphics parameters
 
-width <- 5.5                              # cm
-height <- 5
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
 
 Xtop <- 500
 Ytop <- 0.7
@@ -287,14 +286,14 @@ yscale <- height/Ytop
 <<PMe>>=
 plotCoord(PMe)
 @
-  node[right, font=\footnotesize]  {$\PMeL$}
+  node[right, font=\small]  {$\PMeL$}
   ;
 
 \draw[IMe, DarkGreen!70!Black]
 <<PMg>>=
 plotCoord(PMg)
 @
-  node[right, font=\footnotesize]  {$\PMgL$}
+  node[right, font=\small]  {$\PMgL$}
   ;
 
 
@@ -302,11 +301,11 @@ plotCoord(PMg)
 
 %% \draw[axis] (0,\Sexpr{Ytop})
 %%    node[left, align=left] {$\PMgL$\\$\PMeL$} |-
-%%    %% node[left, font=\scriptsize] {\phantom{$f(L_{0})$}}
+%%    %% node[left, font=\small] {\phantom{$f(L_{0})$}}
 %%    (\Sexpr{Xtop}, 0) node[below] {$L$} ;
 
 \draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep = 0] (Ylabel) {$\PMgL$} |-
-   %% node[left, font=\scriptsize] {\phantom{$\CV(Q_{0})$}}
+   %% node[left, font=\small] {\phantom{$\CV(Q_{0})$}}
    (\Sexpr{Xtop}, 0) node[below] {$L$}
    ;
 \draw
@@ -330,8 +329,8 @@ source("./R/srcost.R")
 
 ## Graphics parameters
 
-width <- 5.5                              # cm
-height <- 5
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
 
 Xtop <- 95
 Ytop <- 10
@@ -350,14 +349,14 @@ yscale <- height/Ytop
 <<CVMe>>=
 plotCoord(CVMe)
 @
-  node[above, font=\footnotesize]  {$\CVMe$}
+  node[above, font=\small]  {$\CVMe$}
   ;
 
 \draw[IMe, DarkGreen!70!Black]
 <<CMg>>=
 plotCoord(CMg)
 @
-  node[right, font=\footnotesize]  {$\CMg$}
+  node[right, font=\small]  {$\CMg$}
   ;
 
 
@@ -392,8 +391,8 @@ source("./R/srcost.R")
 
 ## Graphics parameters
 
-width <- 5.5                              # cm
-height <- 5
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
 
 Xtop <- 95
 Ytop <- 10
@@ -412,7 +411,7 @@ yscale <- height/Ytop
 <<CFMe>>=
 plotCoord(CFMe)
 @
-  node[right, font=\footnotesize]  {$\CFMe$}
+  node[right, font=\small]  {$\CFMe$}
   ;
 
 
@@ -435,8 +434,8 @@ source("./R/srcost.R")
 
 ## Graphics parameters
 
-width <- 5.5                              # cm
-height <- 5
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
 
 Xtop <- 105
 Ytop <- 10
@@ -455,7 +454,7 @@ yscale <- height/Ytop
 <<CVMe>>=
 plotCoord(CVMe)
 @
-  node[right, font=\footnotesize]  {$\CVMe$}
+  node[right, font=\small]  {$\CVMe$}
   ;
 
 
@@ -463,7 +462,7 @@ plotCoord(CVMe)
 <<CMe>>=
 plotCoord(CMe)
 @
-  node[above, font=\footnotesize]  {$\CMe$}
+  node[above, font=\small]  {$\CMe$}
   ;
 
 
@@ -471,7 +470,7 @@ plotCoord(CMe)
 <<CMg>>=
 plotCoord(CMg)
 @
-  node[right, font=\footnotesize]  {$\CMg$}
+  node[right, font=\small]  {$\CMg$}
   ;
 
 
@@ -508,8 +507,8 @@ plotCoord(CMg)
 
   ## Graphics parameters
 
-  width <- 5.5                              # cm
-  height <- 5
+  width <- 5.5 * 0.9                              # cm
+  height <- 5 * 0.9
 
   Xtop <- 105
   Ytop <- 10
@@ -528,7 +527,7 @@ plotCoord(CMg)
   <<CVMe>>=
   plotCoord(CVMe)
   @
-    node[right, font=\footnotesize]  {$\CVMe$}
+    node[right, font=\small]  {$\CVMe$}
     ;
 
 
@@ -536,7 +535,7 @@ plotCoord(CMg)
   <<CMe>>=
   plotCoord(CMe)
   @
-    node[above, font=\footnotesize]  {$\CMe$}
+    node[above, font=\small]  {$\CMe$}
     ;
 
 

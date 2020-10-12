@@ -56,30 +56,20 @@
 
 ** Fixed and variable costs
 
-- *Fixed cost*:
-  #+begin_export latex
-  \[ \CF = r \Kbar \]
-  #+end_export
+- *Fixed cost*: $\CF = r \Kbar$.
 
-- *Variable cost*:
-  #+begin_export latex
-  \[ \CV = w L \]
-  #+end_export
+- *Variable cost*: $\CV = w L$.
 
 
 ** Total cost in the short-run
 
-- The *total cost in the short-run*:
-  #+begin_export latex
-  \[ C = r \Kbar + w L \]
-  #+end_export
+- The *total cost in the short-run*: $C = r \Kbar + w L$.
 
 - It is the sum of fixed and variable costs:
   #+begin_export latex
   \[ C = \CF + \CV \]
   #+end_export
 
-#+MATS: pagebreak
 
 
 * Costs curves in the short-run
@@ -130,25 +120,16 @@
 
 ** The cost curves in the short-run
 
-- *Fixed cost curve*:
-  #+begin_export latex
-  \[ \CF = r \Kbar \]
-  #+end_export
+- *Fixed cost curve*: $\CF = r \Kbar$.
 
-- *Variable cost curve*:
-  #+begin_export latex
-  \[ \CV(Q) = w L(Q) \]
-  #+end_export
+- *Variable cost curve*: $\CV(Q) = w L(Q)$.
 
-- *Short-run total cost*:
-  #+begin_export latex
-  \[ \CT(Q) = r \Kbar + w L(Q) \]
-  #+end_export
+- *Short-run total cost*: $\CT(Q) = r \Kbar + w L(Q)$.
 
 
 ** Marginal cost
 
-- *Marginal cost*: the rate at which total cost varies per
+- The *marginal cost* is the rate at which total cost varies per
   additional unit of production:
   #+begin_export latex
   \[ \CMg(Q) = \frac{\diff C(Q)}{\diff Q} \]

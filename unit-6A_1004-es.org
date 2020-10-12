@@ -59,30 +59,19 @@
 
 ** Coste fijo y coste variable
 
-- *Coste fijo*:
-  #+begin_export latex
-  \[ \CF = r \Kbar \]
-  #+end_export
+- *Coste fijo*: $\CF = r \Kbar$.
 
-- *Coste variable*:
-  #+begin_export latex
-  \[ \CV = w L \]
-  #+end_export
+- *Coste variable*: $\CV = w L$.
 
 
 ** Coste total a corto plazo
 
-- *Coste total a corto plazo*:
-  #+begin_export latex
-  \[ C = r \Kbar + w L \]
-  #+end_export
+- *Coste total a corto plazo*: $C = r \Kbar + w L$.
 
 - Es la suma del coste fijo y el coste variable:
   #+begin_export latex
   \[ C = \CF + \CV \]
   #+end_export
-
-#+MATS: pagebreak
 
 
 * Las curvas de costes a corto plazo
@@ -90,7 +79,7 @@
 
 ** La función de producto total
 
-#+MATS: figcol fig-6A_1004-sr01-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr01-*.pdf 0.5
 
 - Función de producto total:
   #+begin_export latex
@@ -100,7 +89,7 @@
 
 ** La demanda condicionada de trabajo
 
-#+MATS: figcol fig-6A_1004-sr02-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr02-*.pdf 0.5
 
 - La *demanda condicional de trabajo* muestra cuánto trabajo ha de
   contratar la empresa para conseguir un nivel determinado de
@@ -114,7 +103,7 @@
 
 ** La curva de coste variable
 
-#+MATS: figcol fig-6A_1004-sr03-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr03-*.pdf 0.5
 
 - *Curva de coste variable*:
   #+begin_export latex
@@ -124,7 +113,7 @@
 
 ** La curva de coste total
 
-#+MATS: figcol fig-6A_1004-sr04-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr04-*.pdf 0.5
 
 - El *coste fijo* no depende del nivel de producción.
 
@@ -134,20 +123,11 @@
 
 ** Las curvas de costes a corto plazo
 
-- *Curva de coste fijo*:
-  #+begin_export latex
-  \[ \CF = r \Kbar \]
-  #+end_export
+- *Curva de coste fijo*: $\CF = r \Kbar$.
 
-- *Curva de coste variable*:
-  #+begin_export latex
-  \[ \CV(Q) = w L(Q) \]
-  #+end_export
+- *Curva de coste variable*: $\CV(Q) = w L(Q)$.
 
-- *Coste total a corto plazo*:
-  #+begin_export latex
-  \[ \CT(Q) = r \Kbar + w L(Q) \]
-  #+end_export
+- *Coste total a corto plazo*: $\CT(Q) = r \Kbar + w L(Q)$.
 
 
 ** El coste marginal
@@ -203,21 +183,21 @@
 
 ** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (II)
 
-#+MATS: figcol fig-6A_1004-sr05-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr05-*.pdf 0.5
 
 - $\PMgL$ y $\PMeL$ tienen forma de U invertida.
 
 
 ** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (y III)
 
-#+MATS: figcol fig-6A_1004-sr06-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr06-*.pdf 0.5
 
 - Las curvas de coste medio y marginal tienen forma de U.
 
 
 ** Las curvas de coste variable medio y coste marginal
 
-#+MATS: figcol fig-6A_1004-sr06-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr06-*.pdf 0.5
 
 - El coste variable medio:
 
@@ -230,7 +210,7 @@
 
 ** La curva de coste fijo medio
 
-#+MATS: figcol fig-6A_1004-sr07-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr07-*.pdf 0.5
 
 - La *curva de coste fijo medio* decrece conforme aumenta la
   producción.
@@ -238,7 +218,7 @@
 
 ** La curva de coste medio (I)
 
-#+MATS: figcol fig-6A_1004-sr09-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr09-*.pdf 0.5
 
 - La curva de $\CMe$ es la suma del $\CVMe$ y el $\CFMe$ para cada
   nivel de producción.
@@ -246,7 +226,7 @@
 
 ** La curva de coste medio (y II)
 
-#+MATS: figcol fig-6A_1004-sr08-*.pdf 0.55
+#+MATS: figcol fig-6A_1004-sr08-*.pdf 0.5
 
 - El coste medio:
 
