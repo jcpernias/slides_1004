@@ -185,9 +185,9 @@
 
 - The $\PMeL$ curve:
 
-  + is increasing when $\PMgL > \PMeL$.
+  + increases if $\PMgL > \PMeL$.
 
-  + is decreasing when $\PMgL < \PMeL$.
+  + decreases if $\PMgL < \PMeL$.
 
   + reaches its maximum when $\PMgL$ and $\PMeL$ are equal.
 

@@ -192,9 +192,9 @@
 
 - La curva de $\PMeL$:
 
-  + es creciente si $\PMgL > \PMeL$.
+  + crece si $\PMgL > \PMeL$.
 
-  + es decreciente si $\PMgL < \PMeL$.
+  + decrece si $\PMgL < \PMeL$.
 
   + llega a su máximo cuando se igualan $\PMgL$ y $\PMeL$.
 
