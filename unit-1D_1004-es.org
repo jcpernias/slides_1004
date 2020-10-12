@@ -37,6 +37,7 @@
   \]
   #+end_export
 
+
 ** Cambios porcentuales
 
 - Cambio porcentual en $Q^d$ y en $P$:
@@ -110,6 +111,7 @@
   \]
   #+end_export
 
+
 ** Pendiente y elasticidad precio (I)
 
 - Como la elasticidad precio, la pendiente de la demanda es negativa.
@@ -172,14 +174,14 @@
 
 #+MATS: figcol fig-1D_1004-unicorn10-*.pdf 0.45
 
-- Cuando baja el precio: $E_d = -3$
+- Si baja el precio: $E_d = -3$
 
 
 ** Elasticidad arco (y III)
 
 #+MATS: figcol fig-1D_1004-unicorn3-*.pdf 0.45
 
-- Cuando sube el precio: \textcolor{DarkRed}{¡¡¡} $E_d =-1$
+- Si sube el precio: \textcolor{DarkRed}{¡¡¡} $E_d =-1$
   \textcolor{DarkRed}{!!!}
 
 
@@ -231,7 +233,7 @@
 
 ** Algunos casos especiales (I)
 
-#+MATS: figcol fig-1D_1004-elast8-*.pdf 0.45
+#+MATS: figcol fig-1D_1004-elast8-*.pdf 0.42
 
 - Demanda perfectamente inelástica:
   #+begin_export latex
@@ -264,6 +266,7 @@
   donde $a, b>0$.
 
 #+MATS: pagebreak
+
 
 * Elasticidad precio e ingresos totales
 
@@ -342,6 +345,7 @@
 
 * Otras elasticidades de la demanda
 
+
 ** Derivadas parciales
 
 - Las *derivadas parciales* de la demanda miden el cambio en la
@@ -353,24 +357,24 @@
 
 - La *elasticidad precio cruzada* de la demanda mide la sensibilidad
   de la cantidad demandada de un bien con respecto a cambios en el
-  precio de otro bien:
+  precio de otro bien, $P_O$:
   #+begin_export latex
-  \[ E_d^{P_o} = \frac{\partial Q^d}{\partial P_o}\frac{P_o}{Q^d} \]
+  \[ E_d^{P_O} = \frac{\partial Q^d}{\partial P_O}\frac{P_O}{Q^d} \]
   #+end_export
 
 
 ** Bienes sustitutivos y  complementarios
 
-- *Bienes sustitutivos*: $E_d^{P_o} > 0$.
+- *Bienes sustitutivos*: $E_d^{P_O} > 0$.
 
-- *Bienes complementarios*: $E_d^{P_o} < 0$.
+- *Bienes complementarios*: $E_d^{P_O} < 0$.
 
 
 ** Elasticidad renta
 
 - La *elasticidad renta* de la demanda mide la sensibilidad de la
   cantidad demandada de un bien a cambios en la renta de los
-  consumidores:
+  consumidores, $M$:
   #+begin_export latex
   \[ E_d^M = \frac{\partial Q^d}{\partial M}\frac{M}{Q^d} \]
   #+end_export
