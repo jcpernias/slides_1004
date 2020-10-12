@@ -117,10 +117,7 @@
 
 - The $\RMST$ is constant at all points on an isoquant.
 
-- Example:
-  #+begin_export latex
-  \[ Q = L + K \]
-  #+end_export
+- Example: $Q = L + K$.
 
 
 ** Fixed-proportions production function
@@ -132,10 +129,7 @@
 
 - The $\RMST$ is not defined in the technically efficient combinations.
 
-- Example:
-  #+begin_export latex
-  \[ Q = \min\{K, L\} \]
-  #+end_export
+- Example: $Q = \min\{K, L\}$.
 
 
 

@@ -118,10 +118,7 @@
 
 - La $\RMST$ es constante en todos los puntos de una isocuanta.
 
-- Ejemplo:
-  #+begin_export latex
-  \[ Q = L + K \]
-  #+end_export
+- Ejemplo: $Q = L + K$.
 
 
 ** Función de producción de proporciones fijas
@@ -134,10 +131,7 @@
 - La $\RMST$ no está definida en las combinaciones técnicamente
   eficientes.
 
-- Ejemplo:
-  #+begin_export latex
-  \[ Q = \min\{K, L\} \]
-  #+end_export
+- Ejemplo: $Q = \min\{K, L\}$.
 
 
 
