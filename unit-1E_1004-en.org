@@ -11,6 +11,7 @@
 
 * Introduction
 
+
 ** Government intervention
 
 - Institutions: national security, domestic order, administration of
@@ -23,9 +24,11 @@
 
 ** Justification
 
-- *Market failures* undermine *economic efficiency*.
+- Reasons for Government intervention:
 
-- *Equity*: income redistribution.
+  + *Market failures* undermine *economic efficiency*.
+
+  + *Equity*: income redistribution.
 
 
 * Controls on prices
