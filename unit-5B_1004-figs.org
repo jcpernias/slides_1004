@@ -2,11 +2,11 @@
 
 #+TITLE: Unit 5B figures
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 * Mapa de isocuantas
 
-#+begin_src latex :tangle fig-5B_1004-is01.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-is01.tex :noweb no
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
 
   \begin{scope}
@@ -37,7 +37,7 @@
 
 * Convexidad
 
-#+begin_src latex :tangle fig-5B_1004-is02.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-is02.tex :noweb no
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
 
   \coordinate (A) at (4, 6.25);
@@ -70,7 +70,7 @@
 
 * Sustitución entre factores
 
-#+begin_src latex :tangle fig-5B_1004-is05.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-is05.tex :noweb no
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
 
 
@@ -92,7 +92,7 @@
 
 * Sustitutos perfectos
 
-#+begin_src latex :tangle fig-5B_1004-is03.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-is03.tex :noweb no
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
 
   \begin{scope}
@@ -120,7 +120,7 @@
 
 * Proporciones fijas
 
-#+begin_src latex :tangle fig-5B_1004-is04.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-is04.tex :noweb no
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
 
   \begin{scope}
@@ -152,7 +152,7 @@
 
 * Rendimientos constantes de escala
 
-#+begin_src latex :tangle fig-5B_1004-re01.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-re01.tex :noweb no
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
   \newcommand*{\Ax}{4}
   \newcommand*{\Ay}{3}
@@ -213,7 +213,7 @@
 
 * Rendimientos crecientes de escala
 
-#+begin_src latex :tangle fig-5B_1004-re02.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-re02.tex :noweb no
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
   \newcommand*{\Ax}{4}
   \newcommand*{\Ay}{3}
@@ -274,7 +274,7 @@
 
 * Rendimientos decrecientes de escala
 
-#+begin_src latex :tangle fig-5B_1004-re03.tex :noweb yes
+#+begin_src latex :tangle fig-5B_1004-re03.tex :noweb no
 \begin{tikzpicture}[xscale=0.25, yscale=0.25]
   \newcommand*{\Ax}{4}
   \newcommand*{\Ay}{3}

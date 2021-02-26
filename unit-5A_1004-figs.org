@@ -3,8 +3,7 @@
 #+TITLE: Unit 5A figures
 
 
-
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 * La producción a corto plazo
 

@@ -2,7 +2,7 @@
 
 #+TITLE: Unit 6A figures
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 #+begin_src latex :tangle fig-6A_1004-sr01.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=

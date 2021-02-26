@@ -2,11 +2,11 @@
 
 #+TITLE: Unit 6B figures
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 * La minimización del coste a largo plazo
 
-#+begin_src latex :tangle fig-6B_1004-eq01.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq01.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \draw[CMe]
@@ -22,7 +22,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq02.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq02.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
     \draw[IMe]
       (0, 12.5) node[left, font=\small] {$\Cbar/r$} --
@@ -36,7 +36,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq03.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq03.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \draw[IMe]
@@ -54,7 +54,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq04.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq04.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \coordinate (A) at (2.2917961, 10.908475) ;
@@ -86,7 +86,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq06.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq06.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \coordinate (A) at (2.2917961, 10.908475) ;
@@ -125,7 +125,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq07.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq07.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \coordinate (A) at (2.2917961, 10.908475) ;
@@ -164,7 +164,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq05.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq05.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \coordinate (A) at (2.2917961, 10.908475) ;
@@ -218,7 +218,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq08.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-eq08.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \coordinate (A) at (2.2917961, 10.908475) ;
@@ -283,7 +283,7 @@
 
 * Las curvas de coste a largo plazo
 
-#+begin_src latex :tangle fig-6B_1004-exp02.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-exp02.tex :noweb no
 \begin{tikzpicture}[xscale=0.28, yscale=0.28]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -348,7 +348,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-clp01.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-clp01.tex :noweb no
 \begin{tikzpicture}[yscale=0.64, xscale=0.064]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -450,7 +450,7 @@ plotCMg(parL, domCMgL)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-clp02.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-clp02.tex :noweb no
 \begin{tikzpicture}[yscale=0.9, xscale=0.9]
 
   \draw[CMe, very thick, Brown!40!Black]
@@ -465,7 +465,7 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-clp03.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-clp03.tex :noweb no
 \begin{tikzpicture}[yscale=0.9, xscale=0.9]
 
   \draw[CMe, very thick, Brown!40!Black]
@@ -485,7 +485,7 @@ plotCMg(parL, domCMgL)
 
 * Relación entre los costes a corto y a largo plazo
 
-#+begin_src latex :tangle fig-6B_1004-exp03.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-exp03.tex :noweb no
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -534,7 +534,7 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-exp06.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-exp06.tex :noweb no
   \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
     \coordinate (Al) at (9, 6.25) ;
@@ -590,7 +590,7 @@ plotCMg(parL, domCMgL)
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-exp07.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-exp07.tex :noweb no
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -649,7 +649,7 @@ plotCMg(parL, domCMgL)
 #+end_src
 
 
-#+begin_src latex :tangle fig-6B_1004-exp04.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-exp04.tex :noweb no
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -712,7 +712,7 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-exp05.tex :noweb yes
+#+begin_src latex :tangle fig-6B_1004-exp05.tex :noweb no
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;

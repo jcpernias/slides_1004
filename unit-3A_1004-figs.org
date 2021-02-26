@@ -2,8 +2,7 @@
 
 #+TITLE: Unit 3A figures
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
-
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 * Variaciones en la renta
 

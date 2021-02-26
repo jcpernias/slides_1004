@@ -2,15 +2,14 @@
 
 #+TITLE: Unit 1 Figures
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
-
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 * The PIVE program
 
 ** Tables
 
 *** PIVE1
-#+BEGIN_SRC latex :tangle fig-1A_1004-tab_pive1.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1A_1004-tab_pive1.tex
   <<translations-pive>>
 
   \begin{tikzpicture}
@@ -39,7 +38,7 @@
 
 
 *** PIVE2
-#+BEGIN_SRC latex :tangle fig-1A_1004-tab_pive2.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1A_1004-tab_pive2.tex
   <<translations-pive>>
 
   \begin{tikzpicture}
@@ -134,7 +133,7 @@
 
 *** Agents
 
-#+BEGIN_SRC latex :tangle fig-1A_1004-agents.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1A_1004-agents.tex
   <<translations-circ>>
     <<circ-styles>>
 
@@ -149,7 +148,7 @@
 
 *** Markets
 
-#+BEGIN_SRC latex :tangle fig-1A_1004-markets.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1A_1004-markets.tex
   <<translations-circ>>
     <<circ-styles>>
 
@@ -161,7 +160,7 @@
 
 *** Real flows
 
-#+BEGIN_SRC latex :tangle fig-1A_1004-real.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1A_1004-real.tex
   <<translations-circ>>
     <<circ-styles>>
 
@@ -175,7 +174,7 @@
 
 *** Monetary flows
 
-#+BEGIN_SRC latex :tangle fig-1A_1004-money.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1A_1004-money.tex
   <<translations-circ>>
     <<circ-styles>>
 
@@ -189,7 +188,7 @@
 
 *** Circular flow model
 
-#+BEGIN_SRC latex :tangle fig-1A_1004-circ.tex :noweb yes
+#+BEGIN_SRC latex :tangle fig-1A_1004-circ.tex
   <<translations-circ>>
     <<circ-styles>>
 

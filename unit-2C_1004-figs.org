@@ -2,7 +2,7 @@
 
 #+TITLE: Unit 2C figures
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 * Optimal choice
 
@@ -28,7 +28,7 @@
 
 ** Opportunity set
 
-#+begin_src latex :tangle fig-2C_1004-oc01.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-oc01.tex
   \begin{tikzpicture}[<<oc-scale>>]
     <<oc-budget>>
     \fill[use path=\pathBLclosed, Thistle, shaded] ;
@@ -40,7 +40,7 @@
 
 ** Non-satiation
 
-#+begin_src latex :tangle fig-2C_1004-oc02.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-oc02.tex
   \begin{tikzpicture}[<<oc-scale>>]
     <<oc-budget>>
     \coordinate (A) at (10, 12) ;
@@ -68,7 +68,7 @@
 
 ** Budget line
 
-#+begin_src latex :tangle fig-2C_1004-oc03.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-oc03.tex
   \begin{tikzpicture}[<<oc-scale>>]
     <<oc-budget>>
 
@@ -159,7 +159,7 @@
 
 ** Tangency (I)
 
-#+begin_src latex :tangle fig-2C_1004-eq01.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq01.tex
   \begin{tikzpicture}[<<is-scale>>]
     <<is-curves>>
     <<is-Adot>>
@@ -170,7 +170,7 @@
 
 ** Tangency (II)
 
-#+begin_src latex :tangle fig-2C_1004-eq01a.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq01a.tex
   \begin{tikzpicture}[<<is-scale>>]
     <<is-curves>>
     <<is-Adot>>
@@ -182,7 +182,7 @@
 
 ** Tangency (III)
 
-#+begin_src latex :tangle fig-2C_1004-eq02.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq02.tex
   \begin{tikzpicture}[<<is-scale>>]
     <<is-curves>>
     <<is-Bdot>>
@@ -193,7 +193,7 @@
 
 ** Tangency (IV)
 
-#+begin_src latex :tangle fig-2C_1004-eq02a.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq02a.tex
   \begin{tikzpicture}[<<is-scale>>]
     <<is-curves>>
     <<is-Bdot>>
@@ -205,7 +205,7 @@
 
 ** Tangency (and V)
 
-#+begin_src latex :tangle fig-2C_1004-eq03.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq03.tex
   \begin{tikzpicture}[<<is-scale>>]
     <<is-curves>>
     <<is-Edot>>
@@ -218,7 +218,7 @@
 
 ** Example
 
-#+begin_src latex :tangle fig-2C_1004-ej01.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-ej01.tex :noweb no
 \begin{tikzpicture}[xscale = 0.085, yscale = 0.085]
 
   \newcommand*{\Utwo}{306.25}
@@ -255,7 +255,7 @@
 
 ** Corner solutions (I)
 
-#+begin_src latex :tangle fig-2C_1004-eq10.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq10.tex
   \begin{tikzpicture}[<<cs-scale>>]
     \coordinate (A) at (0, 15) ;
     \coordinate (B) at (45, 3) ;
@@ -287,7 +287,7 @@
 
 ** Corner solutions (and II)
 
-#+begin_src latex :tangle fig-2C_1004-eq11.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-eq11.tex
   \begin{tikzpicture}[<<cs-scale>>]
     \coordinate (A) at (5, 45) ;
     \coordinate (B) at (20, 0) ;
@@ -319,7 +319,7 @@
 ** An example
 
 
-#+begin_src latex :tangle fig-2C_1004-ej02.tex :noweb yes
+#+begin_src latex :tangle fig-2C_1004-ej02.tex
   \begin{tikzpicture}[xscale = 0.085, yscale = 0.085]
     \newcommand*{\Utwo}{1750}
 

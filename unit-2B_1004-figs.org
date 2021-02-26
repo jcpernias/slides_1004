@@ -2,14 +2,14 @@
 
 #+TITLE: Unit 2B figures
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 * Las preferencias
 
 
 ** No saturación (y II)
 
-#+begin_src latex :tangle fig-2B_1004-ci02.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-ci02.tex :noweb no
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
 \coordinate (G) at (4.4, 48) ;
@@ -44,7 +44,7 @@
 
 ** Curvas de indiferencia (II)
 
-#+begin_src latex :tangle fig-2B_1004-ci03.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-ci03.tex :noweb no
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
 \coordinate (G) at (4.4, 48) ;
@@ -82,7 +82,7 @@
 #+end_src
 
 
-#+begin_src latex :tangle fig-2B_1004-ci03b.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-ci03b.tex :noweb no
   \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
     \coordinate (G) at (4.4, 48) ;
@@ -117,7 +117,7 @@
 
 ** Curvas de indiferencia (III)
 
-#+begin_src latex :tangle fig-2B_1004-ci04.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-ci04.tex :noweb no
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
 \coordinate (G) at (4.4, 48) ;
@@ -164,7 +164,7 @@
 
 ** Curvas de indiferencia (IV)
 
-#+begin_src latex :tangle fig-2B_1004-ci05.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-ci05.tex :noweb no
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
 \coordinate (G) at (4.4, 48) ;
@@ -216,7 +216,7 @@
 
 ** Curvas de indiferencia (y V)
 
-#+begin_src latex :tangle fig-2B_1004-ci06.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-ci06.tex :noweb no
   \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
     \coordinate (G) at (4.4, 48) ;
@@ -250,7 +250,7 @@
 
 ** Transitividad (y II)
 
-#+begin_src latex :tangle fig-2B_1004-tr01.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-tr01.tex :noweb no
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
 
   \coordinate (I0-start) at (5, 35) ;
@@ -285,7 +285,7 @@
 
 ** Mapa de curvas de indiferencia
 
-#+begin_src latex :tangle fig-2B_1004-map01.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-map01.tex :noweb no
 \begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\Uone}{120}
   \newcommand*{\Utwo}{300}
@@ -317,7 +317,7 @@
 
 ** RMS (II)
 
-#+begin_src latex :tangle fig-2B_1004-rms01.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-rms01.tex :noweb no
 \begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\const}{225}
   \newcommand*{\Ax}{8}
@@ -348,7 +348,7 @@
 
 ** RMS (y III)
 
-#+begin_src latex :tangle fig-2B_1004-rms02.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-rms02.tex :noweb no
 \begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\const}{225}
   \newcommand*{\Ax}{8}
@@ -384,7 +384,7 @@
 
 ** Convexidad
 
-#+begin_src latex :tangle fig-2B_1004-rms03.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-rms03.tex :noweb no
 \begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\const}{225}
   \newcommand*{\Ax}{8}
@@ -427,7 +427,7 @@
 
 ** Sustitutos perfectos
 
-#+begin_src latex :tangle fig-2B_1004-nreg01.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-nreg01.tex :noweb no
 \begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\Xcoord}{15}
   \newcommand*{\Ycoord}{10}
@@ -453,7 +453,7 @@
 
 ** Complementos perfectos
 
-#+begin_src latex :tangle fig-2B_1004-nreg02.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-nreg02.tex :noweb no
 \begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\Xcoord}{4}
   \newcommand*{\Ycoord}{3}
@@ -478,7 +478,7 @@
 
 ** Bien neutro
 
-#+begin_src latex :tangle fig-2B_1004-nreg03.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-nreg03.tex :noweb no
 \begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand{\Xcoord}{10}
   \newcommand{\dX}{8}
@@ -502,7 +502,7 @@
 
 ** Mal
 
-#+begin_src latex :tangle fig-2B_1004-nreg04.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-nreg04.tex :noweb no
 \begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
   \newcommand*{\Sx}{20}
   \newcommand*{\Sy}{5}
@@ -532,7 +532,7 @@
 
 ** Utilidad ordinal (I)
 
-#+begin_src latex :tangle fig-2B_1004-map02.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-map02.tex :noweb no
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
   \newcommand*{\Uone}{120}
   \newcommand*{\Utwo}{300}
@@ -563,7 +563,7 @@
 
 ** Utilidad ordinal (II)
 
-#+begin_src latex :tangle fig-2B_1004-map03.tex :noweb yes
+#+begin_src latex :tangle fig-2B_1004-map03.tex :noweb no
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
   \newcommand*{\Uone}{120}
   \newcommand*{\Utwo}{300}

@@ -2,7 +2,7 @@
 
 #+TITLE: Unit 3B figures
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 #+begin_src latex :tangle fig-3B_1004-eres20.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
@@ -139,7 +139,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres02.tex :noweb yes
+#+begin_src latex :tangle fig-3B_1004-eres02.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;
@@ -192,7 +192,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres03.tex :noweb yes
+#+begin_src latex :tangle fig-3B_1004-eres03.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;
@@ -248,7 +248,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres04.tex :noweb yes
+#+begin_src latex :tangle fig-3B_1004-eres04.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;
@@ -520,7 +520,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres05a.tex :noweb yes
+#+begin_src latex :tangle fig-3B_1004-eres05a.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;
@@ -585,7 +585,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres05.tex :noweb yes
+#+begin_src latex :tangle fig-3B_1004-eres05.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;
@@ -649,7 +649,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres06.tex :noweb yes
+#+begin_src latex :tangle fig-3B_1004-eres06.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;

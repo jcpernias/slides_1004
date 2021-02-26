@@ -2,14 +2,14 @@
 
 #+TITLE: Unit 4A figures
 
-#+OPTIONS: header-args: latex :exports source :eval no :mkdirp yes
+#+PROPERTY: header-args:latex :noweb yes :eval no
 
 * Las preferencias intertemporales
 
 
 ** Las preferencias intertemporales (I)
 
-#+begin_src latex :tangle fig-4A_1004-map01.tex :noweb yes
+#+begin_src latex :tangle fig-4A_1004-map01.tex :noweb no
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
   \newcommand*{\Uone}{120}
   \newcommand*{\Utwo}{300}
@@ -41,7 +41,7 @@
 
 ** Las preferencias intertemporales (II)
 
-#+begin_src latex :tangle fig-4A_1004-rms01.tex :noweb yes
+#+begin_src latex :tangle fig-4A_1004-rms01.tex :noweb no
 \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
   \newcommand*{\const}{225}
   \newcommand*{\Ax}{8}
@@ -913,7 +913,7 @@ Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
 
 ** La curva de ahorro (y IV)
 
-#+begin_src latex :tangle fig-4A_1004-cisv01.tex :noweb yes
+#+begin_src latex :tangle fig-4A_1004-cisv01.tex :noweb no
 \begin{tikzpicture}[xscale = 0.05, yscale = 0.05]
 
 
