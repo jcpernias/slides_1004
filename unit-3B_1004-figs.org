@@ -56,10 +56,10 @@ Coordinates(E0 = E0, E1 = E1, EH = EH)
   \node[dot, label={[font=\scriptsize]30:$E_{1}$}] at (E1) {};
   %% \node[dot, label={[font=\footnotesize]45:$E_{H}$}] at (EH) {};
 
-   \draw[>=stealth', ->, thick, Black,
+   \draw[>=Stealth, ->, thick, Black,
    shorten >=4pt, shorten <=4pt] (E0) -- (E1) ;
-  %% \draw[>=stealth', |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
-  %% \draw[>=stealth', |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
+  %% \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
+  %% \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
 
   %% \node[font=\sffamily\bfseries\tiny] at (5, -1.9) {ES:} ;
   %% \node[font=\sffamily\bfseries\tiny] at (5, -3.8) {ER:} ;
@@ -125,7 +125,7 @@ Coordinates(E0 = E0, E1 = E1, EH = EH)
   \node[dot, label={[font=\scriptsize]right:$E_{1}$}] at (E1) {};
 
 
-   \draw[>=stealth', ->, thick, Black, shorten >=4pt, shorten <=4pt]
+   \draw[>=Stealth, ->, thick, Black, shorten >=4pt, shorten <=4pt]
      (E0) -- (E1) ;
 
 <<Axes>>=
@@ -287,13 +287,13 @@ Axis(maxX, maxY, "$X$", "$Y$")
   %    plot (\x,{34*(34/\x)^2})
   %    node[right, font=\scriptsize] {$U_{S} = 34$} ;
 
-  \draw[>=stealth', ->, thick, Black,
+  \draw[>=Stealth, ->, thick, Black,
        shorten <= 4pt, shorten >= 4pt]
        (E0) -- (EH)
        node[pos=0.5, right, Black, font=\scriptsize\sffamily\bfseries]
        {\ESLabel} ;
 
-  \draw[>=stealth', ->, thick, Black,
+  \draw[>=Stealth, ->, thick, Black,
        shorten <= 4pt, shorten >= 4pt]
        (EH) -- (E1)
        node[pos=0.3, left, Black, font=\scriptsize\sffamily\bfseries]
@@ -364,9 +364,9 @@ Coordinates(E0 = E0, E1 = E1, EH = EH)
   \node[dot, label={[font=\footnotesize]30:$E_{1}$}] at (E1) {};
   \node[dot, label={[font=\footnotesize]45:$E_{H}$}] at (EH) {};
 
-  \draw[>=stealth', |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -1.9) -- (\Sexpr{XH}, -1.9) ;
-  \draw[>=stealth', |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
-  \draw[>=stealth', |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -1.9) -- (\Sexpr{XH}, -1.9) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
 
   \node[font=\sffamily\bfseries\tiny] at (5, -1.9) {\ESLabel:} ;
   \node[font=\sffamily\bfseries\tiny] at (5, -3.8) {\ERLabel:} ;
@@ -434,9 +434,9 @@ Coordinates(E0 = E0, E1 = E1, EH = EH)
   \node[dot, label={[font=\footnotesize]30:$E_{1}$}] at (E1) {};
   \node[dot, label={[font=\footnotesize]45:$E_{H}$}] at (EH) {};
 
-  \draw[>=stealth', |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -1.9) -- (\Sexpr{XH}, -1.9) ;
-  \draw[>=stealth', |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
-  \draw[>=stealth', |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -1.9) -- (\Sexpr{XH}, -1.9) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
 
   \node[font=\sffamily\bfseries\tiny] at (5, -1.9) {\ESLabel:} ;
   \node[font=\sffamily\bfseries\tiny] at (5, -3.8) {\ERLabel:} ;
@@ -501,9 +501,9 @@ Coordinates(E0 = E0, E1 = E1, EH = EH)
   \node[dot, label={[font=\footnotesize]30:$E_{1}$}] at (E1) {};
   \node[dot, label={[font=\footnotesize]45:$E_{H}$}] at (EH) {};
 
-  \draw[>=stealth', |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -1.9) -- (\Sexpr{XH}, -1.9) ;
-  \draw[>=stealth', |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
-  \draw[>=stealth', |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -1.9) -- (\Sexpr{XH}, -1.9) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
 
   \node[font=\sffamily\bfseries\tiny] at (5, -1.9) {\ESLabel:} ;
   \node[font=\sffamily\bfseries\tiny] at (5, -3.8) {\ERLabel:} ;
@@ -567,13 +567,13 @@ Axis(maxX, maxY, "$X$", "$Y$")
   \end{scope}
   \node[dot, label={[font=\scriptsize]right:$E_{1}$}] at (E1)  {} ;
 
-  % \draw[>=stealth', ->, thick, Black,
+  % \draw[>=Stealth, ->, thick, Black,
   %      shorten <= 6pt, shorten >= 2pt]
   %      ($(E0) + (0.75, 0)$) -- ($(ES) + (0.75, 0)$)
   %      node[pos=0.8, right, Black, font=\scriptsize\sffamily\bfseries]
   %      {ES} ;
 
-  % \draw[>=stealth', ->, thick, Black,
+  % \draw[>=Stealth, ->, thick, Black,
   %      shorten <= 4pt, shorten >= 4pt]
   %      (ES) -- (E1)
   %      node[pos=0.5, left, Black, font=\scriptsize\sffamily\bfseries]
@@ -631,13 +631,13 @@ Axis(maxX, maxY, "$X$", "$Y$")
   \end{scope}
   \node[dot, label={[font=\scriptsize]right:$E_{1}$}] at (E1)  {} ;
 
-  \draw[>=stealth', ->, thick, Black,
+  \draw[>=Stealth, ->, thick, Black,
        shorten <= 6pt, shorten >= 2pt]
        ($(E0) + (0.75, 0)$) -- ($(ES) + (0.75, 0)$)
        node[pos=0.8, right, Black, font=\scriptsize\sffamily\bfseries]
        {ES} ;
 
-  \draw[>=stealth', ->, thick, Black,
+  \draw[>=Stealth, ->, thick, Black,
        shorten <= 4pt, shorten >= 4pt]
        (ES) -- (E1)
        node[pos=0.5, left, Black, font=\scriptsize\sffamily\bfseries]
@@ -695,13 +695,13 @@ Axis(maxX, maxY, "$X$", "$Y$")
   \end{scope}
   \node[dot, label={[font=\scriptsize]right:$E_{1}$}] at (E1)  {} ;
 
-  % \draw[>=stealth', ->, thick, Black,
+  % \draw[>=Stealth, ->, thick, Black,
   %      shorten <= 4pt, shorten >= 4pt]
   %      ($(E0) + (0.5, 0)$) -- ($(ES) + (0.5, 0)$)
   %      node[pos=0.8, right, Black, font=\scriptsize\sffamily\bfseries]
   %      {ES} ;
 
-  % \draw[>=stealth', ->, thick, Black,
+  % \draw[>=Stealth, ->, thick, Black,
   %      shorten <= 4pt, shorten >= 4pt]
   %      (ES) -- (E1)
   %      node[pos=0.5, left, Black, font=\scriptsize\sffamily\bfseries]

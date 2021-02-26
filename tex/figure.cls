@@ -66,8 +66,8 @@
 \colorlet{worsefill}{Thistle!85!Black}
 
 
-\usetikzlibrary{arrows,calc,intersections, matrix,
-  positioning,backgrounds,decorations.markings,
+\usetikzlibrary{arrows.meta, babel,calc, intersections, matrix,
+  positioning, backgrounds, decorations.markings,
   decorations.pathreplacing, spy, shapes.geometric, shapes.misc}
 
 \tikzset{%
@@ -91,12 +91,12 @@
      y=(tangent orthogonal unit vector-#1)
    },
    use tangent/.default=1,
-   axis/.style={thick, <->, >=stealth', line join=miter},
+   axis/.style={thick, <->, >=Stealth, line join=miter},
    curve label/.style={font=\small},
    curve/.style={very thick, curve label},
    shaded/.style={opacity=0.4},
    help lines/.style = {thin, gray, curve label},
-   shift arrow/.style={>=stealth', semithick, shorten >= 2pt, shorten <= 2pt},
+   shift arrow/.style={>=Stealth, semithick, shorten >= 2pt, shorten <= 2pt},
    every node/.style={color=black},
    dot/.style={circle,fill=black,minimum size=4pt,inner sep=0pt,
      outer sep=-1pt},
