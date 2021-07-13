@@ -6,3 +6,4 @@ pdf
 .deps
 paths.org
 figures
+local.mk
