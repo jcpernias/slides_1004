@@ -63,7 +63,6 @@ docs_en := $(addsuffix _$(subject_code)-en, \
 docs_base := $(docs_es) $(docs_en)
 docs_pdf := $(addprefix $(outdir)/, $(addsuffix .pdf, $(docs_base)))
 
-real_rootdir := $(realpath $(rootdir))
 tex_check_dirs := $(builddir) $(figdir) $(depsdir)
 
 ## Automatic dependencies
