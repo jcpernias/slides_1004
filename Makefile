@@ -4,9 +4,6 @@ subject_code := 1004
 units := 1A 1B 1C 1D 1E 2A 2B 2C 3A 3B 4A 5A 5B 6A 6B
 unit_figs := 1A 1B 1C 1D 1E 2A 2B 2C 3A 3B 4A 5A 5B 6A 6B
 
-TEXI2DVI_SILENT := -q
-# TEXI2DVI_SILENT :=
-
 ## Directories
 ## ================================================================================
 
@@ -20,6 +17,7 @@ texdir := $(rootdir)/tex
 depsdir := $(rootdir)/.deps
 imgdir := $(rootdir)/img
 figdir := $(rootdir)/figures
+
 
 ## Programs
 ## ================================================================================
@@ -42,10 +40,16 @@ org_to_latex := --eval "(tolatex (file-name-as-directory \"$(builddir)\"))"
 org_to_beamer := --eval "(tobeamer (file-name-as-directory \"$(builddir)\"))"
 tangle := --eval "(tangle-to (file-name-as-directory \"$(builddir)\"))"
 
+LATEX_MESSAGES := no
+TEXI2DVI_FLAGS := --batch -I $(texdir) --pdf \
+	--build=tidy --build-dir=$(notdir $(builddir))
+
+ifneq ($(LATEX_MESSAGES), yes)
+TEXI2DVI_FLAGS += -q
+endif
+
 TEXI2DVI := $(envbin) TEXI2DVI_USE_RECORDER=yes \
-	$(texi2dvibin) --batch $(TEXI2DVI_SILENT) \
-	-I $(texdir) --pdf --build=tidy \
-	--build-dir=$(notdir $(builddir))
+	$(texi2dvibin) $(TEXI2DVI_FLAGS)
 
 MAKEORGDEPS := $(pythonbin) $(pythondir)/makeorgdeps.py
 MAKETEXDEPS := $(pythonbin) $(pythondir)/maketexdeps.py
@@ -115,10 +119,6 @@ endef
 define knit
 "source(\"./R/common.R\"); library(knitr); options(knitr.package.root.dir=\"${rootdir}\"); knit(\"$1\", \"$2\")"
 endef
-
-vpath %.pdf $(figdir)
-vpath %.png $(imgdir)
-vpath %.jpg $(imgdir)
 
 ## Rules
 ## ================================================================================
