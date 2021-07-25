@@ -9,7 +9,6 @@
 - Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 1
 #+end_bibbox
 
-
 * La producción
 
 

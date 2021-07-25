@@ -3,6 +3,7 @@
 
 #+TITLE: Intertemporal choice
 
+
 #+MATS: bib
 #+begin_bibbox
 - Varian: :: /Intermediate microeconomics/. Chapter 10.

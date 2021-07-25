@@ -1,7 +1,7 @@
 # -*- ispell-dictionary: "english" -*-
 #+SETUPFILE: ./course-en.org
 
-#+TITLE: Costs in the Long Run
+#+TITLE: Costs in the long run
 
 #+MATS: bib
 #+begin_bibbox

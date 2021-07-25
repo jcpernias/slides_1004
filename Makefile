@@ -1,9 +1,5 @@
 SHELL := /bin/sh
 
-subject_code := 1004
-units := 1A 1B 1C 1D 1E 2A 2B 2C 3A 3B 4A 5A 5B 6A 6B
-unit_figs := 1A 1B 1C 1D 1E 2A 2B 2C 3A 3B 4A 5A 5B 6A 6B
-
 ## Directories
 ## ================================================================================
 
@@ -57,32 +53,25 @@ MAKEFIGDEPS := $(pythonbin) $(pythondir)/makefigdeps.py
 
 RSCRIPT := $(Rscriptbin) -e
 
-docs_es := $(addsuffix _$(subject_code)-es, \
-	$(addprefix hdout-, $(units)) \
-	$(addprefix pres-, $(units)))
-docs_en := $(addsuffix _$(subject_code)-en, \
-	$(addprefix hdout-, $(units)) \
-	$(addprefix pres-, $(units)))
-
-docs_base := $(docs_es) $(docs_en)
-docs_pdf := $(addprefix $(outdir)/, $(addsuffix .pdf, $(docs_base)))
-
 tex_check_dirs := $(builddir) $(figdir) $(depsdir)
 
-## Automatic dependencies
-## ================================================================================
-docs_deps := $(addprefix $(depsdir)/, \
-	$(addsuffix .pdf.d, $(docs_base)))
+hdout_tex_deps := \
+	$(texdir)/hdout.cls \
+	$(texdir)/docs-base.sty \
+	$(texdir)/docs-full.sty \
+	$(rootdir)/hyperref.cfg
 
-tex_deps := $(addprefix $(depsdir)/unit-, \
-	$(addsuffix _$(subject_code)-es.tex.d, $(units))) \
-	$(addprefix $(depsdir)/unit-, \
-	$(addsuffix _$(subject_code)-en.tex.d, $(units)))
+pres_tex_deps := \
+	$(texdir)/pres.cls \
+	$(texdir)/docs-base.sty \
+	$(texdir)/docs-full.sty \
+	$(rootdir)/hyperref.cfg
 
-unit_figs_deps := $(addprefix $(depsdir)/unit-,\
-	$(addsuffix _$(subject_code)-figs.d, $(unit_figs)))
-
-all_deps := $(docs_deps) $(tex_deps) $(unit_figs_deps)
+fig_tex_deps := \
+	$(texdir)/figure.cls \
+	$(texdir)/docs-base.sty \
+	$(rootdir)/standalone.cfg \
+	$(rootdir)/hyperref.cfg
 
 FIGURES :=
 
@@ -93,24 +82,24 @@ ifneq (,$(findstring clean,$(MAKECMDGOALS)))
 INCLUDEDEPS := no
 endif
 
-# $(call tex-wrapper,pres-or-hdout,tex-src,lang) -> write to a file
+# $(call tex-wrapper,unit,lang) -> write to a file
 define tex-wrapper
-\PassOptionsToClass{$1}{unit}
-\AtBeginDocument{\graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}}
 \RequirePackage{etoolbox}
 \AtEndPreamble{%
+  \graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}%
   \InputIfFileExists{$(subject_code)-macros.tex}{}{}%
-  \InputIfFileExists{$2-macros.tex}{}{}}
-\input{$(realpath $(builddir))/$2-$3}
+  \InputIfFileExists{unit-$1-macros.tex}{}{}}
+\input{$(realpath $(builddir))/unit-$1-$2}
 endef
 
-# $(call tex-wrapper,spanish-or-english,fig-basename,unit-code) -> write to a file
+# $(call fig-wrapper,language,name,unit) -> write to a file
 define fig-wrapper
 \documentclass[$1]{figure}
+\graphicspath{{$(realpath $(figdir))/}{$(realpath $(imgdir))/}}
 \InputIfFileExists{$(subject_code)-macros.tex}{}{}
-\InputIfFileExists{unit-$3-macros.tex}{}{}
+\InputIfFileExists{unit-$3_$(subject_code)-macros.tex}{}{}
 \begin{document}
-\input{$(realpath $(builddir))/$2}
+\input{$(realpath $(builddir))/fig-$2}
 \end{document}
 endef
 
@@ -119,6 +108,8 @@ endef
 define knit
 "source(\"./R/common.R\"); library(knitr); options(knitr.package.root.dir=\"${rootdir}\"); knit(\"$1\", \"$2\")"
 endef
+
+include course.mk
 
 ## Rules
 ## ================================================================================
@@ -135,41 +126,54 @@ $(depsdir)/%.tex.d: $(rootdir)/%.org | $(depsdir)
 	$(MAKEORGDEPS) -o $@ -t $(builddir)/$*.tex $<
 
 # latex wrappers
-.PRECIOUS: $(builddir)/pres-%-es.tex
-$(builddir)/pres-%-es.tex: $(builddir)/unit-%-es.tex | $(figdir)
-	$(file > $@, $(call tex-wrapper,Presentation,unit-$*,es))
 
-.PRECIOUS: $(builddir)/hdout-%-es.tex
-$(builddir)/hdout-%-es.tex: $(builddir)/unit-%-es.tex | $(figdir)
-	$(file > $@, $(call tex-wrapper,Handout,unit-$*,es))
+## pres wrapper
+define pres_wrapper_rule
+.PRECIOUS: $(builddir)/pres-%-$(1).tex
+$(builddir)/pres-%-$(1).tex: $(builddir)/unit-%-$(1).tex | $(figdir)
+	$$(file > $$@,$$(call tex-wrapper,$$*,$(1)))
+endef
 
-.PRECIOUS: $(builddir)/pres-%-en.tex
-$(builddir)/pres-%-en.tex: $(builddir)/unit-%-en.tex | $(figdir)
-	$(file > $@, $(call tex-wrapper,Presentation,unit-$*,en))
+$(foreach lang,$(LANGUAGES),$(eval $(call pres_wrapper_rule,$(lang))))
 
-.PRECIOUS: $(builddir)/hdout-%-en.tex
-$(builddir)/hdout-%-en.tex: $(builddir)/unit-%-en.tex | $(figdir)
-	$(file > $@, $(call tex-wrapper,Handout,unit-$*,en))
+## hdout wrapper
+define hdout_wrapper_rule
+.PRECIOUS: $(builddir)/hdout-%-$(1).tex
+$(builddir)/hdout-%-$(1).tex: $(builddir)/unit-%-$(1).tex | $(figdir)
+	$$(file > $$@,$$(call tex-wrapper,$$*,$(1)))
+endef
+
+$(foreach lang,$(LANGUAGES),$(eval $(call hdout_wrapper_rule,$(lang))))
+
 
 ## latex to pdf
 $(outdir)/%.pdf: $(builddir)/%.tex | $(outdir)
 	$(TEXI2DVI) --output=$@ $<
+
+$(outdir)/hdout-%.pdf: $(builddir)/hdout-%.tex $(hdout_tex_deps) | $(outdir)
+	$(TEXI2DVI) --output=$@ $<
+
+$(outdir)/pres-%.pdf: $(builddir)/pres-%.tex $(pres_tex_deps) | $(outdir)
+	$(TEXI2DVI) --output=$@ $<
+
 
 # pdf dependencies
 $(depsdir)/%.pdf.d: $(builddir)/%.tex | $(outdir) $(depsdir)
 	$(MAKETEXDEPS) -o $@ -t $(outdir)/$*.pdf $<
 
 # figure wrappers
-.PRECIOUS: $(builddir)/fig-%-en.tex
-$(builddir)/fig-%-en.tex: $(builddir)/fig-%.tex
-	$(file > $@, $(call fig-wrapper,English,fig-$*,$(shell echo $* | sed 's/\([^-]*\)-.*/\1/')))
+get-unit = $(firstword $(subst _, ,$(1)))
 
-.PRECIOUS: $(builddir)/fig-%-es.tex
-$(builddir)/fig-%-es.tex: $(builddir)/fig-%.tex
-	$(file > $@, $(call fig-wrapper,Spanish,fig-$*,$(shell echo $* | sed 's/\([^-]*\)-.*/\1/')))
+define fig_wrapper_rule =
+.PRECIOUS: $(builddir)/fig-%-$(1).tex
+$(builddir)/fig-%-$(1).tex: $(builddir)/fig-%.tex
+	$$(file > $$@,$$(call fig-wrapper,$(1),$$*,$$(call get-unit,$$*)))
+endef
+
+$(foreach lang,$(LANGUAGES),$(eval $(call fig_wrapper_rule,$(lang))))
 
 # figure latex to pdf
-$(figdir)/fig-%.pdf: $(builddir)/fig-%.tex | $(figdir)
+$(figdir)/fig-%.pdf: $(builddir)/fig-%.tex $(fig_tex_deps) | $(figdir)
 	$(TEXI2DVI) --output=$@ $<
 
 $(depsdir)/unit-%-figs.d: unit-%-figs.org | $(depsdir)

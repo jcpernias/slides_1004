@@ -3,6 +3,7 @@
 
 #+TITLE: Elección intertemporal
 
+
 #+MATS: bib
 #+begin_bibbox
 - Varian: :: /Microeconomía intermedia/. Capítulo 10.

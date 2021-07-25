@@ -1,0 +1,78 @@
+# -*- ispell-dictionary: "english" -*-
+
+#+STARTUP: indent hidestars content
+
+#+TITLE: Introduction to Microeconomics
+#+AUTHOR: AE / EC / FC 1004 \\
+#+AUTHOR: DA0204
+#+DATE: Curso 2020--2021
+
+#+OPTIONS: toc:nil ':t *:t ^:{} num:2 H:3 title:nil
+
+#+LATEX_CLASS: hdout
+#+LATEX_CLASS_OPTIONS: [en]
+
+#+LANGUAGE: en
+#+LATEX_HEADER: \newcommand*{\LANG}{en}
+
+
+* Basic principles of economic organization
+
+#+include: "unit-1A_1004-en.org" :lines "12-"
+
+* The production possibilities frontier
+
+#+latex: \input{unit-1B_1004-macros}
+#+include: "unit-1B_1004-en.org" :lines "12-"
+
+* Competitive markets
+
+#+include: "unit-1C_1004-en.org" :lines "12-"
+
+* Elasticity
+
+#+include: "unit-1D_1004-en.org" :lines "12-"
+
+* Intervention in competitive markets
+
+#+include: "unit-1E_1004-en.org" :lines "12-"
+
+* Budget constraint
+
+#+include: "unit-2A_1004-en.org" :lines "12-"
+
+* Preferences
+
+#+include: "unit-2B_1004-en.org" :lines "12-"
+
+* Consumer choice
+
+#+include: "unit-2C_1004-en.org" :lines "12-"
+
+* Demand
+
+#+include: "unit-3A_1004-en.org" :lines "12-"
+
+* Substitution effect and income effect
+
+#+include: "unit-3B_1004-en.org" :lines "12-"
+
+* Intertemporal choice
+
+#+include: "unit-4A_1004-en.org" :lines "12-"
+
+* Production in the short run
+
+#+include: "unit-5A_1004-en.org" :lines "12-"
+
+* Production in the long run
+
+#+include: "unit-5B_1004-en.org" :lines "12-"
+
+* Costs in the short run
+
+#+include: "unit-6A_1004-en.org" :lines "12-"
+
+* Costs in the long run
+
+#+include: "unit-6B_1004-en.org" :lines "12-"

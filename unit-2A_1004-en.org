@@ -1,8 +1,7 @@
 # -*- ispell-dictionary: "english" -*-
 #+SETUPFILE: ./course-en.org
 
-#+TITLE: Budget Constraint
-
+#+TITLE: Budget constraint
 
 #+MATS: bib
 #+begin_bibbox

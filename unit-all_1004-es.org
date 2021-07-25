@@ -1,0 +1,77 @@
+# -*- ispell-dictionary: "castellano" -*-
+
+#+STARTUP: indent hidestars content
+
+#+TITLE: Introducción a la Microeconomía
+#+AUTHOR: AE / EC / FC 1004 \\
+#+AUTHOR: DA0204
+#+DATE: Curso 2020--2021
+
+#+OPTIONS: toc:nil ':t *:t ^:{} num:2 H:3 title:nil
+
+#+LATEX_CLASS: hdout
+#+LATEX_CLASS_OPTIONS: [es]
+
+#+LANGUAGE: es
+#+LATEX_HEADER: \newcommand*{\LANG}{es}
+
+
+* Principios básicos de la organización económica
+
+#+include: "unit-1A_1004-es.org" :lines "12-"
+
+* La frontera de posibilidades de producción
+#+latex: \input{unit-1B_1004-macros}
+#+include: "unit-1B_1004-es.org" :lines "12-"
+
+* Los mercados competitivos
+
+#+include: "unit-1C_1004-es.org" :lines "12-"
+
+* Elasticidad
+
+#+include: "unit-1D_1004-es.org" :lines "12-"
+
+* Intervención en mercados competitivos
+
+#+include: "unit-1E_1004-es.org" :lines "12-"
+
+* La restricción presupuestaria
+
+#+include: "unit-2A_1004-es.org" :lines "12-"
+
+* Las preferencias
+
+#+include: "unit-2B_1004-es.org" :lines "12-"
+
+* La elección del consumidor
+
+#+include: "unit-2C_1004-es.org" :lines "12-"
+
+* La demanda
+
+#+include: "unit-3A_1004-es.org" :lines "12-"
+
+* Efecto sustitución y efecto renta
+
+#+include: "unit-3B_1004-es.org" :lines "12-"
+
+* Elección intertemporal
+
+#+include: "unit-4A_1004-es.org" :lines "12-"
+
+* La producción: el corto plazo
+
+#+include: "unit-5A_1004-es.org" :lines "12-"
+
+* La producción: el largo plazo
+
+#+include: "unit-5B_1004-es.org" :lines "12-"
+
+* Los costes: el corto plazo
+
+#+include: "unit-6A_1004-es.org" :lines "12-"
+
+* Los costes: el largo plazo
+
+#+include: "unit-6B_1004-es.org" :lines "12-"
