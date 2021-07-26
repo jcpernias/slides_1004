@@ -319,7 +319,7 @@
   nivel de producción.
 
 
-* La envolvente                                                    :noexport:
+* La envolvente
 
 
 ** La elección del tamaño de la planta (I)

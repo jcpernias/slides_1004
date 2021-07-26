@@ -315,7 +315,7 @@
   curve and is tangent to $\CMeLP$ at one output level.
 
 
-* The envelope                                                     :noexport:
+* The envelope
 
 
 ** The choice of the plant size (I)
