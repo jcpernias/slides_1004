@@ -1,27 +1,31 @@
-;; Utility functions for Org documents
-;; --------------------------------------------------------------------------------
-(defun in-commented-tree (element)
-  "Check if ELEMENT is part of a commented tree"
-  (let ((parents (org-element-lineage element nil t))
-        (comment nil))
-    (while (and (not comment) parents)
-      (setq element (car parents))
-      (when (eq (org-element-type element) 'headline)
-        (setq comment (org-element-property :commentedp element)))
-      (setq parents (cdr parents)))
-    comment))
+(require 'ox)
+(require 'seq)
+
+;; ================================================================================
+;; Org utility functions
+;; ================================================================================
 
 (defun get-current-level (element)
   "Get the level to which ELEMENT belongs"
   (let ((headline (org-element-lineage element '(headline) t)))
     (if headline
-        (org-element-property :level headline)
-      0)))
+        (org-element-property :level headline) 0)))
 
+(defun get-affiliated (element)
+  (buffer-substring (org-element-property :begin element)
+                    (org-element-property :post-affiliated element)))
+
+(defun get-post-blank (element)
+  (org-element-property :post-blank element))
 
 (defun delete-comments (doc)
-  "Remove comments and comment blocks from Org document DOC"
-    (org-element-map doc '(comment comment-block) 'org-element-extract-element))
+  "Remove comments, comment blocks, and commented trees from Org document tree DOC"
+  (org-element-map doc '(comment comment-block) 'org-element-extract-element)
+  (org-element-map doc 'headline
+    (lambda (hl)
+      (and (org-element-property :commentedp hl)
+           (org-element-extract-element hl)))))
+
 
 (defun make-par-link (type path affiliated post-blank)
   "Returns an Org paragraph with a link"
@@ -31,14 +35,6 @@
                       (org-element-create
                        'link (list :type type
                                    :path path))))
-
-
-(defun get-affiliated (element)
-  (buffer-substring (org-element-property :begin element)
-                    (org-element-property :post-affiliated element)))
-
-(defun get-post-blank (element)
-  (org-element-property :post-blank element))
 
 
 ;; ================================================================================
@@ -54,8 +50,7 @@
       (let ((type)
             (text)
             (value))
-        (when (and (string= (org-element-property :key keyword) "MATS")
-                   (not (in-commented-tree keyword)))
+        (when (string= (org-element-property :key keyword) "MATS")
           (setq text (org-element-property :value keyword))
           (when (string-match
                  "[[:blank:]]*\\([^[:blank:]]+\\)\\(?:[[:blank:]]+\\(.*\\)\\)?[[:blank:]]*\\'" text)
