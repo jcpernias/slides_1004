@@ -94,9 +94,9 @@ compact]{titlesec}
 
 \titleformat{name=\section}[hang]{%
   \color{Section}\huge\sffamily\bfseries}{%
-  \makebox[1.25cm][l]{\rmfamily\slshape\HUGE\thesection.}}{0pt}{}
+  \makebox[2pc][r]{\rmfamily\slshape\HUGE\thesection.}}{1pc}{}
 
-\titlespacing{name=\section}{-1.25cm}{0pt}{*6}
+\titlespacing{name=\section}{-3pc}{0pt}{*6}
 
 \titleformat{name=\section, numberless}{%
   \color{Section}\LARGE\sffamily\bfseries}{}{0pc}{}
