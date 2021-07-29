@@ -76,46 +76,6 @@
 \geometry{twoside, hmargin={2cm,5.7cm},
   bindingoffset=0.7cm, vmargin=3cm}
 
-%% List formatting
-%% --------------------------------------------------------------------------------
-
-%% Hack: avoid TeX hang when handling description environment (I)
-%% See: http://tex.stackexchange.com/questions/31505/trouble-combining-enumitem-and-beamer
-\let\olddescription\description
-\let\oldenddescription\enddescription
-
-\RequirePackage{enumitem}
-\setlist[itemize]{leftmargin=*}
-\setlist[itemize,1]{label={\textcolor{SteelBlue!80!White}{\RIGHTarrow}}}
-\setlist[itemize,2]{%
-  label={\textcolor{SteelBlue!80!White}{\footnotesize\RIGHTarrow}}}
-\setlist[itemize,3]{%
-  label={\textcolor{SteelBlue!80!White}{\textbullet}}}
-\setlist[enumerate]{labelsep=*, leftmargin=1.5pc}
-\setlist[enumerate,1]{label=\arabic*., ref=\arabic*}
-\setlist[enumerate,2]{label=\beameroriginal\emph{\alph*}),%
-  ref=\theenumi.\beameroriginal\emph{\alph*}}
-\setlist[enumerate,3]{label=\roman*), ref=\theenumii.\roman*}
-\setlist[description]{font=\sffamily\bfseries}
-
-%% Hack: avoid TeX hang when handling description environment (and II)
-\let\description\olddescription
-\let\enddescription\oldenddescription
-
-%% Lists
-%% --------------------------------------------------------------------------------
-
-% \RequirePackage{enumitem}
-
-% %\setlist{nosep}
-% \setlist{topsep=0.5\baselineskip, itemsep=0.5\baselineskip,
-%   parsep=0pt, partopsep=0pt}
-
-% \setlist[1]{leftmargin=*}
-
-% \setlist[itemize,1]{label=\textbullet}
-% \setlist[itemize,2]{label=-}
-% \setlist[description]{font=\sffamily\bfseries, labelindent=\parindent}
 
 %% Section headings formatting
 %% --------------------------------------------------------------------------------
