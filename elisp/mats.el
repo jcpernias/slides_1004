@@ -56,40 +56,58 @@
 ;; MATS keywords
 ;; ================================================================================
 
-;; Driver
-;; --------------------------------------------------------------------------------
-(defun process-mats-keywords (doc)
-  "Get the different parts of a MATS keyword and call the appropriate handler"
+(defun mats-keyword-p (element)
+  "Returns t if ELEMENT is a MATS keyword"
+  (and (eq (org-element-type element) 'keyword)
+       (string= (org-element-property :key element) "MATS")))
+
+(defvar mats-keyword-regex
+  "[[:blank:]]*\\([^[:blank:]]+\\)\\(?:[[:blank:]]+\\(.*\\)\\)?[[:blank:]]*\\'")
+
+(defun parse-mats-keywords (doc)
+  "Add mats-type and mats-value properties to a mats-keyword"
   (org-element-map doc 'keyword
     (lambda (keyword)
       (let ((type)
             (text)
             (value))
-        (when (string= (org-element-property :key keyword) "MATS")
+        (when (mats-keyword-p keyword)
           (setq text (org-element-property :value keyword))
-          (when (string-match
-                 "[[:blank:]]*\\([^[:blank:]]+\\)\\(?:[[:blank:]]+\\(.*\\)\\)?[[:blank:]]*\\'" text)
-            (setq type (match-string 1 text)
-                  value (match-string 2 text))
-            (cond ((string= type "col") (handle-col keyword value))
-                  ((string= type "fig") (handle-fig keyword value))
-                  ((string= type "figcol") (handle-figcol keyword value))
-                  ((string= type "bib") (handle-bib keyword value))
-                  ((string= type "pagebreak") (handle-pagebreak keyword value))
-                  (t nil))))))))
+          (when (string-match mats-keyword-regex text)
+            (setq keyword
+                  (org-element-put-property keyword :mats-type (match-string 1 text)))
+            (setq keyword
+                  (org-element-put-property keyword :mats-value (match-string 2 text)))))))))
 
-;; Handlers
+(defun process-mats-keywords (doc)
+  "Get the different parts of a MATS keyword and call the appropriate handler"
+  (parse-mats-keywords doc)
+  (org-element-map doc 'keyword
+    (lambda (keyword)
+      (let ((type)
+            (text)
+            (value))
+        (when (mats-keyword-p keyword)
+          (setq type (org-element-property :mats-type keyword))
+          (setq value (org-element-property :mats-value keyword))
+          (cond ((string= type "col") (handle-col keyword))
+                ((string= type "fig") (handle-fig keyword))
+                ((string= type "figcol") (handle-figcol keyword))
+                ((string= type "bib") (handle-bib keyword))
+                ((string= type "pagebreak") (handle-pagebreak keyword))
+                (t nil)))))))
+
+;; Bibliography
 ;; --------------------------------------------------------------------------------
-
-(defun handle-bib (element value)
+(defun handle-bib (keyword)
   "Handle bibliography blocks"
   (org-element-set-element
-   element
+   keyword
    ;; Create a new top-level headline with properties
    (org-element-create
     'headline
     (list :level 1
-          :post-blank (get-post-blank element))
+          :post-blank (get-post-blank keyword))
     (org-element-create
      'property-drawer nil
      (org-element-create
@@ -99,14 +117,16 @@
       'node-property
       (list :key "UNNUMBERED" :value "t"))))))
 
-(defun handle-pagebreak (element value)
+;; Page breaks
+;; --------------------------------------------------------------------------------
+(defun handle-pagebreak (keyword)
   "Handle page breaks in handouts"
   (org-element-set-element
-   element
+   keyword
    (org-element-create                  ;; Empty headline
     'headline
-    (list :level (get-current-level element)
-          :post-blank (get-post-blank element))
+    (list :level (get-current-level keyword)
+          :post-blank (get-post-blank keyword))
     (org-element-create                 ;; ignoreheading property
      'property-drawer nil
      (org-element-create
@@ -117,8 +137,8 @@
      (list :key "latex"
            :value "\\mode<article>{\\clearpage{}}")))))
 
-;; Handling columns
-
+;; Columns
+;; --------------------------------------------------------------------------------
 (defvar mats-col-regex
   "\\`[[:blank:]]*\\(?:\\([0-9.]+\\)[[:blank:]]*\\)?\\'")
 
@@ -132,52 +152,56 @@
                         'node-property
                         (list :key "BEAMER_col" :value (format "%g" width))))))
 
-(defun handle-col (element value)
+(defun handle-col (keyword)
   "Handle column"
-  (let ((width))
+  (let ((width)
+        (value (org-element-property :mats-value keyword)))
     (when (string-match mats-col-regex value)
       (setq width (string-to-number (or (match-string 1 value) "0.5")))
       (org-element-set-element
-       element
-       (make-col (+ (get-current-level element) 1)
+       keyword
+       (make-col (+ (get-current-level keyword) 1)
                  width
-                 (get-post-blank element))))))
+                 (get-post-blank keyword))))))
 
 ;; Figures
-
+;; --------------------------------------------------------------------------------
 (defun fig-file-path (value lang)
   (if (string-match "\\*" value)
       (replace-match (or lang "\\LANG") nil t value)
     value))
 
-(defun handle-fig (element value)
-  (org-element-set-element
-   element
-   (make-par-link "file"
-                  ;; (concat "./figures/" (fig-file-path value nil))
-                  (fig-file-path value nil)
-                  (get-affiliated element)
-                  (get-post-blank element))))
+(defun handle-fig (keyword)
+  (let ((value (org-element-property :mats-value keyword)))
+    (org-element-set-element
+     keyword
+     (make-par-link "file"
+                    (fig-file-path value nil)
+                    (get-affiliated keyword)
+                    (get-post-blank keyword)))))
 
 
-(defun handle-figcol (element value)
+;; Figure + column
+;; --------------------------------------------------------------------------------
+(defun handle-figcol (keyword)
   (let ((args)
         (path)
         (width)
         (level)
-        (new))
+        (new)
+        (value (org-element-property :mats-value keyword)))
     (setq args (split-string value))
     (setq path (fig-file-path (pop args) nil))
     (setq width (string-to-number (or (pop args) "0.5")))
-    (setq level (+ (get-current-level element) 1))
+    (setq level (+ (get-current-level keyword) 1))
     (setq new (make-col level width 1))
     (org-element-adopt-elements
         new (make-par-link "file"
                            path
-                           (get-affiliated element) 1))
-    (org-element-insert-before new element)
+                           (get-affiliated keyword) 1))
+    (org-element-insert-before new keyword)
     (org-element-set-element
-     element (make-col level (- 1 width) (get-post-blank element)))))
+     keyword (make-col level (- 1 width) (get-post-blank keyword)))))
 
 ;; ================================================================================
 ;; Install driver
