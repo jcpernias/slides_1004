@@ -26,6 +26,35 @@
       (and (org-element-property :commentedp hl)
            (org-element-extract-element hl)))))
 
+;; Property drawers
+;; --------------------------------------------------------------------------------
+(defun make-node-property (key value)
+  "Return a node property"
+  (org-element-create
+       'node-property
+       (list :key key :value value)))
+
+(defun make-property-drawer (&rest nodes)
+  "Return a property drawer with property nodes NODES"
+  (apply 'org-element-create
+         'property-drawer nil nodes))
+
+;; Headlines
+;; --------------------------------------------------------------------------------
+(defun make-headline (title level &rest children)
+  "Return a headline with the given TITLE and LEVEL"
+  (apply 'org-element-create
+         'headline (list :title title :level level)
+         children))
+
+(defun make-headline-unnumbered (title level &rest children)
+  "Return an unnumbered headline with the given TITLE and LEVEL"
+  (make-headline
+   title level
+   (make-property-drawer
+    (make-node-property "UNNUMBERED" t))
+   children))
+
 
 ;; Paragraphs
 ;; --------------------------------------------------------------------------------
@@ -130,18 +159,15 @@
 ;; --------------------------------------------------------------------------------
 (defun handle-pagebreak (keyword)
   "Handle page breaks in handouts"
-  (org-element-set-element
-   keyword
-   (org-element-create                  ;; Empty headline
-    'headline
-    (list :level (get-current-level keyword)
-          :post-blank (get-post-blank keyword))
-    (org-element-create                 ;; ignoreheading property
-     'property-drawer nil
-     (org-element-create
-      'node-property
-      (list :key "BEAMER_env" :value "ignoreheading")))
-    (make-latex-keyword "\\mode<article>{\\clearpage{}}"))))
+  (let ((headline))
+    (setq headline
+          (make-headline "Page break" (get-current-level keyword)
+           (make-property-drawer
+            (make-node-property "BEAMER_env" "ignoreheading"))
+           (make-latex-keyword "\\mode<article>{\\clearpage{}}")))
+    (org-element-set-element
+     keyword (org-element-put-property headline
+                                       :post-blank (get-post-blank keyword)))))
 
 ;; Columns
 ;; --------------------------------------------------------------------------------
