@@ -27,14 +27,29 @@
            (org-element-extract-element hl)))))
 
 
-(defun make-par-link (type path affiliated post-blank)
-  "Returns an Org paragraph with a link"
-  (org-element-create 'paragraph
-                      (list :post-blank post-blank)
-                      affiliated
-                      (org-element-create
-                       'link (list :type type
-                                   :path path))))
+;; Paragraphs
+;; --------------------------------------------------------------------------------
+(defun make-paragraph (contents &optional post-blank)
+  "Return a paragraph with the given CONTENTS"
+  (let ((props (and post-blank (list :post-blank post-blank))))
+    (apply 'org-element-create
+           'paragraph props contents)))
+
+
+;; Links
+;; --------------------------------------------------------------------------------
+
+(defun make-link (type path)
+  "Return a link"
+  (org-element-create 'link (list :type type :path path)))
+
+
+(defun make-par-link (type path &optional affiliated post-blank)
+  "Return a paragraph with a link"
+  (let ((link (make-link type path))
+        (contents))
+    (setq contents (if affiliated (list affiliated link) link))
+    (make-paragraph contents post-blank)))
 
 
 ;; ================================================================================
