@@ -6,7 +6,7 @@
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principles of Economics/. Chapters 1 and 2.
-- Pindyck y Rubinfeld: :: /Microeconomics/. Chapter 1
+- Pindyck y Rubinfeld: :: /Microeconomics/. Chapter 1.
 #+end_bibbox
 
 * Introduction
