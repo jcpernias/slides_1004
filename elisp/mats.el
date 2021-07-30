@@ -164,12 +164,14 @@
   "Handle page breaks in handouts"
   (let ((headline))
     (setq headline
-          (make-headline "Page break" (get-current-level keyword)
+          (make-headline
+           "Page break" (get-current-level keyword)
            (make-property-drawer
             (make-node-property "BEAMER_env" "ignoreheading"))
            (make-latex-keyword "\\mode<article>{\\clearpage{}}")))
-    (org-element-set-element keyword
-                             (set-post-blank headline (get-post-blank keyword)))))
+    (org-element-set-element
+     keyword
+     (set-post-blank headline (get-post-blank keyword)))))
 
 ;; Columns
 ;; --------------------------------------------------------------------------------
@@ -177,14 +179,13 @@
   "\\`[[:blank:]]*\\(?:\\([0-9.]+\\)[[:blank:]]*\\)?\\'")
 
 (defun make-col (level width post-blank)
-  (org-element-create
-   'headline
-   (list :level level
-         :post-blank post-blank)
-   (org-element-create 'property-drawer nil
-                       (org-element-create
-                        'node-property
-                        (list :key "BEAMER_col" :value (format "%g" width))))))
+  (let ((headline))
+    (setq headline
+          (make-headline
+           "Column" level
+           (make-property-drawer
+            (make-node-property "BEAMER_col" (format "%g" width)))))
+    (set-post-blank headline (get-post-blank keyword))))
 
 (defun handle-col (keyword)
   "Handle column"
