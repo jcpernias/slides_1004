@@ -18,6 +18,9 @@
 (defun get-post-blank (element)
   (org-element-property :post-blank element))
 
+(defun set-post-blank (element post-blank)
+  (org-element-put-property element :post-blank post-blank))
+
 (defun delete-comments (doc)
   "Remove comments, comment blocks, and commented trees from Org document tree DOC"
   (org-element-map doc '(comment comment-block) 'org-element-extract-element)
@@ -165,9 +168,8 @@
            (make-property-drawer
             (make-node-property "BEAMER_env" "ignoreheading"))
            (make-latex-keyword "\\mode<article>{\\clearpage{}}")))
-    (org-element-set-element
-     keyword (org-element-put-property headline
-                                       :post-blank (get-post-blank keyword)))))
+    (org-element-set-element keyword
+                             (set-post-blank headline (get-post-blank keyword)))))
 
 ;; Columns
 ;; --------------------------------------------------------------------------------
