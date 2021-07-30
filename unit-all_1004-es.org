@@ -18,39 +18,39 @@
 
 * Principios básicos de la organización económica
 
-#+include: "unit-1A_1004-es.org" :lines "12-"
+#+include: "unit-1A_1004-es.org" :lines "6-"
 
 * La frontera de posibilidades de producción
 #+latex: \input{unit-1B_1004-macros}
-#+include: "unit-1B_1004-es.org" :lines "12-"
+#+include: "unit-1B_1004-es.org" :lines "6-"
 
 * Los mercados competitivos
 
-#+include: "unit-1C_1004-es.org" :lines "12-"
+#+include: "unit-1C_1004-es.org" :lines "6-"
 
 * Elasticidad
 
-#+include: "unit-1D_1004-es.org" :lines "12-"
+#+include: "unit-1D_1004-es.org" :lines "6-"
 
 * Intervención en mercados competitivos
 
-#+include: "unit-1E_1004-es.org" :lines "12-"
+#+include: "unit-1E_1004-es.org" :lines "6-"
 
 * La restricción presupuestaria
 
-#+include: "unit-2A_1004-es.org" :lines "12-"
+#+include: "unit-2A_1004-es.org" :lines "6-"
 
 * Las preferencias
 
-#+include: "unit-2B_1004-es.org" :lines "12-"
+#+include: "unit-2B_1004-es.org" :lines "6-"
 
 * La elección del consumidor
 
-#+include: "unit-2C_1004-es.org" :lines "12-"
+#+include: "unit-2C_1004-es.org" :lines "6-"
 
 * La demanda
 
-#+include: "unit-3A_1004-es.org" :lines "12-"
+#+include: "unit-3A_1004-es.org" :lines "6-"
 
 * Efecto sustitución y efecto renta
 
@@ -58,20 +58,20 @@
 
 * Elección intertemporal
 
-#+include: "unit-4A_1004-es.org" :lines "12-"
+#+include: "unit-4A_1004-es.org" :lines "6-"
 
 * La producción: el corto plazo
 
-#+include: "unit-5A_1004-es.org" :lines "12-"
+#+include: "unit-5A_1004-es.org" :lines "6-"
 
 * La producción: el largo plazo
 
-#+include: "unit-5B_1004-es.org" :lines "12-"
+#+include: "unit-5B_1004-es.org" :lines "6-"
 
 * Los costes: el corto plazo
 
-#+include: "unit-6A_1004-es.org" :lines "12-"
+#+include: "unit-6A_1004-es.org" :lines "6-"
 
 * Los costes: el largo plazo
 
-#+include: "unit-6B_1004-es.org" :lines "12-"
+#+include: "unit-6B_1004-es.org" :lines "6-"

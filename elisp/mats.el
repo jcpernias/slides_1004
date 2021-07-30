@@ -29,6 +29,37 @@
       (and (org-element-property :commentedp hl)
            (org-element-extract-element hl)))))
 
+(defun find-all-siblings (element)
+  "Return a list with all siblings of ELEMENT including itself"
+  (org-element-contents (org-element-property :parent element)))
+
+(defun find-contents (element end-contents-p)
+  "Return all siblings after ELEMENT and before END-CONTENS-P returns true"
+  (let ((siblings (find-all-siblings element))
+        (before t)
+        (after))
+    (seq-filter
+     (lambda (e)
+       (cond
+        (before (progn
+                  (when (eq e element)
+                    (setq before nil))
+                  nil))
+        (after nil)
+        (t (if (funcall end-contents-p e)
+               (progn (setq after t) nil)
+             t))))
+     siblings)))
+
+(defun headline-p (element)
+  (eq (org-element-type element) 'headline))
+
+
+;; Sections
+;; --------------------------------------------------------------------------------
+(defun make-section ()
+  (org-element-create 'section))
+
 ;; Property drawers
 ;; --------------------------------------------------------------------------------
 (defun make-node-property (key value)
@@ -50,13 +81,12 @@
          'headline (list :title title :level level)
          children))
 
-(defun make-headline-unnumbered (title level &rest children)
+(defun make-headline-unnumbered (title level)
   "Return an unnumbered headline with the given TITLE and LEVEL"
   (make-headline
    title level
    (make-property-drawer
-    (make-node-property "UNNUMBERED" t))
-   children))
+    (make-node-property "UNNUMBERED" t))))
 
 
 ;; Paragraphs
@@ -142,21 +172,17 @@
 ;; --------------------------------------------------------------------------------
 (defun handle-bib (keyword)
   "Handle bibliography blocks"
-  (org-element-set-element
-   keyword
-   ;; Create a new top-level headline with properties
-   (org-element-create
-    'headline
-    (list :level 1
-          :post-blank (get-post-blank keyword))
-    (org-element-create
-     'property-drawer nil
-     (org-element-create
-      'node-property
-      (list :key "BEAMER_env" :value "fullframe"))
-     (org-element-create
-      'node-property
-      (list :key "UNNUMBERED" :value "t"))))))
+  (let ((headline)
+        (level (+ (get-current-level keyword) 1))
+        (section (make-section))
+        (contents (find-contents keyword #'headline-p)))
+    (setq headline (make-headline-unnumbered "\\translate{Bibliography}" level))
+    (apply 'org-element-adopt-elements headline
+           (seq-map #'org-element-extract-element contents))
+    (org-element-adopt-elements section (make-latex-keyword "\\mode<article>{"))
+    (org-element-adopt-elements section headline)
+    (org-element-adopt-elements section (make-latex-keyword "}"))
+    (org-element-set-element keyword section)))
 
 ;; Page breaks
 ;; --------------------------------------------------------------------------------
