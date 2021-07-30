@@ -38,7 +38,6 @@
 
 ;; Links
 ;; --------------------------------------------------------------------------------
-
 (defun make-link (type path)
   "Return a link"
   (org-element-create 'link (list :type type :path path)))
@@ -50,6 +49,16 @@
         (contents))
     (setq contents (if affiliated (list affiliated link) link))
     (make-paragraph contents post-blank)))
+
+;; Keywords
+;; --------------------------------------------------------------------------------
+(defun make-keyword (key value)
+  (org-element-create 'keyword (list :key key :value value)))
+
+
+(defun make-latex-keyword (value)
+  (make-paragraph (list (make-keyword "LATEX" value))))
+
 
 
 ;; ================================================================================
@@ -132,10 +141,7 @@
      (org-element-create
       'node-property
       (list :key "BEAMER_env" :value "ignoreheading")))
-    (org-element-create                  ;; latex code
-     'keyword
-     (list :key "latex"
-           :value "\\mode<article>{\\clearpage{}}")))))
+    (make-latex-keyword "\\mode<article>{\\clearpage{}}"))))
 
 ;; Columns
 ;; --------------------------------------------------------------------------------
