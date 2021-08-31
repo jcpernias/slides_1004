@@ -69,10 +69,6 @@
 
 #+include: "unit-5B_1004-en.org" :lines "6-"
 
-* Costs in the short run
+* Costs
 
-#+include: "unit-6A_1004-en.org" :lines "6-"
-
-* Costs in the long run
-
-#+include: "unit-6B_1004-en.org" :lines "6-"
+#+include: "unit-6_1004-en.org" :lines "6-"

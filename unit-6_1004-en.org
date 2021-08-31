@@ -1,13 +1,237 @@
 # -*- ispell-dictionary: "english" -*-
 #+SETUPFILE: ./course-en.org
 
-#+TITLE: Costs in the long run
+#+TITLE: Costs
 
 #+MATS: bib
 #+begin_bibbox
 - Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 7.
 - Varian: :: /Intermediate microeconomics/. Chapters 20 and 21.
 #+end_bibbox
+
+* Costs in the short-run
+
+
+** Profit maximization
+
+- A *rational* firm makes its decisions with the goal of *maximizing
+  its profits*.
+
+- We split the profit-maximization problem into two parts:
+
+  + How to minimize the cost of producing any given output level.
+
+  + How to choose the most profitable output level.
+
+
+** Input markets
+
+- The firm can use any amount of inputs at their market prices:
+
+  + $w$ is the wage;
+
+  + $r$ is the price of capital.
+
+
+** Total cost
+
+- *Total cost*: the market value of the inputs a firm uses in production.
+  #+begin_export latex
+  \[ C = r K + w L \]
+  #+end_export
+
+- Those inputs which the firm owns are valued at their *opportunity
+  cost*.
+
+
+** The short-run
+
+- In the short-run:
+
+  + The capital is fixed: $K = \Kbar$.
+
+  + The firm can only alter its output level by varying its labor
+    input.
+
+
+** Fixed and variable costs
+
+- *Fixed cost*: $\CF = r \Kbar$.
+
+- *Variable cost*: $\CV = w L$.
+
+
+** Total cost in the short-run
+
+- The *total cost in the short-run*: $C = r \Kbar + w L$.
+
+- It is the sum of fixed and variable costs:
+  #+begin_export latex
+  \[ C = \CF + \CV \]
+  #+end_export
+
+
+
+* Costs curves in the short-run
+
+
+** Total product function:
+
+#+MATS: figcol fig-6_1004-sr01-*.pdf 0.5
+
+- Total product function:
+    #+begin_export latex
+  \[ Q = f(L) \]
+  #+end_export
+
+
+** The conditional labor demand function
+
+#+MATS: figcol fig-6_1004-sr02-*.pdf 0.5
+
+- The *conditional labor demand* shows how much labor the firm should
+  hire to produce a given output level.
+
+- It is the inverse of the total product function:
+  #+begin_export latex
+  \[ L(Q) = f^{-1}(Q) \]
+  #+end_export
+
+
+** The variable cost curve
+
+#+MATS: figcol fig-6_1004-sr03-*.pdf 0.5
+
+- *Variable cost curve*:
+  #+begin_export latex
+  \[ \CV(Q) = w L(Q) \]
+  #+end_export
+
+
+** Total cost curve
+
+#+MATS: figcol fig-6_1004-sr04-*.pdf 0.5
+
+- The *fixed cost* does not depend on the production level.
+
+- The *total cost curve* is obtained by adding the fixed and the
+  variable cost for each level of production.
+
+
+** The cost curves in the short-run
+
+- *Fixed cost curve*: $\CF = r \Kbar$.
+
+- *Variable cost curve*: $\CV(Q) = w L(Q)$.
+
+- *Short-run total cost*: $\CT(Q) = r \Kbar + w L(Q)$.
+
+
+** Marginal cost
+
+- The *marginal cost* is the rate at which total cost varies per
+  additional unit of production:
+  #+begin_export latex
+  \[ \CMg(Q) = \frac{\diff C(Q)}{\diff Q} \]
+  #+end_export
+
+- The marginal cost can also be written as the derivative of variable
+  cost with respect to $Q$:
+  #+begin_export latex
+  \[ \CMg(Q) = \frac{\diff \CF}{\diff Q} + \frac{\diff \CV(Q)}{\diff Q} = \frac{\diff \CV(Q)}{\diff Q} \]
+  #+end_export
+
+
+** Average cost curves
+
+- *Average fixed cost*:
+  #+begin_export latex
+  \[ \CFMe(Q) = \frac{\CF}{Q} \]
+  #+end_export
+
+- *Average variable cost*:
+  #+begin_export latex
+  \[ \CVMe(Q) = \frac{\CV(Q)}{Q} \]
+  #+end_export
+
+- *Average cost*:
+  #+begin_export latex
+  \[ \CMe(Q) = \frac{C(Q)}{Q} = \CFMe(Q) + \CVMe(Q) \]
+  #+end_export
+
+
+** Relationship between $\PMg$, $\PMe$, $\CMg$ and $\CMe$  (I)
+
+- Variable cost:
+  #+begin_export latex
+  \[ \CV = w L \]
+  #+end_export
+
+- Average variable cost:
+  #+begin_export latex
+  \[ \CVMe = w \frac{L}{Q} = w\frac{1}{Q/L} = \frac{w}{\PMeL} \]
+  #+end_export
+
+- Marginal cost:
+  #+begin_export latex
+  \[ \CMg = \frac{\diff \CV}{\diff Q} = w \frac{\diff L}{\diff Q} = w\frac{1}{\diff Q/\diff L} = \frac{w}{\PMgL} \]
+  #+end_export
+
+
+** Relationship between $\PMg$, $\PMe$, $\CMg$ and $\CMe$  (II)
+
+#+MATS: figcol fig-6_1004-sr05-*.pdf 0.5
+
+- $\PMgL$ and $\PMeL$ have inverted U-shapes.
+
+
+** Relationship between $\PMg$, $\PMe$, $\CMg$ and $\CMe$  (and III)
+
+#+MATS: figcol fig-6_1004-sr06-*.pdf 0.5
+
+- The average and marginal cost curves are U-shaped.
+
+
+** The average variable cost and marginal cost curves
+
+#+MATS: figcol fig-6_1004-sr06-*.pdf 0.5
+
+- The average variable cost:
+
+  + decreases if $\CMg < \CVMe$.
+
+  + increases if $\CMg > \CVMe$.
+
+  + attains its minimum when $\CMg = \CVMe$.
+
+
+** The average fixed cost curve
+
+#+MATS: figcol fig-6_1004-sr07-*.pdf 0.5
+
+- The *average fixed cost curve* decreases as production increases.
+
+
+** The average cost curve (I)
+
+#+MATS: figcol fig-6_1004-sr09-*.pdf 0.5
+
+- The $\CMe$ curve is the sum of the $\CVMe$ and the $\CFMe$ at each
+  level of production.
+
+
+** The average cost curve (and II)
+
+#+MATS: figcol fig-6_1004-sr08-*.pdf 0.5
+
+- The average cost:
+
+  + decreases if $\CMg < \CMe$.
+
+  + increases if $\CMg > \CMe$.
+
+  + attains its minimum when $\CMg = \CMe$.
+
 
 * Cost minimization in the long run
 
@@ -26,7 +250,7 @@
 
 ** The isoquant
 
-#+MATS: figcol fig-6B_1004-eq01-*.pdf 0.45
+#+MATS: figcol fig-6_1004-eq01-*.pdf 0.45
 
 - The firm chooses the less costly input combination on the isoquant $\Qbar$.
 
@@ -47,7 +271,7 @@
 
 ** Isocost lines (and II)
 
-#+MATS: figcol fig-6B_1004-eq02-*.pdf 0.45
+#+MATS: figcol fig-6_1004-eq02-*.pdf 0.45
 
 - The slope of the isocost line is equal to the relative price of
   factors with negative sign:
@@ -64,7 +288,7 @@
 
 ** The isocost lines map
 
-#+MATS: figcol fig-6B_1004-eq03-*.pdf 0.45
+#+MATS: figcol fig-6_1004-eq03-*.pdf 0.45
 
 - Each isocost line corresponds to a different cost level.
 
@@ -73,7 +297,7 @@
 
 ** The optimal choice (I)
 
-#+MATS: figcol fig-6B_1004-eq04-*.pdf 0.45
+#+MATS: figcol fig-6_1004-eq04-*.pdf 0.45
 
 - The firm chooses the combination of factors of production that
   minimizes the cost of producing $\Qbar$ units.
@@ -83,7 +307,7 @@
 
 ** The optimal choice (II)
 
-#+MATS: figcol fig-6B_1004-eq06-*.pdf 0.45
+#+MATS: figcol fig-6_1004-eq06-*.pdf 0.45
 
 - In the combination $A$:
   #+begin_export latex
@@ -95,7 +319,7 @@
 
 ** The optimal choice (III)
 
-#+MATS: figcol fig-6B_1004-eq07-*.pdf 0.45
+#+MATS: figcol fig-6_1004-eq07-*.pdf 0.45
 
 - In the combination $B$:
   #+begin_export latex
@@ -107,7 +331,7 @@
 
 ** The optimal choice (and IV)
 
-#+MATS: figcol fig-6B_1004-eq05-*.pdf 0.45
+#+MATS: figcol fig-6_1004-eq05-*.pdf 0.45
 
 - Isoquant:
   #+begin_export latex
@@ -133,7 +357,7 @@
 
 ** Duality (and II)
 
-#+MATS: figcol fig-6B_1004-eq08-*.pdf 0.45
+#+MATS: figcol fig-6_1004-eq08-*.pdf 0.45
 
 - Isocost line:
   #+begin_export latex
@@ -146,7 +370,6 @@
   \[ \RMST = \frac{w}{r} \]
   #+end_export
 
-#+MATS: pagebreak
 
 
 * Cost curves in the long run
@@ -154,7 +377,7 @@
 
 ** Product expansion path
 
-#+MATS: figcol fig-6B_1004-exp02-*.pdf 0.5
+#+MATS: figcol fig-6_1004-exp02-*.pdf 0.5
 
 - Given the input prices, there is a different optimal combination for
   each output level: the *product expansion path*.
@@ -169,7 +392,7 @@
 
 ** The long-run total cost curve
 
-#+MATS: figcol fig-6B_1004-clp01-*.pdf 0.47
+#+MATS: figcol fig-6_1004-clp01-*.pdf 0.47
 
 - The *long-run total cost curve*:
   #+begin_export latex
@@ -192,7 +415,7 @@
 
 ** Average cost and marginal cost (and II)
 
-#+MATS: figcol fig-6B_1004-env08-*.pdf 0.45
+#+MATS: figcol fig-6_1004-env08-*.pdf 0.45
 
 - The $\CMeLP$ curve:
 
@@ -228,7 +451,7 @@
 
 ** Returns to scale and costs in the long-run (II)
 
-#+MATS: figcol fig-6B_1004-clp02-*.pdf 0.45
+#+MATS: figcol fig-6_1004-clp02-*.pdf 0.45
 
 - The cost function is linear when there are constant returns to
   scale:
@@ -239,7 +462,7 @@
 
 ** Returns to scale and costs in the long-run (III)
 
-#+MATS: figcol fig-6B_1004-clp03-*.pdf 0.45
+#+MATS: figcol fig-6_1004-clp03-*.pdf 0.45
 
 - The average and the marginal costs are both equal to the same
   constant when there are constant returns to scale:
@@ -264,7 +487,7 @@
 
 ** The short-run choice
 
-#+MATS: figcol fig-6B_1004-exp03-*.pdf 0.45
+#+MATS: figcol fig-6_1004-exp03-*.pdf 0.45
 
 - In the short-run, the level of $K$ is fixed and different output
   levels can only be reached by altering the level of $L$.
@@ -273,7 +496,7 @@
 
 ** The short-run and the long-run choices
 
-#+MATS: figcol fig-6B_1004-exp06-*.pdf 0.45
+#+MATS: figcol fig-6_1004-exp06-*.pdf 0.45
 
 - In the long-run, the firm can change all inputs.
 
@@ -282,7 +505,7 @@
 
 ** The short-run and the long-run choices
 
-#+MATS: figcol fig-6B_1004-exp07-*.pdf 0.45
+#+MATS: figcol fig-6_1004-exp07-*.pdf 0.45
 
 - Only at one output level the long-run choice is the same as the
   short-run one.
@@ -291,7 +514,7 @@
 
 ** Short-run and long-run costs (I)
 
-#+MATS: figcol fig-6B_1004-exp05-*.pdf 0.45
+#+MATS: figcol fig-6_1004-exp05-*.pdf 0.45
 
 - Short-run costs are higher than long-run costs, except for one level
   of production.
@@ -299,7 +522,7 @@
 
 ** Short-run and long-run costs (II)
 
-#+MATS: figcol fig-6B_1004-env20-*.pdf 0.45
+#+MATS: figcol fig-6_1004-env20-*.pdf 0.45
 
 - The long-run cost curve is below the short-run cost curves.
 
@@ -309,7 +532,7 @@
 
 ** Short-run and long-run costs (and III)
 
-#+MATS: figcol fig-6B_1004-env21-*.pdf 0.45
+#+MATS: figcol fig-6_1004-env21-*.pdf 0.45
 
 - Each short-run average cost curve is above the long-run average cost
   curve and is tangent to $\CMeLP$ at one output level.
@@ -320,7 +543,7 @@
 
 ** The choice of the plant size (I)
 
-#+MATS: figcol fig-6B_1004-env01-*.pdf 0.55
+#+MATS: figcol fig-6_1004-env01-*.pdf 0.55
 
 - Consider first the case in which the firm can only choose between
   two plant sizes: $K_1$ < $K_2$. Which would be its long-run
@@ -329,7 +552,7 @@
 
 ** The choice of the plant size (and II)
 
-#+MATS: figcol fig-6B_1004-env02-*.pdf 0.55
+#+MATS: figcol fig-6_1004-env02-*.pdf 0.55
 
 - If the firm expects to produce less than $Q_A$ in the long-run, the
   plant size $K_1$ has lower costs.
@@ -340,7 +563,7 @@
 
 ** The envelope (I)
 
-#+MATS: figcol fig-6B_1004-env03-*.pdf 0.55
+#+MATS: figcol fig-6_1004-env03-*.pdf 0.55
 
 - The long-run average cost curve is the *lower envelope* of the
   short-run curves.
@@ -348,17 +571,16 @@
 
 ** The envelope (II)
 
-#+MATS: figcol fig-6B_1004-env05-*.pdf 0.55
+#+MATS: figcol fig-6_1004-env05-*.pdf 0.55
 
 - If the firm can choose among more plant sizes, the long-run average
   cost curve is smoother.
 
-#+MATS: pagebreak
 
 
 ** The envelope (and III)
 
-#+MATS: figcol fig-6B_1004-env06-*.pdf 0.55
+#+MATS: figcol fig-6_1004-env06-*.pdf 0.55
 
 - When the firm can choose among a continuum of plant sizes, each
   short-run average cost curve is tangent to the $\CMeLP$ at one
@@ -367,7 +589,7 @@
 
 ** The efficient plant size
 
-#+MATS: figcol fig-6B_1004-env07-*.pdf 0.55
+#+MATS: figcol fig-6_1004-env07-*.pdf 0.55
 
 - The *efficient plant size* corresponds to the minimum long-run unit
   cost.

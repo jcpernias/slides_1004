@@ -1,12 +1,565 @@
 #+STARTUP: indent hidestars content
 
-#+TITLE: Unit 6B figures
+#+TITLE: Unit 6 figures
 
 #+PROPERTY: header-args:latex :noweb yes :eval no
 
+* Las curvas de coste a corto plazo
+
+#+begin_src latex :tangle fig-6_1004-sr01.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                             # cm
+height <- 5 * 0.9
+
+Xtop <- 500
+Ytop <- 95
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+idx <- 60
+Coordinates(Q0 = c(0, Q[idx, 2]),
+            L0 = c(Q[idx, 1], 0),
+            Dot=Q[idx, ])
+
+@
+
+\draw[help lines]
+  (Q0) node[left, font=\small] {$Q_{0}$} -|
+  (L0) node[below, font=\small] {$L_{0}$}
+  ;
+
+\draw[decorate, decoration={markings,
+  mark=at position 0.25 with {\arrow{stealth}},
+  mark=at position 0.75 with {\arrow{stealth}}}]
+  (L0) -- (Dot) -- (Q0)
+  ;
+
+\draw[IMe]
+<<prod>>=
+plotCoord(Q)
+@
+  node[right, font=\small]  {$f(L)$}
+  ;
+
+\node[dot] at (Dot) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left] {$Q$} |-
+   (\Sexpr{Xtop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-6_1004-sr02.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Ytop <- 500
+Xtop <- 95
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+idx <- 60
+Coordinates(Q0 = c(Q[idx, 2], 0),
+            L0 = c(0, Q[idx, 1]),
+            Dot=Q[idx, c(2, 1)])
+
+@
+
+\draw[help lines]
+  (Q0) node[below, font=\small] {$Q_{0}$} |-
+  (L0) node[left, font=\small] {$L_{0}$}
+  ;
+
+\draw[decorate, decoration={markings,
+  mark=at position 0.25 with {\arrow{stealth}},
+  mark=at position 0.75 with {\arrow{stealth}}}]
+  (Q0) -- (Dot) -- (L0)
+  ;
+
+\draw[IMe]
+<<prod>>=
+plotCoord(CV)
+@
+  node[right, font=\small]  {$L(Q)$}
+  ;
+
+\node[dot] at (Dot) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left] {$L$} |-
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-6_1004-sr03.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                             # cm
+height <- 5 * 0.9
+
+Xtop <- 95
+Ytop <- 500
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+idx <- 60
+Coordinates(C0 = c(0, CV[idx, 2]),
+            Q0 = c(CV[idx, 1], 0),
+            Dot=CV[idx, ])
+
+@
+
+\draw[help lines]
+  (C0) node[left, font=\small] {$\CV(Q_{0})$} -|
+  (Q0) node[below, font=\small] {$Q_{0}$}
+  ;
+
+\draw[decorate, decoration={markings,
+  mark=at position 0.25 with {\arrow{stealth}},
+  mark=at position 0.75 with {\arrow{stealth}}}]
+  (Q0) -- (Dot) -- (C0)
+  ;
+
+\draw[IMe]
+<<CV>>=
+plotCoord(CV)
+@
+  node[right, font=\small]  {$\CV$}
+  ;
+
+\node[dot] at (Dot) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left] {$\CV$} |-
+   node[left, font=\small] {\phantom{$\CV(Q_{0})$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-6_1004-sr04.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Xtop <- 95
+Ytop <- 500
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+\draw[IMe, CadetBlue]
+<<CF>>=
+plotCoord(CF)
+@
+  node[right, font=\small]  {$\CF$}
+  ;
+
+
+\draw[IMe]
+<<CV>>=
+plotCoord(CV)
+@
+  node[right, font=\small]  {$\CV$}
+  ;
+
+\draw[IMe, DarkBlue]
+<<CT>>=
+plotCoord(CT)
+@
+  node[right, font=\small]  {$\CT$}
+  ;
+
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CV$} |-
+   (\Sexpr{Xtop}, 0) node[below] {$Q$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CF$}
+   (Ylabel2.south east) node[anchor=north east, inner ysep = 0]  {$\CT$}
+   ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-6_1004-sr05.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Xtop <- 500
+Ytop <- 0.7
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+## idx <- 60
+## Coordinates(Q0 = c(0, Q[idx, 2]),
+##             L0 = c(Q[idx, 1], 0),
+##             Dot=Q[idx, ])
+
+@
+
+
+\draw[IMe, Brown]
+<<PMe>>=
+plotCoord(PMe)
+@
+  node[right, font=\small]  {$\PMeL$}
+  ;
+
+\draw[IMe, DarkGreen!70!Black]
+<<PMg>>=
+plotCoord(PMg)
+@
+  node[right, font=\small]  {$\PMgL$}
+  ;
+
+
+
+
+%% \draw[axis] (0,\Sexpr{Ytop})
+%%    node[left, align=left] {$\PMgL$\\$\PMeL$} |-
+%%    %% node[left, font=\small] {\phantom{$f(L_{0})$}}
+%%    (\Sexpr{Xtop}, 0) node[below] {$L$} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep = 0] (Ylabel) {$\PMgL$} |-
+   %% node[left, font=\small] {\phantom{$\CV(Q_{0})$}}
+   (\Sexpr{Xtop}, 0) node[below] {$L$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\PMeL$}
+   %% (Ylabel2.south east) node[anchor=north east]  {$\CT$}
+   ;
+
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-6_1004-sr06.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Xtop <- 95
+Ytop <- 10
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[IMe, Brown]
+<<CVMe>>=
+plotCoord(CVMe)
+@
+  node[above, font=\small]  {$\CVMe$}
+  ;
+
+\draw[IMe, DarkGreen!70!Black]
+<<CMg>>=
+plotCoord(CMg)
+@
+  node[right, font=\small]  {$\CMg$}
+  ;
+
+
+%% \draw[axis] (0,\Sexpr{Ytop}) node[anchor=north east, align=left] {$\CVMe$\\$CMg$} |-
+%%    node[left] {\phantom{$\CFMe$}}
+%%    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
+   node[left] {\phantom{$\CVMe$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMg$}
+   %% (Ylabel2.south east) node[anchor=north east]  {$\CT$}
+   ;
+
+
+
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-6_1004-sr07.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Xtop <- 95
+Ytop <- 10
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[IMe, CadetBlue]
+<<CFMe>>=
+plotCoord(CFMe)
+@
+  node[right, font=\small]  {$\CFMe$}
+  ;
+
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left] {$\CFMe$} |-
+   node[left] {\phantom{$\CVMe$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-6_1004-sr08.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Xtop <- 105
+Ytop <- 10
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[IMe, Brown]
+<<CVMe>>=
+plotCoord(CVMe)
+@
+  node[right, font=\small]  {$\CVMe$}
+  ;
+
+
+\draw[IMe, DarkBlue]
+<<CMe>>=
+plotCoord(CMe)
+@
+  node[above, font=\small]  {$\CMe$}
+  ;
+
+
+\draw[IMe, DarkGreen!70!Black]
+<<CMg>>=
+plotCoord(CMg)
+@
+  node[right, font=\small]  {$\CMg$}
+  ;
+
+
+%% \draw[axis] (0,\Sexpr{Ytop}) node[anchor=north east, align=left] {$\CMe$\\$\CVMe$\\$CMg$} |-
+%%    node[left] {\phantom{$\CVMe$}}
+%%    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
+   node[left] {\phantom{$\CVMe$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMg$}
+   (Ylabel2.south east) node[anchor=north east, inner ysep = 0]  {$\CMe$}
+   ;
+
+
+
+
+\end{tikzpicture}
+
+#+end_src
+
+
+#+begin_src latex :tangle fig-6_1004-sr09.Rnw :noweb no
+  <<setup, cache=FALSE, include=FALSE>>=
+    opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+  @
+
+  <<init>>=
+
+  ## Load code
+  source("./R/srcost.R")
+
+  ## Graphics parameters
+
+  width <- 5.5 * 0.9                              # cm
+  height <- 5 * 0.9
+
+  Xtop <- 105
+  Ytop <- 10
+
+  xscale <- width/Xtop
+  yscale <- height/Ytop
+
+
+  @
+
+  \begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+  \draw[IMe, Brown]
+  <<CVMe>>=
+  plotCoord(CVMe)
+  @
+    node[right, font=\small]  {$\CVMe$}
+    ;
+
+
+  \draw[IMe, DarkBlue]
+  <<CMe>>=
+  plotCoord(CMe)
+  @
+    node[above, font=\small]  {$\CMe$}
+    ;
+
+
+  \draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
+     node[left] {\phantom{$\CVMe$}}
+     (\Sexpr{Xtop}, 0) node[below] {$Q$}
+     ;
+  \draw
+     (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMe$}
+     ;
+
+
+
+
+  \end{tikzpicture}
+
+#+end_src
+
+
 * La minimización del coste a largo plazo
 
-#+begin_src latex :tangle fig-6B_1004-eq01.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-eq01.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \draw[CMe]
@@ -22,7 +575,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq02.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-eq02.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
     \draw[IMe]
       (0, 12.5) node[left, font=\small] {$\Cbar/r$} --
@@ -36,7 +589,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq03.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-eq03.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \draw[IMe]
@@ -54,7 +607,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq04.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-eq04.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \coordinate (A) at (2.2917961, 10.908475) ;
@@ -86,7 +639,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq06.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-eq06.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \coordinate (A) at (2.2917961, 10.908475) ;
@@ -125,7 +678,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq07.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-eq07.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \coordinate (A) at (2.2917961, 10.908475) ;
@@ -164,7 +717,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq05.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-eq05.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \coordinate (A) at (2.2917961, 10.908475) ;
@@ -218,7 +771,7 @@
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-eq08.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-eq08.tex :noweb no
   \begin{tikzpicture}[xscale=0.2, yscale=0.2]
 
     \coordinate (A) at (2.2917961, 10.908475) ;
@@ -283,7 +836,7 @@
 
 * Las curvas de coste a largo plazo
 
-#+begin_src latex :tangle fig-6B_1004-exp02.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-exp02.tex :noweb no
 \begin{tikzpicture}[xscale=0.28, yscale=0.28]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -348,7 +901,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-clp01.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-clp01.tex :noweb no
 \begin{tikzpicture}[yscale=0.64, xscale=0.064]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -371,7 +924,7 @@
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env08.Rnw :noweb no
+#+begin_src latex :tangle fig-6_1004-env08.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -450,7 +1003,7 @@ plotCMg(parL, domCMgL)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-clp02.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-clp02.tex :noweb no
 \begin{tikzpicture}[yscale=0.9, xscale=0.9]
 
   \draw[CMe, very thick, Brown!40!Black]
@@ -465,7 +1018,7 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-clp03.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-clp03.tex :noweb no
 \begin{tikzpicture}[yscale=0.9, xscale=0.9]
 
   \draw[CMe, very thick, Brown!40!Black]
@@ -485,7 +1038,7 @@ plotCMg(parL, domCMgL)
 
 * Relación entre los costes a corto y a largo plazo
 
-#+begin_src latex :tangle fig-6B_1004-exp03.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-exp03.tex :noweb no
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -534,7 +1087,7 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-exp06.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-exp06.tex :noweb no
   \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
     \coordinate (Al) at (9, 6.25) ;
@@ -590,7 +1143,7 @@ plotCMg(parL, domCMgL)
   \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-exp07.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-exp07.tex :noweb no
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -649,7 +1202,7 @@ plotCMg(parL, domCMgL)
 #+end_src
 
 
-#+begin_src latex :tangle fig-6B_1004-exp04.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-exp04.tex :noweb no
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -712,7 +1265,7 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-exp05.tex :noweb no
+#+begin_src latex :tangle fig-6_1004-exp05.tex :noweb no
 \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
 
   \coordinate (Al) at (9, 6.25) ;
@@ -775,7 +1328,7 @@ plotCMg(parL, domCMgL)
 \end{tikzpicture}
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env20.Rnw :noweb no
+#+begin_src latex :tangle fig-6_1004-env20.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -840,7 +1393,7 @@ plotCoord(CL)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env21.Rnw :noweb no
+#+begin_src latex :tangle fig-6_1004-env21.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -932,7 +1485,7 @@ plotCMg(parL, domCMgL)
 * La envolvente
 
 
-#+begin_src latex :tangle fig-6B_1004-env01.Rnw :noweb no
+#+begin_src latex :tangle fig-6_1004-env01.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1007,7 +1560,7 @@ plotCMg(par60, domg60)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env02.Rnw :noweb no
+#+begin_src latex :tangle fig-6_1004-env02.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1098,7 +1651,7 @@ plotCMe(par60, dom60)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env03.Rnw :noweb no
+#+begin_src latex :tangle fig-6_1004-env03.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1203,7 +1756,7 @@ plotCMe(par60, domL60a)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env04.Rnw :noweb no
+#+begin_src latex :tangle fig-6_1004-env04.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1327,7 +1880,7 @@ plotCMg(par30, domgL30a)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env05.Rnw :noweb no
+#+begin_src latex :tangle fig-6_1004-env05.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -1415,7 +1968,7 @@ plotCMe(par70, domL70)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env06.Rnw :noweb no
+#+begin_src latex :tangle fig-6_1004-env06.Rnw :noweb no
   <<setup, cache=FALSE, include=FALSE>>=
     opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
   @
@@ -1523,7 +2076,7 @@ plotCMe(par70, domL70)
 
 #+end_src
 
-#+begin_src latex :tangle fig-6B_1004-env07.Rnw :noweb no
+#+begin_src latex :tangle fig-6_1004-env07.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @

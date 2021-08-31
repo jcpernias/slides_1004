@@ -68,10 +68,6 @@
 
 #+include: "unit-5B_1004-es.org" :lines "6-"
 
-* Los costes: el corto plazo
+* Los costes
 
-#+include: "unit-6A_1004-es.org" :lines "6-"
-
-* Los costes: el largo plazo
-
-#+include: "unit-6B_1004-es.org" :lines "6-"
+#+include: "unit-6_1004-es.org" :lines "6-"
