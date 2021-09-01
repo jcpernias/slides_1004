@@ -62,7 +62,7 @@
     \vspace{-1.65\baselineskip}
     \begin{minipage}[b][0.35\paperheight]{\textwidth}
         \vspace{\baselineskip}
-        \raggedright
+        \raggedright % <- This line
         \usebeamerfont{title}
         \usebeamercolor[fg]{frametitle}
         \inserttitle
