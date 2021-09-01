@@ -13,8 +13,7 @@ units := \
 	3A \
 	3B \
 	4A \
-	5A \
-	5B \
+	5 \
 	6
 
 unit_figs := \
@@ -29,8 +28,7 @@ unit_figs := \
 	3A \
 	3B \
 	4A \
-	5A \
-	5B \
+	5 \
 	6
 
 LANGUAGES := es en

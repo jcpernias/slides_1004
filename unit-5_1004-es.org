@@ -1,0 +1,405 @@
+# -*- ispell-dictionary: "spanish" -*-
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: La producción
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 6.
+- Varian: :: /Microeconomía intermedia/. Capítulo 18.
+#+end_bibbox
+
+* Naturaleza y objetivos de la empresa
+
+
+** Las empresas
+
+- ¿Por qué existen las empresas?
+
+- [[http://en.wikipedia.org/wiki/Ronald_Coase][Ronald Coase]]: las empresas coordinan eficientemente el proceso de
+  producción evitando los *costes de transacción*: búsqueda,
+  negociación, mantenimiento de secretos comerciales, monitorización,
+  etc.
+
+
+** La producción
+
+- La *tecnología* permite que las empresas combinen *factores de
+  producción* para producir los *bienes* que venderán en
+  los *mercados de bienes*.
+
+
+** Factores de producción
+
+- Trabajo.
+
+- Capital.
+
+
+** El capital
+
+- *Bienes de capital*: máquinas, herramientas, edificios y estructuras
+  destinadas al proceso productivo.
+
+- El capital como factor de producción se corresponde al concepto de
+  *capital físico*, el cual difiere del de *capital financiero*: la
+  cantidad de dinero necesaria para iniciar o mantener un negocio.
+
+
+** La tecnología
+
+- *Restricciones tecnológicas*: sólo ciertas combinaciones de factores
+  son *factibles* a la hora producir una determinada cantidad de un
+  bien.
+
+- La *función de producción* indica la producción máxima que puede
+  obtener una empresa para cada combinación de factores.
+
+
+** Dimensión temporal de la producción
+
+- El tipo de decisiones a los que se enfrenta la empresa a *corto
+  plazo* es muy diferente al de las decisiones de *largo plazo*.
+
+
+** El corto plazo
+
+- A corto plazo, la empresa no puede alterar el nivel de algunos de
+  los factores de producción: existen *factores fijos*.
+
+
+** El largo plazo
+
+- A largo plazo, la empresa puede elegir las cantidades que usa de
+  todos los factores de producción: sólo hay *factores variables*.
+
+
+** Simplificaciones
+
+- Las empresas sólo utilizan trabajo, $L$, y capital, $K$.
+
+- La *función de producción* relaciona la producción, $Q$, con los
+  factores de producción:
+  #+begin_export latex
+  \[ Q = F(K, L) \]
+  #+end_export
+
+- Divisibilidad perfecta de $K$, $L$, y $Q$.
+
+
+* La producción a corto plazo
+
+
+** Producción con un factor variable
+
+- A corto plazo el capital es fijo: $K = \Kbar$.
+
+- Función de producción a corto plazo:
+  #+begin_export latex
+  \[ Q = F(\Kbar, L) = f(L) \]
+  #+end_export
+
+
+
+** La curva de producto total
+
+#+MATS: figcol fig-5_1004-cp01-*.pdf 0.45
+
+- La curva de *producto total* relaciona el nivel de producción y el
+  trabajo:
+  #+begin_export latex
+  \[ Q = f(L) \]
+  #+end_export
+
+
+** El producto marginal del trabajo
+
+#+MATS: figcol fig-5_1004-cp03-*.pdf 0.45
+
+- El *producto marginal del trabajo* es la tasa a la que crece la
+  producción por unidad adicional de trabajo:
+  #+begin_export latex
+  \[ \PMgL = \frac{\diff Q}{\diff L} = \frac{\diff f(L)}{\diff L} \]
+  #+end_export
+
+
+** La curva de producto marginal
+
+#+MATS: figcol fig-5_1004-cp06-*.pdf 0.45
+
+- La curva de producto marginal tiene forma de U invertida.
+
+
+** La ley de los rendimientos decrecientes de un factor
+
+- *Ley de los rendimientos decrecientes de un factor*: conforme se
+  utilizan más unidades de un factor, /manteniendo constante el uso
+  del resto de los factores/, llega un punto a partir del cual
+  decrecen los sucesivos incrementos de producción.
+
+
+** Rendimientos decrecientes del trabajo
+
+#+MATS: figcol fig-5_1004-cp06a-*.pdf 0.45
+
+- La curva de $\PMgL$ es creciente para valores bajos de $L$.
+
+- La curva de $\PMgL$ es decreciente para valores de $L$ mayores que
+  $L_C$.
+
+
+** Eficiencia técnica (I)
+
+#+MATS: figcol fig-5_1004-cp06b-*.pdf 0.45
+
+- El $\PMgL$ es negativo cuando $L > L_D$.
+
+- Si el trabajo aumenta más allá de $L_D$, la producción disminuye.
+
+
+** Eficiencia técnica (y II)
+
+#+MATS: figcol fig-5_1004-cp08-*.pdf 0.45
+
+- El uso de más unidades de trabajo que $L_D$ no es técnicamente
+  eficiente.
+
+- La producción en $L_2$ es la misma que en $L_1$.
+
+
+** Producto medio del trabajo
+
+#+MATS: figcol fig-5_1004-cp02-*.pdf 0.45
+
+- El *producto medio del trabajo* es el número de unidades producidas
+  por hora de trabajo:
+  #+begin_export latex
+  \[ \PMeL = \frac{Q}{L} = \frac{f(L)}{L}\]
+  #+end_export
+
+
+** La curva de producto medio
+
+#+MATS: figcol fig-5_1004-cp07-*.pdf 0.45
+
+- La curva de producto medio del trabajo tiene forma de U invertida.
+
+
+** Producto total, medio y marginal (I)
+
+#+MATS: figcol fig-5_1004-cp05-*.pdf 0.45
+
+- La curva de $\PMeL$:
+
+  + crece si $\PMgL > \PMeL$.
+
+  + decrece si $\PMgL < \PMeL$.
+
+  + llega a su máximo cuando se igualan $\PMgL$ y $\PMeL$.
+
+
+** Producto total, medio y marginal (y II)
+
+#+MATS: figcol fig-5_1004-cp04-*.pdf 0.45
+
+- La curva de producto total alcanza un máximo en $L_D$, donde $\PMgL
+  = 0$.
+
+- La curva de producto medio llega a su máximo en $L_E$, donde se
+  igualan $\PMgL$ y $\PMeL$.
+
+
+* La producción a largo plazo
+
+
+** Producción con dos factores variables
+
+- A largo plazo todos los factores de producción son variables.
+
+- Función de producción a largo plazo:
+  #+begin_export latex
+  \[ Q = F(K, L) \]
+  #+end_export
+
+
+** Producto marginal de los factores
+
+- El *producto marginal del trabajo* es la tasa a la que crece la
+  producción por unidad adicional de trabajo:
+  #+begin_export latex
+  \[ \PMgL = \frac{\partial Q}{\partial L} = \frac{\partial F(K, L)}{\partial L}  \]
+  #+end_export
+
+- El *producto marginal del capital* es la tasa a la que crece la
+  producción por unidad adicional de capital:
+  #+begin_export latex
+  \[ \PMgK = \frac{\partial Q}{\partial K} = \frac{\partial F(K, L)}{\partial K}  \]
+  #+end_export
+
+
+** Las isocuantas
+
+- Una *isocuanta* es el conjunto de todas combinaciones de factores
+  con las que se puede obtener un mismo nivel de producción.
+
+
+
+** El mapa de isocuantas
+
+#+MATS: figcol fig-5_1004-is01-*.pdf 0.5
+
+- Cada isocuanta se corresponde con un nivel de producción diferente.
+
+- Las isocuantas más alejadas del origen están asociadas con mayores
+  niveles de producción.
+
+
+** La pendiente de las isocuantas
+
+- Diferenciando totalmente la función de producción:
+  #+begin_export latex
+  \[ \diff Q = \PMgK \diff K + \PMgL \diff L \]
+  #+end_export
+
+- Si nos movemos a lo largo de una isocuanta, $\diff Q = 0$:
+  #+begin_export latex
+  \[ 0 = \PMgK \diff K + \PMgL \diff L \]
+  #+end_export
+
+- Finalmente:
+  #+begin_export latex
+  \[ \left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} = -\frac{\PMgL}{\PMgK} \]
+  #+end_export
+
+
+** La relación marginal de sustitución técnica (I)
+
+- La *relación marginal de sustitución técnica*, $\RMST$, es el número
+  de unidades de capital que pueden ser sustituidas por una unidad
+  adicional de trabajo, /manteniendo el nivel de producción constante/.
+
+
+** La relación marginal de sustitución técnica (y II)
+
+- Coincide con la pendiente de la isocuanta con signo negativo:
+  #+begin_export latex
+  \[ \RMST = -\left.\frac{\diff K}{\diff L}\right|_{\overline{Q}} \]
+  #+end_export
+
+- Por tanto:
+  #+begin_export latex
+  \[ \RMST = \frac{\PMgL}{\PMgK} \]
+  #+end_export
+
+
+** Convexidad
+
+#+MATS: figcol fig-5_1004-is02-*.pdf 0.5
+
+- Suponemos que las isocuantas son convexas.
+
+- La convexidad implica una $\RMST$ decreciente.
+
+
+** Sustitución entre factores
+
+#+MATS: figcol fig-5_1004-is05-*.pdf 0.5
+
+- La curvatura de las isocuanta indica la facilidad con que puede
+  sustituirse un factor por el otro.
+
+
+** Sustitutos perfectos
+
+#+MATS: figcol fig-5_1004-is03-*.pdf 0.5
+
+- Las isocuantas son líneas rectas cuando los factores de producción
+  son *sustitutos perfectos*.
+
+- La $\RMST$ es constante en todos los puntos de una isocuanta.
+
+- Ejemplo: $Q = L + K$.
+
+
+** Función de producción de proporciones fijas
+
+#+MATS: figcol fig-5_1004-is04-*.pdf 0.5
+
+- *Tecnología de proporciones fijas*: en todos los puntos técnicamente
+  eficientes, los factores se combinan en la misma proporción.
+
+- La $\RMST$ no está definida en las combinaciones técnicamente
+  eficientes.
+
+- Ejemplo: $Q = \min\{K, L\}$.
+
+
+
+* Los rendimientos de escala
+
+
+** Los rendimientos de escala
+
+- *Rendimientos de escala*: ¿en qué medida aumenta la producción
+  cuando se incrementan *todos* los factores en la misma proporción?
+
+
+** Rendimientos constantes de escala (I)
+
+- *Rendimientos constantes de escala*: la empresa aumenta todos los
+  factores en una proporción $t$, $t > 1$, y el nivel de producción
+  crece exactamente en esa proporción:
+  #+begin_export latex
+  \[ F(t K, t L) = t F(K, L) \]
+  #+end_export
+
+
+** Rendimientos constantes de escala (y II)
+
+#+MATS: figcol fig-5_1004-re01-*.pdf 0.5
+
+- $B = 2 A$ y $Q_B = 2 Q_A$.
+
+- $C = 3 A$ y $Q_C = 3 Q_A$.
+
+
+** Rendimientos crecientes de escala (I)
+
+- *Rendimientos crecientes de escala*: la empresa aumenta
+  todos los factores en una proporción $t$, $t > 1$, y el nivel de
+  producción crece más que proporcionalmente:
+  #+begin_export latex
+  \[ F(t K, t L) > t F(K, L) \]
+  #+end_export
+
+
+** Rendimientos crecientes de escala (y II)
+
+#+MATS: figcol fig-5_1004-re02-*.pdf 0.5
+
+- $B = 2 A$ y $Q_B > 2 Q_A$.
+- $C = 3 A$ y $Q_C > 3 Q_A$.
+
+
+** Rendimientos decrecientes de escala (I)
+
+- *Rendimientos decrecientes de escala*: la empresa aumenta
+  todos los factores en una proporción $t$, $t > 1$, y el nivel de
+  producción crece menos que proporcionalmente:
+  #+begin_export latex
+  \[ F(t K, t L) < t F(K, L) \]
+  #+end_export
+
+
+** Rendimientos decrecientes de escala (y II)
+
+#+MATS: figcol fig-5_1004-re03-*.pdf 0.5
+
+- $B = 2 A$ y $Q_B < 2 Q_A$.
+- $C = 3 A$ y $Q_C < 3 Q_A$.
+
+
+** Rendimientos de escala variables
+
+- Los rendimientos de escala no necesariamente son iguales para todos
+  los posibles niveles de producción.

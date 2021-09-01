@@ -61,13 +61,9 @@
 
 #+include: "unit-4A_1004-en.org" :lines "6-"
 
-* Production in the short run
+* Production
 
-#+include: "unit-5A_1004-en.org" :lines "6-"
-
-* Production in the long run
-
-#+include: "unit-5B_1004-en.org" :lines "6-"
+#+include: "unit-5_1004-en.org" :lines "6-"
 
 * Costs
 

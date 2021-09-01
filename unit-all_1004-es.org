@@ -60,13 +60,9 @@
 
 #+include: "unit-4A_1004-es.org" :lines "6-"
 
-* La producción: el corto plazo
+* La producción
 
-#+include: "unit-5A_1004-es.org" :lines "6-"
-
-* La producción: el largo plazo
-
-#+include: "unit-5B_1004-es.org" :lines "6-"
+#+include: "unit-5_1004-es.org" :lines "6-"
 
 * Los costes
 

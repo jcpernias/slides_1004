@@ -1,6 +1,6 @@
 #+STARTUP: indent hidestars content
 
-#+TITLE: Unit 5A figures
+#+TITLE: Unit 5 figures
 
 
 #+PROPERTY: header-args:latex :noweb yes :eval no
@@ -10,7 +10,7 @@
 
 ** La curva de producto total
 
-#+begin_src latex :tangle fig-5A_1004-cp01.Rnw :noweb no
+#+begin_src latex :tangle fig-5_1004-cp01.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -86,7 +86,7 @@ cat("{",
 
 ** El producto marginal del trabajo
 
-#+begin_src latex :tangle fig-5A_1004-cp03.Rnw :noweb no
+#+begin_src latex :tangle fig-5_1004-cp03.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -173,7 +173,7 @@ cat("{",
 
 ** La curva de producto marginal (I)
 
-#+begin_src latex :tangle fig-5A_1004-cp06.Rnw :noweb no
+#+begin_src latex :tangle fig-5_1004-cp06.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -257,7 +257,7 @@ Coordinates(A=A, B=B, E=E)
 
 ** La curva de producto marginal (y II)
 
-#+begin_src latex :tangle fig-5A_1004-cp06a.Rnw :noweb no
+#+begin_src latex :tangle fig-5_1004-cp06a.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -340,7 +340,7 @@ Coordinates(C=C, D=D, E=E)
 
 ** Eficiencia técnica (I)
 
-#+begin_src latex :tangle fig-5A_1004-cp06b.Rnw :noweb no
+#+begin_src latex :tangle fig-5_1004-cp06b.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -423,7 +423,7 @@ Coordinates(C=C, D=D, E=E)
 
 ** Eficiencia técnica (y II)
 
-#+begin_src latex :tangle fig-5A_1004-cp08.Rnw :noweb no
+#+begin_src latex :tangle fig-5_1004-cp08.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -516,7 +516,7 @@ cat("{",
 
 ** Producto medio del trabajo
 
-#+begin_src latex :tangle fig-5A_1004-cp02.Rnw :noweb no
+#+begin_src latex :tangle fig-5_1004-cp02.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -604,7 +604,7 @@ cat("{",
 
 ** La curva de producto medio
 
-#+begin_src latex :tangle fig-5A_1004-cp07.Rnw :noweb no
+#+begin_src latex :tangle fig-5_1004-cp07.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -685,7 +685,7 @@ Coordinates(A=A, B=B)
 
 ** Producto total, medio y marginal (I)
 
-#+begin_src latex :tangle fig-5A_1004-cp05.Rnw :noweb no
+#+begin_src latex :tangle fig-5_1004-cp05.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -776,7 +776,7 @@ cat("{",
 
 ** Producto total, medio y marginal (y II)
 
-#+begin_src latex :tangle fig-5A_1004-cp04.Rnw :noweb no
+#+begin_src latex :tangle fig-5_1004-cp04.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -855,4 +855,341 @@ cat("{",
    (\Sexpr{Ltop}, 0) node[below] {$L$} ;
 \end{tikzpicture}
 
+#+end_src
+
+
+* Mapa de isocuantas
+
+#+begin_src latex :tangle fig-5_1004-is01.tex :noweb no
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+
+  \begin{scope}
+
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:17]
+      (\x, 25/\x)
+      node[right, font=\small] {$Q = 5$}
+      ;
+    \draw[CMe]
+      plot[smooth, samples=128, domain=3.764:17]
+      (\x, 64/\x)
+      node[right, font=\small] {$Q = 8$}
+      ;
+    \draw[CMe]
+      plot[smooth, samples=128, domain=7.117:17]
+      (\x, 121/\x)
+      node[right, font=\small] {$Q = 11$}
+      ;
+  \end{scope}
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+
+* Convexidad
+
+#+begin_src latex :tangle fig-5_1004-is02.tex :noweb no
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+
+  \coordinate (A) at (4, 6.25);
+  \coordinate (B) at (10, 2.5);
+
+  \coordinate (dA) at (1, -1.5625);
+  \coordinate (dB) at (1, -0.25);
+
+
+  \draw[CMe]
+    plot[smooth, samples=128, domain=1.470:17]
+    (\x, 25/\x)
+    node[right, font=\small] {$\overline{Q}$}
+    ;
+
+  \draw[curve, DarkGreen!70!Black]
+    ($(A) + 1*(dA)$) -- ($(A) - 1*(dA)$)
+    ($(B) + 2*(dB)$) -- ($(B) - 2*(dB)$)
+    ;
+
+  \node[dot] at (A) {};
+  \node[dot] at (B) {};
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+
+* Sustitución entre factores
+
+#+begin_src latex :tangle fig-5_1004-is05.tex :noweb no
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+
+
+
+  \draw[CMe]
+    plot[smooth, samples=128, domain=1.470:17]
+    (\x, 25/\x)
+    node[right, font=\small] {$\overline{Q}$}
+    ;
+
+
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+
+* Sustitutos perfectos
+
+#+begin_src latex :tangle fig-5_1004-is03.tex :noweb no
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+
+  \begin{scope}
+
+    \draw[CMe]
+      (1, 6) -- (5, 2)
+      node[right, font=\small] {$Q_{1}$}
+      ;
+    \draw[CMe]
+      (1, 12) -- (11, 2)
+      node[right, font=\small] {$Q_{2}$}
+      ;
+    \draw[CMe]
+      (2, 17) -- (17, 2)
+      node[right, font=\small] {$Q_{3}$}
+      ;
+  \end{scope}
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+
+* Proporciones fijas
+
+#+begin_src latex :tangle fig-5_1004-is04.tex :noweb no
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+
+  \begin{scope}
+    \draw[curve, DarkGreen!70!Black, thin, nearly transparent]
+      (0, 0) -- (17, 17)
+      ;
+
+    \draw[CMe]
+      (3,  17) |- (17, 3)
+      node[right, font=\small] {$Q_{1}$}
+      ;
+    \draw[CMe]
+      (6,  17) |- (17, 6)
+      node[right, font=\small] {$Q_{2}$}
+      ;
+    \draw[CMe]
+      (9,  17) |- (17, 9)
+      node[right, font=\small] {$Q_{3}$}
+      ;
+  \end{scope}
+
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+
+* Rendimientos constantes de escala
+
+#+begin_src latex :tangle fig-5_1004-re01.tex :noweb no
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+  \newcommand*{\Ax}{4}
+  \newcommand*{\Ay}{3}
+  \newcommand*{\Bx}{8}
+  \newcommand*{\By}{6}
+  \newcommand*{\Cx}{12}
+  \newcommand*{\Cy}{9}
+
+  \coordinate (A) at (\Ax, \Ay) ;
+  \coordinate (B) at (\Bx, \By) ;
+  \coordinate (C) at (\Cx, \Cy) ;
+
+  \draw[help lines]
+     (0, \Ay) node[left, font=\small] {\Ay} -|
+     (\Ax, 0) node[below, font=\small] {\Ax}
+     (0, \By) node[left, font=\small] {\By}  -|
+     (\Bx, 0) node[below, font=\small] {\Bx}
+     (0, \Cy) node[left, font=\small] {\Cy} -|
+     (\Cx, 0) node[below, font=\small] {\Cx}
+     ;
+
+  \draw[CMe]
+    (1, 12) .. controls +(-90:3) and +(135:3) ..
+    (\Ax, \Ay) .. controls +(-45:3) and +(180:3) ..
+    (15, 1)
+    node[right, font=\small] {$Q = 10$}
+    ;
+
+  \draw[CMe]
+    (5, 15) .. controls +(-90:3) and +(135:3) ..
+    (\Bx, \By) .. controls +(-45:3) and +(170:2) ..
+    (15, 3)
+    node[right, font=\small] {$Q = 20$}
+    ;
+
+  \draw[CMe]
+    (9, 17) .. controls +(-90:2) and +(135:2) ..
+    (\Cx, \Cy) .. controls +(-45:1) and +(160:1) ..
+    (15, 7)
+    node[right, font=\small] {$Q = 30$}
+    ;
+
+
+  \draw[curve, DarkGreen!70!Black, nearly transparent]
+    (0, 0) -- (16, 12)
+    ;
+
+  \node[dot, label={[font=\small, xshift=2]above:$A$}] at (A) {};
+  \node[dot, label={[font=\small, xshift=2]above:$B$}] at (B) {};
+  \node[dot, label={[font=\small, xshift=2]above:$C$}] at (C) {};
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+
+* Rendimientos crecientes de escala
+
+#+begin_src latex :tangle fig-5_1004-re02.tex :noweb no
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+  \newcommand*{\Ax}{4}
+  \newcommand*{\Ay}{3}
+  \newcommand*{\Bx}{8}
+  \newcommand*{\By}{6}
+  \newcommand*{\Cx}{12}
+  \newcommand*{\Cy}{9}
+
+  \coordinate (A) at (\Ax, \Ay) ;
+  \coordinate (B) at (\Bx, \By) ;
+  \coordinate (C) at (\Cx, \Cy) ;
+
+  \draw[help lines]
+     (0, \Ay) node[left, font=\small] {\Ay} -|
+     (\Ax, 0) node[below, font=\small] {\Ax}
+     (0, \By) node[left, font=\small] {\By}  -|
+     (\Bx, 0) node[below, font=\small] {\Bx}
+     (0, \Cy) node[left, font=\small] {\Cy} -|
+     (\Cx, 0) node[below, font=\small] {\Cx}
+     ;
+
+  \draw[CMe]
+    (1, 12) .. controls +(-90:3) and +(135:3) ..
+    (\Ax, \Ay) .. controls +(-45:3) and +(180:3) ..
+    (15, 1)
+    node[right, font=\small] {$Q = 10$}
+    ;
+
+  \draw[CMe]
+    (4, 14) .. controls +(-90:3) and +(135:3) ..
+    ($(\Bx, \By) - (1, 0.5)$) .. controls +(-45:3) and +(180:2) ..
+    (15, 3)
+    node[right, font=\small] {$Q = 20$}
+    ;
+
+  \draw[CMe]
+    (6.6, 15) .. controls +(-90:2) and +(135:2) ..
+    ($(\Cx, \Cy) - (3, 1.5)$) .. controls +(-45:2) and +(180:2) ..
+    (15, 6)
+    node[right, font=\small] {$Q = 30$}
+    ;
+
+
+  \draw[curve, DarkGreen!70!Black, nearly transparent]
+    (0, 0) -- (16, 12)
+    ;
+
+  \node[dot, label={[font=\small, xshift= 2]above:$A$}] at (A) {};
+  \node[dot, label={[font=\small, xshift=-1]above:$B$}] at (B) {};
+  \node[dot, label={[font=\small, xshift=-2]above:$C$}] at (C) {};
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+
+* Rendimientos decrecientes de escala
+
+#+begin_src latex :tangle fig-5_1004-re03.tex :noweb no
+\begin{tikzpicture}[xscale=0.25, yscale=0.25]
+  \newcommand*{\Ax}{4}
+  \newcommand*{\Ay}{3}
+  \newcommand*{\Bx}{8}
+  \newcommand*{\By}{6}
+  \newcommand*{\Cx}{12}
+  \newcommand*{\Cy}{9}
+
+  \coordinate (A) at (\Ax, \Ay) ;
+  \coordinate (B) at (\Bx, \By) ;
+  \coordinate (C) at (\Cx, \Cy) ;
+
+  \draw[help lines]
+     (0, \Ay) node[left, font=\small] {\Ay} -|
+     (\Ax, 0) node[below, font=\small] {\Ax}
+     (0, \By) node[left, font=\small] {\By}  -|
+     (\Bx, 0) node[below, font=\small] {\Bx}
+     (0, \Cy) node[left, font=\small] {\Cy} -|
+     (\Cx, 0) node[below, font=\small] {\Cx}
+     ;
+
+  \draw[CMe]
+    (1, 12) .. controls +(-90:3) and +(135:3) ..
+    (\Ax, \Ay) .. controls +(-45:3) and +(180:3) ..
+    (15, 1)
+    node[right, font=\small] {$Q = 10$}
+    ;
+
+  \draw[CMe]
+    (7, 14) .. controls +(-90:3) and +(135:2) ..
+    ($(\Bx, \By) + (1.2, 0.6)$) .. controls +(-45:2) and +(180:2) ..
+    (15, 4)
+    node[right, font=\small] {$Q = 20$}
+    ;
+
+  \draw[CMe]
+    (12, 15) .. controls +(-90:2.75) and +(135:0.75) ..
+    ($(\Cx, \Cy) + (1.5, 1)$) .. controls +(-45:0.75) and +(170:0.3) ..
+    (15, 9)
+    node[right, font=\small] {$Q = 30$}
+    ;
+
+
+  \draw[curve, DarkGreen!70!Black, nearly transparent]
+    (0, 0) -- (16, 12)
+    ;
+
+  \node[dot, label={[font=\small, xshift= 2]above:$A$}] at (A) {};
+  \node[dot, label={[font=\small, xshift=-3]above:$B$}] at (B) {};
+  \node[dot, label={[font=\small, xshift=-2]above:$C$}] at (C) {};
+
+  \draw[axis]
+    (0, 20) node[left] {$K$} |-
+    (20, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
 #+end_src
