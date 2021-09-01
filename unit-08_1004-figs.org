@@ -1,0 +1,1197 @@
+#+STARTUP: indent hidestars content
+
+#+TITLE: Unit 3 figures
+
+#+PROPERTY: header-args:latex :noweb yes :eval no
+
+* Variaciones en la renta
+
+
+** Cambios en la renta
+
+#+begin_src latex :tangle fig-08_1004-crc2.Rnw :noweb no
+  <<setup, cache=FALSE, include=FALSE>>=
+    opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+  @
+
+  <<init>>=
+    source("./R/CRC.R")
+    width <- 6
+   height <- 5
+  @
+
+
+  \begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+    yscale = \Sexpr{height / maxY}]
+
+  <<coords>>=
+  Coordinates(E0 = E0, E1 = E1, E2 = E2)
+  @
+
+
+    \draw[IMe]
+      (0, \Sexpr{Y0}) node[left, font=\scriptsize] {$M/P_{Y}$} --
+      (\Sexpr{Y0}, 0) node[below, font=\scriptsize] {$M/P_{X}$}
+      (0, \Sexpr{Y1}) node[left, font=\scriptsize] {$M'/P_{Y}$} --
+      (\Sexpr{Y1}, 0) node[below, font=\scriptsize] {$M'/P_{X}$}
+      (0, \Sexpr{Y2}) node[left, font=\scriptsize] {$M''/P_{Y}$} --
+      (\Sexpr{Y2}, 0) node[below, font=\scriptsize] {$M''/P_{X}$};
+
+
+  <<Axes>>=
+  Axis(maxX, maxY, "$X$", "$Y$")
+  @
+
+  \end{tikzpicture}
+#+end_src
+
+
+** Cambios en la decisión de consumo
+
+#+begin_src latex :tangle fig-08_1004-crc3.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CRC.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY}]
+
+<<coords>>=
+
+Coordinates(E0 = E0, E1 = E1, E2 = E2)
+
+@
+
+
+\draw[IMe]
+(0, \Sexpr{Y0}) node[left, font=\scriptsize] {$M/P_{Y}$} --
+(\Sexpr{Y0}, 0) node[below, font=\scriptsize] {$M/P_{X}$}
+(0, \Sexpr{Y1}) node[left, font=\scriptsize] {$M'/P_{Y}$} --
+(\Sexpr{Y1}, 0) node[below, font=\scriptsize] {$M'/P_{X}$}
+(0, \Sexpr{Y2}) node[left, font=\scriptsize] {$M''/P_{Y}$} --
+(\Sexpr{Y2}, 0) node[below, font=\scriptsize] {$M''/P_{X}$};
+
+\draw[CMe] \Sexpr{PBpath(I0)} ;
+\draw[CMe] \Sexpr{PBpath(I1)} ;
+\draw[CMe] \Sexpr{PBpath(I2)} ;
+
+%% \draw[curve, very thick, DarkGreen!70!Black, domain=0:70]
+%% plot (\x, {\Sexpr{b}*\x-\Sexpr{-c}*\x^2})
+%% node[right] {$\mathit{CRC}$};
+
+\begin{scope}[label distance=-4pt]
+  \node[dot, label={[font=\scriptsize]45:$E$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]45:$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]45:$E''$}] at (E2) {};
+\end{scope}
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+** Curva renta-consumo
+
+#+begin_src latex :tangle fig-08_1004-crc.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CRC.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY}]
+
+<<coords>>=
+
+Coordinates(E0 = E0, E1 = E1, E2 = E2)
+
+@
+
+
+  \draw[IMe]
+    (0, \Sexpr{Y0}) node[left, font=\scriptsize] {$M/P_{Y}$} --
+    (\Sexpr{Y0}, 0) node[below, font=\scriptsize] {$M/P_{X}$}
+    (0, \Sexpr{Y1}) node[left, font=\scriptsize] {$M'/P_{Y}$} --
+    (\Sexpr{Y1}, 0) node[below, font=\scriptsize] {$M'/P_{X}$}
+    (0, \Sexpr{Y2}) node[left, font=\scriptsize] {$M''/P_{Y}$} --
+    (\Sexpr{Y2}, 0) node[below, font=\scriptsize] {$M''/P_{X}$};
+
+  \draw[CMe] \Sexpr{PBpath(I0)} ;
+  \draw[CMe] \Sexpr{PBpath(I1)} ;
+  \draw[CMe] \Sexpr{PBpath(I2)} ;
+
+  \draw[curve, very thick, DarkGreen!70!Black, domain=0:70]
+    plot (\x, {\Sexpr{b}*\x-\Sexpr{-c}*\x^2})
+    node[right] {\CRC};
+
+\begin{scope}[label distance=0pt]
+  \node[dot, label={[font=\scriptsize]$E$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]$E''$}] at (E2) {};
+\end{scope}
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+** Curva de Engel
+
+#+begin_src latex :tangle fig-08_1004-eng.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CRC.R")
+width <- 6
+height <- 5
+maxM <- 160
+maxX <- 80
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxM}]
+
+<<coords>>=
+
+Coordinates(E0 = c(E0[1], sum(E0)),
+            E1 = c(E1[1], sum(E1)),
+            E2 = c(E2[1], sum(E2)))
+
+@
+
+\draw[help lines] let \p1=(E0), \p2=(E1), \p3=(E2) in
+   (0, \y1) node[left, font=\scriptsize] {$M$} -|
+   (\x1, 0) node[below, font=\scriptsize] {$X$}
+   (0, \y2) node[left, font=\scriptsize] {$M'$} -|
+   (\x2, 0) node[below, font=\scriptsize] {$X'$}
+   (0, \y3) node[left, font=\scriptsize] {$M''$} -|
+   (\x3, 0) node[below, font=\scriptsize] {$X''$}
+   ;
+
+  %% \draw[IMe]
+  %%   (0, \Sexpr{Y0}) node[left, font=\scriptsize] {$M/P_{Y}$} --
+  %%   (\Sexpr{Y0}, 0) node[below, font=\scriptsize] {$M/P_{X}$}
+  %%   (0, \Sexpr{Y1}) node[left, font=\scriptsize] {$M'/P_{Y}$} --
+  %%   (\Sexpr{Y1}, 0) node[below, font=\scriptsize] {$M'/P_{X}$}
+  %%   (0, \Sexpr{Y2}) node[left, font=\scriptsize] {$M''/P_{Y}$} --
+  %%   (\Sexpr{Y2}, 0) node[below, font=\scriptsize] {$M''/P_{X}$};
+
+  %% \draw[CMe] \Sexpr{PBpath(I0)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I1)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I2)} ;
+
+  \draw[curve, very thick, DarkGreen!70!Black, domain=0:60]
+    plot (\x, {\Sexpr{b-slope}*\x-\Sexpr{-c}*\x^2})
+    node[right] {$\CE$};
+
+\begin{scope}[label distance=0pt]
+  \node[dot, label={[font=\scriptsize]$E$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]$E''$}] at (E2) {};
+\end{scope}
+
+<<Axes>>=
+Axis(maxX, maxM, "$X$", "$M$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+
+* Variaciones en el precio de un bien
+
+
+** Cambios en el precio de un bien
+
+#+begin_src latex :tangle fig-08_1004-cpc2.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CPC.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY}]
+
+<<coords>>=
+
+Coordinates(Y0 = c(0, Y0), X0 = c(X0, 0),
+            X1 = c(X1, 0), X2 = c(X2, 0))
+
+Coordinates(E0 = opt[1,], E1 = opt[2, ], E2 = opt[3,])
+
+@
+
+
+  \draw[IMe]
+    (Y0) node[left, font=\scriptsize] {$M/P_{Y}$} --
+    (X0) node[below, font=\scriptsize] {$M/P_{X}$}
+    (Y0) -- (X1) node[below, font=\scriptsize] {$M/P'_{X}$}
+    (Y0) -- (X2) node[below, font=\scriptsize] {$M/P''_{X}$};
+
+  %% \draw[CMe] \Sexpr{PBpath(I0)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I1)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I2)} ;
+
+  %% \draw[curve, very thick, DarkGreen!70!Black]
+  %%    \Sexpr{PBpath(CPC)} node[right] {$\mathit{CPC}$};
+
+  %% \node[dot] at (E0) {};
+  %% \node[dot] at (E1) {};
+  %% \node[dot] at (E2) {};
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+** Cambios en la decisión de consumo
+
+#+begin_src latex :tangle fig-08_1004-cpc3.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CPC.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY}]
+
+<<coords>>=
+
+Coordinates(Y0 = c(0, Y0), X0 = c(X0, 0),
+            X1 = c(X1, 0), X2 = c(X2, 0))
+
+Coordinates(E0 = opt[1,], E1 = opt[2, ], E2 = opt[3,])
+
+@
+
+
+  \draw[IMe]
+    (Y0) node[left, font=\scriptsize] {$M/P_{Y}$} --
+    (X0) node[below, font=\scriptsize] {$M/P_{X}$}
+    (Y0) -- (X1) node[below, font=\scriptsize] {$M/P'_{X}$}
+    (Y0) -- (X2) node[below, font=\scriptsize] {$M/P''_{X}$};
+
+  \draw[CMe] \Sexpr{PBpath(I0)} ;
+  \draw[CMe] \Sexpr{PBpath(I1)} ;
+  \draw[CMe] \Sexpr{PBpath(I2)} ;
+
+  %% \draw[curve, very thick, DarkGreen!70!Black]
+  %%    \Sexpr{PBpath(CPC)} node[right] {$\mathit{CPC}$};
+  \begin{scope}[label distance=-4pt]
+  \node[dot, label={[font=\scriptsize]45:$E$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]45:$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]45:$E''$}] at (E2) {};
+  \end{scope}
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+** Curva precio consumo
+
+#+begin_src latex :tangle fig-08_1004-cpc.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CPC.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY}]
+
+<<coords>>=
+
+Coordinates(Y0 = c(0, Y0), X0 = c(X0, 0),
+            X1 = c(X1, 0), X2 = c(X2, 0))
+
+Coordinates(E0 = opt[1,], E1 = opt[2, ], E2 = opt[3,])
+
+@
+
+
+  \draw[IMe]
+    (Y0) node[left, font=\scriptsize] {$M/P_{Y}$} --
+    (X0) node[below, font=\scriptsize] {$M/P_{X}$}
+    (Y0) -- (X1) node[below, font=\scriptsize] {$M/P'_{X}$}
+    (Y0) -- (X2) node[below, font=\scriptsize] {$M/P''_{X}$};
+
+
+  \draw[CMe] \Sexpr{PBpath(I0)} ;
+  \draw[CMe] \Sexpr{PBpath(I1)} ;
+  \draw[CMe] \Sexpr{PBpath(I2)} ;
+
+  \draw[curve, very thick, DarkGreen!70!Black]
+     \Sexpr{PBpath(CPC)} node[right] {\CPC};
+
+  \begin{scope}[label distance=-4pt]
+  \node[dot, label={[font=\scriptsize]45:$E$}] at (E0) {};
+  \end{scope}
+  \node[dot, label={[font=\scriptsize]$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]$E''$}] at (E2) {};
+
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+** La curva de demanda individual
+
+#+begin_src latex :tangle fig-08_1004-dem.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CPC.R")
+width <- 6
+height <- 5
+maxX <- 55
+maxP <- 3
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxP}]
+
+<<coords>>=
+
+Coordinates(E0 = c(opt[1, 1], -sl0),
+            E1 = c(opt[2, 1], -sl1),
+            E2 = c(opt[3, 1], -sl2))
+
+@
+
+\draw[help lines] let \p1=(E0), \p2=(E1), \p3=(E2) in
+   (0, \y1) node[left, font=\scriptsize] {$P_{X}$} -|
+   (\x1, 0) node[below, font=\scriptsize] {$X$}
+   (0, \y2) node[left, font=\scriptsize] {$P'_{X}$} -|
+   (\x2, 0) node[below, font=\scriptsize] {$X'$}
+   (0, \y3) node[left, font=\scriptsize] {$P''_{X}$} -|
+   (\x3, 0) node[below, font=\scriptsize] {$X''$}
+   ;
+
+
+
+  \draw[curve, very thick, DarkGreen!70!Black]
+    plot[smooth] coordinates
+<<Coord>>=
+cat("{",
+  paste(coord(X, Px), collapse="\n"),
+    "}")
+@
+      node[right] {$D$};
+
+\begin{scope}[label distance=-4pt]
+  \node[dot, label={[font=\scriptsize]45:$E$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]45:$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]45:$E''$}] at (E2) {};
+\end{scope}
+
+
+<<Axes>>=
+Axis(maxX, maxP, "$X$", "$P_X$")
+@
+
+\end{tikzpicture}
+#+end_src
+
+
+* Efecto sustitución y efecto renta
+
+#+begin_src latex :tangle fig-08_1004-eres20.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/eres10.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY},
+  label distance=-6pt
+  ]
+
+<<coords>>=
+
+Coordinates("RP0-A" = rp0.A, "RP0-B" = rp0.B,
+            "RP1-B" = rp1.B,
+            "RPH-A" = rpH.A, "RPH-B" = rpH.B)
+
+Coordinates(E0 = E0, E1 = E1, EH = EH)
+
+@
+
+  \draw[help lines]
+     (\Sexpr{X0}, 0) node[below, font=\scriptsize] {$X_{0}$} --
+     \Sexpr{coord(E0)}
+     (\Sexpr{X1}, 0) node[below, font=\scriptsize] {$X_{1}$} --
+     \Sexpr{coord(E1)}
+     %% (\Sexpr{XH}, 0) -- \Sexpr{coord(EH)}
+     ;
+
+
+  \draw[IMe]
+    (RP0-A) -- (RP0-B)
+    (RP0-A) -- (RP1-B)
+    ;
+
+  \draw[CMe] \Sexpr{PBpath(I0)} node[right, font=\scriptsize] {$U_{0}$};
+  \draw[CMe] \Sexpr{PBpath(I1)} node[right, font=\scriptsize] {$U_{1}$};
+
+  %% \draw[curve, thick, DarkGreen!70!Black]  (RPH-A) -- (RPH-B) ;
+
+  \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]30:$E_{1}$}] at (E1) {};
+  %% \node[dot, label={[font=\footnotesize]45:$E_{H}$}] at (EH) {};
+
+   \draw[>=Stealth, ->, thick, Black,
+   shorten >=4pt, shorten <=4pt] (E0) -- (E1) ;
+  %% \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
+  %% \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
+
+  %% \node[font=\sffamily\bfseries\tiny] at (5, -1.9) {ES:} ;
+  %% \node[font=\sffamily\bfseries\tiny] at (5, -3.8) {ER:} ;
+  %% \node[font=\sffamily\bfseries\tiny] at (5, -5.6) {ET:} ;
+
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+#+begin_src latex :tangle fig-08_1004-eres22.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/eres12.R")
+width <- 6
+height <- 5
+@
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY},
+  ]
+
+<<coords>>=
+
+Coordinates("RP0-A" = rp0.A, "RP0-B" = rp0.B,
+            "RP1-B" = rp1.B,
+            "RPH-A" = rpH.A, "RPH-B" = rpH.B)
+
+Coordinates(E0 = E0, E1 = E1, EH = EH)
+
+@
+
+  \draw[help lines]
+     (\Sexpr{X0}, 0) node[below, font=\scriptsize] {$X_{0}$} --
+     \Sexpr{coord(E0)}
+     (\Sexpr{X1}, 0) node[below, font=\scriptsize] {$X_{1}$} --
+     \Sexpr{coord(E1)}
+     %% (\Sexpr{XH}, 0) -- \Sexpr{coord(EH)}
+     ;
+
+  \draw[IMe]
+    (RP0-A)  -- (RP0-B)
+    (RP0-A) -- (RP1-B)
+    ;
+
+  \draw[CMe] \Sexpr{PBpath(I0)} node[right, font=\scriptsize] {$U_{0}$};
+  \draw[CMe] \Sexpr{PBpath(I1)} node[right, font=\scriptsize] {$U_{1}$};
+
+
+  \node[dot, label={[font=\scriptsize]right:$E_{0}$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]right:$E_{1}$}] at (E1) {};
+
+
+   \draw[>=Stealth, ->, thick, Black, shorten >=4pt, shorten <=4pt]
+     (E0) -- (E1) ;
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+#+begin_src latex :tangle fig-08_1004-eres02.tex :noweb no
+\begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
+
+  \coordinate (E0) at (24, 24) ;
+  \coordinate (E1) at (3, 24) ;
+  \coordinate (EH) at (12, 96) ;
+  \coordinate (ES) at (17, 136) ;
+  \coordinate (EE) at (6, 6) ;
+
+
+  \draw[IMe] (0, 72) -- (36, 0)
+             (0, 72) -- (4.5, 0)
+             ;
+
+  \draw[help lines]
+      (0, 24) node[left, font=\scriptsize] {24} -|
+      (3, 0) node[below, font=\scriptsize] {3}
+      (3, 24) -| (24, 0) node[below, font=\scriptsize] {24};
+
+  % \draw[curve, DarkGreen!70!Black, thick]
+  %      (8.9375, 145) -- (18, 0)
+       % (16.125, 150) -- (25.5, 0)
+       % (0, 18) -- (9, 0)
+       ;
+
+  \draw[CMe, domain=9.76:32,smooth,samples=64]
+     plot (\x,{24*(24/\x)^2})
+     node[right, font=\scriptsize] {$U_{0} = 24$} ;
+
+  \draw[CMe, domain=1.4:5,smooth,samples=64]
+     plot (\x,{6*(6/\x)^2})
+     node[right=-3pt, font=\scriptsize] {$U_{1} = 6$}
+     ;
+
+  % \draw[CMe, domain=16.187:36,smooth,samples=64]
+  %    plot (\x,{34*(34/\x)^2})
+  %    node[right, font=\scriptsize] {$U_{S} = 34$} ;
+
+
+  \begin{scope}[label distance=-4pt]
+    \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0)  {} ;
+    \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E1)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{H}$}] at (EH)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{S}$}] at (ES)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{E}$}] at (EE)  {} ;
+  \end{scope}
+
+
+\draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-08_1004-eres03.tex :noweb no
+\begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
+
+  \coordinate (E0) at (24, 24) ;
+  \coordinate (E1) at (3, 24) ;
+  \coordinate (EH) at (12, 96) ;
+  \coordinate (ES) at (17, 136) ;
+  \coordinate (EE) at (6, 6) ;
+
+
+  \draw[IMe, , nearly transparent] (0, 72) -- (36, 0) ;
+  \draw[IMe] (0, 72) -- (4.5, 0)
+             ;
+
+  \draw[help lines]
+      (0, 96) node[left, font=\scriptsize] {96} -|
+      (12, 0) node[below, font=\scriptsize] {12}
+  %     (3, 24) -| (24, 0) node[below, font=\scriptsize] {24}
+      ;
+
+  \draw[curve, DarkGreen!70!Black, thick]
+       (8.9375, 145) -- (18, 0)
+       % (16.125, 150) -- (25.5, 0)
+       % (0, 18) -- (9, 0)
+       ;
+
+  \draw[CMe, domain=9.76:32,smooth,samples=64]
+     plot (\x,{24*(24/\x)^2})
+     node[right, font=\scriptsize] {$U_{0} = 24$} ;
+
+  \draw[CMe, domain=1.4:5,smooth,samples=64, nearly transparent]
+     plot (\x,{6*(6/\x)^2})
+     node[right=-3pt, font=\scriptsize] {$U_{1} = 6$}
+     ;
+
+
+  % \draw[CMe, domain=16.187:36,smooth,samples=64]
+  %    plot (\x,{34*(34/\x)^2})
+  %    node[right, font=\scriptsize] {$U_{S} = 34$} ;
+
+
+  \begin{scope}[label distance=-4pt]
+    \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0)  {} ;
+    \node[dot, label={[font=\scriptsize]45:$E_{H}$}] at (EH)  {} ;
+    \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E1)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{S}$}] at (ES)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{E}$}] at (EE)  {} ;
+  \end{scope}
+
+
+
+\draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-08_1004-eres04.tex :noweb no
+\begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
+
+  \coordinate (E0) at (24, 24) ;
+  \coordinate (E1) at (3, 24) ;
+  \coordinate (EH) at (12, 96) ;
+  \coordinate (ES) at (17, 136) ;
+  \coordinate (EE) at (6, 6) ;
+
+
+  \draw[IMe, nearly transparent] (0, 72) -- (36, 0) ;
+  \draw[IMe, nearly transparent] (0, 72) -- (4.5, 0)
+             ;
+
+  \draw[help lines]
+      (EH) -- (12, 0) node[below, font=\scriptsize] {12}
+      (E0) -- (24, 0) node[below, font=\scriptsize] {24}
+      (E1) -- (3, 0) node[below, font=\scriptsize] {3}
+      ;
+
+  \draw[curve, DarkGreen!70!Black, thick, nearly transparent]
+       (8.9375, 145) -- (18, 0)
+       % (16.125, 150) -- (25.5, 0)
+       % (0, 18) -- (9, 0)
+       ;
+
+  \draw[CMe, domain=9.76:32,smooth,samples=64, nearly transparent]
+     plot (\x,{24*(24/\x)^2})
+     node[right, font=\scriptsize] {$U_{0} = 24$} ;
+
+  \draw[CMe, domain=1.4:5,smooth,samples=64, nearly transparent]
+     plot (\x,{6*(6/\x)^2})
+     node[right=-3pt, font=\scriptsize] {$U_{1} = 6$}
+     ;
+
+  % \draw[CMe, domain=16.187:36,smooth,samples=64]
+  %    plot (\x,{34*(34/\x)^2})
+  %    node[right, font=\scriptsize] {$U_{S} = 34$} ;
+
+  \draw[>=Stealth, ->, thick, Black,
+       shorten <= 4pt, shorten >= 4pt]
+       (E0) -- (EH)
+       node[pos=0.5, right, Black, font=\scriptsize\sffamily\bfseries]
+       {\ESLabel} ;
+
+  \draw[>=Stealth, ->, thick, Black,
+       shorten <= 4pt, shorten >= 4pt]
+       (EH) -- (E1)
+       node[pos=0.3, left, Black, font=\scriptsize\sffamily\bfseries]
+       {\ERLabel} ;
+
+
+  \begin{scope}[label distance=-4pt]
+    \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0)  {} ;
+    \node[dot, label={[font=\scriptsize]45:$E_{H}$}] at (EH)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{S}$}] at (ES)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{E}$}] at (EE)  {} ;
+  \end{scope}
+  \node[dot, label={[font=\scriptsize]right:$E_{1}$}] at (E1)  {} ;
+
+
+\draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-08_1004-eres10.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/eres10.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY},
+  label distance=-6pt
+  ]
+
+<<coords>>=
+
+Coordinates("RP0-A" = rp0.A, "RP0-B" = rp0.B,
+            "RP1-B" = rp1.B,
+            "RPH-A" = rpH.A, "RPH-B" = rpH.B)
+
+Coordinates(E0 = E0, E1 = E1, EH = EH)
+
+@
+
+  \draw[help lines]
+     (\Sexpr{X0}, 0) -- \Sexpr{coord(E0)}
+     (\Sexpr{X1}, 0) -- \Sexpr{coord(E1)}
+     (\Sexpr{XH}, 0) -- \Sexpr{coord(EH)}
+     ;
+
+
+  \draw[IMe]
+    (RP0-A) -- (RP0-B)
+    (RP0-A) -- (RP1-B)
+    ;
+
+  \draw[CMe] \Sexpr{PBpath(I0)} ;
+  \draw[CMe] \Sexpr{PBpath(I1)} ;
+
+  \draw[curve, thick, DarkGreen!70!Black]  (RPH-A) -- (RPH-B) ;
+
+  \node[dot, label={[font=\footnotesize]45:$E_{0}$}] at (E0) {};
+  \node[dot, label={[font=\footnotesize]30:$E_{1}$}] at (E1) {};
+  \node[dot, label={[font=\footnotesize]45:$E_{H}$}] at (EH) {};
+
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -1.9) -- (\Sexpr{XH}, -1.9) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
+
+  \node[font=\sffamily\bfseries\tiny] at (5, -1.9) {\ESLabel:} ;
+  \node[font=\sffamily\bfseries\tiny] at (5, -3.8) {\ERLabel:} ;
+  \node[font=\sffamily\bfseries\tiny] at (5, -5.6) {\ETLabel:} ;
+
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+#+begin_src latex :tangle fig-08_1004-eres11.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/eres11.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY},
+  label distance=-6pt
+  ]
+
+<<coords>>=
+
+Coordinates("RP0-A" = rp0.A, "RP0-B" = rp0.B,
+            "RP1-B" = rp1.B,
+            "RPH-A" = rpH.A, "RPH-B" = rpH.B)
+
+Coordinates(E0 = E0, E1 = E1, EH = EH)
+
+@
+
+  \draw[help lines]
+     (\Sexpr{X0}, 0) -- \Sexpr{coord(E0)}
+     (\Sexpr{X1}, 0) -- \Sexpr{coord(E1)}
+     (\Sexpr{XH}, 0) -- \Sexpr{coord(EH)}
+     ;
+
+
+  \draw[IMe]
+    (RP0-A) -- (RP0-B)
+    (RP0-A) -- (RP1-B)
+    ;
+
+  \draw[CMe] \Sexpr{PBpath(I0)} ;
+  \draw[CMe] \Sexpr{PBpath(I1)} ;
+
+  \draw[curve, thick, DarkGreen!70!Black]  (RPH-A) -- (RPH-B) ;
+
+  \node[dot, label={[font=\footnotesize]45:$E_{0}$}] at (E0) {};
+  \node[dot, label={[font=\footnotesize]30:$E_{1}$}] at (E1) {};
+  \node[dot, label={[font=\footnotesize]45:$E_{H}$}] at (EH) {};
+
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -1.9) -- (\Sexpr{XH}, -1.9) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
+
+  \node[font=\sffamily\bfseries\tiny] at (5, -1.9) {\ESLabel:} ;
+  \node[font=\sffamily\bfseries\tiny] at (5, -3.8) {\ERLabel:} ;
+  \node[font=\sffamily\bfseries\tiny] at (5, -5.6) {\ETLabel:} ;
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+#+begin_src latex :tangle fig-08_1004-eres12.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/eres12.R")
+width <- 6
+height <- 5
+@
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY},
+  label distance=-6pt
+  ]
+
+<<coords>>=
+
+Coordinates("RP0-A" = rp0.A, "RP0-B" = rp0.B,
+            "RP1-B" = rp1.B,
+            "RPH-A" = rpH.A, "RPH-B" = rpH.B)
+
+Coordinates(E0 = E0, E1 = E1, EH = EH)
+
+@
+
+  \draw[help lines]
+     (\Sexpr{X0}, 0) -- \Sexpr{coord(E0)}
+     (\Sexpr{X1}, 0) -- \Sexpr{coord(E1)}
+     (\Sexpr{XH}, 0) -- \Sexpr{coord(EH)}
+     ;
+
+  \draw[IMe]
+    (RP0-A)  -- (RP0-B)
+    (RP0-A) -- (RP1-B)
+    ;
+
+  \draw[CMe] \Sexpr{PBpath(I0)} ;
+  \draw[CMe] \Sexpr{PBpath(I1)} ;
+
+  \draw[curve, thick, DarkGreen!70!Black]  (RPH-A) -- (RPH-B) ;
+
+  \node[dot, label={[font=\footnotesize]45:$E_{0}$}] at (E0) {};
+  \node[dot, label={[font=\footnotesize]30:$E_{1}$}] at (E1) {};
+  \node[dot, label={[font=\footnotesize]45:$E_{H}$}] at (EH) {};
+
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -1.9) -- (\Sexpr{XH}, -1.9) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{XH}, -3.8) -- (\Sexpr{X1}, -3.8) ;
+  \draw[>=Stealth, |->, thick, DarkGreen!70!Black] (\Sexpr{X0}, -5.6) -- (\Sexpr{X1}, -5.6) ;
+
+  \node[font=\sffamily\bfseries\tiny] at (5, -1.9) {\ESLabel:} ;
+  \node[font=\sffamily\bfseries\tiny] at (5, -3.8) {\ERLabel:} ;
+  \node[font=\sffamily\bfseries\tiny] at (5, -5.6) {\ETLabel:} ;
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+#+begin_src latex :tangle fig-08_1004-eres05a.tex :noweb no
+\begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
+
+  \coordinate (E0) at (24, 24) ;
+  \coordinate (E1) at (3, 24) ;
+  \coordinate (EH) at (12, 96) ;
+  \coordinate (ES) at (17, 136) ;
+  \coordinate (EE) at (6, 6) ;
+
+
+  \draw[IMe, nearly transparent] (0, 72) -- (36, 0);
+  \draw[IMe] (0, 72) -- (4.5, 0)
+             ;
+
+  \draw[help lines]
+      (0, 136) node[left, font=\scriptsize] {136} -|
+      (17, 0) node[below, font=\scriptsize] {17}
+      % (E0) -- (24, 0) node[below, font=\scriptsize] {24}
+      % (E1) -- (3, 0) node[below, font=\scriptsize] {3}
+      ;
+
+  \draw[curve, DarkGreen!70!Black, thick]
+                    % (8.9375, 145) -- (18, 0)
+                    (16.125, 150) -- (25.5, 0)
+                    % (0, 18) -- (9, 0)
+                    ;
+  \draw[CMe, domain=9.76:32,smooth,samples=64, nearly transparent]
+     plot (\x,{24*(24/\x)^2})
+     node[right, font=\scriptsize] {$U_{0} = 24$} ;
+
+  \draw[CMe, domain=1.4:5,smooth,samples=64, nearly transparent]
+     plot (\x,{6*(6/\x)^2})
+     node[right=-3pt and -2pt, font=\scriptsize] {$U_{1} = 6$} ;
+
+  \draw[CMe, domain=16.187:32,smooth,samples=64]
+     plot (\x,{34*(34/\x)^2})
+     node[right, font=\scriptsize] {$U_{S} = 34$} ;
+
+
+  \begin{scope}[label distance=-4pt]
+    \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{H}$}] at (EH)  {} ;
+    \node[dot, label={[font=\scriptsize]45:$E_{S}$}] at (ES)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{E}$}] at (EE)  {} ;
+  \end{scope}
+  \node[dot, label={[font=\scriptsize]right:$E_{1}$}] at (E1)  {} ;
+
+  % \draw[>=Stealth, ->, thick, Black,
+  %      shorten <= 6pt, shorten >= 2pt]
+  %      ($(E0) + (0.75, 0)$) -- ($(ES) + (0.75, 0)$)
+  %      node[pos=0.8, right, Black, font=\scriptsize\sffamily\bfseries]
+  %      {ES} ;
+
+  % \draw[>=Stealth, ->, thick, Black,
+  %      shorten <= 4pt, shorten >= 4pt]
+  %      (ES) -- (E1)
+  %      node[pos=0.5, left, Black, font=\scriptsize\sffamily\bfseries]
+  %      {ER} ;
+
+
+\draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-08_1004-eres05.tex :noweb no
+\begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
+
+  \coordinate (E0) at (24, 24) ;
+  \coordinate (E1) at (3, 24) ;
+  \coordinate (EH) at (12, 96) ;
+  \coordinate (ES) at (17, 136) ;
+  \coordinate (EE) at (6, 6) ;
+
+
+  \draw[IMe, nearly transparent] (0, 72) -- (36, 0)
+             (0, 72) -- (4.5, 0)
+             ;
+
+  \draw[help lines]
+      (ES) -- (17, 0) node[below, font=\scriptsize] {17}
+      (E0) -- (24, 0) node[below, font=\scriptsize] {24}
+      (E1) -- (3, 0) node[below, font=\scriptsize] {3}
+      ;
+
+  \draw[curve, DarkGreen!70!Black, thick, nearly transparent]
+                    % (8.9375, 145) -- (18, 0)
+                    (16.125, 150) -- (25.5, 0)
+                    % (0, 18) -- (9, 0)
+                    ;
+  \draw[CMe, domain=9.76:32,smooth,samples=64, nearly transparent]
+     plot (\x,{24*(24/\x)^2})
+     node[right, font=\scriptsize] {$U_{0} = 24$} ;
+
+  \draw[CMe, domain=1.4:5,smooth,samples=64, nearly transparent]
+     plot (\x,{6*(6/\x)^2})
+     node[right=-3pt and -2pt, font=\scriptsize] {$U_{1} = 6$} ;
+
+  \draw[CMe, domain=16.187:32,smooth,samples=64, nearly transparent]
+     plot (\x,{34*(34/\x)^2})
+     node[right, font=\scriptsize] {$U_{S} = 34$} ;
+
+
+  \begin{scope}[label distance=-4pt]
+    \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{H}$}] at (EH)  {} ;
+    \node[dot, label={[font=\scriptsize]45:$E_{S}$}] at (ES)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{E}$}] at (EE)  {} ;
+  \end{scope}
+  \node[dot, label={[font=\scriptsize]right:$E_{1}$}] at (E1)  {} ;
+
+  \draw[>=Stealth, ->, thick, Black,
+       shorten <= 6pt, shorten >= 2pt]
+       ($(E0) + (0.75, 0)$) -- ($(ES) + (0.75, 0)$)
+       node[pos=0.8, right, Black, font=\scriptsize\sffamily\bfseries]
+       {ES} ;
+
+  \draw[>=Stealth, ->, thick, Black,
+       shorten <= 4pt, shorten >= 4pt]
+       (ES) -- (E1)
+       node[pos=0.5, left, Black, font=\scriptsize\sffamily\bfseries]
+       {ER} ;
+
+
+\draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-08_1004-eres06.tex :noweb no
+\begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
+
+  \coordinate (E0) at (24, 24) ;
+  \coordinate (E1) at (3, 24) ;
+  \coordinate (EH) at (12, 96) ;
+  \coordinate (ES) at (17, 136) ;
+  \coordinate (EE) at (6, 6) ;
+
+
+  \draw[IMe] (0, 72) -- (36, 0)
+             (0, 72) -- (4.5, 0)
+             ;
+
+  % \draw[help lines]
+  %     (ES) -- (17, 0) node[below, font=\scriptsize] {17}
+  %     (E0) -- (24, 0) node[below, font=\scriptsize] {24}
+  %     (E1) -- (3, 0) node[below, font=\scriptsize] {3}
+  %     ;
+
+  \draw[curve, DarkGreen!70!Black, thick]
+                    (8.9375, 145) -- (18, 0)
+                    (16.125, 150) -- (25.5, 0)
+                    % (0, 18) -- (9, 0)
+                    ;
+  \draw[CMe, domain=9.76:32,smooth,samples=64]
+     plot (\x,{24*(24/\x)^2})
+     node[right, font=\scriptsize] {$U_{0} = 24$} ;
+
+  \draw[CMe, domain=1.4:5,smooth,samples=64]
+     plot (\x,{6*(6/\x)^2})
+     node[right=-3pt and -2pt, font=\scriptsize] {$U_{1} = 6$} ;
+
+  \draw[CMe, domain=16.187:32,smooth,samples=64]
+     plot (\x,{34*(34/\x)^2})
+     node[right, font=\scriptsize] {$U_{S} = 34$} ;
+
+
+  \begin{scope}[label distance=-4pt]
+    \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0)  {} ;
+    \node[dot, label={[font=\scriptsize]45:$E_{H}$}] at (EH)  {} ;
+    \node[dot, label={[font=\scriptsize]45:$E_{S}$}] at (ES)  {} ;
+    % \node[dot, label={[font=\scriptsize]45:$E_{E}$}] at (EE)  {} ;
+  \end{scope}
+  \node[dot, label={[font=\scriptsize]right:$E_{1}$}] at (E1)  {} ;
+
+  % \draw[>=Stealth, ->, thick, Black,
+  %      shorten <= 4pt, shorten >= 4pt]
+  %      ($(E0) + (0.5, 0)$) -- ($(ES) + (0.5, 0)$)
+  %      node[pos=0.8, right, Black, font=\scriptsize\sffamily\bfseries]
+  %      {ES} ;
+
+  % \draw[>=Stealth, ->, thick, Black,
+  %      shorten <= 4pt, shorten >= 4pt]
+  %      (ES) -- (E1)
+  %      node[pos=0.5, left, Black, font=\scriptsize\sffamily\bfseries]
+  %      {ER} ;
+
+
+\draw[axis] (0,155) node[left] {$Y$} |- (39, 0) node[below] {$X$} ;
+\end{tikzpicture}
+
+#+end_src

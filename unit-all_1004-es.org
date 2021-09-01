@@ -20,8 +20,8 @@
 
 ** Principios básicos de la organización económica
 
-#+latex: \input{unit-1_1004-macros}
-#+include: "unit-1_1004-es.org" :lines "6-"
+#+latex: \input{unit-01_1004-macros}
+#+include: "unit-01_1004-es.org" :lines "6-"
 
 
 
@@ -30,17 +30,17 @@
 
 ** Los mercados competitivos
 
-#+include: "unit-1C_1004-es.org" :lines "6-"
+#+include: "unit-02_1004-es.org" :lines "6-"
 
 
 ** Elasticidad
 
-#+include: "unit-1D_1004-es.org" :lines "6-"
+#+include: "unit-03_1004-es.org" :lines "6-"
 
 
 ** Intervención en mercados competitivos
 
-#+include: "unit-1E_1004-es.org" :lines "6-"
+#+include: "unit-04_1004-es.org" :lines "6-"
 
 
 
@@ -49,27 +49,27 @@
 
 ** La restricción presupuestaria
 
-#+include: "unit-2A_1004-es.org" :lines "6-"
+#+include: "unit-05_1004-es.org" :lines "6-"
 
 
 ** Las preferencias
 
-#+include: "unit-2B_1004-es.org" :lines "6-"
+#+include: "unit-06_1004-es.org" :lines "6-"
 
 
 ** La elección del consumidor
 
-#+include: "unit-2C_1004-es.org" :lines "6-"
+#+include: "unit-07_1004-es.org" :lines "6-"
 
 
 ** La demanda
 
-#+include: "unit-3_1004-es.org" :lines "6-"
+#+include: "unit-08_1004-es.org" :lines "6-"
 
 
 ** Elección intertemporal
 
-#+include: "unit-4A_1004-es.org" :lines "6-"
+#+include: "unit-09_1004-es.org" :lines "6-"
 
 
 
@@ -78,9 +78,9 @@
 
 ** La producción
 
-#+include: "unit-5_1004-es.org" :lines "6-"
+#+include: "unit-10_1004-es.org" :lines "6-"
 
 
 ** Los costes
 
-#+include: "unit-6_1004-es.org" :lines "6-"
+#+include: "unit-11_1004-es.org" :lines "6-"

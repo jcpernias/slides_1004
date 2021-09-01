@@ -18,63 +18,67 @@
 
 * Introduction
 
+
 ** Basic principles of economic organization
 
-#+latex: \input{unit-1_1004-macros}
-#+include: "unit-1_1004-en.org" :lines "6-"
+#+latex: \input{unit-01_1004-macros}
+#+include: "unit-01_1004-en.org" :lines "6-"
 
 
 * Competitive markets
 
+
 ** Competitive markets
 
-#+include: "unit-1C_1004-en.org" :lines "6-"
+#+include: "unit-02_1004-en.org" :lines "6-"
 
 
 ** Elasticity
 
-#+include: "unit-1D_1004-en.org" :lines "6-"
+#+include: "unit-03_1004-en.org" :lines "6-"
 
 
 ** Intervention in competitive markets
 
-#+include: "unit-1E_1004-en.org" :lines "6-"
+#+include: "unit-04_1004-en.org" :lines "6-"
 
 
 * Consumer choice
 
+
 ** Budget constraint
 
-#+include: "unit-2A_1004-en.org" :lines "6-"
+#+include: "unit-05_1004-en.org" :lines "6-"
 
 
 ** Preferences
 
-#+include: "unit-2B_1004-en.org" :lines "6-"
+#+include: "unit-06_1004-en.org" :lines "6-"
 
 
 ** Consumer choice
 
-#+include: "unit-2C_1004-en.org" :lines "6-"
+#+include: "unit-07_1004-en.org" :lines "6-"
 
 
 ** Demand
 
-#+include: "unit-3_1004-en.org" :lines "6-"
+#+include: "unit-08_1004-en.org" :lines "6-"
 
 
 ** Intertemporal choice
 
-#+include: "unit-4A_1004-en.org" :lines "6-"
+#+include: "unit-09_1004-en.org" :lines "6-"
 
 
 * Production and costs
 
+
 ** Production
 
-#+include: "unit-5_1004-en.org" :lines "6-"
+#+include: "unit-10_1004-en.org" :lines "6-"
 
 
 ** Costs
 
-#+include: "unit-6_1004-en.org" :lines "6-"
+#+include: "unit-11_1004-en.org" :lines "6-"

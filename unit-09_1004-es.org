@@ -1,0 +1,249 @@
+# -*- ispell-dictionary: "spanish" -*-
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: Elección intertemporal
+
+
+#+MATS: bib
+#+begin_bibbox
+- Varian: :: /Microeconomía intermedia/. Capítulo 10.
+#+end_bibbox
+
+* Introducción
+
+
+** La decisión de consumo en dos periodos
+
+- El consumidor vive durante dos periodos temporales.
+
+- Dispone de una renta monetaria $M_1$ en el primer
+  periodo y $M_2$ en el segundo.
+
+- Debe decidir qué parte de la renta dedica al
+  consumo en cada periodo: $C_1$ y $C_2$.
+
+
+** Los mercados financieros
+
+- El consumidor tiene acceso a un mercado financiero donde puede
+  prestar o pedir prestado en el primer periodo al tipo de interés de
+  mercado, $r$.
+
+
+* Las preferencias intertemporales
+
+
+** Las preferencias intertemporales (I)
+
+#+MATS: figcol fig-09_1004-map01-*.pdf 0.50
+
+- El consumidor tiene unas preferencias regulares sobre $C_1$ y $C_2$,
+  representadas por la función de utilidad $U = U(C_1, C_2)$.
+
+
+** Las preferencias intertemporales (II)
+
+#+MATS: figcol fig-09_1004-rms01-*.pdf 0.50
+
+- Relación marginal de sustitución:
+  #+begin_export latex
+  \[\RMS = \frac{\mlabel{\UMgLabel_{C_1}}}{\mlabel{\UMgLabel_{C_2}}} \]
+  #+end_export
+
+
+** Las preferencias intertemporales (y III)
+
+- Si $\RMS > 1$ el consumidor está dispuesto a renunciar a más de
+  \money{1} de consumo futuro a cambio de \money{1} consumo presente:
+  *preferencia por el consumo presente*.
+
+- Cuando $\RMS < 1$ el consumidor valora \money{1} de consumo futuro
+  más que \money{1} de consumo presente: *preferencia por el consumo
+  futuro*.
+
+
+* La restricción presupuestaria intertemporal
+
+
+** El punto de dotación
+
+#+MATS: figcol fig-09_1004-ciri01-*.pdf 0.55
+
+- El consumidor siempre tiene la opción de no pedir prestado ni
+  prestar. En este caso $(C_1, C_2) = (M_1, M_2)$.
+
+- El acceso al mercado financiero pone a su disposición más opciones.
+
+
+** El consumidor pide prestado
+
+- El consumidor puede pedir prestado para incrementar su consumo en el
+  periodo 1 por encima de su renta en ese periodo:
+  #+begin_export latex
+  \[ C_1 - M_1 > 0 \]
+  #+end_export
+
+- El consumo en el periodo 2 sería igual a la renta del periodo 2
+  después de devolver el préstamo con los intereses:
+  #+begin_export latex
+  \[ C_2 = M_2 - (1 + r) (C_1 - M_1) \]
+  #+end_export
+
+
+** El consumidor presta
+
+- El consumidor puede prestar parte de su renta del primer periodo:
+  #+begin_export latex
+  \[ M_1 - C_1 > 0 \]
+  #+end_export
+
+- El consumo en el periodo 2 sería  mayor que la renta de ese periodo:
+  #+begin_export latex
+  \[ C_2 = M_2 + (1 + r) (M_1 - C_1) \]
+  #+end_export
+
+
+** La restricción presupuestaria intertemporal
+
+- En los dos casos llegamos a la misma expresión de la recta
+  presupuestaria intertemporal:
+  #+begin_export latex
+  \[ C_2 = M_2 + (1+ r) (M_1 - C_1) \]
+  #+end_export
+
+
+** Valor presente
+
+- Podemos reescribir la restricción intertemporal como la igualdad
+  entre el valor presente del flujo de renta y el valor presente del
+  flujo de consumo:
+  #+begin_export latex
+  \[  M_1 + \frac{M_2}{1+ r} = C_1 + \frac{C_2}{1 + r} \]
+  #+end_export
+
+
+** Valor futuro
+
+- Alternativamente, podemos reescribir la recta presupuestaria en
+  términos del valor futuro de los flujos de renta y consumo:
+  #+begin_export latex
+  \[  M_1(1+r) + M_2 = C_1(1 + r) + C_2 \]
+  #+end_export
+
+
+** La recta presupuestaria y el tipo de interés (I)
+
+#+MATS: figcol fig-09_1004-ciri02-*.pdf 0.55
+
+- La pendiente de la restricción intertemporal es igual a $-(1+r)$
+
+
+** La recta presupuestaria y el tipo de interés (y II)
+
+#+MATS: figcol fig-09_1004-ciri03-*.pdf 0.55
+
+- Cuando el tipo de interés varía la recta presupuestaria
+  intertemporal pivota alrededor del punto de las dotaciones
+  iniciales.
+
+- Si $r$ aumenta, la recta gira en sentido horario.
+
+
+* La elección del consumidor
+
+
+** La elección óptima
+
+- El consumidor elige una combinación de consumo presente y futuro
+  sobre su restricción intertemporal.
+
+- Condición de tangencia:
+  #+begin_export latex
+  \[ \RMS{} = 1 + r \]
+  #+end_export
+
+
+** Prestatarios
+
+#+MATS: figcol fig-09_1004-ciri05-*.pdf 0.55
+
+- La elección óptima en este caso implica:
+  #+begin_export latex
+  \[ M_1 < C_1 \]
+  #+end_export
+
+- El consumidor pide prestado en el primer periodo.
+
+
+
+** Prestamistas
+
+#+MATS: figcol fig-09_1004-ciri04-*.pdf 0.55
+
+- La elección óptima en este caso implica:
+  #+begin_export latex
+  \[ M_1 > C_1 \]
+  #+end_export
+
+- El consumidor presta parte de su renta en el periodo inicial.
+
+
+* El ahorro
+
+
+** El ahorro
+
+- Ahorro del consumidor:
+  #+begin_export latex
+  \[ S = M_1 - C_1 \]
+  #+end_export
+
+- Cuando el consumidor presta parte de su renta el ahorro es positivo:
+  #+begin_export latex
+  \[ S = M_1 - C_1 > 0 \]
+  #+end_export
+
+- Cuando el consumidor pide prestado en el primer periodo el ahorro es
+  negativo:
+  #+begin_export latex
+  \[ S = M_1 - C_1 < 0 \]
+  #+end_export
+
+
+** La curva de ahorro (I)
+
+- La *curva de ahorro* indica la cantidad de dinero que ahorra el
+  consumidor para cada posible tipo de interés:
+  #+begin_export latex
+  \[ S = S(r) \]
+  #+end_export
+
+
+** La curva de ahorro (II)
+
+#+MATS: figcol fig-09_1004-ciri06-*.pdf 0.55
+
+- Si el consumo en el primer periodo es un bien normal, un aumento del
+  tipo de interés aumenta el ahorro de los prestatarios.
+
+- El efecto sustitución y el efecto renta se refuerzan mutuamente.
+
+
+** La curva de ahorro (III)
+
+#+MATS: figcol fig-09_1004-ciri07-*.pdf 0.55
+
+- En el caso de un prestamista, el efecto renta tiene signo contrario
+  al efecto sustitución.
+
+- El ahorro podría decrecer con el tipo de interés para tipos de
+  interés lo suficientemente elevados, aunque el ahorro seguiría
+  siendo positivo.
+
+
+** La curva de ahorro (y IV)
+
+#+MATS: figcol fig-09_1004-cisv01-*.pdf 0.55
+
+- La curva de ahorro individual se vuelve hacia atrás para tipos de
+  interés elevados.

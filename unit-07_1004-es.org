@@ -1,0 +1,181 @@
+# -*- ispell-dictionary: "spanish" -*-
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: La elección del consumidor
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 3.
+- Varian: :: /Microeconomía intermedia/. Capítulos 2, 3, 4 y 5.
+#+end_bibbox
+
+* La elección óptima
+
+
+** Elección racional (I)
+
+- El consumidor selecciona, de entre todas las que tiene a su alcance,
+  aquella cesta que le reporta un mayor bienestar:
+  #+begin_export latex
+  \[
+    \max_{\displaystyle\{X^*, Y^*\}} U(X, Y)
+    \stext{sujeto a\ } M \geq P_{X} X + P_{Y} Y
+  \]
+  #+end_export
+
+** Elección racional (II)
+
+#+MATS: figcol fig-07_1004-oc01-*.pdf 0.4
+
+- El conjunto de oportunidades contiene todas las cestas que puede
+  comprar el consumidor.
+
+** Elección racional (III)
+
+#+MATS: figcol fig-07_1004-oc02-*.pdf 0.4
+
+- Cualquier cesta en $\overline{BC}$ es preferida a la cesta $A$ si se
+  cumple el supuesto de no saturación.
+
+** Elección racional (y IV)
+
+#+MATS: figcol fig-07_1004-oc03-*.pdf 0.4
+
+- La cesta óptima estará sobre la recta presupuestaria si se cumple el
+  supuesto de no saturación.
+
+
+
+
+* Soluciones interiores
+
+
+** Soluciones interiores
+
+- *Solución interior*: la cesta óptima $(X^*, Y^*)$ contiene alguna
+  unidad de cada uno de los bienes.
+
+
+** Condición de tangencia (I)
+
+#+MATS: figcol fig-07_1004-eq01-*.pdf 0.4
+
+- En la cesta $A$: $\RMS > P_X/P_Y$.
+
+
+** Condición de tangencia (II)
+
+#+MATS: figcol fig-07_1004-eq01a-*.pdf 0.4
+
+- El consumidor puede obtener un mayor nivel de utilidad si
+  incrementa su consumo de $X$.
+
+
+** Condición de tangencia (III)
+
+#+MATS: figcol fig-07_1004-eq02-*.pdf 0.4
+
+- En la cesta $B$: $\RMS < P_X/P_Y$.
+
+
+** Condición de tangencia (IV)
+
+#+MATS: figcol fig-07_1004-eq02a-*.pdf 0.4
+
+- El consumidor puede obtener un mayor nivel de utilidad si
+  disminuye su consumo de $X$.
+
+
+** Condición de tangencia (y V)
+
+#+MATS: figcol fig-07_1004-eq03-*.pdf 0.4
+
+- En la cesta $E$: $\RMS = P_X/P_Y$.
+
+- El consumidor no puede aumentar su utilidad variando el consumo de
+  $X$.
+
+
+** Condiciones de óptimo
+
+- Solución interior ($X^*, Y^* > 0$):
+
+  + Recta presupuestaria: $M = P_{X} X + P_{Y} Y$.
+
+  + Condición de tangencia: $\RMS = P_X/P_Y$.
+
+
+** Ejemplo: solución interior (I)
+
+- Función de utilidad: $U(X, Y) = X Y$.
+
+- Precios: $P_X = \price{2}$; $P_Y = \price{2}$.
+
+- Renta monetaria: $M = \money{70}$.
+
+
+** Ejemplo: solución interior (y II)
+
+#+MATS: figcol fig-07_1004-ej01-*.pdf 0.55
+
+- $X^* = 17.5; Y^*=17.5$.
+
+
+* Soluciones de esquina
+
+
+** Soluciones de esquina (I)
+
+- En una *solución de esquina* el consumo óptimo de algunos
+  bienes es $0$.
+
+
+** Soluciones de esquina (II)
+
+#+MATS: figcol fig-07_1004-eq10-*.pdf 0.4
+
+- En todas las cestas de la recta presupuestaria: $\RMS < P_X/P_Y$.
+
+- El consumidor compra $Y^*=M/P_Y$ unidades del bien $Y$ y $0$
+  unidades del bien $X$.
+
+
+** Soluciones de esquina (y III)
+
+#+MATS: figcol fig-07_1004-eq11-*.pdf 0.4
+
+- En todas las cestas de la recta presupuestaria: $\RMS > P_X/P_Y$.
+
+- El consumidor compra $X^*=M/P_X$ unidades del bien $X$ y $0$
+  unidades del bien $Y$.
+
+
+** Condiciones de óptimo
+
+- Solución de esquina cuando sólo se compra $X$:
+
+  + $X^* = M/P_X, Y^* = 0$
+
+  + $\RMS > P_X/P_Y$
+
+-  Soución de esquina cuando sólo se compra $Y$:
+
+  + $X^* = 0, Y^* = M/P_Y$
+
+  + $\RMS < P_X/P_Y$
+
+
+** Ejemplo: solución de esquina (I)
+
+- Función de utilidad: $U(X, Y) = (X + 50) Y$.
+
+- Precios: $P_X = \price{2}$; $P_Y = \price{2}$.
+
+- Renta monetaria: $M = \money{70}$.
+
+
+** Ejemplo: solución de esquina (y II)
+
+#+MATS: figcol fig-07_1004-ej02-*.pdf 0.55
+
+- $X^* = 0; Y^*=35$.

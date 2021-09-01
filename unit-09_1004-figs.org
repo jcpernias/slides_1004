@@ -1,0 +1,935 @@
+#+STARTUP: indent hidestars content
+
+#+TITLE: Unit 4A figures
+
+#+PROPERTY: header-args:latex :noweb yes :eval no
+
+* Las preferencias intertemporales
+
+
+** Las preferencias intertemporales (I)
+
+#+begin_src latex :tangle fig-09_1004-map01.tex :noweb no
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\Uone}{120}
+  \newcommand*{\Utwo}{300}
+  \newcommand*{\Uthree}{520}
+  \newcommand*{\Ufour}{770}
+
+
+  \draw[CMe, domain=2.8:43,smooth] plot (\x,\Uone/\x)
+    node[right] {$U_{1}$}
+    ;
+
+  \draw[CMe, domain=6.7:43,smooth] plot (\x,\Utwo/\x)
+    node[right] {$U_{2}$}
+    ;
+
+  \draw[CMe, domain=11.2:43,smooth] plot (\x,\Uthree/\x)
+    node[right] {$U_{3}$}
+    ;
+
+  \draw[CMe, domain=16:43,smooth] plot (\x,\Ufour/\x)
+    node[right] {$U_{4}$}
+    ;
+
+
+\draw[axis] (0,50) node[left] {$C_2$} |- (50, 0) node[below] {$C_1$} ;
+\end{tikzpicture}
+#+end_src
+
+
+** Las preferencias intertemporales (II)
+
+#+begin_src latex :tangle fig-09_1004-rms01.tex :noweb no
+\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+  \newcommand*{\const}{225}
+  \newcommand*{\Ax}{8}
+  \newcommand*{\Bx}{25}
+  \newcommand*{\Adx}{3}
+  \newcommand*{\Bdx}{8}
+
+  \coordinate (A) at ($ (\Ax, \const/\Ax) $) ;
+  \coordinate (Atg) at ($ (1, {-\const/(\Ax*\Ax)}) $) ;
+  \coordinate (A1) at ($ (A) -\Adx*(Atg) $) ;
+  \coordinate (A2) at ($ (A) +\Adx*(Atg) $) ;
+
+  \draw[CMe, domain=5:45,smooth] plot (\x,\const/\x) ;
+  \draw[curve, DarkGreen!70!Black]  (A1) --  (A2) ;
+  \node[dot] at (A) {} ;
+
+\draw[axis] (0,50) node[left] {$C_2$} |- (50, 0) node[below] {$C_1$} ;
+\end{tikzpicture}
+#+end_src
+
+
+* La restricción presupuestaria intertemporal
+
+
+** El punto de dotación
+
+#+begin_src latex :tangle fig-09_1004-ciri01.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+width <- 5
+height <- 5
+C2top <- 160
+C1top <- 100
+
+End <- c(40, 30)
+R01 <- c(0, 70)
+R02 <- c(70, 0)
+R11 <- c(0, 150)
+R12 <- c(50, 0)
+
+sl0 <- (R01[2] - R02[2]) / (R01[1] - R02[1])
+sl1 <- (R11[2] - R12[2]) / (R11[1] - R12[1])
+
+X0 <- 15
+Y0 <- R01[2] + sl0 * X0
+
+X1 <- 25
+Y1 <- R11[2] + sl1 * X1
+
+X2 <- 60
+Y2 <- R01[2] + sl0 * X2
+
+X3 <- 45
+Y3 <- R11[2] + sl1 * X3
+
+E0 <- c(X0, Y0)
+E1 <- c(X1, Y1)
+E2 <- c(X2, Y2)
+E3 <- c(X3, Y3)
+
+
+I0 <- PBfit (E0, c(5, 100), c(50, 45), sl0)
+I1 <- PBfit (E1, c(15, 135), c(50, 55), sl1, strength=0.4)
+I2 <- PBfit (E2, c(55, 50), c(75, 6), sl0)
+I3 <- PBfit (E3, c(40, 50), c(75, 4), sl1, strength=0)
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{width/C1top}, yscale = \Sexpr{height/C2top}]
+
+<<coord>>=
+
+Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
+            E0 = E0, E1 = E1, E2 = E2, E3 = E3)
+
+@
+
+  \draw[help lines]
+     let \p1 = (End) in
+     (0, \y1) node[left, font=\scriptsize] {$M_{2}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$M_{1}$}
+     ;
+
+  %% \draw[help lines]
+  %%    let \p1 = (E0) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+  %% \draw[help lines]
+  %%    let \p1 = (E2) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+
+
+  %% \draw[IMe]
+  %%     (R01) node[left, font=\scriptsize] {$M_{1}(1 + r) + M_{2}$} --
+  %%     (R02) node[below, font=\scriptsize] {$M_{1} + \dfrac{M2}{1+r}$}
+  %%     ;
+
+  %% \draw[IMe]
+  %%     (R11) --
+  %%     (R12)
+  %%     ;
+
+
+  %% \draw[CMe] \Sexpr{PBpath(I0)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I1)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I2)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I3)} ;
+
+
+     \begin{scope}[label distance=-3pt]
+       \node[dot, IMe] at (End) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E1) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E2) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
+     \end{scope}
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
+  %%    ;
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
+  %%    ;
+
+
+\draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
+    (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
+\end{tikzpicture}
+
+#+end_src
+
+
+** La recta presupuestaria y el tipo de interés (I)
+
+#+begin_src latex :tangle fig-09_1004-ciri02.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+width <- 5
+height <- 5
+C2top <- 160
+C1top <- 100
+
+End <- c(40, 30)
+R01 <- c(0, 70)
+R02 <- c(70, 0)
+R11 <- c(0, 150)
+R12 <- c(50, 0)
+
+sl0 <- (R01[2] - R02[2]) / (R01[1] - R02[1])
+sl1 <- (R11[2] - R12[2]) / (R11[1] - R12[1])
+
+X0 <- 15
+Y0 <- R01[2] + sl0 * X0
+
+X1 <- 25
+Y1 <- R11[2] + sl1 * X1
+
+X2 <- 60
+Y2 <- R01[2] + sl0 * X2
+
+X3 <- 45
+Y3 <- R11[2] + sl1 * X3
+
+E0 <- c(X0, Y0)
+E1 <- c(X1, Y1)
+E2 <- c(X2, Y2)
+E3 <- c(X3, Y3)
+
+
+I0 <- PBfit (E0, c(5, 100), c(50, 45), sl0)
+I1 <- PBfit (E1, c(15, 135), c(50, 55), sl1, strength=0.4)
+I2 <- PBfit (E2, c(55, 50), c(75, 6), sl0)
+I3 <- PBfit (E3, c(40, 50), c(75, 4), sl1, strength=0)
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{width/C1top}, yscale = \Sexpr{height/C2top}]
+
+<<coord>>=
+
+Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
+            E0 = E0, E1 = E1, E2 = E2, E3 = E3)
+
+@
+
+  \draw[help lines]
+     let \p1 = (End) in
+     (0, \y1) node[left, font=\scriptsize] {$M_{2}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$M_{1}$}
+     ;
+
+  %% \draw[help lines]
+  %%    let \p1 = (E0) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+  %% \draw[help lines]
+  %%    let \p1 = (E2) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+
+
+  \draw[IMe]
+      (R01) node[left, font=\scriptsize] {$M_{1}(1 + r) + M_{2}$} --
+      (R02) node[below, font=\scriptsize] {$M_{1} + \dfrac{M_{2}}{1+r}$}
+      ;
+
+  %% \draw[IMe]
+  %%     (R11) --
+  %%     (R12)
+  %%     ;
+
+
+  %% \draw[CMe] \Sexpr{PBpath(I0)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I1)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I2)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I3)} ;
+
+
+     \begin{scope}[label distance=-3pt]
+       \node[dot, IMe] at (End) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E1) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E2) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
+     \end{scope}
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
+  %%    ;
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
+  %%    ;
+
+
+\draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
+    (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
+\end{tikzpicture}
+
+#+end_src
+
+
+
+** La recta presupuestaria y el tipo de interés (y II)
+
+#+begin_src latex :tangle fig-09_1004-ciri03.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+width <- 5
+height <- 5
+C2top <- 160
+C1top <- 100
+
+End <- c(40, 30)
+R01 <- c(0, 70)
+R02 <- c(70, 0)
+R11 <- c(0, 150)
+R12 <- c(50, 0)
+
+sl0 <- (R01[2] - R02[2]) / (R01[1] - R02[1])
+sl1 <- (R11[2] - R12[2]) / (R11[1] - R12[1])
+
+X0 <- 15
+Y0 <- R01[2] + sl0 * X0
+
+X1 <- 25
+Y1 <- R11[2] + sl1 * X1
+
+X2 <- 60
+Y2 <- R01[2] + sl0 * X2
+
+X3 <- 45
+Y3 <- R11[2] + sl1 * X3
+
+E0 <- c(X0, Y0)
+E1 <- c(X1, Y1)
+E2 <- c(X2, Y2)
+E3 <- c(X3, Y3)
+
+
+I0 <- PBfit (E0, c(5, 100), c(50, 45), sl0)
+I1 <- PBfit (E1, c(15, 135), c(50, 55), sl1, strength=0.4)
+I2 <- PBfit (E2, c(55, 50), c(75, 6), sl0)
+I3 <- PBfit (E3, c(40, 50), c(75, 4), sl1, strength=0)
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{width/C1top}, yscale = \Sexpr{height/C2top}]
+
+<<coord>>=
+
+Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
+            E0 = E0, E1 = E1, E2 = E2, E3 = E3)
+
+@
+
+  \draw[help lines]
+     let \p1 = (End) in
+     (0, \y1) node[left, font=\scriptsize] {$M_{2}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$M_{1}$}
+     ;
+
+  %% \draw[help lines]
+  %%    let \p1 = (E0) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+  %% \draw[help lines]
+  %%    let \p1 = (E2) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+
+
+  \draw[IMe]
+      (R01) --
+      (R02)
+      ;
+
+  \draw[IMe]
+      (R11) --
+      (R12)
+      ;
+
+
+  %% \draw[CMe] \Sexpr{PBpath(I0)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I1)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I2)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I3)} ;
+
+
+     \begin{scope}[label distance=-3pt]
+       \node[dot, IMe] at (End) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E1) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E2) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
+     \end{scope}
+
+  \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+     ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
+     ;
+
+  \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+     ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
+     ;
+
+
+\draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
+    (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
+\end{tikzpicture}
+
+#+end_src
+
+
+* La elección del consumidor
+
+
+** Prestatarios
+
+#+begin_src latex :tangle fig-09_1004-ciri05.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+width <- 5
+height <- 5
+C2top <- 160
+C1top <- 100
+
+End <- c(40, 30)
+R01 <- c(0, 70)
+R02 <- c(70, 0)
+R11 <- c(0, 150)
+R12 <- c(50, 0)
+
+sl0 <- (R01[2] - R02[2]) / (R01[1] - R02[1])
+sl1 <- (R11[2] - R12[2]) / (R11[1] - R12[1])
+
+X0 <- 15
+Y0 <- R01[2] + sl0 * X0
+
+X1 <- 25
+Y1 <- R11[2] + sl1 * X1
+
+X2 <- 60
+Y2 <- R01[2] + sl0 * X2
+
+X3 <- 45
+Y3 <- R11[2] + sl1 * X3
+
+E0 <- c(X0, Y0)
+E1 <- c(X1, Y1)
+E2 <- c(X2, Y2)
+E3 <- c(X3, Y3)
+
+
+I0 <- PBfit (E0, c(5, 100), c(50, 45), sl0)
+I1 <- PBfit (E1, c(15, 135), c(50, 55), sl1, strength=0.4)
+I2 <- PBfit (E2, c(55, 50), c(75, 6), sl0)
+I3 <- PBfit (E3, c(40, 50), c(75, 4), sl1, strength=0)
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{width/C1top}, yscale = \Sexpr{height/C2top}]
+
+<<coord>>=
+
+Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
+            E0 = E0, E1 = E1, E2 = E2, E3 = E3)
+
+@
+
+  \draw[help lines]
+     let \p1 = (End) in
+     (0, \y1) node[left, font=\scriptsize] {$M_{2}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$M_{1}$}
+     ;
+
+  %% \draw[help lines]
+  %%    let \p1 = (E0) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+  \draw[help lines]
+     let \p1 = (E2) in
+     (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+     ;
+
+
+  \draw[IMe]
+      (R01) --
+      (R02)
+      ;
+
+  %% \draw[IMe]
+  %%     (R11) --
+  %%     (R12)
+  %%     ;
+
+
+  %% \draw[CMe] \Sexpr{PBpath(I0)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I1)} ;
+  \draw[CMe] \Sexpr{PBpath(I2)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I3)} ;
+
+
+     \begin{scope}[label distance=-3pt]
+       \node[dot, IMe] at (End) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E1) {};
+       \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E2) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
+     \end{scope}
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
+  %%    ;
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
+  %%    ;
+
+
+\draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
+    (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
+\end{tikzpicture}
+
+#+end_src
+
+
+** Prestamistas
+
+#+begin_src latex :tangle fig-09_1004-ciri04.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+width <- 5
+height <- 5
+C2top <- 160
+C1top <- 100
+
+End <- c(40, 30)
+R01 <- c(0, 70)
+R02 <- c(70, 0)
+R11 <- c(0, 150)
+R12 <- c(50, 0)
+
+sl0 <- (R01[2] - R02[2]) / (R01[1] - R02[1])
+sl1 <- (R11[2] - R12[2]) / (R11[1] - R12[1])
+
+X0 <- 15
+Y0 <- R01[2] + sl0 * X0
+
+X1 <- 25
+Y1 <- R11[2] + sl1 * X1
+
+X2 <- 60
+Y2 <- R01[2] + sl0 * X2
+
+X3 <- 45
+Y3 <- R11[2] + sl1 * X3
+
+E0 <- c(X0, Y0)
+E1 <- c(X1, Y1)
+E2 <- c(X2, Y2)
+E3 <- c(X3, Y3)
+
+
+I0 <- PBfit (E0, c(5, 100), c(50, 45), sl0)
+I1 <- PBfit (E1, c(15, 135), c(50, 55), sl1, strength=0.4)
+I2 <- PBfit (E2, c(55, 50), c(75, 6), sl0)
+I3 <- PBfit (E3, c(40, 50), c(75, 4), sl1, strength=0)
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{width/C1top}, yscale = \Sexpr{height/C2top}]
+
+<<coord>>=
+
+Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
+            E0 = E0, E1 = E1, E2 = E2, E3 = E3)
+
+@
+
+  \draw[help lines]
+     let \p1 = (End) in
+     (0, \y1) node[left, font=\scriptsize] {$M_{2}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$M_{1}$}
+     ;
+
+  \draw[help lines]
+     let \p1 = (E0) in
+     (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+     ;
+  %% \draw[help lines]
+  %%    let \p1 = (E2) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+
+
+  \draw[IMe]
+      (R01) --
+      (R02)
+      ;
+
+  %% \draw[IMe]
+  %%     (R11) --
+  %%     (R12)
+  %%     ;
+
+
+  \draw[CMe] \Sexpr{PBpath(I0)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I1)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I2)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I3)} ;
+
+
+     \begin{scope}[label distance=-3pt]
+       \node[dot, IMe] at (End) {};
+       \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E1) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E2) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
+     \end{scope}
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
+  %%    ;
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
+  %%    ;
+
+
+\draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
+    (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
+\end{tikzpicture}
+
+#+end_src
+
+
+* El ahorro
+
+
+** La curva de ahorro (II)
+
+#+begin_src latex :tangle fig-09_1004-ciri06.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+width <- 5
+height <- 5
+C2top <- 65
+C1top <- 100
+
+End <- c(40, 30)
+R01 <- c(0, 70)
+R02 <- c(70, 0)
+R11 <- c(0, 150)
+R12 <- c(50, 0)
+
+sl0 <- (R01[2] - R02[2]) / (R01[1] - R02[1])
+sl1 <- (R11[2] - R12[2]) / (R11[1] - R12[1])
+
+X0 <- 15
+Y0 <- R01[2] + sl0 * X0
+
+X1 <- 25
+Y1 <- R11[2] + sl1 * X1
+
+X2 <- 60
+Y2 <- R01[2] + sl0 * X2
+
+X3 <- 45
+Y3 <- R11[2] + sl1 * X3
+
+E0 <- c(X0, Y0)
+E1 <- c(X1, Y1)
+E2 <- c(X2, Y2)
+E3 <- c(X3, Y3)
+
+Ya <- 60
+R01a <- c((Ya - R01[2])/sl0, Ya)
+R11a <- c((Ya - R11[2])/sl1, Ya)
+
+
+I0 <- PBfit (E0, c(5, 100), c(50, 45), sl0)
+I1 <- PBfit (E1, c(15, 135), c(50, 55), sl1, strength=0.4)
+I2 <- PBfit (E2, c(55, 50), c(75, 6), sl0)
+I3 <- PBfit (E3, c(40, 50), c(75, 4), sl1, strength=0)
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{width/C1top}, yscale = \Sexpr{height/C2top}]
+
+<<coord>>=
+
+Coordinates(End=End, R02 = R02, R12 = R12,
+            E2 = E2, E3 = E3,
+            R01a = R01a, R11a = R11a)
+
+@
+
+  \draw[help lines]
+     let \p1 = (End) in
+     (0, \y1) node[left, font=\scriptsize] {$M_{2}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$M_{1}$}
+     ;
+
+  %% \draw[help lines]
+  %%    let \p1 = (E0) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+  %% \draw[help lines]
+  %%    let \p1 = (E2) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+
+
+  \draw[IMe]
+      (R01a) --
+      (R02)
+      ;
+
+  \draw[IMe]
+      (R11a) --
+      (R12)
+      ;
+
+
+  %% \draw[CMe] \Sexpr{PBpath(I0)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I1)} ;
+  \draw[CMe] \Sexpr{PBpath(I2)} ;
+  \draw[CMe] \Sexpr{PBpath(I3)} ;
+
+
+     \begin{scope}[label distance=-3pt]
+       \node[dot, IMe] at (End) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E1) {};
+       \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E2) {};
+       \node[dot, label={[font=\scriptsize]right:$E_{1}$}] at (E3) {};
+     \end{scope}
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
+  %%    ;
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
+  %%    ;
+
+
+\draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
+    (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
+\end{tikzpicture}
+
+#+end_src
+
+
+** La curva de ahorro (III)
+
+#+begin_src latex :tangle fig-09_1004-ciri07.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+
+
+<<init>>=
+width <- 5
+height <- 5
+C2top <- 160
+C1top <- 100
+
+End <- c(40, 30)
+R01 <- c(0, 70)
+R02 <- c(70, 0)
+R11 <- c(0, 150)
+R12 <- c(50, 0)
+
+sl0 <- (R01[2] - R02[2]) / (R01[1] - R02[1])
+sl1 <- (R11[2] - R12[2]) / (R11[1] - R12[1])
+
+X0 <- 15
+Y0 <- R01[2] + sl0 * X0
+
+X1 <- 25
+Y1 <- R11[2] + sl1 * X1
+
+X2 <- 60
+Y2 <- R01[2] + sl0 * X2
+
+X3 <- 45
+Y3 <- R11[2] + sl1 * X3
+
+E0 <- c(X0, Y0)
+E1 <- c(X1, Y1)
+E2 <- c(X2, Y2)
+E3 <- c(X3, Y3)
+
+
+I0 <- PBfit (E0, c(5, 100), c(50, 45), sl0)
+I1 <- PBfit (E1, c(15, 135), c(50, 55), sl1, strength=0.4)
+I2 <- PBfit (E2, c(55, 50), c(75, 6), sl0)
+I3 <- PBfit (E3, c(40, 50), c(75, 4), sl1, strength=0)
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{width/C1top}, yscale = \Sexpr{height/C2top}]
+
+<<coord>>=
+
+Coordinates(End=End, R01=R01, R02 = R02, R11=R11, R12 = R12,
+            E0 = E0, E1 = E1, E2 = E2, E3 = E3)
+
+@
+
+  \draw[help lines]
+     let \p1 = (End) in
+     (0, \y1) node[left, font=\scriptsize] {$M_{2}$} -|
+     (\x1, 0) node[below, font=\scriptsize] {$M_{1}$}
+     ;
+
+  %% \draw[help lines]
+  %%    let \p1 = (E0) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+  %% \draw[help lines]
+  %%    let \p1 = (E2) in
+  %%    (0, \y1) node[left, font=\scriptsize] {$C_{2}$} -|
+  %%    (\x1, 0) node[below, font=\scriptsize] {$C_{1}$}
+  %%    ;
+
+
+  \draw[IMe]
+      (R01) --
+      (R02)
+      ;
+
+  \draw[IMe]
+      (R11) --
+      (R12)
+      ;
+
+
+  \draw[CMe] \Sexpr{PBpath(I0)} ;
+  \draw[CMe] \Sexpr{PBpath(I1)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I2)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I3)} ;
+
+
+     \begin{scope}[label distance=-3pt]
+       \node[dot, IMe] at (End) {};
+       \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E0) {};
+       \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E1) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{0}$}] at (E2) {};
+       %% \node[dot, label={[font=\scriptsize]45:$E_{1}$}] at (E3) {};
+     \end{scope}
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R02) + (0, -4)$)  -- ($(R12) + (0, -4)$)
+  %%    ;
+
+  %% \draw[curve, DarkGreen!70!Black, thick, >=Stealth, ->]
+  %%    ($(R01) + (-2.5,  0)$)  -- ($(R11) + (-2.5, 0)$)
+  %%    ;
+
+
+\draw[axis] (0,\Sexpr{C2top}) node[left] {$C_{2}$} |-
+    (\Sexpr{C1top}, 0) node[below] {$C_{1}$} ;
+\end{tikzpicture}
+
+#+end_src
+
+
+** La curva de ahorro (y IV)
+
+#+begin_src latex :tangle fig-09_1004-cisv01.tex :noweb no
+\begin{tikzpicture}[xscale = 0.05, yscale = 0.05]
+
+
+
+  \draw[CMe, DarkGreen!70!Black] (-20, 2)
+     .. controls (70, 30) and (70, 70) ..
+     (60, 80)
+     node[pos=0.8, right, font = \footnotesize] {$S(r)$}
+     ;
+
+
+
+
+
+\draw[axis, <->] (-25, 0) -- (75, 0) node[below] {$S$} ;
+\draw[axis, ->] (10, 0) node[below] {$0$} -- (10, 100) node[left] {$r$}  ;
+\end{tikzpicture}
+
+#+end_src

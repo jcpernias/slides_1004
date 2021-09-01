@@ -1,0 +1,244 @@
+# -*- ispell-dictionary: "spanish" -*-
+#+SETUPFILE: ./course-es.org
+
+#+TITLE: La restricción presupuestaria
+
+#+MATS: bib
+#+begin_bibbox
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 3.
+- Varian: :: /Microeconomía intermedia/. Capítulos 2, 3, 4 y 5.
+#+end_bibbox
+
+* La conducta del consumidor
+
+
+** Los consumidores
+
+- Cada *consumidor* dispone de una cantidad fija de *renta monetaria*,
+  $M$, con la que puede comprar en los diferentes mercados de bienes.
+
+- Un consumidor puede comprar cualquier número de unidades de un bien
+  al precio de mercado.
+
+
+** Simplificaciones
+
+- Sólo dos bienes $X$ e $Y$, cuyos precios son $P_X$ y $P_Y$.
+
+- Divisibilidad perfecta.
+
+- Un único período temporal.
+
+
+** Cestas de consumo (I)
+
+- Una *cesta de consumo* es un par de números que representan unidades
+  del bien $X$ y unidades del bien $Y$.
+
+
+** Cestas de consumo (y II)
+
+#+MATS: figcol fig-05_1004-xy-*.pdf 0.4
+
+- Cesta $A$: 1 unidad del bien $X$ y 3 unidades del bien $Y$.
+
+- Cesta $B$: 4 unidades de $X$ y 0 unidades de $Y$.
+
+
+** La elección racional
+
+- El consumidor *racional* selecciona la mejor cesta de entre todas
+  las que puede comprar.
+
+
+* La restricción presupuestaria
+
+
+** El gasto del consumidor
+
+- El *gasto total* por comprar $(X_0, Y_0)$ es
+  $P_X X_0 + P_Y Y_0$ euros.
+
+- $P_X X_0$ es el dinero gastado en $X$.
+
+- $P_Y Y_0$ es el dinero gastado en $Y$.
+
+
+** El conjunto presupuestario
+
+- El *conjunto presupuestario* de un consumidor está formado por todas
+  las cestas que puede comprar:
+  #+begin_export latex
+  \[ M \geq P_X X + P_Y Y \]
+  #+end_export
+
+
+** La recta presupuestaria (I)
+
+- La *recta presupuestaria* es el conjunto de cestas que agotan la
+  renta del consumidor:
+  #+begin_export latex
+  \[ M = P_X X + P_Y Y \]
+  #+end_export
+
+- Otra forma de expresarla:
+  #+begin_export latex
+  \[ Y = \frac{M}{P_Y} - \frac{P_X}{P_Y} X \]
+  #+end_export
+
+
+** La recta presupuestaria (II)
+
+#+MATS: figcol fig-05_1004-rp1-*.pdf 0.4
+
+- Puntos de corte: número máximo de unidades que el consumidor puede
+  comprar de cada bien.
+
+
+** La recta presupuestaria (III)
+
+#+MATS: figcol fig-05_1004-rp3-*.pdf 0.4
+
+- Cestas como $A$ son inasequibles.
+
+- El consumidor puede adquirir la cesta $B$ sin gastar toda su renta.
+
+- El consumidor gasta toda su renta si elige la cesta $C$.
+
+
+** La recta presupuestaria (y IV)
+
+#+MATS: figcol fig-05_1004-rp4-*.pdf 0.4
+
+- La pendiente es igual al *precio relativo* con signo negativo.
+
+
+
+** El precio relativo
+
+- El *precio relativo* del bien $X$, $P_X / P_Y$, es el precio de $X$
+  medido en unidades de $Y$.
+
+
+
+** El coste de oportunidad
+
+- Si el consumidor gasta toda su renta, el *coste de oportunidad* de
+  consumir una unidad adicional del bien $X$ son las unidades de $Y$
+  que debe dejar de consumir.
+
+
+** Precio relativo y coste de oportunidad
+
+#+MATS: figcol fig-05_1004-rp5-*.pdf 0.4
+
+- El coste de oportunidad coincide con el precio relativo:
+  #+begin_export latex
+  \[ \left|\frac{\Delta Y}{\Delta X}\right| = \frac{P_X}{P_Y} \]
+  #+end_export
+
+
+* Cambios en los precios y en la renta
+
+
+** Cambios en un precio (I)
+
+#+MATS: figcol fig-05_1004-rp6-*.pdf 0.4
+
+- Una disminución del precio de $X$:
+  #+begin_export latex
+  \[ P'_X < P_X\]
+  #+end_export
+
+
+
+** Cambios en un precio (y II)
+
+#+MATS: figcol fig-05_1004-rp7-*.pdf 0.4
+
+- Un aumento del precio de $Y$:
+  #+begin_export latex
+  \[ P'_Y > P_Y \]
+  #+end_export
+
+
+
+** Cambios en la renta
+
+#+MATS: figcol fig-05_1004-rp8-*.pdf 0.4
+
+- Un aumento de la renta:
+  #+begin_export latex
+  \[ M' > M \]
+  #+end_export
+
+
+
+
+* Extensiones
+
+
+** Bienes compuestos
+
+- A menudo sólo estamos interesados en un bien: $X$.
+
+- Usamos un *bien compuesto* en el papel del bien $Y$: la cantidad de
+  dinero que el consumidor gasta en otros bienes distintos de $X$.
+
+- Dado que $Y$ se mide en euros, $P_Y = 1$.
+
+- Recta presupuestaria:
+  #+begin_export latex
+  \[ M = P_X X + Y \]
+  #+end_export
+
+
+** Restricciones presupuestarias no lineales
+
+- La restricción presupuestaria es lineal si:
+
+  1. el consumidor puede adquirir cualquier cantidad de los bienes $X$
+     e $Y$ que pueda pagar con su renta; y
+
+  2. los precios, $P_X$ y $P_Y$, son independientes de las cantidades
+     que compre el consumidor.
+
+- Si se incumple alguna de esas condiciones la restricción
+  presupuestaria no es lineal.
+
+
+** Racionamiento
+
+#+MATS: figcol fig-05_1004-rac1-*.pdf 0.45
+
+- *Racionamiento*: El consumidor no puede comprar más de $\bar{X}$
+  unidades del bien $X$.
+
+
+** Subvenciones
+
+#+MATS: figcol fig-05_1004-orp2-*.pdf 0.45
+
+- El consumidor obtiene las primeras $\bar{X}$ unidades de $X$ a un
+  precio reducido $P'_X$.
+
+- Tiene que pagar el precio completo, $P_X > P'_X$, por unidades
+  adicionales.
+
+
+** Descuentos por volumen
+
+#+MATS: figcol fig-05_1004-orp4-*.pdf 0.45
+
+- Las primeras $\bar{X}$ unidades de $X$ se venden al precio
+  normal $P_X$.
+
+- Las restantes unidades se venden a un precio menor $P'_X < P_X$.
+
+
+** Donaciones
+
+#+MATS: figcol fig-05_1004-orp3-*.pdf 0.45
+
+- El consumidor no paga nada por las primeras $\bar{X}$ unidades de
+  $X$.

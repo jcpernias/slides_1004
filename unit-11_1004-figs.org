@@ -1,0 +1,2156 @@
+#+STARTUP: indent hidestars content
+
+#+TITLE: Unit 6 figures
+
+#+PROPERTY: header-args:latex :noweb yes :eval no
+
+* Las curvas de coste a corto plazo
+
+#+begin_src latex :tangle fig-11_1004-sr01.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                             # cm
+height <- 5 * 0.9
+
+Xtop <- 500
+Ytop <- 95
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+idx <- 60
+Coordinates(Q0 = c(0, Q[idx, 2]),
+            L0 = c(Q[idx, 1], 0),
+            Dot=Q[idx, ])
+
+@
+
+\draw[help lines]
+  (Q0) node[left, font=\small] {$Q_{0}$} -|
+  (L0) node[below, font=\small] {$L_{0}$}
+  ;
+
+\draw[decorate, decoration={markings,
+  mark=at position 0.25 with {\arrow{stealth}},
+  mark=at position 0.75 with {\arrow{stealth}}}]
+  (L0) -- (Dot) -- (Q0)
+  ;
+
+\draw[IMe]
+<<prod>>=
+plotCoord(Q)
+@
+  node[right, font=\small]  {$f(L)$}
+  ;
+
+\node[dot] at (Dot) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left] {$Q$} |-
+   (\Sexpr{Xtop}, 0) node[below] {$L$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-sr02.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Ytop <- 500
+Xtop <- 95
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+idx <- 60
+Coordinates(Q0 = c(Q[idx, 2], 0),
+            L0 = c(0, Q[idx, 1]),
+            Dot=Q[idx, c(2, 1)])
+
+@
+
+\draw[help lines]
+  (Q0) node[below, font=\small] {$Q_{0}$} |-
+  (L0) node[left, font=\small] {$L_{0}$}
+  ;
+
+\draw[decorate, decoration={markings,
+  mark=at position 0.25 with {\arrow{stealth}},
+  mark=at position 0.75 with {\arrow{stealth}}}]
+  (Q0) -- (Dot) -- (L0)
+  ;
+
+\draw[IMe]
+<<prod>>=
+plotCoord(CV)
+@
+  node[right, font=\small]  {$L(Q)$}
+  ;
+
+\node[dot] at (Dot) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left] {$L$} |-
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-sr03.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                             # cm
+height <- 5 * 0.9
+
+Xtop <- 95
+Ytop <- 500
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+idx <- 60
+Coordinates(C0 = c(0, CV[idx, 2]),
+            Q0 = c(CV[idx, 1], 0),
+            Dot=CV[idx, ])
+
+@
+
+\draw[help lines]
+  (C0) node[left, font=\small] {$\CV(Q_{0})$} -|
+  (Q0) node[below, font=\small] {$Q_{0}$}
+  ;
+
+\draw[decorate, decoration={markings,
+  mark=at position 0.25 with {\arrow{stealth}},
+  mark=at position 0.75 with {\arrow{stealth}}}]
+  (Q0) -- (Dot) -- (C0)
+  ;
+
+\draw[IMe]
+<<CV>>=
+plotCoord(CV)
+@
+  node[right, font=\small]  {$\CV$}
+  ;
+
+\node[dot] at (Dot) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left] {$\CV$} |-
+   node[left, font=\small] {\phantom{$\CV(Q_{0})$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-sr04.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Xtop <- 95
+Ytop <- 500
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+\draw[IMe, CadetBlue]
+<<CF>>=
+plotCoord(CF)
+@
+  node[right, font=\small]  {$\CF$}
+  ;
+
+
+\draw[IMe]
+<<CV>>=
+plotCoord(CV)
+@
+  node[right, font=\small]  {$\CV$}
+  ;
+
+\draw[IMe, DarkBlue]
+<<CT>>=
+plotCoord(CT)
+@
+  node[right, font=\small]  {$\CT$}
+  ;
+
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CV$} |-
+   (\Sexpr{Xtop}, 0) node[below] {$Q$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CF$}
+   (Ylabel2.south east) node[anchor=north east, inner ysep = 0]  {$\CT$}
+   ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-sr05.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Xtop <- 500
+Ytop <- 0.7
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+## idx <- 60
+## Coordinates(Q0 = c(0, Q[idx, 2]),
+##             L0 = c(Q[idx, 1], 0),
+##             Dot=Q[idx, ])
+
+@
+
+
+\draw[IMe, Brown]
+<<PMe>>=
+plotCoord(PMe)
+@
+  node[right, font=\small]  {$\PMeL$}
+  ;
+
+\draw[IMe, DarkGreen!70!Black]
+<<PMg>>=
+plotCoord(PMg)
+@
+  node[right, font=\small]  {$\PMgL$}
+  ;
+
+
+
+
+%% \draw[axis] (0,\Sexpr{Ytop})
+%%    node[left, align=left] {$\PMgL$\\$\PMeL$} |-
+%%    %% node[left, font=\small] {\phantom{$f(L_{0})$}}
+%%    (\Sexpr{Xtop}, 0) node[below] {$L$} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep = 0] (Ylabel) {$\PMgL$} |-
+   %% node[left, font=\small] {\phantom{$\CV(Q_{0})$}}
+   (\Sexpr{Xtop}, 0) node[below] {$L$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\PMeL$}
+   %% (Ylabel2.south east) node[anchor=north east]  {$\CT$}
+   ;
+
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-sr06.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Xtop <- 95
+Ytop <- 10
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[IMe, Brown]
+<<CVMe>>=
+plotCoord(CVMe)
+@
+  node[above, font=\small]  {$\CVMe$}
+  ;
+
+\draw[IMe, DarkGreen!70!Black]
+<<CMg>>=
+plotCoord(CMg)
+@
+  node[right, font=\small]  {$\CMg$}
+  ;
+
+
+%% \draw[axis] (0,\Sexpr{Ytop}) node[anchor=north east, align=left] {$\CVMe$\\$CMg$} |-
+%%    node[left] {\phantom{$\CFMe$}}
+%%    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
+   node[left] {\phantom{$\CVMe$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMg$}
+   %% (Ylabel2.south east) node[anchor=north east]  {$\CT$}
+   ;
+
+
+
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-sr07.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Xtop <- 95
+Ytop <- 10
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[IMe, CadetBlue]
+<<CFMe>>=
+plotCoord(CFMe)
+@
+  node[right, font=\small]  {$\CFMe$}
+  ;
+
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left] {$\CFMe$} |-
+   node[left] {\phantom{$\CVMe$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-sr08.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/srcost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.9                              # cm
+height <- 5 * 0.9
+
+Xtop <- 105
+Ytop <- 10
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[IMe, Brown]
+<<CVMe>>=
+plotCoord(CVMe)
+@
+  node[right, font=\small]  {$\CVMe$}
+  ;
+
+
+\draw[IMe, DarkBlue]
+<<CMe>>=
+plotCoord(CMe)
+@
+  node[above, font=\small]  {$\CMe$}
+  ;
+
+
+\draw[IMe, DarkGreen!70!Black]
+<<CMg>>=
+plotCoord(CMg)
+@
+  node[right, font=\small]  {$\CMg$}
+  ;
+
+
+%% \draw[axis] (0,\Sexpr{Ytop}) node[anchor=north east, align=left] {$\CMe$\\$\CVMe$\\$CMg$} |-
+%%    node[left] {\phantom{$\CVMe$}}
+%%    (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+
+\draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
+   node[left] {\phantom{$\CVMe$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$}
+   ;
+\draw
+   (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMg$}
+   (Ylabel2.south east) node[anchor=north east, inner ysep = 0]  {$\CMe$}
+   ;
+
+
+
+
+\end{tikzpicture}
+
+#+end_src
+
+
+#+begin_src latex :tangle fig-11_1004-sr09.Rnw :noweb no
+  <<setup, cache=FALSE, include=FALSE>>=
+    opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+  @
+
+  <<init>>=
+
+  ## Load code
+  source("./R/srcost.R")
+
+  ## Graphics parameters
+
+  width <- 5.5 * 0.9                              # cm
+  height <- 5 * 0.9
+
+  Xtop <- 105
+  Ytop <- 10
+
+  xscale <- width/Xtop
+  yscale <- height/Ytop
+
+
+  @
+
+  \begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+  \draw[IMe, Brown]
+  <<CVMe>>=
+  plotCoord(CVMe)
+  @
+    node[right, font=\small]  {$\CVMe$}
+    ;
+
+
+  \draw[IMe, DarkBlue]
+  <<CMe>>=
+  plotCoord(CMe)
+  @
+    node[above, font=\small]  {$\CMe$}
+    ;
+
+
+  \draw[axis] (0,\Sexpr{Ytop}) node[left, inner ysep=0] (Ylabel) {$\CVMe$} |-
+     node[left] {\phantom{$\CVMe$}}
+     (\Sexpr{Xtop}, 0) node[below] {$Q$}
+     ;
+  \draw
+     (Ylabel.south east) node[anchor=north east] (Ylabel2) {$\CMe$}
+     ;
+
+
+
+
+  \end{tikzpicture}
+
+#+end_src
+
+
+* La minimización del coste a largo plazo
+
+#+begin_src latex :tangle fig-11_1004-eq01.tex :noweb no
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
+
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$\overline{Q}$}
+      ;
+
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-eq02.tex :noweb no
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
+    \draw[IMe]
+      (0, 12.5) node[left, font=\small] {$\Cbar/r$} --
+      (18, 0) node[below, font=\small] {$\Cbar/w$}
+      ;
+
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-eq03.tex :noweb no
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
+
+    \draw[IMe]
+      (1, 3.47222) -- (4.56, 1) (4.56, 1.2) node[right, font=\small] {$C_{1}$}
+      (1, 7.63889) -- (10.56, 1) (10.56, 1.2) node[right, font=\small] {$C_{2}$}
+      (1, 11.805556) -- (15.84, 1.5) node[right, font=\small] {$C_{3}$}
+      (1, 15.972222) -- (18, 4.166667) node[right, font=\small] {$C_{4}$}
+      (4.08, 18) -- (18, 8.333333) node[right, font=\small] {$C_{5}$}
+      ;
+
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-eq04.tex :noweb no
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
+
+    \coordinate (A) at (2.2917961, 10.908475) ;
+    \coordinate (B) at (15.708201, 1.591525) ;
+
+    \draw[IMe]
+      (1, 3.47222) -- (4.56, 1)
+      (1, 7.63889) -- (10.56, 1)
+      (1, 11.805556) -- (16.56, 1)
+      (1, 15.972222) -- (18, 4.166667)
+      (4.08, 18) -- (18, 8.333333)
+      ;
+
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$\overline{Q}$}
+      ;
+      \begin{scope}[label distance=-3pt]
+        \node[dot, label={[font=\small]45:$A$}] at (A) {} ;
+        \node[dot, label={[font=\small,yshift=2]90:$B$}] at (B) {} ;
+      \end{scope}
+
+
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-eq06.tex :noweb no
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
+
+    \coordinate (A) at (2.2917961, 10.908475) ;
+    \coordinate (B) at (15.708201, 1.591525) ;
+
+    \draw[IMe]
+      (1, 3.47222) -- (4.56, 1)
+      (1, 7.63889) -- (10.56, 1)
+      (1, 11.805556) -- (16.56, 1)
+      (1, 15.972222) -- (18, 4.166667)
+      (4.08, 18) -- (18, 8.333333)
+      ;
+
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$\overline{Q}$}
+      ;
+
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[CMe]{stealth}},
+        mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
+      plot[samples=128, domain=2.2917961:6]
+      (\x, 25/\x)
+      ;
+
+      \begin{scope}[label distance=-3pt]
+        \node[dot, label={[font=\small]45:$A$}] at (A) {} ;
+      \end{scope}
+
+
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-eq07.tex :noweb no
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
+
+    \coordinate (A) at (2.2917961, 10.908475) ;
+    \coordinate (B) at (15.708201, 1.591525) ;
+
+    \draw[IMe]
+      (1, 3.47222) -- (4.56, 1)
+      (1, 7.63889) -- (10.56, 1)
+      (1, 11.805556) -- (16.56, 1)
+      (1, 15.972222) -- (18, 4.166667)
+      (4.08, 18) -- (18, 8.333333)
+      ;
+
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$\overline{Q}$}
+      ;
+
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[CMe]{stealth}},
+        mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
+      plot[samples=128, domain=15.708201:6]
+      (\x, 25/\x)
+      ;
+
+      \begin{scope}[label distance=-3pt]
+        \node[dot, label={[font=\small,yshift=2]90:$B$}] at (B) {} ;
+      \end{scope}
+
+
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-eq05.tex :noweb no
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
+
+    \coordinate (A) at (2.2917961, 10.908475) ;
+    \coordinate (B) at (15.708201, 1.591525) ;
+    \coordinate (E) at (6, 4.166667) ;
+
+    \draw[help lines]
+      let \p1 = (E) in
+      (0, \y1) node[left, font=\small] {$K^{*}$} -|
+      (\x1, 0) node[below, font=\small] {$L^{*}$}
+      ;
+
+    \draw[IMe]
+      (1, 3.47222) -- (4.56, 1)
+      (1, 7.63889) -- (10.56, 1)
+      (1, 11.805556) -- (16.56, 1)
+      (1, 15.972222) -- (18, 4.166667)
+      (4.08, 18) -- (18, 8.333333)
+      ;
+
+
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$\overline{Q}$}
+      ;
+
+
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[CMe]{stealth}},
+        mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
+      plot[samples=128, domain=15.708201:6]
+      (\x, 25/\x)
+      ;
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[CMe]{stealth}},
+        mark=at position 0.66 with {\arrow[CMe]{stealth}}}]
+      plot[samples=128, domain=2.2917961:6]
+      (\x, 25/\x)
+      ;
+
+      \begin{scope}[label distance=-3pt]
+        \node[dot, label={[font=\small]45:$E$}] at (E) {} ;
+      \end{scope}
+
+
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-eq08.tex :noweb no
+  \begin{tikzpicture}[xscale=0.2, yscale=0.2]
+
+    \coordinate (A) at (2.2917961, 10.908475) ;
+    \coordinate (B) at (15.708201, 1.591525) ;
+    \coordinate (E) at (9, 6.25) ;
+
+    \draw[help lines]
+      let \p1 = (E) in
+      (0, \y1) node[left, font=\small] {$K^{*}$} -|
+      (\x1, 0) node[below, font=\small] {$L^{*}$}
+      ;
+
+    \draw[IMe]
+      (0, 12.5) node[left, font=\small] {$\Cbar/r$} --
+      (18, 0) node[below, font=\small] {$\Cbar/w$}
+      ;
+
+
+    \draw[CMe]
+      plot[smooth, samples=128, domain=1.470:18]
+      (\x, 25/\x)
+      node[right, font=\small] {$Q_{1}$}
+      ;
+
+   \draw[CMe]
+      plot[smooth, samples=128, domain=3.2:18]
+      (\x, 56.25/\x)
+      node[right, font=\small, yshift=2] {$Q_{2}$ }
+      ;
+
+   \draw[CMe]
+      plot[smooth, samples=128, domain=5.555556:18]
+      (\x, 100/\x)
+      node[right, font=\small] {$Q_{3}$ }
+      ;
+
+
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[IMe]{stealth}},
+        mark=at position 0.66 with {\arrow[IMe]{stealth}}}]
+      (16.56, 1) -- (E)
+      ;
+      \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[IMe]{stealth}},
+        mark=at position 0.66 with {\arrow[IMe]{stealth}}}]
+      (1, 11.805556) -- (E)
+      ;
+
+      \begin{scope}[label distance=-3pt]
+        \node[dot, label={[font=\small]45:$E$}] at (E) {} ;
+      \end{scope}
+
+
+    \draw[axis]
+      (0, 22) node[left] {$K$} |-
+      (22, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
+#+end_src
+
+
+
+* Las curvas de coste a largo plazo
+
+#+begin_src latex :tangle fig-11_1004-exp02.tex :noweb no
+\begin{tikzpicture}[xscale=0.28, yscale=0.28]
+
+  \coordinate (Al) at (9, 6.25) ;
+  \coordinate (Bl) at (3, 2.0833333) ;
+  \coordinate (Ac) at (13.5, 4.1666667) ;
+  \coordinate (Bc) at (1.5, 4.16666667) ;
+  \coordinate (E)  at (6,   4.1666667) ;
+  \coordinate (slope) at ($ (1, -{125/180})$) ;
+
+  \draw[help lines]
+    let \p1=(Bl), \p2=(E), \p3=(Al) in
+    (0, \y1) node[left, font=\small] {$K(Q_{1})$ } -|
+    (\x1, 0) node[below, font=\small, xshift=-5] {$L(Q_{1})$ }
+    (0, \y2) node[left, font=\small] {$K(Q_{2})$ } -|
+    (\x2, 0) node[below, font=\small] {$L(Q_{2})$ }
+    (0, \y3) node[left, font=\small] {$K(Q_{3})$ } -|
+    (\x3, 0) node[below, font=\small,xshift=5] {$L(Q_{3})$ }
+    ;
+
+  \draw[IMe]
+    ($ (Al) - 2*(slope) $) -- ($ (Al) + 2*(slope) $)
+    ($ (E) - 1.5*(slope) $) -- ($ (E) + 1.5*(slope) $)
+    ($ (Bl) - 1.2*(slope) $) -- ($ (Bl) + 1.2*(slope) $)
+    ;
+
+
+  \draw[CMe]
+  plot[smooth, samples=128, domain=1.2:7]
+    (\x, 6.25/\x)
+    node[right, font=\small] {$Q_{1}$ }
+    ;
+
+  \draw[CMe]
+    plot[smooth, samples=128, domain=3:11]
+    (\x, 25/\x)
+    node[right, font=\small] {$Q_{2}$ }
+    ;
+  \draw[CMe]
+    plot[smooth, samples=128, domain=5:15]
+    (\x, 56.25/\x)
+    node[right, font=\small] {$Q_{3}$ }
+    ;
+
+
+  \draw[curve, DarkGreen!70!Black, very thick]
+    (0, 0) -- (15, 10.4166667)
+    ;
+
+
+
+    \begin{scope}[label distance=0pt]
+      \node[dot] at (Al) {} ;
+      \node[dot] at (Bl) {} ;
+      \node[dot] at (E) {} ;
+    \end{scope}
+
+
+  \draw[axis]
+    (0, 16) node[left] {$K$} |-
+    (16, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-clp01.tex :noweb no
+\begin{tikzpicture}[yscale=0.64, xscale=0.064]
+
+  \coordinate (Al) at (9, 6.25) ;
+  \coordinate (Bl) at (3, 2.0833333) ;
+  \coordinate (Ac) at (13.5, 4.1666667) ;
+  \coordinate (Bc) at (1.5, 4.16666667) ;
+  \coordinate (E)  at (6,   4.1666667) ;
+  \coordinate (slope) at ($ (1, -{125/180})$) ;
+
+  \draw[CMe, very thick, Brown!40!Black]
+  plot[smooth, samples=128, domain=0:60]
+    (\x, {0.69444444*sqrt(\x)} )
+    node[right, font=\small] {$\CT_{\LP}$ }
+    ;
+
+  \draw[axis]
+    (0, 7) node[left] {$\CT$} |-
+    (70, 0) node[below] {$Q$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-env08.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/cost.R")
+
+## Graphics parameters
+
+width <- 5.5 * 0.82                             # cm
+height <- 5 * 0.9
+
+Xtop <- 90
+Ytop <- 200
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<Coordinates>>=
+Coordinates(Q1=c(50, 0),
+            CMe1=CMe(par50, Q=50))
+@
+
+%% \draw[help lines]
+%%   (Q1) node[below, font=\small] {$Q_{e}$} --
+%%   (CMe1)
+%%   ;
+
+
+%% \draw[curve, orange]
+%% <<CMe50>>=
+%% plotCMe(par50, dom50)
+%% @
+%%   node[right, font=\small] {$\CMe_{e}$}
+%%   ;
+
+
+%% \draw[curve, DarkGreen!70!Black]
+%% <<CMg50>>=
+%% plotCMg(par50, domg50)
+%% @
+%%   node[above, font=\small] {$\CMg_{e}$}
+%%   ;
+
+
+\draw[curve, brown!40!Black, very thick]
+<<CMeL>>=
+plotCMe(parL, domCMeL)
+@
+  node[above, font=\small] {$\CMeLP$}
+  ;
+
+
+\draw[curve, magenta, very thick]
+<<CMgL>>=
+plotCMg(parL, domCMgL)
+@
+  node[right, font=\small] {$\CMgLP$}
+  ;
+
+
+%% \node[dot] at (CMe1) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left, align=left] {$\CMe$\\$\CMg$} |-
+   node[left] {\phantom{$\CMg$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-clp02.tex :noweb no
+\begin{tikzpicture}[yscale=0.9, xscale=0.9]
+
+  \draw[CMe, very thick, Brown!40!Black]
+    (0, 0) -- (3, 4)
+    node[right, font=\small] {$\CT_{\LP}$ }
+    ;
+
+  \draw[axis]
+    (0, 5) node[left] {$\CT$} |-
+    (5, 0) node[below] {$Q$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-clp03.tex :noweb no
+\begin{tikzpicture}[yscale=0.9, xscale=0.9]
+
+  \draw[CMe, very thick, Brown!40!Black]
+    (0, 1.2) node[left, font=\small] {$c$} -- (4.5, 1.2)
+    node[pos=0.78, above, font=\small] {$\CMeLP = \CMgLP$ }
+    ;
+
+
+\draw[axis] (0,5)
+   node[left, align=left] {$\CMe$\\$\CMg$} |-
+   (5, 0) node[below] {$Q$}
+   ;
+\end{tikzpicture}
+#+end_src
+
+
+
+* Relación entre los costes a corto y a largo plazo
+
+#+begin_src latex :tangle fig-11_1004-exp03.tex :noweb no
+\begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
+
+  \coordinate (Al) at (9, 6.25) ;
+  \coordinate (Bl) at (3, 2.0833333) ;
+  \coordinate (Ac) at (13.5, 4.1666667) ;
+  \coordinate (Bc) at (1.5, 4.16666667) ;
+  \coordinate (E)  at (6,   4.1666667) ;
+
+  \draw[CMe]
+  plot[smooth, samples=128, domain=1.2:7]
+    (\x, 6.25/\x)
+    node[right, font=\small, shift={(-0.1, 0)}] {$Q_{R}$ }
+    ;
+
+  \draw[CMe]
+    plot[smooth, samples=128, domain=3:11]
+    (\x, 25/\x)
+    node[right, font=\small, shift={(-0.1, -0.1)}] {$Q_{S}$ }
+    ;
+
+  \draw[CMe]
+    plot[smooth, samples=128, domain=5:15]
+    (\x, 56.25/\x)
+    node[right, font=\small, shift={(-0.1, -0.1)}] {$Q_{T}$ }
+    ;
+
+  \draw[curve, Orange!70!Black, thick]
+    (0, 4.16666667) node[left, font=\small] {$\Kbar$}
+    -- (16.5, 4.16666667)
+    ;
+
+
+    \begin{scope}[label distance=0pt]
+      % \node[dot, label={[font=\small]-90:$A_{L}$}] at (Al) {} ;
+      % \node[dot, label={[font=\small]-90:$B_{L}$}] at (Bl) {} ;
+      \node[dot, label={[font=\small]90:$T$}] at (Ac) {} ;
+      \node[dot, label={[font=\small]45:$R$}] at (Bc) {} ;
+      \node[dot, label={[font=\small]90:$S$}] at (E) {} ;
+    \end{scope}
+
+
+  \draw[axis]
+    (0, 16) node[left] {$K$} |-
+    (18, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-exp06.tex :noweb no
+  \begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
+
+    \coordinate (Al) at (9, 6.25) ;
+    \coordinate (Bl) at (3, 2.0833333) ;
+    \coordinate (Ac) at (13.5, 4.1666667) ;
+    \coordinate (Bc) at (1.5, 4.16666667) ;
+    \coordinate (E)  at (6,   4.1666667) ;
+
+
+
+    \draw[IMe]
+      (0.75, 3.6458333) -- (4.56, 1)
+      (1.5, 7.29166667) -- (10.56, 1)
+      (3, 10.4166667) -- (14.5, 2.4305556)
+      % (3.5, 11.111111) -- (15, 3.125)
+      % (0.75, 4.6875) -- (6.42, 0.75)
+      ;
+
+    \draw[CMe]
+    plot[smooth, samples=128, domain=1.2:7]
+      (\x, 6.25/\x)
+      node[right, font=\small, shift={(-0.1, 0)}] {$Q_{R}$ }
+      ;
+
+    \draw[CMe]
+      plot[smooth, samples=128, domain=3:11]
+      (\x, 25/\x)
+      node[right, font=\small, shift={(-0.1, -0.1)}] {$Q_{S}$ }
+      ;
+
+    \draw[CMe]
+      plot[smooth, samples=128, domain=5:15]
+      (\x, 56.25/\x)
+      node[right, font=\small, shift={(-0.1, -0.1)}] {$Q_{T}$ }
+      ;
+
+    \draw[curve, DarkGreen!70!Black, thick]
+      (0, 0) -- (15, 10.4166667)
+      ;
+
+
+      \begin{scope}[label distance=0pt]
+        \node[dot, label={[font=\small]-90:$T'$}] at (Al) {} ;
+        \node[dot, label={[font=\small]-90:$R'$}] at (Bl) {} ;
+        \node[dot, label={[font=\small]-90:$S'$}] at (E) {} ;
+      \end{scope}
+
+
+    \draw[axis]
+      (0, 16) node[left] {$K$} |-
+      (18, 0) node[below] {$L$}
+      ;
+  \end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-exp07.tex :noweb no
+\begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
+
+  \coordinate (Al) at (9, 6.25) ;
+  \coordinate (Bl) at (3, 2.0833333) ;
+  \coordinate (Ac) at (13.5, 4.1666667) ;
+  \coordinate (Bc) at (1.5, 4.16666667) ;
+  \coordinate (E)  at (6,   4.1666667) ;
+
+
+   \draw[CMe, nearly transparent]
+    plot[smooth, samples=128, domain=1.2:7]
+      (\x, 6.25/\x)
+      ;
+
+    \draw[CMe, nearly transparent]
+      plot[smooth, samples=128, domain=3:11]
+      (\x, 25/\x)
+      ;
+
+    \draw[CMe, nearly transparent]
+      plot[smooth, samples=128, domain=5:15]
+      (\x, 56.25/\x)
+      ;
+
+    \draw[curve, DarkGreen!70!Black, thick]
+      (0, 0) -- (15, 10.4166667)
+      ;
+
+
+
+  \draw[curve, DarkGreen!70!Black, thick]
+    (0, 0) -- (15, 10.4166667)
+    ;
+
+  \draw[curve, Orange!70!Black, semithick]
+    (0, 4.16666667) node[left, font=\small] {$\Kbar$}
+    -- (16.5, 4.16666667)
+    ;
+
+
+    \begin{scope}[label distance=0pt]
+      \node[dot, label={[font=\small]-90:$T'$}] at (Al) {} ;
+      \node[dot, label={[font=\small]-90:$R'$}] at (Bl) {} ;
+      \node[dot, label={[font=\small]90:$T$}] at (Ac) {} ;
+      \node[dot, label={[font=\small]45:$R$}] at (Bc) {} ;
+      \node[dot, label={[font=\small]90:$S$}] at (E) {} ;
+      \node[nodot, label={[font=\small]-90:$S'$}] at (E) {} ;
+    \end{scope}
+
+
+  \draw[axis]
+    (0, 16) node[left] {$K$} |-
+    (18, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+
+#+begin_src latex :tangle fig-11_1004-exp04.tex :noweb no
+\begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
+
+  \coordinate (Al) at (9, 6.25) ;
+  \coordinate (Bl) at (3, 2.0833333) ;
+  \coordinate (Ac) at (13.5, 4.1666667) ;
+  \coordinate (Bc) at (1.5, 4.16666667) ;
+  \coordinate (E)  at (6,   4.1666667) ;
+
+
+
+  \draw[IMe]
+    (0.75, 3.6458333) -- (4.56, 1)
+    (1.5, 7.29166667) -- (10.56, 1)
+    (3, 10.4166667) -- (14.5, 2.4305556)
+    % (3.5, 11.111111) -- (15, 3.125)
+    % (0.75, 4.6875) -- (6.42, 0.75)
+    ;
+
+  \draw[CMe]
+  plot[smooth, samples=128, domain=1.2:7]
+    (\x, 6.25/\x)
+    node[right, font=\small, shift={(-0.1, 0)}] {$Q_{R}$ }
+    ;
+
+  \draw[CMe]
+    plot[smooth, samples=128, domain=3:11]
+    (\x, 25/\x)
+    node[right, font=\small, shift={(-0.1, -0.1)}] {$Q_{S}$ }
+    ;
+
+  \draw[CMe]
+    plot[smooth, samples=128, domain=5:15]
+    (\x, 56.25/\x)
+    node[right, font=\small, shift={(-0.1, -0.1)}] {$Q_{T}$ }
+    ;
+
+  \draw[curve, DarkGreen!70!Black, semithick]
+    (0, 0) -- (15, 10.4166667)
+    ;
+
+  \draw[curve, Orange!70!Black, semithick]
+    (0, 4.16666667) node[left, font=\small] {$\Kbar$}
+    -- (16.5, 4.16666667)
+    ;
+
+
+    \begin{scope}[label distance=0pt]
+      \node[dot, label={[font=\small]-90:$T'$}] at (Al) {} ;
+      \node[dot, label={[font=\small]-90:$R'$}] at (Bl) {} ;
+      \node[dot, label={[font=\small]90:$T$}] at (Ac) {} ;
+      \node[dot, label={[font=\small]45:$R$}] at (Bc) {} ;
+      \node[dot, label={[font=\small]90:$S$}] at (E) {} ;
+    \end{scope}
+
+
+  \draw[axis]
+    (0, 16) node[left] {$K$} |-
+    (18, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-exp05.tex :noweb no
+\begin{tikzpicture}[xscale=0.2777777778, yscale=0.3125]
+
+  \coordinate (Al) at (9, 6.25) ;
+  \coordinate (Bl) at (3, 2.0833333) ;
+  \coordinate (Ac) at (13.5, 4.1666667) ;
+  \coordinate (Bc) at (1.5, 4.16666667) ;
+  \coordinate (E)  at (6,   4.1666667) ;
+
+
+  \draw[IMe]
+    (0.75, 3.6458333) -- (4.56, 1)
+    (1.5, 7.29166667) -- (10.56, 1)
+    (3, 10.4166667) -- (14.5, 2.4305556)
+    ;
+
+  \draw[IMe]
+    (3.5, 11.111111) -- (15, 3.125)
+    (0.75, 4.6875) -- (6.42, 0.75)
+    ;
+
+
+  \draw[CMe]
+  plot[smooth, samples=128, domain=1.2:7]
+    (\x, 6.25/\x)
+    ;
+
+  \draw[CMe]
+    plot[smooth, samples=128, domain=3:11]
+    (\x, 25/\x)
+    ;
+  \draw[CMe]
+    plot[smooth, samples=128, domain=5:15]
+    (\x, 56.25/\x)
+    ;
+
+  \draw[curve, DarkGreen!70!Black, thick, nearly transparent]
+    (0, 0) -- (15, 10.4166667)
+    ;
+
+  \draw[curve, Orange!70!Black, thick, nearly transparent]
+    (0, 4.16666667) node[left, font=\small] {$\Kbar$}
+    -- (16.5, 4.16666667)
+    ;
+
+
+    \begin{scope}[label distance=0pt]
+      \node[dot, label={[font=\small]-90:$T'$}] at (Al) {} ;
+      \node[dot, label={[font=\small]-90:$R'$}] at (Bl) {} ;
+      \node[dot, label={[font=\small]90:$T$}] at (Ac) {} ;
+      \node[dot, label={[font=\small]45:$R$}] at (Bc) {} ;
+      \node[dot, label={[font=\small]90:$S$}] at (E) {} ;
+      \node[nodot, label={[font=\small]-90:$S'$}] at (E) {} ;
+    \end{scope}
+
+
+  \draw[axis]
+    (0, 16) node[left] {$K$} |-
+    (18, 0) node[below] {$L$}
+    ;
+\end{tikzpicture}
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-env20.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/cost.R")
+
+## Graphics parameters
+
+width <- 5 * 0.9                           # cm
+height <- 5 * 0.9
+
+Xtop <- 55
+Ytop <- 5
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+c30 <- CMe(par30, 30)
+c30[2] <- 30 * c30[2]/1000
+Coordinates(A=c30)
+
+@
+
+\draw[help lines]
+  let \p1=(A) in
+  (\x1, 0) node[below, font=\small] {$Q_{S}$} -- (A)
+  ;
+
+\draw[curve, Orange!70!Black]
+<<CMe30>>=
+plotCoord(C30)
+@
+  node[above, font=\small]  {$\CT_{\CP}$}
+  ;
+
+
+\draw[curve, Brown!40!Black]
+<<CMeL>>=
+plotCoord(CL)
+@
+  node[above right, font=\small] {$\CT_{\LP}$}
+  ;
+
+
+\node[dot] at (A) {} ;
+
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left] {$\CT$} |-
+   %% node[left] {\phantom{$\CMg$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-env21.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/cost.R")
+
+## Graphics parameters
+
+width <- 5 * 0.9                            # cm
+height <- 5 * 0.9
+
+Xtop <- 90
+Ytop <- 200
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<Coordinates>>=
+Coordinates(Q1=c(30, 0), Q2=c(60, 0),
+            CMe1=CMe(par30, Q=30),
+            CMg1=CMg(par30, Q=30),
+            CMe2=CMe(par60, Q=60),
+            CMg2=CMg(par60, Q=60),
+            label=CMe(par30, dom30[1]))
+
+@
+
+\draw[help lines]
+  (Q1) node[below, font=\small] {$Q_{S}$} --
+  (CMe1)
+  %% (Q2) node[below, font=\small] {$Q_{2}$} --
+  %% (CMg2)
+  ;
+
+
+\draw[curve, orange]
+<<CMe30>>=
+plotCMe(par30, dom30)
+@
+  node[above, font=\small, xshift=4] at (label) {$\CMe_{\CP}$}
+  ;
+
+
+\draw[curve, DarkGreen!70!Black]
+<<CMg30>>=
+plotCMg(par30, domg30)
+@
+   node[above, font=\small, xshift=-4] {$\CMg_{\CP}$}
+  ;
+
+
+\draw[curve, brown!40!Black, very thick]
+<<CMeL>>=
+plotCMe(parL, domCMeL)
+@
+  node[above, font=\small] {$\CMeLP$}
+  ;
+
+
+\draw[curve, magenta, very thick]
+<<CMgL>>=
+plotCMg(parL, domCMgL)
+@
+  node[above, font=\small] {$\CMgLP$}
+  ;
+
+
+\node[dot] at (CMe1) {} ;
+
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left, align=left] {$\CMe$\\$\CMg$} |-
+   %% node[left] {\phantom{$\CMg$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+
+
+* La envolvente
+
+
+#+begin_src latex :tangle fig-11_1004-env01.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/cost.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Xtop <- 90
+Ytop <- 200
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+Coordinates(label=CMe(par30, dom30[1]))
+
+@
+
+
+\draw[curve, orange]
+<<CMe30>>=
+plotCMe(par30, dom30)
+@
+  node[above, font=\small] at (label) {$\CMe_{1}$}
+  ;
+
+
+\draw[curve, DarkGreen!70!Black]
+<<CMg30>>=
+plotCMg(par30, domg30)
+@
+  node[above, font=\small] {$\CMg_{1}$}
+  ;
+
+
+
+
+\draw[curve, orange]
+<<CMe60>>=
+plotCMe(par60, dom60)
+@
+  node[above, font=\small] {$\CMe_{2}$}
+  ;
+
+
+\draw[curve, DarkGreen!70!Black]
+<<CMg60>>=
+plotCMg(par60, domg60)
+@
+  node[above, font=\small] {$\CMg_{2}$}
+  ;
+
+
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left, align=left] {$\CMe$\\$\CMg$} |-
+   node[left] {\phantom{$\CMg$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-env02.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/cost.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Xtop <- 90
+Ytop <- 200
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+Coordinates(Ql = c(Ql, 0), Qh = c(Qh, 0), QX = c(Q3060, 0),
+    CMeX = CMe(par30, Q3060),
+    CMe1l=CMe(par30, Ql), CMe2l=CMe(par60, Ql),
+    CMe1h=CMe(par30, Qh), CMe2h=CMe(par60, Qh),
+    label=CMe(par30, dom30[1]))
+
+
+@
+
+\draw[help lines]
+   (QX) node[below, font=\small] {$Q_{A}$} -- (CMeX)
+   (Ql) node[below, font=\small] {$Q_{B}$} -- (CMe2l)
+   (Qh) node[below, font=\small] {$Q_{C}$} -- (CMe1h)
+   ;
+
+
+\draw[curve, orange]
+<<CMe30>>=
+plotCMe(par30, dom30)
+@
+  node[above, font=\small] at (label) {$\CMe_{1}$}
+  ;
+
+
+%% \draw[curve, DarkGreen!70!Black]
+%% <<CMg30>>=
+%% plotCMg(par30, domg30)
+%% @
+%%   node[above, font=\small] {$\CMg_{1}$}
+%%   ;
+
+
+
+
+\draw[curve, orange]
+<<CMe60>>=
+plotCMe(par60, dom60)
+@
+  node[above, font=\small] {$\CMe_{2}$}
+  ;
+
+
+%% \draw[curve, DarkGreen!70!Black]
+%% <<CMg60>>=
+%% plotCMg(par60, domg60)
+%% @
+%%   node[above, font=\small] {$\CMg_{2}$}
+%%   ;
+
+\node[dot] at (CMe1l) {} ;
+%% \node[dot] at (CMe2l) {} ;
+\node[dot] at (CMeX) {} ;
+%% \node[dot] at (CMe1h) {} ;
+\node[dot] at (CMe2h) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left, align=left] {$\CMe$\\$\CMg$} |-
+   node[left] {\phantom{$\CMg$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-env03.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/cost.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Xtop <- 90
+Ytop <- 200
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+Coordinates(Ql = c(Ql, 0), Qh = c(Qh, 0), QX = c(Q3060, 0),
+    CMeX = CMe(par30, Q3060),
+    CMe1l=CMe(par30, Ql), CMe2l=CMe(par60, Ql),
+    CMe1h=CMe(par30, Qh), CMe2h=CMe(par60, Qh))
+
+
+@
+
+
+
+
+%% \draw[help lines]
+%%    (QX) -- (CMeX)
+%%    ;
+
+
+\draw[curve, orange, semitransparent]
+<<CMe30>>=
+plotCMe(par30, dom30)
+@
+  %% node[above, font=\small] {$\CMe_{1}$}
+  ;
+
+
+
+\draw[curve, brown!40!Black, very thick]
+<<CMe30L>>=
+plotCMe(par30, domL30a)
+@
+  %% node[above, font=\small] {$\CMe_{1}$}
+  ;
+
+
+%% \draw[curve, DarkGreen!70!Black]
+%% <<CMg30>>=
+%% plotCMg(par30, domg30)
+%% @
+%%   node[above, font=\small] {$\CMg_{1}$}
+%%   ;
+
+
+
+
+\draw[curve, orange, semitransparent]
+<<CMe60>>=
+plotCMe(par60, dom60)
+@
+  %% node[above, font=\small] {$\CMe_{2}$}
+  ;
+
+\draw[curve, brown!40!Black, very thick]
+<<CMe60L>>=
+plotCMe(par60, domL60a)
+@
+  node[above, font=\small] {$\CMeLP$}
+  ;
+
+
+
+
+%% \draw[curve, DarkGreen!70!Black]
+%% <<CMg60>>=
+%% plotCMg(par60, domg60)
+%% @
+%%   node[above, font=\small] {$\CMg_{2}$}
+%%   ;
+
+
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left] {$\CMe$} |-
+   node[left] {\phantom{$\CMg$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-env04.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/cost.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Xtop <- 90
+Ytop <- 200
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<coord>>=
+
+Coordinates(QX = c(Q3060, 0),
+    CMg1X = CMg(par30, Q3060),
+    CMg2X = CMg(par60, Q3060),
+    CMeX = CMe(par30, Q3060))
+
+
+@
+
+
+
+
+\draw[help lines]
+   (QX) node[below, font=\small] {$Q_{A}$} -- (CMg1X)
+   ;
+
+
+\draw[curve, orange, semitransparent]
+<<CMe30>>=
+plotCMe(par30, dom30)
+@
+  %% node[above, font=\small] {$\CMe_{1}$}
+  ;
+
+
+
+\draw[curve, brown!40!Black, very thick]
+<<CMe30L>>=
+plotCMe(par30, domL30a)
+@
+  %% node[above, font=\small] {$\CMe_{1}$}
+  ;
+
+
+\draw[curve, DarkGreen!70!Black, nearly transparent]
+<<CMg30>>=
+plotCMg(par30, domg30)
+@
+  %% node[above, font=\small] {$\CMg_{1}$}
+  ;
+
+
+
+
+\draw[curve, orange, semitransparent]
+<<CMe60>>=
+plotCMe(par60, dom60)
+@
+  %% node[above, font=\small] {$\CMe_{2}$}
+  ;
+
+\draw[curve, brown!40!Black, very thick]
+<<CMe60L>>=
+plotCMe(par60, domL60a)
+@
+  node[above, font=\small] {$\CMeLP$}
+  ;
+
+
+
+
+\draw[curve, DarkGreen!70!Black, nearly transparent]
+<<CMg60>>=
+plotCMg(par60, domg60)
+@
+  %% node[above, font=\small] {$\CMg_{2}$}
+  ;
+
+
+\draw[curve, DarkGreen!70!Black, very thick]
+<<CMg60L>>=
+plotCMg(par60, domgL60a)
+@
+  node[above, font=\small] {$\CMgLP$}
+  ;
+
+\draw[curve, DarkGreen!70!Black, very thick]
+<<CMg30L>>=
+plotCMg(par30, domgL30a)
+@
+  %% node[above, font=\small] {$\CMgLP$}
+  ;
+
+\node[dot, DarkGreen!70!Black] at (CMg1X) {} ;
+\node[dot, DarkGreen!70!Black] at (CMg2X) {} ;
+
+
+
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left, align=left] {$\CMe$\\$\CMg$} |-
+   node[left] {\phantom{$\CMg$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-env05.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/cost.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Xtop <- 90
+Ytop <- 200
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+
+
+\draw[curve, orange, semitransparent]
+<<CMe15>>=
+plotCMe(par15, dom15)
+@
+  ;
+
+
+\draw[curve, orange, semitransparent]
+<<CMe30>>=
+plotCMe(par30, dom30)
+@
+  ;
+
+\draw[curve, orange, semitransparent]
+<<CMe40>>=
+plotCMe(par40, dom40)
+@
+  ;
+
+\draw[curve, orange, semitransparent]
+<<CMe50>>=
+plotCMe(par50, dom50)
+@
+  ;
+
+\draw[curve, orange, semitransparent]
+<<CMe60>>=
+plotCMe(par60, dom60)
+@
+  ;
+
+\draw[curve, orange, semitransparent]
+<<CMe70>>=
+plotCMe(par70, dom70)
+@
+  ;
+
+\draw[curve, brown!40!Black, very thick]
+<<CMeLP>>=
+plotCMe(par15, domL15)
+plotCMe(par30, domL30)
+plotCMe(par40, domL40)
+plotCMe(par50, domL50)
+plotCMe(par60, domL60)
+plotCMe(par70, domL70)
+
+@
+  node[right, font=\small] {$\CMeLP$}
+  ;
+
+
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left, align=left] {$\CMe$\\$\CMg$} |-
+   node[left] {\phantom{$\CMg$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-env06.Rnw :noweb no
+  <<setup, cache=FALSE, include=FALSE>>=
+    opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+  @
+
+  <<init>>=
+
+  ## Load code
+  source("./R/cost.R")
+
+  ## Graphics parameters
+
+  width <- 5                              # cm
+  height <- 5
+
+  Xtop <- 90
+  Ytop <- 200
+
+  xscale <- width/Xtop
+  yscale <- height/Ytop
+
+
+  @
+
+  \begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+  <<Coordinates>>=
+  Coordinates(Q1=c(30, 0), Q2=c(60, 0),
+              CMe1=CMe(par30, Q=30),
+              CMg1=CMg(par30, Q=30),
+              CMe2=CMe(par60, Q=60),
+              CMg2=CMg(par60, Q=60),
+              label=CMe(par30, dom30[1]))
+
+  @
+
+  \draw[help lines]
+    (Q1) node[below, font=\small] {$Q_{1}$} --
+    (CMe1)
+    (Q2) node[below, font=\small] {$Q_{2}$} --
+    (CMe2)
+    ;
+
+
+  \draw[curve, orange]
+  <<CMe30>>=
+  plotCMe(par30, dom30)
+  @
+    node[above, font=\small] at (label) {$\CMe_{1}$}
+    ;
+
+
+  \draw[curve, DarkGreen!70!Black]
+  <<CMg30>>=
+  plotCMg(par30, domg30)
+  @
+     node[above, font=\small] {$\CMg_{1}$}
+    ;
+
+
+
+
+  \draw[curve, orange]
+  <<CMe60>>=
+  plotCMe(par60, dom60)
+  @
+     node[above, font=\small] {$\CMe_{2}$}
+    ;
+
+
+  \draw[curve, DarkGreen!70!Black]
+  <<CMg60>>=
+  plotCMg(par60, domg60)
+  @
+     node[above, font=\small] {$\CMg_{2}$}
+    ;
+
+
+
+  \draw[curve, brown!40!Black, very thick]
+  <<CMeL>>=
+  plotCMe(parL, domCMeL)
+  @
+    node[right, font=\small] {$\CMeLP$}
+    ;
+
+
+  \draw[curve, magenta, very thick]
+  <<CMgL>>=
+  plotCMg(parL, domCMgL)
+  @
+    node[right, font=\small] {$\CMgLP$}
+    ;
+
+
+  \node[dot] at (CMe1) {} ;
+  \node[dot] at (CMe2) {} ;
+  % \node[dot] at (CMg1) {} ;
+  % \node[dot] at (CMg2) {} ;
+
+  \draw[axis] (0,\Sexpr{Ytop})
+     node[left, align=left] {$\CMe$\\$\CMg$} |-
+     node[left] {\phantom{$\CMg$}}
+     (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+  \end{tikzpicture}
+
+#+end_src
+
+#+begin_src latex :tangle fig-11_1004-env07.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+<<init>>=
+
+## Load code
+source("./R/cost.R")
+
+## Graphics parameters
+
+width <- 5                              # cm
+height <- 5
+
+Xtop <- 90
+Ytop <- 200
+
+xscale <- width/Xtop
+yscale <- height/Ytop
+
+
+@
+
+\begin{tikzpicture}[xscale = \Sexpr{xscale}, yscale = \Sexpr{yscale}]
+
+<<Coordinates>>=
+Coordinates(Q1=c(50, 0),
+            CMe1=CMe(par50, Q=50))
+@
+
+\draw[help lines]
+  (Q1) node[below, font=\small] {$Q_{e}$} --
+  (CMe1)
+  ;
+
+
+\draw[curve, orange]
+<<CMe50>>=
+plotCMe(par50, dom50)
+@
+  node[right, font=\small] {$\CMe_{e}$}
+  ;
+
+
+\draw[curve, DarkGreen!70!Black]
+<<CMg50>>=
+plotCMg(par50, domg50)
+@
+  node[above, font=\small] {$\CMg_{e}$}
+  ;
+
+
+\draw[curve, brown!40!Black, very thick]
+<<CMeL>>=
+plotCMe(parL, domCMeL)
+@
+  node[right, font=\small] {$\CMeLP$}
+  ;
+
+
+\draw[curve, magenta, very thick]
+<<CMgL>>=
+plotCMg(parL, domCMgL)
+@
+  node[right, font=\small] {$\CMgLP$}
+  ;
+
+
+\node[dot] at (CMe1) {} ;
+
+\draw[axis] (0,\Sexpr{Ytop})
+   node[left, align=left] {$\CMe$\\$\CMg$} |-
+   node[left] {\phantom{$\CMg$}}
+   (\Sexpr{Xtop}, 0) node[below] {$Q$} ;
+\end{tikzpicture}
+
+#+end_src

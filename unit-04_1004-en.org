@@ -1,0 +1,246 @@
+# -*- ispell-dictionary: "english" -*-
+#+SETUPFILE: ./course-en.org
+
+#+TITLE: Intervention in competitive markets
+
+#+MATS: bib
+#+begin_bibbox
+- Mankiw: ::  /Principles of Economics/. Chapter 6.
+- Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 2.
+#+end_bibbox
+
+* Introduction
+
+
+** Government intervention
+
+- Institutions: national security, domestic order, administration of
+  justice, etc.
+
+- Taxes, subsidies and transfers.
+
+- Regulation.
+
+
+** Justification
+
+- Reasons for Government intervention:
+
+  + *Market failures* undermine *economic efficiency*.
+
+  + *Equity*: income redistribution.
+
+
+* Controls on prices
+
+
+** Price regulation
+
+- The government considers that some markets harm buyers or sellers,
+  and it imposes limits on the prices of some goods.
+
+- Which are the consequences of price controls in a *competitive market*?
+
+
+** Price ceilings (I)
+
+#+MATS: figcol fig-04_1004-pmax1-*.pdf 0.48
+
+- The government tries to reduce the price paid by buyers.
+
+- The market price is not allowed to rise above a *maximum price*:
+  #+begin_export latex
+  \[ P \leq \Pmax \]
+  #+end_export
+
+
+** Price ceilings (II)
+
+#+MATS: figcol fig-04_1004-pmax2-*.pdf 0.48
+
+- When the equilibrium price is below the price ceiling the regulation
+  has no effect.
+
+
+** Price ceilings (and III)
+
+#+MATS: figcol fig-04_1004-pmax3-*.pdf 0.48
+
+- When the equilibrium price is above the price ceiling there is a
+  shortage in the market.
+
+- Buyers pay a lower price for the good but production is not enough
+  to satisfy demand.
+
+
+** Price floors (I)
+
+#+MATS: figcol fig-04_1004-pmin1-*.pdf 0.48
+
+- The government tries to raise the price received by sellers.
+
+- The market price is not allowed to drop below a *minimum price*:
+  #+begin_export latex
+  \[ P \geq \Pmin \]
+  #+end_export
+
+
+** Price floors (II)
+
+#+MATS: figcol fig-04_1004-pmin2-*.pdf 0.48
+
+- If the the equilibrium price is above the price floor, the
+  regulation has no effect.
+
+
+** Price floors (and III)
+
+#+MATS: figcol fig-04_1004-pmin3-*.pdf 0.48
+
+- When the equilibrium price is below the price floor there is a surplus
+  in the market.
+
+- Although sellers receive a higher price for the good, they do not
+  find buyers for all of their products.
+
+
+** Effects of price controls
+
+- In a *competitive market* price controls hurt those they are
+  trying to help.  There are often better alternatives.
+
+- In *non-competitive markets* price controls can be effective.
+
+
+* Taxes
+
+
+** Sales taxes
+
+- The government levies a tax of $t$ euros per unit sold in a market.
+
+- How does this tax affect a *competitive market*?
+
+- How is the burden of the tax distributed between buyers and sellers?
+
+
+** A tax on sellers (I)
+
+#+MATS: figcol fig-04_1004-st1-*.pdf 0.45
+
+ - The tax is collected by sellers.
+
+ - In addition to the production costs, the sellers have to pay the
+   tax to the government.
+
+ - The supply curve shifts upwards.
+
+
+** A tax on sellers (II)
+
+#+MATS: figcol fig-04_1004-st2-*.pdf 0.48
+
+- In the new equilibrium the quantity sold, $Q_1$, is lower and the
+  price paid by buyers, $P_1$, is higher.
+
+
+** A tax on sellers (III)
+
+#+MATS: figcol fig-04_1004-st4-*.pdf 0.48
+
+- The *tax revenues* are $T = Q_1 t$, the number of units sold
+  multiplied by the tax rate.
+
+
+** A tax on sellers (and IV)
+
+#+MATS: figcol fig-04_1004-st3-*.pdf 0.48
+
+- *Incidence of the tax*: how the tax burden is distributed between
+  buyers and sellers.
+
+- The price paid by buyers increases by less than the amount
+  of the tax.
+
+- The price received by sellers decreases by less than the amount of
+  the tax.
+
+
+** A tax on buyers (I)
+
+#+MATS: figcol fig-04_1004-bt1-*.pdf 0.45
+
+- The tax is collected by buyers.
+
+- Buyers have to pay both the price and the tax rate.
+
+- The demand curve shifts downwards.
+
+
+** A tax on buyers (II)
+
+#+MATS: figcol fig-04_1004-bt2-*.pdf 0.45
+
+- In the new equilibrium a lower quantity, $Q_1$, is sold and the
+  price that sellers receive, $P_1$, is lower.
+
+
+** A tax on buyers (III)
+
+#+MATS: figcol fig-04_1004-bt4-*.pdf 0.45
+
+- The *tax revenues* are $T = Q_1 t$, the number of units sold
+  multiplied by the tax rate.
+
+
+** A tax on buyers (and IV)
+
+#+MATS: figcol fig-04_1004-bt3-*.pdf 0.48
+
+- *Incidence of the tax*: how the tax burden is distributed between
+  buyers and sellers.
+
+- The price paid by buyers increases by less than the amount
+  of the tax.
+
+- The price received by sellers decreases by less than the amount of
+  the tax.
+
+
+** Incidence of taxes (I)
+
+#+MATS: figcol fig-04_1004-inc1-*.pdf 0.45
+
+- The tax incidence is *independent of who collects the tax*.
+
+- The distribution of the tax burden between buyers and sellers
+  depends on the elasticities of demand and supply.
+
+
+** Incidence of taxes (II)
+
+#+MATS: figcol fig-04_1004-inc2-*.pdf 0.45
+
+- If supply is relatively more inelastic than demand, sellers
+  support most of the tax burden.
+
+
+** Impact of taxes (and III)
+
+#+MATS: figcol fig-04_1004-inc3-*.pdf 0.45
+
+- If demand is relatively more inelastic than supply, buyers
+  support most of the tax burden.
+
+
+** Taxes effects
+
+ - When a sales tax is levied on a *competitive market*:
+
+   + A smaller quantity is sold.
+
+   + The tax burden is distributed between buyers and sellers,
+     independently of how the tax is collected.
+
+   + The tax burden falls more heavily on the less elastic side
+     of the market.

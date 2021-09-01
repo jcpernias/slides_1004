@@ -1,0 +1,346 @@
+#+STARTUP: indent hidestars content
+
+#+TITLE: Unit 2C figures
+
+#+PROPERTY: header-args:latex :noweb yes :eval no
+
+* Optimal choice
+
+
+** Common chunks
+
+#+begin_src latex :noweb-ref oc-scale
+  xscale = 0.08, yscale = 0.08
+#+end_src
+
+#+begin_src latex :noweb-ref oc-axes
+  \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+#+end_src
+
+#+begin_src latex :noweb-ref oc-budget
+  \coordinate (BL1) at (0, 42) ;
+  \coordinate (BL2) at (37, 0) ;
+  \path[save path=\pathBL, name path=BL] (BL1) -- (BL2) ;
+  \path[save path=\pathBLclosed] (BL1) -- (BL2) -- (0, 0) -- cycle;
+#+end_src
+
+
+
+** Opportunity set
+
+#+begin_src latex :tangle fig-07_1004-oc01.tex
+  \begin{tikzpicture}[<<oc-scale>>]
+    <<oc-budget>>
+    \fill[use path=\pathBLclosed, Thistle, shaded] ;
+    \draw[use path=\pathBL, IMe, semithick] ;
+    <<oc-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Non-satiation
+
+#+begin_src latex :tangle fig-07_1004-oc02.tex
+  \begin{tikzpicture}[<<oc-scale>>]
+    <<oc-budget>>
+    \coordinate (A) at (10, 12) ;
+
+    \path[name path=Avert] (A) -- (A |- {(0, 50)});
+    \path[name path=Ahoriz] (A) -- (A -| {(50, 0)});
+
+    \path[name intersections={of=BL and Avert, name=B}] ;
+    \path[name intersections={of=BL and Ahoriz, name=C}] ;
+
+    \fill[use path=\pathBLclosed, Thistle, shaded] ;
+    \draw[use path=\pathBL, IMe, semithick] ;
+
+    \draw[IMe] (B-1) -- (C-1) ;
+    \draw[help lines] (A) -- (B-1) (A) -- (C-1) ;
+
+    \node[dot, label={235:$A$}] at (A) {} ;
+    \node[dot, label={45:$B$}] at (B-1) {} ;
+    \node[dot, label={45:$C$}] at (C-1) {} ;
+
+    <<oc-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Budget line
+
+#+begin_src latex :tangle fig-07_1004-oc03.tex
+  \begin{tikzpicture}[<<oc-scale>>]
+    <<oc-budget>>
+
+    \draw[use path=\pathBL, IMe] ;
+
+    <<oc-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+* Interior solutions
+
+** Common chunks
+
+#+begin_src latex :noweb-ref is-scale
+  xscale = 0.08, yscale = 0.08
+#+end_src
+
+#+begin_src latex :noweb-ref is-axes
+  \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+#+end_src
+
+#+begin_src latex :noweb-ref is-curves
+  \coordinate (M) at (3, 45) ;
+  \coordinate (N) at (45, 6) ;
+  \draw[CMe] (15, 45) .. controls +(280:20) and +(175:20) .. (45, 23)
+      node[right] { $I_{2}$ }
+      ;
+
+   \draw[CMe] (M) .. controls +(280:30) and +(175:30) .. (N)
+      node[right] { $I_{0}$ }
+      node[pos=0.1] (A) {}
+      node[pos=0.8] (B) {}
+      ;
+
+   \path[name path=R] ($ (A)!10cm!180:(B) $) -- ($ (B)!15cm!180:(A) $) ;
+   \path[name path=X] (0, 0) -- (50, 0) ;
+   \path[name path=Y] (0, 0) -- (0, 50) ;
+   \path[name intersections={of=R and X, name=M}] ;
+   \path[name intersections={of=R and Y, name=N}] ;
+
+   \draw[IMe] (N-1) -- (M-1) ;
+
+   \coordinate (E) at ($ (A)!.5!(B) $);
+   \coordinate (F) at ($(M) + (6, 0) $) ;
+   \coordinate (G) at ($(N) + (0, 8) $) ;
+
+
+
+   \draw[CMe]
+     let \p1=(N-1),\p2=(M-1), \n1={atan(-\y1/\x2)} in
+        (F) .. controls +(280:3) and +(\n1:-10) .. (E)
+        .. controls +(\n1:10) and +(175:4) .. (G)
+      node[right] { $I_{1}$ }
+     ;
+#+end_src
+
+#+begin_src latex :noweb-ref is-Adot
+  \node[dot, label={[shift={(-0.1, 0.0)}, font=\small]45:$A$}] at (A)  {} ;
+#+end_src
+
+#+begin_src latex :noweb-ref is-Amarks
+  \draw[decorate, decoration={markings,
+      mark=at position 0.15 with {\arrow[IMe]{stealth}},
+      mark=at position 0.40 with {\arrow[IMe]{stealth}},
+      mark=at position 0.65 with {\arrow[IMe]{stealth}}}]
+    (A) -- (E) ;
+#+end_src
+
+
+#+begin_src latex :noweb-ref is-Bdot
+  \node[dot, label={[shift={(-0.1, 0.0)}, font=\small]45:$B$}] at (B)  {} ;
+#+end_src
+
+#+begin_src latex :noweb-ref is-Bmarks
+  \draw[decorate, decoration={markings,
+       mark=at position 0.15 with {\arrow[IMe]{stealth}},
+       mark=at position 0.40 with {\arrow[IMe]{stealth}},
+       mark=at position 0.65 with {\arrow[IMe]{stealth}}}]
+     (B) -- (E)
+     ;
+#+end_src
+
+#+begin_src latex :noweb-ref is-Edot
+  \node[dot, label={[shift={(-0.1, 0.0)}, font=\small]45:$E$}] at (E)  {} ;
+#+end_src
+
+
+** Tangency (I)
+
+#+begin_src latex :tangle fig-07_1004-eq01.tex
+  \begin{tikzpicture}[<<is-scale>>]
+    <<is-curves>>
+    <<is-Adot>>
+    <<is-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Tangency (II)
+
+#+begin_src latex :tangle fig-07_1004-eq01a.tex
+  \begin{tikzpicture}[<<is-scale>>]
+    <<is-curves>>
+    <<is-Adot>>
+    <<is-Amarks>>
+    <<is-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Tangency (III)
+
+#+begin_src latex :tangle fig-07_1004-eq02.tex
+  \begin{tikzpicture}[<<is-scale>>]
+    <<is-curves>>
+    <<is-Bdot>>
+    <<is-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Tangency (IV)
+
+#+begin_src latex :tangle fig-07_1004-eq02a.tex
+  \begin{tikzpicture}[<<is-scale>>]
+    <<is-curves>>
+    <<is-Bdot>>
+    <<is-Bmarks>>
+    <<is-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Tangency (and V)
+
+#+begin_src latex :tangle fig-07_1004-eq03.tex
+  \begin{tikzpicture}[<<is-scale>>]
+    <<is-curves>>
+    <<is-Edot>>
+    <<is-Amarks>>
+    <<is-Bmarks>>
+    <<is-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Example
+
+#+begin_src latex :tangle fig-07_1004-ej01.tex :noweb no
+\begin{tikzpicture}[xscale = 0.085, yscale = 0.085]
+
+  \newcommand*{\Utwo}{306.25}
+
+  \draw[help lines] (0, 17.7) node[left] {$17.5$}  -|
+     (17.5, 0) node[below] {$17.5$} ;
+  \draw[CMe, domain=6.7:43,smooth] plot (\x,\Utwo/\x)
+    node[right, font=\small] {$U  = 306.25$}
+    ;
+
+  \draw[IMe]  (0, 35) node[left] {$35$} --  (35, 0) node[below] {$35$} ;
+
+  \node[dot, label={45:$E$}] at (17.5, 17.5) {};
+
+   <<is-axes>>
+\end{tikzpicture}
+#+end_src
+
+
+* Corner solutions
+
+
+** Common chunks
+
+
+#+begin_src latex :noweb-ref cs-scale
+  xscale = 0.08, yscale = 0.08
+#+end_src
+
+#+begin_src latex :noweb-ref cs-axes
+  \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
+#+end_src
+
+
+** Corner solutions (I)
+
+#+begin_src latex :tangle fig-07_1004-eq10.tex
+  \begin{tikzpicture}[<<cs-scale>>]
+    \coordinate (A) at (0, 15) ;
+    \coordinate (B) at (45, 3) ;
+
+    \foreach \i in {0, 1, 2, 3}
+       \draw[CMe] ($ (A) + \i*(0, 8) $)
+          .. controls +(315:15) and +(175:15) ..
+          ($ (B) + \i*(0, 6) $)
+          node[right] { $I_{\i}$ }
+          node[pos=0] (E) {}
+       ;
+    \coordinate (Z) at ($ (A) + 3*(0, 8) $) ;
+    \path let \p1=(Z) in coordinate (P) at (0, \y1) ;
+    \path let \p1=(Z) in coordinate (Q) at ($ 0.6*(\y1, 0) $) ;
+
+    \draw[IMe] let \p1=($ (A) + 3*(0, 8) $) in (0, \y1) -- ($ 0.6*(\y1, 0) $) ;
+
+    \draw[decorate, decoration={markings,
+        mark=at position 0.27 with {\arrow[IMe]{stealth}},
+        mark=at position 0.5 with {\arrow[IMe]{stealth}},
+        mark=at position 0.8 with {\arrow[IMe]{stealth}}}]
+      (Q) -- (P) ;
+
+    \node[dot, label={[font=\small]45:$E$}] at (E)  {} ;
+    <<cs-axes>>
+  \end{tikzpicture}
+#+end_src
+
+
+** Corner solutions (and II)
+
+#+begin_src latex :tangle fig-07_1004-eq11.tex
+  \begin{tikzpicture}[<<cs-scale>>]
+    \coordinate (A) at (5, 45) ;
+    \coordinate (B) at (20, 0) ;
+
+    \foreach \i in {0, 1, 2, 3}
+       \draw[CMe] ($ (A) + \i*(8, 0) $) node[right] { $I_{\i}$ }
+          .. controls +(275:5) and +(135:15) ..
+          ($ (B) + \i*(8, 0) $)
+          node[pos=1] (E) {}
+       ;
+
+    \coordinate (Z) at ($ (B) + 3*(8, 0) $) ;
+    \path let \p1=(Z) in coordinate (P) at (\x1, 0) ;
+    \path let \p1=(Z) in coordinate (Q) at ($ 0.6*(0, \x1) $) ;
+
+   \draw[decorate, decoration={markings,
+        mark=at position 0.33 with {\arrow[IMe]{stealth}},
+        mark=at position 0.58 with {\arrow[IMe]{stealth}},
+        mark=at position 0.85 with {\arrow[IMe]{stealth}}}]
+      (Q) -- (P) ;
+
+    \draw[IMe] let \p1=($ (B) + 3*(8, 0) $) in (\x1, 0) -- ($ 0.6*(0, \x1) $) ;
+    \node[dot, label={[font=\small]45:$E$}] at (E)  {} ;
+
+    <<cs-axes>>
+  \end{tikzpicture}
+#+end_src
+
+** An example
+
+
+#+begin_src latex :tangle fig-07_1004-ej02.tex
+  \begin{tikzpicture}[xscale = 0.085, yscale = 0.085]
+    \newcommand*{\Utwo}{1750}
+
+    \draw[CMe, domain=0:43,smooth] plot (\x,{\Utwo/(\x+50)})
+      node[right, font=\small] {$U  = 1750$}
+      ;
+
+    \draw[CMe, domain=0:43,smooth] plot (\x,{1200/(\x+50)})
+      node[right, font=\small] {$U  = 1200$}
+      ;
+
+    \draw[CMe, domain=0:43,smooth] plot (\x,{600/(\x+50)})
+      node[right, font=\small] {$U  = 600$}
+      ;
+
+
+    \draw[IMe]  (0, 35) node[left] {$35$} --  (35, 0) node[below] {$35$} ;
+
+
+    \node[dot, label={45:$E$}] at (0, 35) {};
+
+    <<cs-axes>>
+  \end{tikzpicture}
+#+end_src
