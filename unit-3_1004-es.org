@@ -1,7 +1,7 @@
 # -*- ispell-dictionary: "spanish" -*-
 #+SETUPFILE: ./course-es.org
 
-#+TITLE: Efecto sustitución y efecto renta
+#+TITLE: La demanda
 
 #+MATS: bib
 #+begin_bibbox
@@ -9,12 +9,118 @@
 - Varian: :: /Microeconomía intermedia/. Capítulos 6 y 8.
 #+end_bibbox
 
-* Introducción
+* Variaciones en la renta
+
+
+** Cambios en la renta
+
+#+MATS: figcol fig-3_1004-crc2-*.pdf 0.55
+
+- Conforme aumenta la renta, $M < M' < M''$, la restricción
+  presupuestaria se desplaza hacia la derecha.
+
+
+** Cambios en la decisión de consumo
+
+#+MATS: figcol fig-3_1004-crc3-*.pdf 0.55
+
+- El consumidor selecciona una cesta diferente para cada nivel de
+  renta monetaria.
+
+
+** Curva renta consumo
+
+#+MATS: figcol fig-3_1004-crc-*.pdf 0.55
+
+- La *curva de renta consumo*, \CRC, es el conjunto de las cestas que
+  elige un consumidor para cada posible valor de la renta monetaria,
+  manteniendo constantes los precios de los bienes.
+
+
+** Curva de Engel
+
+#+MATS: figcol fig-3_1004-eng-*.pdf 0.55
+
+- La *curva de Engel* relaciona la cantidad demandada de un bien con
+  la renta monetaria de un consumidor, manteniendo constantes los
+  precios de los bienes.
+
+
+** Bienes normales y bienes inferiores
+
+- El consumo de los *bienes normales* crece cuando aumenta la
+  renta. La pendiente de la curva de Engel es positiva:
+  #+begin_export latex
+  \[ \frac{\diff X}{\diff M} > 0 \]
+  #+end_export
+
+- La cantidad demandada de los *bienes inferiores* disminuye a medida
+  que la renta aumenta. La pendiente de la curva de Engel es negativa:
+  #+begin_export latex
+  \[ \frac{\diff X}{\diff M} < 0 \]
+  #+end_export
+
+
+
+* Variaciones en el precio de un bien
+
+
+** Cambios en el precio de un bien
+
+#+MATS: figcol fig-3_1004-cpc2-*.pdf 0.55
+
+- Al disminuir el precio del bien $X$, $P_X > P'_X > P''_X$, la recta
+  presupuestaria gira en sentido antihorario.
+
+
+** Cambios en la decisión de consumo
+
+#+MATS: figcol fig-3_1004-cpc3-*.pdf 0.55
+
+- El consumidor elige una cesta diferente para cada $P_X$.
+
+
+** Curva precio consumo
+
+#+MATS: figcol fig-3_1004-cpc-*.pdf 0.55
+
+- La *curva de precio consumo* es el conjunto de las cestas que el
+  consumidor elige para cada posible precio del bien $X$, manteniendo
+  constantes la renta monetaria y el resto de precios.
+
+
+** La curva de demanda individual
+
+#+MATS: figcol fig-3_1004-dem-*.pdf 0.55
+
+- La *curva de demanda* relaciona la cantidad demandada de un bien con
+  el precio de ese bien, manteniendo constantes la renta monetaria y
+  el precio de los restantes bienes.
+
+
+** Bienes sustitutivos y complementarios
+- La \CPC{} muestra también como varía el consumo de $Y$ conforme
+  varía, /ceteris paribus/, el precio de $X$.
+
+- El bien $X$ es *sustitutivo* del bien $Y$ si la demanda de $Y$ crece
+  cuando aumenta el precio de $X$:
+  #+begin_export latex
+  \[ \frac{\diff Y}{\diff P_X} > 0 \]
+  #+end_export
+
+- El bien $X$ es *complementario* del bien $Y$ si la demanda de
+  $Y$ disminuye al aumentar el precio de $X$:
+  #+begin_export latex
+  \[ \frac{\diff Y}{\diff P_X} < 0 \]
+  #+end_export
+
+
+* Efecto sustitución y efecto renta
 
 
 ** Ley de la demanda (I)
 
-#+MATS: figcol fig-3B_1004-eres20-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres20-*.pdf 0.55
 
 - Un aumento de $P_X$, /ceteris paribus/, reduce la cantidad demandada
   de $X$.
@@ -22,7 +128,7 @@
 
 ** Ley de la demanda (y II)
 
-#+MATS: figcol fig-3B_1004-eres22-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres22-*.pdf 0.55
 
 - El análisis del consumidor no excluye la posibilidad de que la
   cantidad demandada aumente con el propio precio.
@@ -35,8 +141,6 @@
 - ¿Bajo qué condiciones nos encontraríamos ante un bien Giffen?
 
 
-
-* Cambio en el precio de un bien
 
 
 ** Efectos del cambio de un precio
@@ -115,7 +219,7 @@
 
 ** Ejemplo (II)
 
-#+MATS: figcol fig-3B_1004-eres02-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres02-*.pdf 0.55
 
 - Efecto total del aumento de $P_X$:
   #+begin_export latex
@@ -125,7 +229,7 @@
 
 ** Ejemplo (III)
 
-#+MATS: figcol fig-3B_1004-eres03-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres03-*.pdf 0.55
 
 - $E_H$: elección si la renta real no cambia.
 
@@ -136,7 +240,7 @@
 
 ** Ejemplo (y IV)
 
-#+MATS: figcol fig-3B_1004-eres04-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres04-*.pdf 0.55
 
 - $\ES = 12 - 24 = \units{-12}$
 
@@ -144,9 +248,6 @@
 
 - $\ET = \ES + \ER = \units{-21}$
 
-
-
-* Signos de los efectos
 
 
 ** El signo del efecto sustitución
@@ -180,7 +281,7 @@
 
 ** Bienes normales (y II)
 
-#+MATS: figcol fig-3B_1004-eres10-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres10-*.pdf 0.55
 
 - El efecto sustitución y el efecto renta se refuerzan mutuamente.
 
@@ -213,7 +314,7 @@
 
 ** Bienes inferiores (y II)
 
-#+MATS: figcol fig-3B_1004-eres11-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres11-*.pdf 0.55
 
 - El efecto renta contrarresta parcialmente el efecto sustitución.
 
@@ -235,7 +336,7 @@
 
 ** Bienes Giffen (II)
 
-#+MATS: figcol fig-3B_1004-eres12-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres12-*.pdf 0.55
 
 - El efecto renta es mayor en términos absolutos que el efecto
   sustitución.
@@ -266,7 +367,7 @@
 
 ** Descomposición de Slutsky (II)
 
-#+MATS: figcol fig-3B_1004-eres05a-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres05a-*.pdf 0.55
 
 - $E_S$: elección si la renta real no cambia.
 - $E_S$ está en una restricción presupuestaria que pasa por $E_0$.
@@ -277,7 +378,7 @@
 
 ** Descomposición de Slutsky (III)
 
-#+MATS: figcol fig-3B_1004-eres05-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres05-*.pdf 0.55
 
 - $\ES = 17 - 24 = -7$.
 - $\ER = 3 - 17 = -14$.
@@ -286,7 +387,7 @@
 
 ** Descomposición de Slutsky (y IV)
 
-#+MATS: figcol fig-3B_1004-eres06-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres06-*.pdf 0.55
 
 - Las propuestas de Hicks y Slutsky generan resultados diferentes.
 - Ambas coinciden cuando el cambio en los precios es muy pequeño o en

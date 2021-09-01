@@ -1,10 +1,493 @@
 #+STARTUP: indent hidestars content
 
-#+TITLE: Unit 3B figures
+#+TITLE: Unit 3 figures
 
 #+PROPERTY: header-args:latex :noweb yes :eval no
 
-#+begin_src latex :tangle fig-3B_1004-eres20.Rnw :noweb no
+* Variaciones en la renta
+
+
+** Cambios en la renta
+
+#+begin_src latex :tangle fig-3_1004-crc2.Rnw :noweb no
+  <<setup, cache=FALSE, include=FALSE>>=
+    opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+  @
+
+  <<init>>=
+    source("./R/CRC.R")
+    width <- 6
+   height <- 5
+  @
+
+
+  \begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+    yscale = \Sexpr{height / maxY}]
+
+  <<coords>>=
+  Coordinates(E0 = E0, E1 = E1, E2 = E2)
+  @
+
+
+    \draw[IMe]
+      (0, \Sexpr{Y0}) node[left, font=\scriptsize] {$M/P_{Y}$} --
+      (\Sexpr{Y0}, 0) node[below, font=\scriptsize] {$M/P_{X}$}
+      (0, \Sexpr{Y1}) node[left, font=\scriptsize] {$M'/P_{Y}$} --
+      (\Sexpr{Y1}, 0) node[below, font=\scriptsize] {$M'/P_{X}$}
+      (0, \Sexpr{Y2}) node[left, font=\scriptsize] {$M''/P_{Y}$} --
+      (\Sexpr{Y2}, 0) node[below, font=\scriptsize] {$M''/P_{X}$};
+
+
+  <<Axes>>=
+  Axis(maxX, maxY, "$X$", "$Y$")
+  @
+
+  \end{tikzpicture}
+#+end_src
+
+
+** Cambios en la decisión de consumo
+
+#+begin_src latex :tangle fig-3_1004-crc3.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CRC.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY}]
+
+<<coords>>=
+
+Coordinates(E0 = E0, E1 = E1, E2 = E2)
+
+@
+
+
+\draw[IMe]
+(0, \Sexpr{Y0}) node[left, font=\scriptsize] {$M/P_{Y}$} --
+(\Sexpr{Y0}, 0) node[below, font=\scriptsize] {$M/P_{X}$}
+(0, \Sexpr{Y1}) node[left, font=\scriptsize] {$M'/P_{Y}$} --
+(\Sexpr{Y1}, 0) node[below, font=\scriptsize] {$M'/P_{X}$}
+(0, \Sexpr{Y2}) node[left, font=\scriptsize] {$M''/P_{Y}$} --
+(\Sexpr{Y2}, 0) node[below, font=\scriptsize] {$M''/P_{X}$};
+
+\draw[CMe] \Sexpr{PBpath(I0)} ;
+\draw[CMe] \Sexpr{PBpath(I1)} ;
+\draw[CMe] \Sexpr{PBpath(I2)} ;
+
+%% \draw[curve, very thick, DarkGreen!70!Black, domain=0:70]
+%% plot (\x, {\Sexpr{b}*\x-\Sexpr{-c}*\x^2})
+%% node[right] {$\mathit{CRC}$};
+
+\begin{scope}[label distance=-4pt]
+  \node[dot, label={[font=\scriptsize]45:$E$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]45:$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]45:$E''$}] at (E2) {};
+\end{scope}
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+** Curva renta-consumo
+
+#+begin_src latex :tangle fig-3_1004-crc.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CRC.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY}]
+
+<<coords>>=
+
+Coordinates(E0 = E0, E1 = E1, E2 = E2)
+
+@
+
+
+  \draw[IMe]
+    (0, \Sexpr{Y0}) node[left, font=\scriptsize] {$M/P_{Y}$} --
+    (\Sexpr{Y0}, 0) node[below, font=\scriptsize] {$M/P_{X}$}
+    (0, \Sexpr{Y1}) node[left, font=\scriptsize] {$M'/P_{Y}$} --
+    (\Sexpr{Y1}, 0) node[below, font=\scriptsize] {$M'/P_{X}$}
+    (0, \Sexpr{Y2}) node[left, font=\scriptsize] {$M''/P_{Y}$} --
+    (\Sexpr{Y2}, 0) node[below, font=\scriptsize] {$M''/P_{X}$};
+
+  \draw[CMe] \Sexpr{PBpath(I0)} ;
+  \draw[CMe] \Sexpr{PBpath(I1)} ;
+  \draw[CMe] \Sexpr{PBpath(I2)} ;
+
+  \draw[curve, very thick, DarkGreen!70!Black, domain=0:70]
+    plot (\x, {\Sexpr{b}*\x-\Sexpr{-c}*\x^2})
+    node[right] {\CRC};
+
+\begin{scope}[label distance=0pt]
+  \node[dot, label={[font=\scriptsize]$E$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]$E''$}] at (E2) {};
+\end{scope}
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+** Curva de Engel
+
+#+begin_src latex :tangle fig-3_1004-eng.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CRC.R")
+width <- 6
+height <- 5
+maxM <- 160
+maxX <- 80
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxM}]
+
+<<coords>>=
+
+Coordinates(E0 = c(E0[1], sum(E0)),
+            E1 = c(E1[1], sum(E1)),
+            E2 = c(E2[1], sum(E2)))
+
+@
+
+\draw[help lines] let \p1=(E0), \p2=(E1), \p3=(E2) in
+   (0, \y1) node[left, font=\scriptsize] {$M$} -|
+   (\x1, 0) node[below, font=\scriptsize] {$X$}
+   (0, \y2) node[left, font=\scriptsize] {$M'$} -|
+   (\x2, 0) node[below, font=\scriptsize] {$X'$}
+   (0, \y3) node[left, font=\scriptsize] {$M''$} -|
+   (\x3, 0) node[below, font=\scriptsize] {$X''$}
+   ;
+
+  %% \draw[IMe]
+  %%   (0, \Sexpr{Y0}) node[left, font=\scriptsize] {$M/P_{Y}$} --
+  %%   (\Sexpr{Y0}, 0) node[below, font=\scriptsize] {$M/P_{X}$}
+  %%   (0, \Sexpr{Y1}) node[left, font=\scriptsize] {$M'/P_{Y}$} --
+  %%   (\Sexpr{Y1}, 0) node[below, font=\scriptsize] {$M'/P_{X}$}
+  %%   (0, \Sexpr{Y2}) node[left, font=\scriptsize] {$M''/P_{Y}$} --
+  %%   (\Sexpr{Y2}, 0) node[below, font=\scriptsize] {$M''/P_{X}$};
+
+  %% \draw[CMe] \Sexpr{PBpath(I0)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I1)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I2)} ;
+
+  \draw[curve, very thick, DarkGreen!70!Black, domain=0:60]
+    plot (\x, {\Sexpr{b-slope}*\x-\Sexpr{-c}*\x^2})
+    node[right] {$\CE$};
+
+\begin{scope}[label distance=0pt]
+  \node[dot, label={[font=\scriptsize]$E$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]$E''$}] at (E2) {};
+\end{scope}
+
+<<Axes>>=
+Axis(maxX, maxM, "$X$", "$M$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+
+* Variaciones en el precio de un bien
+
+
+** Cambios en el precio de un bien
+
+#+begin_src latex :tangle fig-3_1004-cpc2.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CPC.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY}]
+
+<<coords>>=
+
+Coordinates(Y0 = c(0, Y0), X0 = c(X0, 0),
+            X1 = c(X1, 0), X2 = c(X2, 0))
+
+Coordinates(E0 = opt[1,], E1 = opt[2, ], E2 = opt[3,])
+
+@
+
+
+  \draw[IMe]
+    (Y0) node[left, font=\scriptsize] {$M/P_{Y}$} --
+    (X0) node[below, font=\scriptsize] {$M/P_{X}$}
+    (Y0) -- (X1) node[below, font=\scriptsize] {$M/P'_{X}$}
+    (Y0) -- (X2) node[below, font=\scriptsize] {$M/P''_{X}$};
+
+  %% \draw[CMe] \Sexpr{PBpath(I0)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I1)} ;
+  %% \draw[CMe] \Sexpr{PBpath(I2)} ;
+
+  %% \draw[curve, very thick, DarkGreen!70!Black]
+  %%    \Sexpr{PBpath(CPC)} node[right] {$\mathit{CPC}$};
+
+  %% \node[dot] at (E0) {};
+  %% \node[dot] at (E1) {};
+  %% \node[dot] at (E2) {};
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+** Cambios en la decisión de consumo
+
+#+begin_src latex :tangle fig-3_1004-cpc3.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CPC.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY}]
+
+<<coords>>=
+
+Coordinates(Y0 = c(0, Y0), X0 = c(X0, 0),
+            X1 = c(X1, 0), X2 = c(X2, 0))
+
+Coordinates(E0 = opt[1,], E1 = opt[2, ], E2 = opt[3,])
+
+@
+
+
+  \draw[IMe]
+    (Y0) node[left, font=\scriptsize] {$M/P_{Y}$} --
+    (X0) node[below, font=\scriptsize] {$M/P_{X}$}
+    (Y0) -- (X1) node[below, font=\scriptsize] {$M/P'_{X}$}
+    (Y0) -- (X2) node[below, font=\scriptsize] {$M/P''_{X}$};
+
+  \draw[CMe] \Sexpr{PBpath(I0)} ;
+  \draw[CMe] \Sexpr{PBpath(I1)} ;
+  \draw[CMe] \Sexpr{PBpath(I2)} ;
+
+  %% \draw[curve, very thick, DarkGreen!70!Black]
+  %%    \Sexpr{PBpath(CPC)} node[right] {$\mathit{CPC}$};
+  \begin{scope}[label distance=-4pt]
+  \node[dot, label={[font=\scriptsize]45:$E$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]45:$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]45:$E''$}] at (E2) {};
+  \end{scope}
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+** Curva precio consumo
+
+#+begin_src latex :tangle fig-3_1004-cpc.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CPC.R")
+width <- 6
+height <- 5
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxY}]
+
+<<coords>>=
+
+Coordinates(Y0 = c(0, Y0), X0 = c(X0, 0),
+            X1 = c(X1, 0), X2 = c(X2, 0))
+
+Coordinates(E0 = opt[1,], E1 = opt[2, ], E2 = opt[3,])
+
+@
+
+
+  \draw[IMe]
+    (Y0) node[left, font=\scriptsize] {$M/P_{Y}$} --
+    (X0) node[below, font=\scriptsize] {$M/P_{X}$}
+    (Y0) -- (X1) node[below, font=\scriptsize] {$M/P'_{X}$}
+    (Y0) -- (X2) node[below, font=\scriptsize] {$M/P''_{X}$};
+
+
+  \draw[CMe] \Sexpr{PBpath(I0)} ;
+  \draw[CMe] \Sexpr{PBpath(I1)} ;
+  \draw[CMe] \Sexpr{PBpath(I2)} ;
+
+  \draw[curve, very thick, DarkGreen!70!Black]
+     \Sexpr{PBpath(CPC)} node[right] {\CPC};
+
+  \begin{scope}[label distance=-4pt]
+  \node[dot, label={[font=\scriptsize]45:$E$}] at (E0) {};
+  \end{scope}
+  \node[dot, label={[font=\scriptsize]$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]$E''$}] at (E2) {};
+
+
+<<Axes>>=
+Axis(maxX, maxY, "$X$", "$Y$")
+@
+
+
+
+\end{tikzpicture}
+
+
+#+end_src
+
+
+** La curva de demanda individual
+
+#+begin_src latex :tangle fig-3_1004-dem.Rnw :noweb no
+<<setup, cache=FALSE, include=FALSE>>=
+  opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
+@
+
+
+<<init>>=
+source("./R/CPC.R")
+width <- 6
+height <- 5
+maxX <- 55
+maxP <- 3
+@
+
+
+
+\begin{tikzpicture}[xscale = \Sexpr{width / maxX},
+  yscale = \Sexpr{height / maxP}]
+
+<<coords>>=
+
+Coordinates(E0 = c(opt[1, 1], -sl0),
+            E1 = c(opt[2, 1], -sl1),
+            E2 = c(opt[3, 1], -sl2))
+
+@
+
+\draw[help lines] let \p1=(E0), \p2=(E1), \p3=(E2) in
+   (0, \y1) node[left, font=\scriptsize] {$P_{X}$} -|
+   (\x1, 0) node[below, font=\scriptsize] {$X$}
+   (0, \y2) node[left, font=\scriptsize] {$P'_{X}$} -|
+   (\x2, 0) node[below, font=\scriptsize] {$X'$}
+   (0, \y3) node[left, font=\scriptsize] {$P''_{X}$} -|
+   (\x3, 0) node[below, font=\scriptsize] {$X''$}
+   ;
+
+
+
+  \draw[curve, very thick, DarkGreen!70!Black]
+    plot[smooth] coordinates
+<<Coord>>=
+cat("{",
+  paste(coord(X, Px), collapse="\n"),
+    "}")
+@
+      node[right] {$D$};
+
+\begin{scope}[label distance=-4pt]
+  \node[dot, label={[font=\scriptsize]45:$E$}] at (E0) {};
+  \node[dot, label={[font=\scriptsize]45:$E'$}] at (E1) {};
+  \node[dot, label={[font=\scriptsize]45:$E''$}] at (E2) {};
+\end{scope}
+
+
+<<Axes>>=
+Axis(maxX, maxP, "$X$", "$P_X$")
+@
+
+\end{tikzpicture}
+#+end_src
+
+
+* Efecto sustitución y efecto renta
+
+#+begin_src latex :tangle fig-3_1004-eres20.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -77,7 +560,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres22.Rnw :noweb no
+#+begin_src latex :tangle fig-3_1004-eres22.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -139,7 +622,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres02.tex :noweb no
+#+begin_src latex :tangle fig-3_1004-eres02.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;
@@ -192,7 +675,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres03.tex :noweb no
+#+begin_src latex :tangle fig-3_1004-eres03.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;
@@ -248,7 +731,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres04.tex :noweb no
+#+begin_src latex :tangle fig-3_1004-eres04.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;
@@ -314,7 +797,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres10.Rnw :noweb no
+#+begin_src latex :tangle fig-3_1004-eres10.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -384,7 +867,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres11.Rnw :noweb no
+#+begin_src latex :tangle fig-3_1004-eres11.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -453,7 +936,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres12.Rnw :noweb no
+#+begin_src latex :tangle fig-3_1004-eres12.Rnw :noweb no
 <<setup, cache=FALSE, include=FALSE>>=
   opts_chunk$set(results="asis", echo=FALSE, cache=FALSE)
 @
@@ -520,7 +1003,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres05a.tex :noweb no
+#+begin_src latex :tangle fig-3_1004-eres05a.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;
@@ -585,7 +1068,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres05.tex :noweb no
+#+begin_src latex :tangle fig-3_1004-eres05.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;
@@ -649,7 +1132,7 @@ Axis(maxX, maxY, "$X$", "$Y$")
 
 #+end_src
 
-#+begin_src latex :tangle fig-3B_1004-eres06.tex :noweb no
+#+begin_src latex :tangle fig-3_1004-eres06.tex :noweb no
 \begin{tikzpicture}[xscale = 0.15, yscale = 0.032258]
 
   \coordinate (E0) at (24, 24) ;

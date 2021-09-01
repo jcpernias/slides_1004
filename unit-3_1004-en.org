@@ -1,20 +1,128 @@
 # -*- ispell-dictionary: "english" -*-
 #+SETUPFILE: ./course-en.org
 
-#+TITLE: Substitution effect and income effect
+#+TITLE: Demand
 
 #+MATS: bib
 #+begin_bibbox
 - Pindyck and Rubinfeld: :: /Microeconomics/. Chapter 4.
-- Varian: :: /Intermediate microeconomics/. Chapters 6 and 8.
+- Varian: :: /Intermediate Microeconomics/. Chapters 6 and 8.
 #+end_bibbox
 
-* Introduction
+* Changes in income
+
+
+** Variations in income
+
+#+MATS: figcol fig-3_1004-crc2-*.pdf 0.55
+
+- As income increases, $M < M' < M''$, the budget line
+  shifts to the right.
+
+
+** Changes in the consumption decision
+
+#+MATS: figcol fig-3_1004-crc3-*.pdf 0.55
+
+- The consumer chooses a different basket for each level of monetary
+  income.
+
+
+** Income-consumption curve
+
+#+MATS: figcol fig-3_1004-crc-*.pdf 0.55
+
+- The *income-consumption curve*, \CRC, is the set of baskets a
+  consumer chooses for every possible value of the monetary income,
+  keeping constant the prices of the goods.
+
+
+** Engel curve
+
+#+MATS: figcol fig-3_1004-eng-*.pdf 0.55
+
+- The *Engel curve* relates the demanded quantity of a good to the
+  monetary income of a consumer, keeping constant the prices of the
+  goods.
+
+
+** Normal and inferior goods
+
+
+- The consumption of *normal goods* increases as income rises. The
+  slope of the Engel curve is positive:
+  #+begin_export latex
+  \[ \frac{\diff X}{\diff M} > 0 \]
+  #+end_export
+
+- The demanded quantity of *inferior goods* decreases as income
+  increases. The slope of the Engel is negative:
+  #+begin_export latex
+  \[ \frac{\diff X}{\diff M} < 0 \]
+  #+end_export
+
+
+
+* Variations in the price of a good
+
+
+** Changes in the price of a good
+
+#+MATS: figcol fig-3_1004-cpc2-*.pdf 0.55
+
+- When the price of good $X$ decreases, $P_X > P'_X > P''_X$, the
+  budget line shifts counterclockwise.
+
+
+** Changes in the consumption decision
+
+#+MATS: figcol fig-3_1004-cpc3-*.pdf 0.55
+
+- The consumer chooses a different basket for each $P_X$.
+
+
+** Price-consumption curve
+
+#+MATS: figcol fig-3_1004-cpc-*.pdf 0.55
+
+- The *price-consumption curve* is the set of the baskets a consumer
+  chooses for every possible price of good $X$, keeping constant the
+  monetary income and the prices of other goods.
+
+
+** Individual demand curve
+
+#+MATS: figcol fig-3_1004-dem-*.pdf 0.55
+
+- The *demand curve* relates the demanded quantity of a good with the
+  price of that good, keeping constant the monetary income and the
+  prices of other goods.
+
+
+** Substitutes and complements
+
+- The \CPC{} also shows how the consumption of $Y$ varies as the price
+  of $X$ varies, /ceteris paribus/.
+
+- Good $X$ is a *substitute* of good $Y$ if the demand of $Y$
+  increases as the price of $X$ rises:
+  #+begin_export latex
+  \[ \frac{\diff Y}{\diff P_X} > 0 \]
+  #+end_export
+
+- Good $X$ is a *complement* of good $Y$ if the demand of $Y$
+  decreases as the price of $X$ increases:
+  #+begin_export latex
+  \[ \frac{\diff Y}{\diff P_X} < 0 \]
+  #+end_export
+
+
+* Substitution and income effects
 
 
 ** Law of demand (I)
 
-#+MATS: figcol fig-3B_1004-eres20-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres20-*.pdf 0.55
 
 - An increase in $P_X$, /ceteris paribus/, reduces the quantity
   demanded of $X$.
@@ -22,7 +130,7 @@
 
 ** Law of demand (and II)
 
-#+MATS: figcol fig-3B_1004-eres22-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres22-*.pdf 0.55
 
 - The consumer analysis does not exclude the possibility that quantity
   demanded increases with own price.
@@ -34,9 +142,6 @@
 
 - Under which conditions would we find a Giffen good?
 
-
-
-* Changes in the price of a good
 
 
 ** Effects of price change
@@ -114,7 +219,7 @@
 
 ** Example (II)
 
-#+MATS: figcol fig-3B_1004-eres02-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres02-*.pdf 0.55
 
 - Total effect of the increase in $P_X$:
   #+begin_export latex
@@ -124,7 +229,7 @@
 
 ** Example (III)
 
-#+MATS: figcol fig-3B_1004-eres03-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres03-*.pdf 0.55
 
 - $E_H$: choice if real income does not change.
 
@@ -135,7 +240,7 @@
 
 ** Example (and IV)
 
-#+MATS: figcol fig-3B_1004-eres04-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres04-*.pdf 0.55
 
 - $\ES = 12 - 24 = \units{-12}$
 
@@ -143,9 +248,6 @@
 
 - $\ET = \ES + \ER = \units{-21}$
 
-
-
-* The sign of the effects
 
 
 ** The sign of the substitution effect
@@ -179,7 +281,7 @@
 
 ** Normal goods (and II)
 
-#+MATS: figcol fig-3B_1004-eres10-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres10-*.pdf 0.55
 
 - The substitution effect and the income effect reinforce each other.
 
@@ -211,7 +313,7 @@
 
 ** Inferior goods (and II)
 
-#+MATS: figcol fig-3B_1004-eres11-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres11-*.pdf 0.55
 
 - The income effect partially offsets the substitution effect.
 
@@ -233,7 +335,7 @@
 
 ** Giffen goods (II)
 
-#+MATS: figcol fig-3B_1004-eres12-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres12-*.pdf 0.55
 
 - The income effect is higher in absolute terms than the substitution
   effect.
@@ -265,7 +367,7 @@
 
 ** Slutsky decomposition (II)
 
-#+MATS: figcol fig-3B_1004-eres05a-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres05a-*.pdf 0.55
 
 - $E_S$: choice if real income does not change.
 - $E_S$ is on a budget line that goes through $E_0$.
@@ -275,7 +377,7 @@
 
 ** Slutsky decomposition (III)
 
-#+MATS: figcol fig-3B_1004-eres05-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres05-*.pdf 0.55
 
 - $\ES = 17 - 24 = -7$.
 - $\ER = 3 - 17 = -14$.
@@ -284,7 +386,7 @@
 
 ** Slutsky decomposition (and IV)
 
-#+MATS: figcol fig-3B_1004-eres06-*.pdf 0.55
+#+MATS: figcol fig-3_1004-eres06-*.pdf 0.55
 
 - The proposals of Hicks and Slutsky generate different results.
 - Both coincide when the variation in prices is very small or in cases

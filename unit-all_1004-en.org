@@ -20,50 +20,57 @@
 
 #+include: "unit-1A_1004-en.org" :lines "6-"
 
+
 * The production possibilities frontier
 
 #+latex: \input{unit-1B_1004-macros}
 #+include: "unit-1B_1004-en.org" :lines "6-"
 
+
 * Competitive markets
 
 #+include: "unit-1C_1004-en.org" :lines "6-"
+
 
 * Elasticity
 
 #+include: "unit-1D_1004-en.org" :lines "6-"
 
+
 * Intervention in competitive markets
 
 #+include: "unit-1E_1004-en.org" :lines "6-"
+
 
 * Budget constraint
 
 #+include: "unit-2A_1004-en.org" :lines "6-"
 
+
 * Preferences
 
 #+include: "unit-2B_1004-en.org" :lines "6-"
+
 
 * Consumer choice
 
 #+include: "unit-2C_1004-en.org" :lines "6-"
 
+
 * Demand
 
-#+include: "unit-3A_1004-en.org" :lines "6-"
+#+include: "unit-3_1004-en.org" :lines "6-"
 
-* Substitution effect and income effect
-
-#+include: "unit-3B_1004-en.org" :lines "6-"
 
 * Intertemporal choice
 
 #+include: "unit-4A_1004-en.org" :lines "6-"
 
+
 * Production
 
 #+include: "unit-5_1004-en.org" :lines "6-"
+
 
 * Costs
 
