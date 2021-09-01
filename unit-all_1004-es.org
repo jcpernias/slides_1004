@@ -18,12 +18,8 @@
 
 * Principios básicos de la organización económica
 
-#+include: "unit-1A_1004-es.org" :lines "6-"
-
-
-* La frontera de posibilidades de producción
-#+latex: \input{unit-1B_1004-macros}
-#+include: "unit-1B_1004-es.org" :lines "6-"
+#+latex: \input{unit-1_1004-macros}
+#+include: "unit-1_1004-es.org" :lines "6-"
 
 
 * Los mercados competitivos

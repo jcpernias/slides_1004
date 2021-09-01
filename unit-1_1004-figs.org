@@ -1,6 +1,6 @@
 #+STARTUP: indent hidestars content
 
-#+TITLE: Unit 2 Figures
+#+TITLE: Unit 1 Figures
 
 #+PROPERTY: header-args:latex :noweb yes :eval no
 
@@ -11,7 +11,7 @@
 
 
 *** Production tables
-#+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp1.tex :noweb no
+#+BEGIN_SRC latex :tangle fig-1_1004-tab_fpp1.tex :noweb no
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (cocos) [matrix of nodes,
@@ -63,8 +63,9 @@
   \end{tikzpicture}
 #+END_SRC
 
+
 *** Coconuts production curve
-#+BEGIN_SRC latex :tangle fig-1B_1004-prod.tex :noweb no
+#+BEGIN_SRC latex :tangle fig-1_1004-prod.tex :noweb no
   \begin{tikzpicture}[xscale = 0.3, yscale = 0.3]
 
     \draw[IMe, shaded] (0,0) -- (8.5, 8.5) ;
@@ -83,7 +84,7 @@
 
 
 *** Fish production curve
-#+BEGIN_SRC latex :tangle fig-1B_1004-prod2.tex :noweb no
+#+BEGIN_SRC latex :tangle fig-1_1004-prod2.tex :noweb no
   \begin{tikzpicture}[xscale = 0.3, yscale = 0.3]
 
     \draw[IMe, shaded,domain=0:8.5, samples=100]
@@ -105,11 +106,11 @@
 
 * The PPF
 
+
 ** Figures and tables
 
-
 *** Production options
-#+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp2.tex :noweb no
+#+BEGIN_SRC latex :tangle fig-1_1004-tab_fpp2.tex :noweb no
   \footnotesize\sffamily%
   \begin{tikzpicture}
     \matrix  (FPP) [matrix of nodes,
@@ -161,7 +162,7 @@
 
 
 *** PPF
-#+BEGIN_SRC latex :tangle fig-1B_1004-fpp1.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-fpp1.tex
   \begin{tikzpicture}<<scale-ppf>>
 
     <<curve-shaded-ppf>>
@@ -194,7 +195,7 @@
   \end{tikzpicture}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle fig-1B_1004-fpp2a.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-fpp2a.tex
   \begin{tikzpicture}<<scale-ppf>>
 
     <<area-shaded-ppf>>
@@ -205,7 +206,7 @@
   \end{tikzpicture}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle fig-1B_1004-fpp1a.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-fpp1a.tex
   \begin{tikzpicture}<<scale-ppf>>
 
     <<area-shaded-ppf>>
@@ -235,7 +236,7 @@
 
 
 *** Feasible and unfeasible choices
-#+BEGIN_SRC latex :tangle fig-1B_1004-fpp2.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-fpp2.tex
   \begin{tikzpicture}<<scale-ppf>>
 
     <<area-shaded-ppf>>
@@ -257,7 +258,7 @@
 
 
 *** Production efficiency
-#+BEGIN_SRC latex :tangle fig-1B_1004-fpp3a.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-fpp3a.tex
   \begin{tikzpicture}<<scale-ppf>>
 
     \newcommand*{\Ax}{1.5}
@@ -292,7 +293,7 @@
   \end{tikzpicture}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle fig-1B_1004-fpp3.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-fpp3.tex
   \begin{tikzpicture}<<scale-ppf>>
     \newcommand*{\Ax}{2.8}
     \newcommand*{\Cx}{5}
@@ -334,7 +335,7 @@
 
 *** Opportunity cost
 
-#+BEGIN_SRC latex :tangle fig-1B_1004-fpp4.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-fpp4.tex
 
 
   \begin{tikzpicture}<<scale-ppf>>
@@ -381,7 +382,7 @@
   \end{tikzpicture}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle fig-1B_1004-fpp5.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-fpp5.tex
 
 
   \begin{tikzpicture}<<scale-ppf>>
@@ -433,7 +434,7 @@
   \end{tikzpicture}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle fig-1B_1004-tab_fpp3.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-tab_fpp3.tex
 
 
   \footnotesize\sffamily%
@@ -474,7 +475,7 @@
 
 
 *** Slope
-#+BEGIN_SRC latex :tangle fig-1B_1004-fpp6.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-fpp6.tex
 
 
   \begin{tikzpicture}<<scale-ppf>>
@@ -506,7 +507,7 @@
 
 
 *** Concavity
-#+BEGIN_SRC latex :tangle fig-1B_1004-fpp7.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-fpp7.tex
 
 
   \begin{tikzpicture}<<scale-ppf>>
@@ -547,7 +548,7 @@
 
 
 *** Growth
-#+BEGIN_SRC latex :tangle fig-1B_1004-gr2.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-gr2.tex
   \begin{tikzpicture}<<scale-ppf>>
 
     <<curve-ppf>>
@@ -565,7 +566,7 @@
   \end{tikzpicture}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle fig-1B_1004-gr3.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-gr3.tex
   \begin{tikzpicture}<<scale-ppf>>
 
     <<curve-ppf>>
@@ -592,7 +593,7 @@
   \end{tikzpicture}
 #+END_SRC
 
-#+BEGIN_SRC latex :tangle fig-1B_1004-gr1.tex
+#+BEGIN_SRC latex :tangle fig-1_1004-gr1.tex
   \begin{tikzpicture}<<scale-ppf>>
 
     <<curve-ppf>>
@@ -622,6 +623,7 @@
 
 
 ** Chunks
+
 
 *** Figures scale
 

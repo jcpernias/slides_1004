@@ -269,8 +269,6 @@
   #+end_export
   where $a, b>0$.
 
-#+MATS: pagebreak
-
 
 * Price elasticity and total revenue
 

@@ -18,14 +18,8 @@
 
 * Basic principles of economic organization
 
-#+include: "unit-1A_1004-en.org" :lines "6-"
-
-
-* The production possibilities frontier
-
-#+latex: \input{unit-1B_1004-macros}
-#+include: "unit-1B_1004-en.org" :lines "6-"
-
+#+latex: \input{unit-1_1004-macros}
+#+include: "unit-1_1004-en.org" :lines "6-"
 
 * Competitive markets
 

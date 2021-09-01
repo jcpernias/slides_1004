@@ -1,16 +1,120 @@
 # -*- ispell-dictionary: "spanish" -*-
 #+SETUPFILE: ./course-es.org
 
-#+TITLE: La frontera de posibilidades de producción
+#+TITLE: Principios básicos de la organización económica
 
 #+MATS: bib
 #+begin_bibbox
 - Mankiw: ::  /Principios de Economía/. Capítulos 1 y 2.
-- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 1
+- Pindyck y Rubinfeld: :: /Microeconomía/. Capítulo 1.
 #+end_bibbox
 
-* La producción
+* Introducción
 
+
+** ¿Qué es economía?
+
+- El estudio de las *decisiones* que toman los agentes económicos en
+  un entorno de *escasez*.
+
+
+** Economía positiva y economía normativa
+
+- *Economía positiva*: ¿Cómo /funciona/ la economía?
+
+- *Economía normativa*: ¿Cómo /debería funcionar/ la economía?
+
+
+** Microeconomía y macroeconomía
+
+- La *microeconomía* estudia cómo los *agentes económicos* toman
+  decisiones e interaccionan en los *mercados*.
+
+- La *macroeconomía* se centra en aspectos referidos al sistema
+  económico en su conjunto: *desempleo*, *inflación*, *crecimiento
+  económico*, etc.
+
+
+** Problemas económicos fundamentales
+
+- ¿*Qué* producir?
+
+- ¿*Cómo* producir?
+
+- ¿*Para quién* se produce?
+
+
+** Pensar como un economista
+
+- Considerar todas las *alternativas*.
+
+- Evaluar los *costes* y los *beneficios* de cada alternativa.
+
+- Los *incentivos* afectan al comportamiento de los agentes.
+
+- Considerar cómo *interaccionan* los diferentes agentes.
+
+
+** Costes y Beneficios
+
+- No todos los costes y beneficios corresponden a pagos monetarios.
+
+- *Coste de oportunidad*.
+
+
+* Modelos económicos
+
+
+** Modelos
+
+- Un *modelo* es una representación simplificada de una parte de la
+  realidad.
+
+
+** Ejemplo: Plano de la UJI
+
+#+ATTR_LATEX: :options scale=0.35
+#+MATS: figcol UJI.png 0.6
+
+- ¿Que hace útil a un modelo?
+
+  + Selección.
+
+  + Simplificación.
+
+
+** Modelos y realidad (I)
+
+- [[https://es.wikipedia.org/wiki/Joan_Robinson][Joan Robinson]]
+
+#+ATTR_LATEX: :options scale=0.3
+#+MATS: figcol joan_robinson_small.png 0.35
+
+#+begin_tightquote
+  "A model which took account of all the variation of reality would be
+  of no more use than a map at the scale of one to one."
+#+end_tightquote
+
+
+** Modelos y realidad (y II)
+
+- Si un modelo produce predicciones correctas, el realismo de sus
+  supuestos no es tan importante.
+
+- Incluso si no produce predicciones correctas, un modelo puede
+  ofrecer orientaciones útiles para mejorar la toma de decisiones.
+
+
+** Modelos económicos
+
+- *Comportamiento racional*.
+
+- *Equilibrio*.
+
+- *Análisis marginal*.
+
+
+* La frontera de posibilidades de producción
 
 ** La economía de Robinson Crusoe
 
@@ -27,7 +131,7 @@
   siguientes tablas:
   #+latex: \vspace*{1ex}
   #+begin_center
-  #+MATS: fig fig-1B_1004-tab_fpp1-*.pdf
+  #+MATS: fig fig-1_1004-tab_fpp1-*.pdf
   #+end_center
 
 
@@ -48,14 +152,11 @@
 
 #+MATS: col 0.5
 - Producción de cocos:
-  #+MATS: fig fig-1B_1004-prod-*.pdf
+  #+MATS: fig fig-1_1004-prod-*.pdf
 
 #+MATS: col 0.5
 - Producción de pescado:
-  #+MATS: fig fig-1B_1004-prod2-*.pdf
-
-
-* La frontera de posibilidades de producción
+  #+MATS: fig fig-1_1004-prod2-*.pdf
 
 
 ** Opciones de producción
@@ -64,13 +165,13 @@
   diferentes actividades.
   #+latex: \vspace*{1ex}
   #+begin_center
-  #+MATS: fig fig-1B_1004-tab_fpp2-*.pdf
+  #+MATS: fig fig-1_1004-tab_fpp2-*.pdf
   #+end_center
 
 
 ** Frontera de Posibilidades de Producción (I)
 
-#+MATS: figcol fig-1B_1004-fpp1-*.pdf 0.45
+#+MATS: figcol fig-1_1004-fpp1-*.pdf 0.45
 
 - La *frontera de posibilidades de producción* (FPP) es el conjunto de
   las diferentes opciones de producción donde se utilizan *todos* los
@@ -79,7 +180,7 @@
 
 ** Frontera de Posibilidades de Producción (II)
 
-#+MATS: figcol fig-1B_1004-fpp2a-*.pdf 0.45
+#+MATS: figcol fig-1_1004-fpp2a-*.pdf 0.45
 
 - La FPP describe las opciones de producción de una economía, pero no
   nos indica qué opción se elegirá.
@@ -87,7 +188,7 @@
 
 ** Frontera de Posibilidades de Producción (y III)
 
-#+MATS: figcol fig-1B_1004-fpp1a-*.pdf 0.45
+#+MATS: figcol fig-1_1004-fpp1a-*.pdf 0.45
 
 - Los puntos de corte de la FPP con los ejes muestran las producciones
   máximas de cada bien.
@@ -95,7 +196,7 @@
 
 ** Opciones accesibles e  inaccesibles
 
-#+MATS: figcol fig-1B_1004-fpp2-*.pdf 0.45
+#+MATS: figcol fig-1_1004-fpp2-*.pdf 0.45
 
 - $A$ y $B$ son *opciones factibles*.
 - $I$ es una *opción inaccesible*.
@@ -103,7 +204,7 @@
 
 ** Eficiencia en la producción (I)
 
-#+MATS: figcol fig-1B_1004-fpp3a-*.pdf 0.45
+#+MATS: figcol fig-1_1004-fpp3a-*.pdf 0.45
 
 - La opción $A$ no es eficiente: es posible aumentar la producción de
   pescado sin reducir la producción de cocos.
@@ -113,19 +214,16 @@
 
 ** Eficiencia en la producción (y II)
 
-#+MATS: figcol fig-1B_1004-fpp3-*.pdf 0.45
+#+MATS: figcol fig-1_1004-fpp3-*.pdf 0.45
 
 - $B$ es una opción de producción *eficiente*.
 - *Eficiencia*: no es posible producir más de un bien manteniendo
   inalterada la producción del otro bien.
 
 
-* El coste de oportunidad
-
-
 ** Coste de oportunidad (I)
 
-#+MATS: figcol fig-1B_1004-fpp4-*.pdf 0.45
+#+MATS: figcol fig-1_1004-fpp4-*.pdf 0.45
 
 - Partiendo de un punto eficiente, sólo es posible aumentar la
   producción de un bien sacrificando parte de la producción de otros
@@ -134,7 +232,7 @@
 
 ** Coste de oportunidad (II)
 
-#+MATS: figcol fig-1B_1004-fpp5-*.pdf 0.45
+#+MATS: figcol fig-1_1004-fpp5-*.pdf 0.45
 
 - $\Delta \Pvar = 2.2$ kg de pescado.
 - $\Delta C = -4.25$ kg de cocos.
@@ -142,7 +240,7 @@
 
 ** Coste de oportunidad (III)
 
-#+MATS: figcol fig-1B_1004-fpp5-*.pdf 0.45
+#+MATS: figcol fig-1_1004-fpp5-*.pdf 0.45
 
 - Coste de oportunidad:
   \[ \left|\frac{\Delta C}{\Delta \Pvar}\right| = 1.93 \]
@@ -155,13 +253,13 @@
   más de pescado es *creciente*.
   #+latex: \vspace*{1ex}
   #+begin_center
-  #+MATS: fig fig-1B_1004-tab_fpp3-*.pdf
+  #+MATS: fig fig-1_1004-tab_fpp3-*.pdf
   #+end_center
 
 
 ** Pendiente y coste de oportunidad
 
-#+MATS: figcol fig-1B_1004-fpp6-*.pdf 0.45
+#+MATS: figcol fig-1_1004-fpp6-*.pdf 0.45
 
 - La *pendiente* negativa de la frontera de posibilidades de
   producción refleja el coste de oportunidad de producir más pescado.
@@ -169,16 +267,13 @@
 
 ** Concavidad y costes de oportunidad crecientes
 
-#+MATS: figcol fig-1B_1004-fpp7-*.pdf 0.45
+#+MATS: figcol fig-1_1004-fpp7-*.pdf 0.45
 
 - La *concavidad* de la frontera de posibilidades de producción
   refleja el coste de oportunidad *creciente* de producir más pescado.
 
 
-* Aplicaciones
-
-
-** Crecimiento económico (I)
+** Aplicación: crecimiento económico (I)
 
 - Con la frontera de posibilidades de producción podemos describir los
   efectos del *crecimiento económico*.
@@ -188,17 +283,17 @@
   avances tecnológicos.
 
 
-** Crecimiento económico (II)
+** Aplicación: crecimiento económico (II)
 
-#+MATS: figcol fig-1B_1004-gr2-*.pdf 0.45
+#+MATS: figcol fig-1_1004-gr2-*.pdf 0.45
 
 - El crecimiento económico hace que la frontera de posibilidades de
   producción se *desplace* hacia arriba y a la derecha.
 
 
-** Crecimiento económico (III)
+** Aplicación: crecimiento económico (III)
 
-#+MATS: figcol fig-1B_1004-gr3-*.pdf 0.45
+#+MATS: figcol fig-1_1004-gr3-*.pdf 0.45
 
 - Una mejora tecnológica en los dos sectores.
 
@@ -206,9 +301,9 @@
   aumentar.
 
 
-** Crecimiento económico (y IV)
+** Aplicación: crecimiento económico (y IV)
 
-#+MATS: figcol fig-1B_1004-gr1-*.pdf 0.45
+#+MATS: figcol fig-1_1004-gr1-*.pdf 0.45
 
 - Una mejora tecnológica que afecta *sólo* a la producción de pescado.
 

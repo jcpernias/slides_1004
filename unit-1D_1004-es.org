@@ -265,8 +265,6 @@
   #+end_export
   donde $a, b>0$.
 
-#+MATS: pagebreak
-
 
 * Elasticidad precio e ingresos totales
 

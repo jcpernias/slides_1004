@@ -2,8 +2,7 @@ SHELL := /bin/sh
 
 subject_code := 1004
 units := \
-	1A \
-	1B \
+	1 \
 	1C \
 	1D \
 	1E \
@@ -16,8 +15,7 @@ units := \
 	6
 
 unit_figs := \
-	1A \
-	1B \
+	1 \
 	1C \
 	1D \
 	1E \
