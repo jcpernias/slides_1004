@@ -5,7 +5,7 @@
 #+TITLE: Introduction to Microeconomics
 #+AUTHOR: AE / EC / FC 1004 \\
 #+AUTHOR: DA0204
-#+DATE: Curso 2020--2021
+#+DATE: Academic year 2021--2022
 
 #+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4 title:nil
 
