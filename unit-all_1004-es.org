@@ -7,7 +7,7 @@
 #+AUTHOR: DA0204
 #+DATE: Curso 2020--2021
 
-#+OPTIONS: toc:nil ':t *:t ^:{} num:2 H:3 title:nil
+#+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4 title:nil
 
 #+LATEX_CLASS: hdout
 #+LATEX_CLASS_OPTIONS: [es]
@@ -15,58 +15,72 @@
 #+LANGUAGE: es
 #+LATEX_HEADER: \newcommand*{\LANG}{es}
 
+* Introducción
 
-* Principios básicos de la organización económica
+
+** Principios básicos de la organización económica
 
 #+latex: \input{unit-1_1004-macros}
 #+include: "unit-1_1004-es.org" :lines "6-"
 
 
+
 * Los mercados competitivos
+
+
+** Los mercados competitivos
 
 #+include: "unit-1C_1004-es.org" :lines "6-"
 
 
-* Elasticidad
+** Elasticidad
 
 #+include: "unit-1D_1004-es.org" :lines "6-"
 
 
-* Intervención en mercados competitivos
+** Intervención en mercados competitivos
 
 #+include: "unit-1E_1004-es.org" :lines "6-"
 
 
-* La restricción presupuestaria
+
+* La elección del consumidor
+
+
+** La restricción presupuestaria
 
 #+include: "unit-2A_1004-es.org" :lines "6-"
 
 
-* Las preferencias
+** Las preferencias
 
 #+include: "unit-2B_1004-es.org" :lines "6-"
 
 
-* La elección del consumidor
+** La elección del consumidor
 
 #+include: "unit-2C_1004-es.org" :lines "6-"
 
 
-* La demanda
+** La demanda
 
 #+include: "unit-3_1004-es.org" :lines "6-"
 
 
-* Elección intertemporal
+** Elección intertemporal
 
 #+include: "unit-4A_1004-es.org" :lines "6-"
 
 
-* La producción
+
+* Producción y costes
+
+
+** La producción
 
 #+include: "unit-5_1004-es.org" :lines "6-"
 
 
-* Los costes
+** Los costes
 
 #+include: "unit-6_1004-es.org" :lines "6-"

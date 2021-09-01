@@ -7,7 +7,7 @@
 #+AUTHOR: DA0204
 #+DATE: Curso 2020--2021
 
-#+OPTIONS: toc:nil ':t *:t ^:{} num:2 H:3 title:nil
+#+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4 title:nil
 
 #+LATEX_CLASS: hdout
 #+LATEX_CLASS_OPTIONS: [en]
@@ -16,56 +16,65 @@
 #+LATEX_HEADER: \newcommand*{\LANG}{en}
 
 
-* Basic principles of economic organization
+* Introduction
+
+** Basic principles of economic organization
 
 #+latex: \input{unit-1_1004-macros}
 #+include: "unit-1_1004-en.org" :lines "6-"
 
+
 * Competitive markets
+
+** Competitive markets
 
 #+include: "unit-1C_1004-en.org" :lines "6-"
 
 
-* Elasticity
+** Elasticity
 
 #+include: "unit-1D_1004-en.org" :lines "6-"
 
 
-* Intervention in competitive markets
+** Intervention in competitive markets
 
 #+include: "unit-1E_1004-en.org" :lines "6-"
 
 
-* Budget constraint
+* Consumer choice
+
+** Budget constraint
 
 #+include: "unit-2A_1004-en.org" :lines "6-"
 
 
-* Preferences
+** Preferences
 
 #+include: "unit-2B_1004-en.org" :lines "6-"
 
 
-* Consumer choice
+** Consumer choice
 
 #+include: "unit-2C_1004-en.org" :lines "6-"
 
 
-* Demand
+** Demand
 
 #+include: "unit-3_1004-en.org" :lines "6-"
 
 
-* Intertemporal choice
+** Intertemporal choice
 
 #+include: "unit-4A_1004-en.org" :lines "6-"
 
 
-* Production
+* Production and costs
+
+** Production
 
 #+include: "unit-5_1004-en.org" :lines "6-"
 
 
-* Costs
+** Costs
 
 #+include: "unit-6_1004-en.org" :lines "6-"

@@ -80,6 +80,7 @@
 %% Section headings formatting
 %% --------------------------------------------------------------------------------
 \RequirePackage[%
+newparttoc, %
 clearempty, %
 pagestyles, %
 outermarks, %
@@ -91,6 +92,13 @@ compact]{titlesec}
 %% this bug. See http://tex.stackexchange.com/a/300259
 \patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
 \patchcmd{\ttlh@hang}{\noindent}{}{}{}
+
+\titleformat{name=\part}[display]{%
+  \color{Section}\HUGE\sffamily\bfseries}{%
+  \filleft\HUGE \partname\ \thepart}{1pc}{\filleft}
+
+\titlespacing{name=\part}{0pt}{*20}{*6}
+
 
 \titleformat{name=\section}[hang]{%
   \color{Section}\huge\sffamily\bfseries}{%
@@ -159,6 +167,14 @@ compact]{titlesec}
 %% --------------------------------------------------------------------------------
 \RequirePackage{titletoc}
 \contentsmargin{2pc}
+
+\titlecontents{part}[0pc]
+{\addvspace{1pc}\sffamily\large\bfseries}
+{\partname\ \thecontentslabel:\enspace}
+{}
+{\hfill\contentspage}
+[\addvspace{.25pc}]
+
 \titlecontents{section}[0pc]
 {\addvspace{1ex}\sffamily\bfseries}
 {\contentslabel{2pc}}
@@ -166,6 +182,18 @@ compact]{titlesec}
 {\hfill\contentspage}
 
 \dottedcontents{subsection}[3pc]{\sffamily}{3pc}{0.5pc}
+
+
+%% Parts
+%% --------------------------------------------------------------------------------
+%\newcommand{\partbreak}{\cleardoublepage}
+\titleclass{\part}{page}
+\assignpagestyle{\part}{empty}
+\newcommand{\partbreak}{%
+%   \cleardoublepage\phantomsection%
+   \thispagestyle{first}}
+% \let\oldpart\part% Store \part in \oldpart
+% \renewcommand{\part}{\thispagestyle{first}\oldpart}% Insert \clearpage before every \part
 
 %% Title
 %% --------------------------------------------------------------------------------
