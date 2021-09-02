@@ -17,14 +17,18 @@
 
 \tcbset{problem/.style={colback=PapayaWhip,
     colframe=Tan, coltitle=SaddleBrown, fontupper=\footnotesize,
-    toprule=1.1mm, bottomrule=1.1mm}}
+    toprule=1.1mm, bottomrule=1.1mm,
+    sharp corners}}
 
 \tcbset{bibliography/.style={colframe=Subparagraph!50,
     %colback=LightSteelBlue!10!White,
-    colback=Subparagraph!5,
+    colback=Subparagraph!2,
     coltitle=Black,
     %size=small,
-    fonttitle=\sffamily\bfseries, fontupper=\small}}
+    fonttitle=\sffamily\bfseries, fontupper=\small,
+    boxrule=0.5pt,
+    leftrule=1.5pt,
+    sharp corners}}
 
 %\newtcolorbox{bibbox}{bibliography, title=\translate{Bibliography}}
 \newtcolorbox{bibbox}{bibliography}
