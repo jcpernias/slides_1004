@@ -73,8 +73,8 @@
 
 ** Ejemplo: Plano de la UJI
 
-#+ATTR_LATEX: :options scale=0.35
-#+MATS: figcol UJI.png 0.6
+#+ATTR_LATEX: :options scale=0.3
+#+MATS: figcol UJI.png 0.55
 
 - ¿Que hace útil a un modelo?
 
@@ -115,6 +115,7 @@
 
 
 * La frontera de posibilidades de producción
+
 
 ** La economía de Robinson Crusoe
 

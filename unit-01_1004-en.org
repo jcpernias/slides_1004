@@ -71,8 +71,8 @@
 
 ** Example: Map of the UJI
 
-#+ATTR_LATEX: :options scale=0.35
-#+MATS: figcol UJI.png 0.6
+#+ATTR_LATEX: :options scale=0.3
+#+MATS: figcol UJI.png 0.55
 
 - What makes a model useful?
 
