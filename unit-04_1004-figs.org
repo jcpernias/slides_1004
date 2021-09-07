@@ -11,7 +11,7 @@
 *** Relative variations
 
 #+BEGIN_SRC latex :tangle fig-04_1004-pmax1.tex :noweb no
-  \begin{tikzpicture}[xscale=0.5, yscale=0.5]
+  \begin{tikzpicture}[xscale=0.45, yscale=0.45]
 
     \fill[LightGray!20!White!20!White] (0, 9.5) rectangle (9, 7) ;
     \draw[curve, Black, very thick] (0, 7) node[left] {$P_{\max}$} -- (9, 7) ;
@@ -21,7 +21,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-04_1004-pmax2.tex :noweb no
-  \begin{tikzpicture}[xscale=0.5, yscale=0.5]
+  \begin{tikzpicture}[xscale=0.45, yscale=0.45]
 
     \fill[LightGray!20!White] (0, 9.5) rectangle (9, 7) ;
     \draw[curve, Black, very thick] (0, 7) node[left] {$P_{\max}$} -- (9, 7) ;
@@ -40,7 +40,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-04_1004-pmax3.tex :noweb no
-  \begin{tikzpicture}[xscale=0.5, yscale=0.5]
+  \begin{tikzpicture}[xscale=0.45, yscale=0.45]
 
     \fill[LightGray!20!White] (0, 2) rectangle (9, 9.5) ;
 
@@ -65,7 +65,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-04_1004-pmin1.tex :noweb no
-  \begin{tikzpicture}[xscale=0.5, yscale=0.5]
+  \begin{tikzpicture}[xscale=0.45, yscale=0.45]
 
     \fill[LightGray!20!White] (0, 0) rectangle (9, 4) ;
     \draw[curve, Black, very thick] (0, 4) node[left] {$P_{\min}$} -- (9, 4) ;
@@ -75,7 +75,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-04_1004-pmin2.tex :noweb no
-  \begin{tikzpicture}[xscale=0.5, yscale=0.5]
+  \begin{tikzpicture}[xscale=0.45, yscale=0.45]
 
     \fill[LightGray!20!White] (0, 0) rectangle (9, 4) ;
     \draw[curve, Black, very thick] (0, 4) node[left] {$P_{\min}$} -- (9, 4) ;
@@ -94,7 +94,7 @@
 #+END_SRC
 
 #+BEGIN_SRC latex :tangle fig-04_1004-pmin3.tex :noweb no
-  \begin{tikzpicture}[xscale=0.5, yscale=0.5]
+  \begin{tikzpicture}[xscale=0.45, yscale=0.45]
 
     \fill[LightGray!20!White] (0, 0) rectangle (9, 8) ;
 

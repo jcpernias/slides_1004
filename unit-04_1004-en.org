@@ -44,8 +44,6 @@
 
 ** Price ceilings (I)
 
-#+MATS: figcol fig-04_1004-pmax1-*.pdf 0.48
-
 - The government tries to reduce the price paid by buyers.
 
 - The market price is not allowed to rise above a *maximum price*:
@@ -74,8 +72,6 @@
 
 
 ** Price floors (I)
-
-#+MATS: figcol fig-04_1004-pmin1-*.pdf 0.48
 
 - The government tries to raise the price received by sellers.
 

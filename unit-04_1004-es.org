@@ -46,8 +46,6 @@
 
 ** Precio máximo (I)
 
-#+MATS: figcol fig-04_1004-pmax1-*.pdf 0.48
-
 - El estado trata de reducir el precio que pagan los compradores.
 
 - No se permite que el precio de mercado sea superior a un *precio
@@ -77,8 +75,6 @@
 
 
 ** Precio mínimo  (I)
-
-#+MATS: figcol fig-04_1004-pmin1-*.pdf 0.48
 
 - El estado trata de elevar el precio que reciben los vendedores.
 

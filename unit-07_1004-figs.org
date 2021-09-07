@@ -218,8 +218,8 @@
 
 ** Example
 
-#+begin_src latex :tangle fig-07_1004-ej01.tex :noweb no
-\begin{tikzpicture}[xscale = 0.085, yscale = 0.085]
+#+begin_src latex :tangle fig-07_1004-ej01.tex
+\begin{tikzpicture}[<<is-scale>>]
 
   \newcommand*{\Utwo}{306.25}
 
