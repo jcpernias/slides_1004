@@ -159,7 +159,7 @@
 
 - *Coste medio*:
   #+begin_export latex
-  \[ \CMe(Q) = \frac{C(Q)}{Q} =\CFMe(Q) + \CVMe(Q) \]
+  \[ \CMe(Q) =\CFMe(Q) + \CVMe(Q) \]
   #+end_export
 
 
