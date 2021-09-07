@@ -85,15 +85,16 @@
 
 ** Modelos y realidad (I)
 
-- [[https://es.wikipedia.org/wiki/Joan_Robinson][Joan Robinson]]
+- [[https://es.wikipedia.org/wiki/George_Edward_Pelham_Box][George E.P. Box]]:
+  #+begin_tightquote
+    "Todos los modelos son incorrectos, pero algunos son útiles".
+  #+end_tightquote
 
-#+ATTR_LATEX: :options scale=0.3
-#+MATS: figcol joan_robinson_small.png 0.35
-
-#+begin_tightquote
-  "A model which took account of all the variation of reality would be
-  of no more use than a map at the scale of one to one."
-#+end_tightquote
+- [[https://es.wikipedia.org/wiki/Joan_Robinson][Joan Robinson]]:
+  #+begin_tightquote
+    "Un modelo que tomara en cuenta toda la diversidad de la realidad
+    no sería más útil que un mapa a escala uno a uno".
+  #+end_tightquote
 
 
 ** Modelos y realidad (y II)
@@ -101,7 +102,7 @@
 - Si un modelo produce predicciones correctas, el realismo de sus
   supuestos no es tan importante.
 
-- Incluso si no produce predicciones correctas, un modelo puede
+- Incluso sin producir predicciones correctas, un modelo puede
   ofrecer orientaciones útiles para mejorar la toma de decisiones.
 
 
