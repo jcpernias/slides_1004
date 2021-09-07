@@ -16,20 +16,10 @@
 - We use some assumptions to describe consumer preferences.
 
 
-** Completeness (I)
+** Completeness
 
 - *Completeness*: the consumer is able to rank any two baskets
   according to his preferences.
-
-** Completeness (and II)
-
-- When comparing two baskets, $A$ and $B$, the consumer either:
-
-  + prefers $A$ to $B$: $A \succ B$;
-
-  + prefers $B$ to $A$: $B \succ A$; or
-
-  + is indifferent between them: $A \sim B$.
 
 
 ** Non-satiation (I)
@@ -42,17 +32,15 @@
 
 #+MATS: figcol fig-06_1004-ci02-*.pdf 0.5
 
-- $M \succ A$.
+- The consumer prefers the basket $M$ to the basket $A$: $M \succ A$.
 
-- $A \succ P$.
+- The consumer prefers $A$ to $P$: $A \succ P$.
 
 
 ** Indifference curves (I)
 
 - An *indifference curve* comprises consumption bundles that are
   indifferent to each other.
-
-- Each bundle belongs to an indifference curve.
 
 
 ** Indifference curves (II)
@@ -62,7 +50,7 @@
 - The indifference curve has negative slope.
 
 - All bundles on the curve are indifferent to $A$:
-  \[ A \sim B \sim C \]
+  \[ A \sim B \sim C \].
 
 
 ** Indifference curves (and III)
@@ -70,7 +58,6 @@
 #+MATS: figcol fig-06_1004-ci06-*.pdf 0.5
 
 - $M \succ A$.
-
 
 - $A \succ P$.
 
@@ -149,19 +136,6 @@
 
 - The more units of a good the consumer has, the less he values an
   additional unit.
-
-
-** Regular preferences
-
-- *Completeness*.
-
-- *Transitivity*.
-
-- *Non-satiation*.
-
-- *Convexity*.
-
-- Other technical assumptions.
 
 
 
@@ -268,21 +242,7 @@
   #+end_export
 
 
-** Marginal utility and the MRS (I)
-
-- Variation in utility when simultaneously change the consumption
-  levels of $X$ and $Y$ :
-  #+begin_export latex
-  \[ \diff U = \UMX\; \diff X + \UMY\; \diff Y \]
-  #+end_export
-
-- $\diff U = 0$ if the change occurs along an indifference curve:
-  #+begin_export latex
-  \[ 0 = \UMX\; \diff X + \UMY\; \diff Y \]
-  #+end_export
-
-
-** Marginal utility and the MRS (and II)
+** Marginal utility and the MRS
 
 - The slope of the indifference curve is:
   #+begin_export latex

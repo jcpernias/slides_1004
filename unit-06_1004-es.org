@@ -18,21 +18,10 @@
   supuestos.
 
 
-** Completitud (I)
+** Completitud
 
 - *Completitud*: el consumidor es capaz de ordenar dos cestas
   cualesquiera de acuerdo con sus preferencias.
-
-
-** Completitud (y II)
-
-- Un consumidor que compara dos cestas, $A$ y $B$:
-
-  + prefiere $A$ a $B$: $A \succ B$;
-
-  + prefiere $B$ a $A$: $B \succ A$; o
-
-  + se muestra indiferente: $A \sim B$.
 
 
 ** No saturación (I)
@@ -46,17 +35,15 @@
 
 #+MATS: figcol fig-06_1004-ci02-*.pdf 0.5
 
-- $M \succ A$.
+- El consumidor prefiere la cesta $M$ a la cesta $A$: $M \succ A$.
 
-- $A \succ P$.
+- El consumidor prefiere la cesta $A$ a la cesta $P$: $A \succ P$.
 
 
 ** Curvas de indiferencia (I)
 
 - Una *curva de indiferencia* se compone de cestas de consumo que
   son indiferentes entre sí.
-
-- Cada cesta pertenece a una curva de indiferencia.
 
 
 ** Curvas de indiferencia (II)
@@ -66,7 +53,7 @@
 - La curva de indiferencia tiene pendiente negativa.
 
 - Todas las cestas de la curva son indiferentes a $A$:
-  \[ A \sim B \sim C \]
+  \[ A \sim B \sim C \].
 
 
 ** Curvas de indiferencia (y III)
@@ -74,7 +61,6 @@
 #+MATS: figcol fig-06_1004-ci06-*.pdf 0.5
 
 - $M \succ A$.
-
 
 - $A \succ P$.
 
@@ -154,19 +140,6 @@
 
 - Cuantas más unidades consume de un bien, menos valora el consumidor
   una unidad adicional.
-
-
-** Preferencias regulares
-
-- *Completitud*.
-
-- *Transitividad*.
-
-- *No saturación*.
-
-- *Convexidad*.
-
-- Otros supuestos técnicos.
 
 
 
@@ -274,22 +247,8 @@
   #+end_export
 
 
-** Utilidad marginal y la RMS (I)
 
-- Variación en la utilidad cuando cambian simultáneamente el consumo
-  de $X$ y el de $Y$:
-  #+begin_export latex
-  \[ \diff U = \UMX\; \diff X + \UMY\; \diff Y \]
-  #+end_export
-
-- $\diff U = 0$ si el cambio se produce a lo largo de una curva de
-  indiferencia:
-  #+begin_export latex
-  \[ 0 = \UMX\; \diff X + \UMY\; \diff Y \]
-  #+end_export
-
-
-** Utilidad marginal y la RMS (II)
+** Utilidad marginal y la RMS
 
 - La pendiente de la curva de indiferencia es:
   #+begin_export latex

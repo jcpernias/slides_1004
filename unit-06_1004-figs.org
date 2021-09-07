@@ -7,10 +7,18 @@
 * Las preferencias
 
 
+
+** Common
+
+#+BEGIN_SRC latex :noweb-ref ci-scale
+  xscale = 0.09, yscale = 0.09
+#+END_SRC
+
+
 ** No saturación (y II)
 
-#+begin_src latex :tangle fig-06_1004-ci02.tex :noweb no
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+#+begin_src latex :tangle fig-06_1004-ci02.tex
+\begin{tikzpicture}[<<ci-scale>>]
 
 \coordinate (G) at (4.4, 48) ;
 \coordinate (H) at (48, 8) ;
@@ -44,8 +52,8 @@
 
 ** Curvas de indiferencia (II)
 
-#+begin_src latex :tangle fig-06_1004-ci03.tex :noweb no
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+#+begin_src latex :tangle fig-06_1004-ci03.tex
+\begin{tikzpicture}[<<ci-scale>>]
 
 \coordinate (G) at (4.4, 48) ;
 \coordinate (H) at (48, 8) ;
@@ -82,8 +90,8 @@
 #+end_src
 
 
-#+begin_src latex :tangle fig-06_1004-ci03b.tex :noweb no
-  \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+#+begin_src latex :tangle fig-06_1004-ci03b.tex
+  \begin{tikzpicture}[<<ci-scale>>]
 
     \coordinate (G) at (4.4, 48) ;
     \coordinate (H) at (48, 8) ;
@@ -117,8 +125,8 @@
 
 ** Curvas de indiferencia (III)
 
-#+begin_src latex :tangle fig-06_1004-ci04.tex :noweb no
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+#+begin_src latex :tangle fig-06_1004-ci04.tex
+\begin{tikzpicture}[<<ci-scale>>]
 
 \coordinate (G) at (4.4, 48) ;
 \coordinate (H) at (48, 8) ;
@@ -164,8 +172,8 @@
 
 ** Curvas de indiferencia (IV)
 
-#+begin_src latex :tangle fig-06_1004-ci05.tex :noweb no
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+#+begin_src latex :tangle fig-06_1004-ci05.tex
+\begin{tikzpicture}[<<ci-scale>>]
 
 \coordinate (G) at (4.4, 48) ;
 \coordinate (H) at (48, 8) ;
@@ -216,8 +224,8 @@
 
 ** Curvas de indiferencia (y V)
 
-#+begin_src latex :tangle fig-06_1004-ci06.tex :noweb no
-  \begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+#+begin_src latex :tangle fig-06_1004-ci06.tex
+  \begin{tikzpicture}[<<ci-scale>>]
 
     \coordinate (G) at (4.4, 48) ;
     \coordinate (H) at (48, 8) ;
@@ -250,8 +258,8 @@
 
 ** Transitividad (y II)
 
-#+begin_src latex :tangle fig-06_1004-tr01.tex :noweb no
-\begin{tikzpicture}[xscale = 0.1, yscale = 0.1]
+#+begin_src latex :tangle fig-06_1004-tr01.tex
+\begin{tikzpicture}[<<ci-scale>>]
 
   \coordinate (I0-start) at (5, 35) ;
   \coordinate (I0-end) at (45, 8) ;
@@ -427,8 +435,8 @@
 
 ** Sustitutos perfectos
 
-#+begin_src latex :tangle fig-06_1004-nreg01.tex :noweb no
-\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
+#+begin_src latex :tangle fig-06_1004-nreg01.tex
+\begin{tikzpicture}[<<ci-scale>>]
   \newcommand*{\Xcoord}{15}
   \newcommand*{\Ycoord}{10}
   \newcommand*{\slope}{\Ycoord/\Xcoord}
@@ -453,8 +461,8 @@
 
 ** Complementos perfectos
 
-#+begin_src latex :tangle fig-06_1004-nreg02.tex :noweb no
-\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
+#+begin_src latex :tangle fig-06_1004-nreg02.tex
+\begin{tikzpicture}[<<ci-scale>>]
   \newcommand*{\Xcoord}{4}
   \newcommand*{\Ycoord}{3}
   \newcommand*{\dX}{7.5}
@@ -478,8 +486,8 @@
 
 ** Bien neutro
 
-#+begin_src latex :tangle fig-06_1004-nreg03.tex :noweb no
-\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
+#+begin_src latex :tangle fig-06_1004-nreg03.tex
+\begin{tikzpicture}[<<ci-scale>>]
   \newcommand{\Xcoord}{10}
   \newcommand{\dX}{8}
 
@@ -502,8 +510,8 @@
 
 ** Mal
 
-#+begin_src latex :tangle fig-06_1004-nreg04.tex :noweb no
-\begin{tikzpicture}[xscale = 0.09, yscale = 0.09]
+#+begin_src latex :tangle fig-06_1004-nreg04.tex
+\begin{tikzpicture}[<<ci-scale>>]
   \newcommand*{\Sx}{20}
   \newcommand*{\Sy}{5}
   \newcommand*{\Ex}{45}
@@ -529,6 +537,7 @@
 
 
 * Función de utilidad
+
 
 ** Utilidad ordinal (I)
 
@@ -560,6 +569,7 @@
   \draw[axis] (0,50) node[left] {$Y$} |- (50, 0) node[below] {$X$} ;
 \end{tikzpicture}
 #+end_src
+
 
 ** Utilidad ordinal (II)
 
