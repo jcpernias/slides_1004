@@ -206,21 +206,22 @@
 
 ** Eficiencia en la producción (I)
 
+#+MATS: figcol fig-01_1004-fpp3-*.pdf 0.45
+
+- $B$ es una opción de producción *eficiente*: no es posible producir
+  más de un bien manteniendo inalterada la producción del otro bien.
+
+
+** Eficiencia en la producción (y III)
+
 #+MATS: figcol fig-01_1004-fpp3a-*.pdf 0.45
 
 - La opción $A$ no es eficiente: es posible aumentar la producción de
   pescado sin reducir la producción de cocos.
-- La ineficiencia sucede cuando no se usan todos los factores o se
+
+- Se producen ineficiencias cuando no se usan todos los factores o se
   asignan inadecuadamente.
 
-
-** Eficiencia en la producción (y II)
-
-#+MATS: figcol fig-01_1004-fpp3-*.pdf 0.45
-
-- $B$ es una opción de producción *eficiente*.
-- *Eficiencia*: no es posible producir más de un bien manteniendo
-  inalterada la producción del otro bien.
 
 
 ** Coste de oportunidad (I)

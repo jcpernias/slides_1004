@@ -204,23 +204,25 @@
 - $I$ is an *inaccessible option*.
 
 
-** Efficiency in production (I)
+
+** Efficiency in production (and I)
+
+#+MATS: figcol fig-01_1004-fpp3-*.pdf 0.45
+
+- Production option $B$ is *efficient*: it is not possible to produce
+  more of a good without changing the production of the other good.
+
+
+
+** Efficiency in production (and II)
 
 #+MATS: figcol fig-01_1004-fpp3a-*.pdf 0.45
 
 - Option $A$ is feasible but inefficient: it is possible to increase
   fish production without reducing coconuts production.
+
 - Inefficiency exits when there unemployed resources or their
   allocation is inadequate.
-
-
-** Efficiency in production (and II)
-
-#+MATS: figcol fig-01_1004-fpp3-*.pdf 0.45
-
-- $B$ is an *efficient* production option.
-- *Efficiency*: it is not possible to produce more of a good without
-  changing the production of the other good.
 
 
 ** Opportunity cost (I)
