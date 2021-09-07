@@ -84,11 +84,13 @@
 ** Models and reality (I)
 
 - [[https://en.wikipedia.org/wiki/George_E._P._Box][George E.P. Box]]:
+
   #+begin_tightquote
     "All models are wrong, but some are useful."
   #+end_tightquote
 
 - [[https://en.wikipedia.org/wiki/Joan_Robinson][Joan Robinson]]:
+
   #+begin_tightquote
     "A model which took account of all the variation of reality would
     be of no more use than a map at the scale of one to one."

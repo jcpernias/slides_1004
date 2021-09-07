@@ -86,11 +86,13 @@
 ** Modelos y realidad (I)
 
 - [[https://es.wikipedia.org/wiki/George_Edward_Pelham_Box][George E.P. Box]]:
+
   #+begin_tightquote
     "Todos los modelos son incorrectos, pero algunos son útiles".
   #+end_tightquote
 
 - [[https://es.wikipedia.org/wiki/Joan_Robinson][Joan Robinson]]:
+
   #+begin_tightquote
     "Un modelo que tomara en cuenta toda la diversidad de la realidad
     no sería más útil que un mapa a escala uno a uno".
