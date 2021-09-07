@@ -31,13 +31,13 @@
     \begin{scope}[on background layer]
       \coordinate (Lc) at ($ (john.north west)!(john-2-1.south west)!(john.south west) $);
       \coordinate (Rc) at  ($ (john.north east)!(john-2-1.south east)!(john.south east) $);
-      \fill[LightSteelBlue!60!White] (Lc) -- (Rc) [rounded corners] |-
+      \fill[DarkSeaGreen!20!White] (Lc) -- (Rc) [sharp corners] |-
       (john.south west) [sharp corners] -- cycle ;
-      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (john.north east)
+      \fill[OliveDrab!50!Black] (Lc) [sharp corners] |- (john.north east)
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
 
-     \node[above=3mm of john.north west, font=\bfseries\small, right, DarkBlue]
+     \node[above=3mm of john.north west, font=\bfseries\small, right, OliveDrab!50!Black]
         {\translate{Consumidor} K};
 
      \begin{scope}[xshift=5.75cm, xscale=0.8333, yscale=1.66667]
@@ -93,7 +93,7 @@
     column sep=1mm, row sep = 1mm, anchor=south west,
     column 8/.style=base left,
     hd/.style={White, , font=\bfseries},
-    sh/.style={Green}
+    sh/.style={DarkOliveGreen}
     ] {
       |[hd]| \translate{Precio} &[0.75cm] |[hd]| K & & |[hd]| L & & |[hd]| M & & |[hd]| \translate{Mercado} \\
       $2.0$ & $0.0$ & |[sh]| $+$ & $0.5$ & |[sh]| $+$ & $0.0$ & |[sh]| $=$ & $0.5$ &\\
@@ -105,9 +105,9 @@
     \begin{scope}[on background layer]
       \coordinate (Lc) at ($ (john.north west)!(john-1-1.south west)!(john.south west) $);
       \coordinate (Rc) at  ($ (john.north east)!(john-1-1.south east)!(john.south east) $);
-      \fill[LightSteelBlue!60!White] (Lc) -- (Rc) [rounded corners] |-
+      \fill[DarkSeaGreen!20!White] (Lc) -- (Rc) [sharp corners] |-
       (john.south west) [sharp corners] -- cycle ;
-      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (john.north east)
+      \fill[OliveDrab!50!Black] (Lc) [sharp corners] |- (john.north east)
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
 
@@ -337,13 +337,13 @@
     \begin{scope}[on background layer]
       \coordinate (Lc) at ($ (john.north west)!(john-2-1.south west)!(john.south west) $);
       \coordinate (Rc) at  ($ (john.north east)!(john-2-1.south east)!(john.south east) $);
-      \fill[LightSteelBlue!60!White] (Lc) -- (Rc) [rounded corners] |-
+      \fill[DarkSeaGreen!20!White] (Lc) -- (Rc) [sharp corners] |-
       (john.south west) [sharp corners] -- cycle ;
-      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (john.north east)
+      \fill[OliveDrab!50!Black] (Lc) [sharp corners] |- (john.north east)
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
 
-     \node[above=3mm of john.north west, font=\bfseries\small, right, DarkBlue]
+     \node[above=3mm of john.north west, font=\bfseries\small, right, OliveDrab!50!Black]
        {\translate{Productor} X};
 
      \begin{scope}[xshift=5.75cm, xscale=0.8333, yscale=1.66667]
@@ -831,14 +831,14 @@
       \coordinate (Z) at  ($ (PIVE.north west)!(U)!(PIVE.north east) $);
 
 
-      \fill[LightSteelBlue!60!White]
-        (U) -- (R) [rounded corners] -- (PIVE.south east) [sharp corners]
+      \fill[DarkSeaGreen!20!White]
+        (U) -- (R) [sharp corners] -- (PIVE.south east) [sharp corners]
         -- (D) -- cycle ;
 
-      \fill[SlateGray!70!Black]
-        (U) -- (D) [rounded corners] -- (PIVE.south west) -- (L)
+      \fill[OliveDrab!50!Black]
+        (U) -- (D) [sharp corners] -- (PIVE.south west) -- (L)
         [sharp corners] -- cycle;
-      \fill[SlateGray!70!Black] (U) [rounded corners] -- (Z) --
+      \fill[OliveDrab!50!Black] (U) [sharp corners] -- (Z) --
          (PIVE.north east)  [sharp corners] -- (R)  -- (L)  -- cycle;
     \end{scope}
 

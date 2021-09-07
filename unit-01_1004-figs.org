@@ -30,9 +30,9 @@
     \begin{scope}[on background layer]
       \coordinate (Lc) at ($ (cocos.north west)!(cocos-2-1.south west)!(cocos.south west) $);
       \coordinate (Rc) at  ($ (cocos.north east)!(cocos-2-1.south east)!(cocos.south east) $);
-      \fill[LightSteelBlue!60!White] (Lc) -- (Rc) [rounded corners] |-
+      \fill[DarkSeaGreen!20!White] (Lc) -- (Rc) [sharp corners] |-
       (cocos.south west) [sharp corners] -- cycle ;
-      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (cocos.north east)
+      \fill[OliveDrab!50!Black] (Lc) [sharp corners] |- (cocos.north east)
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
 
@@ -52,14 +52,14 @@
     \begin{scope}[on background layer]
       \coordinate (Lp) at ($ (peces.north west)!(peces-2-1.south west)!(peces.south west) $);
       \coordinate (Rp) at  ($ (peces.north east)!(peces-2-1.south east)!(peces.south east) $);
-      \fill[LightSteelBlue!60!White] (Lp) -- (Rp) [rounded corners] |-
+      \fill[DarkSeaGreen!20!White] (Lp) -- (Rp) [sharp corners] |-
       (peces.south west) [sharp corners] -- cycle ;
-      \fill[SlateGray!70!Black] (Lp) [rounded corners] |- (peces.north east)
+      \fill[OliveDrab!50!Black] (Lp) [sharp corners] |- (peces.north east)
       [sharp corners] -- (Rp)  -- cycle;
     \end{scope}
 
-     \node[above=3mm of cocos.north west, font=\bfseries\small, right, DarkBlue] {\translate{Cocos}};
-     \node[above=3mm of peces.north west, font=\bfseries\small, right, DarkBlue] {\translate{Pescado}};
+     \node[above=3mm of cocos.north west, font=\bfseries\small, right, DarkSeaGreen!20!Black] {\translate{Cocos}};
+     \node[above=3mm of peces.north west, font=\bfseries\small, right, OliveDrab!50!Black] {\translate{Pescado}};
   \end{tikzpicture}
 #+END_SRC
 
@@ -118,7 +118,7 @@
     column sep=1mm, row sep=1mm,
     column 1/.style={font=\bfseries},
     hd/.style={White, , font=\bfseries},
-    sh/.style={DarkGreen!80!White}
+    sh/.style={DarkOliveGreen}
     ] { &[3mm]
        |[hd]| \translate{Trabajo}  &     &
        |[hd]| \translate{Trabajo}  &     & &
@@ -153,9 +153,9 @@
     \begin{scope}[on background layer]
       \coordinate (Lc) at ($ (FPP.north west)!(FPP-2-2.south west)!(FPP.south west) $);
       \coordinate (Rc) at  ($ (FPP.north east)!(FPP-2-2.south east)!(FPP.south east) $);
-      \fill[LightSteelBlue!60!White] (Lc) -- (Rc) [rounded corners] |-
+      \fill[DarkSeaGreen!20!White] (Lc) -- (Rc) [sharp corners] |-
       (FPP.south west) [sharp corners] -- cycle ;
-      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (FPP.north east)
+      \fill[OliveDrab!50!Black] (Lc) [sharp corners] |- (FPP.north east)
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
   \end{tikzpicture}
@@ -466,9 +466,9 @@
     \begin{scope}[on background layer]
       \coordinate (Lc) at ($ (FPP.north west)!(FPP-1-2.south west)!(FPP.south west) $);
       \coordinate (Rc) at  ($ (FPP.north east)!(FPP-1-2.south east)!(FPP.south east) $);
-      \fill[LightSteelBlue!60!White] (Lc) -- (Rc) [rounded corners] |-
+      \fill[DarkSeaGreen!20!White] (Lc) -- (Rc) [sharp corners] |-
       (FPP.south west) [sharp corners] -- cycle ;
-      \fill[SlateGray!70!Black] (Lc) [rounded corners] |- (FPP.north east)
+      \fill[OliveDrab!50!Black] (Lc) [sharp corners] |- (FPP.north east)
       [sharp corners] -- (Rc)  -- cycle;
     \end{scope}
   \end{tikzpicture}
@@ -693,9 +693,9 @@
       on background layer,
       <<tab-common-styles>>
       ]
-      %\fill[table bg, rounded corners]
+      %\fill[table bg, sharp corners]
       %(PIVE.north west) rectangle (PIVE.south east);
-      \draw[ultra thick, SlateGray!70!Black]
+      \draw[ultra thick, OliveDrab!50!Black]
         (PIVE.north west) -- (PIVE.north east)
         (PIVE.south west) -- (PIVE.south east)
         ;
@@ -735,16 +735,16 @@
       ($ (PIVE.north west)!(PIVE-1-3.south west)!(PIVE.south west) $);
       \coordinate (R) at
       ($ (PIVE.north east)!(PIVE-1-3.south east)!(PIVE.south east) $);
-      % \fill[table bg] (L) -- (R) [rounded corners] |-
+      % \fill[table bg] (L) -- (R) [sharp corners] |-
       % (PIVE.south west) [sharp corners] -- cycle ;
-      % \fill[header bg] (L) [rounded corners] |- (PIVE.north east)
+      % \fill[header bg] (L) [sharp corners] |- (PIVE.north east)
       % [sharp corners] -- (R)  -- cycle;
 
-      \draw[ultra thick, SlateGray!70!Black]
+      \draw[ultra thick, OliveDrab!50!Black]
        (PIVE.north west) -- (PIVE.north east)
        (PIVE.south west) -- (PIVE.south east)
        ;
-      \draw[thick, SlateGray!70!Black] (L) -- (R);
+      \draw[thick, OliveDrab!50!Black] (L) -- (R);
     \end{scope}
 
   \end{tikzpicture}
@@ -762,9 +762,9 @@
   sh/.style={Green!60!White},
   column 1/.style={right},
   column 2/.style={left},
-  table bg/.style={fill=LightSteelBlue!60!White},
-  header bg/.style={fill=SlateGray!70!Black},
-  sh/.style={DarkBlue!60!White},
+  table bg/.style={fill=DarkSeaGreen!20!White},
+  header bg/.style={fill=OliveDrab!50!Black},
+  sh/.style={OliveDrab!50!Black!60!White},
 #+END_SRC
 
 
@@ -896,7 +896,7 @@
       thick,},
     market/.style={
       box,
-      rounded rectangle,
+      sharp rectangle,
       inner sep=0.5cm,
       draw=black,
       thick,
