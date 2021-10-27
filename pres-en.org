@@ -1,6 +1,6 @@
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./course-en.org
 
-#+LATEX_HEADER: \institute{Econometría I (EC1027)}
+#+LATEX_HEADER: \institute{Introduction to Microeconomics (AE / EC / FC 1004, DA0204)}
 
 #+LATEX_CLASS: pres
 #+OPTIONS: toc:nil ':t ^:{} num:1 H:2 title:nil

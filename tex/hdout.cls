@@ -28,12 +28,16 @@
 \ExecuteOptions{es}
 \ProcessOptions*\relax
 
+\InputIfFileExists{hdout.cfg}{}{}
+
 %% Class loading
 %% --------------------------------------------------------------------------------
 \PassOptionsToPackage{english,spanish}{translator}
 \PassOptionsToPackage{svgnames}{xcolor}
 \PassOptionsToPackage{fleqn, tbtags, leqno}{amsmath}
-\LoadClass[a4paper, 11pt, twoside]{article}
+\LoadClass[%
+a4paper,
+twoside]{article}
 
 %% Beamer
 %% --------------------------------------------------------------------------------
@@ -237,6 +241,13 @@ compact]{titlesec}
       \cleardoublepage\phantomsection%
       \thispagestyle{first}}}
   \maketitle%
+}
+
+\mode
+<article>
+{
+  \renewcommand{\subtitle}[2][]{%
+    \def\insertsubtitle{#2}\g@addto@macro\@title{\\<article>{\huge#2}}}
 }
 
 %% CC notice

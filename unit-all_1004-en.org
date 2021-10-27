@@ -1,19 +1,14 @@
 # -*- ispell-dictionary: "english" -*-
 
-#+STARTUP: indent hidestars content
-
 #+TITLE: Introduction to Microeconomics
-#+AUTHOR: AE / EC / FC 1004 \\
-#+AUTHOR: DA0204
-#+DATE: Academic year 2021--2022
+#+SUBTITLE: AE / EC / FC 1004 \\
+#+SUBTITLE: DA0204
 
-#+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4 title:nil
+#+SETUPFILE: ./course-en.org
 
 #+LATEX_CLASS: hdout
-#+LATEX_CLASS_OPTIONS: [en]
+#+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4 title:nil
 
-#+LANGUAGE: en
-#+LATEX_HEADER: \newcommand*{\LANG}{en}
 
 
 * {{{part01}}

@@ -28,6 +28,8 @@
 \ExecuteOptions{es}
 \ProcessOptions*\relax
 
+\InputIfFileExists{pres.cfg}{}{}
+
 %% Class loading
 %% --------------------------------------------------------------------------------
 \PassOptionsToPackage{english,spanish}{translator}
@@ -35,8 +37,7 @@
 \PassOptionsToPackage{fleqn, tbtags, leqno}{amsmath}
 \LoadClass[%
   presentation, %
-  compress, %% Navigation bars as small as possible
-  11pt %
+  compress %% Navigation bars as small as possible
 ]{beamer}
 
 
@@ -162,6 +163,7 @@
 
 \newcommand*{\firstframes}{%
   \begin{frame}[plain]\titlepage\end{frame}%
+  \logo{}%
   \begin{frame}%<presentation>%
     \frametitle{\OutlineLabel}%
     \tableofcontents[hideallsubsections]%
@@ -185,3 +187,6 @@
 
 \setbeamercolor{enumerate item}{fg=Section}
 \setbeamertemplate{enumerate items}[default]
+
+
+\logo{\includegraphics[scale=0.35]{by-sa}}

@@ -3,17 +3,15 @@
 #+STARTUP: indent hidestars content
 
 #+TITLE: Introducción a la Microeconomía
-#+AUTHOR: AE / EC / FC 1004 \\
-#+AUTHOR: DA0204
-#+DATE: Curso 2021--2022
+#+SUBTITLE: AE / EC / FC 1004 \\
+#+SUBTITLE: DA0204
 
-#+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4 title:nil
+
+#+SETUPFILE: ./course-es.org
 
 #+LATEX_CLASS: hdout
-#+LATEX_CLASS_OPTIONS: [es]
+#+OPTIONS: toc:nil ':t *:t ^:{} num:3 H:4 title:nil
 
-#+LANGUAGE: es
-#+LATEX_HEADER: \newcommand*{\LANG}{es}
 
 * {{{part01}}}
 
