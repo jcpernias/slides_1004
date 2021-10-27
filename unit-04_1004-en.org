@@ -1,7 +1,7 @@
 # -*- ispell-dictionary: "english" -*-
-#+SETUPFILE: ./course-en.org
+#+SETUPFILE: ./pres-en.org
 
-#+TITLE: Intervention in competitive markets
+#+TITLE: {{{unit04}}}
 
 #+MATS: bib
 #+begin_bibbox

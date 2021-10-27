@@ -16,69 +16,69 @@
 #+LATEX_HEADER: \newcommand*{\LANG}{en}
 
 
-* Introduction
+* {{{part01}}
 
 
-** Basic principles of economic organization
+** {{{unit01}}}
 
 #+latex: \input{unit-01_1004-macros}
 #+include: "unit-01_1004-en.org" :lines "6-"
 
 
-* Competitive markets
+* {{{part02}}
 
 
-** Competitive markets
+** {{{unit02}}}
 
 #+include: "unit-02_1004-en.org" :lines "6-"
 
 
-** Elasticity
+** {{{unit03}}}
 
 #+include: "unit-03_1004-en.org" :lines "6-"
 
 
-** Intervention in competitive markets
+** {{{unit04}}}
 
 #+include: "unit-04_1004-en.org" :lines "6-"
 
 
-* Consumer choice
+* {{{part03}}
 
 
-** Budget constraint
+** {{{unit05}}}
 
 #+include: "unit-05_1004-en.org" :lines "6-"
 
 
-** Preferences
+** {{{unit06}}}
 
 #+include: "unit-06_1004-en.org" :lines "6-"
 
 
-** Consumer choice
+** {{{unit07}}}
 
 #+include: "unit-07_1004-en.org" :lines "6-"
 
 
-** Demand
+** {{{unit08}}}
 
 #+include: "unit-08_1004-en.org" :lines "6-"
 
 
-** Intertemporal choice
+** {{{unit09}}}
 
 #+include: "unit-09_1004-en.org" :lines "6-"
 
 
-* Production and costs
+* {{{part04}}
 
 
-** Production
+** {{{unit10}}}
 
 #+include: "unit-10_1004-en.org" :lines "6-"
 
 
-** Costs
+** {{{unit11}}}
 
 #+include: "unit-11_1004-en.org" :lines "6-"

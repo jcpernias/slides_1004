@@ -1,7 +1,7 @@
 # -*- ispell-dictionary: "spanish" -*-
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: La demanda
+#+TITLE: {{{unit08}}}
 
 #+MATS: bib
 #+begin_bibbox

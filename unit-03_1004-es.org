@@ -1,7 +1,7 @@
 # -*- ispell-dictionary: "spanish" -*-
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: Elasticidad
+#+TITLE: {{{unit03}}}
 
 #+MATS: bib
 #+begin_bibbox

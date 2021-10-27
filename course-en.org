@@ -1,14 +1,31 @@
 #+STARTUP: indent hidestars content
 
-#+AUTHOR: Introduction to Microeconomics \\
-#+AUTHOR: AE / EC / FC 1004 \\
-#+AUTHOR: DA0204
+# #+AUTHOR: Introduction to Microeconomics \\
+# #+AUTHOR: AE / EC / FC 1004 \\
+# #+AUTHOR: DA0204
 #+DATE: Academic year 2021--2022
 
-#+OPTIONS: toc:nil ':t ^:{} num:1 H:2 title:nil
 
-#+LATEX_CLASS: pres
 #+LATEX_CLASS_OPTIONS: [en]
-
 #+LANGUAGE: en
 #+LATEX_HEADER: \newcommand*{\LANG}{en}
+
+## Unit titles
+## ================================================================================
+
+#+MACRO: part01 Introduction
+#+MACRO: part02 Competitive markets
+#+MACRO: part03 Consumer choice
+#+MACRO: part04 Production and costs
+
+#+MACRO: unit01 Basic principles of economic organization
+#+MACRO: unit02 Competitive markets
+#+MACRO: unit03 Elasticity
+#+MACRO: unit04 Intervention in competitive markets
+#+MACRO: unit05 Budget constraint
+#+MACRO: unit06 Preferences
+#+MACRO: unit07 Consumer choice
+#+MACRO: unit08 Demand
+#+MACRO: unit09 Intertemporal choice
+#+MACRO: unit10 Production
+#+MACRO: unit11 Costs

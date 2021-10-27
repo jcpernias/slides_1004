@@ -1,14 +1,31 @@
 #+STARTUP: indent hidestars content
 
-#+AUTHOR: Introducción a la Microeconomía \\
-#+AUTHOR: AE / EC / FC 1004 \\
-#+AUTHOR: DA0204
+# #+AUTHOR: Introducción a la Microeconomía \\
+# #+AUTHOR: AE / EC / FC 1004 \\
+# #+AUTHOR: DA0204
 #+DATE: Curso 2021--2022
 
-#+OPTIONS: toc:nil ':t ^:{} num:1 H:2 title:nil
 
-#+LATEX_CLASS: pres
 #+LATEX_CLASS_OPTIONS: [es]
-
 #+LANGUAGE: es
 #+LATEX_HEADER: \newcommand*{\LANG}{es}
+
+## Títulos de los temas
+## ================================================================================
+
+#+MACRO: part01 Introducción
+#+MACRO: part02 Los mercados competitivos
+#+MACRO: part03 La elección del consumidor
+#+MACRO: part04 Producción y costes
+
+#+MACRO: unit01 Principios básicos de la organización económica
+#+MACRO: unit02 Los mercados competitivos
+#+MACRO: unit03 Elasticidad
+#+MACRO: unit04 Intervención en mercados competitivos
+#+MACRO: unit05 La restricción presupuestaria
+#+MACRO: unit06 Las preferencias
+#+MACRO: unit07 La elección del consumidor
+#+MACRO: unit08 La demanda
+#+MACRO: unit09 Elección intertemporal
+#+MACRO: unit10 La producción
+#+MACRO: unit11 Los costes

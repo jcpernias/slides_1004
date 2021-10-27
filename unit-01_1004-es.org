@@ -1,7 +1,7 @@
 # -*- ispell-dictionary: "spanish" -*-
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: Principios básicos de la organización económica
+#+TITLE: {{{unit01}}}
 
 #+MATS: bib
 #+begin_bibbox

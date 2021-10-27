@@ -1,7 +1,7 @@
 # -*- ispell-dictionary: "spanish" -*-
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: La elección del consumidor
+#+TITLE: {{{unit07}}}
 
 #+MATS: bib
 #+begin_bibbox

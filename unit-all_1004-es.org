@@ -15,72 +15,72 @@
 #+LANGUAGE: es
 #+LATEX_HEADER: \newcommand*{\LANG}{es}
 
-* Introducción
+* {{{part01}}}
 
 
-** Principios básicos de la organización económica
+** {{{unit01}}}
 
 #+latex: \input{unit-01_1004-macros}
 #+include: "unit-01_1004-es.org" :lines "6-"
 
 
 
-* Los mercados competitivos
+* {{{part02}}}
 
 
-** Los mercados competitivos
+** {{{unit02}}}
 
 #+include: "unit-02_1004-es.org" :lines "6-"
 
 
-** Elasticidad
+** {{{unit03}}}
 
 #+include: "unit-03_1004-es.org" :lines "6-"
 
 
-** Intervención en mercados competitivos
+** {{{unit04}}}
 
 #+include: "unit-04_1004-es.org" :lines "6-"
 
 
 
-* La elección del consumidor
+* {{{part03}}}
 
 
-** La restricción presupuestaria
+** {{{unit05}}}
 
 #+include: "unit-05_1004-es.org" :lines "6-"
 
 
-** Las preferencias
+** {{{unit06}}}
 
 #+include: "unit-06_1004-es.org" :lines "6-"
 
 
-** La elección del consumidor
+** {{{unit07}}}
 
 #+include: "unit-07_1004-es.org" :lines "6-"
 
 
-** La demanda
+** {{{unit08}}}
 
 #+include: "unit-08_1004-es.org" :lines "6-"
 
 
-** Elección intertemporal
+** {{{unit09}}}
 
 #+include: "unit-09_1004-es.org" :lines "6-"
 
 
 
-* Producción y costes
+* {{{part04}}}
 
 
-** La producción
+** {{{unit10}}}
 
 #+include: "unit-10_1004-es.org" :lines "6-"
 
 
-** Los costes
+** {{{unit11}}}
 
 #+include: "unit-11_1004-es.org" :lines "6-"

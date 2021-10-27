@@ -1,7 +1,7 @@
 # -*- ispell-dictionary: "spanish" -*-
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: Intervención en mercados competitivos
+#+TITLE: {{{unit04}}}
 
 #+MATS: bib
 #+begin_bibbox

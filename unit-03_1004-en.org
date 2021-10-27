@@ -1,7 +1,7 @@
 # -*- ispell-dictionary: "english" -*-
-#+SETUPFILE: ./course-en.org
+#+SETUPFILE: ./pres-en.org
 
-#+TITLE: Elasticity
+#+TITLE: {{{unit03}}}
 
 #+MATS: bib
 #+begin_bibbox

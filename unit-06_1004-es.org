@@ -1,7 +1,7 @@
 # -*- ispell-dictionary: "spanish" -*-
-#+SETUPFILE: ./course-es.org
+#+SETUPFILE: ./pres-es.org
 
-#+TITLE: Las preferencias
+#+TITLE: {{{unit06}}}
 
 #+MATS: bib
 #+begin_bibbox
