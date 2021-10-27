@@ -1,9 +1,8 @@
 #+STARTUP: indent hidestars content
 
-# #+AUTHOR: Introduction to Microeconomics \\
-# #+AUTHOR: AE / EC / FC 1004 \\
-# #+AUTHOR: DA0204
 #+DATE: Academic year 2021--2022
+
+#+OPTIONS: author:nil
 
 
 #+LATEX_CLASS_OPTIONS: [en]
