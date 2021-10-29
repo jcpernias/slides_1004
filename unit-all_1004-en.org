@@ -1,8 +1,7 @@
 # -*- ispell-dictionary: "english" -*-
 
-#+TITLE: Introduction to Microeconomics
-#+SUBTITLE: AE / EC / FC 1004 \\
-#+SUBTITLE: DA0204
+#+TITLE: \coursename
+#+SUBTITLE: \coursecode
 
 #+SETUPFILE: ./course-en.org
 

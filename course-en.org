@@ -4,6 +4,8 @@
 
 #+OPTIONS: author:nil
 
+#+LATEX_HEADER: \newcommand*{\coursename}{Introduction to Microeconomics}
+#+LATEX_HEADER: \newcommand*{\coursecode}{AE / EC / FC 1004, DA0204}
 
 #+LATEX_CLASS_OPTIONS: [en]
 #+LANGUAGE: en
