@@ -287,7 +287,7 @@
     let \p1 = (A), \p2 = (B) in
     (\x1, -0.3) -- (\x2, -0.3) ;
 
-    \node[curve label] at ($ (\Ax, -1)!0.5!(\Cx, -1) $) {$\Delta P$} ;
+    \node[curve label] at ($ (\Ax, -1)!0.5!(\Cx, -1) $) {$\Delta \Pvar$} ;
 
     \node[curve label, left] at (0, \Cy)  {\phantom{$\Cy$}} ;
 
@@ -321,7 +321,7 @@
     let \p1 = (A), \p2 = (B) in
     (\x1, -0.3) -- (\x2, -0.3) ;
 
-    \node[curve label] at ($ (\Ax, -1)!0.5!(\Cx, -1) $) {$\Delta P$} ;
+    \node[curve label] at ($ (\Ax, -1)!0.5!(\Cx, -1) $) {$\Delta \Pvar$} ;
     \node[curve label, left] at (0, \Cy)  {\phantom{$\Cy$}} ;
   \end{tikzpicture}
 #+END_SRC
@@ -376,7 +376,7 @@
         plot[domain=\Rstart:\Rend, samples=100] (\x, {8-0.25*\x^2}) ;
     \end{scope}
 
-    \node[curve label] at ($ (\Ax, -1)!0.5!(\Cx, -1) $) {$\Delta P$} ;
+    \node[curve label] at ($ (\Ax, -1)!0.5!(\Cx, -1) $) {$\Delta \Pvar$} ;
     \node[curve label, left] at ($ (-0.2, \Ay)!0.5!(-0.2, \Cy) $) {$\Delta C$} ;
 
     \node[curve label, left] at (0, \Cy)  {\phantom{$\Cy$}} ;
@@ -424,7 +424,7 @@
         plot[domain=\Rstart:\Rend, samples=100] (\x, {8-0.25*\x^2}) ;
     \end{scope}
 
-    \node[curve label] at ($ (\Ax, -1)!0.5!(\Cx, -1) $) {\phantom{$\Delta P$}} ;
+    \node[curve label] at ($ (\Ax, -1)!0.5!(\Cx, -1) $) {\phantom{$\Delta \Pvar$}} ;
     % \node[curve label, left] at ($ (-0.2, \Ay)!0.5!(-0.2, \Cy) $) {$\Delta C$} ;
 
     \node[curve label, below] at (\Ax, 0)  {$\Ax$} ;
