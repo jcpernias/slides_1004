@@ -1,6 +1,6 @@
 #+STARTUP: indent hidestars content
 
-#+DATE: Academic year 2022--2023
+#+DATE: Academic year 2023--2024
 
 #+OPTIONS: author:nil
 
