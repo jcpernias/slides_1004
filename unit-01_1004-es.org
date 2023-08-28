@@ -37,11 +37,11 @@
 
 ** Problemas económicos fundamentales
 
-- ¿*Qué* producir?
+- ¿\alert{Qué} producir?
 
-- ¿*Cómo* producir?
+- ¿\alert{Cómo} producir?
 
-- ¿*Para quién* se produce?
+- ¿\alert{Para quién} se produce?
 
 
 ** Pensar como un economista
