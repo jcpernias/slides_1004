@@ -38,7 +38,7 @@
 
 ** Consumption bundles (and II)
 
-#+MATS: figcol fig-05_1004-xy-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-xy-*.pdf 0.4
 
 - Bundle $A$: 1 unit of good $X$ and 3 units of good $Y$.
 
@@ -89,7 +89,7 @@
 
 ** The budget line (II)
 
-#+MATS: figcol fig-05_1004-rp1-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp1-*.pdf 0.4
 
 - Intersection points: the maximum number of units the consumer can
   buy of each .
@@ -97,7 +97,7 @@
 
 ** The budget line (III)
 
-#+MATS: figcol fig-05_1004-rp3-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp3-*.pdf 0.4
 
 - A bundle like $A$ is unaffordable.
 
@@ -107,7 +107,7 @@
 
 ** The budget line (and IV)
 
-#+MATS: figcol fig-05_1004-rp4-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp4-*.pdf 0.4
 
 - The slope of the budget line is the *relative price* with negative
   sign.
@@ -130,7 +130,7 @@
 
 ** The relative price and the opportunity cost
 
-#+MATS: figcol fig-05_1004-rp5-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp5-*.pdf 0.4
 
 - The opportunity cost coincides with the relative price:
   #+begin_export latex
@@ -144,7 +144,7 @@
 
 ** Changes in a price (I)
 
-#+MATS: figcol fig-05_1004-rp6-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp6-*.pdf 0.4
 
 - A reduction of the price of $X$:
   #+begin_export latex
@@ -155,7 +155,7 @@
 
 ** Changes in a price (and II)
 
-#+MATS: figcol fig-05_1004-rp7-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp7-*.pdf 0.4
 
 - An increase in the price of $Y$:
   #+begin_export latex
@@ -166,7 +166,7 @@
 
 ** Changes in income
 
-#+MATS: figcol fig-05_1004-rp8-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp8-*.pdf 0.4
 
 - An increase in income:
   #+begin_export latex
@@ -213,7 +213,7 @@
 
 ** Rationing
 
-#+MATS: figcol fig-05_1004-rac1-*.pdf 0.45
+#+MATS: figcol file:fig-05_1004-rac1-*.pdf 0.45
 
 - *Rationing*: The consumer cannot buy more than $\bar{X}$ units of
   good $X$.
@@ -221,7 +221,7 @@
 
 ** Subsidies
 
-#+MATS: figcol fig-05_1004-orp2-*.pdf 0.45
+#+MATS: figcol file:fig-05_1004-orp2-*.pdf 0.45
 
 - The consumer get the first $\bar{X}$ units of $X$ at a reduced price
   $P'_X$.
@@ -231,7 +231,7 @@
 
 ** Quantity discounts
 
-#+MATS: figcol fig-05_1004-orp4-*.pdf 0.45
+#+MATS: figcol file:fig-05_1004-orp4-*.pdf 0.45
 
 - The first $\bar{X}$ units of $X$ are sold at the normal price $P_X$.
 
@@ -241,7 +241,7 @@
 
 ** Donations
 
-#+MATS: figcol fig-05_1004-orp3-*.pdf 0.45
+#+MATS: figcol file:fig-05_1004-orp3-*.pdf 0.45
 
 - The consumer does not pay anything for the first $\bar{X}$ units of
   $X$.

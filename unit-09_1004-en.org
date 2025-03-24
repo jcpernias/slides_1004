@@ -34,7 +34,7 @@
 
 ** Intertemporal preferences (I)
 
-#+MATS: figcol fig-09_1004-map01-*.pdf 0.50
+#+MATS: figcol file:fig-09_1004-map01-*.pdf 0.50
 
 - The consumer has regular preferences on $C_1$ and $C_2$, represented
   by the utility function $U = U(C_1, C_2)$.
@@ -42,7 +42,7 @@
 
 ** Intertemporal preferences (II)
 
-#+MATS: figcol fig-09_1004-rms01-*.pdf 0.50
+#+MATS: figcol file:fig-09_1004-rms01-*.pdf 0.50
 
 - Marginal rate of substitution:
   #+begin_export latex
@@ -66,7 +66,7 @@
 
 ** The endowment point
 
-#+MATS: figcol fig-09_1004-ciri01-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri01-*.pdf 0.55
 
 - The consumer always has the option of neither borrowing nor lending
   money. In this case: $(C_1, C_2) = (M_1, M_2)$.
@@ -133,14 +133,14 @@
 
 ** The budget line and the interest rate (I)
 
-#+MATS: figcol fig-09_1004-ciri02-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri02-*.pdf 0.55
 
 - The slope of the intertemporal budget constraint is equal to $-(1+r)$
 
 
 ** The budget line and the interest rate (and II)
 
-#+MATS: figcol fig-09_1004-ciri03-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri03-*.pdf 0.55
 
 - When the interest rate changes the intertemporal budget line pivots
   around the point of initial endowments.
@@ -164,7 +164,7 @@
 
 ** Borrowers
 
-#+MATS: figcol fig-09_1004-ciri05-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri05-*.pdf 0.55
 
 - The optimum choice in this case implies:
   #+begin_export latex
@@ -177,7 +177,7 @@
 
 ** Lenders
 
-#+MATS: figcol fig-09_1004-ciri04-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri04-*.pdf 0.55
 
 - The optimum choice in this case implies:
   #+begin_export latex
@@ -221,7 +221,7 @@
 
 ** The savings curve (II)
 
-#+MATS: figcol fig-09_1004-ciri06-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri06-*.pdf 0.55
 
 - If consumption in the first period is of a normal good, an increase
   in the interest rate increases the savings of borrowers.
@@ -233,7 +233,7 @@
 
 ** The savings curve (III)
 
-#+MATS: figcol fig-09_1004-ciri07-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri07-*.pdf 0.55
 
 - In the case of a lender, the income effect has the opposite sign of
   the substitution effect.
@@ -244,7 +244,7 @@
 
 ** The savings curve (and IV)
 
-#+MATS: figcol fig-09_1004-cisv01-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-cisv01-*.pdf 0.55
 
 - The individual savings curve bends backwards for high interest
   rates.

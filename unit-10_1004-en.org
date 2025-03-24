@@ -100,7 +100,7 @@
 
 ** The total product curve
 
-#+MATS: figcol fig-10_1004-cp01-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp01-*.pdf 0.45
 
 - The *total product* curve relates output level and labor:
   #+begin_export latex
@@ -110,7 +110,7 @@
 
 ** The marginal product of labor
 
-#+MATS: figcol fig-10_1004-cp03-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp03-*.pdf 0.45
 
 - The *marginal product of labor* is the rate at which production
   increases per additional unit of labor:
@@ -121,7 +121,7 @@
 
 ** The marginal product of labor curve
 
-#+MATS: figcol fig-10_1004-cp06-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp06-*.pdf 0.45
 
 - The marginal product curve has an inverted U-shape.
 
@@ -136,7 +136,7 @@
 
 ** Diminishing marginal returns to labaor
 
-#+MATS: figcol fig-10_1004-cp06a-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp06a-*.pdf 0.45
 
 - The $\PMgL$ curve is increasing for low values of $L$.
 
@@ -145,7 +145,7 @@
 
 ** Technical efficiency (I)
 
-#+MATS: figcol fig-10_1004-cp06b-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp06b-*.pdf 0.45
 
 - The $\PMgL$ is negative when $L > L_D$.
 
@@ -154,7 +154,7 @@
 
 ** Technical efficiency (and II)
 
-#+MATS: figcol fig-10_1004-cp08-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp08-*.pdf 0.45
 
 - Using more than $L_D$ units of labor is not technically efficient.
 
@@ -163,7 +163,7 @@
 
 ** The average product of labor
 
-#+MATS: figcol fig-10_1004-cp02-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp02-*.pdf 0.45
 
 - The *average product of labor* is the amount of output per unit of
   labor:
@@ -174,14 +174,14 @@
 
 ** The average product of labor curve
 
-#+MATS: figcol fig-10_1004-cp07-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp07-*.pdf 0.45
 
 - The average product of labor curve has an inverted U-shape.
 
 
 ** Total, average, and marginal product (I)
 
-#+MATS: figcol fig-10_1004-cp05-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp05-*.pdf 0.45
 
 - The $\PMeL$ curve:
 
@@ -194,7 +194,7 @@
 
 ** Total, average, and marginal product (and II)
 
-#+MATS: figcol fig-10_1004-cp04-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp04-*.pdf 0.45
 
 - The total product curve attains a maximum at $L_D$, where $\PMgL =
   0$.
@@ -240,7 +240,7 @@
 
 ** Isoquant map
 
-#+MATS: figcol fig-10_1004-is01-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-is01-*.pdf 0.5
 
 - Each isoquant corresponds to a different level of production.
 
@@ -287,7 +287,7 @@
 
 ** Convexity
 
-#+MATS: figcol fig-10_1004-is02-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-is02-*.pdf 0.5
 
 - We assume that isoquants are convex.
 
@@ -296,7 +296,7 @@
 
 ** Substitution among inputs
 
-#+MATS: figcol fig-10_1004-is05-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-is05-*.pdf 0.5
 
 - The curvature of the isoquants indicates how easy it is to
   substitute one input for the other.
@@ -304,7 +304,7 @@
 
 ** Perfect substitutes
 
-#+MATS: figcol fig-10_1004-is03-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-is03-*.pdf 0.5
 
 - The isoquants are straight lines when inputs are *perfect
   substitutes*.
@@ -316,7 +316,7 @@
 
 ** Fixed-proportions production function
 
-#+MATS: figcol fig-10_1004-is04-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-is04-*.pdf 0.5
 
 - *Fixed-proportions technology*: at the technically efficient points
   the factors are always combined in the same proportion.
@@ -348,7 +348,7 @@
 
 ** Constant returns to scale (and II)
 
-#+MATS: figcol fig-10_1004-re01-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-re01-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B = 2 Q_A$.
 
@@ -367,7 +367,7 @@
 
 ** Increasing returns to scale (and II)
 
-#+MATS: figcol fig-10_1004-re02-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-re02-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B > 2 Q_A$.
 
@@ -386,7 +386,7 @@
 
 ** Decreasing returns to scale (and II)
 
-#+MATS: figcol fig-10_1004-re03-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-re03-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B < 2 Q_A$.
 

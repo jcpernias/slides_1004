@@ -74,7 +74,7 @@
 ** Ejemplo: Plano de la UJI
 
 #+ATTR_LATEX: :options scale=0.3
-#+MATS: figcol UJI.png 0.55
+#+MATS: figcol file:UJI.png 0.55
 
 - ¿Que hace útil a un modelo?
 
@@ -135,7 +135,7 @@
   siguientes tablas:
   #+latex: \vspace*{1ex}
   #+begin_center
-  #+MATS: fig fig-01_1004-tab_fpp1-*.pdf
+  #+MATS: fig file:fig-01_1004-tab_fpp1-*.pdf
   #+end_center
 
 
@@ -156,11 +156,11 @@
 
 #+MATS: col 0.5
 - Producción de cocos:
-  #+MATS: fig fig-01_1004-prod-*.pdf
+  #+MATS: fig file:fig-01_1004-prod-*.pdf
 
 #+MATS: col 0.5
 - Producción de pescado:
-  #+MATS: fig fig-01_1004-prod2-*.pdf
+  #+MATS: fig file:fig-01_1004-prod2-*.pdf
 
 
 ** Opciones de producción
@@ -169,13 +169,13 @@
   diferentes actividades.
   #+latex: \vspace*{1ex}
   #+begin_center
-  #+MATS: fig fig-01_1004-tab_fpp2-*.pdf
+  #+MATS: fig file:fig-01_1004-tab_fpp2-*.pdf
   #+end_center
 
 
 ** Frontera de Posibilidades de Producción (I)
 
-#+MATS: figcol fig-01_1004-fpp1-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-fpp1-*.pdf 0.45
 
 - La *frontera de posibilidades de producción* (FPP) es el conjunto de
   las diferentes opciones de producción donde se utilizan *todos* los
@@ -184,7 +184,7 @@
 
 ** Frontera de Posibilidades de Producción (II)
 
-#+MATS: figcol fig-01_1004-fpp2a-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-fpp2a-*.pdf 0.45
 
 - La FPP describe las opciones de producción de una economía, pero no
   nos indica qué opción se elegirá.
@@ -192,7 +192,7 @@
 
 ** Frontera de Posibilidades de Producción (y III)
 
-#+MATS: figcol fig-01_1004-fpp1a-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-fpp1a-*.pdf 0.45
 
 - Los puntos de corte de la FPP con los ejes muestran las producciones
   máximas de cada bien.
@@ -200,7 +200,7 @@
 
 ** Opciones accesibles e  inaccesibles
 
-#+MATS: figcol fig-01_1004-fpp2-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-fpp2-*.pdf 0.45
 
 - $A$ y $B$ son *opciones factibles*.
 - $I$ es una *opción inaccesible*.
@@ -208,7 +208,7 @@
 
 ** Eficiencia en la producción (I)
 
-#+MATS: figcol fig-01_1004-fpp3-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-fpp3-*.pdf 0.45
 
 - $B$ es una opción de producción *eficiente*: no es posible producir
   más de un bien manteniendo inalterada la producción del otro bien.
@@ -216,7 +216,7 @@
 
 ** Eficiencia en la producción (y III)
 
-#+MATS: figcol fig-01_1004-fpp3a-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-fpp3a-*.pdf 0.45
 
 - La opción $A$ no es eficiente: es posible aumentar la producción de
   pescado sin reducir la producción de cocos.
@@ -228,7 +228,7 @@
 
 ** Coste de oportunidad (I)
 
-#+MATS: figcol fig-01_1004-fpp4-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-fpp4-*.pdf 0.45
 
 - Partiendo de un punto eficiente, sólo es posible aumentar la
   producción de un bien sacrificando parte de la producción de otros
@@ -237,7 +237,7 @@
 
 ** Coste de oportunidad (II)
 
-#+MATS: figcol fig-01_1004-fpp5-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-fpp5-*.pdf 0.45
 
 - $\Delta \Pvar = 2.2$ kg de pescado.
 - $\Delta C = -4.25$ kg de cocos.
@@ -245,7 +245,7 @@
 
 ** Coste de oportunidad (III)
 
-#+MATS: figcol fig-01_1004-fpp5-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-fpp5-*.pdf 0.45
 
 - Coste de oportunidad:
   \[ \left|\frac{\Delta C}{\Delta \Pvar}\right| = 1.93 \]
@@ -258,13 +258,13 @@
   más de pescado es *creciente*.
   #+latex: \vspace*{1ex}
   #+begin_center
-  #+MATS: fig fig-01_1004-tab_fpp3-*.pdf
+  #+MATS: fig file:fig-01_1004-tab_fpp3-*.pdf
   #+end_center
 
 
 ** Pendiente y coste de oportunidad
 
-#+MATS: figcol fig-01_1004-fpp6-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-fpp6-*.pdf 0.45
 
 - La *pendiente* negativa de la frontera de posibilidades de
   producción refleja el coste de oportunidad de producir más pescado.
@@ -272,7 +272,7 @@
 
 ** Concavidad y costes de oportunidad crecientes
 
-#+MATS: figcol fig-01_1004-fpp7-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-fpp7-*.pdf 0.45
 
 - La *concavidad* de la frontera de posibilidades de producción
   refleja el coste de oportunidad *creciente* de producir más pescado.
@@ -290,7 +290,7 @@
 
 ** Aplicación: crecimiento económico (II)
 
-#+MATS: figcol fig-01_1004-gr2-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-gr2-*.pdf 0.45
 
 - El crecimiento económico hace que la frontera de posibilidades de
   producción se *desplace* hacia arriba y a la derecha.
@@ -298,7 +298,7 @@
 
 ** Aplicación: crecimiento económico (III)
 
-#+MATS: figcol fig-01_1004-gr3-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-gr3-*.pdf 0.45
 
 - Una mejora tecnológica en los dos sectores.
 
@@ -308,7 +308,7 @@
 
 ** Aplicación: crecimiento económico (y IV)
 
-#+MATS: figcol fig-01_1004-gr1-*.pdf 0.45
+#+MATS: figcol file:fig-01_1004-gr1-*.pdf 0.45
 
 - Una mejora tecnológica que afecta *sólo* a la producción de pescado.
 

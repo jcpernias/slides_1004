@@ -52,7 +52,7 @@
 
 ** Un ejemplo
 
-#+MATS: figcol fig-03_1004-unicorn10-*.pdf 0.46
+#+MATS: figcol file:fig-03_1004-unicorn10-*.pdf 0.46
 
 - Elasticidad en el arco $\overline{AB}$:
   #+begin_export latex
@@ -73,7 +73,7 @@
 
 ** Elasticidad a lo largo de la curva de demanda
 
-#+MATS: figcol fig-03_1004-unicorn2-*.pdf 0.46
+#+MATS: figcol file:fig-03_1004-unicorn2-*.pdf 0.46
 
 - Elasticidad en $\overline{AB}$: $E_d = -3$.
 
@@ -122,7 +122,7 @@
 
 ** Pendiente de la demanda y elasticidad precio (II)
 
-#+MATS: figcol fig-03_1004-unicorn11-*.pdf 0.46
+#+MATS: figcol file:fig-03_1004-unicorn11-*.pdf 0.46
 
 - Elasticidad en el arco $\overline{AB}$:
   #+begin_export latex
@@ -172,14 +172,14 @@
 
 ** Elasticidad arco (II)
 
-#+MATS: figcol fig-03_1004-unicorn10-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-unicorn10-*.pdf 0.45
 
 - Si baja el precio: $E_d = -3$
 
 
 ** Elasticidad arco (y III)
 
-#+MATS: figcol fig-03_1004-unicorn3-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-unicorn3-*.pdf 0.45
 
 - Si sube el precio: \textcolor{DarkRed}{¡¡¡} $E_d =-1$
   \textcolor{DarkRed}{!!!}
@@ -202,7 +202,7 @@
 
 ** Fórmula del punto medio (y II)
 
-#+MATS: figcol fig-03_1004-unicorn4-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-unicorn4-*.pdf 0.45
 
 - Se obtiene el mismo resultado suba o baje el precio:
   #+begin_export latex
@@ -226,14 +226,14 @@
 
 ** Elasticidad punto (y II)
 
-#+MATS: figcol fig-03_1004-unicorn5-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-unicorn5-*.pdf 0.45
 
 - Elasticidad en diferentes puntos de una curva de demanda lineal.
 
 
 ** Algunos casos especiales (I)
 
-#+MATS: figcol fig-03_1004-elast8-*.pdf 0.42
+#+MATS: figcol file:fig-03_1004-elast8-*.pdf 0.42
 
 - Demanda perfectamente inelástica:
   #+begin_export latex
@@ -245,7 +245,7 @@
 
 ** Algunos casos especiales (II)
 
-#+MATS: figcol fig-03_1004-elast9-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-elast9-*.pdf 0.45
 
 - Demanda perfectamente elástica:
   #+begin_export latex
@@ -257,7 +257,7 @@
 
 ** Algunos casos especiales (y III)
 
-#+MATS: figcol fig-03_1004-ingr1-*.pdf 0.5
+#+MATS: figcol file:fig-03_1004-ingr1-*.pdf 0.5
 
 - Curva de demanda lineal:
   #+begin_export latex
@@ -271,7 +271,7 @@
 
 ** Ingresos totales
 
-#+MATS: figcol fig-03_1004-ingr3-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-ingr3-*.pdf 0.4
 
 - Ingresos totales de los vendedores:
   #+begin_export latex
@@ -281,7 +281,7 @@
 
 ** Variaciones de los ingresos (I)
 
-#+MATS: figcol fig-03_1004-ingr4-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-ingr4-*.pdf 0.4
 
 - ¿Cómo cambian los ingresos al cambiar el precio?
   #+begin_export latex
@@ -294,7 +294,7 @@
 
 ** Variaciones de los ingresos (II)
 
-#+MATS: figcol fig-03_1004-ingr5-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-ingr5-*.pdf 0.45
 
 - $\Delta I = \Delta P \cdot Q_1 + P_1 \cdot \Delta Q + \Delta P \cdot
   \Delta Q$
@@ -304,7 +304,7 @@
 
 ** Variaciones de los ingresos (III)
 
-#+MATS: figcol fig-03_1004-ingr5-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-ingr5-*.pdf 0.45
 
 - $\Delta\% I \approx \Delta\% P + \Delta\% Q$
 
@@ -319,7 +319,7 @@
 
 ** Variaciones de los ingresos (y IV)
 
-#+MATS: figcol fig-03_1004-ingr6-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-ingr6-*.pdf 0.45
 
 - $\Delta\% I \approx \Delta\% P + \Delta\% Q$
 
@@ -417,27 +417,27 @@
 
 ** Algunos casos (I)
 
-#+MATS: figcol fig-03_1004-elast10-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-elast10-*.pdf 0.4
 
 - Oferta perfectamente inelástica: \[E_s = 0\]
 
 
 ** Algunos casos (II)
 
-#+MATS: figcol fig-03_1004-elast11-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-elast11-*.pdf 0.4
 
 - Tramo inelástico de la oferta: \[E_s = 0.44\]
 
 
 ** Algunos casos (III)
 
-#+MATS: figcol fig-03_1004-elast12-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-elast12-*.pdf 0.4
 
 - Tramo elástico de la oferta: \[E_s = 1.75\]
 
 
 ** Algunos casos (y IV)
 
-#+MATS: figcol fig-03_1004-elast13-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-elast13-*.pdf 0.4
 
 - Oferta perfectamente elástica: \[E_s = \infty\]

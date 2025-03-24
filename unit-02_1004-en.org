@@ -62,7 +62,7 @@
 - The *demand curve* has *negative slope*.
 
 #+begin_center
-#+MATS: fig fig-02_1004-dtab-*.pdf
+#+MATS: fig file:fig-02_1004-dtab-*.pdf
 #+end_center
 
 
@@ -76,7 +76,7 @@
 - Demand in a market consisting of three consumers (K, L and M):
 
 #+begin_center
-#+MATS: fig fig-02_1004-dtab2-*.pdf
+#+MATS: fig file:fig-02_1004-dtab2-*.pdf
 #+end_center
 
 
@@ -85,19 +85,19 @@
 - The market demand curve is the horizontal sum of the individual
   demand curves.
 
-#+MATS: fig fig-02_1004-dtab3-*.pdf
+#+MATS: fig file:fig-02_1004-dtab3-*.pdf
 
 
 ** Variations in the price (I)
 
-#+MATS: figcol fig-02_1004-d2-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d2-*.pdf 0.45
 
 - When the market price is $P_A$ the quantity demanded is $Q_A$.
 
 
 ** Variations in the price (II)
 
-#+MATS: figcol fig-02_1004-d3-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d3-*.pdf 0.45
 
 - The market price falls to $P_B$, /ceteris paribus/.
 
@@ -106,7 +106,7 @@
 
 ** Variations in the price (and III)
 
-#+MATS: figcol fig-02_1004-d4-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d4-*.pdf 0.45
 
 - Variations in the price of the good, /ceteris paribus/, are
   reflected in *movements along* the demand curve.
@@ -146,14 +146,14 @@
 
 ** Shifts in the demand (I)
 
-#+MATS: figcol fig-02_1004-d5-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d5-*.pdf 0.45
 
 - At the market price $P_A$ the quantity demanded is $Q_A$.
 
 
 ** Shifts in the demand (II)
 
-#+MATS: figcol fig-02_1004-d6-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d6-*.pdf 0.45
 
 - The price of a substitute good increases.
 
@@ -162,7 +162,7 @@
 
 ** Shifts in the demand (and III)
 
-#+MATS: figcol fig-02_1004-d8-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d8-*.pdf 0.45
 
 - An increase in demand : $D \rightarrow D^{+}$
 
@@ -199,7 +199,7 @@
 - The *supply curve* has *positive slope*.
 
   #+begin_center
-  #+MATS: fig fig-02_1004-otab-*.pdf
+  #+MATS: fig file:fig-02_1004-otab-*.pdf
   #+end_center
 
 
@@ -211,12 +211,12 @@
 - It is obtained graphically as the horizontal sum of the individual
   supply curves.
 
-#+MATS: fig fig-02_1004-otab3-*.pdf
+#+MATS: fig file:fig-02_1004-otab3-*.pdf
 
 
 ** Variations in the price
 
-#+MATS: figcol fig-02_1004-s2-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-s2-*.pdf 0.45
 
 - A variation in the price, /ceteris paribus/, prompts a movement
   along the supply curve.
@@ -243,7 +243,7 @@
 
 ** Shifts in the supply (I)
 
-#+MATS: figcol fig-02_1004-s3-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-s3-*.pdf 0.45
 
 - An increase in the supply: firms offer now a higher quantity at the
   same price.
@@ -251,7 +251,7 @@
 
 ** Shifts in the supply (and II)
 
-#+MATS: figcol fig-02_1004-s4-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-s4-*.pdf 0.45
 
 - Increase in the supply: $S \rightarrow S^{+}$
 
@@ -275,7 +275,7 @@
 
 ** Equilibrium price
 
-#+MATS: figcol fig-02_1004-eq1-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-eq1-*.pdf 0.45
 
 - The intersection between supply and demand determines the
   *equilibrium price*, $P^*$, and the *equilibrium quantity*, $Q^*$.
@@ -286,7 +286,7 @@
 
 ** Surplus
 
-#+MATS: figcol fig-02_1004-eq3-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-eq3-*.pdf 0.45
 
 - *Surplus*: the price exceeds the equilibrium price and suppliers are unable
   to sell all they want.
@@ -294,7 +294,7 @@
 
 ** Shortage
 
-#+MATS: figcol fig-02_1004-eq4-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-eq4-*.pdf 0.45
 
 - *Shortage*: the price is below the equilibrium price and the
   production is lower than the quantity consumers are willing to buy.
@@ -302,7 +302,7 @@
 
 ** Exchange points
 
-#+MATS: figcol fig-02_1004-eq5-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-eq5-*.pdf 0.45
 
 - For non-equilibrium prices, the quantity exchanged is determined by the
   shorter side of the market.
@@ -334,7 +334,7 @@
 
 ** An increase in demand
 
-#+MATS: figcol fig-02_1004-comp1-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-comp1-*.pdf 0.45
 
 - The equilibrium price increases.
 
@@ -343,7 +343,7 @@
 
 ** A decrease in supply
 
-#+MATS: figcol fig-02_1004-comp2-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-comp2-*.pdf 0.45
 
 - The equilibrium price increases.
 
@@ -352,7 +352,7 @@
 
 ** Shifts in both curves (I)
 
-#+MATS: figcol fig-02_1004-comp3-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-comp3-*.pdf 0.45
 
 - Large increase in demand.
 
@@ -363,7 +363,7 @@
 
 ** Shifts in both curves (II)
 
-#+MATS: figcol fig-02_1004-comp4-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-comp4-*.pdf 0.45
 
 - Small increase in demand.
 
@@ -381,7 +381,7 @@
   change in one of the variables.
   #+latex: \vspace*{1ex}
   #+begin_center
-  #+MATS: fig fig-02_1004-tab_comp-*.pdf
+  #+MATS: fig file:fig-02_1004-tab_comp-*.pdf
   #+end_center
 
 

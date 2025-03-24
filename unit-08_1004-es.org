@@ -14,7 +14,7 @@
 
 ** Cambios en la renta
 
-#+MATS: figcol fig-08_1004-crc2-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-crc2-*.pdf 0.55
 
 - Conforme aumenta la renta, $M < M' < M''$, la restricción
   presupuestaria se desplaza hacia la derecha.
@@ -22,7 +22,7 @@
 
 ** Cambios en la decisión de consumo
 
-#+MATS: figcol fig-08_1004-crc3-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-crc3-*.pdf 0.55
 
 - El consumidor selecciona una cesta diferente para cada nivel de
   renta monetaria.
@@ -30,7 +30,7 @@
 
 ** Curva renta consumo
 
-#+MATS: figcol fig-08_1004-crc-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-crc-*.pdf 0.55
 
 - La *curva de renta consumo*, \CRC, es el conjunto de las cestas que
   elige un consumidor para cada posible valor de la renta monetaria,
@@ -39,7 +39,7 @@
 
 ** Curva de Engel
 
-#+MATS: figcol fig-08_1004-eng-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eng-*.pdf 0.55
 
 - La *curva de Engel* relaciona la cantidad demandada de un bien con
   la renta monetaria de un consumidor, manteniendo constantes los
@@ -67,7 +67,7 @@
 
 ** Cambios en el precio de un bien
 
-#+MATS: figcol fig-08_1004-cpc2-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-cpc2-*.pdf 0.55
 
 - Al disminuir el precio del bien $X$, $P_X > P'_X > P''_X$, la recta
   presupuestaria gira en sentido antihorario.
@@ -75,14 +75,14 @@
 
 ** Cambios en la decisión de consumo
 
-#+MATS: figcol fig-08_1004-cpc3-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-cpc3-*.pdf 0.55
 
 - El consumidor elige una cesta diferente para cada $P_X$.
 
 
 ** Curva precio consumo
 
-#+MATS: figcol fig-08_1004-cpc-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-cpc-*.pdf 0.55
 
 - La *curva de precio consumo* es el conjunto de las cestas que el
   consumidor elige para cada posible precio del bien $X$, manteniendo
@@ -91,7 +91,7 @@
 
 ** La curva de demanda individual
 
-#+MATS: figcol fig-08_1004-dem-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-dem-*.pdf 0.55
 
 - La *curva de demanda* relaciona la cantidad demandada de un bien con
   el precio de ese bien, manteniendo constantes la renta monetaria y
@@ -120,7 +120,7 @@
 
 ** Ley de la demanda (I)
 
-#+MATS: figcol fig-08_1004-eres20-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eres20-*.pdf 0.55
 
 - Un aumento de $P_X$, /ceteris paribus/, reduce la cantidad demandada
   de $X$.
@@ -128,7 +128,7 @@
 
 ** Ley de la demanda (y II)
 
-#+MATS: figcol fig-08_1004-eres22-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eres22-*.pdf 0.55
 
 - El análisis del consumidor no excluye la posibilidad de que la
   cantidad demandada aumente con el propio precio.
@@ -219,7 +219,7 @@
 
 ** Ejemplo (II)
 
-#+MATS: figcol fig-08_1004-eres02-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eres02-*.pdf 0.55
 
 - Efecto total del aumento de $P_X$:
   #+begin_export latex
@@ -229,7 +229,7 @@
 
 ** Ejemplo (III)
 
-#+MATS: figcol fig-08_1004-eres03-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eres03-*.pdf 0.55
 
 - $E_H$: elección si la renta real no cambia.
 
@@ -240,7 +240,7 @@
 
 ** Ejemplo (y IV)
 
-#+MATS: figcol fig-08_1004-eres04-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eres04-*.pdf 0.55
 
 - $\ES = 12 - 24 = \units{-12}$
 
@@ -281,7 +281,7 @@
 
 ** Bienes normales (y II)
 
-#+MATS: figcol fig-08_1004-eres10-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eres10-*.pdf 0.55
 
 - El efecto sustitución y el efecto renta se refuerzan mutuamente.
 
@@ -314,7 +314,7 @@
 
 ** Bienes inferiores (y II)
 
-#+MATS: figcol fig-08_1004-eres11-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eres11-*.pdf 0.55
 
 - El efecto renta contrarresta parcialmente el efecto sustitución.
 
@@ -336,7 +336,7 @@
 
 ** Bienes Giffen (II)
 
-#+MATS: figcol fig-08_1004-eres12-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eres12-*.pdf 0.55
 
 - El efecto renta es mayor en términos absolutos que el efecto
   sustitución.
@@ -367,7 +367,7 @@
 
 ** Descomposición de Slutsky (II)
 
-#+MATS: figcol fig-08_1004-eres05a-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eres05a-*.pdf 0.55
 
 - $E_S$: elección si la renta real no cambia.
 - $E_S$ está en una restricción presupuestaria que pasa por $E_0$.
@@ -378,7 +378,7 @@
 
 ** Descomposición de Slutsky (III)
 
-#+MATS: figcol fig-08_1004-eres05-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eres05-*.pdf 0.55
 
 - $\ES = 17 - 24 = -7$.
 - $\ER = 3 - 17 = -14$.
@@ -387,7 +387,7 @@
 
 ** Descomposición de Slutsky (y IV)
 
-#+MATS: figcol fig-08_1004-eres06-*.pdf 0.55
+#+MATS: figcol file:fig-08_1004-eres06-*.pdf 0.55
 
 - Las propuestas de Hicks y Slutsky generan resultados diferentes.
 - Ambas coinciden cuando el cambio en los precios es muy pequeño o en

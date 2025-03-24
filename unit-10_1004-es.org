@@ -103,7 +103,7 @@
 
 ** La curva de producto total
 
-#+MATS: figcol fig-10_1004-cp01-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp01-*.pdf 0.45
 
 - La curva de *producto total* relaciona el nivel de producción y el
   trabajo:
@@ -114,7 +114,7 @@
 
 ** El producto marginal del trabajo
 
-#+MATS: figcol fig-10_1004-cp03-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp03-*.pdf 0.45
 
 - El *producto marginal del trabajo* es la tasa a la que crece la
   producción por unidad adicional de trabajo:
@@ -125,7 +125,7 @@
 
 ** La curva de producto marginal
 
-#+MATS: figcol fig-10_1004-cp06-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp06-*.pdf 0.45
 
 - La curva de producto marginal tiene forma de U invertida.
 
@@ -140,7 +140,7 @@
 
 ** Rendimientos decrecientes del trabajo
 
-#+MATS: figcol fig-10_1004-cp06a-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp06a-*.pdf 0.45
 
 - La curva de $\PMgL$ es creciente para valores bajos de $L$.
 
@@ -150,7 +150,7 @@
 
 ** Eficiencia técnica (I)
 
-#+MATS: figcol fig-10_1004-cp06b-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp06b-*.pdf 0.45
 
 - El $\PMgL$ es negativo cuando $L > L_D$.
 
@@ -159,7 +159,7 @@
 
 ** Eficiencia técnica (y II)
 
-#+MATS: figcol fig-10_1004-cp08-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp08-*.pdf 0.45
 
 - El uso de más unidades de trabajo que $L_D$ no es técnicamente
   eficiente.
@@ -169,7 +169,7 @@
 
 ** Producto medio del trabajo
 
-#+MATS: figcol fig-10_1004-cp02-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp02-*.pdf 0.45
 
 - El *producto medio del trabajo* es el número de unidades producidas
   por hora de trabajo:
@@ -180,14 +180,14 @@
 
 ** La curva de producto medio
 
-#+MATS: figcol fig-10_1004-cp07-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp07-*.pdf 0.45
 
 - La curva de producto medio del trabajo tiene forma de U invertida.
 
 
 ** Producto total, medio y marginal (I)
 
-#+MATS: figcol fig-10_1004-cp05-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp05-*.pdf 0.45
 
 - La curva de $\PMeL$:
 
@@ -200,7 +200,7 @@
 
 ** Producto total, medio y marginal (y II)
 
-#+MATS: figcol fig-10_1004-cp04-*.pdf 0.45
+#+MATS: figcol file:fig-10_1004-cp04-*.pdf 0.45
 
 - La curva de producto total alcanza un máximo en $L_D$, donde $\PMgL
   = 0$.
@@ -246,7 +246,7 @@
 
 ** El mapa de isocuantas
 
-#+MATS: figcol fig-10_1004-is01-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-is01-*.pdf 0.5
 
 - Cada isocuanta se corresponde con un nivel de producción diferente.
 
@@ -294,7 +294,7 @@
 
 ** Convexidad
 
-#+MATS: figcol fig-10_1004-is02-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-is02-*.pdf 0.5
 
 - Suponemos que las isocuantas son convexas.
 
@@ -303,7 +303,7 @@
 
 ** Sustitución entre factores
 
-#+MATS: figcol fig-10_1004-is05-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-is05-*.pdf 0.5
 
 - La curvatura de las isocuanta indica la facilidad con que puede
   sustituirse un factor por el otro.
@@ -311,7 +311,7 @@
 
 ** Sustitutos perfectos
 
-#+MATS: figcol fig-10_1004-is03-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-is03-*.pdf 0.5
 
 - Las isocuantas son líneas rectas cuando los factores de producción
   son *sustitutos perfectos*.
@@ -323,7 +323,7 @@
 
 ** Función de producción de proporciones fijas
 
-#+MATS: figcol fig-10_1004-is04-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-is04-*.pdf 0.5
 
 - *Tecnología de proporciones fijas*: en todos los puntos técnicamente
   eficientes, los factores se combinan en la misma proporción.
@@ -356,7 +356,7 @@
 
 ** Rendimientos constantes de escala (y II)
 
-#+MATS: figcol fig-10_1004-re01-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-re01-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B = 2 Q_A$.
 
@@ -375,7 +375,7 @@
 
 ** Rendimientos crecientes de escala (y II)
 
-#+MATS: figcol fig-10_1004-re02-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-re02-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B > 2 Q_A$.
 - $C = 3 A$ y $Q_C > 3 Q_A$.
@@ -393,7 +393,7 @@
 
 ** Rendimientos decrecientes de escala (y II)
 
-#+MATS: figcol fig-10_1004-re03-*.pdf 0.5
+#+MATS: figcol file:fig-10_1004-re03-*.pdf 0.5
 
 - $B = 2 A$ y $Q_B < 2 Q_A$.
 - $C = 3 A$ y $Q_C < 3 Q_A$.

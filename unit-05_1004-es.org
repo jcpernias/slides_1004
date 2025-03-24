@@ -38,7 +38,7 @@
 
 ** Cestas de consumo (y II)
 
-#+MATS: figcol fig-05_1004-xy-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-xy-*.pdf 0.4
 
 - Cesta $A$: 1 unidad del bien $X$ y 3 unidades del bien $Y$.
 
@@ -89,7 +89,7 @@
 
 ** La recta presupuestaria (II)
 
-#+MATS: figcol fig-05_1004-rp1-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp1-*.pdf 0.4
 
 - Puntos de corte: número máximo de unidades que el consumidor puede
   comprar de cada bien.
@@ -97,7 +97,7 @@
 
 ** La recta presupuestaria (III)
 
-#+MATS: figcol fig-05_1004-rp3-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp3-*.pdf 0.4
 
 - Cestas como $A$ son inasequibles.
 
@@ -108,7 +108,7 @@
 
 ** La recta presupuestaria (y IV)
 
-#+MATS: figcol fig-05_1004-rp4-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp4-*.pdf 0.4
 
 - La pendiente es igual al *precio relativo* con signo negativo.
 
@@ -130,7 +130,7 @@
 
 ** Precio relativo y coste de oportunidad
 
-#+MATS: figcol fig-05_1004-rp5-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp5-*.pdf 0.4
 
 - El coste de oportunidad coincide con el precio relativo:
   #+begin_export latex
@@ -143,7 +143,7 @@
 
 ** Cambios en un precio (I)
 
-#+MATS: figcol fig-05_1004-rp6-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp6-*.pdf 0.4
 
 - Una disminución del precio de $X$:
   #+begin_export latex
@@ -154,7 +154,7 @@
 
 ** Cambios en un precio (y II)
 
-#+MATS: figcol fig-05_1004-rp7-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp7-*.pdf 0.4
 
 - Un aumento del precio de $Y$:
   #+begin_export latex
@@ -165,7 +165,7 @@
 
 ** Cambios en la renta
 
-#+MATS: figcol fig-05_1004-rp8-*.pdf 0.4
+#+MATS: figcol file:fig-05_1004-rp8-*.pdf 0.4
 
 - Un aumento de la renta:
   #+begin_export latex
@@ -209,7 +209,7 @@
 
 ** Racionamiento
 
-#+MATS: figcol fig-05_1004-rac1-*.pdf 0.45
+#+MATS: figcol file:fig-05_1004-rac1-*.pdf 0.45
 
 - *Racionamiento*: El consumidor no puede comprar más de $\bar{X}$
   unidades del bien $X$.
@@ -217,7 +217,7 @@
 
 ** Subvenciones
 
-#+MATS: figcol fig-05_1004-orp2-*.pdf 0.45
+#+MATS: figcol file:fig-05_1004-orp2-*.pdf 0.45
 
 - El consumidor obtiene las primeras $\bar{X}$ unidades de $X$ a un
   precio reducido $P'_X$.
@@ -228,7 +228,7 @@
 
 ** Descuentos por volumen
 
-#+MATS: figcol fig-05_1004-orp4-*.pdf 0.45
+#+MATS: figcol file:fig-05_1004-orp4-*.pdf 0.45
 
 - Las primeras $\bar{X}$ unidades de $X$ se venden al precio
   normal $P_X$.
@@ -238,7 +238,7 @@
 
 ** Donaciones
 
-#+MATS: figcol fig-05_1004-orp3-*.pdf 0.45
+#+MATS: figcol file:fig-05_1004-orp3-*.pdf 0.45
 
 - El consumidor no paga nada por las primeras $\bar{X}$ unidades de
   $X$.

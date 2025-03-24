@@ -35,7 +35,7 @@
 
 ** Las preferencias intertemporales (I)
 
-#+MATS: figcol fig-09_1004-map01-*.pdf 0.50
+#+MATS: figcol file:fig-09_1004-map01-*.pdf 0.50
 
 - El consumidor tiene unas preferencias regulares sobre $C_1$ y $C_2$,
   representadas por la función de utilidad $U = U(C_1, C_2)$.
@@ -43,7 +43,7 @@
 
 ** Las preferencias intertemporales (II)
 
-#+MATS: figcol fig-09_1004-rms01-*.pdf 0.50
+#+MATS: figcol file:fig-09_1004-rms01-*.pdf 0.50
 
 - Relación marginal de sustitución:
   #+begin_export latex
@@ -67,7 +67,7 @@
 
 ** El punto de dotación
 
-#+MATS: figcol fig-09_1004-ciri01-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri01-*.pdf 0.55
 
 - El consumidor siempre tiene la opción de no pedir prestado ni
   prestar. En este caso $(C_1, C_2) = (M_1, M_2)$.
@@ -133,14 +133,14 @@
 
 ** La recta presupuestaria y el tipo de interés (I)
 
-#+MATS: figcol fig-09_1004-ciri02-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri02-*.pdf 0.55
 
 - La pendiente de la restricción intertemporal es igual a $-(1+r)$
 
 
 ** La recta presupuestaria y el tipo de interés (y II)
 
-#+MATS: figcol fig-09_1004-ciri03-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri03-*.pdf 0.55
 
 - Cuando el tipo de interés varía la recta presupuestaria
   intertemporal pivota alrededor del punto de las dotaciones
@@ -165,7 +165,7 @@
 
 ** Prestatarios
 
-#+MATS: figcol fig-09_1004-ciri05-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri05-*.pdf 0.55
 
 - La elección óptima en este caso implica:
   #+begin_export latex
@@ -178,7 +178,7 @@
 
 ** Prestamistas
 
-#+MATS: figcol fig-09_1004-ciri04-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri04-*.pdf 0.55
 
 - La elección óptima en este caso implica:
   #+begin_export latex
@@ -221,7 +221,7 @@
 
 ** La curva de ahorro (II)
 
-#+MATS: figcol fig-09_1004-ciri06-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri06-*.pdf 0.55
 
 - Si el consumo en el primer periodo es un bien normal, un aumento del
   tipo de interés aumenta el ahorro de los prestatarios.
@@ -231,7 +231,7 @@
 
 ** La curva de ahorro (III)
 
-#+MATS: figcol fig-09_1004-ciri07-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-ciri07-*.pdf 0.55
 
 - En el caso de un prestamista, el efecto renta tiene signo contrario
   al efecto sustitución.
@@ -243,7 +243,7 @@
 
 ** La curva de ahorro (y IV)
 
-#+MATS: figcol fig-09_1004-cisv01-*.pdf 0.55
+#+MATS: figcol file:fig-09_1004-cisv01-*.pdf 0.55
 
 - La curva de ahorro individual se vuelve hacia atrás para tipos de
   interés elevados.

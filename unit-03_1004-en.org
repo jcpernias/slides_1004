@@ -52,7 +52,7 @@
 
 ** An example
 
-#+MATS: figcol fig-03_1004-unicorn10-*.pdf 0.46
+#+MATS: figcol file:fig-03_1004-unicorn10-*.pdf 0.46
 
 - Elasticity in the arc $\overline{AB}$:
   #+begin_export latex
@@ -73,7 +73,7 @@
 
 ** Elasticity along the demand curve
 
-#+MATS: figcol fig-03_1004-unicorn2-*.pdf 0.46
+#+MATS: figcol file:fig-03_1004-unicorn2-*.pdf 0.46
 
 - Elasticity in $\overline{AB}$: $E_d = -3$.
 
@@ -123,7 +123,7 @@
 
 ** Slope of demand and price elasticity (II)
 
-#+MATS: figcol fig-03_1004-unicorn11-*.pdf 0.46
+#+MATS: figcol file:fig-03_1004-unicorn11-*.pdf 0.46
 
 - Elasticity in the arc $\overline{AB}$:
   #+begin_export latex
@@ -176,14 +176,14 @@
 
 ** Arc elasticity (II)
 
-#+MATS: figcol fig-03_1004-unicorn10-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-unicorn10-*.pdf 0.45
 
 - If the price drops: $E_d = -3$.
 
 
 ** Arc elasticity (and III)
 
-#+MATS: figcol fig-03_1004-unicorn3-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-unicorn3-*.pdf 0.45
 
 - If the price rises: \textcolor{DarkRed}{¡¡¡} $E_d =-1$
   \textcolor{DarkRed}{!!!}
@@ -208,7 +208,7 @@
 
 ** The midpoint formula (and II)
 
-#+MATS: figcol fig-03_1004-unicorn4-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-unicorn4-*.pdf 0.45
 
 - The result is independent of the direction of the price change:
   \[E_d = -1.67\]
@@ -230,14 +230,14 @@
 
 ** Point elasticity (and II)
 
-#+MATS: figcol fig-03_1004-unicorn5-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-unicorn5-*.pdf 0.45
 
 - Elasticity in different point of the demand curve:
 
 
 ** Some special cases (I)
 
-#+MATS: figcol fig-03_1004-elast8-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-elast8-*.pdf 0.45
 
 - Perfectly inelastic demand:
   #+begin_export latex
@@ -249,7 +249,7 @@
 
 ** Some special cases (II)
 
-#+MATS: figcol fig-03_1004-elast9-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-elast9-*.pdf 0.45
 
 - Perfectly elastic demand:
   #+begin_export latex
@@ -261,7 +261,7 @@
 
 ** Some special cases (and III)
 
-#+MATS: figcol fig-03_1004-ingr1-*.pdf 0.5
+#+MATS: figcol file:fig-03_1004-ingr1-*.pdf 0.5
 
 - Linear demand curve:
   #+begin_export latex
@@ -275,7 +275,7 @@
 
 ** Total revenue
 
-#+MATS: figcol fig-03_1004-ingr3-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-ingr3-*.pdf 0.4
 
 - Sellers' total revenue:
   #+begin_export latex
@@ -287,7 +287,7 @@
 
 ** Variations in revenues (I)
 
-#+MATS: figcol fig-03_1004-ingr4-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-ingr4-*.pdf 0.4
 
 - How does total revenue vary with a change in price?
   #+begin_export latex
@@ -300,7 +300,7 @@
 
 ** Variations in revenues (II)
 
-#+MATS: figcol fig-03_1004-ingr5-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-ingr5-*.pdf 0.45
 
 - $\Delta \IT = \Delta P \cdot Q_1 + P_1 \cdot \Delta Q + \Delta P
   \cdot \Delta Q$
@@ -310,7 +310,7 @@
 
 ** Variations in revenues (III)
 
-#+MATS: figcol fig-03_1004-ingr5-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-ingr5-*.pdf 0.45
 
 - $\Delta\% \IT \approx \Delta\% P + \Delta\% Q$
 
@@ -326,7 +326,7 @@
 
 ** Variations in revenues (and IV)
 
-#+MATS: figcol fig-03_1004-ingr6-*.pdf 0.45
+#+MATS: figcol file:fig-03_1004-ingr6-*.pdf 0.45
 
 - $\Delta\% \IT \approx \Delta\% P + \Delta\% Q$
 
@@ -430,7 +430,7 @@
 
 ** Some cases (I)
 
-#+MATS: figcol fig-03_1004-elast10-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-elast10-*.pdf 0.4
 
 - Perfectly inelastic supply:
   \[E_s = 0\]
@@ -438,7 +438,7 @@
 
 ** Some cases (II)
 
-#+MATS: figcol fig-03_1004-elast11-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-elast11-*.pdf 0.4
 
 - An inelastic portion of the supply curve:
   \[E_s = 0.44\]
@@ -446,7 +446,7 @@
 
 ** Some cases (III)
 
-#+MATS: figcol fig-03_1004-elast12-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-elast12-*.pdf 0.4
 
 - An elastic portion of the supply curve:
   \[E_s = 1.75\]
@@ -454,7 +454,7 @@
 
 ** Some cases (and IV)
 
-#+MATS: figcol fig-03_1004-elast13-*.pdf 0.4
+#+MATS: figcol file:fig-03_1004-elast13-*.pdf 0.4
 
 - Perfectly elastic supply:
   \[E_s = \infty\]

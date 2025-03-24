@@ -25,21 +25,21 @@
 
 ** Elección racional (II)
 
-#+MATS: figcol fig-07_1004-oc01-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-oc01-*.pdf 0.4
 
 - El conjunto de oportunidades contiene todas las cestas que puede
   comprar el consumidor.
 
 ** Elección racional (III)
 
-#+MATS: figcol fig-07_1004-oc02-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-oc02-*.pdf 0.4
 
 - Cualquier cesta en $\overline{BC}$ es preferida a la cesta $A$ si se
   cumple el supuesto de no saturación.
 
 ** Elección racional (y IV)
 
-#+MATS: figcol fig-07_1004-oc03-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-oc03-*.pdf 0.4
 
 - La cesta óptima estará sobre la recta presupuestaria si se cumple el
   supuesto de no saturación.
@@ -58,14 +58,14 @@
 
 ** Condición de tangencia (I)
 
-#+MATS: figcol fig-07_1004-eq01-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq01-*.pdf 0.4
 
 - En la cesta $A$: $\RMS > P_X/P_Y$.
 
 
 ** Condición de tangencia (II)
 
-#+MATS: figcol fig-07_1004-eq01a-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq01a-*.pdf 0.4
 
 - El consumidor puede obtener un mayor nivel de utilidad si
   incrementa su consumo de $X$.
@@ -73,14 +73,14 @@
 
 ** Condición de tangencia (III)
 
-#+MATS: figcol fig-07_1004-eq02-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq02-*.pdf 0.4
 
 - En la cesta $B$: $\RMS < P_X/P_Y$.
 
 
 ** Condición de tangencia (IV)
 
-#+MATS: figcol fig-07_1004-eq02a-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq02a-*.pdf 0.4
 
 - El consumidor puede obtener un mayor nivel de utilidad si
   disminuye su consumo de $X$.
@@ -88,7 +88,7 @@
 
 ** Condición de tangencia (y V)
 
-#+MATS: figcol fig-07_1004-eq03-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq03-*.pdf 0.4
 
 - En la cesta $E$: $\RMS = P_X/P_Y$.
 
@@ -116,7 +116,7 @@
 
 ** Ejemplo: solución interior (y II)
 
-#+MATS: figcol fig-07_1004-ej01-*.pdf 0.55
+#+MATS: figcol file:fig-07_1004-ej01-*.pdf 0.55
 
 - $X^* = 17.5; Y^*=17.5$.
 
@@ -132,7 +132,7 @@
 
 ** Soluciones de esquina (II)
 
-#+MATS: figcol fig-07_1004-eq10-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq10-*.pdf 0.4
 
 - En todas las cestas de la recta presupuestaria: $\RMS < P_X/P_Y$.
 
@@ -142,7 +142,7 @@
 
 ** Soluciones de esquina (y III)
 
-#+MATS: figcol fig-07_1004-eq11-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq11-*.pdf 0.4
 
 - En todas las cestas de la recta presupuestaria: $\RMS > P_X/P_Y$.
 
@@ -176,6 +176,6 @@
 
 ** Ejemplo: solución de esquina (y II)
 
-#+MATS: figcol fig-07_1004-ej02-*.pdf 0.55
+#+MATS: figcol file:fig-07_1004-ej02-*.pdf 0.55
 
 - $X^* = 0; Y^*=35$.

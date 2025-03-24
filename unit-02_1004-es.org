@@ -63,7 +63,7 @@
 - La *curva de demanda* tiene *pendiente negativa*.
 
 #+begin_center
-#+MATS: fig fig-02_1004-dtab-*.pdf
+#+MATS: fig file:fig-02_1004-dtab-*.pdf
 #+end_center
 
 
@@ -77,7 +77,7 @@
 - Demandas en un mercado compuesto por tres consumidores (K, L y M):
 
 #+begin_center
-#+MATS: fig fig-02_1004-dtab2-*.pdf
+#+MATS: fig file:fig-02_1004-dtab2-*.pdf
 #+end_center
 
 
@@ -86,19 +86,19 @@
 - La curva de demanda de mercado es la suma horizontal de las curvas
   de demanda individuales.
 
-#+MATS: fig fig-02_1004-dtab3-*.pdf
+#+MATS: fig file:fig-02_1004-dtab3-*.pdf
 
 
 ** Cambios en el precio (I)
 
-#+MATS: figcol fig-02_1004-d2-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d2-*.pdf 0.45
 
 - Cuando el precio de mercado es $P_A$ la cantidad demandada es $Q_A$.
 
 
 ** Cambios en el precio (II)
 
-#+MATS: figcol fig-02_1004-d3-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d3-*.pdf 0.45
 
 - El precio de mercado baja hasta $P_B$, /ceteris paribus/.
 
@@ -107,7 +107,7 @@
 
 ** Cambios en el precio (y III)
 
-#+MATS: figcol fig-02_1004-d4-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d4-*.pdf 0.45
 
 - Cambios en el precio del bien, /ceteris paribus/, se reflejan en
   *movimientos a lo largo* de la curva de demanda.
@@ -147,14 +147,14 @@
 
 ** Desplazamientos de la demanda (I)
 
-#+MATS: figcol fig-02_1004-d5-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d5-*.pdf 0.45
 
 - Al precio de mercado $P_A$ la cantidad demandada es $Q_A$.
 
 
 ** Desplazamientos de la demanda (II)
 
-#+MATS: figcol fig-02_1004-d6-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d6-*.pdf 0.45
 
 - Aumenta el precio de un bien sustitutivo.
 
@@ -163,7 +163,7 @@
 
 ** Desplazamientos de la demanda (y III)
 
-#+MATS: figcol fig-02_1004-d8-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-d8-*.pdf 0.45
 
 - Un aumento de la demanda: $D \rightarrow D^{+}$
 
@@ -202,7 +202,7 @@
 - La *curva de oferta* tiene *pendiente positiva*.
 
   #+begin_center
-  #+MATS: fig fig-02_1004-otab-*.pdf
+  #+MATS: fig file:fig-02_1004-otab-*.pdf
   #+end_center
 
 
@@ -214,12 +214,12 @@
 - Gráficamente se obtiene como la suma horizontal de las curvas de
   oferta individuales.
 
-#+MATS: fig fig-02_1004-otab3-*.pdf
+#+MATS: fig file:fig-02_1004-otab3-*.pdf
 
 
 ** Cambios en el precio
 
-#+MATS: figcol fig-02_1004-s2-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-s2-*.pdf 0.45
 
 - Un cambio en el precio, /ceteris paribus/, provoca un movimiento a
   lo largo de la curva de oferta.
@@ -247,7 +247,7 @@
 
 ** Desplazamientos de la oferta (I)
 
-#+MATS: figcol fig-02_1004-s3-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-s3-*.pdf 0.45
 
 - Un aumento de la oferta: las empresas ofrecen ahora una cantidad
   mayor al mismo precio.
@@ -255,7 +255,7 @@
 
 ** Desplazamientos de la oferta (y II)
 
-#+MATS: figcol fig-02_1004-s4-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-s4-*.pdf 0.45
 
 - Aumento de la oferta: $S \rightarrow S^{+}$
 
@@ -278,7 +278,7 @@
 
 ** Precio de equilibrio
 
-#+MATS: figcol fig-02_1004-eq1-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-eq1-*.pdf 0.45
 
 - La intersección de la oferta y la demanda determina el *precio de
   equilibrio*, $P^*$ y la *cantidad de equilibrio*, $Q^*$.
@@ -289,7 +289,7 @@
 
 ** Excedente
 
-#+MATS: figcol fig-02_1004-eq3-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-eq3-*.pdf 0.45
 
 - *Excedente*: el precio es superior al de equilibrio y los oferentes
   no consiguen vender todo lo que querrían.
@@ -298,7 +298,7 @@
 ** Escasez
 
 
-#+MATS: figcol fig-02_1004-eq4-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-eq4-*.pdf 0.45
 
 - *Escasez*: el precio es inferior al de equilibrio y la producción es
   menor que la cantidad que desean comprar los consumidores.
@@ -306,7 +306,7 @@
 
 ** Puntos de intercambio
 
-#+MATS: figcol fig-02_1004-eq5-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-eq5-*.pdf 0.45
 
 - Para precios distintos del de equilibrio, la cantidad intercambiada
   la determina el lado más corto del mercado.
@@ -343,7 +343,7 @@
 
 ** Un aumento de la demanda
 
-#+MATS: figcol fig-02_1004-comp1-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-comp1-*.pdf 0.45
 
 - El precio de equilibrio aumenta.
 
@@ -352,7 +352,7 @@
 
 ** Una disminución de la oferta
 
-#+MATS: figcol fig-02_1004-comp2-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-comp2-*.pdf 0.45
 
 - El precio de equilibrio aumenta.
 
@@ -361,7 +361,7 @@
 
 ** Desplazamientos de ambas curvas (I)
 
-#+MATS: figcol fig-02_1004-comp3-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-comp3-*.pdf 0.45
 
 - Gran aumento de la demanda.
 
@@ -372,7 +372,7 @@
 
 ** Desplazamientos de ambas curvas (II)
 
-#+MATS: figcol fig-02_1004-comp4-*.pdf 0.45
+#+MATS: figcol file:fig-02_1004-comp4-*.pdf 0.45
 
 - Pequeño aumento de la demanda.
 
@@ -390,7 +390,7 @@
   una de las variables.
   #+latex: \vspace*{1ex}
   #+begin_center
-  #+MATS: fig fig-02_1004-tab_comp-*.pdf
+  #+MATS: fig file:fig-02_1004-tab_comp-*.pdf
   #+end_center
 
 

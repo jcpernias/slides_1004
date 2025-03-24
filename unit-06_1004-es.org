@@ -33,7 +33,7 @@
 
 ** No saturación (y II)
 
-#+MATS: figcol fig-06_1004-ci02-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-ci02-*.pdf 0.5
 
 - El consumidor prefiere la cesta $M$ a la cesta $A$: $M \succ A$.
 
@@ -48,7 +48,7 @@
 
 ** Curvas de indiferencia (II)
 
-#+MATS: figcol fig-06_1004-ci03b-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-ci03b-*.pdf 0.5
 
 - La curva de indiferencia tiene pendiente negativa.
 
@@ -58,7 +58,7 @@
 
 ** Curvas de indiferencia (y III)
 
-#+MATS: figcol fig-06_1004-ci06-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-ci06-*.pdf 0.5
 
 - $M \succ A$.
 
@@ -86,7 +86,7 @@
 
 ** Transitividad (y III)
 
-#+MATS: figcol fig-06_1004-tr01-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-tr01-*.pdf 0.5
 
 - Si las curvas de indiferencia se cortaran, las preferencias serían
   inconsistentes:
@@ -97,7 +97,7 @@
 
 ** El mapa de curvas de indiferencia
 
-#+MATS: figcol fig-06_1004-map01-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-map01-*.pdf 0.5
 
 - El *mapa de curvas de indiferencia* representa las preferencias de
   un consumidor.
@@ -112,7 +112,7 @@
 
 ** La Relación Marginal de Sustitución (II)
 
-#+MATS: figcol fig-06_1004-rms01-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-rms01-*.pdf 0.5
 
 - La $RMS$ es la tasa a la que un consumidor puede sustituir un bien
   por otro, manteniéndose en la misma curva de indiferencia.
@@ -123,7 +123,7 @@
 
 ** La Relación Marginal de Sustitución (y III)
 
-#+MATS: figcol fig-06_1004-rms02-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-rms02-*.pdf 0.5
 
 - En cada punto de la curva de indiferencia, la $\RMS$ coincide con la
   pendiente con signo negativo.
@@ -131,7 +131,7 @@
 
 ** Convexidad
 
-#+MATS: figcol fig-06_1004-rms03-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-rms03-*.pdf 0.5
 
 - *Convexidad*: la $\RMS$ es decreciente:
   #+begin_export latex
@@ -148,28 +148,28 @@
 
 ** Sustitutos perfectos
 
-#+MATS: figcol fig-06_1004-nreg01-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-nreg01-*.pdf 0.5
 
 - $X$ e $Y$ son *sustitutos perfectos*.
 
 
 ** Complementos perfectos
 
-#+MATS: figcol fig-06_1004-nreg02-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-nreg02-*.pdf 0.5
 
 - $X$ e $Y$ son *complementos perfectos*.
 
 
 ** Bienes neutros
 
-#+MATS: figcol fig-06_1004-nreg03-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-nreg03-*.pdf 0.5
 
 - $Y$ es un *bien neutro*.
 
 
 ** Males
 
-#+MATS: figcol fig-06_1004-nreg04-*.pdf 0.5
+#+MATS: figcol file:fig-06_1004-nreg04-*.pdf 0.5
 
 - $X$ es un *mal*.
 
@@ -201,7 +201,7 @@
 
 ** Utilidad ordinal (I)
 
-#+MATS: figcol fig-06_1004-map02-*.pdf 0.45
+#+MATS: figcol file:fig-06_1004-map02-*.pdf 0.45
 
 - La función de utilidad etiqueta cada curva de indiferencia con un
   número diferente.
@@ -209,7 +209,7 @@
 
 ** Utilidad ordinal (II)
 
-#+MATS: figcol fig-06_1004-map03-*.pdf 0.48
+#+MATS: figcol file:fig-06_1004-map03-*.pdf 0.48
 
 - Existen un número infinito de funciones de utilidad que representan
   exactamente las mismas preferencias.

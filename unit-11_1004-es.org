@@ -79,7 +79,7 @@
 
 ** La función de producto total
 
-#+MATS: figcol fig-11_1004-sr01-*.pdf 0.5
+#+MATS: figcol file:fig-11_1004-sr01-*.pdf 0.5
 
 - Función de producto total:
   #+begin_export latex
@@ -89,7 +89,7 @@
 
 ** La demanda condicionada de trabajo
 
-#+MATS: figcol fig-11_1004-sr02-*.pdf 0.5
+#+MATS: figcol file:fig-11_1004-sr02-*.pdf 0.5
 
 - La *demanda condicional de trabajo* muestra cuánto trabajo ha de
   contratar la empresa para conseguir una nivel producción
@@ -103,7 +103,7 @@
 
 ** La curva de coste variable
 
-#+MATS: figcol fig-11_1004-sr03-*.pdf 0.5
+#+MATS: figcol file:fig-11_1004-sr03-*.pdf 0.5
 
 - *Curva de coste variable*:
   #+begin_export latex
@@ -113,7 +113,7 @@
 
 ** La curva de coste total
 
-#+MATS: figcol fig-11_1004-sr04-*.pdf 0.5
+#+MATS: figcol file:fig-11_1004-sr04-*.pdf 0.5
 
 - El *coste fijo* no depende del nivel de producción.
 
@@ -183,21 +183,21 @@
 
 ** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (II)
 
-#+MATS: figcol fig-11_1004-sr05-*.pdf 0.5
+#+MATS: figcol file:fig-11_1004-sr05-*.pdf 0.5
 
 - $\PMgL$ y $\PMeL$ tienen forma de U invertida.
 
 
 ** Relación entre $\PMg$, $\PMe$, $\CMg$ y $\CMe$  (y III)
 
-#+MATS: figcol fig-11_1004-sr06-*.pdf 0.5
+#+MATS: figcol file:fig-11_1004-sr06-*.pdf 0.5
 
 - Las curvas de coste medio y marginal tienen forma de U.
 
 
 ** Las curvas de coste variable medio y coste marginal
 
-#+MATS: figcol fig-11_1004-sr06-*.pdf 0.5
+#+MATS: figcol file:fig-11_1004-sr06-*.pdf 0.5
 
 - El coste variable medio:
 
@@ -210,7 +210,7 @@
 
 ** La curva de coste fijo medio
 
-#+MATS: figcol fig-11_1004-sr07-*.pdf 0.5
+#+MATS: figcol file:fig-11_1004-sr07-*.pdf 0.5
 
 - La *curva de coste fijo medio* decrece conforme aumenta la
   producción.
@@ -218,7 +218,7 @@
 
 ** La curva de coste medio (I)
 
-#+MATS: figcol fig-11_1004-sr09-*.pdf 0.5
+#+MATS: figcol file:fig-11_1004-sr09-*.pdf 0.5
 
 - La curva de $\CMe$ es la suma del $\CVMe$ y el $\CFMe$ para cada
   nivel de producción.
@@ -226,7 +226,7 @@
 
 ** La curva de coste medio (y II)
 
-#+MATS: figcol fig-11_1004-sr08-*.pdf 0.5
+#+MATS: figcol file:fig-11_1004-sr08-*.pdf 0.5
 
 - El coste medio:
 
@@ -254,7 +254,7 @@
 
 ** La isocuanta
 
-#+MATS: figcol fig-11_1004-eq01-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-eq01-*.pdf 0.45
 
 - La empresa selecciona la combinación de factores menos costosa de la
   isocuanta $\Qbar$.
@@ -279,7 +279,7 @@
 
 ** La isocostes (y II)
 
-#+MATS: figcol fig-11_1004-eq02-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-eq02-*.pdf 0.45
 
 - La pendiente de la isocoste es igual al precio relativo de los
   factores con signo negativo:
@@ -297,7 +297,7 @@
 
 ** El mapa de isocostes
 
-#+MATS: figcol fig-11_1004-eq03-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-eq03-*.pdf 0.45
 
 - A cada nivel de coste le corresponde una isocoste diferente.
 
@@ -306,7 +306,7 @@
 
 ** La elección óptima (I)
 
-#+MATS: figcol fig-11_1004-eq04-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-eq04-*.pdf 0.45
 
 - La empresa selecciona aquella combinación de factores que minimiza
   el coste de producir $\Qbar$ unidades.
@@ -316,7 +316,7 @@
 
 ** La elección óptima (II)
 
-#+MATS: figcol fig-11_1004-eq06-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-eq06-*.pdf 0.45
 
 - En la combinación $A$:
   #+begin_export latex
@@ -329,7 +329,7 @@
 
 ** La elección óptima (III)
 
-#+MATS: figcol fig-11_1004-eq07-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-eq07-*.pdf 0.45
 
 - En la combinación $B$:
   #+begin_export latex
@@ -342,7 +342,7 @@
 
 ** La elección óptima (y IV)
 
-#+MATS: figcol fig-11_1004-eq05-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-eq05-*.pdf 0.45
 
 - Isocuanta:
   #+begin_export latex
@@ -369,7 +369,7 @@
 
 ** Dualidad (y II)
 
-#+MATS: figcol fig-11_1004-eq08-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-eq08-*.pdf 0.45
 
 - Isocoste:
   #+begin_export latex
@@ -387,7 +387,7 @@
 
 ** La senda de expansión del producto
 
-#+MATS: figcol fig-11_1004-exp02-*.pdf 0.5
+#+MATS: figcol file:fig-11_1004-exp02-*.pdf 0.5
 
 - Dados los precios de los factores, hay una combinación óptima
   diferente para cada nivel de producción: *senda de expansión del
@@ -402,7 +402,7 @@
 
 ** La curva de coste total a largo plazo
 
-#+MATS: figcol fig-11_1004-clp01-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-clp01-*.pdf 0.45
 
 - *Curva de coste a largo plazo*:
   #+begin_export latex
@@ -425,7 +425,7 @@
 
 ** Coste medio y coste marginal (y II)
 
-#+MATS: figcol fig-11_1004-env08-*.pdf 0.47
+#+MATS: figcol file:fig-11_1004-env08-*.pdf 0.47
 
 - La curva $\CMeLP$:
 
@@ -461,7 +461,7 @@
 
 ** Rendimientos de escala y costes a largo plazo (II)
 
-#+MATS: figcol fig-11_1004-clp02-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-clp02-*.pdf 0.45
 
 - La función de costes es lineal cuando hay rendimientos constantes de
   escala:
@@ -472,7 +472,7 @@
 
 ** Rendimientos de escala y costes a largo plazo (III)
 
-#+MATS: figcol fig-11_1004-clp03-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-clp03-*.pdf 0.45
 
 - El coste medio y marginal son iguales a una misma constante cuando
   hay rendimientos constantes de escala:
@@ -496,7 +496,7 @@
 
 ** La elección a corto plazo
 
-#+MATS: figcol fig-11_1004-exp03-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-exp03-*.pdf 0.45
 
 - A corto plazo, el nivel de $K$ es fijo y sólo se pueden alcanzar
   distintos niveles de producción alterando el nivel de $L$.
@@ -504,14 +504,14 @@
 
 ** La elección a largo plazo
 
-#+MATS: figcol fig-11_1004-exp06-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-exp06-*.pdf 0.45
 
 - A largo plazo, la empresa puede cambiar todos los factores.
 
 
 ** La elección a corto y a largo plazo
 
-#+MATS: figcol fig-11_1004-exp07-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-exp07-*.pdf 0.45
 
 - Sólo para un nivel de producción coinciden la decisión de corto
   plazo y la de largo plazo.
@@ -519,7 +519,7 @@
 
 ** Costes a corto y a largo plazo (I)
 
-#+MATS: figcol fig-11_1004-exp05-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-exp05-*.pdf 0.45
 
 - Los costes a corto plazo son superiores a los costes a largo plazo,
   excepto para un nivel de producción.
@@ -527,7 +527,7 @@
 
 ** Costes a corto y a largo plazo (II)
 
-#+MATS: figcol fig-11_1004-env20-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-env20-*.pdf 0.45
 
 - Las curva de coste a largo plazo está por debajo de las curvas de
   costes a corto plazo.
@@ -538,7 +538,7 @@
 
 ** Costes a corto y a largo plazo (y III)
 
-#+MATS: figcol fig-11_1004-env21-*.pdf 0.45
+#+MATS: figcol file:fig-11_1004-env21-*.pdf 0.45
 
 - Cada curva de coste medio a corto plazo está por encima de la curva
   de coste medio a largo plazo y es tangente a $\CMeLP$ para un
@@ -550,7 +550,7 @@
 
 ** La elección del tamaño de la planta (I)
 
-#+MATS: figcol fig-11_1004-env01-*.pdf 0.55
+#+MATS: figcol file:fig-11_1004-env01-*.pdf 0.55
 
 - Consideremos primero el caso en que la empresa sólo puede elegir
   entre dos tamaños de planta: $K_1$ < $K_2$, ¿cuál será su decisión a
@@ -559,7 +559,7 @@
 
 ** La elección del tamaño de la planta (y II)
 
-#+MATS: figcol fig-11_1004-env02-*.pdf 0.55
+#+MATS: figcol file:fig-11_1004-env02-*.pdf 0.55
 
 - Si la empresa espera producir a largo plazo menos que $Q_A$, el
   tamaño de planta $K_1$ tiene menores costes.
@@ -570,7 +570,7 @@
 
 ** La envolvente (I)
 
-#+MATS: figcol fig-11_1004-env03-*.pdf 0.55
+#+MATS: figcol file:fig-11_1004-env03-*.pdf 0.55
 
 - La curva de coste medio a largo plazo es la *envolvente inferior* de
   las curvas de corto plazo.
@@ -578,7 +578,7 @@
 
 ** La envolvente (II)
 
-#+MATS: figcol fig-11_1004-env05-*.pdf 0.55
+#+MATS: figcol file:fig-11_1004-env05-*.pdf 0.55
 
 - Si la empresa puede elegir entre más tamaños de planta, la curva de
   costes medios a largo plazo es más suave.
@@ -586,7 +586,7 @@
 
 ** La envolvente (y III)
 
-#+MATS: figcol fig-11_1004-env06-*.pdf 0.55
+#+MATS: figcol file:fig-11_1004-env06-*.pdf 0.55
 
 - Cuando la empresa puede elegir entre un continuo de tamaños de
   planta, cada curva de coste medio a corto es tangente a $\CMeLP$ en
@@ -595,7 +595,7 @@
 
 ** El tamaño eficiente de la planta
 
-#+MATS: figcol fig-11_1004-env07-*.pdf 0.55
+#+MATS: figcol file:fig-11_1004-env07-*.pdf 0.55
 
 - El *tamaño eficiente de la planta* se corresponde con el mínimo
   coste unitario a largo plazo.

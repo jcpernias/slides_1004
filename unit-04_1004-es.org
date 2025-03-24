@@ -57,7 +57,7 @@
 
 ** Precio máximo (II)
 
-#+MATS: figcol fig-04_1004-pmax2-*.pdf 0.48
+#+MATS: figcol file:fig-04_1004-pmax2-*.pdf 0.48
 
 - Cuando el precio de equilibrio es inferior al precio máximo, la
   regulación no tiene efecto.
@@ -65,7 +65,7 @@
 
 ** Precio máximo (y III)
 
-#+MATS: figcol fig-04_1004-pmax3-*.pdf 0.48
+#+MATS: figcol file:fig-04_1004-pmax3-*.pdf 0.48
 
 - Cuando el precio de equilibrio es superior al precio máximo hay
   escasez en el mercado.
@@ -87,7 +87,7 @@
 
 ** Precio mínimo (II)
 
-#+MATS: figcol fig-04_1004-pmin2-*.pdf 0.48
+#+MATS: figcol file:fig-04_1004-pmin2-*.pdf 0.48
 
 - Si el precio de equilibrio es superior al precio mínimo, la
   regulación no tiene efecto.
@@ -95,7 +95,7 @@
 
 ** Precio mínimo (y III)
 
-#+MATS: figcol fig-04_1004-pmin3-*.pdf 0.48
+#+MATS: figcol file:fig-04_1004-pmin3-*.pdf 0.48
 
 - Cuando el precio de equilibrio es inferior al precio mínimo, hay un
   excedente en el mercado.
@@ -127,7 +127,7 @@
 
 ** Impuesto a los vendedores (I)
 
-#+MATS: figcol fig-04_1004-st1-*.pdf 0.45
+#+MATS: figcol file:fig-04_1004-st1-*.pdf 0.45
 
 - El impuesto lo recaudan los vendedores.
 
@@ -139,7 +139,7 @@
 
 ** Impuesto a los vendedores (II)
 
-#+MATS: figcol fig-04_1004-st2-*.pdf 0.48
+#+MATS: figcol file:fig-04_1004-st2-*.pdf 0.48
 
 - En el nuevo equilibrio la cantidad vendida, $Q_1$, es inferior y el
   precio pagado por los compradores, $P_1$, es mayor.
@@ -147,7 +147,7 @@
 
 ** Impuesto a los vendedores (III)
 
-#+MATS: figcol fig-04_1004-st4-*.pdf 0.48
+#+MATS: figcol file:fig-04_1004-st4-*.pdf 0.48
 
 - La *recaudación del impuesto* es $T = Q_1 t$, el producto del número
   de unidades vendidas y la tasa impositiva.
@@ -155,7 +155,7 @@
 
 ** Impuesto a los vendedores (y IV)
 
-#+MATS: figcol fig-04_1004-st3-*.pdf 0.48
+#+MATS: figcol file:fig-04_1004-st3-*.pdf 0.48
 
 - *Incidencia del impuesto*: cómo se reparte la carga del impuesto
   entre compradores y vendedores.
@@ -169,7 +169,7 @@
 
 ** Impuesto a los compradores (I)
 
-#+MATS: figcol fig-04_1004-bt1-*.pdf 0.45
+#+MATS: figcol file:fig-04_1004-bt1-*.pdf 0.45
 
 - El impuesto lo recaudan los compradores.
 
@@ -180,7 +180,7 @@
 
 ** Impuesto a los compradores (II)
 
-#+MATS: figcol fig-04_1004-bt2-*.pdf 0.45
+#+MATS: figcol file:fig-04_1004-bt2-*.pdf 0.45
 
 - En el nuevo equilibrio la cantidad vendida, $Q_1$, es inferior y el
   precio que reciben los vendedores, $P_1$, es menor.
@@ -188,7 +188,7 @@
 
 ** Impuesto a los compradores (III)
 
-#+MATS: figcol fig-04_1004-bt4-*.pdf 0.45
+#+MATS: figcol file:fig-04_1004-bt4-*.pdf 0.45
 
 - La *recaudación del impuesto* es $T = Q_1 t$, el producto del número
   de unidades vendidas y la tasa impositiva.
@@ -197,7 +197,7 @@
 
 ** Impuesto a los compradores (y IV)
 
-#+MATS: figcol fig-04_1004-bt3-*.pdf 0.48
+#+MATS: figcol file:fig-04_1004-bt3-*.pdf 0.48
 
 - *Incidencia del impuesto*: cómo se reparte la carga del impuesto
   entre compradores y vendedores.
@@ -211,7 +211,7 @@
 
 ** Incidencia de los impuestos (I)
 
-#+MATS: figcol fig-04_1004-inc1-*.pdf 0.45
+#+MATS: figcol file:fig-04_1004-inc1-*.pdf 0.45
 - La incidencia del impuesto es *independiente de quién recaude el
   impuesto*.
 
@@ -221,7 +221,7 @@
 
 ** Incidencia de los impuestos (II)
 
-#+MATS: figcol fig-04_1004-inc2-*.pdf 0.45
+#+MATS: figcol file:fig-04_1004-inc2-*.pdf 0.45
 
 - Si la oferta es relativamente más inelástica que la demanda, los
   vendedores soportan la mayor parte de la carga del impuesto.
@@ -229,7 +229,7 @@
 
 ** Incidencia de los impuestos (y III)
 
-#+MATS: figcol fig-04_1004-inc3-*.pdf 0.45
+#+MATS: figcol file:fig-04_1004-inc3-*.pdf 0.45
 
 - Si la demanda es relativamente más inelástica que la oferta, los
   compradores soportan la mayor parte de la carga del impuesto.

@@ -26,21 +26,21 @@
 
 ** Rational choice (II)
 
-#+MATS: figcol fig-07_1004-oc01-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-oc01-*.pdf 0.4
 
 - The opportunity set comprises all the baskets that the consumer can
   afford.
 
 ** Rational choice (III)
 
-#+MATS: figcol fig-07_1004-oc02-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-oc02-*.pdf 0.4
 
 - Any basket on $\overline{BC}$ is preferred to $A$ if the
   non-satiation assumption is fulfilled.
 
 ** Rational choice (and IV)
 
-#+MATS: figcol fig-07_1004-oc03-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-oc03-*.pdf 0.4
 
 - The optimal basket is on the budget line if the non-satiation
   assumption is met.
@@ -59,7 +59,7 @@
 
 ** Tangency condition (I)
 
-#+MATS: figcol fig-07_1004-eq01-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq01-*.pdf 0.4
 
 - At bundle $A$: $\RMS > P_X/P_Y$.
 
@@ -67,7 +67,7 @@
 
 ** Tangency condition (II)
 
-#+MATS: figcol fig-07_1004-eq01a-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq01a-*.pdf 0.4
 
 - The consumer can get a higher level of utility if he increases
   the consumption of $X$.
@@ -75,14 +75,14 @@
 
 ** Tangency condition (III)
 
-#+MATS: figcol fig-07_1004-eq02-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq02-*.pdf 0.4
 
 - At bundle $B$: $\RMS < P_X/P_Y$.
 
 
 ** Tangency condition (IV)
 
-#+MATS: figcol fig-07_1004-eq02a-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq02a-*.pdf 0.4
 
 - The consumer can get a higher level of utility by decreasing
   the consumption of $X$.
@@ -90,7 +90,7 @@
 
 ** Tangency condition (and V)
 
-#+MATS: figcol fig-07_1004-eq03-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq03-*.pdf 0.4
 
 - At bundle $E$: $\RMS = P_X/P_Y$.
 
@@ -118,7 +118,7 @@
 
 ** Example (and II)
 
-#+MATS: figcol fig-07_1004-ej01-*.pdf 0.55
+#+MATS: figcol file:fig-07_1004-ej01-*.pdf 0.55
 
 - $X^* = 17.5; Y^*=17.5$.
 
@@ -133,7 +133,7 @@
 
 ** Corner solutions (II)
 
-#+MATS: figcol fig-07_1004-eq10-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq10-*.pdf 0.4
 
 - At every bundle on the budget line: $\RMS < P_X/P_Y$.
 
@@ -143,7 +143,7 @@
 
 ** Corner solutions (and III)
 
-#+MATS: figcol fig-07_1004-eq11-*.pdf 0.4
+#+MATS: figcol file:fig-07_1004-eq11-*.pdf 0.4
 
 - At every bundle on the budget line: $\RMS > P_X/P_Y$.
 
@@ -177,6 +177,6 @@
 
 ** Example (and II)
 
-#+MATS: figcol fig-07_1004-ej02-*.pdf 0.55
+#+MATS: figcol file:fig-07_1004-ej02-*.pdf 0.55
 
 - $X^* = 0; Y^*=35$.
